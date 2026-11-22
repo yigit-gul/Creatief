@@ -24,10 +24,11 @@ COLORS = {
 }
 
 # --- Stem -------------------------------------------------------------------
-VOICE = "nl-BE-ArnaudNeural"   # alternatief: "nl-BE-DenaNeural"
-VOICE_RATE = "+10%"
+VOICE = "en-US-AndrewMultilingualNeural"   # gekozen in de Studio (stem E); spreekt Nederlands
+VOICE_RATE = "+15%"   # TikTok-tempo
 VOICE_PITCH = "+0Hz"
-SCENE_GAP = 0.25  # seconden stilte tussen scènes
+SCENE_GAP = 0.06  # bijna geen stilte tussen scènes
+FLOW_SENTENCES = True  # punten binnen een scène als komma uitspreken: geen leespauzes
 
 # --- Video ------------------------------------------------------------------
 W, H = 1080, 1920

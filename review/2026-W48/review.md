@@ -1,12 +1,12 @@
 # Review 2026-W48
 
-Gegenereerd op 2026-11-22 · stem `nl-BE-ArnaudNeural` · kanaal **Fiscaal Fluitje** (@fiscaalfluitje)
+Gegenereerd op 2026-11-22 · stem `en-US-AndrewMultilingualNeural` · kanaal **Fiscaal Fluitje** (@fiscaalfluitje)
 
 Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automatisch gepost.
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 60 s | 121 | 9/9 | 6 |
+| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 55 s | 132 | 9/9 | 6 |
 
 ---
 
@@ -16,17 +16,17 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 ### Script (voice-over)
 
-> Wist je dat je belasting betaalt telkens je aandelen of ETF's koopt én verkoopt? Ook als je verlies maakt.
+> Wist je dat je belasting betaalt telkens je aandelen of ETF's koopt? Én als je ze verkoopt. Zelfs als je verlies maakt.
 >
-> Dat is de TOB, de taks op de beursverrichtingen. Je betaalt een percentage op het bedrag, niet op je winst.
+> Da's de TOB, de taks op de beursverrichtingen. En die betaal je op het bedrag, hè. Niet op je winst.
 >
-> Er zijn drie tarieven: 0,12%, 0,35% of 1,32%, afhankelijk van het product. Telkens met een maximum per transactie.
+> Er zijn drie tarieven: 0,12%, 0,35% of 1,32%, afhankelijk van het product. En telkens met een maximum per transactie.
 >
-> Voorbeeld: je koopt aandelen voor €2.000. Aan 0,35% is dat €7. Later verkopen voor €2.000? Opnieuw €7. Samen €14.
+> Een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% is dat €7. Verkoop je later ook voor €2.000? Dan betaal je nog eens €7. Samen dus €14.
 >
-> Belgische broker? Die houdt de TOB automatisch in. Buitenlandse broker die dat niet doet? Dan geef je ze zelf aan, uiterlijk de laatste werkdag van de tweede maand na je transactie.
+> Belgische broker? Dan wordt de TOB automatisch ingehouden. Buitenlandse broker? Niet altijd. Dan geef je ze zelf aan, ten laatste de laatste werkdag van de tweede maand na je transactie.
 >
-> Zo weet je wat die kleine kost op je afrekening is. Volg voor meer!
+> Zo, nu weet je wat dat kostje op je afrekening is. Volg voor meer!
 
 ### Bronnen en controle van cijfers
 
@@ -51,7 +51,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 - ⚠️ De officiële pagina van FOD Financiën (financien.belgium.be) is vanuit deze omgeving niet bereikbaar. De cijfers komen van Wikifin (FSMA) via zoekresultaten. Graag één keer naast de FOD-pagina leggen.
 - ⚠️ Eén site (brokertax.be) vermeldt een tarief dat 'sinds 2 juni 2026' van 0,15% naar 0,30% zou gaan. Andere bronnen bevestigen geen TOB-wijziging in 2026, dus dit gaat waarschijnlijk over een andere taks (bv. de effectentaks). Even checken of er in 2026 iets aan de TOB veranderd is.
-- ⚠️ Uitspraak: 'TOB' wordt als T-O-B uitgesproken. Luister of dat natuurlijk klinkt.
+- ⚠️ Uitspraak: stem Andrew (multilingual) spreekt Nederlands, geen Vlaams. Luister vooral of de bedragen (0,35%, €2.000) en 'TOB' juist uitgesproken worden.
 
 ### Caption
 
@@ -66,9 +66,9 @@ Algemene info, geen persoonlijk advies.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 90-140 (121 woorden)
-- ✅ Duur 30-60 s (59.8 s)
-- ✅ Hook kort (≤ 22 woorden) (19 woorden)
+- ✅ Woordenaantal 90-140 (132 woorden)
+- ✅ Duur 30-60 s (55.4 s)
+- ✅ Hook kort (≤ 22 woorden) (22 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption

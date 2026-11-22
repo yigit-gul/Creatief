@@ -20,6 +20,8 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
   precieze bedragen. Één rekenvoorbeeld mag met afgeronde, duidelijk fictieve cijfers.
 
 ## 2. Scripts → `scripts/<week>/0N-<slug>.json`
+- **Spreektaal, TikTok-tempo**: korte zinnen, Vlaams-informeel ("da's", "hè", "een voorbeeldje"), zoals je het
+  tegen een vriend uitlegt. Stem: Andrew (multilingual), +15%, zinnen lopen door zonder leespauzes.
 - Formaat: zie `scripts/2026-W48/01-tob.json` en README. 90-140 woorden, hook ≤ 2 s, 3 punten,
   1 rekenvoorbeeld, eindigen met `outro` + "volg voor meer".
 - Elk bedrag, tarief of elke drempel: in `claims` met bron (bij voorkeur Wikifin/FOD Financiën) + datum + aanslagjaar

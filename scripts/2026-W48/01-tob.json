@@ -4,7 +4,7 @@
   "validity": "Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, geen inkomstenbelasting: er is geen aanslagjaar)",
   "scenes": [
     {
-      "say": "Wist je dat je belasting betaalt telkens je aandelen of ETF's koopt én verkoopt? Ook als je verlies maakt.",
+      "say": "Wist je dat je belasting betaalt telkens je aandelen of ETF's koopt? Én als je ze verkoopt. Zelfs als je verlies maakt.",
       "visual": {
         "type": "hook",
         "kicker": "Beurstaks",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "say": "Dat is de [TOB|T.O.B.], de taks op de beursverrichtingen. Je betaalt een percentage op het bedrag, niet op je winst.",
+      "say": "Da's de [TOB|T.O.B.], de taks op de beursverrichtingen. En die betaal je op het bedrag, hè. Niet op je winst.",
       "visual": {
         "type": "point",
         "n": 1,
@@ -22,7 +22,7 @@
       }
     },
     {
-      "say": "Er zijn drie tarieven: 0,12%, 0,35% of 1,32%, afhankelijk van het product. Telkens met een maximum per transactie.",
+      "say": "Er zijn drie tarieven: 0,12%, 0,35% of 1,32%, afhankelijk van het product. En telkens met een maximum per transactie.",
       "visual": {
         "type": "table",
         "title": "2. Drie tarieven",
@@ -50,7 +50,7 @@
       }
     },
     {
-      "say": "Voorbeeld: je koopt aandelen voor €2.000. Aan 0,35% is dat €7. Later verkopen voor €2.000? Opnieuw €7. Samen €14.",
+      "say": "Een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% is dat €7. Verkoop je later ook voor €2.000? Dan betaal je nog eens €7. Samen dus €14.",
       "visual": {
         "type": "calc",
         "title": "Rekenvoorbeeld",
@@ -88,7 +88,7 @@
       }
     },
     {
-      "say": "Belgische broker? Die houdt de [TOB|T.O.B.] automatisch in. Buitenlandse broker die dat niet doet? Dan geef je ze zelf aan, uiterlijk de laatste werkdag van de tweede maand na je transactie.",
+      "say": "Belgische broker? Dan wordt de [TOB|T.O.B.] automatisch ingehouden. Buitenlandse broker? Niet altijd. Dan geef je ze zelf aan, ten laatste de laatste werkdag van de tweede maand na je transactie.",
       "visual": {
         "type": "point",
         "n": 3,
@@ -97,7 +97,7 @@
       }
     },
     {
-      "say": "Zo weet je wat die kleine kost op je afrekening is. Volg voor meer!",
+      "say": "Zo, nu weet je wat dat kostje op je afrekening is. Volg voor meer!",
       "visual": {
         "type": "outro",
         "big": "Volg voor meer *fiscaal* zonder gedoe"
@@ -207,6 +207,6 @@
   "warnings": [
     "De officiële pagina van FOD Financiën (financien.belgium.be) is vanuit deze omgeving niet bereikbaar. De cijfers komen van Wikifin (FSMA) via zoekresultaten. Graag één keer naast de FOD-pagina leggen.",
     "Eén site (brokertax.be) vermeldt een tarief dat 'sinds 2 juni 2026' van 0,15% naar 0,30% zou gaan. Andere bronnen bevestigen geen TOB-wijziging in 2026, dus dit gaat waarschijnlijk over een andere taks (bv. de effectentaks). Even checken of er in 2026 iets aan de TOB veranderd is.",
-    "Uitspraak: 'TOB' wordt als T-O-B uitgesproken. Luister of dat natuurlijk klinkt."
+    "Uitspraak: stem Andrew (multilingual) spreekt Nederlands, geen Vlaams. Luister vooral of de bedragen (0,35%, €2.000) en 'TOB' juist uitgesproken worden."
   ]
 }

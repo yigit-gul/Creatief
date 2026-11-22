@@ -10,124 +10,135 @@ Style: Sub,Inter Black,84,&H00FAF6F4,&H000000FF,&H00101010,&H80000000,0,0,0,0,10
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.10,0:00:00.46,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Wist{\c} je dat
-Dialogue: 0,0:00:00.46,0:00:00.55,Sub,,0,0,0,,{\an5\pos(505,1440)}Wist {\c&H003FD2FF}je{\c} dat
-Dialogue: 0,0:00:00.55,0:00:00.71,Sub,,0,0,0,,{\an5\pos(505,1440)}Wist je {\c&H003FD2FF}dat{\c}
-Dialogue: 0,0:00:00.71,0:00:00.79,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}je{\c} belasting betaalt
-Dialogue: 0,0:00:00.79,0:00:01.21,Sub,,0,0,0,,{\an5\pos(505,1440)}je {\c&H003FD2FF}belasting{\c} betaalt
-Dialogue: 0,0:00:01.21,0:00:01.56,Sub,,0,0,0,,{\an5\pos(505,1440)}je belasting {\c&H003FD2FF}betaalt{\c}
-Dialogue: 0,0:00:01.56,0:00:01.90,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}telkens{\c} je aandelen
-Dialogue: 0,0:00:01.90,0:00:01.98,Sub,,0,0,0,,{\an5\pos(505,1440)}telkens {\c&H003FD2FF}je{\c} aandelen
-Dialogue: 0,0:00:01.98,0:00:02.46,Sub,,0,0,0,,{\an5\pos(505,1440)}telkens je {\c&H003FD2FF}aandelen{\c}
-Dialogue: 0,0:00:02.46,0:00:02.66,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}of{\c} ETF's koopt
-Dialogue: 0,0:00:02.66,0:00:03.15,Sub,,0,0,0,,{\an5\pos(505,1440)}of {\c&H003FD2FF}ETF's{\c} koopt
-Dialogue: 0,0:00:03.15,0:00:03.42,Sub,,0,0,0,,{\an5\pos(505,1440)}of ETF's {\c&H003FD2FF}koopt{\c}
-Dialogue: 0,0:00:03.42,0:00:03.53,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}én{\c} verkoopt
-Dialogue: 0,0:00:03.53,0:00:04.60,Sub,,0,0,0,,{\an5\pos(505,1440)}én {\c&H003FD2FF}verkoopt{\c}
-Dialogue: 0,0:00:04.78,0:00:05.09,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Ook{\c} als je
-Dialogue: 0,0:00:05.09,0:00:05.26,Sub,,0,0,0,,{\an5\pos(505,1440)}Ook {\c&H003FD2FF}als{\c} je
-Dialogue: 0,0:00:05.26,0:00:05.31,Sub,,0,0,0,,{\an5\pos(505,1440)}Ook als {\c&H003FD2FF}je{\c}
-Dialogue: 0,0:00:05.31,0:00:05.65,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}verlies{\c} maakt
-Dialogue: 0,0:00:05.65,0:00:06.62,Sub,,0,0,0,,{\an5\pos(505,1440)}verlies {\c&H003FD2FF}maakt{\c}
-Dialogue: 0,0:00:07.16,0:00:07.41,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Dat{\c} is de
-Dialogue: 0,0:00:07.41,0:00:07.55,Sub,,0,0,0,,{\an5\pos(505,1440)}Dat {\c&H003FD2FF}is{\c} de
-Dialogue: 0,0:00:07.55,0:00:07.65,Sub,,0,0,0,,{\an5\pos(505,1440)}Dat is {\c&H003FD2FF}de{\c}
-Dialogue: 0,0:00:07.65,0:00:08.33,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}TOB.{\c}
-Dialogue: 0,0:00:08.33,0:00:08.45,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}de{\c} taks op
-Dialogue: 0,0:00:08.45,0:00:08.72,Sub,,0,0,0,,{\an5\pos(505,1440)}de {\c&H003FD2FF}taks{\c} op
-Dialogue: 0,0:00:08.72,0:00:08.83,Sub,,0,0,0,,{\an5\pos(505,1440)}de taks {\c&H003FD2FF}op{\c}
-Dialogue: 0,0:00:08.83,0:00:08.95,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}de{\c} beursverrichtingen
-Dialogue: 0,0:00:08.95,0:00:10.18,Sub,,0,0,0,,{\an5\pos(505,1440)}de {\c&H003FD2FF}beursverrichtingen{\c}
-Dialogue: 0,0:00:10.48,0:00:10.63,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Je{\c} betaalt een
-Dialogue: 0,0:00:10.63,0:00:10.94,Sub,,0,0,0,,{\an5\pos(505,1440)}Je {\c&H003FD2FF}betaalt{\c} een
-Dialogue: 0,0:00:10.94,0:00:11.08,Sub,,0,0,0,,{\an5\pos(505,1440)}Je betaalt {\c&H003FD2FF}een{\c}
-Dialogue: 0,0:00:11.08,0:00:11.69,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}percentage{\c} op het
-Dialogue: 0,0:00:11.69,0:00:11.77,Sub,,0,0,0,,{\an5\pos(505,1440)}percentage {\c&H003FD2FF}op{\c} het
-Dialogue: 0,0:00:11.77,0:00:11.87,Sub,,0,0,0,,{\an5\pos(505,1440)}percentage op {\c&H003FD2FF}het{\c}
-Dialogue: 0,0:00:11.87,0:00:12.43,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}bedrag{\c} niet op
-Dialogue: 0,0:00:12.43,0:00:12.66,Sub,,0,0,0,,{\an5\pos(505,1440)}bedrag {\c&H003FD2FF}niet{\c} op
-Dialogue: 0,0:00:12.66,0:00:12.80,Sub,,0,0,0,,{\an5\pos(505,1440)}bedrag niet {\c&H003FD2FF}op{\c}
-Dialogue: 0,0:00:12.80,0:00:12.87,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}je{\c} winst
-Dialogue: 0,0:00:12.87,0:00:13.87,Sub,,0,0,0,,{\an5\pos(505,1440)}je {\c&H003FD2FF}winst{\c}
-Dialogue: 0,0:00:14.40,0:00:14.59,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Er{\c} zijn drie
-Dialogue: 0,0:00:14.59,0:00:14.78,Sub,,0,0,0,,{\an5\pos(505,1440)}Er {\c&H003FD2FF}zijn{\c} drie
-Dialogue: 0,0:00:14.78,0:00:14.94,Sub,,0,0,0,,{\an5\pos(505,1440)}Er zijn {\c&H003FD2FF}drie{\c}
-Dialogue: 0,0:00:14.94,0:00:15.55,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}tarieven{\c} 0,12% 0,35%
-Dialogue: 0,0:00:15.55,0:00:17.03,Sub,,0,0,0,,{\an5\pos(505,1440)}tarieven {\c&H003FD2FF}0,12%{\c} 0,35%
-Dialogue: 0,0:00:17.03,0:00:18.51,Sub,,0,0,0,,{\an5\pos(505,1440)}tarieven 0,12% {\c&H003FD2FF}0,35%{\c}
-Dialogue: 0,0:00:18.51,0:00:18.75,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}of{\c} 1,32% afhankelijk
-Dialogue: 0,0:00:18.75,0:00:20.41,Sub,,0,0,0,,{\an5\pos(505,1440)}of {\c&H003FD2FF}1,32%{\c} afhankelijk
-Dialogue: 0,0:00:20.41,0:00:20.86,Sub,,0,0,0,,{\an5\pos(505,1440)}of 1,32% {\c&H003FD2FF}afhankelijk{\c}
-Dialogue: 0,0:00:20.86,0:00:20.98,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}van{\c} het product
-Dialogue: 0,0:00:20.98,0:00:21.09,Sub,,0,0,0,,{\an5\pos(505,1440)}van {\c&H003FD2FF}het{\c} product
-Dialogue: 0,0:00:21.09,0:00:22.15,Sub,,0,0,0,,{\an5\pos(505,1440)}van het {\c&H003FD2FF}product{\c}
-Dialogue: 0,0:00:22.33,0:00:22.79,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Telkens{\c} met een
-Dialogue: 0,0:00:22.79,0:00:22.91,Sub,,0,0,0,,{\an5\pos(505,1440)}Telkens {\c&H003FD2FF}met{\c} een
-Dialogue: 0,0:00:22.91,0:00:23.02,Sub,,0,0,0,,{\an5\pos(505,1440)}Telkens met {\c&H003FD2FF}een{\c}
-Dialogue: 0,0:00:23.02,0:00:23.54,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}maximum{\c} per transactie
-Dialogue: 0,0:00:23.54,0:00:23.68,Sub,,0,0,0,,{\an5\pos(505,1440)}maximum {\c&H003FD2FF}per{\c} transactie
-Dialogue: 0,0:00:23.68,0:00:24.83,Sub,,0,0,0,,{\an5\pos(505,1440)}maximum per {\c&H003FD2FF}transactie{\c}
-Dialogue: 0,0:00:25.47,0:00:26.30,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Voorbeeld{\c} je koopt
-Dialogue: 0,0:00:26.30,0:00:26.41,Sub,,0,0,0,,{\an5\pos(505,1440)}Voorbeeld {\c&H003FD2FF}je{\c} koopt
-Dialogue: 0,0:00:26.41,0:00:26.66,Sub,,0,0,0,,{\an5\pos(505,1440)}Voorbeeld je {\c&H003FD2FF}koopt{\c}
-Dialogue: 0,0:00:26.66,0:00:27.09,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}aandelen{\c} voor €2.000
-Dialogue: 0,0:00:27.09,0:00:27.32,Sub,,0,0,0,,{\an5\pos(505,1440)}aandelen {\c&H003FD2FF}voor{\c} €2.000
-Dialogue: 0,0:00:27.32,0:00:28.76,Sub,,0,0,0,,{\an5\pos(505,1440)}aandelen voor {\c&H003FD2FF}€2.000{\c}
-Dialogue: 0,0:00:29.02,0:00:29.25,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Aan{\c} 0,35% is
-Dialogue: 0,0:00:29.25,0:00:30.79,Sub,,0,0,0,,{\an5\pos(505,1440)}Aan {\c&H003FD2FF}0,35%{\c} is
-Dialogue: 0,0:00:30.79,0:00:30.94,Sub,,0,0,0,,{\an5\pos(505,1440)}Aan 0,35% {\c&H003FD2FF}is{\c}
-Dialogue: 0,0:00:30.94,0:00:31.12,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dat{\c} €7
-Dialogue: 0,0:00:31.12,0:00:32.28,Sub,,0,0,0,,{\an5\pos(505,1440)}dat {\c&H003FD2FF}€7{\c}
-Dialogue: 0,0:00:32.56,0:00:33.01,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Later{\c} verkopen voor
-Dialogue: 0,0:00:33.01,0:00:33.43,Sub,,0,0,0,,{\an5\pos(505,1440)}Later {\c&H003FD2FF}verkopen{\c} voor
-Dialogue: 0,0:00:33.43,0:00:33.67,Sub,,0,0,0,,{\an5\pos(505,1440)}Later verkopen {\c&H003FD2FF}voor{\c}
-Dialogue: 0,0:00:33.67,0:00:35.18,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}€2.000{\c}
-Dialogue: 0,0:00:35.43,0:00:35.91,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Opnieuw{\c} €7
-Dialogue: 0,0:00:35.91,0:00:37.12,Sub,,0,0,0,,{\an5\pos(505,1440)}Opnieuw {\c&H003FD2FF}€7{\c}
-Dialogue: 0,0:00:37.40,0:00:37.79,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Samen{\c} €14
-Dialogue: 0,0:00:37.79,0:00:39.14,Sub,,0,0,0,,{\an5\pos(505,1440)}Samen {\c&H003FD2FF}€14{\c}
-Dialogue: 0,0:00:39.78,0:00:40.29,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Belgische{\c} broker
-Dialogue: 0,0:00:40.29,0:00:41.33,Sub,,0,0,0,,{\an5\pos(505,1440)}Belgische {\c&H003FD2FF}broker{\c}
-Dialogue: 0,0:00:41.51,0:00:41.74,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Die{\c} houdt de
-Dialogue: 0,0:00:41.74,0:00:41.96,Sub,,0,0,0,,{\an5\pos(505,1440)}Die {\c&H003FD2FF}houdt{\c} de
-Dialogue: 0,0:00:41.96,0:00:42.07,Sub,,0,0,0,,{\an5\pos(505,1440)}Die houdt {\c&H003FD2FF}de{\c}
-Dialogue: 0,0:00:42.07,0:00:42.53,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}TOB.{\c}
-Dialogue: 0,0:00:42.53,0:00:43.09,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}automatisch{\c} in
-Dialogue: 0,0:00:43.09,0:00:43.91,Sub,,0,0,0,,{\an5\pos(505,1440)}automatisch {\c&H003FD2FF}in{\c}
-Dialogue: 0,0:00:44.12,0:00:44.77,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Buitenlandse{\c} broker die
-Dialogue: 0,0:00:44.77,0:00:45.17,Sub,,0,0,0,,{\an5\pos(505,1440)}Buitenlandse {\c&H003FD2FF}broker{\c} die
-Dialogue: 0,0:00:45.17,0:00:45.27,Sub,,0,0,0,,{\an5\pos(505,1440)}Buitenlandse broker {\c&H003FD2FF}die{\c}
-Dialogue: 0,0:00:45.27,0:00:45.44,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dat{\c} niet doet
-Dialogue: 0,0:00:45.44,0:00:45.62,Sub,,0,0,0,,{\an5\pos(505,1440)}dat {\c&H003FD2FF}niet{\c} doet
-Dialogue: 0,0:00:45.62,0:00:46.53,Sub,,0,0,0,,{\an5\pos(505,1440)}dat niet {\c&H003FD2FF}doet{\c}
-Dialogue: 0,0:00:46.70,0:00:46.96,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Dan{\c} geef je
-Dialogue: 0,0:00:46.96,0:00:47.20,Sub,,0,0,0,,{\an5\pos(505,1440)}Dan {\c&H003FD2FF}geef{\c} je
-Dialogue: 0,0:00:47.20,0:00:47.28,Sub,,0,0,0,,{\an5\pos(505,1440)}Dan geef {\c&H003FD2FF}je{\c}
-Dialogue: 0,0:00:47.28,0:00:47.39,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}ze{\c} zelf aan
-Dialogue: 0,0:00:47.39,0:00:47.69,Sub,,0,0,0,,{\an5\pos(505,1440)}ze {\c&H003FD2FF}zelf{\c} aan
-Dialogue: 0,0:00:47.69,0:00:48.13,Sub,,0,0,0,,{\an5\pos(505,1440)}ze zelf {\c&H003FD2FF}aan{\c}
-Dialogue: 0,0:00:48.13,0:00:48.54,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}uiterlijk{\c} de laatste
-Dialogue: 0,0:00:48.54,0:00:48.61,Sub,,0,0,0,,{\an5\pos(505,1440)}uiterlijk {\c&H003FD2FF}de{\c} laatste
-Dialogue: 0,0:00:48.61,0:00:48.94,Sub,,0,0,0,,{\an5\pos(505,1440)}uiterlijk de {\c&H003FD2FF}laatste{\c}
-Dialogue: 0,0:00:48.94,0:00:49.35,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}werkdag{\c} van de
-Dialogue: 0,0:00:49.35,0:00:49.48,Sub,,0,0,0,,{\an5\pos(505,1440)}werkdag {\c&H003FD2FF}van{\c} de
-Dialogue: 0,0:00:49.48,0:00:49.57,Sub,,0,0,0,,{\an5\pos(505,1440)}werkdag van {\c&H003FD2FF}de{\c}
-Dialogue: 0,0:00:49.57,0:00:49.82,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}tweede{\c} maand na
-Dialogue: 0,0:00:49.82,0:00:50.18,Sub,,0,0,0,,{\an5\pos(505,1440)}tweede {\c&H003FD2FF}maand{\c} na
-Dialogue: 0,0:00:50.18,0:00:50.36,Sub,,0,0,0,,{\an5\pos(505,1440)}tweede maand {\c&H003FD2FF}na{\c}
-Dialogue: 0,0:00:50.36,0:00:50.44,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}je{\c} transactie
-Dialogue: 0,0:00:50.44,0:00:51.61,Sub,,0,0,0,,{\an5\pos(505,1440)}je {\c&H003FD2FF}transactie{\c}
-Dialogue: 0,0:00:52.23,0:00:52.51,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Zo{\c} weet je
-Dialogue: 0,0:00:52.51,0:00:52.74,Sub,,0,0,0,,{\an5\pos(505,1440)}Zo {\c&H003FD2FF}weet{\c} je
-Dialogue: 0,0:00:52.74,0:00:52.82,Sub,,0,0,0,,{\an5\pos(505,1440)}Zo weet {\c&H003FD2FF}je{\c}
-Dialogue: 0,0:00:52.82,0:00:52.96,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}wat{\c} die kleine
-Dialogue: 0,0:00:52.96,0:00:53.08,Sub,,0,0,0,,{\an5\pos(505,1440)}wat {\c&H003FD2FF}die{\c} kleine
-Dialogue: 0,0:00:53.08,0:00:53.38,Sub,,0,0,0,,{\an5\pos(505,1440)}wat die {\c&H003FD2FF}kleine{\c}
-Dialogue: 0,0:00:53.38,0:00:53.66,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}kost{\c} op je
-Dialogue: 0,0:00:53.66,0:00:53.77,Sub,,0,0,0,,{\an5\pos(505,1440)}kost {\c&H003FD2FF}op{\c} je
-Dialogue: 0,0:00:53.77,0:00:53.85,Sub,,0,0,0,,{\an5\pos(505,1440)}kost op {\c&H003FD2FF}je{\c}
-Dialogue: 0,0:00:53.85,0:00:54.33,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}afrekening{\c} is
-Dialogue: 0,0:00:54.33,0:00:55.20,Sub,,0,0,0,,{\an5\pos(505,1440)}afrekening {\c&H003FD2FF}is{\c}
-Dialogue: 0,0:00:55.39,0:00:55.78,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Volg{\c} voor meer
-Dialogue: 0,0:00:55.78,0:00:55.99,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg {\c&H003FD2FF}voor{\c} meer
-Dialogue: 0,0:00:55.99,0:00:56.72,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg voor {\c&H003FD2FF}meer{\c}
+Dialogue: 0,0:00:00.04,0:00:00.17,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Wist{\c} je dat
+Dialogue: 0,0:00:00.17,0:00:00.22,Sub,,0,0,0,,{\an5\pos(505,1440)}Wist {\c&H003FD2FF}je{\c} dat
+Dialogue: 0,0:00:00.22,0:00:00.32,Sub,,0,0,0,,{\an5\pos(505,1440)}Wist je {\c&H003FD2FF}dat{\c}
+Dialogue: 0,0:00:00.32,0:00:00.38,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}je{\c} belasting betaalt
+Dialogue: 0,0:00:00.38,0:00:00.80,Sub,,0,0,0,,{\an5\pos(505,1440)}je {\c&H003FD2FF}belasting{\c} betaalt
+Dialogue: 0,0:00:00.80,0:00:01.28,Sub,,0,0,0,,{\an5\pos(505,1440)}je belasting {\c&H003FD2FF}betaalt{\c}
+Dialogue: 0,0:00:01.28,0:00:01.66,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}telkens{\c} je aandelen
+Dialogue: 0,0:00:01.66,0:00:01.79,Sub,,0,0,0,,{\an5\pos(505,1440)}telkens {\c&H003FD2FF}je{\c} aandelen
+Dialogue: 0,0:00:01.79,0:00:02.33,Sub,,0,0,0,,{\an5\pos(505,1440)}telkens je {\c&H003FD2FF}aandelen{\c}
+Dialogue: 0,0:00:02.33,0:00:02.53,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}of{\c} ETF's koopt
+Dialogue: 0,0:00:02.53,0:00:03.03,Sub,,0,0,0,,{\an5\pos(505,1440)}of {\c&H003FD2FF}ETF's{\c} koopt
+Dialogue: 0,0:00:03.03,0:00:03.81,Sub,,0,0,0,,{\an5\pos(505,1440)}of ETF's {\c&H003FD2FF}koopt{\c}
+Dialogue: 0,0:00:03.81,0:00:03.89,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Én{\c} als je
+Dialogue: 0,0:00:03.89,0:00:04.02,Sub,,0,0,0,,{\an5\pos(505,1440)}Én {\c&H003FD2FF}als{\c} je
+Dialogue: 0,0:00:04.02,0:00:04.11,Sub,,0,0,0,,{\an5\pos(505,1440)}Én als {\c&H003FD2FF}je{\c}
+Dialogue: 0,0:00:04.11,0:00:04.19,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}ze{\c} verkoopt
+Dialogue: 0,0:00:04.19,0:00:05.03,Sub,,0,0,0,,{\an5\pos(505,1440)}ze {\c&H003FD2FF}verkoopt{\c}
+Dialogue: 0,0:00:05.03,0:00:05.33,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Zelfs{\c} als je
+Dialogue: 0,0:00:05.33,0:00:05.44,Sub,,0,0,0,,{\an5\pos(505,1440)}Zelfs {\c&H003FD2FF}als{\c} je
+Dialogue: 0,0:00:05.44,0:00:05.51,Sub,,0,0,0,,{\an5\pos(505,1440)}Zelfs als {\c&H003FD2FF}je{\c}
+Dialogue: 0,0:00:05.51,0:00:05.79,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}verlies{\c} maakt
+Dialogue: 0,0:00:05.79,0:00:06.46,Sub,,0,0,0,,{\an5\pos(505,1440)}verlies {\c&H003FD2FF}maakt{\c}
+Dialogue: 0,0:00:06.46,0:00:06.63,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Da's{\c} de TOB.
+Dialogue: 0,0:00:06.63,0:00:06.74,Sub,,0,0,0,,{\an5\pos(505,1440)}Da's {\c&H003FD2FF}de{\c} TOB.
+Dialogue: 0,0:00:06.74,0:00:07.89,Sub,,0,0,0,,{\an5\pos(505,1440)}Da's de {\c&H003FD2FF}TOB.{\c}
+Dialogue: 0,0:00:07.89,0:00:07.98,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}de{\c} taks op
+Dialogue: 0,0:00:07.98,0:00:08.32,Sub,,0,0,0,,{\an5\pos(505,1440)}de {\c&H003FD2FF}taks{\c} op
+Dialogue: 0,0:00:08.32,0:00:08.44,Sub,,0,0,0,,{\an5\pos(505,1440)}de taks {\c&H003FD2FF}op{\c}
+Dialogue: 0,0:00:08.44,0:00:08.55,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}de{\c} beursverrichtingen
+Dialogue: 0,0:00:08.55,0:00:09.79,Sub,,0,0,0,,{\an5\pos(505,1440)}de {\c&H003FD2FF}beursverrichtingen{\c}
+Dialogue: 0,0:00:09.79,0:00:09.87,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}En{\c} die betaal
+Dialogue: 0,0:00:09.87,0:00:09.99,Sub,,0,0,0,,{\an5\pos(505,1440)}En {\c&H003FD2FF}die{\c} betaal
+Dialogue: 0,0:00:09.99,0:00:10.35,Sub,,0,0,0,,{\an5\pos(505,1440)}En die {\c&H003FD2FF}betaal{\c}
+Dialogue: 0,0:00:10.35,0:00:10.47,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}je{\c} op het
+Dialogue: 0,0:00:10.47,0:00:10.59,Sub,,0,0,0,,{\an5\pos(505,1440)}je {\c&H003FD2FF}op{\c} het
+Dialogue: 0,0:00:10.59,0:00:10.68,Sub,,0,0,0,,{\an5\pos(505,1440)}je op {\c&H003FD2FF}het{\c}
+Dialogue: 0,0:00:10.68,0:00:11.58,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}bedrag{\c}
+Dialogue: 0,0:00:11.58,0:00:12.17,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}hè{\c}
+Dialogue: 0,0:00:12.17,0:00:12.38,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Niet{\c} op je
+Dialogue: 0,0:00:12.38,0:00:12.47,Sub,,0,0,0,,{\an5\pos(505,1440)}Niet {\c&H003FD2FF}op{\c} je
+Dialogue: 0,0:00:12.47,0:00:12.57,Sub,,0,0,0,,{\an5\pos(505,1440)}Niet op {\c&H003FD2FF}je{\c}
+Dialogue: 0,0:00:12.57,0:00:13.24,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}winst{\c}
+Dialogue: 0,0:00:13.24,0:00:13.33,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Er{\c} zijn drie
+Dialogue: 0,0:00:13.33,0:00:13.58,Sub,,0,0,0,,{\an5\pos(505,1440)}Er {\c&H003FD2FF}zijn{\c} drie
+Dialogue: 0,0:00:13.58,0:00:13.89,Sub,,0,0,0,,{\an5\pos(505,1440)}Er zijn {\c&H003FD2FF}drie{\c}
+Dialogue: 0,0:00:13.89,0:00:14.75,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}tarieven{\c}
+Dialogue: 0,0:00:14.75,0:00:16.49,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}0,12%{\c}
+Dialogue: 0,0:00:16.49,0:00:18.14,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}0,35%{\c} of 1,32%
+Dialogue: 0,0:00:18.14,0:00:18.31,Sub,,0,0,0,,{\an5\pos(505,1440)}0,35% {\c&H003FD2FF}of{\c} 1,32%
+Dialogue: 0,0:00:18.31,0:00:20.35,Sub,,0,0,0,,{\an5\pos(505,1440)}0,35% of {\c&H003FD2FF}1,32%{\c}
+Dialogue: 0,0:00:20.35,0:00:20.82,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}afhankelijk{\c} van het
+Dialogue: 0,0:00:20.82,0:00:20.92,Sub,,0,0,0,,{\an5\pos(505,1440)}afhankelijk {\c&H003FD2FF}van{\c} het
+Dialogue: 0,0:00:20.92,0:00:20.99,Sub,,0,0,0,,{\an5\pos(505,1440)}afhankelijk van {\c&H003FD2FF}het{\c}
+Dialogue: 0,0:00:20.99,0:00:21.82,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}product{\c}
+Dialogue: 0,0:00:21.82,0:00:21.91,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}En{\c} telkens met
+Dialogue: 0,0:00:21.91,0:00:22.32,Sub,,0,0,0,,{\an5\pos(505,1440)}En {\c&H003FD2FF}telkens{\c} met
+Dialogue: 0,0:00:22.32,0:00:22.44,Sub,,0,0,0,,{\an5\pos(505,1440)}En telkens {\c&H003FD2FF}met{\c}
+Dialogue: 0,0:00:22.44,0:00:22.51,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}een{\c} maximum per
+Dialogue: 0,0:00:22.51,0:00:23.01,Sub,,0,0,0,,{\an5\pos(505,1440)}een {\c&H003FD2FF}maximum{\c} per
+Dialogue: 0,0:00:23.01,0:00:23.25,Sub,,0,0,0,,{\an5\pos(505,1440)}een maximum {\c&H003FD2FF}per{\c}
+Dialogue: 0,0:00:23.25,0:00:24.22,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}transactie{\c}
+Dialogue: 0,0:00:24.22,0:00:24.33,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Een{\c} voorbeeldje
+Dialogue: 0,0:00:24.33,0:00:25.29,Sub,,0,0,0,,{\an5\pos(505,1440)}Een {\c&H003FD2FF}voorbeeldje{\c}
+Dialogue: 0,0:00:25.29,0:00:25.35,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Je{\c} koopt aandelen
+Dialogue: 0,0:00:25.35,0:00:25.65,Sub,,0,0,0,,{\an5\pos(505,1440)}Je {\c&H003FD2FF}koopt{\c} aandelen
+Dialogue: 0,0:00:25.65,0:00:26.14,Sub,,0,0,0,,{\an5\pos(505,1440)}Je koopt {\c&H003FD2FF}aandelen{\c}
+Dialogue: 0,0:00:26.14,0:00:26.25,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}voor{\c} €2.000
+Dialogue: 0,0:00:26.25,0:00:27.69,Sub,,0,0,0,,{\an5\pos(505,1440)}voor {\c&H003FD2FF}€2.000{\c}
+Dialogue: 0,0:00:27.69,0:00:27.82,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Aan{\c} 0,35% is
+Dialogue: 0,0:00:27.82,0:00:29.34,Sub,,0,0,0,,{\an5\pos(505,1440)}Aan {\c&H003FD2FF}0,35%{\c} is
+Dialogue: 0,0:00:29.34,0:00:29.43,Sub,,0,0,0,,{\an5\pos(505,1440)}Aan 0,35% {\c&H003FD2FF}is{\c}
+Dialogue: 0,0:00:29.43,0:00:29.55,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dat{\c} €7
+Dialogue: 0,0:00:29.55,0:00:30.76,Sub,,0,0,0,,{\an5\pos(505,1440)}dat {\c&H003FD2FF}€7{\c}
+Dialogue: 0,0:00:30.76,0:00:31.12,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Verkoop{\c} je later
+Dialogue: 0,0:00:31.12,0:00:31.22,Sub,,0,0,0,,{\an5\pos(505,1440)}Verkoop {\c&H003FD2FF}je{\c} later
+Dialogue: 0,0:00:31.22,0:00:31.58,Sub,,0,0,0,,{\an5\pos(505,1440)}Verkoop je {\c&H003FD2FF}later{\c}
+Dialogue: 0,0:00:31.58,0:00:31.69,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}ook{\c} voor €2.000
+Dialogue: 0,0:00:31.69,0:00:31.81,Sub,,0,0,0,,{\an5\pos(505,1440)}ook {\c&H003FD2FF}voor{\c} €2.000
+Dialogue: 0,0:00:31.81,0:00:33.09,Sub,,0,0,0,,{\an5\pos(505,1440)}ook voor {\c&H003FD2FF}€2.000{\c}
+Dialogue: 0,0:00:33.09,0:00:33.18,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Dan{\c} betaal je
+Dialogue: 0,0:00:33.18,0:00:33.49,Sub,,0,0,0,,{\an5\pos(505,1440)}Dan {\c&H003FD2FF}betaal{\c} je
+Dialogue: 0,0:00:33.49,0:00:33.56,Sub,,0,0,0,,{\an5\pos(505,1440)}Dan betaal {\c&H003FD2FF}je{\c}
+Dialogue: 0,0:00:33.56,0:00:33.75,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}nog{\c} eens €7
+Dialogue: 0,0:00:33.75,0:00:34.04,Sub,,0,0,0,,{\an5\pos(505,1440)}nog {\c&H003FD2FF}eens{\c} €7
+Dialogue: 0,0:00:34.04,0:00:35.13,Sub,,0,0,0,,{\an5\pos(505,1440)}nog eens {\c&H003FD2FF}€7{\c}
+Dialogue: 0,0:00:35.13,0:00:35.51,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Samen{\c} dus €14
+Dialogue: 0,0:00:35.51,0:00:35.73,Sub,,0,0,0,,{\an5\pos(505,1440)}Samen {\c&H003FD2FF}dus{\c} €14
+Dialogue: 0,0:00:35.73,0:00:36.88,Sub,,0,0,0,,{\an5\pos(505,1440)}Samen dus {\c&H003FD2FF}€14{\c}
+Dialogue: 0,0:00:36.88,0:00:37.45,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Belgische{\c} broker
+Dialogue: 0,0:00:37.45,0:00:38.41,Sub,,0,0,0,,{\an5\pos(505,1440)}Belgische {\c&H003FD2FF}broker{\c}
+Dialogue: 0,0:00:38.41,0:00:38.54,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Dan{\c} wordt de
+Dialogue: 0,0:00:38.54,0:00:38.67,Sub,,0,0,0,,{\an5\pos(505,1440)}Dan {\c&H003FD2FF}wordt{\c} de
+Dialogue: 0,0:00:38.67,0:00:38.76,Sub,,0,0,0,,{\an5\pos(505,1440)}Dan wordt {\c&H003FD2FF}de{\c}
+Dialogue: 0,0:00:38.76,0:00:39.61,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}TOB.{\c}
+Dialogue: 0,0:00:39.61,0:00:40.45,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}automatisch{\c} ingehouden
+Dialogue: 0,0:00:40.45,0:00:41.43,Sub,,0,0,0,,{\an5\pos(505,1440)}automatisch {\c&H003FD2FF}ingehouden{\c}
+Dialogue: 0,0:00:41.43,0:00:42.00,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Buitenlandse{\c} broker
+Dialogue: 0,0:00:42.00,0:00:42.87,Sub,,0,0,0,,{\an5\pos(505,1440)}Buitenlandse {\c&H003FD2FF}broker{\c}
+Dialogue: 0,0:00:42.87,0:00:43.06,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Niet{\c} altijd
+Dialogue: 0,0:00:43.06,0:00:43.97,Sub,,0,0,0,,{\an5\pos(505,1440)}Niet {\c&H003FD2FF}altijd{\c}
+Dialogue: 0,0:00:43.97,0:00:44.11,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Dan{\c} geef je
+Dialogue: 0,0:00:44.11,0:00:44.36,Sub,,0,0,0,,{\an5\pos(505,1440)}Dan {\c&H003FD2FF}geef{\c} je
+Dialogue: 0,0:00:44.36,0:00:44.43,Sub,,0,0,0,,{\an5\pos(505,1440)}Dan geef {\c&H003FD2FF}je{\c}
+Dialogue: 0,0:00:44.43,0:00:44.53,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}ze{\c} zelf aan
+Dialogue: 0,0:00:44.53,0:00:44.97,Sub,,0,0,0,,{\an5\pos(505,1440)}ze {\c&H003FD2FF}zelf{\c} aan
+Dialogue: 0,0:00:44.97,0:00:45.59,Sub,,0,0,0,,{\an5\pos(505,1440)}ze zelf {\c&H003FD2FF}aan{\c}
+Dialogue: 0,0:00:45.59,0:00:45.72,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}ten{\c} laatste de
+Dialogue: 0,0:00:45.72,0:00:46.11,Sub,,0,0,0,,{\an5\pos(505,1440)}ten {\c&H003FD2FF}laatste{\c} de
+Dialogue: 0,0:00:46.11,0:00:46.18,Sub,,0,0,0,,{\an5\pos(505,1440)}ten laatste {\c&H003FD2FF}de{\c}
+Dialogue: 0,0:00:46.18,0:00:46.61,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}laatste{\c} werkdag van
+Dialogue: 0,0:00:46.61,0:00:47.04,Sub,,0,0,0,,{\an5\pos(505,1440)}laatste {\c&H003FD2FF}werkdag{\c} van
+Dialogue: 0,0:00:47.04,0:00:47.16,Sub,,0,0,0,,{\an5\pos(505,1440)}laatste werkdag {\c&H003FD2FF}van{\c}
+Dialogue: 0,0:00:47.16,0:00:47.23,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}de{\c} tweede maand
+Dialogue: 0,0:00:47.23,0:00:47.58,Sub,,0,0,0,,{\an5\pos(505,1440)}de {\c&H003FD2FF}tweede{\c} maand
+Dialogue: 0,0:00:47.58,0:00:47.87,Sub,,0,0,0,,{\an5\pos(505,1440)}de tweede {\c&H003FD2FF}maand{\c}
+Dialogue: 0,0:00:47.87,0:00:48.01,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}na{\c} je transactie
+Dialogue: 0,0:00:48.01,0:00:48.10,Sub,,0,0,0,,{\an5\pos(505,1440)}na {\c&H003FD2FF}je{\c} transactie
+Dialogue: 0,0:00:48.10,0:00:48.99,Sub,,0,0,0,,{\an5\pos(505,1440)}na je {\c&H003FD2FF}transactie{\c}
+Dialogue: 0,0:00:48.99,0:00:49.62,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Zo{\c}
+Dialogue: 0,0:00:49.62,0:00:49.81,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}nu{\c} weet je
+Dialogue: 0,0:00:49.81,0:00:50.02,Sub,,0,0,0,,{\an5\pos(505,1440)}nu {\c&H003FD2FF}weet{\c} je
+Dialogue: 0,0:00:50.02,0:00:50.11,Sub,,0,0,0,,{\an5\pos(505,1440)}nu weet {\c&H003FD2FF}je{\c}
+Dialogue: 0,0:00:50.11,0:00:50.36,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}wat{\c} dat kostje
+Dialogue: 0,0:00:50.36,0:00:50.50,Sub,,0,0,0,,{\an5\pos(505,1440)}wat {\c&H003FD2FF}dat{\c} kostje
+Dialogue: 0,0:00:50.50,0:00:50.86,Sub,,0,0,0,,{\an5\pos(505,1440)}wat dat {\c&H003FD2FF}kostje{\c}
+Dialogue: 0,0:00:50.86,0:00:50.96,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}op{\c} je afrekening
+Dialogue: 0,0:00:50.96,0:00:51.07,Sub,,0,0,0,,{\an5\pos(505,1440)}op {\c&H003FD2FF}je{\c} afrekening
+Dialogue: 0,0:00:51.07,0:00:51.68,Sub,,0,0,0,,{\an5\pos(505,1440)}op je {\c&H003FD2FF}afrekening{\c}
+Dialogue: 0,0:00:51.68,0:00:52.27,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}is{\c}
+Dialogue: 0,0:00:52.27,0:00:52.55,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Volg{\c} voor meer
+Dialogue: 0,0:00:52.55,0:00:52.73,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg {\c&H003FD2FF}voor{\c} meer
+Dialogue: 0,0:00:52.73,0:00:53.47,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg voor {\c&H003FD2FF}meer{\c}

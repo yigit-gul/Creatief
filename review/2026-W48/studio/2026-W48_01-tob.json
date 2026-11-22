@@ -4,15 +4,15 @@
  "title": "De beurstaks (TOB): wat betaal je bij elke transactie?",
  "validity": "Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, geen inkomstenbelasting: er is geen aanslagjaar)",
  "status": "klaar voor review",
- "durationSec": 59.8,
- "words": 121,
+ "durationSec": 55.4,
+ "words": 132,
  "script": [
-  "Wist je dat je belasting betaalt telkens je aandelen of ETF's koopt én verkoopt? Ook als je verlies maakt.",
-  "Dat is de TOB, de taks op de beursverrichtingen. Je betaalt een percentage op het bedrag, niet op je winst.",
-  "Er zijn drie tarieven: 0,12%, 0,35% of 1,32%, afhankelijk van het product. Telkens met een maximum per transactie.",
-  "Voorbeeld: je koopt aandelen voor €2.000. Aan 0,35% is dat €7. Later verkopen voor €2.000? Opnieuw €7. Samen €14.",
-  "Belgische broker? Die houdt de TOB automatisch in. Buitenlandse broker die dat niet doet? Dan geef je ze zelf aan, uiterlijk de laatste werkdag van de tweede maand na je transactie.",
-  "Zo weet je wat die kleine kost op je afrekening is. Volg voor meer!"
+  "Wist je dat je belasting betaalt telkens je aandelen of ETF's koopt? Én als je ze verkoopt. Zelfs als je verlies maakt.",
+  "Da's de TOB, de taks op de beursverrichtingen. En die betaal je op het bedrag, hè. Niet op je winst.",
+  "Er zijn drie tarieven: 0,12%, 0,35% of 1,32%, afhankelijk van het product. En telkens met een maximum per transactie.",
+  "Een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% is dat €7. Verkoop je later ook voor €2.000? Dan betaal je nog eens €7. Samen dus €14.",
+  "Belgische broker? Dan wordt de TOB automatisch ingehouden. Buitenlandse broker? Niet altijd. Dan geef je ze zelf aan, ten laatste de laatste werkdag van de tweede maand na je transactie.",
+  "Zo, nu weet je wat dat kostje op je afrekening is. Volg voor meer!"
  ],
  "caption": "Elke keer je aandelen of ETF's koopt of verkoopt, betaal je beurstaks (TOB). Hoe werkt dat, en wat als je broker in het buitenland zit? 💸 Tarieven 2026.\n\nAlgemene info, geen persoonlijk advies.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
  "hashtags": [
@@ -117,23 +117,23 @@
  "warnings": [
   "De officiële pagina van FOD Financiën (financien.belgium.be) is vanuit deze omgeving niet bereikbaar. De cijfers komen van Wikifin (FSMA) via zoekresultaten. Graag één keer naast de FOD-pagina leggen.",
   "Eén site (brokertax.be) vermeldt een tarief dat 'sinds 2 juni 2026' van 0,15% naar 0,30% zou gaan. Andere bronnen bevestigen geen TOB-wijziging in 2026, dus dit gaat waarschijnlijk over een andere taks (bv. de effectentaks). Even checken of er in 2026 iets aan de TOB veranderd is.",
-  "Uitspraak: 'TOB' wordt als T-O-B uitgesproken. Luister of dat natuurlijk klinkt."
+  "Uitspraak: stem Andrew (multilingual) spreekt Nederlands, geen Vlaams. Luister vooral of de bedragen (0,35%, €2.000) en 'TOB' juist uitgesproken worden."
  ],
  "checks": [
   {
    "name": "Woordenaantal 90-140",
    "ok": true,
-   "info": "121 woorden"
+   "info": "132 woorden"
   },
   {
    "name": "Duur 30-60 s",
    "ok": true,
-   "info": "59.8 s"
+   "info": "55.4 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
    "ok": true,
-   "info": "19 woorden"
+   "info": "22 woorden"
   },
   {
    "name": "Laatste scène is outro met disclaimer",
@@ -167,5 +167,5 @@
   }
  ],
  "repoPath": "review/2026-W48/01-tob.mp4",
- "videoUrl": "/_blob/1ebfcbe85baf86edf2b1d27f56d5e929"
+ "videoUrl": "/_blob/8a48240a3a26fc22cdc8626705d56a2f"
 }

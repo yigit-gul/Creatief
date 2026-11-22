@@ -8,6 +8,7 @@ import json
 import os
 import re
 import subprocess
+import time
 from pathlib import Path
 
 import edge_tts
@@ -34,8 +35,19 @@ def display_text(text: str) -> str:
     return PRON.sub(lambda m: m.group(1), text)
 
 
+SENT_END = re.compile(r"(?<=[a-zà-ÿ0-9%€])[.!](?=\s)")
+
+
+def flowing(text: str) -> str:
+    """Punten en uitroeptekens midden in een scène worden komma's: de stem leest dan niet
+    zin per zin met een lange pauze, maar praat door zoals in een TikTok. Vraagtekens blijven
+    (intonatie), afkortingen zoals T.O.B. blijven ongemoeid."""
+    return SENT_END.sub(",", text) if config.FLOW_SENTENCES else text
+
+
 async def _synth(text: str, out_mp3: Path):
     spoken, mapping = split_pronunciation(text)
+    spoken = flowing(spoken)
     proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
     com = edge_tts.Communicate(
         spoken, config.VOICE, rate=config.VOICE_RATE, pitch=config.VOICE_PITCH,
@@ -79,9 +91,18 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
             try:
                 words = asyncio.run(_synth(scene["say"], mp3))
                 break
-            except Exception:  # netwerkhapering: opnieuw proberen
+            except Exception as e:  # netwerkhapering: opnieuw proberen
+                print(f"  scène {i}: poging {attempt + 1} mislukt ({type(e).__name__})", flush=True)
                 if attempt == 3:
                     raise
+                time.sleep(2 + 3 * attempt)
+        if words:  # stilte voor het eerste en na het laatste woord wegknippen
+            a, b = max(0.0, words[0]["start"] - 0.04), words[-1]["end"] + 0.10
+            trimmed = mp3.with_suffix(".trim.mp3")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), "-ss", f"{a:.3f}",
+                            "-to", f"{b:.3f}", "-c:a", "libmp3lame", "-q:a", "2", str(trimmed)], check=True)
+            trimmed.replace(mp3)
+            words = [{**w, "start": w["start"] - a, "end": w["end"] - a} for w in words]
         d = duration(mp3)
         timeline.append({"start": t, "end": t + d})
         all_words += [{**w, "start": w["start"] + t, "end": w["end"] + t} for w in words]
