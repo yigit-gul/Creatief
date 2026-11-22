@@ -1,0 +1,269 @@
+<title>Fiscaal Fluitje Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: studio-console — run tracker bovenaan, videokaarten in raster, detailpaneel rechts (op gsm eronder) */
+:root {
+  --bg: #F3F6F9; --surface: #FFFFFF; --surface-2: #E9EEF4; --line: #D5DEE8;
+  --fg: #0E1A2B; --muted: #5B6B80; --accent: #0FA678; --accent-ink: #FFFFFF;
+  --num: #B58300; --ok: #0F9D6B; --warn: #C27A00; --bad: #D64545; --info: #2F6FD6;
+  --font-display: "Inter", system-ui, sans-serif; --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --r: 14px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0E1A2B; --surface: #15243A; --surface-2: #1B2C44; --line: #2A3F5E;
+  --fg: #F4F6FA; --muted: #93A3B8; --accent: #2EE6A6; --accent-ink: #0E1A2B;
+  --num: #FFD23F; --ok: #2EE6A6; --warn: #FFB547; --bad: #FF6B6B; --info: #7FB2FF; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0E1A2B; --surface: #15243A; --surface-2: #1B2C44; --line: #2A3F5E;
+  --fg: #F4F6FA; --muted: #93A3B8; --accent: #2EE6A6; --accent-ink: #0E1A2B;
+  --num: #FFD23F; --ok: #2EE6A6; --warn: #FFB547; --bad: #FF6B6B; --info: #7FB2FF; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--font-body); }
+.wrap { max-width: 1240px; margin: 0 auto; padding-block: 24px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 24px }
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px }
+.brand { display: flex; align-items: center; gap: 12px }
+.brand .mark { width: 12px; height: 34px; border-radius: 4px; background: var(--accent) }
+.brand h1 { margin: 0; font: 900 24px/1.1 var(--font-display); letter-spacing: -0.02em }
+.brand p { margin: 0; color: var(--muted); font-size: 13px }
+select, button, textarea { font: inherit; color: inherit }
+select { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px }
+button { cursor: pointer; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); padding: 8px 14px; font-weight: 600 }
+button:hover { border-color: var(--accent) }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+h2 { margin: 0 0 12px; font: 800 13px/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted) }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 20px }
+.run-head { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; margin-bottom: 18px }
+.run-head strong { font: 800 20px/1.2 var(--font-display) }
+.run-head span { color: var(--muted); font-size: 13px }
+.steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; list-style: none; margin: 0; padding: 0 }
+.step { position: relative; padding: 12px; border-radius: 12px; background: var(--surface-2); min-width: 0 }
+.step .dot { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font: 800 13px var(--font-body);
+  background: var(--line); color: var(--muted); margin-bottom: 8px }
+.step b { display: block; font-size: 14px }
+.step small { display: block; color: var(--muted); font-size: 12px; overflow-wrap: anywhere }
+.step[data-state="done"] .dot { background: var(--ok); color: var(--accent-ink) }
+.step[data-state="doing"] .dot { background: var(--info); color: #fff; animation: pulse 1.4s infinite }
+.step[data-state="warn"] .dot { background: var(--warn); color: #1a1200 }
+.step[data-state="error"] .dot { background: var(--bad); color: #fff }
+@keyframes pulse { 50% { box-shadow: 0 0 0 6px color-mix(in srgb, var(--info) 25%, transparent) } }
+@media (prefers-reduced-motion: reduce) { .step[data-state="doing"] .dot { animation: none } }
+.log { margin-top: 16px; max-height: 220px; overflow: auto; font: 12.5px/1.55 var(--font-mono); background: var(--bg);
+  border-radius: 10px; padding: 10px 12px; border: 1px solid var(--line) }
+.log div { display: grid; grid-template-columns: 52px 1fr; gap: 10px }
+.log time { color: var(--muted) }
+.log .warn { color: var(--warn) } .log .error { color: var(--bad) }
+
+.main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 24px; align-items: start }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px }
+.card { text-align: left; padding: 0; overflow: hidden; display: grid; grid-template-rows: auto 1fr; border-radius: var(--r); background: var(--surface) }
+.card[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) }
+.thumb { aspect-ratio: 9/16; max-height: 300px; width: 100%; background: #0E1A2B; display: grid; place-items: center; overflow: hidden }
+.thumb video { width: 100%; height: 100%; object-fit: cover; pointer-events: none }
+.thumb .ph { color: #93A3B8; font-size: 12px; padding: 12px; text-align: center }
+.card .meta { padding: 12px 14px; display: grid; gap: 8px; min-width: 0 }
+.card .meta b { font-size: 14px; line-height: 1.3; text-wrap: balance }
+.row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center }
+.pill { font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 99px; background: var(--surface-2); color: var(--muted); white-space: nowrap }
+.pill.s-review { background: color-mix(in srgb, var(--info) 18%, transparent); color: var(--info) }
+.pill.s-ok { background: color-mix(in srgb, var(--ok) 18%, transparent); color: var(--ok) }
+.pill.s-planned { background: color-mix(in srgb, var(--num) 20%, transparent); color: var(--num) }
+.pill.s-bad { background: color-mix(in srgb, var(--bad) 18%, transparent); color: var(--bad) }
+.pill.warn { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn) }
+.num { font-variant-numeric: tabular-nums }
+
+.detail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); display: grid; gap: 18px; min-width: 0 }
+.detail video { width: 100%; max-width: 100%; max-height: 62vh; aspect-ratio: 9/16; background: #000; border-radius: 12px; display: block; margin: 0 auto }
+.detail h3 { margin: 0; font: 800 19px/1.25 var(--font-display); text-wrap: balance }
+.sec { display: grid; gap: 8px; min-width: 0 }
+.sec > span { font: 800 12px/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted) }
+.script p { margin: 0 0 6px; padding-left: 10px; border-left: 3px solid var(--line) }
+ul.plain { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px }
+ul.plain li { display: grid; grid-template-columns: 22px 1fr; gap: 6px; font-size: 14px; min-width: 0 }
+ul.plain li > div { min-width: 0; overflow-wrap: anywhere }
+ul.plain small { color: var(--muted); display: block }
+a { color: var(--info) }
+pre.caption { white-space: pre-wrap; margin: 0; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 12px; font: 13.5px/1.5 var(--font-body) }
+.status-pick { display: flex; flex-wrap: wrap; gap: 6px }
+.status-pick button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 10px; resize: vertical }
+.hint { color: var(--muted); font-size: 13px }
+.empty { padding: 32px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: var(--r) }
+.banner { padding: 10px 14px; border-radius: 10px; background: color-mix(in srgb, var(--warn) 15%, transparent); color: var(--fg); font-size: 14px }
+@media (max-width: 900px) { .main { grid-template-columns: 1fr } .detail { position: static } }
+@media (max-width: 640px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)) } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand"><div class="mark"></div><div><h1>Fiscaal Fluitje Studio</h1><p>Wat Claude doet, en wat er klaarstaat om na te kijken</p></div></div>
+    <label class="row"><span class="hint">Week</span> <select id="week" aria-label="Kies een week"></select></label>
+  </header>
+  <div id="banner" class="banner" hidden></div>
+
+  <section class="panel" aria-labelledby="run-title">
+    <h2 id="run-title">Pipeline</h2>
+    <div class="run-head"><strong id="run-label">Gegevens laden…</strong><span id="run-when"></span></div>
+    <ol class="steps" id="steps"></ol>
+    <div class="log" id="log" aria-live="polite"></div>
+  </section>
+
+  <div class="main">
+    <section aria-labelledby="vid-title">
+      <h2 id="vid-title">Video's</h2>
+      <div class="grid" id="grid"></div>
+    </section>
+    <aside class="panel detail" id="detail" aria-live="polite"><p class="hint">Kies een video om het script, de bronnen en de caption te zien.</p></aside>
+  </div>
+</div>
+
+<script>
+const STEPS = [
+  ["onderwerpen", "Onderwerpen"], ["scripts", "Scripts"], ["audio", "Voice-over"], ["video", "Video's"], ["review", "Review klaar"]
+];
+const STATUSES = [
+  ["klaar voor review", "s-review"], ["nagekeken", "s-ok"], ["ingepland", "s-planned"], ["afgekeurd", "s-bad"]
+];
+const $ = (s) => document.querySelector(s);
+const el = (tag, props = {}, kids = []) => { const e = Object.assign(document.createElement(tag), props); for (const k of [].concat(kids)) if (k != null) e.append(k); return e; };
+const fmtTime = (iso) => { try { return new Date(iso).toLocaleString("nl-BE", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }); } catch { return iso || ""; } };
+const hhmm = (iso) => { try { return new Date(iso).toLocaleTimeString("nl-BE", { hour: "2-digit", minute: "2-digit" }); } catch { return ""; } };
+
+let db = null, runs = {}, videos = [], week = null, selected = null, canWrite = true;
+try { week = localStorage.getItem("ff-week"); } catch {}
+
+function render() {
+  const weeks = [...new Set([...Object.keys(runs), ...videos.map(v => v.week)])].sort().reverse();
+  if (!week || !weeks.includes(week)) week = weeks[0] || null;
+  const sel = $("#week"); sel.replaceChildren(...weeks.map(w => el("option", { value: w, textContent: w, selected: w === week })));
+  renderRun(); renderGrid(); renderDetail();
+}
+
+function renderRun() {
+  const r = runs[week];
+  if (!r) {
+    $("#run-label").textContent = week ? `Geen run gevonden voor ${week}` : "Nog geen runs";
+    $("#run-when").textContent = "Elke zondagavond start Claude hier een nieuwe week.";
+    $("#steps").replaceChildren(...STEPS.map(([k, l], i) => stepEl(i, l, "todo", "")));
+    $("#log").replaceChildren(el("div", {}, [el("time"), el("span", { textContent: "Zodra een run start, verschijnt hier elke stap." })]));
+    return;
+  }
+  const stateTxt = { bezig: "Bezig", klaar: "Klaar", fout: "Gestopt met fout" }[r.state] || r.state;
+  $("#run-label").textContent = `${r.label || r.week} · ${stateTxt}`;
+  $("#run-when").textContent = (r.startedAt ? "Gestart " + fmtTime(r.startedAt) : "") + (r.finishedAt ? " · klaar " + fmtTime(r.finishedAt) : "");
+  const byKey = Object.fromEntries((r.steps || []).map(s => [s.key, s]));
+  $("#steps").replaceChildren(...STEPS.map(([k, l], i) => { const s = byKey[k] || {}; return stepEl(i, l, s.state || "todo", s.detail || ""); }));
+  const log = (r.log || []).slice(-200);
+  $("#log").replaceChildren(...log.map(x => el("div", { className: x.level || "" }, [el("time", { textContent: hhmm(x.at) }), el("span", { textContent: x.msg })])));
+  $("#log").scrollTop = $("#log").scrollHeight;
+}
+function stepEl(i, label, state, detail) {
+  const li = stepLi(i, label, state, detail); li.dataset.state = state; return li;
+}
+function stepLi(i, label, state, detail) {
+  const icon = { done: "✓", warn: "!", error: "×" }[state] || String(i + 1);
+  return el("li", { className: "step" }, [el("div", { className: "dot", textContent: icon }), el("b", { textContent: label }), el("small", { textContent: detail || ({ todo: "Nog niet gestart", doing: "Bezig…" }[state] || "") })]);
+}
+
+function statusClass(s) { return (STATUSES.find(x => x[0] === s) || [, ""])[1]; }
+
+function renderGrid() {
+  const list = videos.filter(v => v.week === week).sort((a, b) => a.id.localeCompare(b.id));
+  if (!list.length) { $("#grid").replaceChildren(el("div", { className: "empty", textContent: "Nog geen video's voor deze week. Ze verschijnen hier zodra de review klaar is." })); return; }
+  $("#grid").replaceChildren(...list.map(v => {
+    const warns = (v.claims || []).filter(c => c.status !== "ok").length + (v.warnings || []).length;
+    const okc = (v.checks || []).filter(c => c.ok).length;
+    const thumb = el("div", { className: "thumb" }, v.videoUrl
+      ? el("video", { src: v.videoUrl + "#t=1.5", muted: true, preload: "metadata", playsInline: true, ariaHidden: "true" })
+      : el("div", { className: "ph", textContent: "Video in productie" }));
+    const b = el("button", { className: "card", ariaPressed: String(selected === v._key) }, [thumb, el("div", { className: "meta" }, [
+      el("b", { textContent: v.title }),
+      el("div", { className: "row" }, [
+        el("span", { className: "pill " + statusClass(v.status), textContent: v.status || "in productie" }),
+        warns ? el("span", { className: "pill warn", textContent: `⚠️ ${warns}` }) : null,
+        v.checks ? el("span", { className: "pill num", textContent: `${okc}/${v.checks.length} checks` }) : null,
+        v.durationSec ? el("span", { className: "pill num", textContent: `${Math.round(v.durationSec)} s` }) : null,
+      ])])]);
+    b.addEventListener("click", () => { selected = v._key; renderGrid(); renderDetail(); });
+    return b;
+  }));
+}
+
+function renderDetail() {
+  const v = videos.find(x => x._key === selected && x.week === week);
+  const d = $("#detail");
+  if (!v) { d.replaceChildren(el("p", { className: "hint", textContent: "Kies een video om het script, de bronnen en de caption te zien." })); return; }
+  const kids = [];
+  if (v.videoUrl) kids.push(el("video", { src: v.videoUrl, controls: true, playsInline: true, preload: "metadata" }));
+  kids.push(el("h3", { textContent: v.title }));
+  if (v.validity) kids.push(el("p", { className: "hint", textContent: v.validity, style: "margin:0" }));
+
+  // status
+  const pick = el("div", { className: "status-pick" }, STATUSES.map(([s]) => {
+    const bt = el("button", { textContent: s, ariaPressed: String(v.status === s), disabled: !canWrite });
+    bt.addEventListener("click", () => save(v, { status: s }));
+    return bt;
+  }));
+  kids.push(el("div", { className: "sec" }, [el("span", { textContent: "Status" }), pick]));
+
+  // warnings + claims
+  const warnItems = [...(v.warnings || []).map(w => ({ icon: "⚠️", text: w }))];
+  if (warnItems.length) kids.push(el("div", { className: "sec" }, [el("span", { textContent: "Aandachtspunten" }),
+    el("ul", { className: "plain" }, warnItems.map(w => el("li", {}, [el("span", { textContent: w.icon }), el("div", { textContent: w.text })])))]));
+
+  kids.push(el("div", { className: "sec script" }, [el("span", { textContent: `Script · ${v.words || "?"} woorden` }), ...(v.script || []).map(t => el("p", { textContent: t }))]));
+
+  kids.push(el("div", { className: "sec" }, [el("span", { textContent: "Bronnen en cijfercontrole" }),
+    el("ul", { className: "plain" }, (v.claims || []).map(c => el("li", {}, [el("span", { textContent: c.status === "ok" ? "✅" : "⚠️" }),
+      el("div", {}, [el("b", { textContent: c.claim }), c.note ? el("small", { textContent: c.note }) : null,
+        ...(c.sources || []).map(s => el("small", {}, [el("a", { href: s.url, target: "_blank", rel: "noopener", textContent: s.title }), document.createTextNode(` · ${s.date}`)]))])])))]));
+
+  const cap = (v.caption || "") + (v.hashtags ? "\n\n" + v.hashtags.join(" ") : "");
+  const copyBtn = el("button", { textContent: "Kopieer caption" });
+  copyBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(cap).then(() => { copyBtn.textContent = "Gekopieerd"; setTimeout(() => copyBtn.textContent = "Kopieer caption", 1500); })
+      .catch(() => { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); copyBtn.textContent = "Geselecteerd: kopieer met Ctrl/Cmd+C"; });
+  });
+  const pre = el("pre", { className: "caption", textContent: cap });
+  kids.push(el("div", { className: "sec" }, [el("div", { className: "row", style: "justify-content:space-between" }, [el("span", { textContent: "Caption", style: "font:800 12px/1 var(--font-body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)" }), copyBtn]), pre]));
+
+  kids.push(el("div", { className: "sec" }, [el("span", { textContent: "Automatische checks" }),
+    el("ul", { className: "plain" }, (v.checks || []).map(c => el("li", {}, [el("span", { textContent: c.ok ? "✅" : "❌" }), el("div", { textContent: c.name + (c.info ? ` (${c.info})` : "") })])))]));
+
+  const ta = el("textarea", { id: "fb-" + v._key, value: v.feedback || "", placeholder: "Bv. 'hook mag pittiger', 'tempo iets trager', 'cijfer X klopt niet'. Claude leest dit bij de volgende run.", disabled: !canWrite });
+  const sv = el("button", { className: "primary", textContent: "Feedback bewaren", disabled: !canWrite });
+  sv.addEventListener("click", async () => { sv.textContent = "Bewaren…"; await save(v, { feedback: ta.value.trim() }); sv.textContent = "Bewaard"; setTimeout(() => sv.textContent = "Feedback bewaren", 1500); });
+  kids.push(el("div", { className: "sec" }, [el("label", { htmlFor: ta.id, textContent: "Feedback voor Claude", style: "font:800 12px/1 var(--font-body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)" }), ta, el("div", { className: "row" }, [sv])]));
+  if (v.repoPath) kids.push(el("p", { className: "hint", textContent: "In de repo: " + v.repoPath, style: "margin:0;overflow-wrap:anywhere" }));
+  d.replaceChildren(...kids);
+}
+
+async function save(v, patch) {
+  if (!db) return;
+  try { await db.doc("videos/" + v._key).update({ ...patch, updatedAt: new Date().toISOString() }); }
+  catch (e) { if (e && e.code === "invalid_argument") { canWrite = false; renderDetail(); } showBanner("Opslaan lukte niet. Probeer het zo meteen opnieuw."); }
+}
+function showBanner(t) { const b = $("#banner"); b.textContent = t; b.hidden = !t; }
+
+$("#week").addEventListener("change", (e) => { week = e.target.value; selected = null; try { localStorage.setItem("ff-week", week); } catch {} render(); });
+
+render();
+(async () => {
+  db = await window.claude?.use?.("db");
+  if (!db) { $("#run-label").textContent = "De studio-gegevens zijn niet beschikbaar in deze weergave."; showBanner("Open deze pagina in claude.ai terwijl je ingelogd bent om de pipeline te volgen."); return; }
+  try { const u = await window.claude.use("user"); const w = await u?.can?.("data.write"); if (w === false) canWrite = false; } catch {}
+  const timer = setTimeout(() => showBanner("De gegevens laden nog. Zie je dit lang, dan is de verbinding misschien weg."), 10000);
+  const done = (s) => { if (!s.metadata.fromCache) { clearTimeout(timer); showBanner(""); } };
+  db.collection("runs").onSnapshot((s) => { runs = Object.fromEntries(s.docs.map(d => [d.id, { ...d.data(), week: d.data().week || d.id }])); done(s); render(); },
+    () => { clearTimeout(timer); showBanner("De pipeline-gegevens konden niet geladen worden."); });
+  db.collection("videos").onSnapshot((s) => { videos = s.docs.map(d => ({ ...d.data(), _key: d.id })); done(s); render(); },
+    () => { clearTimeout(timer); showBanner("De video's konden niet geladen worden."); });
+})();
+</script>

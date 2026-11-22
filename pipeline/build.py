@@ -75,7 +75,26 @@ def build_one(path: Path):
         f"# Bronnen · {script['title']}\n\nGeldigheid: {script['validity']}\n\n" + md_sources(script) + "\n",
         encoding="utf-8")
     (rdir / f"{sid}.caption.txt").write_text(caption_text(script), encoding="utf-8")
-    return script, timing, checks(script, timing)
+    chk = checks(script, timing)
+    sdir = rdir / "studio"
+    sdir.mkdir(exist_ok=True)
+    (sdir / f"{week}_{sid}.json").write_text(
+        json.dumps(studio_doc(script, timing, chk, week), indent=1, ensure_ascii=False), encoding="utf-8")
+    return script, timing, chk
+
+
+def studio_doc(script, timing, chk, week):
+    """Document voor de Studio-pagina (collection `videos`, doc-id `<week>_<id>`)."""
+    return {
+        "week": week, "id": script["id"], "title": script["title"], "validity": script["validity"],
+        "status": "klaar voor review", "durationSec": round(timing["duration"] + C.OUTRO_HOLD, 1),
+        "words": len(words_of(script)),
+        "script": [display_text(s["say"]) for s in script["scenes"]],
+        "caption": script["caption"], "hashtags": script["hashtags"],
+        "claims": script["claims"], "warnings": script.get("warnings", []),
+        "checks": [{"name": n, "ok": bool(ok), "info": info} for n, ok, info in chk],
+        "repoPath": f"review/{week}/{script['id']}.mp4",
+    }
 
 
 def md_sources(script):
