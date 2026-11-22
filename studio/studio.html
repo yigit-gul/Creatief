@@ -149,6 +149,15 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
   .flow > * { grid-column: 1 / -1 !important }
   .interrupts { grid-template-columns: 1fr }
 }
+
+/* ---- Stemkeuze ---- */
+.voices { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px }
+.voice { background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 8px; min-width: 0 }
+.voice[data-chosen="true"] { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 35%, transparent) }
+.voice .vh { display: flex; align-items: center; gap: 10px }
+.voice .letter { width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; font: 900 15px var(--font-display); background: var(--accent); color: var(--accent-ink); flex: none }
+.voice b { font-size: 14px } .voice p { margin: 0; color: var(--muted); font-size: 12.5px }
+.voice audio { width: 100%; height: 36px }
 </style>
 
 <div class="wrap">
@@ -158,6 +167,11 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
   </header>
   <div id="banner" class="banner" hidden></div>
 
+
+  <section class="panel" id="voice-panel" aria-labelledby="voice-title" hidden>
+    <div class="flow-head"><h2 id="voice-title" style="margin:0">Stemkeuze</h2><p id="voice-sub">Luister en kies de stem die het menselijkst klinkt</p></div>
+    <div class="voices" id="voices"></div>
+  </section>
   <section class="panel flow-panel" aria-labelledby="flow-title">
     <div class="flow-head"><h2 id="flow-title" style="margin:0">Hoe de studio werkt</h2><p id="flow-sub">Live status van de laatste run</p></div>
     <div class="flow" id="flow">
@@ -235,7 +249,7 @@ function render() {
   const weeks = [...new Set([...Object.keys(runs), ...videos.map(v => v.week)])].sort().reverse();
   if (!week || !weeks.includes(week)) week = weeks[0] || null;
   const sel = $("#week"); sel.replaceChildren(...weeks.map(w => el("option", { value: w, textContent: w, selected: w === week })));
-  renderRun(); renderFlow(); renderGrid(); renderDetail();
+  renderVoices(); renderRun(); renderFlow(); renderGrid(); renderDetail();
 }
 
 // ---------- Overzicht ----------
@@ -342,6 +356,29 @@ function drawWires() {
 window.addEventListener("resize", () => requestAnimationFrame(drawWires));
 if (window.ResizeObserver) new ResizeObserver(() => requestAnimationFrame(drawWires)).observe(document.getElementById("flow"));
 document.fonts && document.fonts.ready.then(() => requestAnimationFrame(drawWires));
+
+// ---------- Stemkeuze ----------
+let voices = [], voiceChoice = null;
+function renderVoices() {
+  const panel = $("#voice-panel");
+  panel.hidden = !voices.length;
+  if (!voices.length) return;
+  $("#voice-sub").textContent = voiceChoice ? `Gekozen: ${voiceChoice}. Claude gebruikt deze stem vanaf de volgende video.` : "Luister en kies de stem die het menselijkst klinkt";
+  $("#voices").replaceChildren(...voices.sort((a, b) => a.letter.localeCompare(b.letter)).map(v => {
+    const chosen = voiceChoice === v.letter;
+    const btn = el("button", { className: chosen ? "primary" : "", textContent: chosen ? "Gekozen" : "Kies deze stem", disabled: !canWrite });
+    btn.addEventListener("click", async () => {
+      if (!db) return;
+      try { await db.doc("settings/voice").set({ choice: v.letter, voice: v.voice, label: v.label, at: new Date().toISOString() }); }
+      catch { showBanner("Je keuze bewaren lukte niet. Probeer opnieuw."); }
+    });
+    return el("div", { className: "voice", dataset: {} }, [
+      el("div", { className: "vh" }, [el("span", { className: "letter", textContent: v.letter }), el("div", {}, [el("b", { textContent: v.label }), el("p", { textContent: v.note })])]),
+      el("audio", { src: v.url, controls: true, preload: "none" }), el("div", { className: "row" }, [btn])
+    ]);
+  }));
+  for (const [i, n] of [...$("#voices").children].entries()) n.dataset.chosen = String(voiceChoice === voices[i].letter);
+}
 
 function renderRun() {
   const r = runs[week];
@@ -460,6 +497,8 @@ render();
   const done = (s) => { if (!s.metadata.fromCache) { clearTimeout(timer); showBanner(""); } };
   db.collection("runs").onSnapshot((s) => { runs = Object.fromEntries(s.docs.map(d => [d.id, { ...d.data(), week: d.data().week || d.id }])); done(s); render(); },
     () => { clearTimeout(timer); showBanner("De pipeline-gegevens konden niet geladen worden."); });
+  db.collection("voices").onSnapshot((s) => { voices = s.docs.map(d => d.data()); renderVoices(); }, () => {});
+  db.doc("settings/voice").onSnapshot((d) => { voiceChoice = d.exists ? d.data().choice : null; renderVoices(); }, () => {});
   db.collection("videos").onSnapshot((s) => { videos = s.docs.map(d => ({ ...d.data(), _key: d.id })); done(s); render(); },
     () => { clearTimeout(timer); showBanner("De video's konden niet geladen worden."); });
 })();
