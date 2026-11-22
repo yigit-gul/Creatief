@@ -254,6 +254,7 @@ const el = (tag, props = {}, kids = []) => { const e = Object.assign(document.cr
 const fmtTime = (iso) => { try { return new Date(iso).toLocaleString("nl-BE", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }); } catch { return iso || ""; } };
 const hhmm = (iso) => { try { return new Date(iso).toLocaleTimeString("nl-BE", { hour: "2-digit", minute: "2-digit" }); } catch { return ""; } };
 
+let downloads = null;
 let db = null, runs = {}, videos = [], week = null, selected = null, canWrite = true;
 const drafts = {};  // feedback die je aan het typen bent, blijft staan als de pagina ververst
 try { week = localStorage.getItem("ff-week"); } catch {}
@@ -454,7 +455,26 @@ function renderDetailInner() {
   const d = $("#detail");
   if (!v) { d.replaceChildren(el("p", { className: "hint", textContent: "Kies een video om het script, de bronnen en de caption te zien." })); return; }
   const kids = [];
-  if (v.videoUrl) kids.push(el("video", { src: v.videoUrl, controls: true, playsInline: true, preload: "metadata" }));
+  if (v.videoUrl) {
+    kids.push(el("video", { src: v.videoUrl, controls: true, playsInline: true, preload: "metadata" }));
+    if (downloads) {
+      const dl = el("button", { className: "primary", textContent: "⬇ Download video (.mp4)" });
+      const dlState = el("span", { className: "hint", role: "status" });
+      dl.addEventListener("click", async () => {
+        dl.disabled = true; dlState.textContent = "Video ophalen…";
+        try {
+          const blob = await (await fetch(v.videoUrl)).blob();
+          dlState.textContent = "Bevestig het opslaan in het venster.";
+          await downloads.save({ filename: `${v.week}-${v.id}.mp4`, data: blob });
+          dlState.textContent = "✓ Gedownload";
+        } catch (e) {
+          dlState.textContent = e && e.code === "declined" ? "Download geannuleerd." : "Downloaden lukte niet hier. Probeer de Studio in je browser op claude.ai.";
+        }
+        dl.disabled = false;
+      });
+      kids.push(el("div", { className: "row" }, [dl, dlState]));
+    }
+  }
   kids.push(el("h3", { textContent: v.title }));
   if (v.validity) kids.push(el("p", { className: "hint", textContent: v.validity, style: "margin:0" }));
 
@@ -545,6 +565,7 @@ applyZoom(window.innerWidth < 700 ? 1 : zoom);
 
 render();
 (async () => {
+  window.claude?.use?.("downloads").then((d) => { downloads = d; renderDetail(); }).catch(() => {});
   db = await window.claude?.use?.("db");
   if (!db) { $("#run-label").textContent = "De studio-gegevens zijn niet beschikbaar in deze weergave."; showBanner("Open deze pagina in claude.ai terwijl je ingelogd bent om de pipeline te volgen."); return; }
   try { const u = await window.claude.use("user"); const w = await u?.can?.("data.write"); if (w === false) canWrite = false; } catch {}
