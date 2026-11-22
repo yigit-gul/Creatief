@@ -1,0 +1,203 @@
+{
+  "id": "02-marktnieuws-w47",
+  "title": "Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026)",
+  "validity": "Marktweek 16-20 november 2026, slotkoersen (geen fiscaal aanslagjaar van toepassing)",
+  "scenes": [
+    {
+      "say": "De Nasdaq verloor vorige week 10%. De slechtste week sinds maart 2020. Wat is er gebeurd?",
+      "visual": {
+        "type": "hook",
+        "kicker": "Marktnieuws · 16-20 nov",
+        "big": "Nasdaq: *−10%* in één week",
+        "sub": "Slechtste week sinds maart 2020."
+      }
+    },
+    {
+      "say": "Van maandag tot donderdag ging het al stap voor stap omlaag. En vrijdag kwam de klap: min 5,3% op één dag.",
+      "visual": {
+        "type": "line",
+        "title": "Nasdaq Composite",
+        "sub": "Slotkoers per dag",
+        "badge": "−10,0%",
+        "color": "coral",
+        "points": [
+          {
+            "label": "vr 13",
+            "value": 25136.27,
+            "display": "25.136"
+          },
+          {
+            "label": "ma",
+            "value": 24509.76
+          },
+          {
+            "label": "di",
+            "value": 24328.38
+          },
+          {
+            "label": "wo",
+            "value": 24429.88
+          },
+          {
+            "label": "do",
+            "value": 23879.2
+          },
+          {
+            "label": "vr 20",
+            "value": 22617.73,
+            "display": "22.618"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Reden één: twijfel over AI. Beleggers vragen zich af of al die miljarden aan AI-investeringen wel genoeg gaan opleveren. Dus verkopen ze.",
+      "visual": {
+        "type": "point",
+        "n": 1,
+        "head": "Twijfel over *AI-investeringen*",
+        "body": "Leveren al die miljarden genoeg op?"
+      }
+    },
+    {
+      "say": "Reden twee: chipbedrijven kregen de zwaarste klappen. De chipindex zakte 17%. Nvidia stelde met zijn cijfers niet gerust, en volgens Reuters bekijkt de Amerikaanse beurswaakhond zijn boekhouding.",
+      "visual": {
+        "type": "bars",
+        "title": "2. Chips het hardst geraakt",
+        "bars": [
+          {
+            "label": "Nasdaq",
+            "value": -10.02,
+            "display": "−10,0%"
+          },
+          {
+            "label": "S&P 500",
+            "value": -8.61,
+            "display": "−8,6%"
+          },
+          {
+            "label": "Dow",
+            "value": -8.02,
+            "display": "−8,0%"
+          },
+          {
+            "label": "Chips",
+            "value": -17.13,
+            "display": "−17,1%",
+            "cue": "17%"
+          }
+        ],
+        "note": "Weekresultaat · slotkoersen 13 → 20 nov 2026"
+      }
+    },
+    {
+      "say": "Reden drie: de beursgang van Anthropic. Die bracht geen nieuw enthousiasme. Veel beleggers namen net winst op AI-aandelen.",
+      "visual": {
+        "type": "point",
+        "n": 3,
+        "head": "Grote beursgang bracht *geen* nieuwe hype",
+        "body": "Beleggers namen winst op AI-aandelen."
+      }
+    },
+    {
+      "say": "Wat er nu komt, weet niemand. Voorspellen doen we hier niet. Volg voor het marktnieuws van volgende week!",
+      "visual": {
+        "type": "outro",
+        "big": "Elke week *marktnieuws*"
+      }
+    }
+  ],
+  "caption": "De Nasdaq had vorige week z'n slechtste week sinds maart 2020: −10%. Wat er gebeurde en waarom, in minder dan een minuut 📉\n\nAlgemene info, geen beleggingsadvies: geen aanraders, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
+  "hashtags": [
+    "#marktnieuws",
+    "#nasdaq",
+    "#beurs",
+    "#geldtips",
+    "#belgie"
+  ],
+  "claims": [
+    {
+      "claim": "Nasdaq Composite: 25.136,27 (13/11) → 22.617,73 (20/11) = −10,02%; vrijdag −5,28%",
+      "status": "ok",
+      "note": "Berekend uit de officiële slotkoersen.",
+      "sources": [
+        {
+          "title": "Yahoo Finance – ^IXIC dagkoersen (chart-API)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/history/",
+          "date": "2026-11-22"
+        },
+        {
+          "title": "Yahoo Finance – Markets News, Nov. 20, 2026",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-plunge-131303598.html",
+          "date": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "claim": "Slechtste week sinds maart 2020",
+      "status": "ok",
+      "sources": [
+        {
+          "title": "CEO Economy – Nasdaq worst week since March 2020",
+          "url": "https://ceoeconomy.com/article/nasdaq-worst-week-since-march-2020-chip-stocks-week-ending-nov-20-2026",
+          "date": "2026-11-22"
+        },
+        {
+          "title": "Intelligence Report – Nasdaq's worst week",
+          "url": "https://intelligencereport.org/2026/11/21/stock-market-today-nasdaq-worst-week/",
+          "date": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "claim": "S&P 500 −8,61%, Dow −8,02%, chipindex (PHLX SOX) −17,13% over de week",
+      "status": "ok",
+      "note": "Berekend uit slotkoersen ^GSPC, ^DJI, ^SOX.",
+      "sources": [
+        {
+          "title": "Yahoo Finance – ^SOX dagkoersen",
+          "url": "https://finance.yahoo.com/quote/%5ESOX/history/",
+          "date": "2026-11-22"
+        },
+        {
+          "title": "CNBC – S&P 500 and Dow close in correction (19/11)",
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+          "date": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "claim": "Oorzaken: twijfel over AI-investeringen en waarderingen; beursgang van Anthropic leidde tot winstnemingen",
+      "status": "ok",
+      "sources": [
+        {
+          "title": "CNBC – Nasdaq erases 2026 gain as AI rout picks up steam",
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+          "date": "2026-11-22"
+        },
+        {
+          "title": "Yahoo Finance – live: AI trade melts down",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html",
+          "date": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "claim": "Volgens Reuters bekijkt de SEC de boekhouding van Nvidia",
+      "status": "check",
+      "note": "Bericht van Reuters, overgenomen door Yahoo Finance. Geen officiële bevestiging van de SEC of Nvidia. In de video staat bewust 'volgens Reuters'. Laat dat staan of schrap de zin.",
+      "sources": [
+        {
+          "title": "Yahoo Finance – live: Nvidia worst day since DeepSeek after Reuters report",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html",
+          "date": "2026-11-22"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Transparantie: Claude is gemaakt door Anthropic, dat in deze video vermeld wordt. Die vermelding is puur feitelijk (de beursgang en de winstnemingen), zonder oordeel. Beslis zelf of je dat oké vindt.",
+    "Bedrijfsnamen (Nvidia, Anthropic) worden alleen als nieuws genoemd, niet als aanrader. Controleer dat de toon neutraal blijft.",
+    "Uitspraak: Andrew spreekt Nederlands. Luister of 'min 5,3%' en '17%' juist klinken."
+  ]
+}

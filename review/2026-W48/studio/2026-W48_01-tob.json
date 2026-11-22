@@ -4,10 +4,10 @@
  "title": "De beurstaks (TOB): wat betaal je bij elke transactie?",
  "validity": "Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, geen inkomstenbelasting: er is geen aanslagjaar)",
  "status": "klaar voor review",
- "durationSec": 54.0,
- "words": 130,
+ "durationSec": 53.7,
+ "words": 129,
  "script": [
-  "Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar, hè? Ik leg het je uit.",
+  "Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar? Ik leg het je uit.",
   "Da's de TOB, de taks op de beursverrichtingen. Je betaalt een klein percentage op het bedrag. Winst of verlies? Maakt niks uit.",
   "Hoeveel? Hangt af van wat je koopt: 0,12%, 0,35% of 1,32%. Met telkens een maximum per transactie.",
   "Kijk, een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% betaal je dan €7. Verkoop je ze later voor €2.000? Dan nog eens €7. Samen dus €14.",
@@ -123,17 +123,17 @@
   {
    "name": "Woordenaantal 90-140",
    "ok": true,
-   "info": "130 woorden"
+   "info": "129 woorden"
   },
   {
    "name": "Duur 30-60 s",
    "ok": true,
-   "info": "54.0 s"
+   "info": "53.7 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
    "ok": true,
-   "info": "19 woorden"
+   "info": "18 woorden"
   },
   {
    "name": "Laatste scène is outro met disclaimer",
@@ -161,13 +161,19 @@
    "info": ""
   },
   {
+   "name": "Geen 'hè' in de tekst",
+   "ok": true,
+   "info": ""
+  },
+  {
    "name": "Elke claim heeft een bron",
    "ok": true,
    "info": ""
   }
  ],
  "repoPath": "review/2026-W48/01-tob.mp4",
- "videoUrl": "/_blob/067fb49d37f6d1561f2dd833f732a8a5",
- "feedback": "Begin mag pittiger en aantrekllijker, nu is het zo nie vloeiend maak het vloeiender alsof hij sprekt met iemand enzo uitlegt.",
- "claudeReply": "Verwerkt (23:20): nieuwe hook 'Verlies gemaakt? Tóch belasting.', script herschreven als een gesprek ('Raar, hè? Ik leg het je uit', 'Kijk, een voorbeeldje'), 130 woorden, 51 s."
+ "feedback": "Begin mag pittiger en aantrekllijker, nu is het zo nie vloeiend maak het vloeiender alsof hij sprekt met iemand enzo uitlegt. \"HE\" mag weg want ai leest dat niet",
+ "feedbackAt": "2026-11-22T23:22:30.948Z",
+ "claudeReply": "Verwerkt: 'hè' weggehaald ('Raar? Ik leg het je uit.'). Er staat nu ook een automatische check zodat 'hè' in geen enkele video meer voorkomt.",
+ "videoUrl": "/_blob/20f3aefc6e62dc0b2ee25c0a269c9ebe"
 }

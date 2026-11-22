@@ -233,35 +233,108 @@ def draw_calc(d, v, t, dur):
 
 
 def draw_bars(d, v, t, dur):
+    """Staafgrafiek. Negatieve waarden hangen naar beneden vanaf een nullijn bovenaan."""
     y = 400
     fh = font("Black", 76)
     y = text_block(d, C.SAFE_LEFT, y, wrap(d, v["title"], fh, CONTENT_W), fh, COL["text"], ease(t / 0.3)) + 40
     bars = v["bars"]
-    mx = max(b["value"] for b in bars)
-    chart_h = 560
-    base = y + chart_h
-    gap = 40
+    neg = any(b["value"] < 0 for b in bars)
+    mx = max(abs(b["value"]) for b in bars)
+    chart_h = 520
+    gap = 34
     bw = (CONTENT_W - gap * (len(bars) - 1)) / len(bars)
+    fl, fv = font("SemiBold", 38), font("Black", 52)
+    if neg:
+        zero = y + 70  # labels boven de nullijn
+        d.line((C.SAFE_LEFT, zero, C.SAFE_LEFT + CONTENT_W, zero), fill=COL["card_line"], width=3)
+    else:
+        zero = y + chart_h
     for i, b in enumerate(bars):
-        p = ease((t - 0.3 - i * 0.3) / 0.8)
-        h = chart_h * 0.82 * b["value"] / mx * p
+        st = v["at"][i] if v.get("at") else 0.3 + i * 0.3
+        p = ease((t - st) / 0.8)
+        h = chart_h * 0.8 * abs(b["value"]) / mx * p
         x0 = C.SAFE_LEFT + i * (bw + gap)
-        col = COL[b.get("color", "mint")]
-        d.rounded_rectangle((x0, base - max(h, 2), x0 + bw, base), 18, fill=col)
-        if p > 0.05:
-            fv = font("Black", 56)
-            lab = b.get("display", str(b["value"]))
-            tw = d.textlength(lab, font=fv)
-            d.text((x0 + bw / 2 - tw / 2, base - h - 74), lab, font=fv, fill=alpha(COL["text"], p))
-        fl = font("SemiBold", 38)
-        for j, ln in enumerate(wrap(d, b["label"], fl, bw)):
-            tw = d.textlength(ln, font=fl)
-            d.text((x0 + bw / 2 - tw / 2, base + 24 + j * 46), ln, font=fl, fill=COL["muted"])
+        col = COL[b.get("color", "coral" if b["value"] < 0 else "mint")]
+        lab = b.get("display", str(b["value"]))
+        tw = d.textlength(lab, font=fv)
+        if neg:
+            for j, ln in enumerate(wrap(d, b["label"], fl, bw + gap - 6)):
+                lw = d.textlength(ln, font=fl)
+                d.text((x0 + bw / 2 - lw / 2, zero - 56 - j * 0), ln, font=fl, fill=COL["muted"])
+            if h > 1:
+                d.rounded_rectangle((x0, zero + 4, x0 + bw, zero + 4 + h), 16, fill=col)
+            if p > 0.05:
+                d.text((x0 + bw / 2 - tw / 2, zero + 18 + h), lab, font=fv, fill=alpha(COL["text"], p))
+        else:
+            d.rounded_rectangle((x0, zero - max(h, 2), x0 + bw, zero), 18, fill=col)
+            if p > 0.05:
+                d.text((x0 + bw / 2 - tw / 2, zero - h - 74), lab, font=fv, fill=alpha(COL["text"], p))
+            for j, ln in enumerate(wrap(d, b["label"], fl, bw)):
+                lw = d.textlength(ln, font=fl)
+                d.text((x0 + bw / 2 - lw / 2, zero + 24 + j * 46), ln, font=fl, fill=COL["muted"])
+    if v.get("note"):
+        fn = font("Medium", 36)
+        text_block(d, C.SAFE_LEFT, zero + chart_h * 0.8 + 110 if neg else zero + 110, wrap(d, v["note"], fn, CONTENT_W),
+                   fn, COL["muted"], ease((t - 1.0) / 0.4))
+
+
+def draw_line(d, v, t, dur):
+    """Lijngrafiek die zich tekent: bv. slotkoersen van een week."""
+    y = 400
+    fh = font("Black", 76)
+    y = text_block(d, C.SAFE_LEFT, y, wrap(d, v["title"], fh, CONTENT_W), fh, COL["text"], ease(t / 0.3)) + 10
+    if v.get("sub"):
+        fs = font("Medium", 38)
+        y = text_block(d, C.SAFE_LEFT, y, wrap(d, v["sub"], fs, CONTENT_W), fs, COL["muted"], ease(t / 0.3)) + 30
+    pts = v["points"]
+    vals = [p["value"] for p in pts]
+    lo, hi = min(vals), max(vals)
+    pad = (hi - lo) * 0.15 or 1
+    lo, hi = lo - pad, hi + pad
+    x0, x1 = C.SAFE_LEFT + 10, C.SAFE_LEFT + CONTENT_W - 10
+    top, bot = y + 90, y + 560
+    X = lambda i: x0 + (x1 - x0) * i / (len(pts) - 1)
+    Y = lambda val: bot - (bot - top) * (val - lo) / (hi - lo)
+    for k in range(4):  # zacht raster
+        gy = top + (bot - top) * k / 3
+        d.line((x0, gy, x1, gy), fill=alpha(COL["card_line"], 0.8), width=2)
+    prog = ease((t - 0.4) / max(1.2, dur * 0.55)) * (len(pts) - 1)
+    full = int(prog)
+    coords = [(X(i), Y(vals[i])) for i in range(full + 1)]
+    if full < len(pts) - 1:
+        f = prog - full
+        coords.append((X(full) + (X(full + 1) - X(full)) * f, Y(vals[full]) + (Y(vals[full + 1]) - Y(vals[full])) * f))
+    if len(coords) > 1:
+        area = coords + [(coords[-1][0], bot), (coords[0][0], bot)]
+        d.polygon(area, fill=alpha(COL[v.get("color", "coral")], 0.18))
+        d.line(coords, fill=COL[v.get("color", "coral")], width=9, joint="curve")
+    fl = font("SemiBold", 36)
+    fvv = font("Bold", 38)
+    for i, ptn in enumerate(pts):
+        lw = d.textlength(ptn["label"], font=fl)
+        d.text((X(i) - lw / 2, bot + 22), ptn["label"], font=fl, fill=COL["muted"])
+        if i <= prog + 1e-6:
+            r = 11 if i in (0, len(pts) - 1) else 8
+            d.ellipse((X(i) - r, Y(vals[i]) - r, X(i) + r, Y(vals[i]) + r), fill=COL["text"])
+    # start- en eindwaarde
+    if pts[0].get("display"):
+        d.text((X(0), Y(vals[0]) - 66), pts[0]["display"], font=fvv, fill=COL["text"])
+    if prog >= len(pts) - 1 - 1e-6 and pts[-1].get("display"):
+        a = ease((t - 0.4 - max(1.2, dur * 0.55)) / 0.4)
+        txt = pts[-1]["display"]
+        tw = d.textlength(txt, font=fvv)
+        d.text((X(len(pts) - 1) - tw, Y(vals[-1]) + 26), txt, font=fvv, fill=alpha(COL["text"], a))
+        if v.get("badge"):
+            fb = font("Black", 64)
+            bw_ = d.textlength(v["badge"], font=fb)
+            bx, by = x1 - bw_ - 40, top - 70
+            d.rounded_rectangle((bx - 10, by - 6, bx + bw_ + 30, by + 84), 24, fill=alpha(COL["coral"], a))
+            d.text((bx + 10, by + 4), v["badge"], font=fb, fill=alpha(COL["bg_top"], a))
 
 
 def draw_outro(d, v, t, dur):
-    y = 520
-    f = fit_font(d, v.get("big", "Volg voor meer").replace("*", ""), "Black", 104, CONTENT_W, 4)
+    y = 480
+    f = fit_font(d, v.get("big", "Volg voor meer").replace("*", ""), "Black", 104, CONTENT_W, 3)
     a = ease(t / 0.4)
     y = highlight_text(d, C.SAFE_LEFT, y, v.get("big", "Volg voor *meer*"), f, a, CONTENT_W, 1.1)
     fh = font("ExtraBold", 60)
@@ -270,15 +343,15 @@ def draw_outro(d, v, t, dur):
     d.rounded_rectangle((C.SAFE_LEFT, y + 50, C.SAFE_LEFT + tw + 70, y + 150), 50,
                         fill=alpha(COL["mint"], a2))
     d.text((C.SAFE_LEFT + 35, y + 64), C.CHANNEL_HANDLE, font=fh, fill=alpha(COL["bg_top"], a2))
-    draw_disclaimer(d, 1.0)
+    draw_disclaimer(d, 1.0, max(1130, y + 210))
 
 
-def draw_disclaimer(d, a):
+def draw_disclaimer(d, a, y=1130):
     """Verplichte disclaimer, groot en goed leesbaar boven de ondertitelzone."""
     f = font("Bold", 46)
     txt = C.DISCLAIMER
     tw = d.textlength(txt, font=f)
-    y = 1130
+    y = min(y, C.SUB_Y - 150)  # altijd boven de ondertitels
     x = (W - tw) / 2 - 40
     d.rounded_rectangle((x - 10, y - 18, x + tw + 90, y + 82), 22,
                         fill=alpha(COL["bg_top"], 0.85 * a), outline=alpha(COL["yellow"], a), width=4)
@@ -286,7 +359,7 @@ def draw_disclaimer(d, a):
 
 
 DRAW = {"hook": draw_hook, "point": draw_point, "table": draw_table,
-        "calc": draw_calc, "bars": draw_bars, "outro": draw_outro}
+        "calc": draw_calc, "bars": draw_bars, "line": draw_line, "outro": draw_outro}
 
 
 def progress_bar(d, frac):
@@ -408,7 +481,7 @@ def apply_cues(scenes, sc_times, words):
     """`cue` in een regel/rij = woord waarop die regel verschijnt (synchroon met de stem)."""
     for sc, tm in zip(scenes, sc_times):
         v = sc["visual"]
-        items = v.get("lines") or v.get("rows")
+        items = v.get("lines") or v.get("rows") or v.get("bars")
         if not items or not any("cue" in it for it in items):
             continue
         sw = [w for w in words if tm["start"] - 0.01 <= w["start"] <= tm["end"] + 0.01]

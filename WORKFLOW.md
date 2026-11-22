@@ -11,7 +11,7 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
   logboek bij (houd het logboek kort, max. ~40 regels per run).
 
 ## 1. Onderwerpen → `onderwerpen/<week>.md`
-- **Algemene informatie**, geen nieuwsonderzoek. Kies 5 gevarieerde evergreen thema's die nog niet behandeld
+- **Algemene informatie**, geen nieuwsonderzoek. Kies 5 gevarieerde evergreen thema's (plus de marktnieuwsvideo, zie 1b) die nog niet behandeld
   zijn (kijk in `onderwerpen/`). Lijst: TOB, belasting op ETF's en dividenden, effectentaks, studentenjob en
   belasting, eerste aangifte, pensioensparen, registratierechten, bijberoep als student-zelfstandige,
   kinderbijslag/groeipakket en werk, budgetteren, sparen vs. beleggen (principes), roerende voorheffing,
@@ -19,10 +19,21 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 - Leg **principes en begrippen** uit ("hoe werkt het", "waar moet je op letten"). Gebruik zo weinig mogelijk
   precieze bedragen. Één rekenvoorbeeld mag met afgeronde, duidelijk fictieve cijfers.
 
+## 1b. Wekelijks marktnieuws (extra video, altijd)
+- Eén video over de **afgelopen beursweek**, meestal de **Nasdaq Composite** (^IXIC). Vergelijk met S&P 500 (^GSPC),
+  Dow (^DJI) en een relevante sectorindex (bv. chips ^SOX) als dat het verhaal is.
+- Koersen: Yahoo Finance chart-API (`https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?range=1mo&interval=1d`).
+  Bereken het weekresultaat zelf uit de slotkoers van vrijdag ervoor en vrijdag erna.
+- Waarom: zoek het nieuws van die week (WebSearch: CNBC, Reuters, Yahoo Finance, De Tijd). Noem 2-3 oorzaken,
+  elk met bron. Wat niet door meerdere bronnen bevestigd is → "volgens <bron>" in de tekst en ⚠️ in claims.
+- Visuals: `line` (slotkoers per dag, badge met weekresultaat) en `bars` (indexen naast elkaar).
+- **Nooit** voorspellen, nooit kopen of verkopen suggereren. Bedrijfsnamen alleen als nieuws. Eindig met
+  "Voorspellen doen we hier niet". Voorbeeld: `scripts/2026-W48/02-marktnieuws-w47.json`.
+
 ## 2. Scripts → `scripts/<week>/0N-<slug>.json`
-- **Spreektaal, TikTok-tempo**: korte zinnen, Vlaams-informeel ("da's", "hè", "een voorbeeldje"), zoals je het
+- **Spreektaal, TikTok-tempo**: korte zinnen, Vlaams-informeel ("da's", "een voorbeeldje"; nooit "hè": dat leest niet), zoals je het
   tegen een vriend uitlegt. Hook = herkenbare situatie of tegenstrijdigheid ("Verlies gemaakt? Tóch belasting."),
-  daarna overgangen als een gesprek ("Raar, hè? Ik leg het je uit", "Kijk, een voorbeeldje", "Wie regelt dat?"). Stem: Andrew (multilingual), +15%, zinnen lopen door zonder leespauzes.
+  daarna overgangen als een gesprek ("Raar? Ik leg het je uit", "Kijk, een voorbeeldje", "Wie regelt dat?"). Stem: Andrew (multilingual), +15%, zinnen lopen door zonder leespauzes.
 - Formaat: zie `scripts/2026-W48/01-tob.json` en README. 90-140 woorden, hook ≤ 2 s, 3 punten,
   1 rekenvoorbeeld, eindigen met `outro` + "volg voor meer".
 - Elk bedrag, tarief of elke drempel: in `claims` met bron (bij voorkeur Wikifin/FOD Financiën) + datum + aanslagjaar

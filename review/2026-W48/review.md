@@ -6,7 +6,8 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 54 s | 130 | 9/9 | 6 |
+| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 54 s | 129 | 10/10 | 6 |
+| 02-marktnieuws-w47 | Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026) | 50 s | 122 | 10/10 | 4 |
 
 ---
 
@@ -16,7 +17,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 ### Script (voice-over)
 
-> Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar, hè? Ik leg het je uit.
+> Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar? Ik leg het je uit.
 >
 > Da's de TOB, de taks op de beursverrichtingen. Je betaalt een klein percentage op het bedrag. Winst of verlies? Maakt niks uit.
 >
@@ -66,14 +67,94 @@ Algemene info, geen persoonlijk advies.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 90-140 (130 woorden)
-- ✅ Duur 30-60 s (54.0 s)
-- ✅ Hook kort (≤ 22 woorden) (19 woorden)
+- ✅ Woordenaantal 90-140 (129 woorden)
+- ✅ Duur 30-60 s (53.7 s)
+- ✅ Hook kort (≤ 22 woorden) (18 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption
 - ✅ 3-5 hashtags (5)
 - ✅ Geen advies-/clickbaittaal (automatische scan)
+- ✅ Geen 'hè' in de tekst
+- ✅ Elke claim heeft een bron
+
+### Jouw checklist
+
+- [ ] Cijfers en tarieven nagekeken tegen de bronnen hierboven (aanslagjaar/geldigheid klopt)
+- [ ] Alle ⚠️-punten opgelost of geschrapt
+- [ ] Geen beleggingsadvies, geen productaanraders, geen koersvoorspellingen
+- [ ] Uitspraak en ondertitels correct (vooral cijfers en afkortingen)
+- [ ] Disclaimer "Algemene info, geen persoonlijk advies." zichtbaar op het einde
+- [ ] Geen misleidende hook
+- [ ] AI-label aanzetten in TikTok bij het inplannen
+- [ ] Ingepland in Metricool/Buffer
+
+
+---
+
+## 02-marktnieuws-w47 · Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026)
+
+**Video:** [02-marktnieuws-w47.mp4](02-marktnieuws-w47.mp4) · **Geldigheid:** Marktweek 16-20 november 2026, slotkoersen (geen fiscaal aanslagjaar van toepassing)
+
+### Script (voice-over)
+
+> De Nasdaq verloor vorige week 10%. De slechtste week sinds maart 2020. Wat is er gebeurd?
+>
+> Van maandag tot donderdag ging het al stap voor stap omlaag. En vrijdag kwam de klap: min 5,3% op één dag.
+>
+> Reden één: twijfel over AI. Beleggers vragen zich af of al die miljarden aan AI-investeringen wel genoeg gaan opleveren. Dus verkopen ze.
+>
+> Reden twee: chipbedrijven kregen de zwaarste klappen. De chipindex zakte 17%. Nvidia stelde met zijn cijfers niet gerust, en volgens Reuters bekijkt de Amerikaanse beurswaakhond zijn boekhouding.
+>
+> Reden drie: de beursgang van Anthropic. Die bracht geen nieuw enthousiasme. Veel beleggers namen net winst op AI-aandelen.
+>
+> Wat er nu komt, weet niemand. Voorspellen doen we hier niet. Volg voor het marktnieuws van volgende week!
+
+### Bronnen en controle van cijfers
+
+- ✅ **Nasdaq Composite: 25.136,27 (13/11) → 22.617,73 (20/11) = −10,02%; vrijdag −5,28%** — _Berekend uit de officiële slotkoersen._
+  - [Yahoo Finance – ^IXIC dagkoersen (chart-API)](https://finance.yahoo.com/quote/%5EIXIC/history/) — geraadpleegd 2026-11-22
+  - [Yahoo Finance – Markets News, Nov. 20, 2026](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-plunge-131303598.html) — geraadpleegd 2026-11-22
+- ✅ **Slechtste week sinds maart 2020**
+  - [CEO Economy – Nasdaq worst week since March 2020](https://ceoeconomy.com/article/nasdaq-worst-week-since-march-2020-chip-stocks-week-ending-nov-20-2026) — geraadpleegd 2026-11-22
+  - [Intelligence Report – Nasdaq's worst week](https://intelligencereport.org/2026/11/21/stock-market-today-nasdaq-worst-week/) — geraadpleegd 2026-11-22
+- ✅ **S&P 500 −8,61%, Dow −8,02%, chipindex (PHLX SOX) −17,13% over de week** — _Berekend uit slotkoersen ^GSPC, ^DJI, ^SOX._
+  - [Yahoo Finance – ^SOX dagkoersen](https://finance.yahoo.com/quote/%5ESOX/history/) — geraadpleegd 2026-11-22
+  - [CNBC – S&P 500 and Dow close in correction (19/11)](https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html) — geraadpleegd 2026-11-22
+- ✅ **Oorzaken: twijfel over AI-investeringen en waarderingen; beursgang van Anthropic leidde tot winstnemingen**
+  - [CNBC – Nasdaq erases 2026 gain as AI rout picks up steam](https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html) — geraadpleegd 2026-11-22
+  - [Yahoo Finance – live: AI trade melts down](https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html) — geraadpleegd 2026-11-22
+- ⚠️ **Volgens Reuters bekijkt de SEC de boekhouding van Nvidia** — _Bericht van Reuters, overgenomen door Yahoo Finance. Geen officiële bevestiging van de SEC of Nvidia. In de video staat bewust 'volgens Reuters'. Laat dat staan of schrap de zin._
+  - [Yahoo Finance – live: Nvidia worst day since DeepSeek after Reuters report](https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html) — geraadpleegd 2026-11-22
+
+### ⚠️ Aandachtspunten
+
+- ⚠️ Transparantie: Claude is gemaakt door Anthropic, dat in deze video vermeld wordt. Die vermelding is puur feitelijk (de beursgang en de winstnemingen), zonder oordeel. Beslis zelf of je dat oké vindt.
+- ⚠️ Bedrijfsnamen (Nvidia, Anthropic) worden alleen als nieuws genoemd, niet als aanrader. Controleer dat de toon neutraal blijft.
+- ⚠️ Uitspraak: Andrew spreekt Nederlands. Luister of 'min 5,3%' en '17%' juist klinken.
+
+### Caption
+
+```
+De Nasdaq had vorige week z'n slechtste week sinds maart 2020: −10%. Wat er gebeurde en waarom, in minder dan een minuut 📉
+
+Algemene info, geen beleggingsadvies: geen aanraders, geen voorspellingen.
+🤖 Deze video is gemaakt met AI (voice-over en beeld).
+
+#marktnieuws #nasdaq #beurs #geldtips #belgie
+```
+
+### Automatische checks
+
+- ✅ Woordenaantal 90-140 (122 woorden)
+- ✅ Duur 30-60 s (50.2 s)
+- ✅ Hook kort (≤ 22 woorden) (16 woorden)
+- ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
+- ✅ Call to action ('volg')
+- ✅ AI-vermelding in caption
+- ✅ 3-5 hashtags (5)
+- ✅ Geen advies-/clickbaittaal (automatische scan)
+- ✅ Geen 'hè' in de tekst
 - ✅ Elke claim heeft een bron
 
 ### Jouw checklist

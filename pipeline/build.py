@@ -47,6 +47,7 @@ def checks(script, timing):
     text = " ".join(display_text(s["say"]) for s in script["scenes"]).lower() + " " + script["caption"].lower()
     flags = [f for f in RED_FLAGS if re.search(f, text)]
     res.append(("Geen advies-/clickbaittaal (automatische scan)", not flags, ", ".join(flags)))
+    res.append(("Geen 'hè' in de tekst", not re.search(r"\bh[eè]\b", text), ""))
     res.append(("Elke claim heeft een bron", all(c.get("sources") for c in script["claims"]), ""))
     return res
 

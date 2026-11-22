@@ -4,7 +4,7 @@
   "validity": "Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, geen inkomstenbelasting: er is geen aanslagjaar)",
   "scenes": [
     {
-      "say": "Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar, hè? Ik leg het je uit.",
+      "say": "Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar? Ik leg het je uit.",
       "visual": {
         "type": "hook",
         "kicker": "Beurstaks",
