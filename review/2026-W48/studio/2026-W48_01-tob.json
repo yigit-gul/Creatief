@@ -4,17 +4,17 @@
  "title": "De beurstaks (TOB): wat betaal je bij elke transactie?",
  "validity": "Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, geen inkomstenbelasting: er is geen aanslagjaar)",
  "status": "klaar voor review",
- "durationSec": 55.4,
- "words": 132,
+ "durationSec": 54.0,
+ "words": 130,
  "script": [
-  "Wist je dat je belasting betaalt telkens je aandelen of ETF's koopt? Én als je ze verkoopt. Zelfs als je verlies maakt.",
-  "Da's de TOB, de taks op de beursverrichtingen. En die betaal je op het bedrag, hè. Niet op je winst.",
-  "Er zijn drie tarieven: 0,12%, 0,35% of 1,32%, afhankelijk van het product. En telkens met een maximum per transactie.",
-  "Een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% is dat €7. Verkoop je later ook voor €2.000? Dan betaal je nog eens €7. Samen dus €14.",
-  "Belgische broker? Dan wordt de TOB automatisch ingehouden. Buitenlandse broker? Niet altijd. Dan geef je ze zelf aan, ten laatste de laatste werkdag van de tweede maand na je transactie.",
-  "Zo, nu weet je wat dat kostje op je afrekening is. Volg voor meer!"
+  "Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar, hè? Ik leg het je uit.",
+  "Da's de TOB, de taks op de beursverrichtingen. Je betaalt een klein percentage op het bedrag. Winst of verlies? Maakt niks uit.",
+  "Hoeveel? Hangt af van wat je koopt: 0,12%, 0,35% of 1,32%. Met telkens een maximum per transactie.",
+  "Kijk, een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% betaal je dan €7. Verkoop je ze later voor €2.000? Dan nog eens €7. Samen dus €14.",
+  "Wie regelt dat? Een Belgische broker doet het voor jou. Bij een buitenlandse moet je het soms zelf aangeven, ten laatste de laatste werkdag van de tweede maand na je transactie.",
+  "Nu weet je waar dat kostje op je afrekening vandaan komt. Volg voor meer!"
  ],
- "caption": "Elke keer je aandelen of ETF's koopt of verkoopt, betaal je beurstaks (TOB). Hoe werkt dat, en wat als je broker in het buitenland zit? 💸 Tarieven 2026.\n\nAlgemene info, geen persoonlijk advies.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
+ "caption": "Verlies gemaakt op je aandelen en tóch belasting betalen? Dat is de beurstaks (TOB). Zo werkt het, en wat als je broker in het buitenland zit 💸 Tarieven 2026.\n\nAlgemene info, geen persoonlijk advies.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
  "hashtags": [
   "#fiscaliteit",
   "#beurstaks",
@@ -123,17 +123,17 @@
   {
    "name": "Woordenaantal 90-140",
    "ok": true,
-   "info": "132 woorden"
+   "info": "130 woorden"
   },
   {
    "name": "Duur 30-60 s",
    "ok": true,
-   "info": "55.4 s"
+   "info": "54.0 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
    "ok": true,
-   "info": "22 woorden"
+   "info": "19 woorden"
   },
   {
    "name": "Laatste scène is outro met disclaimer",
@@ -167,5 +167,7 @@
   }
  ],
  "repoPath": "review/2026-W48/01-tob.mp4",
- "videoUrl": "/_blob/8a48240a3a26fc22cdc8626705d56a2f"
+ "videoUrl": "/_blob/067fb49d37f6d1561f2dd833f732a8a5",
+ "feedback": "Begin mag pittiger en aantrekllijker, nu is het zo nie vloeiend maak het vloeiender alsof hij sprekt met iemand enzo uitlegt.",
+ "claudeReply": "Verwerkt (23:20): nieuwe hook 'Verlies gemaakt? Tóch belasting.', script herschreven als een gesprek ('Raar, hè? Ik leg het je uit', 'Kijk, een voorbeeldje'), 130 woorden, 51 s."
 }

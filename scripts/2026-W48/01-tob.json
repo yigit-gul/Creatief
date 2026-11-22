@@ -4,16 +4,16 @@
   "validity": "Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, geen inkomstenbelasting: er is geen aanslagjaar)",
   "scenes": [
     {
-      "say": "Wist je dat je belasting betaalt telkens je aandelen of ETF's koopt? Én als je ze verkoopt. Zelfs als je verlies maakt.",
+      "say": "Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar, hè? Ik leg het je uit.",
       "visual": {
         "type": "hook",
         "kicker": "Beurstaks",
-        "big": "Belasting bij *elke* aankoop én verkoop",
-        "sub": "Ook als je verlies maakt."
+        "big": "Verlies gemaakt? *Tóch* belasting.",
+        "sub": "Zo zit dat, in minder dan een minuut."
       }
     },
     {
-      "say": "Da's de [TOB|T.O.B.], de taks op de beursverrichtingen. En die betaal je op het bedrag, hè. Niet op je winst.",
+      "say": "Da's de [TOB|T.O.B.], de taks op de beursverrichtingen. Je betaalt een klein percentage op het bedrag. Winst of verlies? Maakt niks uit.",
       "visual": {
         "type": "point",
         "n": 1,
@@ -22,7 +22,7 @@
       }
     },
     {
-      "say": "Er zijn drie tarieven: 0,12%, 0,35% of 1,32%, afhankelijk van het product. En telkens met een maximum per transactie.",
+      "say": "Hoeveel? Hangt af van wat je koopt: 0,12%, 0,35% of 1,32%. Met telkens een maximum per transactie.",
       "visual": {
         "type": "table",
         "title": "2. Drie tarieven",
@@ -50,7 +50,7 @@
       }
     },
     {
-      "say": "Een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% is dat €7. Verkoop je later ook voor €2.000? Dan betaal je nog eens €7. Samen dus €14.",
+      "say": "Kijk, een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% betaal je dan €7. Verkoop je ze later voor €2.000? Dan nog eens €7. Samen dus €14.",
       "visual": {
         "type": "calc",
         "title": "Rekenvoorbeeld",
@@ -88,7 +88,7 @@
       }
     },
     {
-      "say": "Belgische broker? Dan wordt de [TOB|T.O.B.] automatisch ingehouden. Buitenlandse broker? Niet altijd. Dan geef je ze zelf aan, ten laatste de laatste werkdag van de tweede maand na je transactie.",
+      "say": "Wie regelt dat? Een Belgische broker doet het voor jou. Bij een buitenlandse moet je het soms zelf aangeven, ten laatste de laatste werkdag van de tweede maand na je transactie.",
       "visual": {
         "type": "point",
         "n": 3,
@@ -97,14 +97,14 @@
       }
     },
     {
-      "say": "Zo, nu weet je wat dat kostje op je afrekening is. Volg voor meer!",
+      "say": "Nu weet je waar dat kostje op je afrekening vandaan komt. Volg voor meer!",
       "visual": {
         "type": "outro",
         "big": "Volg voor meer *fiscaal* zonder gedoe"
       }
     }
   ],
-  "caption": "Elke keer je aandelen of ETF's koopt of verkoopt, betaal je beurstaks (TOB). Hoe werkt dat, en wat als je broker in het buitenland zit? 💸 Tarieven 2026.\n\nAlgemene info, geen persoonlijk advies.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
+  "caption": "Verlies gemaakt op je aandelen en tóch belasting betalen? Dat is de beurstaks (TOB). Zo werkt het, en wat als je broker in het buitenland zit 💸 Tarieven 2026.\n\nAlgemene info, geen persoonlijk advies.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
   "hashtags": [
     "#fiscaliteit",
     "#beurstaks",

@@ -6,7 +6,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 55 s | 132 | 9/9 | 6 |
+| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 54 s | 130 | 9/9 | 6 |
 
 ---
 
@@ -16,17 +16,17 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 ### Script (voice-over)
 
-> Wist je dat je belasting betaalt telkens je aandelen of ETF's koopt? Én als je ze verkoopt. Zelfs als je verlies maakt.
+> Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar, hè? Ik leg het je uit.
 >
-> Da's de TOB, de taks op de beursverrichtingen. En die betaal je op het bedrag, hè. Niet op je winst.
+> Da's de TOB, de taks op de beursverrichtingen. Je betaalt een klein percentage op het bedrag. Winst of verlies? Maakt niks uit.
 >
-> Er zijn drie tarieven: 0,12%, 0,35% of 1,32%, afhankelijk van het product. En telkens met een maximum per transactie.
+> Hoeveel? Hangt af van wat je koopt: 0,12%, 0,35% of 1,32%. Met telkens een maximum per transactie.
 >
-> Een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% is dat €7. Verkoop je later ook voor €2.000? Dan betaal je nog eens €7. Samen dus €14.
+> Kijk, een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% betaal je dan €7. Verkoop je ze later voor €2.000? Dan nog eens €7. Samen dus €14.
 >
-> Belgische broker? Dan wordt de TOB automatisch ingehouden. Buitenlandse broker? Niet altijd. Dan geef je ze zelf aan, ten laatste de laatste werkdag van de tweede maand na je transactie.
+> Wie regelt dat? Een Belgische broker doet het voor jou. Bij een buitenlandse moet je het soms zelf aangeven, ten laatste de laatste werkdag van de tweede maand na je transactie.
 >
-> Zo, nu weet je wat dat kostje op je afrekening is. Volg voor meer!
+> Nu weet je waar dat kostje op je afrekening vandaan komt. Volg voor meer!
 
 ### Bronnen en controle van cijfers
 
@@ -56,7 +56,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 ### Caption
 
 ```
-Elke keer je aandelen of ETF's koopt of verkoopt, betaal je beurstaks (TOB). Hoe werkt dat, en wat als je broker in het buitenland zit? 💸 Tarieven 2026.
+Verlies gemaakt op je aandelen en tóch belasting betalen? Dat is de beurstaks (TOB). Zo werkt het, en wat als je broker in het buitenland zit 💸 Tarieven 2026.
 
 Algemene info, geen persoonlijk advies.
 🤖 Deze video is gemaakt met AI (voice-over en beeld).
@@ -66,9 +66,9 @@ Algemene info, geen persoonlijk advies.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 90-140 (132 woorden)
-- ✅ Duur 30-60 s (55.4 s)
-- ✅ Hook kort (≤ 22 woorden) (22 woorden)
+- ✅ Woordenaantal 90-140 (130 woorden)
+- ✅ Duur 30-60 s (54.0 s)
+- ✅ Hook kort (≤ 22 woorden) (19 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption

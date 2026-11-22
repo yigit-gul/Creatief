@@ -255,6 +255,7 @@ const fmtTime = (iso) => { try { return new Date(iso).toLocaleString("nl-BE", { 
 const hhmm = (iso) => { try { return new Date(iso).toLocaleTimeString("nl-BE", { hour: "2-digit", minute: "2-digit" }); } catch { return ""; } };
 
 let db = null, runs = {}, videos = [], week = null, selected = null, canWrite = true;
+const drafts = {};  // feedback die je aan het typen bent, blijft staan als de pagina ververst
 try { week = localStorage.getItem("ff-week"); } catch {}
 
 function render() {
@@ -443,6 +444,12 @@ function renderGrid() {
 }
 
 function renderDetail() {
+  const act = document.activeElement, keepId = act && act.tagName === "TEXTAREA" ? act.id : null;
+  const sel = keepId ? [act.selectionStart, act.selectionEnd] : null;
+  renderDetailInner();
+  if (keepId) { const t = document.getElementById(keepId); if (t) { t.focus(); try { t.setSelectionRange(...sel); } catch {} } }
+}
+function renderDetailInner() {
   const v = videos.find(x => x._key === selected && x.week === week);
   const d = $("#detail");
   if (!v) { d.replaceChildren(el("p", { className: "hint", textContent: "Kies een video om het script, de bronnen en de caption te zien." })); return; }
@@ -483,18 +490,33 @@ function renderDetail() {
   kids.push(el("div", { className: "sec" }, [el("span", { textContent: "Automatische checks" }),
     el("ul", { className: "plain" }, (v.checks || []).map(c => el("li", {}, [el("span", { textContent: c.ok ? "✅" : "❌" }), el("div", { textContent: c.name + (c.info ? ` (${c.info})` : "") })])))]));
 
-  const ta = el("textarea", { id: "fb-" + v._key, value: v.feedback || "", placeholder: "Bv. 'hook mag pittiger', 'tempo iets trager', 'cijfer X klopt niet'. Claude leest dit bij de volgende run.", disabled: !canWrite });
+  const hasDraft = Object.prototype.hasOwnProperty.call(drafts, v._key);
+  const ta = el("textarea", { id: "fb-" + v._key, value: hasDraft ? drafts[v._key] : (v.feedback || ""), placeholder: "Bv. 'hook mag pittiger', 'tempo iets trager', 'cijfer X klopt niet'. Claude leest dit bij de volgende run.", disabled: !canWrite });
   const sv = el("button", { className: "primary", textContent: "Feedback bewaren", disabled: !canWrite });
-  sv.addEventListener("click", async () => { sv.textContent = "Bewaren…"; await save(v, { feedback: ta.value.trim() }); sv.textContent = "Bewaard"; setTimeout(() => sv.textContent = "Feedback bewaren", 1500); });
-  kids.push(el("div", { className: "sec" }, [el("label", { htmlFor: ta.id, textContent: "Feedback voor Claude", style: "font:800 12px/1 var(--font-body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)" }), ta, el("div", { className: "row" }, [sv])]));
+  const state = el("span", { className: "hint", role: "status" });
+  const showSaved = () => {
+    if (hasDraft && drafts[v._key] !== (v.feedback || "")) { state.textContent = "Niet bewaard"; return; }
+    state.textContent = v.feedback ? `✓ Bewaard${v.feedbackAt ? " om " + hhmm(v.feedbackAt) : ""}. Claude leest dit bij de volgende aanpassing.` : "";
+  };
+  showSaved();
+  ta.addEventListener("input", () => { drafts[v._key] = ta.value; state.textContent = "Niet bewaard"; });
+  sv.addEventListener("click", async () => {
+    sv.disabled = true; sv.textContent = "Bewaren…";
+    const ok = await save(v, { feedback: ta.value.trim(), feedbackAt: new Date().toISOString() });
+    sv.disabled = !canWrite; sv.textContent = "Feedback bewaren";
+    if (ok) { delete drafts[v._key]; state.textContent = `✓ Bewaard om ${hhmm(new Date().toISOString())}. Claude leest dit bij de volgende aanpassing.`; }
+    else state.textContent = "Bewaren mislukt. Probeer opnieuw.";
+  });
+  kids.push(el("div", { className: "sec" }, [el("label", { htmlFor: ta.id, textContent: "Feedback voor Claude", style: "font:800 12px/1 var(--font-body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)" }), ta, el("div", { className: "row" }, [sv, state]),
+    v.claudeReply ? el("p", { className: "hint", textContent: "Claude: " + v.claudeReply, style: "margin:0;padding:8px 10px;border-left:3px solid var(--accent);background:var(--bg);border-radius:6px" }) : null]));
   if (v.repoPath) kids.push(el("p", { className: "hint", textContent: "In de repo: " + v.repoPath, style: "margin:0;overflow-wrap:anywhere" }));
   d.replaceChildren(...kids);
 }
 
 async function save(v, patch) {
-  if (!db) return;
-  try { await db.doc("videos/" + v._key).update({ ...patch, updatedAt: new Date().toISOString() }); }
-  catch (e) { if (e && e.code === "invalid_argument") { canWrite = false; renderDetail(); } showBanner("Opslaan lukte niet. Probeer het zo meteen opnieuw."); }
+  if (!db) return false;
+  try { await db.doc("videos/" + v._key).update({ ...patch, updatedAt: new Date().toISOString() }); return true; }
+  catch (e) { if (e && e.code === "invalid_argument") { canWrite = false; renderDetail(); } showBanner("Opslaan lukte niet. Probeer het zo meteen opnieuw."); return false; }
 }
 function showBanner(t) { const b = $("#banner"); b.textContent = t; b.hidden = !t; }
 
