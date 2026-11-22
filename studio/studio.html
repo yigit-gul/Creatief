@@ -99,6 +99,56 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
 .banner { padding: 10px 14px; border-radius: 10px; background: color-mix(in srgb, var(--warn) 15%, transparent); color: var(--fg); font-size: 14px }
 @media (max-width: 900px) { .main { grid-template-columns: 1fr } .detail { position: static } }
 @media (max-width: 640px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)) } }
+
+/* ---- Overzicht (flowdiagram) ---- */
+.flow-panel { padding: 20px 20px 24px }
+.flow-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 16px }
+.flow-head p { margin: 0; color: var(--muted); font-size: 13px }
+.flow { position: relative; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px 16px; padding: 4px 4px 4px 26px }
+.wires { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible }
+.wires path { fill: none; stroke: var(--line); stroke-width: 2; stroke-dasharray: 5 6; animation: flowdash 1.6s linear infinite }
+.wires path.hot { stroke: var(--info); stroke-width: 2.5 }
+.wires path.done { stroke: color-mix(in srgb, var(--ok) 70%, var(--line)) }
+.wires path.loop { stroke: var(--warn); stroke-dasharray: 3 6 }
+.wires .head { fill: var(--line) } .wires .head.hot { fill: var(--info) } .wires .head.done { fill: color-mix(in srgb, var(--ok) 70%, var(--line)) } .wires .head.loop { fill: var(--warn) }
+.wires text { font: 600 11px var(--font-mono); fill: var(--warn) }
+@keyframes flowdash { to { stroke-dashoffset: -22 } }
+@media (prefers-reduced-motion: reduce) { .wires path { animation: none } }
+.node { position: relative; z-index: 1; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; min-width: 0; display: grid; gap: 6px; align-content: start }
+.node .k { font: 600 10.5px/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); display: flex; justify-content: space-between; gap: 8px }
+.node .t { font: 800 16px/1.2 var(--font-display) }
+.node ul { list-style: none; margin: 2px 0 0; padding: 0; display: grid; gap: 4px }
+.node li { position: relative; padding-left: 15px; font-size: 12.5px; color: var(--fg) }
+.node li::before { content: ""; position: absolute; left: 0; top: .5em; width: 7px; height: 7px; border-radius: 50%; background: var(--accent) }
+.node li small { color: var(--muted); font-size: 11.5px; margin-left: 4px }
+.node .badge { font: 700 10.5px/1 var(--font-mono); padding: 3px 7px; border-radius: 99px; background: var(--line); color: var(--muted); text-transform: none; letter-spacing: 0; white-space: nowrap }
+.node[data-state="doing"] { border-color: var(--info); box-shadow: 0 0 0 3px color-mix(in srgb, var(--info) 22%, transparent) }
+.node[data-state="doing"] .badge { background: var(--info); color: #fff }
+.node[data-state="done"] .badge { background: color-mix(in srgb, var(--ok) 22%, transparent); color: var(--ok) }
+.node[data-state="warn"] .badge { background: color-mix(in srgb, var(--warn) 22%, transparent); color: var(--warn) }
+.node[data-state="error"] { border-color: var(--bad) } .node[data-state="error"] .badge { background: var(--bad); color: #fff }
+.node.core { background: #0E1A2B; color: #F4F6FA; border-color: #2A3F5E; text-align: center; justify-items: center; padding: 16px 20px; box-shadow: 0 10px 30px -12px rgba(0,0,0,.45) }
+.node.core .t { font-size: 22px; font-weight: 900; letter-spacing: -0.01em }
+.node.core .k { color: #93A3B8 }
+.node.core .chips { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center }
+.node.core .chips span { font: 700 11px/1 var(--font-mono); padding: 6px 8px; border-radius: 8px; background: #1B2C44; color: #2EE6A6 }
+.node.human { border-style: dashed; border-color: var(--accent) }
+.node.human .t { color: var(--accent) }
+.node.ext li::before { background: var(--num) }
+.node.rules li::before { background: var(--warn) }
+.term { position: relative; z-index: 1; background: #0B1422; color: #CFE3F5; border-radius: 12px; padding: 12px 16px 14px; font: 12.5px/1.75 var(--font-mono); min-width: 0; overflow-x: auto; border: 1px solid #22344F }
+.term .dots { display: flex; gap: 6px; margin-bottom: 6px } .term .dots i { width: 9px; height: 9px; border-radius: 50%; background: #FF6B6B } .term .dots i:nth-child(2) { background: #FFD23F } .term .dots i:nth-child(3) { background: #2EE6A6 }
+.term .cmd { color: #2EE6A6 }
+.term .ln { display: grid; grid-template-columns: 1fr auto; gap: 16px } .term .ln b { color: #FFD23F; font-weight: 600 }
+.interrupts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px }
+.interrupts div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; font-size: 12px; display: grid; gap: 2px; min-width: 0 }
+.interrupts b { font-size: 12.5px } .interrupts span { color: var(--muted) }
+.c-3 { grid-column: span 3 } .c-4 { grid-column: span 4 } .c-5 { grid-column: span 5 } .c-6 { grid-column: span 6 } .c-7 { grid-column: span 7 } .c-core { grid-column: 4 / span 6 } .row-start { grid-column: 1 / span 3 }
+@media (max-width: 860px) {
+  .flow { grid-template-columns: 1fr; gap: 30px; padding-left: 24px }
+  .flow > * { grid-column: 1 / -1 !important }
+  .interrupts { grid-template-columns: 1fr }
+}
 </style>
 
 <div class="wrap">
@@ -108,10 +158,52 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
   </header>
   <div id="banner" class="banner" hidden></div>
 
+  <section class="panel flow-panel" aria-labelledby="flow-title">
+    <div class="flow-head"><h2 id="flow-title" style="margin:0">Hoe de studio werkt</h2><p id="flow-sub">Live status van de laatste run</p></div>
+    <div class="flow" id="flow">
+      <svg class="wires" id="wires" aria-hidden="true"></svg>
+
+      <div class="node rules c-4" id="n-rules"><div class="k">Jij · regels, één keer</div><div class="t">Spelregels</div>
+        <ul><li>Geen beleggingsadvies</li><li>Disclaimer op het einde</li><li>AI-vermelding in caption</li><li>⚠️ bij twijfel, nooit gokken</li></ul></div>
+      <div class="node c-4" id="n-know"><div class="k">Kennis · repo</div><div class="t">Wat Claude weet</div>
+        <ul><li>WORKFLOW.md <small>de vaste stappen</small></li><li>Merk &amp; kleuren <small>Fiscaal Fluitje</small></li><li>Scriptformaat &amp; onderwerpenlijst</li><li>Jouw feedback van vorige weken</li></ul></div>
+      <div class="node ext c-4" id="n-sys"><div class="k">Systeem</div><div class="t">Opslag &amp; timing</div>
+        <ul><li>GitHub <small>Creatief-repo</small></li><li>Studio-database <small>deze pagina</small></li><li>Zondagavond-taak <small>start de run</small></li></ul></div>
+
+      <div class="node core c-core" id="n-core" data-step="core"><div class="k">Claude · elke zondagavond</div><div class="t">AI Video Studio</div>
+        <div class="chips"><span>Python</span><span>edge-tts</span><span>Pillow</span><span>ffmpeg</span></div><span class="badge" id="core-badge">wacht</span></div>
+
+      <div class="node c-3 row-start" id="n-onderwerpen" data-step="onderwerpen"><div class="k">Onderwerpen <span class="badge">–</span></div><div class="t">Kiezen</div>
+        <ul><li>Thema-kiezer <small>evergreen</small></li><li>Feedback-lezer</li><li>Variatie-check</li></ul></div>
+      <div class="node c-3" id="n-scripts" data-step="scripts"><div class="k">Scripts <span class="badge">–</span></div><div class="t">Schrijven</div>
+        <ul><li>Hook-schrijver</li><li>Scriptschrijver <small>90-140 w.</small></li><li>Cijfer-checker <small>bron + jaar</small></li><li>Advies-filter</li></ul></div>
+      <div class="node c-3" id="n-productie" data-step="audio,video"><div class="k">Productie <span class="badge">–</span></div><div class="t">Maken</div>
+        <ul><li>Vlaamse stem <small>Arnaud</small></li><li>Beeld &amp; grafieken</li><li>Ondertitels <small>per woord</small></li><li>Render <small>1080×1920</small></li></ul></div>
+      <div class="node c-3" id="n-review" data-step="review"><div class="k">Review <span class="badge">–</span></div><div class="t">Klaarzetten</div>
+        <ul><li>Auto-checks</li><li>review.md + bronnen</li><li>Studio-update</li><li>Pushmelding</li></ul></div>
+
+      <div class="node human c-4" id="n-you"><div class="k">Human handoff</div><div class="t">Jij keurt goed</div>
+        <ul><li id="you-review">– klaar voor review</li><li id="you-ok">– nagekeken</li><li id="you-fb">Feedback gaat terug naar Claude</li></ul></div>
+      <div class="node human c-4" id="n-plan"><div class="k">Jij plant in</div><div class="t">Metricool / Buffer</div>
+        <ul><li id="you-planned">– ingepland</li><li>Caption kopiëren uit de Studio</li></ul></div>
+      <div class="node human c-4" id="n-tiktok"><div class="k">Publicatie</div><div class="t">TikTok</div>
+        <ul><li>AI-label aanzetten</li><li>Claude post nooit zelf</li></ul></div>
+
+      <div class="term c-5" id="n-term" aria-live="polite"></div>
+      <div class="node c-7" id="n-int"><div class="k">Wat de loop onderbreekt</div>
+        <div class="interrupts">
+          <div><b>Cijfer zonder bron</b><span>→ ⚠️ in review, jij beslist</span></div>
+          <div><b>Check faalt</b><span>→ Claude bouwt opnieuw</span></div>
+          <div><b>Advies-taal gevonden</b><span>→ script herschreven</span></div>
+          <div><b>Jij keurt af</b><span>→ feedback naar volgende run</span></div>
+        </div></div>
+    </div>
+  </section>
+
   <section class="panel" aria-labelledby="run-title">
-    <h2 id="run-title">Pipeline</h2>
+    <h2 id="run-title">Logboek</h2>
     <div class="run-head"><strong id="run-label">Gegevens laden…</strong><span id="run-when"></span></div>
-    <ol class="steps" id="steps"></ol>
+    <ol class="steps" id="steps" hidden></ol>
     <div class="log" id="log" aria-live="polite"></div>
   </section>
 
@@ -143,8 +235,113 @@ function render() {
   const weeks = [...new Set([...Object.keys(runs), ...videos.map(v => v.week)])].sort().reverse();
   if (!week || !weeks.includes(week)) week = weeks[0] || null;
   const sel = $("#week"); sel.replaceChildren(...weeks.map(w => el("option", { value: w, textContent: w, selected: w === week })));
-  renderRun(); renderGrid(); renderDetail();
+  renderRun(); renderFlow(); renderGrid(); renderDetail();
 }
+
+// ---------- Overzicht ----------
+const EDGES = [
+  ["n-rules", "n-core"], ["n-know", "n-core"], ["n-sys", "n-core"],
+  ["n-core", "n-onderwerpen"], ["n-core", "n-scripts"], ["n-core", "n-productie"], ["n-core", "n-review"],
+  ["n-onderwerpen", "n-scripts"], ["n-scripts", "n-productie"], ["n-productie", "n-review"],
+  ["n-review", "n-you"], ["n-you", "n-plan"], ["n-plan", "n-tiktok"],
+  ["n-int", "n-you", "loop"],
+];
+const NODE_STEP = { "n-onderwerpen": ["onderwerpen"], "n-scripts": ["scripts"], "n-productie": ["audio", "video"], "n-review": ["review"] };
+let nodeState = {};
+
+function combine(states) {
+  if (states.includes("error")) return "error";
+  if (states.includes("doing")) return "doing";
+  if (states.length && states.every(x => x === "done" || x === "warn")) return states.includes("warn") ? "warn" : "done";
+  if (states.some(x => x === "done")) return "doing";
+  return "todo";
+}
+function renderFlow() {
+  const r = runs[week];
+  const by = Object.fromEntries(((r && r.steps) || []).map(x => [x.key, x]));
+  nodeState = {};
+  for (const [id, keys] of Object.entries(NODE_STEP)) {
+    const st = combine(keys.map(k => (by[k] && by[k].state) || "todo"));
+    nodeState[id] = st;
+    const n = document.getElementById(id); n.dataset.state = st;
+    const det = keys.map(k => by[k] && by[k].detail).filter(Boolean).join(" · ");
+    n.querySelector(".badge").textContent = { todo: "nog niet", doing: "bezig", done: "klaar", warn: "klaar · ⚠️", error: "fout" }[st];
+    n.title = det;
+  }
+  const core = document.getElementById("n-core");
+  const cs = !r ? "todo" : r.state === "bezig" ? "doing" : r.state === "fout" ? "error" : "done";
+  core.dataset.state = cs; nodeState["n-core"] = cs;
+  $("#core-badge").textContent = !r ? "wacht op zondag" : ({ bezig: "run bezig", klaar: "run klaar", fout: "run gestopt" }[r.state] || r.state);
+  $("#flow-sub").textContent = r ? `${r.label || r.week}` : "Nog geen run voor deze week";
+
+  const vs = videos.filter(v => v.week === week);
+  const cnt = (s) => vs.filter(v => v.status === s).length;
+  const warns = vs.reduce((a, v) => a + (v.claims || []).filter(c => c.status !== "ok").length + (v.warnings || []).length, 0);
+  $("#you-review").textContent = `${cnt("klaar voor review")} klaar voor review`;
+  $("#you-ok").textContent = `${cnt("nagekeken")} nagekeken`;
+  $("#you-planned").textContent = `${cnt("ingepland")} ingepland`;
+  const fb = vs.filter(v => v.feedback).length;
+  $("#you-fb").textContent = fb ? `${fb}× feedback voor de volgende run` : "Feedback gaat terug naar Claude";
+
+  const lines = [
+    ["scripts geschreven", vs.length], ["video's gerenderd", vs.filter(v => v.videoUrl).length],
+    ["klaar voor review", cnt("klaar voor review")], ["nagekeken", cnt("nagekeken")], ["ingepland", cnt("ingepland")],
+    ["⚠️ open punten", warns], ["gepost door Claude", 0],
+  ];
+  $("#n-term").replaceChildren(el("div", { className: "dots" }, [el("i"), el("i"), el("i")]),
+    el("div", { className: "cmd", textContent: `$ studio status --week ${week || "-"}` }),
+    ...lines.map(([k, v]) => el("div", { className: "ln" }, [el("span", { textContent: k }), el("b", { textContent: String(v) })])));
+  requestAnimationFrame(drawWires);
+}
+
+function drawWires() {
+  const flow = $("#flow"), svg = $("#wires");
+  if (!flow || !flow.offsetWidth) return;
+  const F = flow.getBoundingClientRect();
+  const box = (id) => { const b = document.getElementById(id).getBoundingClientRect(); return { l: b.left - F.left, r: b.right - F.left, t: b.top - F.top, b: b.bottom - F.top, cx: (b.left + b.right) / 2 - F.left, cy: (b.top + b.bottom) / 2 - F.top }; };
+  const NS = "http://www.w3.org/2000/svg";
+  const parts = [];
+  const head = (x, y, dir, cls) => {
+    const s = 6, pts = { down: [[x - s, y - s * 1.4], [x + s, y - s * 1.4], [x, y]], up: [[x - s, y + s * 1.4], [x + s, y + s * 1.4], [x, y]],
+      right: [[x - s * 1.4, y - s], [x - s * 1.4, y + s], [x, y]], left: [[x + s * 1.4, y - s], [x + s * 1.4, y + s], [x, y]] }[dir];
+    const p = document.createElementNS(NS, "polygon"); p.setAttribute("points", pts.map(q => q.join(",")).join(" ")); p.setAttribute("class", "head " + cls); return p;
+  };
+  const cls = (a, b, kind) => kind || ((nodeState[b] === "doing") ? "hot" : (["done", "warn"].includes(nodeState[a]) && ["done", "warn", "doing"].includes(nodeState[b] || "done")) ? "done" : "");
+  const narrow = getComputedStyle(flow).gridTemplateColumns.split(" ").length < 2;
+  for (const [a, b, kind] of EDGES) {
+    if (narrow && kind === "loop") continue;  // op gsm staat de onderbrekingen-kaart onderaan; geen pijl dwars door alles
+    const A = box(a), B = box(b), c = cls(a, b, kind);
+    let d, h;
+    if (B.t >= A.b - 2) {            // naar beneden
+      const x1 = A.cx + (B.cx - A.cx) * 0.12, my = (A.b + B.t) / 2;
+      const x2 = Math.min(Math.max(B.cx, B.l + 20), B.r - 20);
+      d = `M${x1},${A.b} V${my} H${x2} V${B.t - 2}`; h = head(x2, B.t - 1, "down", c);
+    } else if (A.t >= B.b - 2) {     // naar boven
+      const x1 = Math.min(Math.max(B.cx, A.l + 24), A.r - 24), my = (B.b + A.t) / 2;
+      d = `M${x1},${A.t} V${my} H${B.cx} V${B.b + 2}`; h = head(B.cx, B.b + 1, "up", c);
+    } else if (B.l >= A.r - 2) {     // naar rechts
+      const y = (Math.max(A.t, B.t) + Math.min(A.b, B.b)) / 2;
+      d = `M${A.r},${y} H${B.l - 2}`; h = head(B.l - 1, y, "right", c);
+    } else {
+      const y = (Math.max(A.t, B.t) + Math.min(A.b, B.b)) / 2;
+      d = `M${A.l},${y} H${B.r + 2}`; h = head(B.r + 1, y, "left", c);
+    }
+    const p = document.createElementNS(NS, "path"); p.setAttribute("d", d); if (c) p.setAttribute("class", c);
+    parts.push(p, h);
+  }
+  // feedbacklus: van "Jij keurt goed" langs links terug naar de studio
+  const Y = box("n-you"), C = box("n-core"), x0 = 12;
+  const lp = document.createElementNS(NS, "path");
+  const yTarget = C.cy, cTarget = C.l;
+  lp.setAttribute("d", `M${Y.l},${Y.cy} H${x0} V${yTarget} H${cTarget - 2}`); lp.setAttribute("class", "loop");
+  const lt = document.createElementNS(NS, "text"); lt.textContent = "feedback";
+  lt.setAttribute("x", x0 - 5); lt.setAttribute("y", (Y.cy + yTarget) / 2); lt.setAttribute("transform", `rotate(-90 ${x0 - 5} ${(Y.cy + yTarget) / 2})`); lt.setAttribute("text-anchor", "middle");
+  parts.push(lp, head(cTarget - 1, yTarget, "right", "loop"), lt);
+  svg.replaceChildren(...parts);
+}
+window.addEventListener("resize", () => requestAnimationFrame(drawWires));
+if (window.ResizeObserver) new ResizeObserver(() => requestAnimationFrame(drawWires)).observe(document.getElementById("flow"));
+document.fonts && document.fonts.ready.then(() => requestAnimationFrame(drawWires));
 
 function renderRun() {
   const r = runs[week];
