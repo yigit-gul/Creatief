@@ -147,5 +147,29 @@
    "info": ""
   }
  ],
- "repoPath": "review/2026-W48/05-nasdaq-dotcom-crash.mp4"
+ "repoPath": "review/2026-W48/05-nasdaq-dotcom-crash.mp4",
+ "trendScore": 9,
+ "trendRank": 2,
+ "trendReason": "Sterk verhaal met drama (−78%, 15 jaar wachten) en een grap die blijft hangen ('langer dan TikTok bestaat'). Valt nu extra op door de AI-onrust op de beurs. Blijft ook later goed werken.",
+ "claudeReply": "Herschreven in korte, eenvoudige zinnen (max. ~10 woorden), zodat de stem minder AI klinkt.",
+ "videoUrl": "/_blob/f08f9b6a4adfd9ef587228a181af7cf9",
+ "selfReview": {
+  "rounds": 2,
+  "scores": {
+   "hook": 5,
+   "eenvoud": 5,
+   "tempo": 4,
+   "humor": 4,
+   "info": 5,
+   "visueel": 5,
+   "regels": 5
+  },
+  "changes": [
+   "Hook ingekort: 'In 2000 crashte de Nasdaq. Bijna 80% weg.'",
+   "Te lange zin opgesplitst.",
+   "Eindkaart: 'beursgeschiedenis' liep over de rand, nu altijd passend.",
+   "Bewegende achtergrond."
+  ],
+  "verdict": "Beste verhaal van de reeks: drama, cijfers en een grap die blijft hangen."
+ }
 }

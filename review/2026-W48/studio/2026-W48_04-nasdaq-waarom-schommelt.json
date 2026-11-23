@@ -137,5 +137,29 @@
    "info": ""
   }
  ],
- "repoPath": "review/2026-W48/04-nasdaq-waarom-schommelt.mp4"
+ "repoPath": "review/2026-W48/04-nasdaq-waarom-schommelt.mp4",
+ "feedback": "De stem is terug ai achtig aan het worden gebruik eenvoudige zinnen zodat het minder ai klinkt.",
+ "feedbackAt": "2026-11-23T01:44:23.914Z",
+ "trendScore": 7,
+ "trendRank": 4,
+ "trendReason": "Grappige vergelijking ('drama queen', 'influencer die nog niet viraal is') en het rente-voorbeeld is sterk. Wel abstracter onderwerp, dus minder klikken dan nieuws of drama.",
+ "claudeReply": "Verwerkt: alles herschreven in korte, eenvoudige zinnen (max. ~10 woorden), gewone woorden in plaats van 'gewaardeerd' en 'verwachting'. Deze regel geldt nu voor alle nieuwe video's.",
+ "videoUrl": "/_blob/a059fac7aad8fc915353a47c78640b12",
+ "selfReview": {
+  "rounds": 2,
+  "scores": {
+   "hook": 5,
+   "eenvoud": 4,
+   "tempo": 4,
+   "humor": 5,
+   "info": 4,
+   "visueel": 4,
+   "regels": 5
+  },
+  "changes": [
+   "Zin van 11 woorden opgesplitst ('Zoals bij een influencer. Nog niet viraal, maar bijna.').",
+   "Bewegende achtergrond."
+  ],
+  "verdict": "Sterke vergelijking en goed rentevoorbeeld; de hook is snel, maar dat past bij TikTok."
+ }
 }

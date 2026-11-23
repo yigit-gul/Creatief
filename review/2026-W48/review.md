@@ -7,7 +7,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
 | 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 65 s | 162 | 10/10 | 6 |
-| 02-marktnieuws-w47 | Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026) | 63 s | 157 | 10/10 | 4 |
+| 02-marktnieuws-w47 | Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026) | 65 s | 164 | 10/10 | 4 |
 | 03-nasdaq-wat-is-het | Nasdaq 101: beurs, index of rapper? | 62 s | 155 | 10/10 | 3 |
 | 04-nasdaq-waarom-schommelt | Waarom de Nasdaq de drama queen van de beurs is | 62 s | 165 | 10/10 | 3 |
 | 05-nasdaq-dotcom-crash | De dotcom-crash: −78% en 15 jaar wachten | 62 s | 154 | 10/10 | 4 |
@@ -115,7 +115,7 @@ Algemene info, geen persoonlijk advies.
 >
 > Reden drie: de beursgang van Anthropic. Die bracht geen nieuwe hype. Veel beleggers namen net hun winst.
 >
-> Wat betekent dat? De S&P 500 en de Dow zitten in een correctie. Dat is minstens 10% onder hun top. De Nasdaq staat zelfs lager dan begin 2026. De winst van dit jaar is weg.
+> Wat betekent dat? De S&P 500 en de Dow zitten in een correctie. Dat is minstens 10% onder hun top. De Nasdaq staat zelfs lager dan begin 2026. De winst van dit jaar is weg. Sneller dan je zakgeld op een festival.
 >
 > Wat er nu komt? Dat weet niemand. Voorspellen doen we niet. Volg voor het marktnieuws van volgende week!
 
@@ -158,8 +158,8 @@ Algemene info, geen beleggingsadvies: geen aanraders, geen voorspellingen.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (157 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (62.9 s)
+- ✅ Woordenaantal 150-190 (164 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (65.4 s)
 - ✅ Hook kort (≤ 22 woorden) (19 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')

@@ -1,7 +1,7 @@
 {
  "id": "02-marktnieuws-w47",
  "signalen": {
-  "duration": 62.9,
+  "duration": 65.4,
   "scenes": [
    {
     "n": 0,
@@ -46,9 +46,9 @@
    {
     "n": 5,
     "type": "point",
-    "sec": 12.1,
-    "woorden": 35,
-    "woorden_per_sec": 2.88,
+    "sec": 14.7,
+    "woorden": 42,
+    "woorden_per_sec": 2.86,
     "langste_zin": 10
    },
    {
@@ -61,8 +61,8 @@
    }
   ],
   "zinnen": {
-   "aantal": 27,
-   "gemiddeld": 5.8,
+   "aantal": 28,
+   "gemiddeld": 5.9,
    "langer_dan_10": []
   },
   "hook": {
@@ -71,7 +71,7 @@
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 63,
+   "blokken": 67,
    "langste": "beurswaakhond zijn boekhouding"
   },
   "aandachtspunten": []

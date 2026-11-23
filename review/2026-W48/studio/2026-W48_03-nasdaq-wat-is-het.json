@@ -158,5 +158,26 @@
    "info": ""
   }
  ],
- "repoPath": "review/2026-W48/03-nasdaq-wat-is-het.mp4"
+ "repoPath": "review/2026-W48/03-nasdaq-wat-is-het.mp4",
+ "trendScore": 6,
+ "trendRank": 5,
+ "trendReason": "Leuke hook ('rapper?'), maar een basisuitleg trekt vooral beginners. Goed als instapvideo of vastgezette video op je profiel, minder als viraal nummer.",
+ "claudeReply": "Herschreven in korte, eenvoudige zinnen (max. ~10 woorden), zodat de stem minder AI klinkt.",
+ "videoUrl": "/_blob/026b9c433be0ac69bf55d42676038875",
+ "selfReview": {
+  "rounds": 1,
+  "scores": {
+   "hook": 4,
+   "eenvoud": 5,
+   "tempo": 4,
+   "humor": 5,
+   "info": 4,
+   "visueel": 4,
+   "regels": 5
+  },
+  "changes": [
+   "Bewegende achtergrond."
+  ],
+  "verdict": "Grappige instapvideo. Inhoudelijk basic, dus ideaal als vastgezette video op je profiel."
+ }
 }

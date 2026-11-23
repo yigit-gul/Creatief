@@ -184,5 +184,29 @@
    "info": ""
   }
  ],
- "repoPath": "review/2026-W48/01-tob.mp4"
+ "repoPath": "review/2026-W48/01-tob.mp4",
+ "feedback": "Begin mag pittiger en aantrekllijker, nu is het zo nie vloeiend maak het vloeiender alsof hij sprekt met iemand enzo uitlegt. \"HE\" mag weg want ai leest dat niet",
+ "feedbackAt": "2026-11-22T23:22:30.948Z",
+ "trendScore": 8,
+ "trendRank": 3,
+ "trendReason": "Herkenbare tegenstrijdigheid in de hook ('Verlies gemaakt? Tóch belasting'). Specifiek Belgisch, dus minder concurrentie. Mensen bewaren dit soort uitleg graag.",
+ "claudeReply": "Herschreven in korte, eenvoudige zinnen (max. ~10 woorden), zodat de stem minder AI klinkt.",
+ "videoUrl": "/_blob/703ca3700472fcfa7dc191b9815d09e8",
+ "selfReview": {
+  "rounds": 2,
+  "scores": {
+   "hook": 4,
+   "eenvoud": 4,
+   "tempo": 4,
+   "humor": 4,
+   "info": 5,
+   "visueel": 4,
+   "regels": 5
+  },
+  "changes": [
+   "Scène met de tarieven duurde 20 s: gesplitst in tarieven + apart rekenvoorbeeld voor het maximum (€500.000 → €1.600).",
+   "Achtergrond beweegt traag, zodat het beeld nooit stilstaat."
+  ],
+  "verdict": "Duidelijk en concreet, met twee rekenvoorbeelden; de hook blijft de sterkste troef."
+ }
 }
