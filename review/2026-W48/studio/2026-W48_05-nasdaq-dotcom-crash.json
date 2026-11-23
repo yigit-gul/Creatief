@@ -4,14 +4,14 @@
  "title": "De dotcom-crash: −78% en 15 jaar wachten",
  "validity": "Historische cijfers Nasdaq Composite (slotkoersen, prijsindex zonder dividenden)",
  "status": "klaar voor review",
- "durationSec": 61.3,
- "words": 163,
+ "durationSec": 60.9,
+ "words": 154,
  "script": [
-  "In 2000 verloor de Nasdaq bijna 80%. En het duurde 15 jaar om terug te komen. Welkom bij de dotcom-bubbel.",
-  "Eind jaren negentig was internet het nieuwe ding. Had je bedrijf 'punt com' in de naam? Dan was je blijkbaar goud waard. Een website en een droom, meer had je niet nodig. Winst? Ach, dat kwam later wel. Dachten ze.",
-  "Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. Pas in april 2015 kwam hij weer boven die oude top. Vijftien jaar! Langer dan TikTok bestaat.",
-  "Stel: iemand stak €1.000 in de index op de top. In oktober 2002 bleef daar nog €221 van over. Oef. En veel internetbedrijven verdwenen gewoon. Een paar overleefden wel, en groeiden later uit tot de giganten die je nu elke dag gebruikt.",
-  "De les die beleggers er toen uit trokken: een goed verhaal is nog geen winst. Geschiedenis herhaalt zich niet altijd, en voorspellen doen we niet. Volg voor meer!"
+  "In 2000 verloor de Nasdaq bijna 80%. Daarna duurde het 15 jaar om te herstellen. Welkom bij de dotcom-bubbel.",
+  "Eind jaren negentig was internet nieuw. Had je bedrijf punt com in de naam? Dan was je blijkbaar goud waard. Iedereen wilde erbij zijn. Een website en een droom. Meer had je niet nodig. Winst? Die kwam later wel. Dachten ze.",
+  "Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. Pas in april 2015 stond hij weer hoger. Vijftien jaar! Langer dan TikTok bestaat.",
+  "Stel, iemand stak €1.000 in de index op de top. In oktober 2002 was dat nog €221. Oef. Dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over. Die werden later de reuzen die je nu elke dag gebruikt.",
+  "Wat leerden beleggers toen? Een goed verhaal is nog geen winst. Geschiedenis herhaalt zich niet altijd. En voorspellen doen we niet. Volg voor meer!"
  ],
  "caption": "In 2000 knalde de dotcom-bubbel: de Nasdaq verloor 78% en had 15 jaar nodig om terug op de top te staan 💥 Het verhaal in minder dan een minuut.\n\nAlgemene info, geen beleggingsadvies, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
  "hashtags": [
@@ -99,17 +99,17 @@
   {
    "name": "Woordenaantal 150-190",
    "ok": true,
-   "info": "163 woorden"
+   "info": "154 woorden"
   },
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "61.3 s"
+   "info": "60.9 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
    "ok": true,
-   "info": "20 woorden"
+   "info": "19 woorden"
   },
   {
    "name": "Laatste scène is outro met disclaimer",
@@ -147,5 +147,10 @@
    "info": ""
   }
  ],
- "repoPath": "review/2026-W48/05-nasdaq-dotcom-crash.mp4"
+ "repoPath": "review/2026-W48/05-nasdaq-dotcom-crash.mp4",
+ "trendScore": 9,
+ "trendRank": 2,
+ "trendReason": "Sterk verhaal met drama (−78%, 15 jaar wachten) en een grap die blijft hangen ('langer dan TikTok bestaat'). Valt nu extra op door de AI-onrust op de beurs. Blijft ook later goed werken.",
+ "videoUrl": "/_blob/5f3af3e0dfe3fbe945af2a48a69869fb",
+ "claudeReply": "Herschreven in korte, eenvoudige zinnen (max. ~10 woorden), zodat de stem minder AI klinkt."
 }

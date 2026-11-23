@@ -4,7 +4,7 @@
   "validity": "Historische cijfers Nasdaq Composite (slotkoersen, prijsindex zonder dividenden)",
   "scenes": [
     {
-      "say": "In 2000 verloor de Nasdaq bijna 80%. En het duurde 15 jaar om terug te komen. Welkom bij de dotcom-bubbel.",
+      "say": "In 2000 verloor de Nasdaq bijna 80%. Daarna duurde het 15 jaar om te herstellen. Welkom bij de dotcom-bubbel.",
       "visual": {
         "type": "hook",
         "kicker": "Nasdaq-geschiedenis",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "say": "Eind jaren negentig was internet het nieuwe ding. Had je bedrijf 'punt com' in de naam? Dan was je blijkbaar goud waard. Een website en een droom, meer had je niet nodig. Winst? Ach, dat kwam later wel. Dachten ze.",
+      "say": "Eind jaren negentig was internet nieuw. Had je bedrijf punt com in de naam? Dan was je blijkbaar goud waard. Iedereen wilde erbij zijn. Een website en een droom. Meer had je niet nodig. Winst? Die kwam later wel. Dachten ze.",
       "visual": {
         "type": "point",
         "n": 1,
@@ -22,7 +22,7 @@
       }
     },
     {
-      "say": "Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. Pas in april 2015 kwam hij weer boven die oude top. Vijftien jaar! Langer dan TikTok bestaat.",
+      "say": "Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. Pas in april 2015 stond hij weer hoger. Vijftien jaar! Langer dan TikTok bestaat.",
       "visual": {
         "type": "bars",
         "title": "2. Van top naar bodem",
@@ -53,7 +53,7 @@
       }
     },
     {
-      "say": "Stel: iemand stak €1.000 in de index op de top. In oktober 2002 bleef daar nog €221 van over. Oef. En veel internetbedrijven verdwenen gewoon. Een paar overleefden wel, en groeiden later uit tot de giganten die je nu elke dag gebruikt.",
+      "say": "Stel, iemand stak €1.000 in de index op de top. In oktober 2002 was dat nog €221. Oef. Dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over. Die werden later de reuzen die je nu elke dag gebruikt.",
       "visual": {
         "type": "calc",
         "title": "3. Wat betekent dat?",
@@ -74,7 +74,7 @@
       }
     },
     {
-      "say": "De les die beleggers er toen uit trokken: een goed verhaal is nog geen winst. Geschiedenis herhaalt zich niet altijd, en voorspellen doen we niet. Volg voor meer!",
+      "say": "Wat leerden beleggers toen? Een goed verhaal is nog geen winst. Geschiedenis herhaalt zich niet altijd. En voorspellen doen we niet. Volg voor meer!",
       "visual": {
         "type": "outro",
         "big": "Volg voor meer *beursgeschiedenis*"

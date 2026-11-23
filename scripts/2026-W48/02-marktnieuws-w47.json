@@ -4,7 +4,7 @@
   "validity": "Marktweek 16-20 november 2026, slotkoersen (geen fiscaal aanslagjaar van toepassing)",
   "scenes": [
     {
-      "say": "De Nasdaq verloor vorige week 10%. De slechtste week sinds maart 2020. Wat is er gebeurd?",
+      "say": "De Nasdaq verloor vorige week 10%. Zo slecht was het niet meer sinds maart 2020. Wat is er gebeurd?",
       "visual": {
         "type": "hook",
         "kicker": "Marktnieuws · 16-20 nov",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "say": "Van maandag tot donderdag ging het al stap voor stap omlaag. En vrijdag kwam de klap: min 5,3% op één dag.",
+      "say": "Maandag tot donderdag ging het stap voor stap omlaag. Vrijdag kwam de klap. Min 5,3% op één dag.",
       "visual": {
         "type": "line",
         "title": "Nasdaq Composite",
@@ -51,7 +51,7 @@
       }
     },
     {
-      "say": "Reden één: twijfel over AI. Beleggers vragen zich af of al die miljarden aan AI-investeringen wel genoeg gaan opleveren. Dus verkopen ze.",
+      "say": "Reden één: twijfel over AI. Bedrijven steken miljarden in AI. Beleggers vragen zich af: levert dat genoeg op? Ze twijfelen. Dus ze verkopen.",
       "visual": {
         "type": "point",
         "n": 1,
@@ -60,7 +60,7 @@
       }
     },
     {
-      "say": "Reden twee: chipbedrijven kregen de zwaarste klappen. De chipindex zakte 17%. Nvidia stelde met zijn cijfers niet gerust, en volgens Reuters bekijkt de Amerikaanse beurswaakhond zijn boekhouding.",
+      "say": "Reden twee: chipbedrijven kregen de grootste klap. De chipindex zakte 17%. De cijfers van Nvidia stelden niet gerust. En volgens Reuters bekijkt de Amerikaanse beurswaakhond zijn boekhouding.",
       "visual": {
         "type": "bars",
         "title": "2. Chips het hardst geraakt",
@@ -91,7 +91,7 @@
       }
     },
     {
-      "say": "Reden drie: de beursgang van Anthropic. Die bracht geen nieuw enthousiasme. Veel beleggers namen net winst op AI-aandelen.",
+      "say": "Reden drie: de beursgang van Anthropic. Die bracht geen nieuwe hype. Veel beleggers namen net hun winst.",
       "visual": {
         "type": "point",
         "n": 3,
@@ -100,7 +100,7 @@
       }
     },
     {
-      "say": "En wat betekent dat? De S&P 500 en de Dow zitten nu in een correctie. Dat wil zeggen: minstens 10% onder hun top. En de Nasdaq staat zelfs lager dan begin 2026. Alle winst van dit jaar: foetsie.",
+      "say": "Wat betekent dat? De S&P 500 en de Dow zitten in een correctie. Dat is minstens 10% onder hun top. De Nasdaq staat zelfs lager dan begin 2026. De winst van dit jaar is weg.",
       "visual": {
         "type": "point",
         "n": 4,
@@ -109,7 +109,7 @@
       }
     },
     {
-      "say": "Wat er nu komt, weet niemand. Voorspellen doen we hier niet. Volg voor het marktnieuws van volgende week!",
+      "say": "Wat er nu komt? Dat weet niemand. Voorspellen doen we niet. Volg voor het marktnieuws van volgende week!",
       "visual": {
         "type": "outro",
         "big": "Elke week *marktnieuws*"

@@ -4,7 +4,7 @@
   "validity": "Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, geen inkomstenbelasting: er is geen aanslagjaar)",
   "scenes": [
     {
-      "say": "Stel: je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar? Ik leg het je uit.",
+      "say": "Stel, je verkoopt je aandelen met verlies. Toch betaal je belasting. Raar? Ik leg het uit.",
       "visual": {
         "type": "hook",
         "kicker": "Beurstaks",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "say": "Da's de [TOB|T.O.B.], de taks op de beursverrichtingen. Je betaalt een klein percentage op het bedrag. Winst of verlies? Maakt niks uit.",
+      "say": "Dat is de [TOB|T.O.B.]. De taks op de beursverrichtingen. Je betaalt een klein stukje van het bedrag. Winst of verlies? Dat maakt niet uit.",
       "visual": {
         "type": "point",
         "n": 1,
@@ -22,7 +22,7 @@
       }
     },
     {
-      "say": "Hoeveel? Hangt af van wat je koopt: 0,12%, 0,35% of 1,32%. Met telkens een maximum per transactie. Stel dat je voor een half miljoen aan aandelen koopt. Dan zou 0,35% €1.750 zijn, maar je betaalt maximaal €1.600. Fijn voor de miljonairs onder ons.",
+      "say": "Hoeveel? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. Er is ook een maximum per keer. Stel, je koopt voor een half miljoen aan aandelen. Dan zou 0,35% €1.750 zijn. Maar je betaalt maximaal €1.600. Goed nieuws voor de miljonairs.",
       "visual": {
         "type": "table",
         "title": "2. Drie tarieven",
@@ -50,7 +50,7 @@
       }
     },
     {
-      "say": "Kijk, een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% betaal je dan €7. Verkoop je ze later voor €2.000? Dan nog eens €7. Samen dus €14.",
+      "say": "Kijk, een voorbeeld. Je koopt aandelen voor €2.000. Aan 0,35% betaal je €7. Later verkoop je ze voor €2.000. Dan betaal je weer €7. Samen is dat €14.",
       "visual": {
         "type": "calc",
         "title": "Rekenvoorbeeld",
@@ -88,7 +88,7 @@
       }
     },
     {
-      "say": "Wie regelt dat? Een Belgische broker doet het automatisch voor jou. Bij een buitenlandse broker is dat niet altijd zo. Dan moet je het zelf aangeven en betalen, ten laatste de laatste werkdag van de tweede maand na je transactie.",
+      "say": "Wie regelt dat? Een Belgische broker doet het voor jou. Een buitenlandse broker niet altijd. Dan geef je het zelf aan. En je betaalt het zelf. Wanneer? Ten laatste de laatste werkdag van de tweede maand erna.",
       "visual": {
         "type": "point",
         "n": 3,
@@ -97,7 +97,7 @@
       }
     },
     {
-      "say": "Nu weet je waar dat kostje op je afrekening vandaan komt. Volg voor meer!",
+      "say": "Nu weet je waar dat kostje vandaan komt. Volg voor meer!",
       "visual": {
         "type": "outro",
         "big": "Volg voor meer *fiscaal* zonder gedoe"

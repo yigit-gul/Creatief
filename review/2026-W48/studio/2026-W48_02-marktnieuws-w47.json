@@ -3,17 +3,17 @@
  "id": "02-marktnieuws-w47",
  "title": "Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026)",
  "validity": "Marktweek 16-20 november 2026, slotkoersen (geen fiscaal aanslagjaar van toepassing)",
- "status": "klaar voor review",
- "durationSec": 64.0,
- "words": 160,
+ "status": "ingepland",
+ "durationSec": 62.9,
+ "words": 157,
  "script": [
-  "De Nasdaq verloor vorige week 10%. De slechtste week sinds maart 2020. Wat is er gebeurd?",
-  "Van maandag tot donderdag ging het al stap voor stap omlaag. En vrijdag kwam de klap: min 5,3% op één dag.",
-  "Reden één: twijfel over AI. Beleggers vragen zich af of al die miljarden aan AI-investeringen wel genoeg gaan opleveren. Dus verkopen ze.",
-  "Reden twee: chipbedrijven kregen de zwaarste klappen. De chipindex zakte 17%. Nvidia stelde met zijn cijfers niet gerust, en volgens Reuters bekijkt de Amerikaanse beurswaakhond zijn boekhouding.",
-  "Reden drie: de beursgang van Anthropic. Die bracht geen nieuw enthousiasme. Veel beleggers namen net winst op AI-aandelen.",
-  "En wat betekent dat? De S&P 500 en de Dow zitten nu in een correctie. Dat wil zeggen: minstens 10% onder hun top. En de Nasdaq staat zelfs lager dan begin 2026. Alle winst van dit jaar: foetsie.",
-  "Wat er nu komt, weet niemand. Voorspellen doen we hier niet. Volg voor het marktnieuws van volgende week!"
+  "De Nasdaq verloor vorige week 10%. Zo slecht was het niet meer sinds maart 2020. Wat is er gebeurd?",
+  "Maandag tot donderdag ging het stap voor stap omlaag. Vrijdag kwam de klap. Min 5,3% op één dag.",
+  "Reden één: twijfel over AI. Bedrijven steken miljarden in AI. Beleggers vragen zich af: levert dat genoeg op? Ze twijfelen. Dus ze verkopen.",
+  "Reden twee: chipbedrijven kregen de grootste klap. De chipindex zakte 17%. De cijfers van Nvidia stelden niet gerust. En volgens Reuters bekijkt de Amerikaanse beurswaakhond zijn boekhouding.",
+  "Reden drie: de beursgang van Anthropic. Die bracht geen nieuwe hype. Veel beleggers namen net hun winst.",
+  "Wat betekent dat? De S&P 500 en de Dow zitten in een correctie. Dat is minstens 10% onder hun top. De Nasdaq staat zelfs lager dan begin 2026. De winst van dit jaar is weg.",
+  "Wat er nu komt? Dat weet niemand. Voorspellen doen we niet. Volg voor het marktnieuws van volgende week!"
  ],
  "caption": "De Nasdaq had vorige week z'n slechtste week sinds maart 2020: −10%. Wat er gebeurde en waarom, in minder dan een minuut 📉\n\nAlgemene info, geen beleggingsadvies: geen aanraders, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
  "hashtags": [
@@ -129,17 +129,17 @@
   {
    "name": "Woordenaantal 150-190",
    "ok": true,
-   "info": "160 woorden"
+   "info": "157 woorden"
   },
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "64.0 s"
+   "info": "62.9 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
    "ok": true,
-   "info": "16 woorden"
+   "info": "19 woorden"
   },
   {
    "name": "Laatste scène is outro met disclaimer",
@@ -177,5 +177,10 @@
    "info": ""
   }
  ],
- "repoPath": "review/2026-W48/02-marktnieuws-w47.mp4"
+ "repoPath": "review/2026-W48/02-marktnieuws-w47.mp4",
+ "trendScore": 9,
+ "trendRank": 1,
+ "trendReason": "Supertijdsgebonden: slechtste beursweek sinds 2020 en iedereen heeft het erover. Grote cijfers (−10%) in de hook. Maar het nieuws veroudert snel, dus zo vroeg mogelijk posten.",
+ "videoUrl": "/_blob/f9c4b81bef224decb0e3fd42ea429d36",
+ "claudeReply": "Herschreven in korte, eenvoudige zinnen (max. ~10 woorden), zodat de stem minder AI klinkt. Let op: deze video staat op 'ingepland'. Vervang in je planner de oude versie door deze."
 }
