@@ -1,0 +1,247 @@
+{
+  "id": "02-pensioensparen",
+  "title": "Pensioensparen: 30% terug van de staat (met een addertje)",
+  "validity": "Fiscale maxima voor stortingen in 2026 (inkomsten 2026, aanslagjaar 2027)",
+  "scenes": [
+    {
+      "say": "30% terug van de staat. Gewoon omdat je spaart. Te mooi om waar te zijn? Er zit een addertje aan.",
+      "visual": {
+        "type": "slam",
+        "kicker": "Pensioensparen",
+        "words": [
+          "+30%",
+          "TERUG VAN DE STAAT.",
+          "MET EEN ADDERTJE."
+        ],
+        "colors": [
+          "yellow",
+          "text",
+          "yellow"
+        ],
+        "sizes": [
+          300,
+          110,
+          110
+        ],
+        "cues": [
+          "30%",
+          "staat",
+          "addertje"
+        ],
+        "y": 560
+      }
+    },
+    {
+      "say": "Kijk, dat heet pensioensparen. Je zet elk jaar wat opzij voor later. En de staat beloont dat met minder belasting.",
+      "visual": {
+        "type": "point",
+        "n": 1,
+        "head": "Wat is *pensioensparen*?",
+        "body": "Elk jaar wat opzij voor later. De staat geeft je belastingvermindering."
+      }
+    },
+    {
+      "say": "Je kiest tussen twee plafonds. Stort je tot €1.050? Dan krijg je 30% terug. Of je gaat tot €1.350, maar dan krijg je 25%. Die keuze geef je zelf door aan je bank.",
+      "visual": {
+        "type": "table",
+        "title": "2. Twee plafonds",
+        "rows": [
+          {
+            "value": "30%",
+            "label": "terug op max. €1.050 per jaar",
+            "cue": "€1.050"
+          },
+          {
+            "value": "25%",
+            "label": "terug op max. €1.350 per jaar",
+            "max": "zelf doorgeven aan je bank",
+            "cue": "€1.350"
+          }
+        ],
+        "note": "Stortingen in 2026 · aanslagjaar 2027"
+      }
+    },
+    {
+      "say": "Een voorbeeldje. Stel, je stort €1.050. 30% daarvan is €315. Die krijg je terug via je aangifte. Netto kost het je dus maar €735.",
+      "visual": {
+        "type": "calc",
+        "title": "Rekenvoorbeeld",
+        "note": "Fictief voorbeeld, zonder kosten van het product.",
+        "lines": [
+          {
+            "label": "Je stort",
+            "value": "€1.050",
+            "cue": "€1.050"
+          },
+          {
+            "label": "30% belastingvermindering",
+            "value": "€315",
+            "hl": true,
+            "cue": "€315"
+          },
+          {
+            "label": "Netto kost",
+            "value": "€735",
+            "result": true,
+            "cue": "€735"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Nu het addertje. Het is een korting op je belasting. Betaal je geen belasting, bijvoorbeeld met een klein studentenjobje? Dan krijg je ook niks terug. Zoals een kortingsbon voor een winkel waar je nooit komt.",
+      "visual": {
+        "type": "point",
+        "n": 3,
+        "head": "Het *addertje*",
+        "body": "Geen belasting betalen = ook geen korting krijgen."
+      }
+    },
+    {
+      "say": "En later? Op je zestigste betaal je één keer 8% belasting. Haal je het er eerder uit? Dan betaal je meer. Dit geld is dus echt voor later, met grijs haar.",
+      "visual": {
+        "type": "point",
+        "n": 4,
+        "head": "Op je 60ste: *8%* belasting",
+        "body": "Eerder opnemen kost meer. Dit is geld voor later."
+      }
+    },
+    {
+      "say": "Let op, het telt per kalenderjaar. Of het bij jou past, beslis je zelf. Volg voor meer!",
+      "visual": {
+        "type": "outro",
+        "big": "Volg voor meer *fiscaal* zonder gedoe"
+      }
+    }
+  ],
+  "caption": "30% terug van de staat omdat je spaart? Bij pensioensparen kan het, maar er zit een addertje aan 🐍 Zo werken de twee plafonds voor 2026 (aanslagjaar 2027).\n\nAlgemene info, geen persoonlijk advies. Of pensioensparen bij jou past, hangt af van je situatie.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
+  "hashtags": [
+    "#pensioensparen",
+    "#fiscaliteit",
+    "#geldtips",
+    "#belgie",
+    "#sparen"
+  ],
+  "claims": [
+    {
+      "claim": "Twee plafonds voor stortingen in 2026: max. €1.050 met 30% belastingvermindering of max. €1.350 met 25%",
+      "note": "Bevestigd door Wikifin, FOD Financiën, BNP Paribas Fortis en Test-Aankoop (zoekresultaten; de pagina's zelf waren vanuit deze omgeving niet bereikbaar).",
+      "sources": [
+        {
+          "date": "2026-11-23",
+          "title": "Wikifin (FSMA) – Pensioensparen (belastingvermindering)",
+          "url": "https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/belastingverminderingen/pensioensparen"
+        },
+        {
+          "date": "2026-11-23",
+          "title": "FOD Financiën – Pensioensparen",
+          "url": "https://fin.belgium.be/nl/particulieren/belastingvoordelen/pensioensparen"
+        },
+        {
+          "date": "2026-11-23",
+          "title": "Test-Aankoop – Fiscale plafonds 2026 sparen en beleggen",
+          "url": "https://www.test-aankoop.be/invest/beleggen/fiscaliteit-and-rechten/artikels/2025/12/fiscale-plafonds-2026-sparen-beleggen-belgie"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "claim": "Het hoge plafond (25%) moet je zelf aan je bank of verzekeraar doorgeven; anders geldt het basisplafond (30%)",
+      "sources": [
+        {
+          "date": "2026-11-23",
+          "title": "BNP Paribas Fortis – Pensioensparen: maximumbedragen",
+          "url": "https://www.bnpparibasfortis.be/nl/public/particulieren/sparen-en-beleggen/pensioensparen/maximumbedragen"
+        },
+        {
+          "date": "2026-11-23",
+          "title": "KBC – Pensioensparen maximum",
+          "url": "https://www.kbc.be/particulieren/nl/pensioensparen/pensioensparen-maximum.html"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "claim": "Rekenvoorbeeld: €1.050 × 30% = €315 belastingvermindering",
+      "note": "Eigen berekening; KBC geeft hetzelfde bedrag (€315).",
+      "sources": [
+        {
+          "date": "2026-11-23",
+          "title": "KBC – Pensioensparen maximum",
+          "url": "https://www.kbc.be/particulieren/nl/pensioensparen/pensioensparen-maximum.html"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "claim": "Rekenvoorbeeld: netto kost €1.050 − €315 = €735",
+      "note": "Eigen berekening, vóór eventuele kosten van het product en zonder gemeentebelasting.",
+      "sources": [
+        {
+          "date": "2026-11-23",
+          "title": "KBC – Pensioensparen maximum",
+          "url": "https://www.kbc.be/particulieren/nl/pensioensparen/pensioensparen-maximum.html"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "claim": "Het voordeel is een belastingvermindering via de aangifte: wie geen belasting verschuldigd is, krijgt niets terug (niet terugbetaalbaar)",
+      "note": "Algemeen principe van belastingverminderingen voor pensioensparen; in deze run niet woordelijk op de FOD-pagina kunnen nalezen. 'Vaak bij een klein studentenjobje' = vereenvoudiging: wie onder de belastingvrije som blijft, betaalt geen belasting.",
+      "sources": [
+        {
+          "date": "2026-11-23",
+          "title": "Wikifin (FSMA) – Pensioensparen (belastingvermindering)",
+          "url": "https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/belastingverminderingen/pensioensparen"
+        }
+      ],
+      "status": "check"
+    },
+    {
+      "claim": "Op 60 jaar wordt eenmalig 8% eindbelasting (anticipatieve heffing) ingehouden op het opgebouwde kapitaal",
+      "sources": [
+        {
+          "date": "2026-11-23",
+          "title": "Wikifin (FSMA) – Hoe wordt je pensioensparen belast?",
+          "url": "https://www.wikifin.be/nl/pensioen-en-pensioenvoorbereiding/pensioensparen/hoe-wordt-je-pensioensparen-belast"
+        },
+        {
+          "date": "2026-11-23",
+          "title": "KBC – Pensioensparen vervroegd opvragen",
+          "url": "https://www.kbc.be/particulieren/nl/pensioensparen/pensioensparen-vervroegd-opvragen.html"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "claim": "Vroeger opnemen (vóór 60) wordt zwaarder belast",
+      "note": "Bewust zonder percentage gezegd. Bronnen spreken over een hoger tarief bij vervroegde opname; het exacte tarief in deze run niet nagekeken.",
+      "sources": [
+        {
+          "date": "2026-11-23",
+          "title": "KBC – Pensioensparen vervroegd opvragen",
+          "url": "https://www.kbc.be/particulieren/nl/pensioensparen/pensioensparen-vervroegd-opvragen.html"
+        }
+      ],
+      "status": "check"
+    },
+    {
+      "claim": "De plafonds gelden per kalenderjaar (stortingen tussen 1 januari en 31 december)",
+      "note": "Banken vragen vaak om ruim vóór 31 december te storten, zodat de storting zeker op tijd verwerkt is. Even nakijken of je dat in de caption wilt.",
+      "sources": [
+        {
+          "date": "2026-11-23",
+          "title": "Wikifin (FSMA) – Pensioensparen (belastingvermindering)",
+          "url": "https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/belastingverminderingen/pensioensparen"
+        }
+      ],
+      "status": "check"
+    }
+  ],
+  "warnings": [
+    "fin.belgium.be en wikifin.be waren vanuit deze omgeving niet bereikbaar. De bedragen komen uit zoekresultaten van die pagina's, bevestigd door Test-Aankoop, KBC en BNP Paribas Fortis. Graag één keer naast de FOD-pagina leggen.",
+    "Er ligt een wetsvoorstel (Kamer, doc 56 1208) om de maximumleeftijd voor pensioensparen op te trekken. Raakt deze video niet (die gaat over jongeren), maar ter info.",
+    "Bank- en verzekeraarnamen staan alleen in de bronnen, niet in de video. Geen product aangeraden.",
+    "Script is gereconstrueerd uit de Studio en herschreven in spreektaal: de dagelijkse run kon niet naar GitHub pushen."
+  ]
+}

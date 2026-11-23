@@ -1,0 +1,1035 @@
+{
+ "audio": "audio/2026-11-23/02-pensioensparen.wav",
+ "duration": 63.755,
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 6.264
+  },
+  {
+   "start": 6.484,
+   "end": 13.516
+  },
+  {
+   "start": 13.736,
+   "end": 26.432000000000002
+  },
+  {
+   "start": 26.652,
+   "end": 37.74
+  },
+  {
+   "start": 37.96,
+   "end": 48.472
+  },
+  {
+   "start": 48.692,
+   "end": 57.956
+  },
+  {
+   "start": 58.176,
+   "end": 63.912
+  }
+ ],
+ "words": [
+  {
+   "text": "30%",
+   "start": 0.03,
+   "end": 0.812583
+  },
+  {
+   "text": "terug",
+   "start": 0.812625,
+   "end": 1.106083
+  },
+  {
+   "text": "van",
+   "start": 1.116958,
+   "end": 1.247374
+  },
+  {
+   "text": "de",
+   "start": 1.247375,
+   "end": 1.3125829999999998
+  },
+  {
+   "text": "staat",
+   "start": 1.312625,
+   "end": 1.736541,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Gewoon",
+   "start": 2.084333,
+   "end": 2.432166
+  },
+  {
+   "text": "omdat",
+   "start": 2.432167,
+   "end": 2.6495420000000003
+  },
+  {
+   "text": "je",
+   "start": 2.6495830000000002,
+   "end": 2.7364990000000002
+  },
+  {
+   "text": "spaart",
+   "start": 2.7365000000000004,
+   "end": 3.203875,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Te",
+   "start": 3.4973750000000003,
+   "end": 3.584333
+  },
+  {
+   "text": "mooi",
+   "start": 3.595208,
+   "end": 3.9864990000000002
+  },
+  {
+   "text": "om",
+   "start": 3.9865000000000004,
+   "end": 4.106083
+  },
+  {
+   "text": "waar",
+   "start": 4.106083,
+   "end": 4.3126240000000005
+  },
+  {
+   "text": "te",
+   "start": 4.312625000000001,
+   "end": 4.399583
+  },
+  {
+   "text": "zijn",
+   "start": 4.399583,
+   "end": 4.703916,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 6
+  },
+  {
+   "text": "Er",
+   "start": 5.149583,
+   "end": 5.203916
+  },
+  {
+   "text": "zit",
+   "start": 5.214792,
+   "end": 5.388708
+  },
+  {
+   "text": "een",
+   "start": 5.388708,
+   "end": 5.475666
+  },
+  {
+   "text": "addertje",
+   "start": 5.4865,
+   "end": 5.866916
+  },
+  {
+   "text": "aan",
+   "start": 5.877833,
+   "end": 6.138708,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Kijk",
+   "start": 6.514,
+   "end": 6.78575
+  },
+  {
+   "text": "dat",
+   "start": 7.122708,
+   "end": 7.253124
+  },
+  {
+   "text": "heet",
+   "start": 7.253125,
+   "end": 7.437916
+  },
+  {
+   "text": "pensioensparen",
+   "start": 7.437917,
+   "end": 8.416167,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Je",
+   "start": 8.731375,
+   "end": 8.807458
+  },
+  {
+   "text": "zet",
+   "start": 8.807458,
+   "end": 9.144416
+  },
+  {
+   "text": "elk",
+   "start": 9.155292,
+   "end": 9.372667
+  },
+  {
+   "text": "jaar",
+   "start": 9.372708,
+   "end": 9.687916
+  },
+  {
+   "text": "wat",
+   "start": 9.698792000000001,
+   "end": 9.916167
+  },
+  {
+   "text": "opzij",
+   "start": 9.927042,
+   "end": 10.372708
+  },
+  {
+   "text": "voor",
+   "start": 10.372708,
+   "end": 10.557499
+  },
+  {
+   "text": "later",
+   "start": 10.568332999999999,
+   "end": 11.003124,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 8
+  },
+  {
+   "text": "En",
+   "start": 11.361833,
+   "end": 11.405291
+  },
+  {
+   "text": "de",
+   "start": 11.405292,
+   "end": 11.470500000000001
+  },
+  {
+   "text": "staat",
+   "start": 11.470500000000001,
+   "end": 11.763958
+  },
+  {
+   "text": "beloont",
+   "start": 11.774875,
+   "end": 12.198791
+  },
+  {
+   "text": "dat",
+   "start": 12.198792000000001,
+   "end": 12.340083
+  },
+  {
+   "text": "met",
+   "start": 12.340083,
+   "end": 12.481373999999999
+  },
+  {
+   "text": "minder",
+   "start": 12.481375,
+   "end": 12.872665999999999
+  },
+  {
+   "text": "belasting",
+   "start": 12.872708,
+   "end": 13.394458,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 8
+  },
+  {
+   "text": "Je",
+   "start": 13.766,
+   "end": 13.831208
+  },
+  {
+   "text": "kiest",
+   "start": 13.831208,
+   "end": 14.048583
+  },
+  {
+   "text": "tussen",
+   "start": 14.048583,
+   "end": 14.309458000000001
+  },
+  {
+   "text": "twee",
+   "start": 14.320333000000002,
+   "end": 14.668166000000001
+  },
+  {
+   "text": "plafonds",
+   "start": 14.668167,
+   "end": 15.396417000000001,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Stort",
+   "start": 15.681163000000002,
+   "end": 15.931163000000002
+  },
+  {
+   "text": "je",
+   "start": 15.942038,
+   "end": 16.018121
+  },
+  {
+   "text": "tot",
+   "start": 16.018122,
+   "end": 16.224663
+  },
+  {
+   "text": "€1.050",
+   "start": 16.224663,
+   "end": 17.37683,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 4
+  },
+  {
+   "text": "Dan",
+   "start": 17.735538000000002,
+   "end": 17.855079
+  },
+  {
+   "text": "krijg",
+   "start": 17.85508,
+   "end": 18.094205000000002
+  },
+  {
+   "text": "je",
+   "start": 18.094205000000002,
+   "end": 18.213788
+  },
+  {
+   "text": "30%",
+   "start": 18.224663,
+   "end": 19.072455
+  },
+  {
+   "text": "terug",
+   "start": 19.072455,
+   "end": 19.431163,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Of",
+   "start": 19.822455,
+   "end": 19.920288
+  },
+  {
+   "text": "je",
+   "start": 19.920288,
+   "end": 19.996371
+  },
+  {
+   "text": "gaat",
+   "start": 19.996372,
+   "end": 20.257247
+  },
+  {
+   "text": "tot",
+   "start": 20.257247,
+   "end": 20.431163
+  },
+  {
+   "text": "€1.350",
+   "start": 20.431163,
+   "end": 21.822454999999998
+  },
+  {
+   "text": "maar",
+   "start": 22.224663,
+   "end": 22.344246
+  },
+  {
+   "text": "dan",
+   "start": 22.35508,
+   "end": 22.539870999999998
+  },
+  {
+   "text": "krijg",
+   "start": 22.550747,
+   "end": 22.800747
+  },
+  {
+   "text": "je",
+   "start": 22.800747,
+   "end": 22.876829999999998
+  },
+  {
+   "text": "25%",
+   "start": 22.887705,
+   "end": 24.083372,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 10
+  },
+  {
+   "text": "Die",
+   "start": 24.420288,
+   "end": 24.518121
+  },
+  {
+   "text": "keuze",
+   "start": 24.518121999999998,
+   "end": 24.876829999999998
+  },
+  {
+   "text": "geef",
+   "start": 24.876829999999998,
+   "end": 25.159413
+  },
+  {
+   "text": "je",
+   "start": 25.159413,
+   "end": 25.257246000000002
+  },
+  {
+   "text": "zelf",
+   "start": 25.257247,
+   "end": 25.594205000000002
+  },
+  {
+   "text": "door",
+   "start": 25.594205000000002,
+   "end": 25.800746
+  },
+  {
+   "text": "aan",
+   "start": 25.800747,
+   "end": 25.909413
+  },
+  {
+   "text": "je",
+   "start": 25.909413,
+   "end": 25.974621
+  },
+  {
+   "text": "bank",
+   "start": 25.974663,
+   "end": 26.344246,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "Een",
+   "start": 26.682000000000002,
+   "end": 26.779833
+  },
+  {
+   "text": "voorbeeldje",
+   "start": 26.779833,
+   "end": 27.431999,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 2
+  },
+  {
+   "text": "Stel",
+   "start": 27.66025,
+   "end": 27.997208
+  },
+  {
+   "text": "je",
+   "start": 28.355917,
+   "end": 28.442875
+  },
+  {
+   "text": "stort",
+   "start": 28.45375,
+   "end": 28.768958
+  },
+  {
+   "text": "€1.050",
+   "start": 28.779833,
+   "end": 30.051583,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "30%",
+   "start": 30.362918,
+   "end": 31.102043000000002
+  },
+  {
+   "text": "daarvan",
+   "start": 31.102043000000002,
+   "end": 31.525959
+  },
+  {
+   "text": "is",
+   "start": 31.52596,
+   "end": 31.623793
+  },
+  {
+   "text": "€315",
+   "start": 31.623793,
+   "end": 32.852043,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Die",
+   "start": 33.199877,
+   "end": 33.286835
+  },
+  {
+   "text": "krijg",
+   "start": 33.297668,
+   "end": 33.547668
+  },
+  {
+   "text": "je",
+   "start": 33.547668,
+   "end": 33.612876
+  },
+  {
+   "text": "terug",
+   "start": 33.612918,
+   "end": 33.895501
+  },
+  {
+   "text": "via",
+   "start": 33.895502,
+   "end": 34.058543
+  },
+  {
+   "text": "je",
+   "start": 34.069418,
+   "end": 34.232459
+  },
+  {
+   "text": "aangifte",
+   "start": 34.23246,
+   "end": 34.808543,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "Netto",
+   "start": 35.189002,
+   "end": 35.50421
+  },
+  {
+   "text": "kost",
+   "start": 35.50421,
+   "end": 35.689001000000005
+  },
+  {
+   "text": "het",
+   "start": 35.699877,
+   "end": 35.765085
+  },
+  {
+   "text": "je",
+   "start": 35.765085,
+   "end": 35.819418
+  },
+  {
+   "text": "dus",
+   "start": 35.819418,
+   "end": 35.982459
+  },
+  {
+   "text": "maar",
+   "start": 35.98246,
+   "end": 36.102043
+  },
+  {
+   "text": "€735",
+   "start": 36.112918,
+   "end": 37.634626,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "Nu",
+   "start": 37.99,
+   "end": 38.109583
+  },
+  {
+   "text": "het",
+   "start": 38.109583,
+   "end": 38.196499
+  },
+  {
+   "text": "addertje",
+   "start": 38.1965,
+   "end": 38.67475,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 3
+  },
+  {
+   "text": "Het",
+   "start": 39.01175,
+   "end": 39.120458
+  },
+  {
+   "text": "is",
+   "start": 39.131292,
+   "end": 39.1965
+  },
+  {
+   "text": "een",
+   "start": 39.1965,
+   "end": 39.316083
+  },
+  {
+   "text": "korting",
+   "start": 39.326958,
+   "end": 39.707374
+  },
+  {
+   "text": "op",
+   "start": 39.707375,
+   "end": 39.794333
+  },
+  {
+   "text": "je",
+   "start": 39.794333,
+   "end": 39.859541
+  },
+  {
+   "text": "belasting",
+   "start": 39.870417,
+   "end": 40.370417,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "Betaal",
+   "start": 40.6965,
+   "end": 40.96825
+  },
+  {
+   "text": "je",
+   "start": 40.979125,
+   "end": 41.076958000000005
+  },
+  {
+   "text": "geen",
+   "start": 41.076958000000005,
+   "end": 41.348708
+  },
+  {
+   "text": "belasting",
+   "start": 41.348708,
+   "end": 41.870458
+  },
+  {
+   "text": "bijvoorbeeld",
+   "start": 42.24,
+   "end": 42.74
+  },
+  {
+   "text": "met",
+   "start": 42.750875,
+   "end": 42.859583
+  },
+  {
+   "text": "een",
+   "start": 42.859583,
+   "end": 42.935666
+  },
+  {
+   "text": "klein",
+   "start": 42.935667,
+   "end": 43.294333
+  },
+  {
+   "text": "studentenjobje",
+   "start": 43.294333,
+   "end": 44.120416,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 9
+  },
+  {
+   "text": "Dan",
+   "start": 44.46825,
+   "end": 44.555208
+  },
+  {
+   "text": "krijg",
+   "start": 44.555208,
+   "end": 44.816083
+  },
+  {
+   "text": "je",
+   "start": 44.816083,
+   "end": 44.935666
+  },
+  {
+   "text": "ook",
+   "start": 44.935667,
+   "end": 45.109583
+  },
+  {
+   "text": "niks",
+   "start": 45.109583,
+   "end": 45.326958000000005
+  },
+  {
+   "text": "terug",
+   "start": 45.337833,
+   "end": 45.598708,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Zoals",
+   "start": 45.957375,
+   "end": 46.153041
+  },
+  {
+   "text": "een",
+   "start": 46.153042,
+   "end": 46.26175
+  },
+  {
+   "text": "kortingsbon",
+   "start": 46.272625000000005,
+   "end": 46.903041
+  },
+  {
+   "text": "voor",
+   "start": 46.903042,
+   "end": 47.044333
+  },
+  {
+   "text": "een",
+   "start": 47.044333,
+   "end": 47.142166
+  },
+  {
+   "text": "winkel",
+   "start": 47.142167,
+   "end": 47.522583
+  },
+  {
+   "text": "waar",
+   "start": 47.533458,
+   "end": 47.653041
+  },
+  {
+   "text": "je",
+   "start": 47.653042,
+   "end": 47.74
+  },
+  {
+   "text": "nooit",
+   "start": 47.750875,
+   "end": 47.979125
+  },
+  {
+   "text": "komt",
+   "start": 47.99,
+   "end": 48.348708,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 10
+  },
+  {
+   "text": "En",
+   "start": 48.722,
+   "end": 48.841583
+  },
+  {
+   "text": "later",
+   "start": 48.852417,
+   "end": 49.341542,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 2
+  },
+  {
+   "text": "Op",
+   "start": 49.689375,
+   "end": 49.776333
+  },
+  {
+   "text": "je",
+   "start": 49.776333,
+   "end": 49.874166
+  },
+  {
+   "text": "zestigste",
+   "start": 49.885042,
+   "end": 50.406792
+  },
+  {
+   "text": "betaal",
+   "start": 50.417667,
+   "end": 50.754625
+  },
+  {
+   "text": "je",
+   "start": 50.754625,
+   "end": 50.874208
+  },
+  {
+   "text": "één",
+   "start": 50.885042,
+   "end": 51.091583
+  },
+  {
+   "text": "keer",
+   "start": 51.091583,
+   "end": 51.363291000000004
+  },
+  {
+   "text": "8%",
+   "start": 51.363292,
+   "end": 51.928499
+  },
+  {
+   "text": "belasting",
+   "start": 51.9285,
+   "end": 52.40675,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "Haal",
+   "start": 52.808958000000004,
+   "end": 52.939374
+  },
+  {
+   "text": "je",
+   "start": 52.939375,
+   "end": 53.004583
+  },
+  {
+   "text": "het",
+   "start": 53.004625000000004,
+   "end": 53.091583
+  },
+  {
+   "text": "er",
+   "start": 53.091583,
+   "end": 53.211124
+  },
+  {
+   "text": "eerder",
+   "start": 53.211125,
+   "end": 53.49375
+  },
+  {
+   "text": "uit",
+   "start": 53.49375,
+   "end": 53.776375,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 6
+  },
+  {
+   "text": "Dan",
+   "start": 54.113292,
+   "end": 54.232875
+  },
+  {
+   "text": "betaal",
+   "start": 54.232875,
+   "end": 54.526333
+  },
+  {
+   "text": "je",
+   "start": 54.526333,
+   "end": 54.613291000000004
+  },
+  {
+   "text": "meer",
+   "start": 54.624167,
+   "end": 54.917625,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Dit",
+   "start": 55.308958000000004,
+   "end": 55.461124
+  },
+  {
+   "text": "geld",
+   "start": 55.461125,
+   "end": 55.74375
+  },
+  {
+   "text": "is",
+   "start": 55.74375,
+   "end": 55.819833
+  },
+  {
+   "text": "dus",
+   "start": 55.830708,
+   "end": 56.004624
+  },
+  {
+   "text": "echt",
+   "start": 56.004625000000004,
+   "end": 56.189416
+  },
+  {
+   "text": "voor",
+   "start": 56.20025,
+   "end": 56.341541
+  },
+  {
+   "text": "later",
+   "start": 56.352417,
+   "end": 56.787208
+  },
+  {
+   "text": "met",
+   "start": 57.102417,
+   "end": 57.222
+  },
+  {
+   "text": "grijs",
+   "start": 57.232875,
+   "end": 57.569833
+  },
+  {
+   "text": "haar",
+   "start": 57.569833,
+   "end": 57.841583,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 10
+  },
+  {
+   "text": "Let",
+   "start": 58.206,
+   "end": 58.4125
+  },
+  {
+   "text": "op",
+   "start": 58.4125,
+   "end": 58.619041
+  },
+  {
+   "text": "het",
+   "start": 58.966875,
+   "end": 59.097291
+  },
+  {
+   "text": "telt",
+   "start": 59.097292,
+   "end": 59.369042
+  },
+  {
+   "text": "per",
+   "start": 59.369042,
+   "end": 59.608167
+  },
+  {
+   "text": "kalenderjaar",
+   "start": 59.608167,
+   "end": 60.271208,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Of",
+   "start": 60.629917,
+   "end": 60.706
+  },
+  {
+   "text": "het",
+   "start": 60.706,
+   "end": 60.760333
+  },
+  {
+   "text": "bij",
+   "start": 60.771208,
+   "end": 60.879916
+  },
+  {
+   "text": "jou",
+   "start": 60.879917,
+   "end": 61.119042
+  },
+  {
+   "text": "past",
+   "start": 61.119042,
+   "end": 61.629917
+  },
+  {
+   "text": "beslis",
+   "start": 61.836417000000004,
+   "end": 62.151625
+  },
+  {
+   "text": "je",
+   "start": 62.1625,
+   "end": 62.238583000000006
+  },
+  {
+   "text": "zelf",
+   "start": 62.249458000000004,
+   "end": 62.727708,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 8
+  },
+  {
+   "text": "Volg",
+   "start": 62.97775,
+   "end": 63.238583000000006
+  },
+  {
+   "text": "voor",
+   "start": 63.238583000000006,
+   "end": 63.434249
+  },
+  {
+   "text": "meer",
+   "start": 63.445125000000004,
+   "end": 63.792958,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 3
+  }
+ ],
+ "spoken": [
+  "dertig procent terug van de staat, Gewoon omdat je spaart, Te mooi om waar te zijn, Er zit een addertje aan.",
+  "Kijk, dat heet pensioensparen, Je zet elk jaar wat opzij voor later, En de staat beloont dat met minder belasting.",
+  "Je kiest tussen twee plafonds, Stort je tot duizend vijftig euro, Dan krijg je dertig procent terug, Of je gaat tot duizend driehonderdvijftig euro, maar dan krijg je vijfentwintig procent, Die keuze geef je zelf door aan je bank.",
+  "Een voorbeeldje, Stel, je stort duizend vijftig euro, dertig procent daarvan is driehonderdvijftien euro, Die krijg je terug via je aangifte, Netto kost het je dus maar zevenhonderdvijfendertig euro.",
+  "Nu het addertje, Het is een korting op je belasting, Betaal je geen belasting, bijvoorbeeld met een klein studentenjobje, Dan krijg je ook niks terug, Zoals een kortingsbon voor een winkel waar je nooit komt.",
+  "En later, Op je zestigste betaal je één keer acht procent belasting, Haal je het er eerder uit, Dan betaal je meer, Dit geld is dus echt voor later, met grijs haar.",
+  "Let op, het telt per kalenderjaar, Of het bij jou past, beslis je zelf, Volg voor meer!"
+ ]
+}
