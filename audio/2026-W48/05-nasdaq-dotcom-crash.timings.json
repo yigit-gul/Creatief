@@ -1,773 +1,891 @@
 {
  "audio": "audio/2026-W48/05-nasdaq-dotcom-crash.wav",
- "duration": 59.392,
+ "duration": 58.626,
  "scenes": [
   {
    "start": 0.0,
-   "end": 8.304
+   "end": 8.28
   },
   {
-   "start": 8.364,
-   "end": 22.428
+   "start": 8.5,
+   "end": 23.236
   },
   {
-   "start": 22.488,
-   "end": 35.184
+   "start": 23.456000000000003,
+   "end": 37.184000000000005
   },
   {
-   "start": 35.244,
-   "end": 50.7
+   "start": 37.404,
+   "end": 52.116
   },
   {
-   "start": 50.76,
-   "end": 59.64
+   "start": 52.336000000000006,
+   "end": 58.696000000000005
   }
  ],
  "words": [
   {
    "text": "In",
-   "start": 0.04,
-   "end": 0.126958
+   "start": 0.03,
+   "end": 0.11695799999999999
   },
   {
    "text": "2000",
-   "start": 0.126958,
-   "end": 0.789999
+   "start": 0.11695799999999999,
+   "end": 0.823499
   },
   {
    "text": "crashte",
-   "start": 0.79,
-   "end": 1.2465410000000001
+   "start": 0.8235,
+   "end": 1.3235
   },
   {
    "text": "de",
-   "start": 1.246542,
-   "end": 1.35525
+   "start": 1.334333,
+   "end": 1.410416
   },
   {
    "text": "Nasdaq",
-   "start": 1.3660830000000002,
-   "end": 1.9747910000000002
+   "start": 1.410458,
+   "end": 2.0191660000000002,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
   },
   {
    "text": "Bijna",
-   "start": 2.3335,
-   "end": 2.670458
+   "start": 2.3995830000000002,
+   "end": 2.7365410000000003
   },
   {
    "text": "80%",
-   "start": 2.670458,
-   "end": 3.5074159
+   "start": 2.736542,
+   "end": 3.606083
   },
   {
-   "text": "weg",
-   "start": 3.507417,
-   "end": 3.81175
+   "text": "ging",
+   "start": 3.606083,
+   "end": 3.779999
   },
   {
-   "text": "Daarna",
-   "start": 4.06175,
-   "end": 4.4313329999999995
+   "text": "in",
+   "start": 3.790875,
+   "end": 3.910458
+  },
+  {
+   "text": "rook",
+   "start": 3.910458,
+   "end": 4.258248999999999
+  },
+  {
+   "text": "op",
+   "start": 4.258249999999999,
+   "end": 4.432166,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Herstellen",
+   "start": 4.877833,
+   "end": 5.388707999999999
   },
   {
    "text": "duurde",
-   "start": 4.4313329999999995,
-   "end": 4.735666
-  },
-  {
-   "text": "het",
-   "start": 4.746542,
-   "end": 4.844375
+   "start": 5.399583,
+   "end": 5.7039159999999995
   },
   {
    "text": "15",
-   "start": 4.844375,
-   "end": 5.3226249999999995
+   "start": 5.703917,
+   "end": 6.149583
   },
   {
    "text": "jaar",
-   "start": 5.3335,
-   "end": 5.626958
-  },
-  {
-   "text": "om",
-   "start": 5.626958,
-   "end": 5.703041
-  },
-  {
-   "text": "te",
-   "start": 5.7139169999999995,
-   "end": 5.81175
-  },
-  {
-   "text": "herstellen",
-   "start": 5.8226249999999995,
-   "end": 6.3335
+   "start": 6.149583,
+   "end": 6.443041,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
   },
   {
    "text": "Welkom",
-   "start": 6.703042,
-   "end": 7.159583
+   "start": 6.8235,
+   "end": 7.214791
   },
   {
    "text": "bij",
-   "start": 7.170458,
-   "end": 7.300874
+   "start": 7.214792,
+   "end": 7.3235
   },
   {
    "text": "de",
-   "start": 7.300875,
-   "end": 7.387833
+   "start": 7.334333,
+   "end": 7.432166
   },
   {
    "text": "dotcom-bubbel",
-   "start": 7.387833,
-   "end": 8.148708000000001
+   "start": 7.443041999999999,
+   "end": 8.160417,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
   },
   {
-   "text": "Eind",
-   "start": 8.404,
-   "end": 8.534416
+   "text": "Kijk",
+   "start": 8.53,
+   "end": 8.790875
+  },
+  {
+   "text": "eind",
+   "start": 9.03,
+   "end": 9.225666
   },
   {
    "text": "jaren",
-   "start": 8.534417000000001,
-   "end": 8.806167
+   "start": 9.225667,
+   "end": 9.4865
   },
   {
    "text": "negentig",
-   "start": 8.806167,
-   "end": 9.327917000000001
+   "start": 9.4865,
+   "end": 9.921291
   },
   {
    "text": "was",
-   "start": 9.338792000000002,
-   "end": 9.588792000000002
+   "start": 9.921292,
+   "end": 10.127832999999999
   },
   {
    "text": "internet",
-   "start": 9.599667,
-   "end": 10.023583
+   "start": 10.138708,
+   "end": 10.519124
   },
   {
-   "text": "nieuw",
-   "start": 10.034417000000001,
-   "end": 10.262667
+   "text": "gloednieuw",
+   "start": 10.530000000000001,
+   "end": 11.084333,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
   },
   {
    "text": "Had",
-   "start": 10.67575,
-   "end": 10.784416
+   "start": 11.443042,
+   "end": 11.530000000000001
   },
   {
    "text": "je",
-   "start": 10.784417000000001,
-   "end": 10.838750000000001
+   "start": 11.530000000000001,
+   "end": 11.584333
   },
   {
    "text": "bedrijf",
-   "start": 10.838792000000002,
-   "end": 11.262708
+   "start": 11.584333,
+   "end": 11.997374
   },
   {
    "text": "punt",
-   "start": 11.262708,
-   "end": 11.577916
+   "start": 11.997375,
+   "end": 12.301708
   },
   {
    "text": "com",
-   "start": 11.577917000000001,
-   "end": 11.849667
+   "start": 12.30175,
+   "end": 12.497375
   },
   {
    "text": "in",
-   "start": 11.860500000000002,
-   "end": 11.936583
+   "start": 12.497375,
+   "end": 12.584333
   },
   {
    "text": "de",
-   "start": 11.936625000000001,
-   "end": 11.990958000000001
+   "start": 12.595208,
+   "end": 12.649541
   },
   {
    "text": "naam",
-   "start": 11.990958000000001,
-   "end": 12.327916000000002
+   "start": 12.649583,
+   "end": 12.997416000000001,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 8
   },
   {
    "text": "Dan",
-   "start": 12.686625000000001,
-   "end": 12.795291
+   "start": 13.366958,
+   "end": 13.464791
   },
   {
    "text": "was",
-   "start": 12.795292,
-   "end": 12.925708
+   "start": 13.464792,
+   "end": 13.584333
   },
   {
    "text": "je",
-   "start": 12.92575,
-   "end": 12.990958000000001
+   "start": 13.584333,
+   "end": 13.649541
   },
   {
    "text": "blijkbaar",
-   "start": 12.990958000000001,
-   "end": 13.523583
+   "start": 13.649583,
+   "end": 14.193041000000001
   },
   {
    "text": "goud",
-   "start": 13.534417000000001,
-   "end": 13.914833000000002
+   "start": 14.193042,
+   "end": 14.540875
   },
   {
    "text": "waard",
-   "start": 13.92575,
-   "end": 14.262708
+   "start": 14.55175,
+   "end": 14.856083,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
   },
   {
    "text": "Iedereen",
-   "start": 14.588792000000002,
-   "end": 15.001833000000001
+   "start": 15.193042,
+   "end": 15.573458
   },
   {
    "text": "wilde",
-   "start": 15.001833000000001,
-   "end": 15.273583
+   "start": 15.584333,
+   "end": 15.888666
   },
   {
    "text": "erbij",
-   "start": 15.284417000000001,
-   "end": 15.664833000000002
+   "start": 15.888708000000001,
+   "end": 16.225666
   },
   {
    "text": "zijn",
-   "start": 15.67575,
-   "end": 15.980083
+   "start": 16.225667,
+   "end": 16.519125000000003,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
   },
   {
    "text": "Een",
-   "start": 16.371375,
-   "end": 16.458333000000003
+   "start": 16.910417000000002,
+   "end": 16.9865
   },
   {
    "text": "website",
-   "start": 16.458333000000003,
-   "end": 17.034416
+   "start": 16.997374999999998,
+   "end": 17.53
   },
   {
    "text": "en",
-   "start": 17.034417,
-   "end": 17.110500000000002
+   "start": 17.540875,
+   "end": 17.616958
   },
   {
    "text": "een",
-   "start": 17.121375,
-   "end": 17.197458
+   "start": 17.616958,
+   "end": 17.693041
   },
   {
    "text": "droom",
-   "start": 17.197458,
-   "end": 17.664833
-  },
-  {
-   "text": "Meer",
-   "start": 18.077917,
-   "end": 18.251833
-  },
-  {
-   "text": "had",
-   "start": 18.251833,
-   "end": 18.360499
-  },
-  {
-   "text": "je",
-   "start": 18.360500000000002,
-   "end": 18.425708
-  },
-  {
-   "text": "niet",
-   "start": 18.42575,
-   "end": 18.599666
-  },
-  {
-   "text": "nodig",
-   "start": 18.599667,
-   "end": 19.023583000000002
-  },
-  {
-   "text": "Winst",
-   "start": 19.371375,
-   "end": 19.88225
-  },
-  {
-   "text": "Die",
-   "start": 20.251833,
-   "end": 20.317041000000003
-  },
-  {
-   "text": "kwam",
-   "start": 20.317042,
-   "end": 20.512708
-  },
-  {
-   "text": "later",
-   "start": 20.523583000000002,
-   "end": 20.936624000000002
-  },
-  {
-   "text": "wel",
-   "start": 20.936625,
-   "end": 21.186625
-  },
-  {
-   "text": "Dachten",
-   "start": 21.599667,
-   "end": 22.023583000000002
-  },
-  {
-   "text": "ze",
-   "start": 22.034417,
-   "end": 22.262667
-  },
-  {
-   "text": "Op",
-   "start": 22.528,
-   "end": 22.625833
-  },
-  {
-   "text": "10 maart 2000",
-   "start": 22.625833,
-   "end": 23.636708
-  },
-  {
-   "text": "sloot",
-   "start": 23.636708,
-   "end": 23.919332999999998
-  },
-  {
-   "text": "de",
-   "start": 23.930167,
-   "end": 23.995375
-  },
-  {
-   "text": "Nasdaq",
-   "start": 23.995375,
-   "end": 24.538833
-  },
-  {
-   "text": "op",
-   "start": 24.54975,
-   "end": 24.658416
-  },
-  {
-   "text": "5.048",
-   "start": 24.658417,
-   "end": 26.082373999999998
-  },
-  {
-   "text": "In",
-   "start": 26.419292,
-   "end": 26.50625
-  },
-  {
-   "text": "oktober 2002",
-   "start": 26.50625,
-   "end": 27.647582999999997
-  },
-  {
-   "text": "stond",
-   "start": 27.658417,
-   "end": 27.908417
-  },
-  {
-   "text": "hij",
-   "start": 27.908417,
-   "end": 28.038833
-  },
-  {
-   "text": "op",
-   "start": 28.038874999999997,
-   "end": 28.158416
-  },
-  {
-   "text": "1.114",
-   "start": 28.158417,
-   "end": 28.9845
-  },
-  {
-   "text": "Pas",
-   "start": 29.310625,
-   "end": 29.473666
-  },
-  {
-   "text": "in",
-   "start": 29.473667,
-   "end": 29.571458
-  },
-  {
-   "text": "april 2015",
-   "start": 29.571458,
-   "end": 31.071458
-  },
-  {
-   "text": "stond",
-   "start": 31.082333,
-   "end": 31.364958
-  },
-  {
-   "text": "hij",
-   "start": 31.364958,
-   "end": 31.462791
-  },
-  {
-   "text": "weer",
-   "start": 31.473667,
-   "end": 31.658417
-  },
-  {
-   "text": "hoger",
-   "start": 31.658417,
-   "end": 32.093208
-  },
-  {
-   "text": "Vijftien",
-   "start": 32.419292,
-   "end": 32.810583
-  },
-  {
-   "text": "jaar",
-   "start": 32.810625,
-   "end": 33.0715
-  },
-  {
-   "text": "Langer",
-   "start": 33.495374999999996,
-   "end": 33.778
-  },
-  {
-   "text": "dan",
-   "start": 33.788875,
-   "end": 33.984541
-  },
-  {
-   "text": "TikTok",
-   "start": 33.995374999999996,
-   "end": 34.451916
-  },
-  {
-   "text": "bestaat",
-   "start": 34.462792,
-   "end": 35.017125
-  },
-  {
-   "text": "Stel",
-   "start": 35.284,
-   "end": 35.620958
-  },
-  {
-   "text": "iemand",
-   "start": 35.990542,
-   "end": 36.251375
-  },
-  {
-   "text": "stak",
-   "start": 36.251375,
-   "end": 36.51225
-  },
-  {
-   "text": "€1.000",
-   "start": 36.523125,
-   "end": 37.3927079
-  },
-  {
-   "text": "in",
-   "start": 37.392708,
-   "end": 37.479666
-  },
-  {
-   "text": "de",
-   "start": 37.479667,
-   "end": 37.5775
-  },
-  {
-   "text": "index",
-   "start": 37.5775,
-   "end": 38.012291
-  },
-  {
-   "text": "op",
-   "start": 38.023125,
-   "end": 38.120958
-  },
-  {
-   "text": "de",
-   "start": 38.131833,
-   "end": 38.207916
-  },
-  {
-   "text": "top",
-   "start": 38.207917,
-   "end": 38.468792
-  },
-  {
-   "text": "In",
-   "start": 38.8275,
-   "end": 38.903583
-  },
-  {
-   "text": "oktober 2002",
-   "start": 38.903583,
-   "end": 40.1209579
-  },
-  {
-   "text": "was",
-   "start": 40.120958,
-   "end": 40.305749
-  },
-  {
-   "text": "dat",
-   "start": 40.30575,
-   "end": 40.425291
-  },
-  {
-   "text": "nog",
-   "start": 40.425292,
-   "end": 40.51225
-  },
-  {
-   "text": "€221",
-   "start": 40.523125,
-   "end": 41.816583
-  },
-  {
-   "text": "Oef",
-   "start": 42.066625,
-   "end": 42.338375
-  },
-  {
-   "text": "Dat",
-   "start": 42.718792,
-   "end": 42.870958
-  },
-  {
-   "text": "doet",
-   "start": 42.870958,
-   "end": 43.088333
-  },
-  {
-   "text": "pijn",
-   "start": 43.088333,
-   "end": 43.436166
-  },
-  {
-   "text": "Veel",
-   "start": 43.816625,
-   "end": 44.044875
-  },
-  {
-   "text": "internetbedrijven",
-   "start": 44.05575,
-   "end": 44.947041
-  },
-  {
-   "text": "verdwenen",
-   "start": 44.947041999999996,
-   "end": 45.414417
-  },
-  {
-   "text": "gewoon",
-   "start": 45.414457999999996,
-   "end": 45.751416
-  },
-  {
-   "text": "Een",
-   "start": 46.120958,
-   "end": 46.197041
-  },
-  {
-   "text": "paar",
-   "start": 46.197041999999996,
-   "end": 46.468792
-  },
-  {
-   "text": "bleven",
-   "start": 46.468792,
-   "end": 46.849208000000004
-  },
-  {
-   "text": "over",
-   "start": 46.849208000000004,
-   "end": 47.207916
-  },
-  {
-   "text": "Die",
-   "start": 47.534,
-   "end": 47.631833
-  },
-  {
-   "text": "werden",
-   "start": 47.631833,
-   "end": 47.979666
-  },
-  {
-   "text": "later",
-   "start": 47.979667,
-   "end": 48.392708
-  },
-  {
-   "text": "reuzen",
-   "start": 48.392708,
-   "end": 48.794874
-  },
-  {
-   "text": "Je",
-   "start": 49.142708,
-   "end": 49.197041
-  },
-  {
-   "text": "gebruikt",
-   "start": 49.207917,
-   "end": 49.5775
-  },
-  {
-   "text": "ze",
-   "start": 49.5775,
-   "end": 49.642708
-  },
-  {
-   "text": "nu",
-   "start": 49.653583,
-   "end": 49.881833
-  },
-  {
-   "text": "elke",
-   "start": 49.881833,
-   "end": 50.142708
-  },
-  {
-   "text": "dag",
-   "start": 50.153583,
-   "end": 50.544874
-  },
-  {
-   "text": "Wat",
-   "start": 50.8,
-   "end": 50.995666
-  },
-  {
-   "text": "leerden",
-   "start": 51.006499999999996,
-   "end": 51.354333
-  },
-  {
-   "text": "beleggers",
-   "start": 51.354333,
-   "end": 51.821708
-  },
-  {
-   "text": "toen",
-   "start": 51.821749999999994,
-   "end": 52.082625
-  },
-  {
-   "text": "Een",
-   "start": 52.441292,
-   "end": 52.539125
-  },
-  {
-   "text": "goed",
-   "start": 52.55,
-   "end": 52.756499999999996
-  },
-  {
-   "text": "verhaal",
-   "start": 52.756499999999996,
-   "end": 53.223875
-  },
-  {
-   "text": "is",
-   "start": 53.223917,
-   "end": 53.321749999999994
-  },
-  {
-   "text": "nog",
-   "start": 53.321749999999994,
-   "end": 53.484791
-  },
-  {
-   "text": "geen",
-   "start": 53.484792,
-   "end": 53.854375
-  },
-  {
-   "text": "winst",
-   "start": 53.865207999999996,
-   "end": 54.223915999999996
-  },
-  {
-   "text": "Geschiedenis",
-   "start": 54.560874999999996,
-   "end": 55.115207999999996
-  },
-  {
-   "text": "herhaalt",
-   "start": 55.115207999999996,
-   "end": 55.571749
-  },
-  {
-   "text": "zich",
-   "start": 55.571749999999994,
-   "end": 55.767375
-  },
-  {
-   "text": "niet",
-   "start": 55.767375,
-   "end": 56.104333
-  },
-  {
-   "text": "altijd",
-   "start": 56.115207999999996,
-   "end": 56.669540999999995
-  },
-  {
-   "text": "En",
-   "start": 57.02825,
-   "end": 57.093458
-  },
-  {
-   "text": "voorspellen",
-   "start": 57.104333,
-   "end": 57.669540999999995
-  },
-  {
-   "text": "doen",
-   "start": 57.669582999999996,
-   "end": 57.865249
-  },
-  {
-   "text": "we",
-   "start": 57.876082999999994,
-   "end": 57.930416
-  },
-  {
-   "text": "niet",
-   "start": 57.930417,
-   "end": 58.223875
-  },
-  {
-   "text": "Volg",
-   "start": 58.571749999999994,
-   "end": 58.886958
-  },
-  {
-   "text": "voor",
-   "start": 58.886958,
-   "end": 59.104333
+   "start": 17.693042,
+   "end": 18.127833000000003
   },
   {
    "text": "meer",
-   "start": 59.104333,
-   "end": 59.473915999999996
+   "start": 18.540875,
+   "end": 18.714790999999998
+  },
+  {
+   "text": "had",
+   "start": 18.714792000000003,
+   "end": 18.812625
+  },
+  {
+   "text": "je",
+   "start": 18.812625,
+   "end": 18.877833000000003
+  },
+  {
+   "text": "niet",
+   "start": 18.877833000000003,
+   "end": 19.051749
+  },
+  {
+   "text": "nodig",
+   "start": 19.062625,
+   "end": 19.55175,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 10
+  },
+  {
+   "text": "Winst",
+   "start": 19.877833000000003,
+   "end": 20.301749,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 1
+  },
+  {
+   "text": "Ach",
+   "start": 20.606082999999998,
+   "end": 20.812624
+  },
+  {
+   "text": "die",
+   "start": 21.062625,
+   "end": 21.149583
+  },
+  {
+   "text": "kwam",
+   "start": 21.160417000000002,
+   "end": 21.301707999999998
+  },
+  {
+   "text": "later",
+   "start": 21.30175,
+   "end": 21.671291
+  },
+  {
+   "text": "wel",
+   "start": 21.671292,
+   "end": 21.899542,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Dachten",
+   "start": 22.323458000000002,
+   "end": 22.649541
+  },
+  {
+   "text": "ze",
+   "start": 22.660417000000002,
+   "end": 22.7365
+  },
+  {
+   "text": "toch",
+   "start": 22.7365,
+   "end": 23.127791000000002,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 3
+  },
+  {
+   "text": "Op",
+   "start": 23.486000000000004,
+   "end": 23.594708000000004
+  },
+  {
+   "text": "10",
+   "start": 23.594708000000004,
+   "end": 23.801249000000002
+  },
+  {
+   "text": "maart",
+   "start": 23.812083000000005,
+   "end": 24.018624000000003
+  },
+  {
+   "text": "2000",
+   "start": 24.018625000000004,
+   "end": 24.605583000000003
+  },
+  {
+   "text": "sloot",
+   "start": 24.605583000000003,
+   "end": 24.909916000000003
+  },
+  {
+   "text": "de",
+   "start": 24.909917000000004,
+   "end": 24.986000000000004
+  },
+  {
+   "text": "Nasdaq",
+   "start": 24.986000000000004,
+   "end": 25.551208000000003
+  },
+  {
+   "text": "op",
+   "start": 25.562083,
+   "end": 25.670791
+  },
+  {
+   "text": "5.048",
+   "start": 25.681667000000004,
+   "end": 27.116458,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "In",
+   "start": 27.431667000000004,
+   "end": 27.518625000000004
+  },
+  {
+   "text": "oktober",
+   "start": 27.518625000000004,
+   "end": 27.920791
+  },
+  {
+   "text": "2002",
+   "start": 27.920792000000002,
+   "end": 28.822958000000003
+  },
+  {
+   "text": "stond",
+   "start": 28.822958000000003,
+   "end": 29.083833000000002
+  },
+  {
+   "text": "hij",
+   "start": 29.083833000000002,
+   "end": 29.214249000000002
+  },
+  {
+   "text": "op",
+   "start": 29.214250000000003,
+   "end": 29.312083
+  },
+  {
+   "text": "1.114",
+   "start": 29.322958000000003,
+   "end": 30.344708000000004,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "En",
+   "start": 30.703417,
+   "end": 30.75775
+  },
+  {
+   "text": "pas",
+   "start": 30.75775,
+   "end": 30.975125000000002
+  },
+  {
+   "text": "in",
+   "start": 30.975125000000002,
+   "end": 31.051208000000003
+  },
+  {
+   "text": "april",
+   "start": 31.062083,
+   "end": 31.518624000000003
+  },
+  {
+   "text": "2015",
+   "start": 31.518625,
+   "end": 32.572958
+  },
+  {
+   "text": "kwam",
+   "start": 32.572958,
+   "end": 32.768624
+  },
+  {
+   "text": "hij",
+   "start": 32.768625,
+   "end": 32.866458
+  },
+  {
+   "text": "weer",
+   "start": 32.866458,
+   "end": 33.051208
+  },
+  {
+   "text": "boven",
+   "start": 33.051208,
+   "end": 33.453374000000004
+  },
+  {
+   "text": "die",
+   "start": 33.46425,
+   "end": 33.572958
+  },
+  {
+   "text": "top",
+   "start": 33.583833,
+   "end": 33.844708000000004,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 11
+  },
+  {
+   "text": "Vijftien",
+   "start": 34.236000000000004,
+   "end": 34.692541000000006
+  },
+  {
+   "text": "jaar",
+   "start": 34.703417,
+   "end": 35.00775,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 2
+  },
+  {
+   "text": "Dat",
+   "start": 35.333833,
+   "end": 35.453416000000004
+  },
+  {
+   "text": "is",
+   "start": 35.453417,
+   "end": 35.562083
+  },
+  {
+   "text": "langer",
+   "start": 35.562083,
+   "end": 35.920791
+  },
+  {
+   "text": "dan",
+   "start": 35.931667000000004,
+   "end": 36.094708000000004
+  },
+  {
+   "text": "TikTok",
+   "start": 36.094708000000004,
+   "end": 36.518624
+  },
+  {
+   "text": "bestaat",
+   "start": 36.5295,
+   "end": 37.062125,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Stel",
+   "start": 37.434000000000005,
+   "end": 37.694875
+  },
+  {
+   "text": "je",
+   "start": 37.694875,
+   "end": 37.814458
+  },
+  {
+   "text": "voor",
+   "start": 37.825292000000005,
+   "end": 38.129625000000004
+  },
+  {
+   "text": "iemand",
+   "start": 38.531833000000006,
+   "end": 38.803583
+  },
+  {
+   "text": "stak",
+   "start": 38.803583,
+   "end": 39.075333
+  },
+  {
+   "text": "€1.000",
+   "start": 39.086167,
+   "end": 39.868791
+  },
+  {
+   "text": "in",
+   "start": 39.879667000000005,
+   "end": 39.95575
+  },
+  {
+   "text": "de",
+   "start": 39.95575,
+   "end": 40.031833000000006
+  },
+  {
+   "text": "index",
+   "start": 40.042708000000005,
+   "end": 40.542708000000005,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "Net",
+   "start": 40.857917,
+   "end": 41.064417000000006
+  },
+  {
+   "text": "op",
+   "start": 41.064417000000006,
+   "end": 41.1405
+  },
+  {
+   "text": "de",
+   "start": 41.1405,
+   "end": 41.216583
+  },
+  {
+   "text": "top",
+   "start": 41.216625,
+   "end": 41.477500000000006,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "In",
+   "start": 41.857917,
+   "end": 41.944875
+  },
+  {
+   "text": "oktober",
+   "start": 41.95575,
+   "end": 42.347041000000004
+  },
+  {
+   "text": "2002",
+   "start": 42.357917,
+   "end": 43.249208
+  },
+  {
+   "text": "was",
+   "start": 43.249208,
+   "end": 43.423124
+  },
+  {
+   "text": "dat",
+   "start": 43.423125000000006,
+   "end": 43.542708000000005
+  },
+  {
+   "text": "nog",
+   "start": 43.542708000000005,
+   "end": 43.651374000000004
+  },
+  {
+   "text": "€221",
+   "start": 43.651375,
+   "end": 44.923125000000006,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "Oef",
+   "start": 45.347042,
+   "end": 45.651375
+  },
+  {
+   "text": "dat",
+   "start": 45.857917,
+   "end": 46.02095800000001
+  },
+  {
+   "text": "doet",
+   "start": 46.02095800000001,
+   "end": 46.227499
+  },
+  {
+   "text": "pijn",
+   "start": 46.238333000000004,
+   "end": 46.597041000000004,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Veel",
+   "start": 47.02095800000001,
+   "end": 47.281833000000006
+  },
+  {
+   "text": "internetbedrijven",
+   "start": 47.281833000000006,
+   "end": 48.129666
+  },
+  {
+   "text": "verdwenen",
+   "start": 48.129667000000005,
+   "end": 48.575292000000005
+  },
+  {
+   "text": "gewoon",
+   "start": 48.575292000000005,
+   "end": 48.955708,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Een",
+   "start": 49.303583,
+   "end": 49.390499000000005
+  },
+  {
+   "text": "paar",
+   "start": 49.3905,
+   "end": 49.673125000000006
+  },
+  {
+   "text": "bleven",
+   "start": 49.673125000000006,
+   "end": 50.07529100000001
+  },
+  {
+   "text": "over",
+   "start": 50.075292000000005,
+   "end": 50.401375
+  },
+  {
+   "text": "en",
+   "start": 50.760083,
+   "end": 50.803541
+  },
+  {
+   "text": "die",
+   "start": 50.803583,
+   "end": 50.912291
+  },
+  {
+   "text": "werden",
+   "start": 50.923125000000006,
+   "end": 51.194875
+  },
+  {
+   "text": "later",
+   "start": 51.20575,
+   "end": 51.553583
+  },
+  {
+   "text": "reuzen",
+   "start": 51.553583,
+   "end": 51.999249000000006,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "Wat",
+   "start": 52.36600000000001,
+   "end": 52.507291
+  },
+  {
+   "text": "leerden",
+   "start": 52.50729200000001,
+   "end": 52.822500000000005
+  },
+  {
+   "text": "beleggers",
+   "start": 52.822500000000005,
+   "end": 53.30075000000001
+  },
+  {
+   "text": "toen",
+   "start": 53.30079200000001,
+   "end": 53.583417000000004,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 4
+  },
+  {
+   "text": "Een",
+   "start": 53.952958,
+   "end": 54.061666
+  },
+  {
+   "text": "goed",
+   "start": 54.072500000000005,
+   "end": 54.289875
+  },
+  {
+   "text": "verhaal",
+   "start": 54.289917,
+   "end": 54.73554200000001
+  },
+  {
+   "text": "is",
+   "start": 54.73554200000001,
+   "end": 54.81162500000001
+  },
+  {
+   "text": "nog",
+   "start": 54.822500000000005,
+   "end": 54.95291600000001
+  },
+  {
+   "text": "geen",
+   "start": 54.95295800000001,
+   "end": 55.311666
+  },
+  {
+   "text": "winst",
+   "start": 55.322500000000005,
+   "end": 55.70291600000001,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "En",
+   "start": 56.029042000000004,
+   "end": 56.09425
+  },
+  {
+   "text": "voorspellen",
+   "start": 56.10512500000001,
+   "end": 56.56162500000001
+  },
+  {
+   "text": "doen",
+   "start": 56.56162500000001,
+   "end": 56.735541000000005
+  },
+  {
+   "text": "we",
+   "start": 56.735542,
+   "end": 56.78987500000001
+  },
+  {
+   "text": "hier",
+   "start": 56.789917,
+   "end": 57.029042000000004
+  },
+  {
+   "text": "niet",
+   "start": 57.029042000000004,
+   "end": 57.333375000000004,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Volg",
+   "start": 57.692083000000004,
+   "end": 58.00729100000001
+  },
+  {
+   "text": "voor",
+   "start": 58.00729200000001,
+   "end": 58.21383300000001
+  },
+  {
+   "text": "meer",
+   "start": 58.21383300000001,
+   "end": 58.57254100000001,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 3
   }
+ ],
+ "spoken": [
+  "In tweeduizend crashte de Nasdaq, Bijna tachtig procent ging in rook op, Herstellen duurde vijftien jaar, Welkom bij de dotcom-bubbel.",
+  "Kijk, eind jaren negentig was internet gloednieuw, Had je bedrijf punt com in de naam, Dan was je blijkbaar goud waard, Iedereen wilde erbij zijn, Een website en een droom, meer had je niet nodig, Winst, Ach, die kwam later wel, Dachten ze toch.",
+  "Op tien maart tweeduizend sloot de Nasdaq op vijfduizend achtenveertig, In oktober tweeduizend twee stond hij op duizend honderdveertien, En pas in april tweeduizend vijftien kwam hij weer boven die top, Vijftien jaar, Dat is langer dan TikTok bestaat.",
+  "Stel je voor: iemand stak duizend euro in de index, Net op de top, In oktober tweeduizend twee was dat nog tweehonderdéénentwintig euro, Oef, dat doet pijn, Veel internetbedrijven verdwenen gewoon, Een paar bleven over, en die werden later reuzen.",
+  "Wat leerden beleggers toen, Een goed verhaal is nog geen winst, En voorspellen doen we hier niet, Volg voor meer!"
  ]
 }

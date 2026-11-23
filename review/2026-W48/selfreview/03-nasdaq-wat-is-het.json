@@ -1,63 +1,85 @@
 {
  "id": "03-nasdaq-wat-is-het",
  "signalen": {
-  "duration": 61.8,
+  "duration": 62.8,
   "scenes": [
    {
     "n": 0,
     "type": "hook",
-    "sec": 6.3,
-    "woorden": 17,
-    "woorden_per_sec": 2.7,
-    "langste_zin": 4
+    "sec": 6.6,
+    "woorden": 18,
+    "woorden_per_sec": 2.72,
+    "langste_zin": 10
    },
    {
     "n": 1,
     "type": "point",
-    "sec": 12.9,
-    "woorden": 35,
-    "woorden_per_sec": 2.72,
-    "langste_zin": 9
+    "sec": 15.2,
+    "woorden": 42,
+    "woorden_per_sec": 2.76,
+    "langste_zin": 11
    },
    {
     "n": 2,
     "type": "table",
-    "sec": 14.0,
-    "woorden": 36,
-    "woorden_per_sec": 2.57,
-    "langste_zin": 8
+    "sec": 13.5,
+    "woorden": 39,
+    "woorden_per_sec": 2.9,
+    "langste_zin": 10
    },
    {
     "n": 3,
     "type": "calc",
-    "sec": 12.8,
-    "woorden": 33,
-    "woorden_per_sec": 2.57,
+    "sec": 13.8,
+    "woorden": 38,
+    "woorden_per_sec": 2.75,
     "langste_zin": 9
    },
    {
     "n": 4,
     "type": "outro",
-    "sec": 13.3,
-    "woorden": 34,
-    "woorden_per_sec": 2.56,
-    "langste_zin": 10
+    "sec": 10.3,
+    "woorden": 32,
+    "woorden_per_sec": 3.09,
+    "langste_zin": 11
    }
   ],
   "zinnen": {
-   "aantal": 32,
-   "gemiddeld": 4.8,
+   "aantal": 29,
+   "gemiddeld": 5.8,
    "langer_dan_10": []
   },
   "hook": {
    "eerste_zin": "De Nasdaq.",
-   "klaar_na_sec": 0.6
+   "klaar_na_sec": 0.7
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 65,
-   "langste": "Geen tweedehands jeans"
+   "blokken": 67,
+   "langste": "aandelen verhandeld worden"
   },
+  "layout": [
+   {
+    "scene": 0,
+    "onderkant_tekst": 1025
+   },
+   {
+    "scene": 1,
+    "onderkant_tekst": 980
+   },
+   {
+    "scene": 2,
+    "onderkant_tekst": 1043
+   },
+   {
+    "scene": 3,
+    "onderkant_tekst": 1275
+   },
+   {
+    "scene": 4,
+    "onderkant_tekst": 1212
+   }
+  ],
   "aandachtspunten": []
  },
  "rubriek": {
@@ -87,7 +109,12 @@
    "opmerking": ""
   },
   "visueel": {
-   "vraag": "Tekst leesbaar, niets overlapt, grafiek/cijfers verschijnen op het juiste moment.",
+   "vraag": "Tekst leesbaar, niets overlapt of staat dubbel (beeld + ondertitel), grafiek/cijfers verschijnen op het juiste moment.",
+   "score": null,
+   "opmerking": ""
+  },
+  "stem": {
+   "vraag": "Elke zin is apart te horen (korte adempauze), niets klinkt als 2 dingen tegelijk, geen leesstijl.",
    "score": null,
    "opmerking": ""
   },

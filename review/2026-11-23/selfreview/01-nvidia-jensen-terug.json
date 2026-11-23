@@ -1,75 +1,75 @@
 {
  "id": "01-nvidia-jensen-terug",
  "signalen": {
-  "duration": 65.9,
+  "duration": 66.4,
   "scenes": [
    {
     "n": 0,
     "type": "slam",
-    "sec": 7.1,
-    "woorden": 16,
-    "woorden_per_sec": 2.27,
+    "sec": 7.4,
+    "woorden": 18,
+    "woorden_per_sec": 2.43,
     "langste_zin": 5
    },
    {
     "n": 1,
     "type": "point",
-    "sec": 11.4,
-    "woorden": 29,
-    "woorden_per_sec": 2.55,
+    "sec": 10.9,
+    "woorden": 31,
+    "woorden_per_sec": 2.85,
     "langste_zin": 9
    },
    {
     "n": 2,
     "type": "point",
-    "sec": 10.8,
-    "woorden": 28,
-    "woorden_per_sec": 2.59,
-    "langste_zin": 6
+    "sec": 12.0,
+    "woorden": 32,
+    "woorden_per_sec": 2.68,
+    "langste_zin": 7
    },
    {
     "n": 3,
     "type": "line",
-    "sec": 13.5,
-    "woorden": 32,
-    "woorden_per_sec": 2.37,
-    "langste_zin": 7
+    "sec": 13.6,
+    "woorden": 36,
+    "woorden_per_sec": 2.65,
+    "langste_zin": 9
    },
    {
     "n": 4,
     "type": "bars",
-    "sec": 11.6,
+    "sec": 11.0,
     "woorden": 27,
-    "woorden_per_sec": 2.32,
-    "langste_zin": 7
+    "woorden_per_sec": 2.46,
+    "langste_zin": 11
    },
    {
     "n": 5,
     "type": "outro",
     "sec": 8.1,
-    "woorden": 23,
-    "woorden_per_sec": 2.84,
-    "langste_zin": 9
+    "woorden": 22,
+    "woorden_per_sec": 2.73,
+    "langste_zin": 8
    }
   ],
   "zinnen": {
-   "aantal": 31,
-   "gemiddeld": 5.0,
+   "aantal": 29,
+   "gemiddeld": 5.7,
    "langer_dan_10": []
   },
   "hook": {
    "eerste_zin": "Plus 35%.",
-   "klaar_na_sec": 1.3
+   "klaar_na_sec": 1.4
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 66,
+   "blokken": 69,
    "langste": "Chipbedrijven staan bijna"
   },
   "layout": [
    {
     "scene": 1,
-    "onderkant_tekst": 980
+    "onderkant_tekst": 879
    },
    {
     "scene": 2,

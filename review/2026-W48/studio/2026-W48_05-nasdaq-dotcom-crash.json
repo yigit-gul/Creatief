@@ -3,15 +3,15 @@
  "id": "05-nasdaq-dotcom-crash",
  "title": "De dotcom-crash: −78% en 15 jaar wachten",
  "validity": "Historische cijfers Nasdaq Composite (slotkoersen, prijsindex zonder dividenden)",
- "status": "klaar voor review",
- "durationSec": 61.9,
- "words": 154,
+ "status": "nagekeken",
+ "durationSec": 61.1,
+ "words": 155,
  "script": [
-  "In 2000 crashte de Nasdaq. Bijna 80% weg. Daarna duurde het 15 jaar om te herstellen. Welkom bij de dotcom-bubbel.",
-  "Eind jaren negentig was internet nieuw. Had je bedrijf punt com in de naam? Dan was je blijkbaar goud waard. Iedereen wilde erbij zijn. Een website en een droom. Meer had je niet nodig. Winst? Die kwam later wel. Dachten ze.",
-  "Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. Pas in april 2015 stond hij weer hoger. Vijftien jaar! Langer dan TikTok bestaat.",
-  "Stel, iemand stak €1.000 in de index op de top. In oktober 2002 was dat nog €221. Oef. Dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over. Die werden later reuzen. Je gebruikt ze nu elke dag.",
-  "Wat leerden beleggers toen? Een goed verhaal is nog geen winst. Geschiedenis herhaalt zich niet altijd. En voorspellen doen we niet. Volg voor meer!"
+  "In 2000 crashte de Nasdaq. Bijna 80% ging in rook op. Herstellen duurde 15 jaar. Welkom bij de dotcom-bubbel.",
+  "Kijk, eind jaren negentig was internet gloednieuw. Had je bedrijf punt com in de naam? Dan was je blijkbaar goud waard. Iedereen wilde erbij zijn. Een website en een droom, meer had je niet nodig. Winst? Ach, die kwam later wel. Dachten ze toch.",
+  "Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. En pas in april 2015 kwam hij weer boven die top. Vijftien jaar! Dat is langer dan TikTok bestaat.",
+  "Stel je voor: iemand stak €1.000 in de index. Net op de top. In oktober 2002 was dat nog €221. Oef, dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over, en die werden later reuzen.",
+  "Wat leerden beleggers toen? Een goed verhaal is nog geen winst. En voorspellen doen we hier niet. Volg voor meer!"
  ],
  "caption": "In 2000 knalde de dotcom-bubbel: de Nasdaq verloor 78% en had 15 jaar nodig om terug op de top te staan 💥 Het verhaal in minder dan een minuut.\n\nAlgemene info, geen beleggingsadvies, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
  "hashtags": [
@@ -99,17 +99,17 @@
   {
    "name": "Woordenaantal 150-190",
    "ok": true,
-   "info": "154 woorden"
+   "info": "155 woorden"
   },
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "61.9 s"
+   "info": "61.1 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
    "ok": true,
-   "info": "20 woorden"
+   "info": "19 woorden"
   },
   {
    "name": "Laatste scène is outro met disclaimer",
@@ -151,25 +151,28 @@
  "trendScore": 9,
  "trendRank": 2,
  "trendReason": "Sterk verhaal met drama (−78%, 15 jaar wachten) en een grap die blijft hangen ('langer dan TikTok bestaat'). Valt nu extra op door de AI-onrust op de beurs. Blijft ook later goed werken.",
- "claudeReply": "Herschreven in korte, eenvoudige zinnen (max. ~10 woorden), zodat de stem minder AI klinkt.",
- "videoUrl": "/_blob/f08f9b6a4adfd9ef587228a181af7cf9",
+ "videoUrl": "/_blob/089fd054a7669e3d8c98ed61a71f8f07",
  "selfReview": {
-  "rounds": 2,
+  "rounds": 4,
   "scores": {
-   "hook": 5,
    "eenvoud": 5,
-   "tempo": 4,
+   "hook": 5,
    "humor": 4,
    "info": 5,
+   "regels": 5,
+   "tempo": 4,
    "visueel": 5,
-   "regels": 5
+   "stem": 5
   },
   "changes": [
+   "Stem: alleen Nederlands (één doorlopende zin per scène + zelf ingevoegde korte pauzes).",
+   "Cijfers in het Nederlands uitgeschreven naar de stem.",
+   "Tekst herschreven als spreektaal/uitleg.",
+   "Taalcontrole in de zelfreview: geslaagd (geen cijfers, geen losse zinnen naar de stem).",
    "Hook ingekort: 'In 2000 crashte de Nasdaq. Bijna 80% weg.'",
-   "Te lange zin opgesplitst.",
-   "Eindkaart: 'beursgeschiedenis' liep over de rand, nu altijd passend.",
-   "Bewegende achtergrond."
+   "Te lange zin opgesplitst."
   ],
-  "verdict": "Beste verhaal van de reeks: drama, cijfers en een grap die blijft hangen."
- }
+  "verdict": "Klinkt als uitleg in het Nederlands; alle checks en de taalcontrole slagen."
+ },
+ "claudeReply": "Opnieuw gebouwd: (1) ALLEEN Nederlands: elke scène gaat als één doorlopende zin naar de stem, zoals in de oude video's (losse korte zinnen lieten hem Frans/Engels spreken), cijfers worden in het Nederlands uitgeschreven. (2) Spreektaal: herschreven alsof ik het aan iemand uitleg ('Kijk', 'Stel je voor', 'Simpel gezegd'), met gevarieerde korte pauzes in plaats van voorleesritme. (3) Zelfreview controleert nu automatisch dat er nooit cijfers of losse zinnen naar de stem gaan."
 }

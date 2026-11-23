@@ -6,7 +6,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-nvidia-jensen-terug | Jensen Huang is terug: Nvidia +35% op één dag | 66 s | 155 | 10/10 | 5 |
+| 01-nvidia-jensen-terug | Jensen Huang is terug: Nvidia +35% op één dag | 66 s | 166 | 10/10 | 5 |
 
 ---
 
@@ -16,17 +16,17 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 ### Script (voice-over)
 
-> Plus 35%. Op één dag. Nvidia knalt door het dak. En waarom? Jensen Huang is terug.
+> Plus 35%. Op één dag. Nvidia knalt door het dak. En weet je waarom? Jensen Huang is terug.
 >
-> Wie is Jensen eigenlijk? Hij richtte Nvidia mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, dat leren jasje draagt hij echt altijd.
+> Even voor wie hem niet kent. Jensen richtte Nvidia mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, hij draagt echt altijd dat leren jasje.
 >
-> Begin november moest hij even opzij. Er liep een intern onderzoek. Beleggers schrokken. Zonder Jensen geen plan, dachten ze. Vandaag haalt het bestuur hem terug. En dat unaniem.
+> Begin november moest hij even opzij. Er liep een intern onderzoek. Beleggers schrokken daar flink van. Zonder Jensen geen plan, dachten ze. Maar vandaag haalt het bestuur hem terug. En dat unaniem.
 >
-> Kijk wat dat doet. Vorige week: min 23%. Vrijdag sloot het aandeel op 125 dollar. Vandaag piekte het op bijna 170. Plus 35%! Dat is geen beurs meer. Dat is een achtbaan.
+> En kijk wat dat doet. Vorige week ging het aandeel nog 23% onderuit. Vrijdag sloot het op 125 dollar. Vandaag piekte het op bijna 170. Plus 35%! Dat is geen beurs meer, dat is een achtbaan.
 >
-> En Jensen trekt de hele sector mee. Chipbedrijven staan bijna 15% hoger. De Nasdaq ruim 7%. Na de slechtste week sinds 2020? Dat is een flinke opluchting.
+> En Jensen trekt de hele sector mee. Chipbedrijven staan bijna 15% hoger. De Nasdaq ruim 7%. Na de slechtste week sinds 2020 is dat echt een opluchting.
 >
-> Eén man, één comeback, en een beurs die ontploft. Maar let op: dit is een tussenstand. Voorspellen doen we niet. Volg voor meer!
+> Eén man, één comeback, en de beurs ontploft. Maar let op, dit is een tussenstand. Voorspellen doen we niet. Volg voor meer!
 
 ### Bronnen en controle van cijfers
 
@@ -68,9 +68,9 @@ Tussenstand maandag 23/11, kort na de opening. Algemene info, geen beleggingsadv
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (155 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (65.9 s)
-- ✅ Hook kort (≤ 22 woorden) (16 woorden)
+- ✅ Woordenaantal 150-190 (166 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (66.4 s)
+- ✅ Hook kort (≤ 22 woorden) (18 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption

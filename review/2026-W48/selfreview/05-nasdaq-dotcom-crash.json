@@ -1,52 +1,52 @@
 {
  "id": "05-nasdaq-dotcom-crash",
  "signalen": {
-  "duration": 61.9,
+  "duration": 61.1,
   "scenes": [
    {
     "n": 0,
     "type": "hook",
     "sec": 8.3,
-    "woorden": 20,
-    "woorden_per_sec": 2.41,
-    "langste_zin": 8
+    "woorden": 19,
+    "woorden_per_sec": 2.29,
+    "langste_zin": 6
    },
    {
     "n": 1,
     "type": "point",
-    "sec": 14.1,
-    "woorden": 41,
-    "woorden_per_sec": 2.92,
-    "langste_zin": 8
+    "sec": 14.7,
+    "woorden": 44,
+    "woorden_per_sec": 2.99,
+    "langste_zin": 10
    },
    {
     "n": 2,
     "type": "bars",
-    "sec": 12.7,
-    "woorden": 30,
-    "woorden_per_sec": 2.36,
-    "langste_zin": 9
+    "sec": 13.7,
+    "woorden": 35,
+    "woorden_per_sec": 2.55,
+    "langste_zin": 11
    },
    {
     "n": 3,
     "type": "calc",
-    "sec": 15.5,
-    "woorden": 39,
-    "woorden_per_sec": 2.52,
-    "langste_zin": 10
+    "sec": 14.7,
+    "woorden": 37,
+    "woorden_per_sec": 2.51,
+    "langste_zin": 9
    },
    {
     "n": 4,
     "type": "outro",
-    "sec": 8.9,
-    "woorden": 24,
-    "woorden_per_sec": 2.7,
+    "sec": 6.4,
+    "woorden": 20,
+    "woorden_per_sec": 3.14,
     "langste_zin": 7
    }
   ],
   "zinnen": {
-   "aantal": 31,
-   "gemiddeld": 5.0,
+   "aantal": 27,
+   "gemiddeld": 5.7,
    "langer_dan_10": []
   },
   "hook": {
@@ -55,9 +55,31 @@
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 62,
-   "langste": "Op 10 maart 2000 sloot"
+   "blokken": 64,
+   "langste": "was internet gloednieuw"
   },
+  "layout": [
+   {
+    "scene": 0,
+    "onderkant_tekst": 957
+   },
+   {
+    "scene": 1,
+    "onderkant_tekst": 969
+   },
+   {
+    "scene": 2,
+    "onderkant_tekst": 1200
+   },
+   {
+    "scene": 3,
+    "onderkant_tekst": 975
+   },
+   {
+    "scene": 4,
+    "onderkant_tekst": 1212
+   }
+  ],
   "aandachtspunten": []
  },
  "rubriek": {
@@ -87,7 +109,12 @@
    "opmerking": ""
   },
   "visueel": {
-   "vraag": "Tekst leesbaar, niets overlapt, grafiek/cijfers verschijnen op het juiste moment.",
+   "vraag": "Tekst leesbaar, niets overlapt of staat dubbel (beeld + ondertitel), grafiek/cijfers verschijnen op het juiste moment.",
+   "score": null,
+   "opmerking": ""
+  },
+  "stem": {
+   "vraag": "Elke zin is apart te horen (korte adempauze), niets klinkt als 2 dingen tegelijk, geen leesstijl.",
    "score": null,
    "opmerking": ""
   },

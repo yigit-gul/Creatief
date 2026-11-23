@@ -1,846 +1,1022 @@
 {
  "audio": "audio/2026-W48/01-tob.wav",
- "duration": 62.552958,
+ "duration": 68.259958,
  "scenes": [
   {
    "start": 0.0,
-   "end": 5.64
+   "end": 7.152
   },
   {
-   "start": 5.699999999999999,
-   "end": 13.692
+   "start": 7.372,
+   "end": 18.195999999999998
   },
   {
-   "start": 13.751999999999999,
-   "end": 23.375999999999998
+   "start": 18.416,
+   "end": 28.472
   },
   {
-   "start": 23.436,
-   "end": 34.236000000000004
+   "start": 28.692,
+   "end": 39.996
   },
   {
-   "start": 34.296,
-   "end": 46.751999999999995
+   "start": 40.216,
+   "end": 52.816
   },
   {
-   "start": 46.812,
-   "end": 59.652
+   "start": 53.036,
+   "end": 64.34
   },
   {
-   "start": 59.711999999999996,
-   "end": 62.903999999999996
+   "start": 64.56,
+   "end": 68.424
   }
  ],
  "words": [
   {
    "text": "Stel",
-   "start": 0.04,
-   "end": 0.33345800000000003
+   "start": 0.03,
+   "end": 0.32345799999999997
   },
   {
    "text": "je",
-   "start": 0.659583,
-   "end": 0.7247910000000001
+   "start": 0.682167,
+   "end": 0.75825
   },
   {
    "text": "verkoopt",
-   "start": 0.724792,
-   "end": 1.116083
+   "start": 0.769125,
+   "end": 1.193041
   },
   {
    "text": "je",
-   "start": 1.116083,
-   "end": 1.246499
+   "start": 1.1930420000000002,
+   "end": 1.334333
   },
   {
    "text": "aandelen",
-   "start": 1.2465419999999998,
-   "end": 1.692208
+   "start": 1.334375,
+   "end": 1.78
   },
   {
    "text": "met",
-   "start": 1.703042,
-   "end": 1.822625
+   "start": 1.78,
+   "end": 1.888708
   },
   {
    "text": "verlies",
-   "start": 1.822625,
-   "end": 2.29
+   "start": 1.899583,
+   "end": 2.366958,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
   },
   {
-   "text": "Toch",
-   "start": 2.626958,
-   "end": 2.746541
+   "text": "En",
+   "start": 2.703917,
+   "end": 2.80175
+  },
+  {
+   "text": "toch",
+   "start": 2.80175,
+   "end": 3.0082500000000003
   },
   {
    "text": "betaal",
-   "start": 2.757375,
-   "end": 3.083458
+   "start": 3.0082500000000003,
+   "end": 3.345208
   },
   {
    "text": "je",
-   "start": 3.0835,
-   "end": 3.148708
+   "start": 3.356083,
+   "end": 3.421291
   },
   {
    "text": "belasting",
-   "start": 3.159583,
-   "end": 3.670458
+   "start": 3.421333,
+   "end": 3.932208,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
   },
   {
    "text": "Raar",
-   "start": 4.105208,
-   "end": 4.453041000000001
-  },
-  {
-   "text": "Ik",
-   "start": 4.81175,
-   "end": 4.898708
-  },
-  {
-   "text": "leg",
-   "start": 4.898708,
-   "end": 5.018249
-  },
-  {
-   "text": "het",
-   "start": 5.01825,
-   "end": 5.126958
-  },
-  {
-   "text": "uit",
-   "start": 5.126958,
-   "end": 5.485666
-  },
-  {
-   "text": "Dat",
-   "start": 5.739999999999999,
-   "end": 5.859582999999999
-  },
-  {
-   "text": "is",
-   "start": 5.870416999999999,
-   "end": 5.979124999999999
-  },
-  {
-   "text": "de",
-   "start": 5.989999999999999,
-   "end": 6.098707999999999
-  },
-  {
-   "text": "TOB.",
-   "start": 6.098707999999999,
-   "end": 6.903040999999999
-  },
-  {
-   "text": "De",
-   "start": 7.250874999999999,
-   "end": 7.337832999999999
-  },
-  {
-   "text": "taks",
-   "start": 7.337832999999999,
-   "end": 7.685665999999999
-  },
-  {
-   "text": "op",
-   "start": 7.6964999999999995,
-   "end": 7.7834579999999995
-  },
-  {
-   "text": "de",
-   "start": 7.7834579999999995,
-   "end": 7.870415999999999
-  },
-  {
-   "text": "beursverrichtingen",
-   "start": 7.881291999999999,
-   "end": 8.761707999999999
-  },
-  {
-   "text": "Je",
-   "start": 9.055208,
-   "end": 9.109541
-  },
-  {
-   "text": "betaalt",
-   "start": 9.109542,
-   "end": 9.500833
-  },
-  {
-   "text": "een",
-   "start": 9.500874999999999,
-   "end": 9.587833
-  },
-  {
-   "text": "klein",
-   "start": 9.587833,
-   "end": 9.924790999999999
-  },
-  {
-   "text": "stukje",
-   "start": 9.935625,
-   "end": 10.294333
-  },
-  {
-   "text": "van",
-   "start": 10.294333,
-   "end": 10.381291000000001
-  },
-  {
-   "text": "het",
-   "start": 10.381291999999998,
-   "end": 10.4465
-  },
-  {
-   "text": "bedrag",
-   "start": 10.4465,
-   "end": 10.913875
-  },
-  {
-   "text": "Winst",
-   "start": 11.163917,
-   "end": 11.544333
-  },
-  {
-   "text": "of",
-   "start": 11.544333,
-   "end": 11.642166
-  },
-  {
-   "text": "verlies",
-   "start": 11.653042,
-   "end": 12.174792
-  },
-  {
-   "text": "Dat",
-   "start": 12.522583000000001,
-   "end": 12.620415999999999
-  },
-  {
-   "text": "maakt",
-   "start": 12.620417,
-   "end": 12.903042
-  },
-  {
-   "text": "niet",
-   "start": 12.913917,
-   "end": 13.185625
-  },
-  {
-   "text": "uit",
-   "start": 13.185625,
-   "end": 13.544333
-  },
-  {
-   "text": "Hoeveel",
-   "start": 13.791999999999998,
-   "end": 14.183290999999999
-  },
-  {
-   "text": "Dat",
-   "start": 14.541999999999998,
-   "end": 14.650707999999998
-  },
-  {
-   "text": "hangt",
-   "start": 14.661582999999998,
-   "end": 14.933333
-  },
-  {
-   "text": "af",
-   "start": 14.944166999999998,
-   "end": 15.107207999999998
-  },
-  {
-   "text": "van",
-   "start": 15.107207999999998,
-   "end": 15.205041
-  },
-  {
-   "text": "wat",
-   "start": 15.205041999999999,
-   "end": 15.302874999999998
-  },
-  {
-   "text": "je",
-   "start": 15.302874999999998,
-   "end": 15.378957999999999
-  },
-  {
-   "text": "koopt",
-   "start": 15.378957999999999,
-   "end": 15.791998999999999
-  },
-  {
-   "text": "Het",
-   "start": 16.074624999999997,
-   "end": 16.205040999999998
-  },
-  {
-   "text": "is",
-   "start": 16.205042,
-   "end": 16.291999999999998
-  },
-  {
-   "text": "0,12%",
-   "start": 16.291999999999998,
-   "end": 17.7485
-  },
-  {
-   "text": "0,35%",
-   "start": 17.976792,
-   "end": 19.5202499
-  },
-  {
-   "text": "of",
-   "start": 19.531125,
-   "end": 19.694166
-  },
-  {
-   "text": "1,32%",
-   "start": 19.705042,
-   "end": 21.2919999
-  },
-  {
-   "text": "En",
-   "start": 21.650707999999998,
-   "end": 21.705040999999998
-  },
-  {
-   "text": "er",
-   "start": 21.705042,
-   "end": 21.770249999999997
-  },
-  {
-   "text": "is",
-   "start": 21.770249999999997,
-   "end": 21.857208
-  },
-  {
-   "text": "een",
-   "start": 21.857208,
-   "end": 21.944166
-  },
-  {
-   "text": "maximum",
-   "start": 21.944167,
-   "end": 22.487625
-  },
-  {
-   "text": "per",
-   "start": 22.4985,
-   "end": 22.770249999999997
-  },
-  {
-   "text": "keer",
-   "start": 22.781125,
-   "end": 23.205041
-  },
-  {
-   "text": "Stel",
-   "start": 23.476,
-   "end": 23.791208
-  },
-  {
-   "text": "je",
-   "start": 24.008625,
-   "end": 24.095583
-  },
-  {
-   "text": "koopt",
-   "start": 24.095583,
-   "end": 24.323833
-  },
-  {
-   "text": "voor",
-   "start": 24.323833,
-   "end": 24.475999
-  },
-  {
-   "text": "een",
-   "start": 24.476,
-   "end": 24.541208
-  },
-  {
-   "text": "half",
-   "start": 24.541208,
-   "end": 24.878166
-  },
-  {
-   "text": "miljoen",
-   "start": 24.889042,
-   "end": 25.334708
-  },
-  {
-   "text": "aan",
-   "start": 25.334708,
-   "end": 25.530374
-  },
-  {
-   "text": "aandelen",
-   "start": 25.541208,
-   "end": 26.084666
-  },
-  {
-   "text": "Aan",
-   "start": 26.465125,
-   "end": 26.595541
-  },
-  {
-   "text": "0,35%",
-   "start": 26.595583,
-   "end": 28.0629579
-  },
-  {
-   "text": "zou",
-   "start": 28.062958000000002,
-   "end": 28.204249
-  },
-  {
-   "text": "dat",
-   "start": 28.215125,
-   "end": 28.334708
-  },
-  {
-   "text": "€1.750",
-   "start": 28.334708,
-   "end": 29.715125
-  },
-  {
-   "text": "zijn",
-   "start": 29.715125,
-   "end": 29.99775
-  },
-  {
-   "text": "Maar",
-   "start": 30.356458,
-   "end": 30.443374
-  },
-  {
-   "text": "je",
-   "start": 30.443375,
-   "end": 30.508583
-  },
-  {
-   "text": "betaalt",
-   "start": 30.508625000000002,
-   "end": 30.899916
-  },
-  {
-   "text": "maximaal",
-   "start": 30.899917000000002,
-   "end": 31.508625000000002
-  },
-  {
-   "text": "€1.600",
-   "start": 31.5195,
-   "end": 32.497749999999996
-  },
-  {
-   "text": "Goed",
-   "start": 32.758625,
-   "end": 32.95425
-  },
-  {
-   "text": "nieuws",
-   "start": 32.95425,
-   "end": 33.193375
-  },
-  {
-   "text": "voor",
-   "start": 33.193375,
-   "end": 33.291208
-  },
-  {
-   "text": "de",
-   "start": 33.291208,
-   "end": 33.334666
-  },
-  {
-   "text": "miljonairs",
-   "start": 33.345583,
-   "end": 34.084708
+   "start": 4.377833,
+   "end": 4.638708
+  },
+  {
+   "text": "toch",
+   "start": 5.019125,
+   "end": 5.25825,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 2
   },
   {
    "text": "Kijk",
-   "start": 34.336,
-   "end": 34.596875
+   "start": 5.616958,
+   "end": 5.866958
   },
   {
-   "text": "een",
-   "start": 34.955583,
-   "end": 35.042541
+   "text": "ik",
+   "start": 6.28,
+   "end": 6.356083
   },
   {
-   "text": "voorbeeld",
-   "start": 35.053375,
-   "end": 35.640333
+   "text": "leg",
+   "start": 6.356083,
+   "end": 6.508249
   },
   {
-   "text": "Je",
-   "start": 35.81425,
-   "end": 35.901208
-  },
-  {
-   "text": "koopt",
-   "start": 35.901208,
-   "end": 36.205541
-  },
-  {
-   "text": "aandelen",
-   "start": 36.205583,
-   "end": 36.694708
-  },
-  {
-   "text": "voor",
-   "start": 36.694708,
-   "end": 36.825124
-  },
-  {
-   "text": "€2.000",
-   "start": 36.825125,
-   "end": 37.814291
-  },
-  {
-   "text": "Aan",
-   "start": 38.205583,
-   "end": 38.346874
-  },
-  {
-   "text": "0,35%",
-   "start": 38.346875,
-   "end": 39.7925
-  },
-  {
-   "text": "betaal",
-   "start": 39.7925,
-   "end": 40.129458
+   "text": "het",
+   "start": 6.519125,
+   "end": 6.606083
   },
   {
    "text": "je",
-   "start": 40.129458,
-   "end": 40.216416
+   "start": 6.606083,
+   "end": 6.693041
   },
   {
-   "text": "€7",
-   "start": 40.216417,
-   "end": 40.944666
+   "text": "uit",
+   "start": 6.693042,
+   "end": 7.03,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
   },
   {
-   "text": "Later",
-   "start": 41.346875,
-   "end": 41.629458
-  },
-  {
-   "text": "verkoop",
-   "start": 41.629458,
-   "end": 41.999041
-  },
-  {
-   "text": "je",
-   "start": 42.009917,
-   "end": 42.086
-  },
-  {
-   "text": "ze",
-   "start": 42.086,
-   "end": 42.172958
-  },
-  {
-   "text": "voor",
-   "start": 42.183833,
-   "end": 42.281666
-  },
-  {
-   "text": "€2.000",
-   "start": 42.281667,
-   "end": 43.129458
-  },
-  {
-   "text": "Dan",
-   "start": 43.368625,
-   "end": 43.466415999999995
-  },
-  {
-   "text": "betaal",
-   "start": 43.466417,
-   "end": 43.77075
-  },
-  {
-   "text": "je",
-   "start": 43.770792,
-   "end": 43.846875
-  },
-  {
-   "text": "weer",
-   "start": 43.857749999999996,
-   "end": 43.999041
-  },
-  {
-   "text": "€7",
-   "start": 44.009917,
-   "end": 44.8359989
-  },
-  {
-   "text": "Samen",
-   "start": 45.183833,
-   "end": 45.520791
+   "text": "Dat",
+   "start": 7.402,
+   "end": 7.510708
   },
   {
    "text": "is",
-   "start": 45.531667,
-   "end": 45.618625
-  },
-  {
-   "text": "dat",
-   "start": 45.618625,
-   "end": 45.749041
-  },
-  {
-   "text": "€14",
-   "start": 45.749042,
-   "end": 46.5968739
-  },
-  {
-   "text": "Wie",
-   "start": 46.852,
-   "end": 46.993291
-  },
-  {
-   "text": "regelt",
-   "start": 47.004166999999995,
-   "end": 47.449833
-  },
-  {
-   "text": "dat",
-   "start": 47.449833,
-   "end": 47.786791
-  },
-  {
-   "text": "Een",
-   "start": 48.12375,
-   "end": 48.221582999999995
-  },
-  {
-   "text": "Belgische",
-   "start": 48.232417,
-   "end": 48.699791999999995
-  },
-  {
-   "text": "broker",
-   "start": 48.710708,
-   "end": 49.265041
-  },
-  {
-   "text": "doet",
-   "start": 49.428083,
-   "end": 49.601999
-  },
-  {
-   "text": "het",
-   "start": 49.602,
-   "end": 49.688958
-  },
-  {
-   "text": "voor",
-   "start": 49.688958,
-   "end": 49.830248999999995
-  },
-  {
-   "text": "jou",
-   "start": 49.83025,
-   "end": 50.112874999999995
-  },
-  {
-   "text": "Een",
-   "start": 50.504166999999995,
-   "end": 50.602
-  },
-  {
-   "text": "buitenlandse",
-   "start": 50.602,
-   "end": 51.156333
-  },
-  {
-   "text": "broker",
-   "start": 51.156333,
-   "end": 51.667207999999995
-  },
-  {
-   "text": "niet",
-   "start": 51.667207999999995,
-   "end": 51.938958
-  },
-  {
-   "text": "altijd",
-   "start": 51.949833,
-   "end": 52.493291
-  },
-  {
-   "text": "Dan",
-   "start": 52.852,
-   "end": 52.949833
-  },
-  {
-   "text": "geef",
-   "start": 52.960708,
-   "end": 53.243291
-  },
-  {
-   "text": "je",
-   "start": 53.243292,
-   "end": 53.308499999999995
-  },
-  {
-   "text": "het",
-   "start": 53.319374999999994,
-   "end": 53.406333
-  },
-  {
-   "text": "zelf",
-   "start": 53.406333,
-   "end": 53.808499
-  },
-  {
-   "text": "aan",
-   "start": 53.819374999999994,
-   "end": 54.058499999999995
-  },
-  {
-   "text": "En",
-   "start": 54.482417,
-   "end": 54.525875
-  },
-  {
-   "text": "je",
-   "start": 54.525917,
-   "end": 54.58025
-  },
-  {
-   "text": "betaalt",
-   "start": 54.58025,
-   "end": 54.938958
-  },
-  {
-   "text": "het",
-   "start": 54.938958,
-   "end": 55.036790999999994
-  },
-  {
-   "text": "zelf",
-   "start": 55.036792,
-   "end": 55.471582999999995
-  },
-  {
-   "text": "Wanneer",
-   "start": 55.808499999999995,
-   "end": 56.28675
-  },
-  {
-   "text": "Ten",
-   "start": 56.634625,
-   "end": 56.775915999999995
-  },
-  {
-   "text": "laatste",
-   "start": 56.775917,
-   "end": 57.167207999999995
+   "start": 7.510708,
+   "end": 7.619374
   },
   {
    "text": "de",
-   "start": 57.167207999999995,
-   "end": 57.265041
+   "start": 7.619375,
+   "end": 7.706333
   },
   {
-   "text": "laatste",
-   "start": 57.265041999999994,
-   "end": 57.710708
+   "text": "TOB.",
+   "start": 7.717208,
+   "end": 8.521541
   },
   {
-   "text": "werkdag",
-   "start": 57.710708,
-   "end": 58.188958
+   "text": "Voluit",
+   "start": 8.847667,
+   "end": 9.271583
+  },
+  {
+   "text": "de",
+   "start": 9.282417,
+   "end": 9.391125
+  },
+  {
+   "text": "taks",
+   "start": 9.391125,
+   "end": 9.738958
+  },
+  {
+   "text": "op",
+   "start": 9.749833,
+   "end": 9.825916
+  },
+  {
+   "text": "de",
+   "start": 9.825917,
+   "end": 9.902000000000001
+  },
+  {
+   "text": "beursverrichtingen",
+   "start": 9.902000000000001,
+   "end": 10.771583,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 10
+  },
+  {
+   "text": "Simpel",
+   "start": 11.032417,
+   "end": 11.369375
+  },
+  {
+   "text": "gezegd",
+   "start": 11.369375,
+   "end": 11.760666
+  },
+  {
+   "text": "betaal",
+   "start": 11.760708000000001,
+   "end": 12.108499
+  },
+  {
+   "text": "je",
+   "start": 12.1085,
+   "end": 12.206333
+  },
+  {
+   "text": "een",
+   "start": 12.206333,
+   "end": 12.304166
+  },
+  {
+   "text": "klein",
+   "start": 12.315042,
+   "end": 12.695458
+  },
+  {
+   "text": "stukje",
+   "start": 12.706333,
+   "end": 13.097624
   },
   {
    "text": "van",
-   "start": 58.188958,
-   "end": 58.319373999999996
+   "start": 13.097667000000001,
+   "end": 13.195458
   },
   {
-   "text": "de",
-   "start": 58.319374999999994,
-   "end": 58.384583
+   "text": "het",
+   "start": 13.195458,
+   "end": 13.249791
   },
   {
-   "text": "tweede",
-   "start": 58.395458,
-   "end": 58.765041
+   "text": "bedrag",
+   "start": 13.249832999999999,
+   "end": 13.651999,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 10
   },
   {
-   "text": "maand",
-   "start": 58.765041999999994,
-   "end": 59.058499999999995
+   "text": "Bij",
+   "start": 13.988958,
+   "end": 14.173749
   },
   {
-   "text": "erna",
-   "start": 59.069374999999994,
-   "end": 59.482416
+   "text": "elke",
+   "start": 14.184625,
+   "end": 14.478083
   },
   {
-   "text": "Nu",
-   "start": 59.751999999999995,
-   "end": 59.860707999999995
+   "text": "aankoop",
+   "start": 14.488958,
+   "end": 14.978083
   },
   {
-   "text": "weet",
-   "start": 59.860707999999995,
-   "end": 60.045457999999996
+   "text": "en",
+   "start": 14.978083,
+   "end": 15.054166
   },
   {
-   "text": "je",
-   "start": 60.045457999999996,
-   "end": 60.143291
+   "text": "verkoop",
+   "start": 15.054167,
+   "end": 15.499833,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
   },
   {
-   "text": "waar",
-   "start": 60.143291999999995,
-   "end": 60.447624999999995
+   "text": "Winst",
+   "start": 15.869375,
+   "end": 16.271541
+  },
+  {
+   "text": "of",
+   "start": 16.271583,
+   "end": 16.369416
+  },
+  {
+   "text": "verlies",
+   "start": 16.38025,
+   "end": 16.815041
   },
   {
    "text": "dat",
-   "start": 60.447666999999996,
-   "end": 60.588958
+   "start": 17.032417000000002,
+   "end": 17.162833
   },
   {
-   "text": "kostje",
-   "start": 60.588958,
-   "end": 60.915040999999995
+   "text": "maakt",
+   "start": 17.17375,
+   "end": 17.467208
   },
   {
-   "text": "vandaan",
-   "start": 60.925917,
-   "end": 61.360707999999995
+   "text": "niet",
+   "start": 17.467208,
+   "end": 17.738958
   },
   {
-   "text": "komt",
-   "start": 61.360707999999995,
-   "end": 61.665040999999995
+   "text": "uit",
+   "start": 17.738958,
+   "end": 18.086790999999998,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
   },
   {
-   "text": "Volg",
-   "start": 61.904166999999994,
-   "end": 62.186792
+   "text": "Hoeveel",
+   "start": 18.446,
+   "end": 18.815541
+  },
+  {
+   "text": "dan",
+   "start": 18.815542,
+   "end": 19.119875,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 2
+  },
+  {
+   "text": "Dat",
+   "start": 19.446,
+   "end": 19.576416000000002
+  },
+  {
+   "text": "hangt",
+   "start": 19.576417,
+   "end": 19.837292
+  },
+  {
+   "text": "af",
+   "start": 19.837292,
+   "end": 19.978583
+  },
+  {
+   "text": "van",
+   "start": 19.978583,
+   "end": 20.076416000000002
+  },
+  {
+   "text": "wat",
+   "start": 20.076417,
+   "end": 20.185125
+  },
+  {
+   "text": "je",
+   "start": 20.185125,
+   "end": 20.250333
+  },
+  {
+   "text": "koopt",
+   "start": 20.250333,
+   "end": 20.619916,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "Het",
+   "start": 20.9025,
+   "end": 21.022083000000002
+  },
+  {
+   "text": "is",
+   "start": 21.032958,
+   "end": 21.130791000000002
+  },
+  {
+   "text": "0,12%",
+   "start": 21.141625,
+   "end": 22.576416000000002
+  },
+  {
+   "text": "0,35%",
+   "start": 22.848167,
+   "end": 24.369917
+  },
+  {
+   "text": "of",
+   "start": 24.380792,
+   "end": 24.522083000000002
+  },
+  {
+   "text": "1,32%",
+   "start": 24.532958,
+   "end": 26.054707999999998,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "En",
+   "start": 26.4025,
+   "end": 26.456833
+  },
+  {
+   "text": "er",
+   "start": 26.456875,
+   "end": 26.511208
+  },
+  {
+   "text": "is",
+   "start": 26.511208,
+   "end": 26.609040999999998
+  },
+  {
+   "text": "altijd",
+   "start": 26.619917,
+   "end": 27.087291999999998
+  },
+  {
+   "text": "een",
+   "start": 27.087291999999998,
+   "end": 27.195999999999998
+  },
+  {
+   "text": "maximum",
+   "start": 27.206875,
+   "end": 27.717750000000002
+  },
+  {
+   "text": "per",
+   "start": 27.728583,
+   "end": 27.978583
+  },
+  {
+   "text": "keer",
+   "start": 27.978583,
+   "end": 28.358999,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 8
+  },
+  {
+   "text": "Stel",
+   "start": 28.722,
+   "end": 29.069833
+  },
+  {
+   "text": "je",
+   "start": 29.308958,
+   "end": 29.385041
+  },
+  {
+   "text": "koopt",
+   "start": 29.385042,
+   "end": 29.624167
   },
   {
    "text": "voor",
-   "start": 62.197666999999996,
-   "end": 62.393291999999995
+   "start": 29.624167,
+   "end": 29.765458
+  },
+  {
+   "text": "een",
+   "start": 29.7655,
+   "end": 29.830708
+  },
+  {
+   "text": "half",
+   "start": 29.830708,
+   "end": 30.178541
+  },
+  {
+   "text": "miljoen",
+   "start": 30.178542,
+   "end": 30.667667
+  },
+  {
+   "text": "aan",
+   "start": 30.667667,
+   "end": 30.852458
+  },
+  {
+   "text": "aandelen",
+   "start": 30.852458,
+   "end": 31.385083,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "Aan",
+   "start": 31.74375,
+   "end": 31.863333
+  },
+  {
+   "text": "0,35%",
+   "start": 31.863333,
+   "end": 33.287249
+  },
+  {
+   "text": "zou",
+   "start": 33.298083,
+   "end": 33.504624
+  },
+  {
+   "text": "dat",
+   "start": 33.5155,
+   "end": 33.689416
+  },
+  {
+   "text": "€1.750",
+   "start": 33.689417,
+   "end": 35.2655
+  },
+  {
+   "text": "zijn",
+   "start": 35.2655,
+   "end": 35.558958000000004,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Maar",
+   "start": 35.906792,
+   "end": 35.99375
+  },
+  {
+   "text": "je",
+   "start": 36.004625,
+   "end": 36.080708
+  },
+  {
+   "text": "betaalt",
+   "start": 36.080708,
+   "end": 36.471999
+  },
+  {
+   "text": "maximaal",
+   "start": 36.482875,
+   "end": 37.0155
+  },
+  {
+   "text": "€1.600",
+   "start": 37.0155,
+   "end": 38.330708,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Goed",
+   "start": 38.580708,
+   "end": 38.787208
+  },
+  {
+   "text": "nieuws",
+   "start": 38.787208,
+   "end": 39.037208
+  },
+  {
+   "text": "voor",
+   "start": 39.048083,
+   "end": 39.145916
+  },
+  {
+   "text": "de",
+   "start": 39.145917,
+   "end": 39.20025
+  },
+  {
+   "text": "miljonairs",
+   "start": 39.211124999999996,
+   "end": 39.885041,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Oké",
+   "start": 40.246,
+   "end": 40.572083
+  },
+  {
+   "text": "gewoner",
+   "start": 40.909042,
+   "end": 41.387292,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 2
+  },
+  {
+   "text": "Je",
+   "start": 41.7025,
+   "end": 41.756833
+  },
+  {
+   "text": "koopt",
+   "start": 41.756875,
+   "end": 42.061208
+  },
+  {
+   "text": "aandelen",
+   "start": 42.061208,
+   "end": 42.506874
+  },
+  {
+   "text": "voor",
+   "start": 42.506875,
+   "end": 42.626416
+  },
+  {
+   "text": "€2.000",
+   "start": 42.626417000000004,
+   "end": 43.626416,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Aan",
+   "start": 43.854708,
+   "end": 43.985124
+  },
+  {
+   "text": "0,35%",
+   "start": 43.996,
+   "end": 45.419916
+  },
+  {
+   "text": "betaal",
+   "start": 45.430792000000004,
+   "end": 45.800333
+  },
+  {
+   "text": "je",
+   "start": 45.800333,
+   "end": 45.887291000000005
+  },
+  {
+   "text": "dan",
+   "start": 45.898167,
+   "end": 46.050333
+  },
+  {
+   "text": "€7",
+   "start": 46.050333,
+   "end": 46.876416,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Verkoop",
+   "start": 47.246,
+   "end": 47.539458
+  },
+  {
+   "text": "je",
+   "start": 47.539458,
+   "end": 47.604666
+  },
+  {
+   "text": "ze",
+   "start": 47.604708,
+   "end": 47.680791
+  },
+  {
+   "text": "later",
+   "start": 47.680792000000004,
+   "end": 48.126458
+  },
+  {
+   "text": "ook",
+   "start": 48.137292,
+   "end": 48.256875
+  },
+  {
+   "text": "voor",
+   "start": 48.26775,
+   "end": 48.398166
+  },
+  {
+   "text": "€2.000",
+   "start": 48.398167,
+   "end": 49.300333,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 7
+  },
+  {
+   "text": "Dan",
+   "start": 49.606625,
+   "end": 49.682708
+  },
+  {
+   "text": "betaal",
+   "start": 49.682708,
+   "end": 50.008791
+  },
+  {
+   "text": "je",
+   "start": 50.008792,
+   "end": 50.084875
+  },
+  {
+   "text": "weer",
+   "start": 50.084875,
+   "end": 50.237041000000005
+  },
+  {
+   "text": "€7",
+   "start": 50.247917,
+   "end": 51.041416,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Samen",
+   "start": 51.389207999999996,
+   "end": 51.769624
+  },
+  {
+   "text": "dus",
+   "start": 51.769667,
+   "end": 51.932708
+  },
+  {
+   "text": "€14",
+   "start": 51.943583000000004,
+   "end": 52.715291,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 3
+  },
+  {
+   "text": "En",
+   "start": 53.066,
+   "end": 53.152958
+  },
+  {
+   "text": "wie",
+   "start": 53.152958,
+   "end": 53.261666
+  },
+  {
+   "text": "regelt",
+   "start": 53.261667,
+   "end": 53.739917
+  },
+  {
+   "text": "dat",
+   "start": 53.739917,
+   "end": 53.902958
+  },
+  {
+   "text": "allemaal",
+   "start": 53.902958,
+   "end": 54.392083,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 5
+  },
+  {
+   "text": "Zit",
+   "start": 54.739917,
+   "end": 54.83775
+  },
+  {
+   "text": "je",
+   "start": 54.83775,
+   "end": 54.902958
+  },
+  {
+   "text": "bij",
+   "start": 54.902958,
+   "end": 55.033374
+  },
+  {
+   "text": "een",
+   "start": 55.033375,
+   "end": 55.152958
+  },
+  {
+   "text": "Belgische",
+   "start": 55.163833000000004,
+   "end": 55.642083
+  },
+  {
+   "text": "broker",
+   "start": 55.642083,
+   "end": 56.142083
+  },
+  {
+   "text": "dan",
+   "start": 56.511667,
+   "end": 56.674708
+  },
+  {
+   "text": "doet",
+   "start": 56.674708,
+   "end": 56.924708
+  },
+  {
+   "text": "die",
+   "start": 56.924708,
+   "end": 57.033374
+  },
+  {
+   "text": "het",
+   "start": 57.033375,
+   "end": 57.131208
+  },
+  {
+   "text": "voor",
+   "start": 57.142083,
+   "end": 57.283374
+  },
+  {
+   "text": "jou",
+   "start": 57.283375,
+   "end": 57.555125000000004,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 12
+  },
+  {
+   "text": "Een",
+   "start": 57.957292,
+   "end": 58.055125000000004
+  },
+  {
+   "text": "buitenlandse",
+   "start": 58.066,
+   "end": 58.609458000000004
+  },
+  {
+   "text": "broker",
+   "start": 58.609458000000004,
+   "end": 59.033374
+  },
+  {
+   "text": "niet",
+   "start": 59.033375,
+   "end": 59.294250000000005
+  },
+  {
+   "text": "altijd",
+   "start": 59.305125000000004,
+   "end": 59.816,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Dan",
+   "start": 60.174708,
+   "end": 60.294249
+  },
+  {
+   "text": "geef",
+   "start": 60.294250000000005,
+   "end": 60.533375
+  },
+  {
+   "text": "je",
+   "start": 60.533375,
+   "end": 60.598583000000005
+  },
+  {
+   "text": "het",
+   "start": 60.598625,
+   "end": 60.674708
+  },
+  {
+   "text": "zelf",
+   "start": 60.674708,
+   "end": 61.109458000000004
+  },
+  {
+   "text": "aan",
+   "start": 61.109458000000004,
+   "end": 61.370333,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Ten",
+   "start": 61.729042,
+   "end": 61.870333
+  },
+  {
+   "text": "laatste",
+   "start": 61.870333,
+   "end": 62.239916
+  },
+  {
+   "text": "de",
+   "start": 62.239917000000005,
+   "end": 62.305125000000004
+  },
+  {
+   "text": "laatste",
+   "start": 62.305125000000004,
+   "end": 62.707291
+  },
+  {
+   "text": "werkdag",
+   "start": 62.718167,
+   "end": 63.152958
+  },
+  {
+   "text": "van",
+   "start": 63.152958,
+   "end": 63.283374
+  },
+  {
+   "text": "de",
+   "start": 63.283375,
+   "end": 63.337708
+  },
+  {
+   "text": "tweede",
+   "start": 63.33775,
+   "end": 63.631208
+  },
+  {
+   "text": "maand",
+   "start": 63.631208,
+   "end": 63.881208
+  },
+  {
+   "text": "erna",
+   "start": 63.881208,
+   "end": 64.218166,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 10
+  },
+  {
+   "text": "Zo",
+   "start": 64.59,
+   "end": 64.829125
+  },
+  {
+   "text": "nu",
+   "start": 65.231292,
+   "end": 65.36170800000001
+  },
+  {
+   "text": "weet",
+   "start": 65.36175,
+   "end": 65.546541
+  },
+  {
+   "text": "je",
+   "start": 65.55737500000001,
+   "end": 65.622583
+  },
+  {
+   "text": "waar",
+   "start": 65.622625,
+   "end": 65.894333
+  },
+  {
+   "text": "dat",
+   "start": 65.894333,
+   "end": 66.024749
+  },
+  {
+   "text": "kostje",
+   "start": 66.035667,
+   "end": 66.372625
+  },
+  {
+   "text": "vandaan",
+   "start": 66.3835,
+   "end": 66.807416
+  },
+  {
+   "text": "komt",
+   "start": 66.81825,
+   "end": 67.122583,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "Volg",
+   "start": 67.481292,
+   "end": 67.731292
+  },
+  {
+   "text": "voor",
+   "start": 67.731292,
+   "end": 67.926958
   },
   {
    "text": "meer",
-   "start": 62.393291999999995,
-   "end": 62.741125
+   "start": 67.926958,
+   "end": 68.296541,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 3
   }
+ ],
+ "spoken": [
+  "Stel, je verkoopt je aandelen met verlies, En toch betaal je belasting, Raar, toch, Kijk, ik leg het je uit.",
+  "Dat is de T.O.B., Voluit de taks op de beursverrichtingen, Simpel gezegd betaal je een klein stukje van het bedrag, Bij elke aankoop en verkoop, Winst of verlies, dat maakt niet uit.",
+  "Hoeveel dan, Dat hangt af van wat je koopt, Het is nul komma twaalf procent, nul komma vijfendertig procent of één komma tweeëndertig procent, En er is altijd een maximum per keer.",
+  "Stel, je koopt voor een half miljoen aan aandelen, Aan nul komma vijfendertig procent zou dat duizend zevenhonderdvijftig euro zijn, Maar je betaalt maximaal duizend zeshonderd euro, Goed nieuws voor de miljonairs.",
+  "Oké, gewoner, Je koopt aandelen voor tweeduizend euro, Aan nul komma vijfendertig procent betaal je dan zeven euro, Verkoop je ze later ook voor tweeduizend euro, Dan betaal je weer zeven euro, Samen dus veertien euro.",
+  "En wie regelt dat allemaal, Zit je bij een Belgische broker, dan doet die het voor jou, Een buitenlandse broker niet altijd, Dan geef je het zelf aan, Ten laatste de laatste werkdag van de tweede maand erna.",
+  "Zo, nu weet je waar dat kostje vandaan komt, Volg voor meer!"
  ]
 }

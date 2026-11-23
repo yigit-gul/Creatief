@@ -4,7 +4,7 @@
   "validity": "Algemene uitleg, stand november 2026 (geen aanslagjaar van toepassing)",
   "scenes": [
     {
-      "say": "De Nasdaq. Iedereen zegt het. Niemand legt het uit. Is het een beurs? Een index? Een rapper?",
+      "say": "De Nasdaq. Iedereen heeft het erover, maar wat is het nu eigenlijk? Een beurs? Een index? Een rapper?",
       "visual": {
         "type": "hook",
         "kicker": "Nasdaq 101",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "say": "Eerst dit: Nasdaq is een beurs in New York. Daar worden aandelen verhandeld. Zoals Vinted, maar dan voor stukjes van bedrijven. Geen tweedehands jeans dus. De naam is een Amerikaanse afkorting. Niet sexy, wel waar.",
+      "say": "Kijk, eerst en vooral is Nasdaq een beurs in New York. Een plek waar aandelen verhandeld worden. Zie het als Vinted, maar dan voor stukjes van bedrijven. Geen tweedehands jeans dus. En de naam? Gewoon een Amerikaanse afkorting. Niet sexy, wel waar.",
       "visual": {
         "type": "point",
         "n": 1,
@@ -22,7 +22,7 @@
       }
     },
     {
-      "say": "Maar het nieuws zegt soms: de Nasdaq zakt. Dan gaat het meestal over de index. De Nasdaq Composite volgt meer dan 3.000 bedrijven. En de Nasdaq-100? Dat is de VIP-lounge. De 100 grootste bedrijven, zonder banken.",
+      "say": "Maar hoor je in het nieuws dat de Nasdaq zakt? Dan gaat het meestal over de index. De Nasdaq Composite volgt meer dan 3.000 bedrijven. En de Nasdaq-100? Dat is eigenlijk de VIP-lounge. De 100 grootste bedrijven, zonder banken.",
       "visual": {
         "type": "table",
         "title": "2. En ook een index",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "say": "Nu het belangrijkste. Grote bedrijven tellen zwaarder. Een voorbeeld. Bedrijf A is 1.000 miljard waard. Bedrijf B is 10 miljard waard. Beide stijgen 1%. Dan duwt A de index honderd keer harder omhoog.",
+      "say": "En nu komt het belangrijkste. Grote bedrijven tellen zwaarder mee. Stel je voor, bedrijf A is 1.000 miljard waard. Bedrijf B is 10 miljard waard. Ze stijgen allebei 1%. Dan duwt A de index honderd keer harder omhoog.",
       "visual": {
         "type": "calc",
         "title": "3. Groot telt zwaarder",
@@ -76,7 +76,7 @@
       }
     },
     {
-      "say": "Daardoor kan de Nasdaq dalen, terwijl de meeste bedrijven stijgen. Zakken de reuzen? Dan zakt alles mee. Dus: beurs én index. En de groten zeggen het meest. Zoals in elke groepschat. Volg voor meer!",
+      "say": "Dus de Nasdaq kan dalen, ook al stijgen de meeste bedrijven. Zakken de reuzen, dan zakt alles mee. Een beetje zoals in een groepschat. De groten zeggen het meest. Volg voor meer!",
       "visual": {
         "type": "outro",
         "big": "Volg voor meer *Nasdaq* zonder jargon"

@@ -1,65 +1,88 @@
 {
  "id": "04-nasdaq-waarom-schommelt",
  "signalen": {
-  "duration": 61.5,
+  "duration": 60.9,
   "scenes": [
    {
     "n": 0,
     "type": "hook",
-    "sec": 6.0,
-    "woorden": 21,
-    "woorden_per_sec": 3.5,
-    "langste_zin": 8
+    "sec": 4.8,
+    "woorden": 20,
+    "woorden_per_sec": 4.15,
+    "langste_zin": 11
    },
    {
     "n": 1,
     "type": "point",
-    "sec": 14.1,
-    "woorden": 42,
-    "woorden_per_sec": 2.97,
-    "langste_zin": 9
+    "sec": 15.5,
+    "woorden": 51,
+    "woorden_per_sec": 3.29,
+    "langste_zin": 12
    },
    {
     "n": 2,
     "type": "calc",
-    "sec": 15.5,
-    "woorden": 41,
-    "woorden_per_sec": 2.64,
+    "sec": 16.1,
+    "woorden": 44,
+    "woorden_per_sec": 2.74,
     "langste_zin": 9
    },
    {
     "n": 3,
     "type": "bars",
-    "sec": 11.2,
-    "woorden": 27,
-    "woorden_per_sec": 2.41,
+    "sec": 11.8,
+    "woorden": 32,
+    "woorden_per_sec": 2.72,
     "langste_zin": 8
    },
    {
     "n": 4,
     "type": "outro",
-    "sec": 12.2,
-    "woorden": 34,
-    "woorden_per_sec": 2.79,
+    "sec": 9.4,
+    "woorden": 28,
+    "woorden_per_sec": 2.99,
     "langste_zin": 8
    }
   ],
   "zinnen": {
-   "aantal": 31,
-   "gemiddeld": 5.3,
+   "aantal": 27,
+   "gemiddeld": 6.5,
    "langer_dan_10": []
   },
   "hook": {
-   "eerste_zin": "De Nasdaq is die vriend op een feestje.",
-   "klaar_na_sec": 2.1
+   "eerste_zin": "Ken je die vriend die op een feestje het wildst danst?",
+   "klaar_na_sec": 2.3
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 64,
-   "langste": "Beleggers betalen niet"
+   "blokken": 68,
+   "langste": "trouwens volatiliteit"
   },
+  "layout": [
+   {
+    "scene": 0,
+    "onderkant_tekst": 1024
+   },
+   {
+    "scene": 1,
+    "onderkant_tekst": 969
+   },
+   {
+    "scene": 2,
+    "onderkant_tekst": 1125
+   },
+   {
+    "scene": 3,
+    "onderkant_tekst": 1248
+   },
+   {
+    "scene": 4,
+    "onderkant_tekst": 1212
+   }
+  ],
   "aandachtspunten": [
-   "Scène 0 is erg vol (3.5 w/s)."
+   "Scène 0 is erg vol (4.15 w/s).",
+   "Scène 2 duurt 16.1 s: risico op wegzappen, overweeg te splitsen."
   ]
  },
  "rubriek": {
@@ -89,7 +112,12 @@
    "opmerking": ""
   },
   "visueel": {
-   "vraag": "Tekst leesbaar, niets overlapt, grafiek/cijfers verschijnen op het juiste moment.",
+   "vraag": "Tekst leesbaar, niets overlapt of staat dubbel (beeld + ondertitel), grafiek/cijfers verschijnen op het juiste moment.",
+   "score": null,
+   "opmerking": ""
+  },
+  "stem": {
+   "vraag": "Elke zin is apart te horen (korte adempauze), niets klinkt als 2 dingen tegelijk, geen leesstijl.",
    "score": null,
    "opmerking": ""
   },

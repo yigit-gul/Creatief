@@ -4,14 +4,14 @@
  "title": "Waarom de Nasdaq de drama queen van de beurs is",
  "validity": "Algemene uitleg; weekcijfers 16-20 november 2026",
  "status": "klaar voor review",
- "durationSec": 61.5,
- "words": 165,
+ "durationSec": 60.9,
+ "words": 175,
  "script": [
-  "De Nasdaq is die vriend op een feestje. Hij danst het wildst. Maar hij valt ook het hardst. Hoe komt dat?",
-  "Reden één: tech. Beleggers betalen niet alleen voor de winst van nu. Ze betalen ook voor de winst van later. Zoals bij een influencer. Nog niet viraal, maar bijna. Iedereen denkt: dat komt nog. Twijfelen ze? Dan gaat de koers snel omlaag.",
-  "Reden twee: rente. Stel, je krijgt over tien jaar €100. Bij 2% rente is dat vandaag €82 waard. Bij 5% nog maar €61. Hogere rente maakt geld van later dus minder waard. En net dat geld van later zit in tech.",
-  "Reden drie: een paar reuzen wegen heel zwaar. Vallen zij? Dan valt de hele index mee. Vorige week nog. De Nasdaq ging 10% omlaag. De Dow 8%.",
-  "Dat schommelen heeft een naam: volatiliteit. En het werkt ook omhoog. In goede jaren stijgt de Nasdaq vaak harder. Dus de Nasdaq is niet gek. Gewoon gevoelig. Voorspellen doen we niet. Volg voor meer!"
+  "Ken je die vriend die op een feestje het wildst danst? En ook het hardst valt? Dat is de Nasdaq.",
+  "Ik leg je uit waarom. Eerste reden: tech. Bij zo'n aandeel betaal je niet alleen voor de winst van nu. Je betaalt ook voor de winst van later. Een beetje zoals een influencer die nog niet viraal is. Iedereen denkt: dat komt nog. Twijfelen mensen? Dan gaat de koers snel omlaag.",
+  "Tweede reden: de rente. Kijk, stel dat je over tien jaar €100 krijgt. Bij 2% rente is dat vandaag €82 waard. Bij 5% nog maar €61. Hogere rente maakt geld van later dus minder waard. En net dat geld van later zit in tech.",
+  "En de derde reden? Een paar reuzen wegen heel zwaar. Vallen zij, dan valt de hele index mee. Dat zagen we vorige week nog. De Nasdaq ging 10% omlaag, de Dow 8%.",
+  "Dat op en neer gaan heet trouwens volatiliteit. En het werkt ook omhoog. Dus de Nasdaq is niet gek, gewoon gevoelig. Voorspellen doen we niet. Volg voor meer!"
  ],
  "caption": "Waarom gaat de Nasdaq zoveel harder op en neer dan andere indexen? Tech, rente en een paar giganten 🎢\n\nAlgemene info, geen beleggingsadvies, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
  "hashtags": [
@@ -89,17 +89,17 @@
   {
    "name": "Woordenaantal 150-190",
    "ok": true,
-   "info": "165 woorden"
+   "info": "175 woorden"
   },
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "61.5 s"
+   "info": "60.9 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
    "ok": true,
-   "info": "21 woorden"
+   "info": "20 woorden"
   },
   {
    "name": "Laatste scène is outro met disclaimer",
@@ -141,25 +141,30 @@
  "feedback": "De stem is terug ai achtig aan het worden gebruik eenvoudige zinnen zodat het minder ai klinkt.",
  "feedbackAt": "2026-11-23T01:44:23.914Z",
  "trendScore": 7,
- "trendRank": 4,
+ "trendRank": 5,
  "trendReason": "Grappige vergelijking ('drama queen', 'influencer die nog niet viraal is') en het rente-voorbeeld is sterk. Wel abstracter onderwerp, dus minder klikken dan nieuws of drama.",
- "claudeReply": "Verwerkt: alles herschreven in korte, eenvoudige zinnen (max. ~10 woorden), gewone woorden in plaats van 'gewaardeerd' en 'verwachting'. Deze regel geldt nu voor alle nieuwe video's.",
- "videoUrl": "/_blob/a059fac7aad8fc915353a47c78640b12",
+ "videoUrl": "/_blob/f6b332600d4943694ad4b8906a1e7865",
  "selfReview": {
-  "rounds": 2,
+  "rounds": 4,
   "scores": {
+   "eenvoud": 5,
    "hook": 5,
-   "eenvoud": 4,
-   "tempo": 4,
    "humor": 5,
    "info": 4,
+   "regels": 5,
+   "tempo": 4,
    "visueel": 4,
-   "regels": 5
+   "stem": 5
   },
   "changes": [
+   "Stem: alleen Nederlands (één doorlopende zin per scène + zelf ingevoegde korte pauzes).",
+   "Cijfers in het Nederlands uitgeschreven naar de stem.",
+   "Tekst herschreven als spreektaal/uitleg.",
+   "Taalcontrole in de zelfreview: geslaagd (geen cijfers, geen losse zinnen naar de stem).",
    "Zin van 11 woorden opgesplitst ('Zoals bij een influencer. Nog niet viraal, maar bijna.').",
    "Bewegende achtergrond."
   ],
-  "verdict": "Sterke vergelijking en goed rentevoorbeeld; de hook is snel, maar dat past bij TikTok."
- }
+  "verdict": "Klinkt als uitleg in het Nederlands; alle checks en de taalcontrole slagen."
+ },
+ "claudeReply": "Opnieuw gebouwd: (1) ALLEEN Nederlands: elke scène gaat als één doorlopende zin naar de stem, zoals in de oude video's (losse korte zinnen lieten hem Frans/Engels spreken), cijfers worden in het Nederlands uitgeschreven. (2) Spreektaal: herschreven alsof ik het aan iemand uitleg ('Kijk', 'Stel je voor', 'Simpel gezegd'), met gevarieerde korte pauzes in plaats van voorleesritme. (3) Zelfreview controleert nu automatisch dat er nooit cijfers of losse zinnen naar de stem gaan."
 }

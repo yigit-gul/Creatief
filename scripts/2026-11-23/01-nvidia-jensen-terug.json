@@ -4,7 +4,7 @@
   "validity": "Tussenstand maandag 23 november 2026, kort na de opening in New York (≈ 16:20 Belgische tijd). Geen slotkoers.",
   "scenes": [
     {
-      "say": "Plus 35%. Op één dag. Nvidia knalt door het dak. En waarom? Jensen Huang is terug.",
+      "say": "Plus 35%. Op één dag. Nvidia knalt door het dak. En weet je waarom? Jensen Huang is terug.",
       "visual": {
         "type": "slam",
         "kicker": "Nvidia · 23 nov",
@@ -32,16 +32,16 @@
       }
     },
     {
-      "say": "Wie is Jensen eigenlijk? Hij richtte Nvidia mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, dat leren jasje draagt hij echt altijd.",
+      "say": "Even voor wie hem niet kent. Jensen richtte Nvidia mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, hij draagt echt altijd dat leren jasje.",
       "visual": {
         "type": "point",
         "n": 1,
-        "head": "De man in het *leren jasje*",
+        "head": "Wie is *Jensen*?",
         "body": "Medeoprichter van Nvidia (1993) en het gezicht van de AI-chips."
       }
     },
     {
-      "say": "Begin november moest hij even opzij. Er liep een intern onderzoek. Beleggers schrokken. Zonder Jensen geen plan, dachten ze. Vandaag haalt het bestuur hem terug. En dat unaniem.",
+      "say": "Begin november moest hij even opzij. Er liep een intern onderzoek. Beleggers schrokken daar flink van. Zonder Jensen geen plan, dachten ze. Maar vandaag haalt het bestuur hem terug. En dat unaniem.",
       "visual": {
         "type": "point",
         "n": 2,
@@ -50,7 +50,7 @@
       }
     },
     {
-      "say": "Kijk wat dat doet. Vorige week: min 23%. Vrijdag sloot het aandeel op 125 dollar. Vandaag piekte het op bijna 170. Plus 35%! Dat is geen beurs meer. Dat is een achtbaan.",
+      "say": "En kijk wat dat doet. Vorige week ging het aandeel nog 23% onderuit. Vrijdag sloot het op 125 dollar. Vandaag piekte het op bijna 170. Plus 35%! Dat is geen beurs meer, dat is een achtbaan.",
       "visual": {
         "type": "line",
         "title": "Nvidia-aandeel",
@@ -92,7 +92,7 @@
       }
     },
     {
-      "say": "En Jensen trekt de hele sector mee. Chipbedrijven staan bijna 15% hoger. De Nasdaq ruim 7%. Na de slechtste week sinds 2020? Dat is een flinke opluchting.",
+      "say": "En Jensen trekt de hele sector mee. Chipbedrijven staan bijna 15% hoger. De Nasdaq ruim 7%. Na de slechtste week sinds 2020 is dat echt een opluchting.",
       "visual": {
         "type": "bars",
         "title": "3. Iedereen mee omhoog",
@@ -123,7 +123,7 @@
       }
     },
     {
-      "say": "Eén man, één comeback, en een beurs die ontploft. Maar let op: dit is een tussenstand. Voorspellen doen we niet. Volg voor meer!",
+      "say": "Eén man, één comeback, en de beurs ontploft. Maar let op, dit is een tussenstand. Voorspellen doen we niet. Volg voor meer!",
       "visual": {
         "type": "outro",
         "big": "Volg voor *dagnieuws* zonder hype"

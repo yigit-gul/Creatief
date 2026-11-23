@@ -68,7 +68,7 @@ def signals(script, timing):
         })
     lens = [len(x.split()) for x in all_sents]
     out["zinnen"] = {"aantal": len(lens), "gemiddeld": round(sum(lens) / len(lens), 1) if lens else 0,
-                     "langer_dan_10": [x for x in all_sents if len(x.split()) > 10]}
+                     "langer_dan_10": [x for x in all_sents if len(x.split()) > 12]}
     first = _sentences(display_text(script["scenes"][0]["say"]))[0]
     k = len(first.split())
     out["hook"] = {"eerste_zin": first, "klaar_na_sec": round(words[k - 1]["end"], 1) if len(words) >= k else None}
@@ -80,7 +80,7 @@ def signals(script, timing):
     if out["hook"]["klaar_na_sec"] and out["hook"]["klaar_na_sec"] > 3.0:
         flags.append("Eerste zin duurt langer dan 3 s: hook inkorten.")
     if out["zinnen"]["langer_dan_10"]:
-        flags.append(f"{len(out['zinnen']['langer_dan_10'])} zin(nen) langer dan 10 woorden: opsplitsen.")
+        flags.append(f"{len(out['zinnen']['langer_dan_10'])} zin(nen) langer dan 12 woorden: opsplitsen.")
     for s in out["scenes"]:
         if s["woorden_per_sec"] and s["woorden_per_sec"] > 3.3:
             flags.append(f"Scène {s['n']} is erg vol ({s['woorden_per_sec']} w/s).")

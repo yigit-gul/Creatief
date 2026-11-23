@@ -236,7 +236,9 @@ def draw_calc(d, v, t, dur):
     # regels verdelen over de scène: elke regel verschijnt wanneer hij aan bod komt
     starts = v.get("at") or [0.4 + i * (dur * 0.75 / max(1, len(lines))) for i in range(len(lines))]
     pad = 44
-    box_h = len(lines) * 150 + 2 * pad - 20
+    # regelhoogte zo kiezen dat de kaart nooit tot bij de ondertitels komt
+    lh = int(min(150, (C.SUB_Y - 110 - y - 2 * pad + 20) / max(1, len(lines))))
+    box_h = len(lines) * lh + 2 * pad - 20
     box_a = ease(t / 0.3)
     d.rounded_rectangle((C.SAFE_LEFT, y, C.SAFE_LEFT + CONTENT_W, y + box_h), 36,
                         fill=alpha(COL["card"], box_a), outline=alpha(COL["card_line"], box_a), width=3)
@@ -258,9 +260,9 @@ def draw_calc(d, v, t, dur):
             d.text((C.SAFE_LEFT + CONTENT_W - pad - vw, ly + 30 - (8 if is_res else 0)), val, font=fv,
                    fill=alpha(colv, a))
             if i < len(lines) - 1:
-                d.line((C.SAFE_LEFT + pad, ly + 136, C.SAFE_LEFT + CONTENT_W - pad, ly + 136),
+                d.line((C.SAFE_LEFT + pad, ly + lh - 14, C.SAFE_LEFT + CONTENT_W - pad, ly + lh - 14),
                        fill=alpha(COL["card_line"], a), width=2)
-        ly += 150
+        ly += lh
 
 
 def draw_bars(d, v, t, dur):

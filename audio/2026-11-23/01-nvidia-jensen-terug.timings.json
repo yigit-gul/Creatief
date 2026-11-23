@@ -1,874 +1,962 @@
 {
  "audio": "audio/2026-11-23/01-nvidia-jensen-terug.wav",
- "duration": 63.380958,
+ "duration": 63.905,
  "scenes": [
   {
    "start": 0.0,
-   "end": 7.056
+   "end": 7.416
   },
   {
-   "start": 7.276,
-   "end": 18.628
+   "start": 7.636,
+   "end": 18.508
   },
   {
-   "start": 18.848,
-   "end": 29.648
+   "start": 18.728,
+   "end": 30.68
   },
   {
-   "start": 29.868000000000002,
-   "end": 43.356
+   "start": 30.900000000000002,
+   "end": 44.508
   },
   {
-   "start": 43.576,
-   "end": 55.216
+   "start": 44.728,
+   "end": 55.696
   },
   {
-   "start": 55.436,
-   "end": 63.524
+   "start": 55.916000000000004,
+   "end": 63.980000000000004
   }
  ],
  "words": [
   {
    "text": "Plus",
    "start": 0.03,
-   "end": 0.160416
+   "end": 0.2365
   },
   {
    "text": "35%",
-   "start": 0.16041700000000003,
-   "end": 1.30175,
+   "start": 0.2365,
+   "end": 1.410416,
    "eos": true,
-   "eos_q": false
+   "eos_q": false,
+   "eos_len": 2
   },
   {
    "text": "Op",
-   "start": 1.5387879999999996,
-   "end": 1.6474959999999996
+   "start": 1.573458,
+   "end": 1.736499
   },
   {
    "text": "één",
-   "start": 1.6583299999999996,
-   "end": 1.8539959999999995
+   "start": 1.747375,
+   "end": 1.9865000000000002
   },
   {
    "text": "dag",
-   "start": 1.8539969999999997,
-   "end": 2.2127049999999997,
+   "start": 1.9865000000000002,
+   "end": 2.290833,
    "eos": true,
-   "eos_q": false
+   "eos_q": false,
+   "eos_len": 3
   },
   {
    "text": "Nvidia",
-   "start": 2.4437869999999995,
-   "end": 3.1177029999999997
+   "start": 2.7365000000000004,
+   "end": 3.399541
   },
   {
    "text": "knalt",
-   "start": 3.128577999999999,
-   "end": 3.6177029999999997
+   "start": 3.4104170000000003,
+   "end": 3.834333
   },
   {
    "text": "door",
-   "start": 3.628577999999999,
-   "end": 3.791619
+   "start": 3.834333,
+   "end": 4.008249
   },
   {
    "text": "het",
-   "start": 3.79162,
-   "end": 3.932911
+   "start": 4.00825,
+   "end": 4.149541
   },
   {
    "text": "dak",
-   "start": 3.9437869999999995,
-   "end": 4.324203,
+   "start": 4.149583,
+   "end": 4.443041,
    "eos": true,
-   "eos_q": false
+   "eos_q": false,
+   "eos_len": 5
   },
   {
    "text": "En",
-   "start": 4.555918000000001,
-   "end": 4.664626000000001
+   "start": 4.888708,
+   "end": 4.953916
+  },
+  {
+   "text": "weet",
+   "start": 4.953917000000001,
+   "end": 5.138708
+  },
+  {
+   "text": "je",
+   "start": 5.138708,
+   "end": 5.214791
   },
   {
    "text": "waarom",
-   "start": 4.675460000000001,
-   "end": 5.132001000000001,
+   "start": 5.214792,
+   "end": 5.616958,
    "eos": true,
-   "eos_q": true
+   "eos_q": true,
+   "eos_len": 4
   },
   {
    "text": "Jensen",
-   "start": 5.479835000000001,
-   "end": 5.849418000000001
+   "start": 6.00825,
+   "end": 6.3234580000000005
   },
   {
    "text": "Huang",
-   "start": 5.860252000000001,
-   "end": 6.305918000000001
+   "start": 6.3234580000000005,
+   "end": 6.693041
   },
   {
    "text": "is",
-   "start": 6.3167930000000005,
-   "end": 6.447209000000001
+   "start": 6.693042,
+   "end": 6.8234580000000005
   },
   {
    "text": "terug",
-   "start": 6.447210000000001,
-   "end": 6.925460000000001,
+   "start": 6.8234580000000005,
+   "end": 7.290833,
    "eos": true,
-   "eos_q": false
+   "eos_q": false,
+   "eos_len": 4
   },
   {
-   "text": "Wie",
-   "start": 7.306,
-   "end": 7.458165999999999
-  },
-  {
-   "text": "is",
-   "start": 7.4581669999999995,
-   "end": 7.566875
-  },
-  {
-   "text": "Jensen",
-   "start": 7.566875,
-   "end": 7.925583
-  },
-  {
-   "text": "eigenlijk",
-   "start": 7.936417,
-   "end": 8.479875,
-   "eos": true,
-   "eos_q": true
-  },
-  {
-   "text": "Hij",
-   "start": 8.82775,
-   "end": 8.925540999999999
-  },
-  {
-   "text": "richtte",
-   "start": 8.925542,
-   "end": 9.349458
-  },
-  {
-   "text": "Nvidia",
-   "start": 9.349458,
-   "end": 10.012499
-  },
-  {
-   "text": "mee",
-   "start": 10.0125,
-   "end": 10.349458
-  },
-  {
-   "text": "op",
-   "start": 10.349458,
-   "end": 10.534248999999999
-  },
-  {
-   "text": "in",
-   "start": 10.53425,
-   "end": 10.675540999999999
-  },
-  {
-   "text": "1993",
-   "start": 10.675542,
-   "end": 12.28425,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Hij",
-   "start": 12.527828,
-   "end": 12.625661000000001
-  },
-  {
-   "text": "maakte",
-   "start": 12.625662000000002,
-   "end": 13.038703000000002
-  },
-  {
-   "text": "er",
-   "start": 13.038703000000002,
-   "end": 13.136536
-  },
-  {
-   "text": "de",
-   "start": 13.14737,
-   "end": 13.223453000000001
-  },
-  {
-   "text": "chipkoning",
-   "start": 13.223453000000001,
-   "end": 13.919119000000002
-  },
-  {
-   "text": "van",
-   "start": 13.91912,
-   "end": 14.049536
-  },
-  {
-   "text": "het",
-   "start": 14.049578,
-   "end": 14.223453000000001
-  },
-  {
-   "text": "AI",
-   "start": 14.223453000000001,
-   "end": 14.549536
-  },
-  {
-   "text": "-tijdperk",
-   "start": 14.549578,
-   "end": 15.169161
-  },
-  {
-   "text": "van",
-   "start": 15.179995,
-   "end": 15.473453000000001,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "En",
-   "start": 15.682242000000002,
-   "end": 15.790950000000002
-  },
-  {
-   "text": "ja",
-   "start": 15.790950000000002,
-   "end": 16.062700000000003
-  },
-  {
-   "text": "dat",
-   "start": 16.399658000000002,
-   "end": 16.519199
-  },
-  {
-   "text": "leren",
-   "start": 16.519200000000005,
-   "end": 16.812658000000003
-  },
-  {
-   "text": "jasje",
-   "start": 16.823533000000005,
-   "end": 17.193116000000003
-  },
-  {
-   "text": "draagt",
-   "start": 17.203992000000003,
-   "end": 17.562700000000003
-  },
-  {
-   "text": "hij",
-   "start": 17.562700000000003,
-   "end": 17.725741000000003
-  },
-  {
-   "text": "echt",
-   "start": 17.736575000000002,
-   "end": 17.975700000000003
-  },
-  {
-   "text": "altijd",
-   "start": 17.975742000000004,
-   "end": 18.508367000000003,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Begin",
-   "start": 18.878,
-   "end": 19.138875
-  },
-  {
-   "text": "november",
-   "start": 19.138875,
-   "end": 19.671499999999998
-  },
-  {
-   "text": "moest",
-   "start": 19.682333,
-   "end": 19.899708
-  },
-  {
-   "text": "hij",
-   "start": 19.899749999999997,
-   "end": 20.084540999999998
-  },
-  {
-   "text": "even",
-   "start": 20.095374999999997,
-   "end": 20.432333
-  },
-  {
-   "text": "opzij",
-   "start": 20.443208,
-   "end": 20.997541,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Er",
-   "start": 21.250954999999998,
-   "end": 21.348788
-  },
-  {
-   "text": "liep",
-   "start": 21.348788,
-   "end": 21.533579
-  },
-  {
-   "text": "een",
-   "start": 21.53358,
-   "end": 21.696621
-  },
-  {
-   "text": "intern",
-   "start": 21.707497,
-   "end": 22.272705
-  },
-  {
-   "text": "onderzoek",
-   "start": 22.28358,
-   "end": 22.848788,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Beleggers",
-   "start": 23.130122,
-   "end": 23.67358
-  },
-  {
-   "text": "schrokken",
-   "start": 23.684455,
-   "end": 24.151829999999997,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Zonder",
-   "start": 24.407453,
-   "end": 24.722661000000002
-  },
-  {
-   "text": "Jensen",
-   "start": 24.722662,
-   "end": 25.070495
-  },
-  {
-   "text": "geen",
-   "start": 25.070495,
-   "end": 25.407453
-  },
-  {
-   "text": "plan",
-   "start": 25.407453,
-   "end": 25.766161
-  },
-  {
-   "text": "dachten",
-   "start": 26.005287000000003,
-   "end": 26.363995000000003
-  },
-  {
-   "text": "ze",
-   "start": 26.37487,
-   "end": 26.570536,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Vandaag",
-   "start": 26.862283,
-   "end": 27.210116
-  },
-  {
-   "text": "haalt",
-   "start": 27.210117000000004,
-   "end": 27.427492
-  },
-  {
-   "text": "het",
-   "start": 27.427492,
-   "end": 27.503575
-  },
-  {
-   "text": "bestuur",
-   "start": 27.503575,
-   "end": 27.938366000000002
-  },
-  {
-   "text": "hem",
-   "start": 27.938367,
-   "end": 28.112283
-  },
-  {
-   "text": "terug",
-   "start": 28.112283,
-   "end": 28.557949,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "En",
-   "start": 28.795842000000004,
-   "end": 28.861050000000006
-  },
-  {
-   "text": "dat",
-   "start": 28.861092000000003,
-   "end": 29.013258000000004
-  },
-  {
-   "text": "unaniem",
-   "start": 29.024133000000003,
-   "end": 29.535008000000005,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Kijk",
-   "start": 29.898000000000003,
-   "end": 30.1045
-  },
-  {
-   "text": "wat",
-   "start": 30.1045,
-   "end": 30.289291000000002
-  },
-  {
-   "text": "dat",
-   "start": 30.289292000000003,
-   "end": 30.452333000000003
-  },
-  {
-   "text": "doet",
-   "start": 30.463208,
-   "end": 30.811041000000003,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Vorige",
-   "start": 31.066338000000002,
-   "end": 31.457629
-  },
-  {
-   "text": "week",
-   "start": 31.468547,
-   "end": 31.827255
-  },
-  {
-   "text": "min",
-   "start": 32.102552,
-   "end": 32.396010000000004
-  },
-  {
-   "text": "23%",
-   "start": 32.396052000000005,
-   "end": 33.678676,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Vrijdag",
-   "start": 33.918633,
-   "end": 34.320799
-  },
-  {
-   "text": "sloot",
-   "start": 34.331675000000004,
-   "end": 34.59255
-  },
-  {
-   "text": "het",
-   "start": 34.603425,
-   "end": 34.744716000000004
-  },
-  {
-   "text": "aandeel",
-   "start": 34.744717,
-   "end": 35.201258
-  },
-  {
-   "text": "op",
-   "start": 35.212092000000005,
-   "end": 35.331675000000004
-  },
-  {
-   "text": "125",
-   "start": 35.34255,
-   "end": 36.233841000000005
-  },
-  {
-   "text": "dollar",
-   "start": 36.233842,
-   "end": 36.679508000000006,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Vandaag",
-   "start": 36.914095,
-   "end": 37.316261000000004
-  },
-  {
-   "text": "piekte",
-   "start": 37.316262,
-   "end": 37.620595
-  },
-  {
-   "text": "het",
-   "start": 37.620637,
-   "end": 37.751053
-  },
-  {
-   "text": "op",
-   "start": 37.751053,
-   "end": 37.870636000000005
-  },
-  {
-   "text": "bijna",
-   "start": 37.870637,
-   "end": 38.21847
-  },
-  {
-   "text": "170",
-   "start": 38.229303,
-   "end": 39.251053,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Plus",
-   "start": 39.510182,
-   "end": 39.662348
-  },
-  {
-   "text": "35%",
-   "start": 39.662348,
-   "end": 40.84714,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Dat",
-   "start": 41.08717300000001,
-   "end": 41.174131
-  },
-  {
-   "text": "is",
-   "start": 41.184965000000005,
-   "end": 41.304548000000004
-  },
-  {
-   "text": "geen",
-   "start": 41.315423,
-   "end": 41.619756
-  },
-  {
-   "text": "beurs",
-   "start": 41.61975700000001,
-   "end": 41.880632000000006
-  },
-  {
-   "text": "meer",
-   "start": 41.891507000000004,
-   "end": 42.228465,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Dat",
-   "start": 42.491573,
-   "end": 42.556781
-  },
-  {
-   "text": "is",
-   "start": 42.556782000000005,
-   "end": 42.632865
-  },
-  {
-   "text": "een",
-   "start": 42.632865,
-   "end": 42.730698000000004
-  },
-  {
-   "text": "achtbaan",
-   "start": 42.741573,
-   "end": 43.230698000000004,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "En",
-   "start": 43.606,
-   "end": 43.703833
-  },
-  {
-   "text": "Jensen",
-   "start": 43.703833,
-   "end": 44.127749
-  },
-  {
-   "text": "trekt",
-   "start": 44.12775,
-   "end": 44.464708
-  },
-  {
-   "text": "de",
-   "start": 44.464708,
-   "end": 44.584291
-  },
-  {
-   "text": "hele",
-   "start": 44.595125,
-   "end": 44.953833
-  },
-  {
-   "text": "sector",
-   "start": 44.953833,
-   "end": 45.399458
-  },
-  {
-   "text": "mee",
-   "start": 45.399458,
-   "end": 45.671208,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Chipbedrijven",
-   "start": 45.942542,
-   "end": 46.583833
-  },
-  {
-   "text": "staan",
-   "start": 46.583833,
-   "end": 46.920791
-  },
-  {
-   "text": "bijna",
-   "start": 46.931667,
-   "end": 47.344708
-  },
-  {
-   "text": "15%",
-   "start": 47.344708,
-   "end": 48.377292
-  },
-  {
-   "text": "hoger",
-   "start": 48.377333,
-   "end": 48.833874,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "De",
-   "start": 49.075832,
-   "end": 49.130165
-  },
-  {
-   "text": "Nasdaq",
-   "start": 49.130165,
-   "end": 49.608415
-  },
-  {
-   "text": "ruim",
-   "start": 49.61929,
-   "end": 49.956248
-  },
-  {
-   "text": "7%",
-   "start": 49.956248,
-   "end": 50.956248,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Na",
-   "start": 51.202247,
-   "end": 51.332663000000004
-  },
-  {
-   "text": "de",
-   "start": 51.332705000000004,
-   "end": 51.408788
-  },
-  {
-   "text": "slechtste",
-   "start": 51.419663,
-   "end": 51.865329
-  },
-  {
-   "text": "week",
-   "start": 51.876163000000005,
-   "end": 52.158788
-  },
-  {
-   "text": "sinds",
-   "start": 52.169663,
-   "end": 52.419663
-  },
-  {
-   "text": "2020",
-   "start": 52.419663,
-   "end": 53.419622000000004,
-   "eos": true,
-   "eos_q": true
-  },
-  {
-   "text": "Dat",
-   "start": 53.746305,
-   "end": 53.855013
-  },
-  {
-   "text": "is",
-   "start": 53.855013,
-   "end": 53.941970999999995
-  },
-  {
-   "text": "een",
-   "start": 53.941972,
-   "end": 54.039805
-  },
-  {
-   "text": "flinke",
-   "start": 54.039805,
-   "end": 54.496346
-  },
-  {
-   "text": "opluchting",
-   "start": 54.50718,
-   "end": 55.094138,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Eén",
-   "start": 55.466,
-   "end": 55.639916
-  },
-  {
-   "text": "man",
-   "start": 55.639917,
-   "end": 55.933375
-  },
-  {
-   "text": "één",
-   "start": 56.270333,
-   "end": 56.476874
-  },
-  {
-   "text": "comeback",
-   "start": 56.476875,
-   "end": 57.020333
-  },
-  {
-   "text": "en",
-   "start": 57.346417,
-   "end": 57.433375
-  },
-  {
-   "text": "een",
-   "start": 57.433375,
-   "end": 57.552958000000004
-  },
-  {
-   "text": "beurs",
-   "start": 57.552958000000004,
-   "end": 57.911666
-  },
-  {
-   "text": "die",
-   "start": 57.9225,
-   "end": 58.063791
-  },
-  {
-   "text": "ontploft",
-   "start": 58.074708,
-   "end": 58.715999,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Maar",
-   "start": 58.960453,
-   "end": 59.134328
-  },
-  {
-   "text": "let",
-   "start": 59.134328,
-   "end": 59.362578
-  },
-  {
-   "text": "op",
-   "start": 59.373495,
-   "end": 59.601745
-  },
-  {
-   "text": "dit",
-   "start": 59.874412,
-   "end": 60.026578
-  },
-  {
-   "text": "is",
-   "start": 60.037453,
-   "end": 60.135286
-  },
-  {
-   "text": "een",
-   "start": 60.135287,
-   "end": 60.23312
-  },
-  {
-   "text": "tussenstand",
-   "start": 60.23312,
-   "end": 60.993995,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Voorspellen",
-   "start": 61.239127,
-   "end": 61.684793
-  },
-  {
-   "text": "doen",
-   "start": 61.684793,
-   "end": 61.945668
-  },
-  {
-   "text": "we",
-   "start": 61.945668,
-   "end": 62.010876
-  },
-  {
-   "text": "niet",
-   "start": 62.010877,
-   "end": 62.402168,
-   "eos": true,
-   "eos_q": false
-  },
-  {
-   "text": "Volg",
-   "start": 62.671417000000005,
-   "end": 62.910542
+   "text": "Even",
+   "start": 7.666,
+   "end": 7.905125
   },
   {
    "text": "voor",
-   "start": 62.910542,
-   "end": 63.073583
+   "start": 7.905125,
+   "end": 8.035541
+  },
+  {
+   "text": "wie",
+   "start": 8.035583,
+   "end": 8.165999
+  },
+  {
+   "text": "hem",
+   "start": 8.166,
+   "end": 8.252958
+  },
+  {
+   "text": "niet",
+   "start": 8.252958,
+   "end": 8.415999
+  },
+  {
+   "text": "kent",
+   "start": 8.416,
+   "end": 8.742083000000001,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Jensen",
+   "start": 9.046417,
+   "end": 9.405125
+  },
+  {
+   "text": "richtte",
+   "start": 9.405125,
+   "end": 9.763833
+  },
+  {
+   "text": "Nvidia",
+   "start": 9.774708,
+   "end": 10.361666
+  },
+  {
+   "text": "mee",
+   "start": 10.361667,
+   "end": 10.655125
+  },
+  {
+   "text": "op",
+   "start": 10.655125,
+   "end": 10.785541
+  },
+  {
+   "text": "in",
+   "start": 10.785583,
+   "end": 10.926874
+  },
+  {
+   "text": "1993",
+   "start": 10.937750000000001,
+   "end": 12.285582999999999,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "Hij",
+   "start": 12.760705000000002,
+   "end": 12.825913
+  },
+  {
+   "text": "maakte",
+   "start": 12.836788000000002,
+   "end": 13.151996
+  },
+  {
+   "text": "er",
+   "start": 13.152038000000001,
+   "end": 13.195496000000002
+  },
+  {
+   "text": "de",
+   "start": 13.195497,
+   "end": 13.282455
+  },
+  {
+   "text": "chipkoning",
+   "start": 13.293330000000001,
+   "end": 13.891163
+  },
+  {
+   "text": "van",
+   "start": 13.891163,
+   "end": 13.999829000000002
+  },
+  {
+   "text": "het",
+   "start": 13.999830000000001,
+   "end": 14.151996
+  },
+  {
+   "text": "AI",
+   "start": 14.162913,
+   "end": 14.467246000000001
+  },
+  {
+   "text": "-tijdperk",
+   "start": 14.467247,
+   "end": 15.086788000000002
+  },
+  {
+   "text": "van",
+   "start": 15.086788000000002,
+   "end": 15.315038000000001,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "En",
+   "start": 15.738997000000001,
+   "end": 15.825955
+  },
+  {
+   "text": "ja",
+   "start": 15.825955,
+   "end": 16.086830000000003
+  },
+  {
+   "text": "hij",
+   "start": 16.434622,
+   "end": 16.510705
+  },
+  {
+   "text": "draagt",
+   "start": 16.510705,
+   "end": 16.891121000000002
+  },
+  {
+   "text": "echt",
+   "start": 16.902038,
+   "end": 17.097704
+  },
+  {
+   "text": "altijd",
+   "start": 17.108538,
+   "end": 17.586788000000002
+  },
+  {
+   "text": "dat",
+   "start": 17.597663,
+   "end": 17.738954
+  },
+  {
+   "text": "leren",
+   "start": 17.74983,
+   "end": 18.032455000000002
+  },
+  {
+   "text": "jasje",
+   "start": 18.04333,
+   "end": 18.423746,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "Begin",
+   "start": 18.758000000000003,
+   "end": 19.02975
+  },
+  {
+   "text": "november",
+   "start": 19.040625000000002,
+   "end": 19.52975
+  },
+  {
+   "text": "moest",
+   "start": 19.52975,
+   "end": 19.758000000000003
+  },
+  {
+   "text": "hij",
+   "start": 19.758000000000003,
+   "end": 19.921041000000002
+  },
+  {
+   "text": "even",
+   "start": 19.931917000000002,
+   "end": 20.247125
+  },
+  {
+   "text": "opzij",
+   "start": 20.247125,
+   "end": 20.834083000000003,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Er",
+   "start": 21.203667000000003,
+   "end": 21.312333000000002
+  },
+  {
+   "text": "liep",
+   "start": 21.312333000000002,
+   "end": 21.497124000000003
+  },
+  {
+   "text": "een",
+   "start": 21.497125,
+   "end": 21.638416000000003
+  },
+  {
+   "text": "intern",
+   "start": 21.649292000000003,
+   "end": 22.225375000000003
+  },
+  {
+   "text": "onderzoek",
+   "start": 22.236250000000002,
+   "end": 22.747125,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Beleggers",
+   "start": 23.105833,
+   "end": 23.584083
+  },
+  {
+   "text": "schrokken",
+   "start": 23.584083,
+   "end": 23.899291
+  },
+  {
+   "text": "daar",
+   "start": 23.899292000000003,
+   "end": 24.029708000000003
+  },
+  {
+   "text": "flink",
+   "start": 24.040625000000002,
+   "end": 24.410208
+  },
+  {
+   "text": "van",
+   "start": 24.421042,
+   "end": 24.671042,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Zonder",
+   "start": 25.008000000000003,
+   "end": 25.312333000000002
+  },
+  {
+   "text": "Jensen",
+   "start": 25.323208,
+   "end": 25.660166000000004
+  },
+  {
+   "text": "geen",
+   "start": 25.660167,
+   "end": 25.953625000000002
+  },
+  {
+   "text": "plan",
+   "start": 25.953667000000003,
+   "end": 26.312375000000003
+  },
+  {
+   "text": "dachten",
+   "start": 26.671042,
+   "end": 27.018875
+  },
+  {
+   "text": "ze",
+   "start": 27.02975,
+   "end": 27.214541000000004,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Maar",
+   "start": 27.627583,
+   "end": 27.747166
+  },
+  {
+   "text": "vandaag",
+   "start": 27.758000000000003,
+   "end": 28.181916
+  },
+  {
+   "text": "haalt",
+   "start": 28.192792000000004,
+   "end": 28.399292000000003
+  },
+  {
+   "text": "het",
+   "start": 28.399292000000003,
+   "end": 28.4645
+  },
+  {
+   "text": "bestuur",
+   "start": 28.4645,
+   "end": 28.866666000000002
+  },
+  {
+   "text": "hem",
+   "start": 28.866708000000003,
+   "end": 29.051458000000004
+  },
+  {
+   "text": "terug",
+   "start": 29.051458000000004,
+   "end": 29.507999,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "En",
+   "start": 29.877583,
+   "end": 29.942791
+  },
+  {
+   "text": "dat",
+   "start": 29.942792000000004,
+   "end": 30.105833000000004
+  },
+  {
+   "text": "unaniem",
+   "start": 30.116708000000003,
+   "end": 30.562374000000002,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 3
+  },
+  {
+   "text": "En",
+   "start": 30.930000000000003,
+   "end": 31.006083000000004
+  },
+  {
+   "text": "kijk",
+   "start": 31.006083000000004,
+   "end": 31.299541
+  },
+  {
+   "text": "wat",
+   "start": 31.299583000000002,
+   "end": 31.484333000000003
+  },
+  {
+   "text": "dat",
+   "start": 31.484333000000003,
+   "end": 31.658249
+  },
+  {
+   "text": "doet",
+   "start": 31.658250000000002,
+   "end": 31.940875000000002,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Vorige",
+   "start": 32.288708,
+   "end": 32.647374
+  },
+  {
+   "text": "week",
+   "start": 32.647375000000004,
+   "end": 32.843041
+  },
+  {
+   "text": "ging",
+   "start": 32.843042000000004,
+   "end": 32.940875000000005
+  },
+  {
+   "text": "het",
+   "start": 32.940875000000005,
+   "end": 33.071291
+  },
+  {
+   "text": "aandeel",
+   "start": 33.071292,
+   "end": 33.495208000000005
+  },
+  {
+   "text": "nog",
+   "start": 33.506083000000004,
+   "end": 33.647374
+  },
+  {
+   "text": "23%",
+   "start": 33.65825,
+   "end": 34.745208000000005
+  },
+  {
+   "text": "onderuit",
+   "start": 34.745208000000005,
+   "end": 35.277833,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 8
+  },
+  {
+   "text": "Vrijdag",
+   "start": 35.614792,
+   "end": 36.006083000000004
+  },
+  {
+   "text": "sloot",
+   "start": 36.006083000000004,
+   "end": 36.321291
+  },
+  {
+   "text": "het",
+   "start": 36.321292,
+   "end": 36.40825
+  },
+  {
+   "text": "op",
+   "start": 36.40825,
+   "end": 36.484333
+  },
+  {
+   "text": "125",
+   "start": 36.495208000000005,
+   "end": 37.343041
+  },
+  {
+   "text": "dollar",
+   "start": 37.353917,
+   "end": 37.734333,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Vandaag",
+   "start": 38.153747,
+   "end": 38.47983
+  },
+  {
+   "text": "piekte",
+   "start": 38.490705000000005,
+   "end": 38.77333
+  },
+  {
+   "text": "het",
+   "start": 38.77333,
+   "end": 38.882038
+  },
+  {
+   "text": "op",
+   "start": 38.882038,
+   "end": 38.990746
+  },
+  {
+   "text": "bijna",
+   "start": 39.001580000000004,
+   "end": 39.360288000000004
+  },
+  {
+   "text": "170",
+   "start": 39.360288000000004,
+   "end": 40.273329000000004,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Plus",
+   "start": 40.512455,
+   "end": 40.77333
+  },
+  {
+   "text": "35%",
+   "start": 40.784205,
+   "end": 41.958122,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 2
+  },
+  {
+   "text": "Dat",
+   "start": 42.27333,
+   "end": 42.382038
+  },
+  {
+   "text": "is",
+   "start": 42.382038,
+   "end": 42.490704
+  },
+  {
+   "text": "geen",
+   "start": 42.490705000000005,
+   "end": 42.740705000000005
+  },
+  {
+   "text": "beurs",
+   "start": 42.740705000000005,
+   "end": 43.03416300000001
   },
   {
    "text": "meer",
-   "start": 63.073583,
-   "end": 63.410541,
+   "start": 43.04508,
+   "end": 43.338538
+  },
+  {
+   "text": "dat",
+   "start": 43.566788,
+   "end": 43.686371
+  },
+  {
+   "text": "is",
+   "start": 43.686372000000006,
+   "end": 43.784205
+  },
+  {
+   "text": "een",
+   "start": 43.784205,
+   "end": 43.871163
+  },
+  {
+   "text": "achtbaan",
+   "start": 43.882038,
+   "end": 44.403788000000006,
    "eos": true,
-   "eos_q": false
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "En",
+   "start": 44.758,
+   "end": 44.866708
+  },
+  {
+   "text": "Jensen",
+   "start": 44.877583,
+   "end": 45.268874000000004
+  },
+  {
+   "text": "trekt",
+   "start": 45.268875,
+   "end": 45.605833000000004
+  },
+  {
+   "text": "de",
+   "start": 45.605833000000004,
+   "end": 45.714541000000004
+  },
+  {
+   "text": "hele",
+   "start": 45.725375,
+   "end": 46.084083
+  },
+  {
+   "text": "sector",
+   "start": 46.084083,
+   "end": 46.518874000000004
+  },
+  {
+   "text": "mee",
+   "start": 46.52975,
+   "end": 46.877583,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "Chipbedrijven",
+   "start": 47.258,
+   "end": 47.910166000000004
+  },
+  {
+   "text": "staan",
+   "start": 47.910167,
+   "end": 48.203625
+  },
+  {
+   "text": "bijna",
+   "start": 48.2145,
+   "end": 48.551458000000004
+  },
+  {
+   "text": "15%",
+   "start": 48.551458000000004,
+   "end": 49.4645
+  },
+  {
+   "text": "hoger",
+   "start": 49.4645,
+   "end": 49.823208,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "De",
+   "start": 50.160167,
+   "end": 50.2145
+  },
+  {
+   "text": "Nasdaq",
+   "start": 50.2145,
+   "end": 50.660166000000004
+  },
+  {
+   "text": "ruim",
+   "start": 50.660167,
+   "end": 50.931917
+  },
+  {
+   "text": "7%",
+   "start": 50.931917,
+   "end": 51.823208,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Na",
+   "start": 52.192792000000004,
+   "end": 52.344958000000005
+  },
+  {
+   "text": "de",
+   "start": 52.344958000000005,
+   "end": 52.431916
+  },
+  {
+   "text": "slechtste",
+   "start": 52.431917,
+   "end": 52.844958000000005
+  },
+  {
+   "text": "week",
+   "start": 52.855833000000004,
+   "end": 53.105833000000004
+  },
+  {
+   "text": "sinds",
+   "start": 53.116708,
+   "end": 53.334083
+  },
+  {
+   "text": "2020",
+   "start": 53.344958000000005,
+   "end": 54.290624
+  },
+  {
+   "text": "is",
+   "start": 54.301458000000004,
+   "end": 54.410166000000004
+  },
+  {
+   "text": "dat",
+   "start": 54.410167,
+   "end": 54.660167
+  },
+  {
+   "text": "echt",
+   "start": 54.671042,
+   "end": 54.877583
+  },
+  {
+   "text": "een",
+   "start": 54.877583,
+   "end": 54.986249
+  },
+  {
+   "text": "opluchting",
+   "start": 54.98625,
+   "end": 55.584083,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 11
+  },
+  {
+   "text": "Eén",
+   "start": 55.946000000000005,
+   "end": 56.098166000000006
+  },
+  {
+   "text": "man",
+   "start": 56.098167000000004,
+   "end": 56.391625000000005
+  },
+  {
+   "text": "één",
+   "start": 56.761208,
+   "end": 56.956874000000006
+  },
+  {
+   "text": "comeback",
+   "start": 56.96775,
+   "end": 57.500375000000005
+  },
+  {
+   "text": "en",
+   "start": 57.826417000000006,
+   "end": 57.891625000000005
+  },
+  {
+   "text": "de",
+   "start": 57.891667000000005,
+   "end": 57.956875000000004
+  },
+  {
+   "text": "beurs",
+   "start": 57.956875000000004,
+   "end": 58.33729100000001
+  },
+  {
+   "text": "ontploft",
+   "start": 58.348167000000004,
+   "end": 58.96775,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 8
+  },
+  {
+   "text": "Maar",
+   "start": 59.304708000000005,
+   "end": 59.445999
+  },
+  {
+   "text": "let",
+   "start": 59.446000000000005,
+   "end": 59.65254100000001
+  },
+  {
+   "text": "op",
+   "start": 59.663375,
+   "end": 59.859041000000005
+  },
+  {
+   "text": "dit",
+   "start": 60.21775,
+   "end": 60.369916
+  },
+  {
+   "text": "is",
+   "start": 60.369917,
+   "end": 60.46775
+  },
+  {
+   "text": "een",
+   "start": 60.46775,
+   "end": 60.565583000000004
+  },
+  {
+   "text": "tussenstand",
+   "start": 60.565583000000004,
+   "end": 61.28295800000001,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "Voorspellen",
+   "start": 61.598167000000004,
+   "end": 62.098167000000004
+  },
+  {
+   "text": "doen",
+   "start": 62.098167000000004,
+   "end": 62.29383300000001
+  },
+  {
+   "text": "we",
+   "start": 62.304708000000005,
+   "end": 62.359041000000005
+  },
+  {
+   "text": "niet",
+   "start": 62.359042,
+   "end": 62.663375,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Volg",
+   "start": 63.011208,
+   "end": 63.304666000000005
+  },
+  {
+   "text": "voor",
+   "start": 63.304708000000005,
+   "end": 63.522083
+  },
+  {
+   "text": "meer",
+   "start": 63.522083,
+   "end": 63.869916,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 3
   }
+ ],
+ "spoken": [
+  "Plus vijfendertig procent, Op één dag, Nvidia knalt door het dak, En weet je waarom, Jensen Huang is terug.",
+  "Even voor wie hem niet kent, Jensen richtte Nvidia mee op in negentienhonderddrieënnegentig, Hij maakte er de chipkoning van het AI-tijdperk van, En ja, hij draagt echt altijd dat leren jasje.",
+  "Begin november moest hij even opzij, Er liep een intern onderzoek, Beleggers schrokken daar flink van, Zonder Jensen geen plan, dachten ze, Maar vandaag haalt het bestuur hem terug, En dat unaniem.",
+  "En kijk wat dat doet, Vorige week ging het aandeel nog drieëntwintig procent onderuit, Vrijdag sloot het op honderdvijfentwintig dollar, Vandaag piekte het op bijna honderdzeventig, Plus vijfendertig procent, Dat is geen beurs meer, dat is een achtbaan.",
+  "En Jensen trekt de hele sector mee, Chipbedrijven staan bijna vijftien procent hoger, De Nasdaq ruim zeven procent, Na de slechtste week sinds tweeduizend twintig is dat echt een opluchting.",
+  "Eén man, één comeback, en de beurs ontploft, Maar let op, dit is een tussenstand, Voorspellen doen we niet, Volg voor meer!"
  ]
 }

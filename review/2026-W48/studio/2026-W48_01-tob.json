@@ -4,16 +4,16 @@
  "title": "De beurstaks (TOB): wat betaal je bij elke transactie?",
  "validity": "Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, geen inkomstenbelasting: er is geen aanslagjaar)",
  "status": "klaar voor review",
- "durationSec": 65.1,
- "words": 162,
+ "durationSec": 70.8,
+ "words": 178,
  "script": [
-  "Stel, je verkoopt je aandelen met verlies. Toch betaal je belasting. Raar? Ik leg het uit.",
-  "Dat is de TOB. De taks op de beursverrichtingen. Je betaalt een klein stukje van het bedrag. Winst of verlies? Dat maakt niet uit.",
-  "Hoeveel? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. En er is een maximum per keer.",
+  "Stel, je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar, toch? Kijk, ik leg het je uit.",
+  "Dat is de TOB. Voluit de taks op de beursverrichtingen. Simpel gezegd betaal je een klein stukje van het bedrag. Bij elke aankoop en verkoop. Winst of verlies, dat maakt niet uit.",
+  "Hoeveel dan? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. En er is altijd een maximum per keer.",
   "Stel, je koopt voor een half miljoen aan aandelen. Aan 0,35% zou dat €1.750 zijn. Maar je betaalt maximaal €1.600. Goed nieuws voor de miljonairs.",
-  "Kijk, een voorbeeld. Je koopt aandelen voor €2.000. Aan 0,35% betaal je €7. Later verkoop je ze voor €2.000. Dan betaal je weer €7. Samen is dat €14.",
-  "Wie regelt dat? Een Belgische broker doet het voor jou. Een buitenlandse broker niet altijd. Dan geef je het zelf aan. En je betaalt het zelf. Wanneer? Ten laatste de laatste werkdag van de tweede maand erna.",
-  "Nu weet je waar dat kostje vandaan komt. Volg voor meer!"
+  "Oké, gewoner. Je koopt aandelen voor €2.000. Aan 0,35% betaal je dan €7. Verkoop je ze later ook voor €2.000? Dan betaal je weer €7. Samen dus €14.",
+  "En wie regelt dat allemaal? Zit je bij een Belgische broker, dan doet die het voor jou. Een buitenlandse broker niet altijd. Dan geef je het zelf aan. Ten laatste de laatste werkdag van de tweede maand erna.",
+  "Zo, nu weet je waar dat kostje vandaan komt. Volg voor meer!"
  ],
  "caption": "Verlies gemaakt op je aandelen en tóch belasting betalen? Dat is de beurstaks (TOB). Zo werkt het, en wat als je broker in het buitenland zit 💸 Tarieven 2026.\n\nAlgemene info, geen persoonlijk advies.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
  "hashtags": [
@@ -136,17 +136,17 @@
   {
    "name": "Woordenaantal 150-190",
    "ok": true,
-   "info": "162 woorden"
+   "info": "178 woorden"
   },
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "65.1 s"
+   "info": "70.8 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
    "ok": true,
-   "info": "16 woorden"
+   "info": "20 woorden"
   },
   {
    "name": "Laatste scène is outro met disclaimer",
@@ -188,25 +188,30 @@
  "feedback": "Begin mag pittiger en aantrekllijker, nu is het zo nie vloeiend maak het vloeiender alsof hij sprekt met iemand enzo uitlegt. \"HE\" mag weg want ai leest dat niet",
  "feedbackAt": "2026-11-22T23:22:30.948Z",
  "trendScore": 8,
- "trendRank": 3,
+ "trendRank": 4,
  "trendReason": "Herkenbare tegenstrijdigheid in de hook ('Verlies gemaakt? Tóch belasting'). Specifiek Belgisch, dus minder concurrentie. Mensen bewaren dit soort uitleg graag.",
- "claudeReply": "Herschreven in korte, eenvoudige zinnen (max. ~10 woorden), zodat de stem minder AI klinkt.",
- "videoUrl": "/_blob/703ca3700472fcfa7dc191b9815d09e8",
+ "videoUrl": "/_blob/0718d5e771422926030495c7f3de2c4b",
  "selfReview": {
-  "rounds": 2,
+  "rounds": 4,
   "scores": {
+   "eenvoud": 5,
    "hook": 4,
-   "eenvoud": 4,
-   "tempo": 4,
    "humor": 4,
    "info": 5,
+   "regels": 5,
+   "tempo": 4,
    "visueel": 4,
-   "regels": 5
+   "stem": 5
   },
   "changes": [
+   "Stem: alleen Nederlands (één doorlopende zin per scène + zelf ingevoegde korte pauzes).",
+   "Cijfers in het Nederlands uitgeschreven naar de stem.",
+   "Tekst herschreven als spreektaal/uitleg.",
+   "Taalcontrole in de zelfreview: geslaagd (geen cijfers, geen losse zinnen naar de stem).",
    "Scène met de tarieven duurde 20 s: gesplitst in tarieven + apart rekenvoorbeeld voor het maximum (€500.000 → €1.600).",
    "Achtergrond beweegt traag, zodat het beeld nooit stilstaat."
   ],
-  "verdict": "Duidelijk en concreet, met twee rekenvoorbeelden; de hook blijft de sterkste troef."
- }
+  "verdict": "Klinkt als uitleg in het Nederlands; alle checks en de taalcontrole slagen."
+ },
+ "claudeReply": "Opnieuw gebouwd: (1) ALLEEN Nederlands: elke scène gaat als één doorlopende zin naar de stem, zoals in de oude video's (losse korte zinnen lieten hem Frans/Engels spreken), cijfers worden in het Nederlands uitgeschreven. (2) Spreektaal: herschreven alsof ik het aan iemand uitleg ('Kijk', 'Stel je voor', 'Simpel gezegd'), met gevarieerde korte pauzes in plaats van voorleesritme. (3) Zelfreview controleert nu automatisch dat er nooit cijfers of losse zinnen naar de stem gaan."
 }

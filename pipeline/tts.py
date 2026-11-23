@@ -159,6 +159,8 @@ def synth_scene(text: str, out_mp3: Path):
     expected = len(display_text(text).split())
     if len(raw) < 0.85 * expected:  # de dienst gaf soms maar een stuk audio terug, zonder fout
         raise RuntimeError(f"onvolledige audio: {len(raw)}/{expected} woorden")
+    if duration(out_mp3) < 0.18 * expected or (raw and duration(out_mp3) < raw[-1]["start"]):
+        raise RuntimeError(f"audio te kort: {duration(out_mp3):.1f} s voor {expected} woorden")
     words = _trim(out_mp3, raw)
     if not words:
         return words
@@ -170,8 +172,10 @@ def synth_scene(text: str, out_mp3: Path):
         last = norm(sent.split()[-1]) if sent.split() else ""
         start = pos + max(0, len(sent.split()) - 3)  # niet te vroeg zoeken (zelfde woord kan eerder in de zin staan)
         for j in range(min(start, len(words) - 1), len(words)):  # laatste woord van de zin op naam terugvinden
-            if last and (norm(words[j]["text"]) == last or last.endswith(norm(words[j]["text"]) or "#")):
+            wt = norm(words[j]["text"])
+            if last and (wt == last or (words[j]["text"].startswith("-") and last.endswith(wt))):
                 words[j]["eos"], words[j]["eos_q"], pos = True, end == "?", j + 1
+                words[j]["eos_len"] = len(sent.split())
                 break
     # korte stilte invoegen op elke zinsgrens (behalve na de laatste zin)
     total = duration(out_mp3)
@@ -180,7 +184,9 @@ def synth_scene(text: str, out_mp3: Path):
     for w, nxt in zip(words, words[1:]):
         if not w.get("eos"):
             continue
-        target = config.QUESTION_GAP if w.get("eos_q") else config.SENTENCE_GAP
+        # gevarieerde pauzes zoals bij praten: korte uitroep -> korte pauze, vraag -> iets langer
+        target = (config.QUESTION_GAP if w.get("eos_q")
+                  else config.SHORT_GAP if w.get("eos_len", 9) <= 3 else config.SENTENCE_GAP)
         lo, hi = w["end"] - 0.35, nxt["start"] + 0.05
         real = [(st, en) for st, en in sil if en > lo and st < hi]
         have = max((en - st for st, en in real), default=0.0)

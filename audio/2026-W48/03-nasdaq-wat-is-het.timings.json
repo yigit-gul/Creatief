@@ -1,813 +1,969 @@
 {
  "audio": "audio/2026-W48/03-nasdaq-wat-is-het.wav",
- "duration": 59.294,
+ "duration": 60.312,
  "scenes": [
   {
    "start": 0.0,
-   "end": 6.288
+   "end": 6.624
   },
   {
-   "start": 6.348,
-   "end": 19.236
+   "start": 6.843999999999999,
+   "end": 22.036
   },
   {
-   "start": 19.296,
-   "end": 33.312
+   "start": 22.256,
+   "end": 35.72
   },
   {
-   "start": 33.372,
-   "end": 46.188
+   "start": 35.94,
+   "end": 49.763999999999996
   },
   {
-   "start": 46.248000000000005,
-   "end": 59.52
+   "start": 49.983999999999995,
+   "end": 60.327999999999996
   }
  ],
  "words": [
   {
    "text": "De",
-   "start": 0.04,
-   "end": 0.105208
+   "start": 0.03,
+   "end": 0.10608299999999998
   },
   {
    "text": "Nasdaq",
-   "start": 0.105208,
-   "end": 0.637833
+   "start": 0.10608299999999998,
+   "end": 0.660416,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 2
   },
   {
    "text": "Iedereen",
-   "start": 0.876958,
-   "end": 1.279124
+   "start": 0.8887079999999999,
+   "end": 1.2799989999999999
   },
   {
-   "text": "zegt",
-   "start": 1.29,
-   "end": 1.616083
-  },
-  {
-   "text": "het",
-   "start": 1.626958,
-   "end": 1.811749
-  },
-  {
-   "text": "Niemand",
-   "start": 2.170417,
-   "end": 2.561708
-  },
-  {
-   "text": "legt",
-   "start": 2.572583,
-   "end": 2.746499
+   "text": "heeft",
+   "start": 1.28,
+   "end": 1.4212909999999999
   },
   {
    "text": "het",
-   "start": 2.757375,
-   "end": 2.866083
+   "start": 1.432167,
+   "end": 1.5082499999999999
   },
   {
-   "text": "uit",
-   "start": 2.876958,
-   "end": 3.159583
-  },
-  {
-   "text": "Is",
-   "start": 3.485625,
-   "end": 3.561708
-  },
-  {
-   "text": "het",
-   "start": 3.56175,
-   "end": 3.637833
-  },
-  {
-   "text": "een",
-   "start": 3.637833,
-   "end": 3.724791
-  },
-  {
-   "text": "beurs",
-   "start": 3.735625,
-   "end": 4.279083000000001
-  },
-  {
-   "text": "Een",
-   "start": 4.626958,
-   "end": 4.7356240000000005
-  },
-  {
-   "text": "index",
-   "start": 4.735625000000001,
-   "end": 5.322583000000001
-  },
-  {
-   "text": "Een",
-   "start": 5.6704170000000005,
-   "end": 5.7791250000000005
-  },
-  {
-   "text": "rapper",
-   "start": 5.7791250000000005,
-   "end": 6.126958
-  },
-  {
-   "text": "Eerst",
-   "start": 6.388,
-   "end": 6.583666
-  },
-  {
-   "text": "dit",
-   "start": 6.583667,
-   "end": 6.811917
-  },
-  {
-   "text": "Nasdaq",
-   "start": 7.148875,
-   "end": 7.572791
-  },
-  {
-   "text": "is",
-   "start": 7.572792,
-   "end": 7.65975
-  },
-  {
-   "text": "een",
-   "start": 7.670624999999999,
-   "end": 7.779332999999999
-  },
-  {
-   "text": "beurs",
-   "start": 7.790167,
-   "end": 8.127125
-  },
-  {
-   "text": "in",
-   "start": 8.138,
-   "end": 8.279291
-  },
-  {
-   "text": "New",
-   "start": 8.290167,
-   "end": 8.355375
-  },
-  {
-   "text": "York",
-   "start": 8.355375,
-   "end": 8.648833
-  },
-  {
-   "text": "Daar",
-   "start": 8.985833,
-   "end": 9.127124
-  },
-  {
-   "text": "worden",
-   "start": 9.127125,
-   "end": 9.398875
-  },
-  {
-   "text": "aandelen",
-   "start": 9.398875,
-   "end": 9.877125
-  },
-  {
-   "text": "verhandeld",
-   "start": 9.877125,
-   "end": 10.442333
-  },
-  {
-   "text": "Zoals",
-   "start": 10.757583,
-   "end": 11.061916
-  },
-  {
-   "text": "Vinted",
-   "start": 11.061917000000001,
-   "end": 11.453208
+   "text": "erover",
+   "start": 1.5082499999999999,
+   "end": 1.9865000000000002
   },
   {
    "text": "maar",
-   "start": 11.790167,
-   "end": 11.909749999999999
+   "start": 2.334333,
+   "end": 2.529999
   },
   {
-   "text": "dan",
-   "start": 11.920625000000001,
-   "end": 12.0945
-  },
-  {
-   "text": "voor",
-   "start": 12.0945,
-   "end": 12.235790999999999
-  },
-  {
-   "text": "stukjes",
-   "start": 12.235833,
-   "end": 12.648874
-  },
-  {
-   "text": "van",
-   "start": 12.659749999999999,
-   "end": 12.757583
-  },
-  {
-   "text": "bedrijven",
-   "start": 12.768417,
-   "end": 13.268417
-  },
-  {
-   "text": "Geen",
-   "start": 13.692333,
-   "end": 13.942333
-  },
-  {
-   "text": "tweedehands",
-   "start": 13.942333,
-   "end": 14.453208
-  },
-  {
-   "text": "jeans",
-   "start": 14.464082999999999,
-   "end": 14.833666000000001
-  },
-  {
-   "text": "dus",
-   "start": 14.833666999999998,
-   "end": 15.148875
-  },
-  {
-   "text": "De",
-   "start": 15.3445,
-   "end": 15.442333000000001
-  },
-  {
-   "text": "naam",
-   "start": 15.442333000000001,
-   "end": 15.779291
+   "text": "wat",
+   "start": 2.540875,
+   "end": 2.671291
   },
   {
    "text": "is",
-   "start": 15.779291999999998,
-   "end": 15.877125
-  },
-  {
-   "text": "een",
-   "start": 15.877125,
-   "end": 15.953208
-  },
-  {
-   "text": "Amerikaanse",
-   "start": 15.964082999999999,
-   "end": 16.648874
-  },
-  {
-   "text": "afkorting",
-   "start": 16.648875,
-   "end": 17.192333
-  },
-  {
-   "text": "Niet",
-   "start": 17.431458,
-   "end": 17.572748999999998
-  },
-  {
-   "text": "sexy",
-   "start": 17.572792,
-   "end": 18.094542
-  },
-  {
-   "text": "wel",
-   "start": 18.507583,
-   "end": 18.757583
-  },
-  {
-   "text": "waar",
-   "start": 18.757583,
-   "end": 19.083666
-  },
-  {
-   "text": "Maar",
-   "start": 19.336,
-   "end": 19.444708
+   "start": 2.671292,
+   "end": 2.7256250000000004
   },
   {
    "text": "het",
-   "start": 19.444708,
-   "end": 19.553373999999998
+   "start": 2.7365000000000004,
+   "end": 2.801708
   },
   {
-   "text": "nieuws",
-   "start": 19.553375,
-   "end": 19.825125
+   "text": "nu",
+   "start": 2.80175,
+   "end": 3.0082910000000003
   },
   {
-   "text": "zegt",
-   "start": 19.836,
-   "end": 20.086
-  },
-  {
-   "text": "soms",
-   "start": 20.086,
-   "end": 20.542541
-  },
-  {
-   "text": "de",
-   "start": 20.749042,
-   "end": 20.825125
-  },
-  {
-   "text": "Nasdaq",
-   "start": 20.836,
-   "end": 21.259916
-  },
-  {
-   "text": "zakt",
-   "start": 21.270792,
-   "end": 21.640375
-  },
-  {
-   "text": "Dan",
-   "start": 21.966458,
-   "end": 22.086040999999998
-  },
-  {
-   "text": "gaat",
-   "start": 22.096875,
-   "end": 22.238166
-  },
-  {
-   "text": "het",
-   "start": 22.238167,
-   "end": 22.303375
-  },
-  {
-   "text": "meestal",
-   "start": 22.303375,
-   "end": 22.727291
-  },
-  {
-   "text": "over",
-   "start": 22.727292,
-   "end": 22.922958
-  },
-  {
-   "text": "de",
-   "start": 22.922958,
-   "end": 22.988166
-  },
-  {
-   "text": "index",
-   "start": 22.988167,
-   "end": 23.531625
-  },
-  {
-   "text": "De",
-   "start": 23.836,
-   "end": 23.912083
-  },
-  {
-   "text": "Nasdaq",
-   "start": 23.912083,
-   "end": 24.303373999999998
-  },
-  {
-   "text": "Composite",
-   "start": 24.31425,
-   "end": 24.727291
-  },
-  {
-   "text": "volgt",
-   "start": 24.727292,
-   "end": 25.075125
-  },
-  {
-   "text": "meer",
-   "start": 25.086,
-   "end": 25.390333
-  },
-  {
-   "text": "dan",
-   "start": 25.401208,
-   "end": 25.564249
-  },
-  {
-   "text": "3.000",
-   "start": 25.56425,
-   "end": 26.259916
-  },
-  {
-   "text": "bedrijven",
-   "start": 26.259917,
-   "end": 26.781667
-  },
-  {
-   "text": "En",
-   "start": 27.183833,
-   "end": 27.259916
-  },
-  {
-   "text": "de",
-   "start": 27.270792,
-   "end": 27.325125
-  },
-  {
-   "text": "Nasdaq",
-   "start": 27.325125,
-   "end": 27.727291
-  },
-  {
-   "text": "-100",
-   "start": 27.727292,
-   "end": 28.455542
-  },
-  {
-   "text": "Dat",
-   "start": 28.81425,
-   "end": 28.912083
-  },
-  {
-   "text": "is",
-   "start": 28.922958,
-   "end": 29.031666
-  },
-  {
-   "text": "de",
-   "start": 29.031667,
-   "end": 29.118625
-  },
-  {
-   "text": "VIP",
-   "start": 29.1295,
-   "end": 29.727333
-  },
-  {
-   "text": "lounge",
-   "start": 29.738166999999997,
-   "end": 30.205542
-  },
-  {
-   "text": "De",
-   "start": 30.520792,
-   "end": 30.6295
-  },
-  {
-   "text": "100",
-   "start": 30.6295,
-   "end": 30.966458
-  },
-  {
-   "text": "grootste",
-   "start": 30.977292,
-   "end": 31.422958
-  },
-  {
-   "text": "bedrijven",
-   "start": 31.422958,
-   "end": 31.944708
-  },
-  {
-   "text": "zonder",
-   "start": 32.336,
-   "end": 32.716416
-  },
-  {
-   "text": "banken",
-   "start": 32.716458,
-   "end": 33.151249
-  },
-  {
-   "text": "Nu",
-   "start": 33.412,
-   "end": 33.542416
-  },
-  {
-   "text": "het",
-   "start": 33.542417,
-   "end": 33.629375
-  },
-  {
-   "text": "belangrijkste",
-   "start": 33.629375,
-   "end": 34.3685
-  },
-  {
-   "text": "Grote",
-   "start": 34.585917,
-   "end": 34.868542
-  },
-  {
-   "text": "bedrijven",
-   "start": 34.879375,
-   "end": 35.34675
-  },
-  {
-   "text": "tellen",
-   "start": 35.357667,
-   "end": 35.672875
-  },
-  {
-   "text": "zwaarder",
-   "start": 35.672875,
-   "end": 36.2055
+   "text": "eigenlijk",
+   "start": 3.0191250000000003,
+   "end": 3.5191250000000003,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 10
   },
   {
    "text": "Een",
-   "start": 36.585917,
-   "end": 36.662
-  },
-  {
-   "text": "voorbeeld",
-   "start": 36.662,
-   "end": 37.270708
-  },
-  {
-   "text": "Bedrijf",
-   "start": 37.43375,
-   "end": 38.009833
-  },
-  {
-   "text": "A",
-   "start": 38.020708,
-   "end": 38.248958
-  },
-  {
-   "text": "is",
-   "start": 38.259833,
-   "end": 38.357666
-  },
-  {
-   "text": "1.000",
-   "start": 38.3685,
-   "end": 38.748916
-  },
-  {
-   "text": "miljard",
-   "start": 38.748958,
-   "end": 39.140249
-  },
-  {
-   "text": "waard",
-   "start": 39.151125,
-   "end": 39.488083
-  },
-  {
-   "text": "Bedrijf",
-   "start": 39.716333,
-   "end": 40.151124
-  },
-  {
-   "text": "B",
-   "start": 40.162,
-   "end": 40.43375
-  },
-  {
-   "text": "is",
-   "start": 40.43375,
-   "end": 40.575041
-  },
-  {
-   "text": "10",
-   "start": 40.585917,
-   "end": 40.814167
-  },
-  {
-   "text": "miljard",
-   "start": 40.814167,
-   "end": 41.18375
-  },
-  {
-   "text": "waard",
-   "start": 41.18375,
-   "end": 41.488083
-  },
-  {
-   "text": "Beide",
-   "start": 41.716333,
-   "end": 41.998958
-  },
-  {
-   "text": "stijgen",
-   "start": 41.998958,
-   "end": 42.379374
-  },
-  {
-   "text": "1%",
-   "start": 42.379374999999996,
-   "end": 43.1184999
-  },
-  {
-   "text": "Dan",
-   "start": 43.455458,
-   "end": 43.596749
-  },
-  {
-   "text": "duwt",
-   "start": 43.596792,
-   "end": 43.955458
-  },
-  {
-   "text": "A",
-   "start": 43.955458,
-   "end": 44.042416
-  },
-  {
-   "text": "de",
-   "start": 44.053292,
-   "end": 44.216333
-  },
-  {
-   "text": "index",
-   "start": 44.216333,
-   "end": 44.596749
-  },
-  {
-   "text": "honderd",
-   "start": 44.596792,
-   "end": 44.879374999999996
-  },
-  {
-   "text": "keer",
-   "start": 44.879374999999996,
-   "end": 45.151125
-  },
-  {
-   "text": "harder",
-   "start": 45.151125,
-   "end": 45.509833
-  },
-  {
-   "text": "omhoog",
-   "start": 45.509833,
-   "end": 46.031583
-  },
-  {
-   "text": "Daardoor",
-   "start": 46.288000000000004,
-   "end": 46.831458000000005
-  },
-  {
-   "text": "kan",
-   "start": 46.831458000000005,
-   "end": 46.97274900000001
-  },
-  {
-   "text": "de",
-   "start": 46.972792000000005,
-   "end": 47.027125000000005
-  },
-  {
-   "text": "Nasdaq",
-   "start": 47.027125000000005,
-   "end": 47.527125000000005
-  },
-  {
-   "text": "dalen",
-   "start": 47.527125000000005,
-   "end": 47.929291000000006
-  },
-  {
-   "text": "terwijl",
-   "start": 48.2445,
-   "end": 48.51625000000001
-  },
-  {
-   "text": "de",
-   "start": 48.527125000000005,
-   "end": 48.603208
-  },
-  {
-   "text": "meeste",
-   "start": 48.61408300000001,
-   "end": 49.005374
-  },
-  {
-   "text": "bedrijven",
-   "start": 49.00537500000001,
-   "end": 49.440166000000005
-  },
-  {
-   "text": "stijgen",
-   "start": 49.451042,
-   "end": 49.940167
-  },
-  {
-   "text": "Zakken",
-   "start": 50.32062500000001,
-   "end": 50.635833000000005
-  },
-  {
-   "text": "de",
-   "start": 50.646708000000004,
-   "end": 50.701041000000004
-  },
-  {
-   "text": "reuzen",
-   "start": 50.701042,
-   "end": 51.157583
-  },
-  {
-   "text": "Dan",
-   "start": 51.51625000000001,
-   "end": 51.690166000000005
-  },
-  {
-   "text": "zakt",
-   "start": 51.690167,
-   "end": 52.12495800000001
-  },
-  {
-   "text": "alles",
-   "start": 52.135833000000005,
-   "end": 52.418458
-  },
-  {
-   "text": "mee",
-   "start": 52.429292000000004,
-   "end": 52.71191700000001
-  },
-  {
-   "text": "Dus",
-   "start": 53.092333,
-   "end": 53.440166000000005
+   "start": 3.881498,
+   "end": 4.011914
   },
   {
    "text": "beurs",
-   "start": 53.71191700000001,
-   "end": 54.146708000000004
+   "start": 4.011915,
+   "end": 4.50104,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 2
   },
   {
-   "text": "én",
-   "start": 54.157583,
-   "end": 54.396708000000004
+   "text": "Een",
+   "start": 4.839325,
+   "end": 4.991490999999999
   },
   {
    "text": "index",
-   "start": 54.407583,
-   "end": 54.972791
+   "start": 5.002407999999999,
+   "end": 5.567615999999999,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 2
   },
   {
-   "text": "En",
-   "start": 55.32062500000001,
-   "end": 55.37495800000001
+   "text": "Een",
+   "start": 5.924874999999999,
+   "end": 6.044457999999999
   },
   {
-   "text": "de",
-   "start": 55.37495800000001,
-   "end": 55.429291000000006
+   "text": "rapper",
+   "start": 6.044457999999999,
+   "end": 6.533582999999999,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 2
   },
   {
-   "text": "groten",
-   "start": 55.429292000000004,
-   "end": 55.89666700000001
+   "text": "Kijk",
+   "start": 6.874,
+   "end": 7.167457999999999
   },
   {
-   "text": "zeggen",
-   "start": 55.896708000000004,
-   "end": 56.244499000000005
+   "text": "eerst",
+   "start": 7.374,
+   "end": 7.64575
   },
   {
-   "text": "het",
-   "start": 56.2445,
-   "end": 56.331458000000005
+   "text": "en",
+   "start": 7.656624999999999,
+   "end": 7.743582999999999
   },
   {
-   "text": "meest",
-   "start": 56.331458000000005,
-   "end": 56.72274900000001
+   "text": "vooral",
+   "start": 7.743582999999999,
+   "end": 8.276207999999999
   },
   {
-   "text": "Zoals",
-   "start": 57.05975000000001,
-   "end": 57.244541000000005
+   "text": "is",
+   "start": 8.287042,
+   "end": 8.39575
+  },
+  {
+   "text": "Nasdaq",
+   "start": 8.39575,
+   "end": 8.971833
+  },
+  {
+   "text": "een",
+   "start": 8.982707999999999,
+   "end": 9.113124
+  },
+  {
+   "text": "beurs",
+   "start": 9.113125,
+   "end": 9.515291
   },
   {
    "text": "in",
-   "start": 57.255375,
-   "end": 57.385791000000005
+   "start": 9.515291999999999,
+   "end": 9.678332999999999
   },
   {
-   "text": "elke",
-   "start": 57.385833000000005,
-   "end": 57.668458
+   "text": "New",
+   "start": 9.678332999999999,
+   "end": 9.884874
   },
   {
-   "text": "groepschat",
-   "start": 57.679292000000004,
-   "end": 58.14666700000001
+   "text": "York",
+   "start": 9.884875,
+   "end": 10.319666,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 11
   },
   {
-   "text": "Volg",
-   "start": 58.483667000000004,
-   "end": 58.7445
+   "text": "Een",
+   "start": 10.656625,
+   "end": 10.754415999999999
+  },
+  {
+   "text": "plek",
+   "start": 10.754417,
+   "end": 11.004417
+  },
+  {
+   "text": "waar",
+   "start": 11.015291999999999,
+   "end": 11.232667
+  },
+  {
+   "text": "aandelen",
+   "start": 11.243583,
+   "end": 11.689249
+  },
+  {
+   "text": "verhandeld",
+   "start": 11.700083,
+   "end": 12.178332999999999
+  },
+  {
+   "text": "worden",
+   "start": 12.189208,
+   "end": 12.482665999999998,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Zie",
+   "start": 12.873999999999999,
+   "end": 12.950083
+  },
+  {
+   "text": "het",
+   "start": 12.950083,
+   "end": 13.015291
+  },
+  {
+   "text": "als",
+   "start": 13.015291999999999,
+   "end": 13.167458
+  },
+  {
+   "text": "Vinted",
+   "start": 13.167458,
+   "end": 13.602249
+  },
+  {
+   "text": "maar",
+   "start": 13.950083,
+   "end": 14.058791
+  },
+  {
+   "text": "dan",
+   "start": 14.069666999999999,
+   "end": 14.221833
   },
   {
    "text": "voor",
-   "start": 58.7445,
-   "end": 58.972750000000005
+   "start": 14.232707999999999,
+   "end": 14.373999
+  },
+  {
+   "text": "stukjes",
+   "start": 14.384875,
+   "end": 14.776166
+  },
+  {
+   "text": "van",
+   "start": 14.787042,
+   "end": 14.884875
+  },
+  {
+   "text": "bedrijven",
+   "start": 14.89575,
+   "end": 15.341415999999999,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 10
+  },
+  {
+   "text": "Geen",
+   "start": 15.765291999999999,
+   "end": 16.047916999999998
+  },
+  {
+   "text": "tweedehands",
+   "start": 16.047916999999998,
+   "end": 16.515292
+  },
+  {
+   "text": "jeans",
+   "start": 16.526167,
+   "end": 16.906582999999998
+  },
+  {
+   "text": "dus",
+   "start": 16.906625,
+   "end": 17.243583,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "En",
+   "start": 17.591375,
+   "end": 17.667458
+  },
+  {
+   "text": "de",
+   "start": 17.667458,
+   "end": 17.721791
+  },
+  {
+   "text": "naam",
+   "start": 17.721833,
+   "end": 18.047916,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 3
+  },
+  {
+   "text": "Gewoon",
+   "start": 18.417458,
+   "end": 18.678333000000002
+  },
+  {
+   "text": "een",
+   "start": 18.689208,
+   "end": 18.754416
+  },
+  {
+   "text": "Amerikaanse",
+   "start": 18.754417,
+   "end": 19.460957999999998
+  },
+  {
+   "text": "afkorting",
+   "start": 19.471833,
+   "end": 20.004458,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Niet",
+   "start": 20.265292,
+   "end": 20.406582999999998
+  },
+  {
+   "text": "sexy",
+   "start": 20.417458,
+   "end": 20.939208
+  },
+  {
+   "text": "wel",
+   "start": 21.374,
+   "end": 21.569665999999998
+  },
+  {
+   "text": "waar",
+   "start": 21.5805,
+   "end": 21.917458,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Maar",
+   "start": 22.286,
+   "end": 22.459916
+  },
+  {
+   "text": "hoor",
+   "start": 22.470792,
+   "end": 22.633833
+  },
+  {
+   "text": "je",
+   "start": 22.644708,
+   "end": 22.720791000000002
+  },
+  {
+   "text": "in",
+   "start": 22.720792,
+   "end": 22.786
+  },
+  {
+   "text": "het",
+   "start": 22.786,
+   "end": 22.905583
+  },
+  {
+   "text": "nieuws",
+   "start": 22.905583,
+   "end": 23.209916
+  },
+  {
+   "text": "dat",
+   "start": 23.209917,
+   "end": 23.340333
+  },
+  {
+   "text": "de",
+   "start": 23.340333,
+   "end": 23.405541
+  },
+  {
+   "text": "Nasdaq",
+   "start": 23.405583,
+   "end": 23.883833
+  },
+  {
+   "text": "zakt",
+   "start": 23.883833,
+   "end": 24.285999,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 10
+  },
+  {
+   "text": "Dan",
+   "start": 24.568625,
+   "end": 24.677291
+  },
+  {
+   "text": "gaat",
+   "start": 24.677292,
+   "end": 24.829458
+  },
+  {
+   "text": "het",
+   "start": 24.829458,
+   "end": 24.905541
+  },
+  {
+   "text": "meestal",
+   "start": 24.905583,
+   "end": 25.362083000000002
+  },
+  {
+   "text": "over",
+   "start": 25.362083000000002,
+   "end": 25.579458
+  },
+  {
+   "text": "de",
+   "start": 25.579458,
+   "end": 25.688166
+  },
+  {
+   "text": "index",
+   "start": 25.688167,
+   "end": 26.2425,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "De",
+   "start": 26.590333,
+   "end": 26.655541
+  },
+  {
+   "text": "Nasdaq",
+   "start": 26.655583,
+   "end": 27.057749
+  },
+  {
+   "text": "Composite",
+   "start": 27.068625,
+   "end": 27.4925
+  },
+  {
+   "text": "volgt",
+   "start": 27.4925,
+   "end": 27.807708
   },
   {
    "text": "meer",
-   "start": 58.972792000000005,
-   "end": 59.36408300000001
+   "start": 27.818625,
+   "end": 28.122958
+  },
+  {
+   "text": "dan",
+   "start": 28.122958,
+   "end": 28.285999
+  },
+  {
+   "text": "3.000",
+   "start": 28.286,
+   "end": 28.981666
+  },
+  {
+   "text": "bedrijven",
+   "start": 28.981667,
+   "end": 29.492542,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 8
+  },
+  {
+   "text": "En",
+   "start": 29.916417,
+   "end": 29.981625
+  },
+  {
+   "text": "de",
+   "start": 29.981667,
+   "end": 30.025125
+  },
+  {
+   "text": "Nasdaq-100",
+   "start": 30.025125,
+   "end": 30.851208,
+   "eos": true,
+   "eos_q": true,
+   "eos_len": 3
+  },
+  {
+   "text": "Dat",
+   "start": 31.166417000000003,
+   "end": 31.286
+  },
+  {
+   "text": "is",
+   "start": 31.286,
+   "end": 31.416415999999998
+  },
+  {
+   "text": "eigenlijk",
+   "start": 31.427292,
+   "end": 31.807707999999998
+  },
+  {
+   "text": "de",
+   "start": 31.80775,
+   "end": 31.872958
+  },
+  {
+   "text": "VIP",
+   "start": 31.872958,
+   "end": 32.362083
+  },
+  {
+   "text": "lounge",
+   "start": 32.362083,
+   "end": 32.775124
+  },
+  {
+   "text": "De",
+   "start": 33.068625,
+   "end": 33.155583
+  },
+  {
+   "text": "100",
+   "start": 33.166417,
+   "end": 33.4925
+  },
+  {
+   "text": "grootste",
+   "start": 33.503375,
+   "end": 33.938166
+  },
+  {
+   "text": "bedrijven",
+   "start": 33.938167,
+   "end": 34.427292
+  },
+  {
+   "text": "zonder",
+   "start": 34.818625,
+   "end": 35.188166
+  },
+  {
+   "text": "banken",
+   "start": 35.188167,
+   "end": 35.590333,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "En",
+   "start": 35.97,
+   "end": 36.046082999999996
+  },
+  {
+   "text": "nu",
+   "start": 36.046082999999996,
+   "end": 36.165665999999995
+  },
+  {
+   "text": "komt",
+   "start": 36.1765,
+   "end": 36.361290999999994
+  },
+  {
+   "text": "het",
+   "start": 36.361292,
+   "end": 36.4265
+  },
+  {
+   "text": "belangrijkste",
+   "start": 36.4265,
+   "end": 37.1765,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Grote",
+   "start": 37.502122,
+   "end": 37.773872
+  },
+  {
+   "text": "bedrijven",
+   "start": 37.773872,
+   "end": 38.252122
+  },
+  {
+   "text": "tellen",
+   "start": 38.262997,
+   "end": 38.578205
+  },
+  {
+   "text": "zwaarder",
+   "start": 38.589079999999996,
+   "end": 39.089079999999996
+  },
+  {
+   "text": "mee",
+   "start": 39.089079999999996,
+   "end": 39.31733,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Stel",
+   "start": 39.708663,
+   "end": 39.947787999999996
+  },
+  {
+   "text": "je",
+   "start": 39.947787999999996,
+   "end": 40.067329
+  },
+  {
+   "text": "voor",
+   "start": 40.06733,
+   "end": 40.426038
+  },
+  {
+   "text": "bedrijf",
+   "start": 40.61083,
+   "end": 41.11083
+  },
+  {
+   "text": "A",
+   "start": 41.121705,
+   "end": 41.36083
+  },
+  {
+   "text": "is",
+   "start": 41.36083,
+   "end": 41.458663
+  },
+  {
+   "text": "1.000",
+   "start": 41.458663,
+   "end": 41.849954
+  },
+  {
+   "text": "miljard",
+   "start": 41.849954999999994,
+   "end": 42.262996
+  },
+  {
+   "text": "waard",
+   "start": 42.262997,
+   "end": 42.589079999999996,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "Bedrijf",
+   "start": 42.893412999999995,
+   "end": 43.328204
+  },
+  {
+   "text": "B",
+   "start": 43.328205,
+   "end": 43.578205
+  },
+  {
+   "text": "is",
+   "start": 43.578205,
+   "end": 43.697787999999996
+  },
+  {
+   "text": "10",
+   "start": 43.708663,
+   "end": 43.947787999999996
+  },
+  {
+   "text": "miljard",
+   "start": 43.947787999999996,
+   "end": 44.306454
+  },
+  {
+   "text": "waard",
+   "start": 44.306455,
+   "end": 44.610788,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "Ze",
+   "start": 44.915163,
+   "end": 45.002121
+  },
+  {
+   "text": "stijgen",
+   "start": 45.012997,
+   "end": 45.469497
+  },
+  {
+   "text": "allebei",
+   "start": 45.469497,
+   "end": 45.893412999999995
+  },
+  {
+   "text": "1%",
+   "start": 45.904287999999994,
+   "end": 46.665163,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 4
+  },
+  {
+   "text": "Dan",
+   "start": 47.002122,
+   "end": 47.165163
+  },
+  {
+   "text": "duwt",
+   "start": 47.176038,
+   "end": 47.632579
+  },
+  {
+   "text": "A",
+   "start": 47.643412999999995,
+   "end": 47.741246
+  },
+  {
+   "text": "de",
+   "start": 47.741247,
+   "end": 47.871663
+  },
+  {
+   "text": "index",
+   "start": 47.882538,
+   "end": 48.252121
+  },
+  {
+   "text": "honderd",
+   "start": 48.252122,
+   "end": 48.54558
+  },
+  {
+   "text": "keer",
+   "start": 48.54558,
+   "end": 48.839038
+  },
+  {
+   "text": "harder",
+   "start": 48.849954999999994,
+   "end": 49.154287999999994
+  },
+  {
+   "text": "omhoog",
+   "start": 49.165163,
+   "end": 49.676038,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 9
+  },
+  {
+   "text": "Dus",
+   "start": 50.013999999999996,
+   "end": 50.122707999999996
+  },
+  {
+   "text": "de",
+   "start": 50.133582999999994,
+   "end": 50.19879099999999
+  },
+  {
+   "text": "Nasdaq",
+   "start": 50.198792,
+   "end": 50.74224999999999
+  },
+  {
+   "text": "kan",
+   "start": 50.753125,
+   "end": 50.937915999999994
+  },
+  {
+   "text": "dalen",
+   "start": 50.948792,
+   "end": 51.35095799999999
+  },
+  {
+   "text": "ook",
+   "start": 51.73137499999999,
+   "end": 51.85095799999999
+  },
+  {
+   "text": "al",
+   "start": 51.85095799999999,
+   "end": 51.927040999999996
+  },
+  {
+   "text": "stijgen",
+   "start": 51.93791699999999,
+   "end": 52.3075
+  },
+  {
+   "text": "de",
+   "start": 52.318332999999996,
+   "end": 52.372665999999995
+  },
+  {
+   "text": "meeste",
+   "start": 52.372707999999996,
+   "end": 52.731373999999995
+  },
+  {
+   "text": "bedrijven",
+   "start": 52.73137499999999,
+   "end": 53.209624999999996,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 11
+  },
+  {
+   "text": "Zakken",
+   "start": 53.622707999999996,
+   "end": 53.872707999999996
+  },
+  {
+   "text": "de",
+   "start": 53.883582999999994,
+   "end": 53.927040999999996
+  },
+  {
+   "text": "reuzen",
+   "start": 53.937917,
+   "end": 54.361833
+  },
+  {
+   "text": "dan",
+   "start": 54.687917,
+   "end": 54.84008299999999
+  },
+  {
+   "text": "zakt",
+   "start": 54.84008299999999,
+   "end": 55.209666
+  },
+  {
+   "text": "alles",
+   "start": 55.220499999999994,
+   "end": 55.49225
+  },
+  {
+   "text": "mee",
+   "start": 55.49225,
+   "end": 55.774874999999994,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 7
+  },
+  {
+   "text": "Een",
+   "start": 56.220499999999994,
+   "end": 56.296583
+  },
+  {
+   "text": "beetje",
+   "start": 56.29662499999999,
+   "end": 56.677040999999996
+  },
+  {
+   "text": "zoals",
+   "start": 56.67704199999999,
+   "end": 56.937917
+  },
+  {
+   "text": "in",
+   "start": 56.948792,
+   "end": 57.003125
+  },
+  {
+   "text": "een",
+   "start": 57.003125,
+   "end": 57.068332999999996
+  },
+  {
+   "text": "groepschat",
+   "start": 57.068332999999996,
+   "end": 57.622665999999995,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 6
+  },
+  {
+   "text": "De",
+   "start": 57.937917,
+   "end": 58.024874999999994
+  },
+  {
+   "text": "groten",
+   "start": 58.024874999999994,
+   "end": 58.427040999999996
+  },
+  {
+   "text": "zeggen",
+   "start": 58.437917,
+   "end": 58.698792
+  },
+  {
+   "text": "het",
+   "start": 58.698792,
+   "end": 58.78574999999999
+  },
+  {
+   "text": "meest",
+   "start": 58.79662499999999,
+   "end": 59.231415999999996,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 5
+  },
+  {
+   "text": "Volg",
+   "start": 59.448792,
+   "end": 59.73137499999999
+  },
+  {
+   "text": "voor",
+   "start": 59.73137499999999,
+   "end": 59.89441599999999
+  },
+  {
+   "text": "meer",
+   "start": 59.894417,
+   "end": 60.220499999999994,
+   "eos": true,
+   "eos_q": false,
+   "eos_len": 3
   }
+ ],
+ "spoken": [
+  "De Nasdaq, Iedereen heeft het erover, maar wat is het nu eigenlijk, Een beurs, Een index, Een rapper?",
+  "Kijk, eerst en vooral is Nasdaq een beurs in New York, Een plek waar aandelen verhandeld worden, Zie het als Vinted, maar dan voor stukjes van bedrijven, Geen tweedehands jeans dus, En de naam, Gewoon een Amerikaanse afkorting, Niet sexy, wel waar.",
+  "Maar hoor je in het nieuws dat de Nasdaq zakt, Dan gaat het meestal over de index, De Nasdaq Composite volgt meer dan drieduizend bedrijven, En de Nasdaq honderd, Dat is eigenlijk de VIP-lounge, De honderd grootste bedrijven, zonder banken.",
+  "En nu komt het belangrijkste, Grote bedrijven tellen zwaarder mee, Stel je voor, bedrijf A is duizend miljard waard, Bedrijf B is tien miljard waard, Ze stijgen allebei één procent, Dan duwt A de index honderd keer harder omhoog.",
+  "Dus de Nasdaq kan dalen, ook al stijgen de meeste bedrijven, Zakken de reuzen, dan zakt alles mee, Een beetje zoals in een groepschat, De groten zeggen het meest, Volg voor meer!"
  ]
 }

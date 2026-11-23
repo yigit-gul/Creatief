@@ -6,11 +6,11 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 65 s | 162 | 10/10 | 6 |
+| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 71 s | 178 | 10/10 | 6 |
 | 02-marktnieuws-w47 | Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026) | 65 s | 164 | 10/10 | 4 |
-| 03-nasdaq-wat-is-het | Nasdaq 101: beurs, index of rapper? | 62 s | 155 | 10/10 | 3 |
-| 04-nasdaq-waarom-schommelt | Waarom de Nasdaq de drama queen van de beurs is | 62 s | 165 | 10/10 | 3 |
-| 05-nasdaq-dotcom-crash | De dotcom-crash: −78% en 15 jaar wachten | 62 s | 154 | 10/10 | 4 |
+| 03-nasdaq-wat-is-het | Nasdaq 101: beurs, index of rapper? | 63 s | 169 | 10/10 | 3 |
+| 04-nasdaq-waarom-schommelt | Waarom de Nasdaq de drama queen van de beurs is | 61 s | 175 | 10/10 | 3 |
+| 05-nasdaq-dotcom-crash | De dotcom-crash: −78% en 15 jaar wachten | 61 s | 155 | 10/10 | 4 |
 
 ---
 
@@ -20,19 +20,19 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 ### Script (voice-over)
 
-> Stel, je verkoopt je aandelen met verlies. Toch betaal je belasting. Raar? Ik leg het uit.
+> Stel, je verkoopt je aandelen met verlies. En toch betaal je belasting. Raar, toch? Kijk, ik leg het je uit.
 >
-> Dat is de TOB. De taks op de beursverrichtingen. Je betaalt een klein stukje van het bedrag. Winst of verlies? Dat maakt niet uit.
+> Dat is de TOB. Voluit de taks op de beursverrichtingen. Simpel gezegd betaal je een klein stukje van het bedrag. Bij elke aankoop en verkoop. Winst of verlies, dat maakt niet uit.
 >
-> Hoeveel? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. En er is een maximum per keer.
+> Hoeveel dan? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. En er is altijd een maximum per keer.
 >
 > Stel, je koopt voor een half miljoen aan aandelen. Aan 0,35% zou dat €1.750 zijn. Maar je betaalt maximaal €1.600. Goed nieuws voor de miljonairs.
 >
-> Kijk, een voorbeeld. Je koopt aandelen voor €2.000. Aan 0,35% betaal je €7. Later verkoop je ze voor €2.000. Dan betaal je weer €7. Samen is dat €14.
+> Oké, gewoner. Je koopt aandelen voor €2.000. Aan 0,35% betaal je dan €7. Verkoop je ze later ook voor €2.000? Dan betaal je weer €7. Samen dus €14.
 >
-> Wie regelt dat? Een Belgische broker doet het voor jou. Een buitenlandse broker niet altijd. Dan geef je het zelf aan. En je betaalt het zelf. Wanneer? Ten laatste de laatste werkdag van de tweede maand erna.
+> En wie regelt dat allemaal? Zit je bij een Belgische broker, dan doet die het voor jou. Een buitenlandse broker niet altijd. Dan geef je het zelf aan. Ten laatste de laatste werkdag van de tweede maand erna.
 >
-> Nu weet je waar dat kostje vandaan komt. Volg voor meer!
+> Zo, nu weet je waar dat kostje vandaan komt. Volg voor meer!
 
 ### Bronnen en controle van cijfers
 
@@ -74,9 +74,9 @@ Algemene info, geen persoonlijk advies.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (162 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (65.1 s)
-- ✅ Hook kort (≤ 22 woorden) (16 woorden)
+- ✅ Woordenaantal 150-190 (178 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (70.8 s)
+- ✅ Hook kort (≤ 22 woorden) (20 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption
@@ -189,15 +189,15 @@ Algemene info, geen beleggingsadvies: geen aanraders, geen voorspellingen.
 
 ### Script (voice-over)
 
-> De Nasdaq. Iedereen zegt het. Niemand legt het uit. Is het een beurs? Een index? Een rapper?
+> De Nasdaq. Iedereen heeft het erover, maar wat is het nu eigenlijk? Een beurs? Een index? Een rapper?
 >
-> Eerst dit: Nasdaq is een beurs in New York. Daar worden aandelen verhandeld. Zoals Vinted, maar dan voor stukjes van bedrijven. Geen tweedehands jeans dus. De naam is een Amerikaanse afkorting. Niet sexy, wel waar.
+> Kijk, eerst en vooral is Nasdaq een beurs in New York. Een plek waar aandelen verhandeld worden. Zie het als Vinted, maar dan voor stukjes van bedrijven. Geen tweedehands jeans dus. En de naam? Gewoon een Amerikaanse afkorting. Niet sexy, wel waar.
 >
-> Maar het nieuws zegt soms: de Nasdaq zakt. Dan gaat het meestal over de index. De Nasdaq Composite volgt meer dan 3.000 bedrijven. En de Nasdaq-100? Dat is de VIP-lounge. De 100 grootste bedrijven, zonder banken.
+> Maar hoor je in het nieuws dat de Nasdaq zakt? Dan gaat het meestal over de index. De Nasdaq Composite volgt meer dan 3.000 bedrijven. En de Nasdaq-100? Dat is eigenlijk de VIP-lounge. De 100 grootste bedrijven, zonder banken.
 >
-> Nu het belangrijkste. Grote bedrijven tellen zwaarder. Een voorbeeld. Bedrijf A is 1.000 miljard waard. Bedrijf B is 10 miljard waard. Beide stijgen 1%. Dan duwt A de index honderd keer harder omhoog.
+> En nu komt het belangrijkste. Grote bedrijven tellen zwaarder mee. Stel je voor, bedrijf A is 1.000 miljard waard. Bedrijf B is 10 miljard waard. Ze stijgen allebei 1%. Dan duwt A de index honderd keer harder omhoog.
 >
-> Daardoor kan de Nasdaq dalen, terwijl de meeste bedrijven stijgen. Zakken de reuzen? Dan zakt alles mee. Dus: beurs én index. En de groten zeggen het meest. Zoals in elke groepschat. Volg voor meer!
+> Dus de Nasdaq kan dalen, ook al stijgen de meeste bedrijven. Zakken de reuzen, dan zakt alles mee. Een beetje zoals in een groepschat. De groten zeggen het meest. Volg voor meer!
 
 ### Bronnen en controle van cijfers
 
@@ -234,9 +234,9 @@ Algemene info, geen beleggingsadvies.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (155 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.8 s)
-- ✅ Hook kort (≤ 22 woorden) (17 woorden)
+- ✅ Woordenaantal 150-190 (169 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (62.8 s)
+- ✅ Hook kort (≤ 22 woorden) (18 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption
@@ -265,15 +265,15 @@ Algemene info, geen beleggingsadvies.
 
 ### Script (voice-over)
 
-> De Nasdaq is die vriend op een feestje. Hij danst het wildst. Maar hij valt ook het hardst. Hoe komt dat?
+> Ken je die vriend die op een feestje het wildst danst? En ook het hardst valt? Dat is de Nasdaq.
 >
-> Reden één: tech. Beleggers betalen niet alleen voor de winst van nu. Ze betalen ook voor de winst van later. Zoals bij een influencer. Nog niet viraal, maar bijna. Iedereen denkt: dat komt nog. Twijfelen ze? Dan gaat de koers snel omlaag.
+> Ik leg je uit waarom. Eerste reden: tech. Bij zo'n aandeel betaal je niet alleen voor de winst van nu. Je betaalt ook voor de winst van later. Een beetje zoals een influencer die nog niet viraal is. Iedereen denkt: dat komt nog. Twijfelen mensen? Dan gaat de koers snel omlaag.
 >
-> Reden twee: rente. Stel, je krijgt over tien jaar €100. Bij 2% rente is dat vandaag €82 waard. Bij 5% nog maar €61. Hogere rente maakt geld van later dus minder waard. En net dat geld van later zit in tech.
+> Tweede reden: de rente. Kijk, stel dat je over tien jaar €100 krijgt. Bij 2% rente is dat vandaag €82 waard. Bij 5% nog maar €61. Hogere rente maakt geld van later dus minder waard. En net dat geld van later zit in tech.
 >
-> Reden drie: een paar reuzen wegen heel zwaar. Vallen zij? Dan valt de hele index mee. Vorige week nog. De Nasdaq ging 10% omlaag. De Dow 8%.
+> En de derde reden? Een paar reuzen wegen heel zwaar. Vallen zij, dan valt de hele index mee. Dat zagen we vorige week nog. De Nasdaq ging 10% omlaag, de Dow 8%.
 >
-> Dat schommelen heeft een naam: volatiliteit. En het werkt ook omhoog. In goede jaren stijgt de Nasdaq vaak harder. Dus de Nasdaq is niet gek. Gewoon gevoelig. Voorspellen doen we niet. Volg voor meer!
+> Dat op en neer gaan heet trouwens volatiliteit. En het werkt ook omhoog. Dus de Nasdaq is niet gek, gewoon gevoelig. Voorspellen doen we niet. Volg voor meer!
 
 ### Bronnen en controle van cijfers
 
@@ -305,9 +305,9 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (165 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.5 s)
-- ✅ Hook kort (≤ 22 woorden) (21 woorden)
+- ✅ Woordenaantal 150-190 (175 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (60.9 s)
+- ✅ Hook kort (≤ 22 woorden) (20 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption
@@ -336,15 +336,15 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
 
 ### Script (voice-over)
 
-> In 2000 crashte de Nasdaq. Bijna 80% weg. Daarna duurde het 15 jaar om te herstellen. Welkom bij de dotcom-bubbel.
+> In 2000 crashte de Nasdaq. Bijna 80% ging in rook op. Herstellen duurde 15 jaar. Welkom bij de dotcom-bubbel.
 >
-> Eind jaren negentig was internet nieuw. Had je bedrijf punt com in de naam? Dan was je blijkbaar goud waard. Iedereen wilde erbij zijn. Een website en een droom. Meer had je niet nodig. Winst? Die kwam later wel. Dachten ze.
+> Kijk, eind jaren negentig was internet gloednieuw. Had je bedrijf punt com in de naam? Dan was je blijkbaar goud waard. Iedereen wilde erbij zijn. Een website en een droom, meer had je niet nodig. Winst? Ach, die kwam later wel. Dachten ze toch.
 >
-> Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. Pas in april 2015 stond hij weer hoger. Vijftien jaar! Langer dan TikTok bestaat.
+> Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. En pas in april 2015 kwam hij weer boven die top. Vijftien jaar! Dat is langer dan TikTok bestaat.
 >
-> Stel, iemand stak €1.000 in de index op de top. In oktober 2002 was dat nog €221. Oef. Dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over. Die werden later reuzen. Je gebruikt ze nu elke dag.
+> Stel je voor: iemand stak €1.000 in de index. Net op de top. In oktober 2002 was dat nog €221. Oef, dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over, en die werden later reuzen.
 >
-> Wat leerden beleggers toen? Een goed verhaal is nog geen winst. Geschiedenis herhaalt zich niet altijd. En voorspellen doen we niet. Volg voor meer!
+> Wat leerden beleggers toen? Een goed verhaal is nog geen winst. En voorspellen doen we hier niet. Volg voor meer!
 
 ### Bronnen en controle van cijfers
 
@@ -379,9 +379,9 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (154 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.9 s)
-- ✅ Hook kort (≤ 22 woorden) (20 woorden)
+- ✅ Woordenaantal 150-190 (155 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.1 s)
+- ✅ Hook kort (≤ 22 woorden) (19 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption

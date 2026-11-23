@@ -1,81 +1,111 @@
 {
  "id": "01-tob",
  "signalen": {
-  "duration": 65.1,
+  "duration": 70.8,
   "scenes": [
    {
     "n": 0,
     "type": "hook",
-    "sec": 5.6,
-    "woorden": 16,
-    "woorden_per_sec": 2.84,
+    "sec": 7.2,
+    "woorden": 20,
+    "woorden_per_sec": 2.8,
     "langste_zin": 7
    },
    {
     "n": 1,
     "type": "point",
-    "sec": 8.0,
-    "woorden": 24,
-    "woorden_per_sec": 3.0,
-    "langste_zin": 8
+    "sec": 10.8,
+    "woorden": 32,
+    "woorden_per_sec": 2.96,
+    "langste_zin": 10
    },
    {
     "n": 2,
     "type": "table",
-    "sec": 9.6,
-    "woorden": 21,
-    "woorden_per_sec": 2.18,
-    "langste_zin": 7
+    "sec": 10.1,
+    "woorden": 23,
+    "woorden_per_sec": 2.29,
+    "langste_zin": 8
    },
    {
     "n": 3,
     "type": "calc",
-    "sec": 10.8,
+    "sec": 11.3,
     "woorden": 25,
-    "woorden_per_sec": 2.31,
+    "woorden_per_sec": 2.21,
     "langste_zin": 9
    },
    {
     "n": 4,
     "type": "calc",
-    "sec": 12.5,
+    "sec": 12.6,
     "woorden": 28,
-    "woorden_per_sec": 2.25,
-    "langste_zin": 6
+    "woorden_per_sec": 2.22,
+    "langste_zin": 7
    },
    {
     "n": 5,
     "type": "point",
-    "sec": 12.8,
-    "woorden": 37,
-    "woorden_per_sec": 2.88,
-    "langste_zin": 10
+    "sec": 11.3,
+    "woorden": 38,
+    "woorden_per_sec": 3.36,
+    "langste_zin": 12
    },
    {
     "n": 6,
     "type": "outro",
-    "sec": 3.2,
-    "woorden": 11,
-    "woorden_per_sec": 3.45,
-    "langste_zin": 8
+    "sec": 3.9,
+    "woorden": 12,
+    "woorden_per_sec": 3.11,
+    "langste_zin": 9
    }
   ],
   "zinnen": {
-   "aantal": 32,
-   "gemiddeld": 5.1,
+   "aantal": 30,
+   "gemiddeld": 5.9,
    "langer_dan_10": []
   },
   "hook": {
    "eerste_zin": "Stel, je verkoopt je aandelen met verlies.",
-   "klaar_na_sec": 2.3
+   "klaar_na_sec": 2.4
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 67,
-   "langste": "Een buitenlandse broker"
+   "blokken": 73,
+   "langste": "op de beursverrichtingen"
   },
+  "layout": [
+   {
+    "scene": 0,
+    "onderkant_tekst": 1075
+   },
+   {
+    "scene": 1,
+    "onderkant_tekst": 1081
+   },
+   {
+    "scene": 2,
+    "onderkant_tekst": 1273
+   },
+   {
+    "scene": 3,
+    "onderkant_tekst": 1125
+   },
+   {
+    "scene": 4,
+    "onderkant_tekst": 1326
+   },
+   {
+    "scene": 5,
+    "onderkant_tekst": 1081
+   },
+   {
+    "scene": 6,
+    "onderkant_tekst": 1212
+   }
+  ],
   "aandachtspunten": [
-   "Scène 6 is erg vol (3.45 w/s)."
+   "Scène 5 is erg vol (3.36 w/s)."
   ]
  },
  "rubriek": {
@@ -105,7 +135,12 @@
    "opmerking": ""
   },
   "visueel": {
-   "vraag": "Tekst leesbaar, niets overlapt, grafiek/cijfers verschijnen op het juiste moment.",
+   "vraag": "Tekst leesbaar, niets overlapt of staat dubbel (beeld + ondertitel), grafiek/cijfers verschijnen op het juiste moment.",
+   "score": null,
+   "opmerking": ""
+  },
+  "stem": {
+   "vraag": "Elke zin is apart te horen (korte adempauze), niets klinkt als 2 dingen tegelijk, geen leesstijl.",
    "score": null,
    "opmerking": ""
   },

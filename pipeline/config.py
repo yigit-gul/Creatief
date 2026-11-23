@@ -33,6 +33,7 @@ FLOW_SENTENCES = True  # elke scène = één doorlopende zin -> de meertalige st
 # De zinsgrenzen worden daarna hoorbaar gemaakt door zelf een korte stilte in te voegen.
 SENTENCE_GAP = 0.28   # totale stilte op een zinsgrens (wordt ingevoegd)
 QUESTION_GAP = 0.34   # na een vraag iets langer
+SHORT_GAP = 0.20      # na een korte uitroep ('Plus 35%.', 'Oef.') korter: klinkt als praten, niet als voorlezen
 
 # --- Video ------------------------------------------------------------------
 W, H = 1080, 1920
