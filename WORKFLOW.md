@@ -1,6 +1,7 @@
 # Dagelijkse workflow (voor Claude)
 
 **Ritme: elke avond 1 nieuwe video.** Maandag = marktnieuws over de vorige beursweek (zie 1b).
+Bestaat het marktnieuws over die beursweek al (bv. `02-marktnieuws-w47`), kies dan een Nasdaq-uitleg.
 Di/do/za = algemeen fiscaal onderwerp (zie 1). Wo/vr/zo = Nasdaq-uitleg of beursgeschiedenis (zie 1c).
 Run-id en `week`-veld = de datum van vandaag (bv. `2026-11-24`); scripts in `scripts/<datum>/`.
 Geef elke nieuwe video een `trendScore` (1-10), `trendReason` (1-2 zinnen) en herbereken `trendRank` (1 = beste)
