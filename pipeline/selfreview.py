@@ -88,6 +88,15 @@ def signals(script, timing):
             flags.append(f"Scène {s['n']} duurt {s['sec']} s: risico op wegzappen, overweeg te splitsen.")
     if gaps:
         flags.append(f"{len(gaps)} stilte(s) > 0,6 s.")
+    # TAALBEWAKING: de stem moet per scène één doorlopende Nederlandse zin krijgen, zonder cijfers.
+    # (Losse korte zinnen of cijfers lieten de meertalige stem Frans/Engels spreken.)
+    for i, sp in enumerate(timing.get("spoken", [])):
+        if re.search(r"\d", sp):
+            flags.append(f"TAAL: scène {i} stuurt nog cijfers naar de stem ({re.findall(r'[^ ]*\d[^ ]*', sp)[:3]}).")
+        if re.search(r"[.!?]\s+\S", sp.replace("T.O.B.", "TOB")):
+            flags.append(f"TAAL: scène {i} wordt in losse zinnen ingesproken (risico op taalwissel).")
+    if "spoken" not in timing:
+        flags.append("TAAL: geen gesproken tekst bewaard; bouw opnieuw met de huidige pipeline.")
     # zinnen die aan elkaar plakken (klinkt alsof hij 2 dingen tegelijk zegt)
     sil = silences(C.ROOT / timing["audio"].replace(".wav", ".mp3")) if timing.get("audio") else []
     def breathes(a, b):  # echte stilte in de audio tussen twee zinnen (woordtimings zijn te ruim)

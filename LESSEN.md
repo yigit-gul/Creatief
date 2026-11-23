@@ -10,8 +10,13 @@ Nog geen cijfers. Tot dan gelden de regels uit de feedback:
 - Hook met een herkenbare tegenstrijdigheid of een groot cijfer.
 - Net boven 1 minuut, langer alleen als de inhoud het draagt.
 - Humor moet de uitleg dienen.
-- Zinnen niet aan elkaar plakken: elke zin apart, met een korte adempauze (anders klinkt het als 2 dingen tegelijk).
 - Nooit twee keer tekst tegelijk in beeld (reuzenwoorden + ondertitel) en niets dat overlapt.
-- Stem altijd per scène inspreken, nooit per losse zin: de meertalige stem gokt bij korte zinnen een andere taal. Pauzes worden achteraf ingekort tot ~0,3 s.
-- Cijfers nooit als cijfers laten voorlezen: de meertalige stem las '35%' in het Frans. De pipeline schrijft ze automatisch uit in het Nederlands (pipeline/getallen.py); ondertitels tonen wel cijfers.
 - Het belangrijkste cijfer meteen in de eerste seconde in beeld (bv. reuzengroot '+35%').
+
+## Stem: alleen Nederlands (belangrijkste les, 23/11)
+- De meertalige stem kiest de taal PER ZIN. Korte losse zinnen ("Plus 35%.", "En waarom?") werden Frans of Engels.
+- Daarom: elke scène gaat als ÉÉN doorlopende zin naar de stem (punten/vraagtekens -> komma's), en de pipeline
+  voegt daarna zelf korte stiltes (~0,3 s) in op de zinsgrenzen. Zo blijft het Nederlands én hoor je elke zin apart.
+- Cijfers altijd uitgeschreven in het Nederlands naar de stem ("vijfendertig procent"); ondertitels tonen cijfers.
+- Nooit de taal-instructie van de spraakdienst aanpassen (maakte het erger).
+- De zelfreview bewaakt dit automatisch (TAAL-controle op de gesproken tekst).

@@ -52,14 +52,18 @@ def display_text(text: str) -> str:
     return PRON.sub(lambda m: m.group(1), text)
 
 
-SENT_END = re.compile(r"(?<=[a-zà-ÿ0-9%€])[.!](?=\s)")
+SENT_END = re.compile(r"(?<=[a-zà-ÿ0-9%€)\]'\"])[.!?](?=\s)")
 
 
 def flowing(text: str) -> str:
-    """Punten en uitroeptekens midden in een scène worden komma's: de stem leest dan niet
-    zin per zin met een lange pauze, maar praat door zoals in een TikTok. Vraagtekens blijven
-    (intonatie), afkortingen zoals T.O.B. blijven ongemoeid."""
-    return SENT_END.sub(",", text) if config.FLOW_SENTENCES else text
+    """Elke scène wordt één doorlopende zin (. ! ? midden in de scène -> komma).
+    Belangrijk: de meertalige stem bepaalt de taal PER ZIN. Een korte losse zin ("Plus 35%.")
+    werd soms Frans of Engels. Als één lange Nederlandse zin blijft het altijd Nederlands.
+    De pauzes op de zinsgrenzen voegt synth_scene daarna zelf toe."""
+    if not config.FLOW_SENTENCES:
+        return text
+    text = re.sub(r"(?<=\.)\.(?=\s)", ",", text)  # 'T.O.B..' (afkorting + punt) -> 'T.O.B.,'
+    return SENT_END.sub(",", text)
 
 
 async def _synth(text: str, out_mp3: Path):
@@ -169,32 +173,49 @@ def synth_scene(text: str, out_mp3: Path):
             if last and (norm(words[j]["text"]) == last or last.endswith(norm(words[j]["text"]) or "#")):
                 words[j]["eos"], words[j]["eos_q"], pos = True, end == "?", j + 1
                 break
-    # stiltes inkorten
+    # korte stilte invoegen op elke zinsgrens (behalve na de laatste zin)
     total = duration(out_mp3)
-    cuts = []
-    for st, en in _silences(out_mp3):
-        before = [w for w in words if w["end"] <= en + 0.05 and w["start"] < st + 0.05]
-        q = bool(before and before[-1].get("eos_q"))
-        target = config.QUESTION_GAP if q else config.SENTENCE_GAP
-        if en - st > target + 0.04 and st > 0.05 and en < total - 0.05:
-            cuts.append((st + target / 2, en - target / 2))
-    if not cuts:
+    sil = _silences(out_mp3, 0.05)
+    inserts = []
+    for w, nxt in zip(words, words[1:]):
+        if not w.get("eos"):
+            continue
+        target = config.QUESTION_GAP if w.get("eos_q") else config.SENTENCE_GAP
+        lo, hi = w["end"] - 0.35, nxt["start"] + 0.05
+        real = [(st, en) for st, en in sil if en > lo and st < hi]
+        have = max((en - st for st, en in real), default=0.0)
+        at = (max(real, key=lambda x: x[1] - x[0]) if real else None)
+        at = (at[0] + at[1]) / 2 if at else (w["end"] + nxt["start"]) / 2
+        if target - have > 0.03 and 0.05 < at < total - 0.05:
+            inserts.append((at, target - have))
+    if not inserts:
         return words
-    keep, last = [], 0.0
-    for a, b in cuts:
-        keep.append((last, a))
-        last = b
-    keep.append((last, total))
-    filt = [f"[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS[k{i}]" for i, (a, b) in enumerate(keep)]
-    filt.append("".join(f"[k{i}]" for i in range(len(keep))) + f"concat=n={len(keep)}:v=0:a=1[out]")
-    tmp = out_mp3.with_suffix(".cut.mp3")
+    inserts.sort()
+    pts = [0.0] + [a for a, _ in inserts] + [total]
+    filt, labels = [], []
+    for i in range(len(pts) - 1):
+        filt.append(f"[0:a]atrim={pts[i]:.3f}:{pts[i + 1]:.3f},asetpts=PTS-STARTPTS,aresample=48000,"
+                    f"aformat=channel_layouts=mono[s{i}]")
+        labels.append(f"[s{i}]")
+        if i < len(inserts):
+            filt.append(f"anullsrc=r=48000:cl=mono,atrim=0:{inserts[i][1]:.3f}[z{i}]")
+            labels.append(f"[z{i}]")
+    filt.append("".join(labels) + f"concat=n={len(labels)}:v=0:a=1[out]")
+    tmp = out_mp3.with_suffix(".pause.mp3")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out_mp3), "-filter_complex", ";".join(filt),
                     "-map", "[out]", "-c:a", "libmp3lame", "-q:a", "2", str(tmp)], check=True)
     tmp.replace(out_mp3)
 
     def shift(t):
-        return t - sum(min(b, max(t, a)) - a for a, b in cuts if t > a)
+        return t + sum(d for a, d in inserts if t > a)
     return [{**w, "start": shift(w["start"]), "end": shift(w["end"])} for w in words]
+
+
+def spoken_text(text: str) -> str:
+    """Exact de tekst die naar de stem gaat (voor de controle in de zelfreview)."""
+    sp, _ = split_pronunciation(text)
+    sp = flowing(sp).replace("&", " en ")
+    return to_spoken(sp)[0]
 
 
 def duration(path: Path) -> float:
@@ -249,6 +270,7 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
         p.unlink()
 
     data = {"audio": str(full.relative_to(config.ROOT)), "duration": duration(full),
-            "scenes": timeline, "words": all_words}
+            "scenes": timeline, "words": all_words,
+            "spoken": [spoken_text(sc["say"]) for sc in script["scenes"]]}
     (audio_dir / f"{sid}.timings.json").write_text(json.dumps(data, indent=1, ensure_ascii=False))
     return data
