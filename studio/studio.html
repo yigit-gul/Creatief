@@ -165,6 +165,17 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
 .zoom button + button, .zoom output + button, .zoom button + output { border-left: 1px solid var(--line) }
 .zoom output { padding: 7px 10px; font: 600 13px var(--font-mono); min-width: 54px; text-align: center; font-variant-numeric: tabular-nums }
 .tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center }
+
+/* ---- Tabs + trend ---- */
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px }
+.tabs button { border-radius: 99px; padding: 7px 14px; font-size: 13.5px }
+.tabs button[aria-selected="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg) }
+.tabs .count { font: 600 12px var(--font-mono); opacity: .75; margin-left: 4px }
+.trend { font: 800 12px/1 var(--font-mono); padding: 4px 9px; border-radius: 99px; background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); white-space: nowrap }
+.trend.mid { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn) }
+.trend.low { background: var(--surface-2); color: var(--muted) }
+.card .wk { font: 600 11px var(--font-mono); color: var(--muted) }
+.trend-box { margin: 0; padding: 10px 12px; border-radius: 10px; background: var(--bg); border: 1px solid var(--line); font-size: 13.5px }
 </style>
 
 <div class="wrap">
@@ -194,9 +205,9 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
       <div class="node c-4" id="n-know"><div class="k">Kennis · repo</div><div class="t">Wat Claude weet</div>
         <ul><li>WORKFLOW.md <small>de vaste stappen</small></li><li>Merk &amp; kleuren <small>Fiscaal Fluitje</small></li><li>Scriptformaat &amp; onderwerpenlijst</li><li>Jouw feedback van vorige weken</li></ul></div>
       <div class="node ext c-4" id="n-sys"><div class="k">Systeem</div><div class="t">Opslag &amp; timing</div>
-        <ul><li>GitHub <small>Creatief-repo</small></li><li>Studio-database <small>deze pagina</small></li><li>Zondagavond-taak <small>start de run</small></li></ul></div>
+        <ul><li>GitHub <small>Creatief-repo</small></li><li>Studio-database <small>deze pagina</small></li><li>Dagelijkse taak <small>elke avond 1 video</small></li></ul></div>
 
-      <div class="node core c-core" id="n-core" data-step="core"><div class="k">Claude · elke zondagavond</div><div class="t">AI Video Studio</div>
+      <div class="node core c-core" id="n-core" data-step="core"><div class="k">Claude · elke avond</div><div class="t">AI Video Studio</div>
         <div class="chips"><span>Python</span><span>edge-tts</span><span>Pillow</span><span>ffmpeg</span></div><span class="badge" id="core-badge">wacht</span></div>
 
       <div class="node c-3 row-start" id="n-onderwerpen" data-step="onderwerpen"><div class="k">Onderwerpen <span class="badge">–</span></div><div class="t">Kiezen</div>
@@ -236,6 +247,7 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
   <div class="main">
     <section aria-labelledby="vid-title">
       <h2 id="vid-title">Video's</h2>
+      <div class="tabs" role="tablist" id="tabs"></div>
       <div class="grid" id="grid"></div>
     </section>
     <aside class="panel detail" id="detail" aria-live="polite"><p class="hint">Kies een video om het script, de bronnen en de caption te zien.</p></aside>
@@ -299,7 +311,7 @@ function renderFlow() {
   const core = document.getElementById("n-core");
   const cs = !r ? "todo" : r.state === "bezig" ? "doing" : r.state === "fout" ? "error" : "done";
   core.dataset.state = cs; nodeState["n-core"] = cs;
-  $("#core-badge").textContent = !r ? "wacht op zondag" : ({ bezig: "run bezig", klaar: "run klaar", fout: "run gestopt" }[r.state] || r.state);
+  $("#core-badge").textContent = !r ? "wacht op vanavond" : ({ bezig: "run bezig", klaar: "run klaar", fout: "run gestopt" }[r.state] || r.state);
   $("#flow-sub").textContent = r ? `${r.label || r.week}` : "Nog geen run voor deze week";
 
   const vs = videos.filter(v => v.week === week);
@@ -398,7 +410,7 @@ function renderRun() {
   const r = runs[week];
   if (!r) {
     $("#run-label").textContent = week ? `Geen run gevonden voor ${week}` : "Nog geen runs";
-    $("#run-when").textContent = "Elke zondagavond start Claude hier een nieuwe week.";
+    $("#run-when").textContent = "Elke avond maakt Claude hier een nieuwe video.";
     $("#steps").replaceChildren(...STEPS.map(([k, l], i) => stepEl(i, l, "todo", "")));
     $("#log").replaceChildren(el("div", {}, [el("time"), el("span", { textContent: "Zodra een run start, verschijnt hier elke stap." })]));
     return;
@@ -422,21 +434,45 @@ function stepLi(i, label, state, detail) {
 
 function statusClass(s) { return (STATUSES.find(x => x[0] === s) || [, ""])[1]; }
 
+const TABS = [
+  ["todo", "Te bekijken", v => !["ingepland", "afgekeurd"].includes(v.status)],
+  ["planned", "Ingepland", v => v.status === "ingepland"],
+  ["rejected", "Afgekeurd", v => v.status === "afgekeurd"],
+];
+let tab = "todo";
+try { tab = localStorage.getItem("ff-tab") || "todo"; } catch {}
+function trendEl(v) {
+  if (v.trendScore == null) return null;
+  const cls = v.trendScore >= 8 ? "" : v.trendScore >= 6 ? " mid" : " low";
+  return el("span", { className: "trend" + cls, title: v.trendReason || "", textContent: `🔥 ${v.trendScore}/10${v.trendRank ? " · #" + v.trendRank : ""}` });
+}
 function renderGrid() {
-  const list = videos.filter(v => v.week === week).sort((a, b) => a.id.localeCompare(b.id));
-  if (!list.length) { $("#grid").replaceChildren(el("div", { className: "empty", textContent: "Nog geen video's voor deze week. Ze verschijnen hier zodra de review klaar is." })); return; }
+  // tabs gelden over alle weken/dagen heen; ingeplande video's staan apart
+  $("#tabs").replaceChildren(...TABS.map(([k, label, f]) => {
+    const n = videos.filter(f).length;
+    const b = el("button", { role: "tab", ariaSelected: String(tab === k) }, [label, el("span", { className: "count", textContent: String(n) })]);
+    b.addEventListener("click", () => { tab = k; try { localStorage.setItem("ff-tab", k); } catch {} renderGrid(); });
+    return b;
+  }));
+  const f = (TABS.find(t => t[0] === tab) || TABS[0])[2];
+  const list = videos.filter(f).sort((a, b) =>
+    (a.trendRank ?? 99) - (b.trendRank ?? 99) || (b.trendScore ?? 0) - (a.trendScore ?? 0) || String(b.week).localeCompare(String(a.week)) || a.id.localeCompare(b.id));
+  if (!list.length) {
+    const msg = { todo: "Niets meer te bekijken. Nieuwe video's verschijnen hier elke dag.", planned: "Nog niets ingepland. Zet een video op 'ingepland' en hij verhuist naar hier.", rejected: "Geen afgekeurde video's." }[tab];
+    $("#grid").replaceChildren(el("div", { className: "empty", textContent: msg })); return;
+  }
   $("#grid").replaceChildren(...list.map(v => {
     const warns = (v.claims || []).filter(c => c.status !== "ok").length + (v.warnings || []).length;
-    const okc = (v.checks || []).filter(c => c.ok).length;
     const thumb = el("div", { className: "thumb" }, v.videoUrl
       ? el("video", { src: v.videoUrl + "#t=1.5", muted: true, preload: "metadata", playsInline: true, ariaHidden: "true" })
       : el("div", { className: "ph", textContent: "Video in productie" }));
     const b = el("button", { className: "card", ariaPressed: String(selected === v._key) }, [thumb, el("div", { className: "meta" }, [
+      el("span", { className: "wk", textContent: v.week }),
       el("b", { textContent: v.title }),
       el("div", { className: "row" }, [
+        trendEl(v),
         el("span", { className: "pill " + statusClass(v.status), textContent: v.status || "in productie" }),
         warns ? el("span", { className: "pill warn", textContent: `⚠️ ${warns}` }) : null,
-        v.checks ? el("span", { className: "pill num", textContent: `${okc}/${v.checks.length} checks` }) : null,
         v.durationSec ? el("span", { className: "pill num", textContent: `${Math.round(v.durationSec)} s` }) : null,
       ])])]);
     b.addEventListener("click", () => { selected = v._key; renderGrid(); renderDetail(); });
@@ -451,7 +487,7 @@ function renderDetail() {
   if (keepId) { const t = document.getElementById(keepId); if (t) { t.focus(); try { t.setSelectionRange(...sel); } catch {} } }
 }
 function renderDetailInner() {
-  const v = videos.find(x => x._key === selected && x.week === week);
+  const v = videos.find(x => x._key === selected);
   const d = $("#detail");
   if (!v) { d.replaceChildren(el("p", { className: "hint", textContent: "Kies een video om het script, de bronnen en de caption te zien." })); return; }
   const kids = [];
@@ -477,6 +513,8 @@ function renderDetailInner() {
   }
   kids.push(el("h3", { textContent: v.title }));
   if (v.validity) kids.push(el("p", { className: "hint", textContent: v.validity, style: "margin:0" }));
+  if (v.trendScore != null) kids.push(el("div", { className: "sec" }, [el("span", { textContent: "Trendkans volgens Claude" }),
+    el("p", { className: "trend-box" }, [trendEl(v), document.createTextNode(" " + (v.trendReason || ""))])]));
 
   // status
   const pick = el("div", { className: "status-pick" }, STATUSES.map(([s]) => {

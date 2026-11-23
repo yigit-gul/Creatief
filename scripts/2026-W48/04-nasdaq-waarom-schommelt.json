@@ -4,7 +4,7 @@
   "validity": "Algemene uitleg; weekcijfers 16-20 november 2026",
   "scenes": [
     {
-      "say": "De Nasdaq is die vriend die op een feestje het wildst danst. En ook het hardst valt. Waarom eigenlijk?",
+      "say": "De Nasdaq is die vriend op een feestje. Hij danst het wildst. Maar hij valt ook het hardst. Hoe komt dat?",
       "visual": {
         "type": "hook",
         "kicker": "Nasdaq 101",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "say": "Reden één: veel tech. Die bedrijven worden vaak gewaardeerd op wat ze later misschien gaan verdienen. Een beetje zoals een influencer die nog niet viraal is, maar iedereen gelooft dat het eraan komt. Verandert die verwachting? Dan schiet de koers alle kanten op.",
+      "say": "Reden één: tech. Beleggers betalen niet alleen voor de winst van nu. Ze betalen ook voor de winst van later. Een beetje zoals bij een influencer die nog niet viraal is. Iedereen denkt: dat komt nog. Twijfelen ze? Dan gaat de koers snel omlaag.",
       "visual": {
         "type": "point",
         "n": 1,
@@ -22,7 +22,7 @@
       }
     },
     {
-      "say": "Reden twee: rente. Stel: je krijgt over tien jaar €100. Bij 2% rente is dat vandaag zo'n €82 waard. Bij 5% nog maar €61. En net dat geld van later zit in veel techkoersen.",
+      "say": "Reden twee: rente. Stel, je krijgt over tien jaar €100. Bij 2% rente is dat vandaag €82 waard. Bij 5% nog maar €61. Hogere rente maakt geld van later dus minder waard. En net dat geld van later zit in tech.",
       "visual": {
         "type": "calc",
         "title": "2. Rente doet pijn",
@@ -49,7 +49,7 @@
       }
     },
     {
-      "say": "Reden drie: een paar giganten wegen zwaar. Struikelen zij, dan gaat de hele index mee onderuit. Vorige week nog: Nasdaq min 10%, de Dow min 8%.",
+      "say": "Reden drie: een paar reuzen wegen heel zwaar. Vallen zij? Dan valt de hele index mee. Vorige week nog. De Nasdaq ging 10% omlaag. De Dow 8%.",
       "visual": {
         "type": "bars",
         "title": "3. Giganten trekken mee",
@@ -74,7 +74,7 @@
       }
     },
     {
-      "say": "Dat schommelen heeft een naam: volatiliteit. En het werkt in twee richtingen: in sterke jaren stijgt de Nasdaq vaak ook harder dan de rest. Dus nee, de Nasdaq is niet gek. Gewoon gevoelig. Voorspellen doen we hier niet. Volg voor meer!",
+      "say": "Dat schommelen heeft een naam: volatiliteit. En het werkt ook omhoog. In goede jaren stijgt de Nasdaq vaak harder. Dus de Nasdaq is niet gek. Gewoon gevoelig. Voorspellen doen we niet. Volg voor meer!",
       "visual": {
         "type": "outro",
         "big": "Volg voor meer *Nasdaq* zonder jargon"

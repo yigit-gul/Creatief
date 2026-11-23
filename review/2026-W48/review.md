@@ -9,7 +9,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 | 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 67 s | 164 | 10/10 | 6 |
 | 02-marktnieuws-w47 | Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026) | 64 s | 160 | 10/10 | 4 |
 | 03-nasdaq-wat-is-het | Nasdaq 101: beurs, index of rapper? | 63 s | 160 | 10/10 | 3 |
-| 04-nasdaq-waarom-schommelt | Waarom de Nasdaq de drama queen van de beurs is | 61 s | 163 | 10/10 | 3 |
+| 04-nasdaq-waarom-schommelt | Waarom de Nasdaq de drama queen van de beurs is | 61 s | 167 | 10/10 | 3 |
 | 05-nasdaq-dotcom-crash | De dotcom-crash: −78% en 15 jaar wachten | 61 s | 163 | 10/10 | 4 |
 
 ---
@@ -263,15 +263,15 @@ Algemene info, geen beleggingsadvies.
 
 ### Script (voice-over)
 
-> De Nasdaq is die vriend die op een feestje het wildst danst. En ook het hardst valt. Waarom eigenlijk?
+> De Nasdaq is die vriend op een feestje. Hij danst het wildst. Maar hij valt ook het hardst. Hoe komt dat?
 >
-> Reden één: veel tech. Die bedrijven worden vaak gewaardeerd op wat ze later misschien gaan verdienen. Een beetje zoals een influencer die nog niet viraal is, maar iedereen gelooft dat het eraan komt. Verandert die verwachting? Dan schiet de koers alle kanten op.
+> Reden één: tech. Beleggers betalen niet alleen voor de winst van nu. Ze betalen ook voor de winst van later. Een beetje zoals bij een influencer die nog niet viraal is. Iedereen denkt: dat komt nog. Twijfelen ze? Dan gaat de koers snel omlaag.
 >
-> Reden twee: rente. Stel: je krijgt over tien jaar €100. Bij 2% rente is dat vandaag zo'n €82 waard. Bij 5% nog maar €61. En net dat geld van later zit in veel techkoersen.
+> Reden twee: rente. Stel, je krijgt over tien jaar €100. Bij 2% rente is dat vandaag €82 waard. Bij 5% nog maar €61. Hogere rente maakt geld van later dus minder waard. En net dat geld van later zit in tech.
 >
-> Reden drie: een paar giganten wegen zwaar. Struikelen zij, dan gaat de hele index mee onderuit. Vorige week nog: Nasdaq min 10%, de Dow min 8%.
+> Reden drie: een paar reuzen wegen heel zwaar. Vallen zij? Dan valt de hele index mee. Vorige week nog. De Nasdaq ging 10% omlaag. De Dow 8%.
 >
-> Dat schommelen heeft een naam: volatiliteit. En het werkt in twee richtingen: in sterke jaren stijgt de Nasdaq vaak ook harder dan de rest. Dus nee, de Nasdaq is niet gek. Gewoon gevoelig. Voorspellen doen we hier niet. Volg voor meer!
+> Dat schommelen heeft een naam: volatiliteit. En het werkt ook omhoog. In goede jaren stijgt de Nasdaq vaak harder. Dus de Nasdaq is niet gek. Gewoon gevoelig. Voorspellen doen we niet. Volg voor meer!
 
 ### Bronnen en controle van cijfers
 
@@ -303,9 +303,9 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (163 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.2 s)
-- ✅ Hook kort (≤ 22 woorden) (19 woorden)
+- ✅ Woordenaantal 150-190 (167 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (60.9 s)
+- ✅ Hook kort (≤ 22 woorden) (21 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption

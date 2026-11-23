@@ -1,4 +1,10 @@
-# Wekelijkse workflow (voor Claude)
+# Dagelijkse workflow (voor Claude)
+
+**Ritme: elke avond 1 nieuwe video.** Maandag = marktnieuws over de vorige beursweek (zie 1b).
+Di/do/za = algemeen fiscaal onderwerp (zie 1). Wo/vr/zo = Nasdaq-uitleg of beursgeschiedenis (zie 1c).
+Run-id en `week`-veld = de datum van vandaag (bv. `2026-11-24`); scripts in `scripts/<datum>/`.
+Geef elke nieuwe video een `trendScore` (1-10), `trendReason` (1-2 zinnen) en herbereken `trendRank` (1 = beste)
+voor alle video's die nog niet `ingepland` of `afgekeurd` zijn.
 
 Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 (collections `runs` = run en logboek per week, `videos` = één document per video)
@@ -35,6 +41,8 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 - Volgende ideeën: Nasdaq-100 vs. S&P 500, wat is een bear market, hoe lees je een koersgrafiek, wat is beurswaarde.
 
 ## 2. Scripts → `scripts/<week>/0N-<slug>.json`
+- **Eenvoudige zinnen** (feedback: anders klinkt de stem AI): meestal max. ~10 woorden per zin, één idee per zin,
+  gewone woorden ("betalen voor de winst van later" i.p.v. "gewaardeerd op verwachte winst"), geen tangconstructies.
 - **Spreektaal, TikTok-tempo**: korte zinnen, Vlaams-informeel ("da's", "een voorbeeldje"; nooit "hè": dat leest niet), zoals je het
   tegen een vriend uitlegt. Hook = herkenbare situatie of tegenstrijdigheid ("Verlies gemaakt? Tóch belasting."),
   daarna overgangen als een gesprek ("Raar? Ik leg het je uit", "Kijk, een voorbeeldje", "Wie regelt dat?"). Stem: Andrew (multilingual), +15%, zinnen lopen door zonder leespauzes.
