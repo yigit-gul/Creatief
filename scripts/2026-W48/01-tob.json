@@ -22,7 +22,7 @@
       }
     },
     {
-      "say": "Hoeveel? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. Er is ook een maximum per keer. Stel, je koopt voor een half miljoen aan aandelen. Dan zou 0,35% €1.750 zijn. Maar je betaalt maximaal €1.600. Goed nieuws voor de miljonairs.",
+      "say": "Hoeveel? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. En er is een maximum per keer.",
       "visual": {
         "type": "table",
         "title": "2. Drie tarieven",
@@ -47,6 +47,32 @@
           }
         ],
         "note": "Maximum = per transactie · tarieven 2026"
+      }
+    },
+    {
+      "say": "Stel, je koopt voor een half miljoen aan aandelen. Aan 0,35% zou dat €1.750 zijn. Maar je betaalt maximaal €1.600. Goed nieuws voor de miljonairs.",
+      "visual": {
+        "type": "calc",
+        "title": "Er is een maximum",
+        "note": "Fictief voorbeeld · maximum per transactie bij 0,35%.",
+        "lines": [
+          {
+            "label": "Aankoop aandelen",
+            "value": "€500.000",
+            "cue": "half"
+          },
+          {
+            "label": "0,35% daarvan",
+            "value": "€1.750",
+            "cue": "€1.750"
+          },
+          {
+            "label": "Wat je echt betaalt",
+            "value": "€1.600",
+            "result": true,
+            "cue": "€1.600"
+          }
+        ]
       }
     },
     {

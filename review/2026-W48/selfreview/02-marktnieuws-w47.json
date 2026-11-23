@@ -1,0 +1,118 @@
+{
+ "id": "02-marktnieuws-w47",
+ "signalen": {
+  "duration": 62.9,
+  "scenes": [
+   {
+    "n": 0,
+    "type": "hook",
+    "sec": 6.9,
+    "woorden": 19,
+    "woorden_per_sec": 2.75,
+    "langste_zin": 9
+   },
+   {
+    "n": 1,
+    "type": "line",
+    "sec": 6.8,
+    "woorden": 18,
+    "woorden_per_sec": 2.63,
+    "langste_zin": 9
+   },
+   {
+    "n": 2,
+    "type": "point",
+    "sec": 10.7,
+    "woorden": 23,
+    "woorden_per_sec": 2.16,
+    "langste_zin": 8
+   },
+   {
+    "n": 3,
+    "type": "bars",
+    "sec": 11.9,
+    "woorden": 27,
+    "woorden_per_sec": 2.27,
+    "langste_zin": 9
+   },
+   {
+    "n": 4,
+    "type": "point",
+    "sec": 6.1,
+    "woorden": 17,
+    "woorden_per_sec": 2.77,
+    "langste_zin": 6
+   },
+   {
+    "n": 5,
+    "type": "point",
+    "sec": 12.1,
+    "woorden": 35,
+    "woorden_per_sec": 2.88,
+    "langste_zin": 10
+   },
+   {
+    "n": 6,
+    "type": "outro",
+    "sec": 5.8,
+    "woorden": 18,
+    "woorden_per_sec": 3.1,
+    "langste_zin": 7
+   }
+  ],
+  "zinnen": {
+   "aantal": 27,
+   "gemiddeld": 5.8,
+   "langer_dan_10": []
+  },
+  "hook": {
+   "eerste_zin": "De Nasdaq verloor vorige week 10%.",
+   "klaar_na_sec": 2.6
+  },
+  "lange_stiltes": [],
+  "ondertitels": {
+   "blokken": 63,
+   "langste": "beurswaakhond zijn boekhouding"
+  },
+  "aandachtspunten": []
+ },
+ "rubriek": {
+  "hook": {
+   "vraag": "Pakt de eerste 2-3 s? Herkenbaar, verrassend of grappig, en niet misleidend.",
+   "score": null,
+   "opmerking": ""
+  },
+  "eenvoud": {
+   "vraag": "Korte zinnen (max. ~10 woorden), gewone woorden, één idee per zin. Klinkt als praten, niet voorlezen.",
+   "score": null,
+   "opmerking": ""
+  },
+  "tempo": {
+   "vraag": "Geen stukken die slepen of te vol zitten; elke scène heeft een reden.",
+   "score": null,
+   "opmerking": ""
+  },
+  "humor": {
+   "vraag": "Minstens 1-2 knipogen die de uitleg helpen; niets geforceerd of kwetsend.",
+   "score": null,
+   "opmerking": ""
+  },
+  "info": {
+   "vraag": "Leer je echt iets? Klopt elk cijfer met de claims en bronnen?",
+   "score": null,
+   "opmerking": ""
+  },
+  "visueel": {
+   "vraag": "Tekst leesbaar, niets overlapt, grafiek/cijfers verschijnen op het juiste moment.",
+   "score": null,
+   "opmerking": ""
+  },
+  "regels": {
+   "vraag": "Geen advies of voorspelling, disclaimer op het einde, AI-vermelding in caption.",
+   "score": null,
+   "opmerking": ""
+  }
+ },
+ "ronde": 1,
+ "verbeteringen": []
+}

@@ -72,6 +72,25 @@ SSL_CERT_FILE=/root/.ccr/ca-bundle.crt python -m pipeline.build scripts/<week>
 ```
 Controleer per video één frame (bv. bij het rekenvoorbeeld) op overlap. Gefaalde checks oplossen en opnieuw bouwen.
 
+## 4b. Zelfreview (verplicht, vóór de video naar de Studio gaat)
+1. `python -m pipeline.selfreview scripts/<map>` maakt per video een contactsheet (`review/<map>/selfreview/<id>.png`)
+   en meetbare signalen (`<id>.json`: tempo per scène, zinnen > 10 woorden, hook-duur, stiltes, aandachtspunten).
+2. Bekijk de contactsheet (Read) en lees het script hardop "in je hoofd". Geef elke rubriek een score 1-5:
+   **hook, eenvoud, tempo, humor, info, visueel, regels** (vragen staan in het JSON-bestand).
+   Kijk ook naar `LESSEN.md`: zondigt de video tegen een les uit eerdere views?
+3. Is één score ≤ 3, of staat er een aandachtspunt dat echt telt? Verbeter het script (of de renderer), bouw opnieuw
+   en review opnieuw. Maximaal 3 rondes. Wees streng: liever één extra ronde dan een middelmatige video.
+4. Zet in het Studio-document `selfReview`: `{"rounds": n, "scores": {...}, "changes": ["wat je aanpaste"],
+   "verdict": "één zin: waarom deze versie goed genoeg is"}`.
+
+## 4c. Leren van de views (elke zaterdag, in de marktnieuwstaak)
+- De gebruiker vult per video `stats` in de Studio in (views, likes, comments, shares, saves, watchPct).
+- Lees alle video's met `stats`. Vergelijk: welke hooks, onderwerpen, lengtes, humor en dagtypes scoren beter?
+  Klopte je `trendScore`? Leg patronen pas vast als ze over meerdere video's terugkomen; zeg eerlijk als er te
+  weinig data is.
+- Schrijf `insights/latest` in de Studio: `{"period", "updatedAt", "summary", "lessons": [max. 6 korte lessen]}`
+  en werk `LESSEN.md` in de repo bij (zelfde lessen + datum). Elke dagelijkse run leest `LESSEN.md`.
+
 ## 5. Review en Studio
 - `review/<week>/` bevat review.md, video's, captions, bronnen en `studio/*.json`.
 - Upload elke mp4 als asset naar de Studio (Artifact publish, `url` = Studio, `asset: true`) en zet de

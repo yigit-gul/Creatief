@@ -4,12 +4,13 @@
  "title": "De beurstaks (TOB): wat betaal je bij elke transactie?",
  "validity": "Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, geen inkomstenbelasting: er is geen aanslagjaar)",
  "status": "klaar voor review",
- "durationSec": 65.2,
- "words": 161,
+ "durationSec": 65.1,
+ "words": 162,
  "script": [
   "Stel, je verkoopt je aandelen met verlies. Toch betaal je belasting. Raar? Ik leg het uit.",
   "Dat is de TOB. De taks op de beursverrichtingen. Je betaalt een klein stukje van het bedrag. Winst of verlies? Dat maakt niet uit.",
-  "Hoeveel? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. Er is ook een maximum per keer. Stel, je koopt voor een half miljoen aan aandelen. Dan zou 0,35% €1.750 zijn. Maar je betaalt maximaal €1.600. Goed nieuws voor de miljonairs.",
+  "Hoeveel? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. En er is een maximum per keer.",
+  "Stel, je koopt voor een half miljoen aan aandelen. Aan 0,35% zou dat €1.750 zijn. Maar je betaalt maximaal €1.600. Goed nieuws voor de miljonairs.",
   "Kijk, een voorbeeld. Je koopt aandelen voor €2.000. Aan 0,35% betaal je €7. Later verkoop je ze voor €2.000. Dan betaal je weer €7. Samen is dat €14.",
   "Wie regelt dat? Een Belgische broker doet het voor jou. Een buitenlandse broker niet altijd. Dan geef je het zelf aan. En je betaalt het zelf. Wanneer? Ten laatste de laatste werkdag van de tweede maand erna.",
   "Nu weet je waar dat kostje vandaan komt. Volg voor meer!"
@@ -135,12 +136,12 @@
   {
    "name": "Woordenaantal 150-190",
    "ok": true,
-   "info": "161 woorden"
+   "info": "162 woorden"
   },
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "65.2 s"
+   "info": "65.1 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
@@ -183,12 +184,5 @@
    "info": ""
   }
  ],
- "repoPath": "review/2026-W48/01-tob.mp4",
- "feedback": "Begin mag pittiger en aantrekllijker, nu is het zo nie vloeiend maak het vloeiender alsof hij sprekt met iemand enzo uitlegt. \"HE\" mag weg want ai leest dat niet",
- "feedbackAt": "2026-11-22T23:22:30.948Z",
- "trendScore": 8,
- "trendRank": 3,
- "trendReason": "Herkenbare tegenstrijdigheid in de hook ('Verlies gemaakt? Tóch belasting'). Specifiek Belgisch, dus minder concurrentie. Mensen bewaren dit soort uitleg graag.",
- "videoUrl": "/_blob/6a9d5097fdfd42e992770e0b1edb4337",
- "claudeReply": "Herschreven in korte, eenvoudige zinnen (max. ~10 woorden), zodat de stem minder AI klinkt."
+ "repoPath": "review/2026-W48/01-tob.mp4"
 }

@@ -4,11 +4,11 @@
  "title": "Waarom de Nasdaq de drama queen van de beurs is",
  "validity": "Algemene uitleg; weekcijfers 16-20 november 2026",
  "status": "klaar voor review",
- "durationSec": 60.9,
- "words": 167,
+ "durationSec": 61.5,
+ "words": 165,
  "script": [
   "De Nasdaq is die vriend op een feestje. Hij danst het wildst. Maar hij valt ook het hardst. Hoe komt dat?",
-  "Reden één: tech. Beleggers betalen niet alleen voor de winst van nu. Ze betalen ook voor de winst van later. Een beetje zoals bij een influencer die nog niet viraal is. Iedereen denkt: dat komt nog. Twijfelen ze? Dan gaat de koers snel omlaag.",
+  "Reden één: tech. Beleggers betalen niet alleen voor de winst van nu. Ze betalen ook voor de winst van later. Zoals bij een influencer. Nog niet viraal, maar bijna. Iedereen denkt: dat komt nog. Twijfelen ze? Dan gaat de koers snel omlaag.",
   "Reden twee: rente. Stel, je krijgt over tien jaar €100. Bij 2% rente is dat vandaag €82 waard. Bij 5% nog maar €61. Hogere rente maakt geld van later dus minder waard. En net dat geld van later zit in tech.",
   "Reden drie: een paar reuzen wegen heel zwaar. Vallen zij? Dan valt de hele index mee. Vorige week nog. De Nasdaq ging 10% omlaag. De Dow 8%.",
   "Dat schommelen heeft een naam: volatiliteit. En het werkt ook omhoog. In goede jaren stijgt de Nasdaq vaak harder. Dus de Nasdaq is niet gek. Gewoon gevoelig. Voorspellen doen we niet. Volg voor meer!"
@@ -89,12 +89,12 @@
   {
    "name": "Woordenaantal 150-190",
    "ok": true,
-   "info": "167 woorden"
+   "info": "165 woorden"
   },
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "60.9 s"
+   "info": "61.5 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",

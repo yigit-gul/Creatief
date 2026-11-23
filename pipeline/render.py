@@ -60,7 +60,8 @@ def wrap(draw, text, fnt, max_w):
 def fit_font(draw, text, weight, size, max_w, max_lines):
     while size > 30:
         f = font(weight, size)
-        if len(wrap(draw, text, f, max_w)) <= max_lines:
+        widest = max((draw.textlength(w, font=f) for w in text.split()), default=0)
+        if len(wrap(draw, text, f, max_w)) <= max_lines and widest <= max_w:
             return f
         size -= 4
     return font(weight, size)
@@ -79,6 +80,32 @@ def background():
     g.ellipse((500, 1300, 1500, 2300), fill=hexrgb(C.COLORS["yellow"], 22))
     glow = glow.filter(ImageFilter.GaussianBlur(160))
     return Image.alpha_composite(img, glow)
+
+
+PAD = 140  # extra rand zodat de achtergrond traag kan bewegen
+
+
+@lru_cache(None)
+def background_big():
+    """Grotere versie van de achtergrond met lichtvlekken; per frame verschuift de uitsnede een beetje."""
+    BW, BH = W + 2 * PAD, H + 2 * PAD
+    top, bot = np.array(COL["bg_top"][:3]), np.array(COL["bg_bottom"][:3])
+    t = np.linspace(0, 1, BH)[:, None, None]
+    arr = (top * (1 - t) + bot * t).repeat(BW, axis=1).astype(np.uint8)
+    img = Image.fromarray(arr, "RGB").convert("RGBA")
+    glow = Image.new("RGBA", (BW, BH), (0, 0, 0, 0))
+    g = ImageDraw.Draw(glow)
+    g.ellipse((-160, -60, 840, 940), fill=hexrgb(C.COLORS["mint"], 44))
+    g.ellipse((640, 1440, 1640, 2440), fill=hexrgb(C.COLORS["yellow"], 26))
+    glow = glow.filter(ImageFilter.GaussianBlur(160))
+    return Image.alpha_composite(img, glow)
+
+
+def moving_background(t):
+    """Trage, rustige beweging (geen stilstaand beeld, zonder af te leiden)."""
+    ox = PAD + int(PAD * 0.8 * math.sin(2 * math.pi * t / 13))
+    oy = PAD + int(PAD * 0.6 * math.cos(2 * math.pi * t / 17))
+    return background_big().crop((ox, oy, ox + W, oy + H))
 
 
 def brand_bar(d):
@@ -372,6 +399,24 @@ def progress_bar(d, frac):
     d.rectangle((0, y, int(W * frac), H), fill=COL["mint"])
 
 
+def render_layer(scene, t_in_scene, dur):
+    """Alleen de inhoud (tekst, grafieken), transparant; wordt gecachet zolang er niets beweegt."""
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    brand_bar(d)
+    v = scene["visual"]
+    DRAW[v["type"]](d, v, t_in_scene, dur)
+    return layer
+
+
+def compose(layer, t, frac):
+    arr = np.asarray(Image.alpha_composite(moving_background(t), layer).convert("RGB")).copy()
+    y = H - 14
+    arr[y:, :] = COL["card"][:3]
+    arr[y:, : int(W * frac)] = COL["mint"][:3]
+    return arr.tobytes()
+
+
 def render_frame(scene, t_in_scene, dur, frac):
     img = background().copy()
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -471,10 +516,10 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
         local = t - s["start"]
         # statische frames hergebruiken zodra de animaties klaar zijn
         anim_end = max([2.0] + scenes[idx]["visual"].get("at", [])) + 1.2
-        key = (idx, round(local * FPS) if local < anim_end else "static", fi * 200 // n_frames)
+        key = (idx, round(local * FPS) if local < anim_end else "static")
         if key not in cache:
-            cache = {key: np.asarray(render_frame(scenes[idx], local, dur, fi / n_frames)).tobytes()}
-        proc.stdin.write(cache[key])
+            cache = {key: render_layer(scenes[idx], local, dur)}
+        proc.stdin.write(compose(cache[key], t, fi / n_frames))
     proc.stdin.close()
     if proc.wait() != 0:
         raise RuntimeError("ffmpeg faalde")

@@ -3,7 +3,7 @@
  "id": "02-marktnieuws-w47",
  "title": "Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026)",
  "validity": "Marktweek 16-20 november 2026, slotkoersen (geen fiscaal aanslagjaar van toepassing)",
- "status": "ingepland",
+ "status": "klaar voor review",
  "durationSec": 62.9,
  "words": 157,
  "script": [
@@ -177,10 +177,5 @@
    "info": ""
   }
  ],
- "repoPath": "review/2026-W48/02-marktnieuws-w47.mp4",
- "trendScore": 9,
- "trendRank": 1,
- "trendReason": "Supertijdsgebonden: slechtste beursweek sinds 2020 en iedereen heeft het erover. Grote cijfers (−10%) in de hook. Maar het nieuws veroudert snel, dus zo vroeg mogelijk posten.",
- "videoUrl": "/_blob/f9c4b81bef224decb0e3fd42ea429d36",
- "claudeReply": "Herschreven in korte, eenvoudige zinnen (max. ~10 woorden), zodat de stem minder AI klinkt. Let op: deze video staat op 'ingepland'. Vervang in je planner de oude versie door deze."
+ "repoPath": "review/2026-W48/02-marktnieuws-w47.mp4"
 }

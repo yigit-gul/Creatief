@@ -1,0 +1,102 @@
+{
+ "id": "03-nasdaq-wat-is-het",
+ "signalen": {
+  "duration": 61.8,
+  "scenes": [
+   {
+    "n": 0,
+    "type": "hook",
+    "sec": 6.3,
+    "woorden": 17,
+    "woorden_per_sec": 2.7,
+    "langste_zin": 4
+   },
+   {
+    "n": 1,
+    "type": "point",
+    "sec": 12.9,
+    "woorden": 35,
+    "woorden_per_sec": 2.72,
+    "langste_zin": 9
+   },
+   {
+    "n": 2,
+    "type": "table",
+    "sec": 14.0,
+    "woorden": 36,
+    "woorden_per_sec": 2.57,
+    "langste_zin": 8
+   },
+   {
+    "n": 3,
+    "type": "calc",
+    "sec": 12.8,
+    "woorden": 33,
+    "woorden_per_sec": 2.57,
+    "langste_zin": 9
+   },
+   {
+    "n": 4,
+    "type": "outro",
+    "sec": 13.3,
+    "woorden": 34,
+    "woorden_per_sec": 2.56,
+    "langste_zin": 10
+   }
+  ],
+  "zinnen": {
+   "aantal": 32,
+   "gemiddeld": 4.8,
+   "langer_dan_10": []
+  },
+  "hook": {
+   "eerste_zin": "De Nasdaq.",
+   "klaar_na_sec": 0.6
+  },
+  "lange_stiltes": [],
+  "ondertitels": {
+   "blokken": 65,
+   "langste": "Geen tweedehands jeans"
+  },
+  "aandachtspunten": []
+ },
+ "rubriek": {
+  "hook": {
+   "vraag": "Pakt de eerste 2-3 s? Herkenbaar, verrassend of grappig, en niet misleidend.",
+   "score": null,
+   "opmerking": ""
+  },
+  "eenvoud": {
+   "vraag": "Korte zinnen (max. ~10 woorden), gewone woorden, één idee per zin. Klinkt als praten, niet voorlezen.",
+   "score": null,
+   "opmerking": ""
+  },
+  "tempo": {
+   "vraag": "Geen stukken die slepen of te vol zitten; elke scène heeft een reden.",
+   "score": null,
+   "opmerking": ""
+  },
+  "humor": {
+   "vraag": "Minstens 1-2 knipogen die de uitleg helpen; niets geforceerd of kwetsend.",
+   "score": null,
+   "opmerking": ""
+  },
+  "info": {
+   "vraag": "Leer je echt iets? Klopt elk cijfer met de claims en bronnen?",
+   "score": null,
+   "opmerking": ""
+  },
+  "visueel": {
+   "vraag": "Tekst leesbaar, niets overlapt, grafiek/cijfers verschijnen op het juiste moment.",
+   "score": null,
+   "opmerking": ""
+  },
+  "regels": {
+   "vraag": "Geen advies of voorspelling, disclaimer op het einde, AI-vermelding in caption.",
+   "score": null,
+   "opmerking": ""
+  }
+ },
+ "ronde": 1,
+ "verbeteringen": []
+}

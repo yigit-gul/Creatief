@@ -4,7 +4,7 @@
   "validity": "Historische cijfers Nasdaq Composite (slotkoersen, prijsindex zonder dividenden)",
   "scenes": [
     {
-      "say": "In 2000 verloor de Nasdaq bijna 80%. Daarna duurde het 15 jaar om te herstellen. Welkom bij de dotcom-bubbel.",
+      "say": "In 2000 crashte de Nasdaq. Bijna 80% weg. Daarna duurde het 15 jaar om te herstellen. Welkom bij de dotcom-bubbel.",
       "visual": {
         "type": "hook",
         "kicker": "Nasdaq-geschiedenis",
@@ -53,7 +53,7 @@
       }
     },
     {
-      "say": "Stel, iemand stak €1.000 in de index op de top. In oktober 2002 was dat nog €221. Oef. Dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over. Die werden later de reuzen die je nu elke dag gebruikt.",
+      "say": "Stel, iemand stak €1.000 in de index op de top. In oktober 2002 was dat nog €221. Oef. Dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over. Die werden later reuzen. Je gebruikt ze nu elke dag.",
       "visual": {
         "type": "calc",
         "title": "3. Wat betekent dat?",

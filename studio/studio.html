@@ -176,6 +176,19 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
 .trend.low { background: var(--surface-2); color: var(--muted) }
 .card .wk { font: 600 11px var(--font-mono); color: var(--muted) }
 .trend-box { margin: 0; padding: 10px 12px; border-radius: 10px; background: var(--bg); border: 1px solid var(--line); font-size: 13.5px }
+
+/* ---- Zelfreview, prestaties, lessen ---- */
+.scores { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 6px }
+.score { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font-size: 12.5px; display: flex; justify-content: space-between; gap: 6px }
+.score b { font-variant-numeric: tabular-nums }
+.score.lo b { color: var(--warn) } .score.hi b { color: var(--ok) }
+.stats-form { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px }
+.stats-form label { display: grid; gap: 3px; font-size: 12px; color: var(--muted) }
+.stats-form input { font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 8px; width: 100%; min-width: 0; font-variant-numeric: tabular-nums }
+.lessons ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px }
+.lessons p { margin: 0 }
+.views { font: 700 12px var(--font-mono); color: var(--fg) }
+@media (max-width: 520px) { .stats-form { grid-template-columns: repeat(2, minmax(0, 1fr)) } }
 </style>
 
 <div class="wrap">
@@ -246,6 +259,7 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
 
   <div class="main">
     <section aria-labelledby="vid-title">
+      <div class="panel lessons" id="lessons" hidden style="margin-bottom:16px"></div>
       <h2 id="vid-title">Video's</h2>
       <div class="tabs" role="tablist" id="tabs"></div>
       <div class="grid" id="grid"></div>
@@ -275,7 +289,7 @@ function render() {
   const weeks = [...new Set([...Object.keys(runs), ...videos.map(v => v.week)])].sort().reverse();
   if (!week || !weeks.includes(week)) week = weeks[0] || null;
   const sel = $("#week"); sel.replaceChildren(...weeks.map(w => el("option", { value: w, textContent: w, selected: w === week })));
-  renderVoices(); renderRun(); renderFlow(); renderGrid(); renderDetail();
+  renderVoices(); renderLessons(); renderRun(); renderFlow(); renderGrid(); renderDetail();
 }
 
 // ---------- Overzicht ----------
@@ -406,6 +420,48 @@ function renderVoices() {
   for (const [i, n] of [...$("#voices").children].entries()) n.dataset.chosen = String(voiceChoice === voices[i].letter);
 }
 
+// ---------- Lessen uit de views ----------
+let insights = null;
+function renderLessons() {
+  const box = $("#lessons");
+  if (!insights) { box.hidden = true; return; }
+  box.hidden = false;
+  box.replaceChildren(
+    el("h2", { textContent: "Wat we leren uit je views", style: "margin:0 0 8px" }),
+    el("p", { className: "hint", textContent: (insights.period ? insights.period + " · " : "") + (insights.updatedAt ? "bijgewerkt " + fmtTime(insights.updatedAt) : "") }),
+    insights.summary ? el("p", { textContent: insights.summary, style: "margin-top:6px" }) : null,
+    insights.lessons?.length ? el("ul", {}, insights.lessons.map(x => el("li", { textContent: x }))) : null);
+}
+const STAT_FIELDS = [["views", "Views"], ["likes", "Likes"], ["comments", "Reacties"], ["shares", "Gedeeld"], ["saves", "Bewaard"], ["watchPct", "% volledig bekeken"]];
+function statsSection(v) {
+  const st = v.stats || {};
+  const inputs = STAT_FIELDS.map(([k, label]) => {
+    const inp = el("input", { id: `st-${k}-${v._key}`, type: "number", min: "0", step: "any", inputMode: "numeric", value: st[k] ?? "", disabled: !canWrite });
+    return [k, el("label", { htmlFor: inp.id }, [label, inp]), inp];
+  });
+  const btn = el("button", { className: "primary", textContent: "Cijfers bewaren", disabled: !canWrite });
+  const msg = el("span", { className: "hint", role: "status", textContent: st.updatedAt ? `Laatst bijgewerkt ${fmtTime(st.updatedAt)}` : "Vul in wat TikTok toont. Claude analyseert dit elke week." });
+  btn.addEventListener("click", async () => {
+    const stats = { updatedAt: new Date().toISOString() };
+    for (const [k, , inp] of inputs) if (inp.value !== "") stats[k] = Number(inp.value);
+    btn.disabled = true;
+    const ok = await save(v, { stats });
+    btn.disabled = !canWrite;
+    msg.textContent = ok ? `✓ Bewaard om ${hhmm(stats.updatedAt)}` : "Bewaren mislukt. Probeer opnieuw.";
+  });
+  return el("div", { className: "sec" }, [el("span", { textContent: "Prestaties op TikTok" }),
+    el("div", { className: "stats-form" }, inputs.map(x => x[1])), el("div", { className: "row" }, [btn, msg])]);
+}
+function selfReviewSection(v) {
+  const r = v.selfReview;
+  if (!r) return null;
+  const items = Object.entries(r.scores || {});
+  return el("div", { className: "sec" }, [el("span", { textContent: `Zelfreview door Claude${r.rounds ? " · " + r.rounds + " ronde(s)" : ""}` }),
+    el("div", { className: "scores" }, items.map(([k, sc]) => el("div", { className: "score" + (sc <= 3 ? " lo" : sc >= 5 ? " hi" : "") }, [el("span", { textContent: k }), el("b", { textContent: sc + "/5" })]))),
+    r.changes?.length ? el("ul", { className: "plain" }, r.changes.map(c => el("li", {}, [el("span", { textContent: "✎" }), el("div", { textContent: c })]))) : null,
+    r.verdict ? el("p", { className: "hint", textContent: r.verdict, style: "margin:0" }) : null]);
+}
+
 function renderRun() {
   const r = runs[week];
   if (!r) {
@@ -474,6 +530,7 @@ function renderGrid() {
         el("span", { className: "pill " + statusClass(v.status), textContent: v.status || "in productie" }),
         warns ? el("span", { className: "pill warn", textContent: `⚠️ ${warns}` }) : null,
         v.durationSec ? el("span", { className: "pill num", textContent: `${Math.round(v.durationSec)} s` }) : null,
+        v.stats?.views != null ? el("span", { className: "views", textContent: `👁 ${Number(v.stats.views).toLocaleString("nl-BE")}` }) : null,
       ])])]);
     b.addEventListener("click", () => { selected = v._key; renderGrid(); renderDetail(); });
     return b;
@@ -515,6 +572,8 @@ function renderDetailInner() {
   if (v.validity) kids.push(el("p", { className: "hint", textContent: v.validity, style: "margin:0" }));
   if (v.trendScore != null) kids.push(el("div", { className: "sec" }, [el("span", { textContent: "Trendkans volgens Claude" }),
     el("p", { className: "trend-box" }, [trendEl(v), document.createTextNode(" " + (v.trendReason || ""))])]));
+  { const sr = selfReviewSection(v); if (sr) kids.push(sr); }
+  if (v.videoUrl) kids.push(statsSection(v));
 
   // status
   const pick = el("div", { className: "status-pick" }, STATUSES.map(([s]) => {
@@ -611,6 +670,7 @@ render();
   const done = (s) => { if (!s.metadata.fromCache) { clearTimeout(timer); showBanner(""); } };
   db.collection("runs").onSnapshot((s) => { runs = Object.fromEntries(s.docs.map(d => [d.id, { ...d.data(), week: d.data().week || d.id }])); done(s); render(); },
     () => { clearTimeout(timer); showBanner("De pipeline-gegevens konden niet geladen worden."); });
+  db.doc("insights/latest").onSnapshot((d) => { insights = d.exists ? d.data() : null; renderLessons(); }, () => {});
   db.collection("voices").onSnapshot((s) => { voices = s.docs.map(d => d.data()); renderVoices(); }, () => {});
   db.doc("settings/voice").onSnapshot((d) => { voiceChoice = d.exists ? d.data().choice : null; renderVoices(); }, () => {});
   db.collection("videos").onSnapshot((s) => { videos = s.docs.map(d => ({ ...d.data(), _key: d.id })); done(s); render(); },
