@@ -218,12 +218,16 @@ def draw_calc(d, v, t, dur):
         a = ease((t - starts[i]) / 0.35)
         if a > 0:
             is_res = ln.get("result")
-            fl = font("SemiBold", 50)
             fv = font("Black", 80 if is_res else 70)
             colv = COL["coral"] if is_res else COL["yellow"] if ln.get("hl") else COL["text"]
-            d.text((C.SAFE_LEFT + pad, ly + 44), ln["label"], font=fl, fill=alpha(COL["muted"], a))
             val = ln["value"]
             vw = d.textlength(val, font=fv)
+            room = CONTENT_W - 2 * pad - vw - 28  # label mag nooit onder het bedrag lopen
+            size = 50
+            while size > 30 and d.textlength(ln["label"], font=font("SemiBold", size)) > room:
+                size -= 2
+            fl = font("SemiBold", size)
+            d.text((C.SAFE_LEFT + pad, ly + 44 + (50 - size) // 2), ln["label"], font=fl, fill=alpha(COL["muted"], a))
             d.text((C.SAFE_LEFT + CONTENT_W - pad - vw, ly + 30 - (8 if is_res else 0)), val, font=fv,
                    fill=alpha(colv, a))
             if i < len(lines) - 1:

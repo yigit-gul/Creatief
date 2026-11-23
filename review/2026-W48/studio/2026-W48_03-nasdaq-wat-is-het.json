@@ -1,0 +1,163 @@
+{
+ "week": "2026-W48",
+ "id": "03-nasdaq-wat-is-het",
+ "title": "Nasdaq 101: beurs, index of rapper?",
+ "validity": "Algemene uitleg, stand november 2026 (geen aanslagjaar van toepassing)",
+ "status": "klaar voor review",
+ "durationSec": 63.2,
+ "words": 160,
+ "script": [
+  "De Nasdaq. Iedereen roept het, niemand legt het uit. Is het een beurs? Een index? Een rapper?",
+  "Eerst: Nasdaq is een beurs in New York. Een marktplaats voor aandelen. Zoals Vinted, maar dan voor stukjes van bedrijven in plaats van tweedehands jeans. En de naam? Een afkorting van een Amerikaanse vereniging van effectenhandelaars. Niet sexy, wel waar.",
+  "Maar als het nieuws zegt 'de Nasdaq zakt', gaat het meestal over de index. De Nasdaq Composite volgt meer dan 3.000 bedrijven. En de Nasdaq-100? Da's de VIP-lounge: de 100 grootste, zonder banken.",
+  "En nu het belangrijkste: groot telt zwaarder. Fictief voorbeeld. Bedrijf A is 1.000 miljard waard, bedrijf B 10 miljard. Stijgen ze allebei 1%? Dan duwt A de index honderd keer harder omhoog.",
+  "Daarom kan de Nasdaq dalen terwijl de meeste bedrijven erin stijgen. Als de giganten zakken, zakt de hele index mee. Dus: beurs én index, en de groten hebben het hoogste woord. Zoals in elke groepschat. Volg voor meer!"
+ ],
+ "caption": "Nasdaq: is het een beurs, een index of een rapper? 🎤 In minder dan een minuut weet je het, en waarom een paar giganten de hele index sturen.\n\nAlgemene info, geen beleggingsadvies.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
+ "hashtags": [
+  "#nasdaq",
+  "#beurs",
+  "#geldtips",
+  "#leren",
+  "#belgie"
+ ],
+ "claims": [
+  {
+   "claim": "De Nasdaq Composite bestaat sinds 5 februari 1971 en volgt meer dan 3.000 bedrijven",
+   "status": "ok",
+   "sources": [
+    {
+     "title": "Nasdaq – Nasdaq Composite: benchmark for the 21st century",
+     "url": "https://www.nasdaq.com/articles/nasdaq-composite-benchmark-for-the-21st-century",
+     "date": "2026-11-23"
+    },
+    {
+     "title": "Nasdaq – COMP Research (methodologie Composite)",
+     "url": "https://indexes.nasdaqomx.com/docs/COMP_Research.pdf",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "De Composite is gewogen naar beurswaarde (marktkapitalisatie)",
+   "status": "ok",
+   "sources": [
+    {
+     "title": "Nasdaq – COMP Research (methodologie Composite)",
+     "url": "https://indexes.nasdaqomx.com/docs/COMP_Research.pdf",
+     "date": "2026-11-23"
+    },
+    {
+     "title": "Nasdaq – Nasdaq Composite: benchmark for the 21st century",
+     "url": "https://www.nasdaq.com/articles/nasdaq-composite-benchmark-for-the-21st-century",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "De Nasdaq-100 bevat de 100 grootste niet-financiële bedrijven op de Nasdaq",
+   "status": "ok",
+   "sources": [
+    {
+     "title": "Nasdaq – NDX White Paper (Nasdaq-100 methodologie)",
+     "url": "https://indexes.nasdaqomx.com/docs/NDX%20White%20Paper%20Update%20II%202021-03%205005%20FINAL.pdf",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Rekenvoorbeeld A/B (1.000 mld vs 10 mld, +1%)",
+   "status": "ok",
+   "note": "Fictief, enkel ter illustratie van weging. Klopt rekenkundig: 10 mld vs 0,1 mld = 100×.",
+   "sources": [
+    {
+     "title": "Nasdaq – COMP Research (methodologie Composite)",
+     "url": "https://indexes.nasdaqomx.com/docs/COMP_Research.pdf",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Nasdaq is een afkorting (National Association of Securities Dealers Automated Quotations) en zit in New York",
+   "status": "check",
+   "note": "Algemeen bekend, maar in deze run niet tegen de Nasdaq-site zelf gelegd.",
+   "sources": [
+    {
+     "title": "Wikipedia – Nasdaq",
+     "url": "https://en.wikipedia.org/wiki/Nasdaq",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "De index kan dalen terwijl de meeste bedrijven stijgen (gevolg van weging naar beurswaarde)",
+   "status": "ok",
+   "note": "Logisch gevolg van de weging; geen cijferclaim.",
+   "sources": [
+    {
+     "title": "Nasdaq – COMP Research (methodologie Composite)",
+     "url": "https://indexes.nasdaqomx.com/docs/COMP_Research.pdf",
+     "date": "2026-11-23"
+    }
+   ]
+  }
+ ],
+ "warnings": [
+  "Uitspraak: Andrew spreekt Nederlands. Luister of de getallen juist klinken.",
+  "Humor: 'Vinted' en 'rapper' zijn knipoogjes, geen merkpromotie. Even checken of je dat oké vindt."
+ ],
+ "checks": [
+  {
+   "name": "Woordenaantal 150-190",
+   "ok": true,
+   "info": "160 woorden"
+  },
+  {
+   "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
+   "ok": true,
+   "info": "63.2 s"
+  },
+  {
+   "name": "Hook kort (≤ 22 woorden)",
+   "ok": true,
+   "info": "17 woorden"
+  },
+  {
+   "name": "Laatste scène is outro met disclaimer",
+   "ok": true,
+   "info": "Algemene info, geen persoonlijk advies."
+  },
+  {
+   "name": "Call to action ('volg')",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "AI-vermelding in caption",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "3-5 hashtags",
+   "ok": true,
+   "info": "5"
+  },
+  {
+   "name": "Geen advies-/clickbaittaal (automatische scan)",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "Geen 'hè' in de tekst",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "Elke claim heeft een bron",
+   "ok": true,
+   "info": ""
+  }
+ ],
+ "repoPath": "review/2026-W48/03-nasdaq-wat-is-het.mp4",
+ "videoUrl": "/_blob/ef048ca9cb6e9a3be5a5bbea4f4c7566"
+}

@@ -47,7 +47,7 @@ def flowing(text: str) -> str:
 
 async def _synth(text: str, out_mp3: Path):
     spoken, mapping = split_pronunciation(text)
-    spoken = flowing(spoken)
+    spoken = flowing(spoken).replace("&", " en ")  # "&" breekt de spraakdienst (bv. S&P -> "S en P")
     proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
     com = edge_tts.Communicate(
         spoken, config.VOICE, rate=config.VOICE_RATE, pitch=config.VOICE_PITCH,

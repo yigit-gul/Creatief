@@ -18,3 +18,5 @@ Geldigheid: Tarieven voor beurstransacties in 2026 (TOB is een transactietaks, g
   - [Test-Aankoop – Beurstaks op ETF's](https://www.test-aankoop.be/invest/beleggen/fiscaliteit-and-rechten/dossiers/beurstaks-tob/beurstaks-etf-tob-belgie) — geraadpleegd 2026-11-22
 - ✅ **Buitenlandse rekening zonder inhouding: zelf aangeven en betalen, uiterlijk de laatste werkdag van de 2de maand na de transactie**
   - [Wikifin (FSMA) – Je beleggingen in het buitenland: fiscale impact](https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/je-roerend-inkomen/je-beleggingen-het-buitenland) — geraadpleegd 2026-11-22
+- ✅ **Rekenvoorbeeld maximum: €500.000 × 0,35% = €1.750, begrensd op €1.600** — _Eigen berekening met het maximum van Wikifin._
+  - [Wikifin (FSMA) – De belastingen op je Belgische beleggingen](https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/je-roerend-inkomen/de-belastingen-op-je-belgische) — geraadpleegd 2026-11-22

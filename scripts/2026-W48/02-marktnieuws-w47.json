@@ -100,6 +100,15 @@
       }
     },
     {
+      "say": "En wat betekent dat? De S&P 500 en de Dow zitten nu in een correctie. Dat wil zeggen: minstens 10% onder hun top. En de Nasdaq staat zelfs lager dan begin 2026. Alle winst van dit jaar: foetsie.",
+      "visual": {
+        "type": "point",
+        "n": 4,
+        "head": "Correctie = *10%* onder de top",
+        "body": "S&P 500 en Dow in correctie. Nasdaq onder zijn stand van begin 2026."
+      }
+    },
+    {
       "say": "Wat er nu komt, weet niemand. Voorspellen doen we hier niet. Volg voor het marktnieuws van volgende week!",
       "visual": {
         "type": "outro",
@@ -191,6 +200,23 @@
           "title": "Yahoo Finance – live: Nvidia worst day since DeepSeek after Reuters report",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html",
           "date": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "claim": "S&P 500 en Dow in correctie; Nasdaq negatief voor 2026 (na 20/11)",
+      "status": "ok",
+      "note": "Correctie = daling van minstens 10% ten opzichte van de top.",
+      "sources": [
+        {
+          "title": "CNBC – S&P 500 and Dow close in correction; Nasdaq erases 2026 gain",
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+          "date": "2026-11-23"
+        },
+        {
+          "title": "Yahoo Finance – Major indexes wipe out 2026 gains",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-plunge-131303598.html",
+          "date": "2026-11-23"
         }
       ]
     }

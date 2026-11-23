@@ -1,0 +1,142 @@
+{
+ "week": "2026-W48",
+ "id": "04-nasdaq-waarom-schommelt",
+ "title": "Waarom de Nasdaq de drama queen van de beurs is",
+ "validity": "Algemene uitleg; weekcijfers 16-20 november 2026",
+ "status": "klaar voor review",
+ "durationSec": 61.2,
+ "words": 163,
+ "script": [
+  "De Nasdaq is die vriend die op een feestje het wildst danst. En ook het hardst valt. Waarom eigenlijk?",
+  "Reden één: veel tech. Die bedrijven worden vaak gewaardeerd op wat ze later misschien gaan verdienen. Een beetje zoals een influencer die nog niet viraal is, maar iedereen gelooft dat het eraan komt. Verandert die verwachting? Dan schiet de koers alle kanten op.",
+  "Reden twee: rente. Stel: je krijgt over tien jaar €100. Bij 2% rente is dat vandaag zo'n €82 waard. Bij 5% nog maar €61. En net dat geld van later zit in veel techkoersen.",
+  "Reden drie: een paar giganten wegen zwaar. Struikelen zij, dan gaat de hele index mee onderuit. Vorige week nog: Nasdaq min 10%, de Dow min 8%.",
+  "Dat schommelen heeft een naam: volatiliteit. En het werkt in twee richtingen: in sterke jaren stijgt de Nasdaq vaak ook harder dan de rest. Dus nee, de Nasdaq is niet gek. Gewoon gevoelig. Voorspellen doen we hier niet. Volg voor meer!"
+ ],
+ "caption": "Waarom gaat de Nasdaq zoveel harder op en neer dan andere indexen? Tech, rente en een paar giganten 🎢\n\nAlgemene info, geen beleggingsadvies, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
+ "hashtags": [
+  "#nasdaq",
+  "#beurs",
+  "#rente",
+  "#geldtips",
+  "#belgie"
+ ],
+ "claims": [
+  {
+   "claim": "Rekenvoorbeeld rente: €100 over 10 jaar = €82 bij 2% en €61 bij 5% (100/1,02^10 = 82,03; 100/1,05^10 = 61,39)",
+   "status": "ok",
+   "note": "Fictief, eigen berekening (verdisconteren).",
+   "sources": [
+    {
+     "title": "Wikifin – Sparen en beleggen (algemene achtergrond; berekening zelf gemaakt)",
+     "url": "https://www.wikifin.be/nl/sparen-en-beleggen",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Nasdaq is gewogen naar beurswaarde, dus grote bedrijven wegen zwaarder",
+   "status": "ok",
+   "sources": [
+    {
+     "title": "Nasdaq – COMP Research (methodologie Composite)",
+     "url": "https://indexes.nasdaqomx.com/docs/COMP_Research.pdf",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Week 16-20 nov 2026: Nasdaq −10,02%, S&P 500 −8,61%, Dow −8,02%",
+   "status": "ok",
+   "note": "Berekend uit slotkoersen.",
+   "sources": [
+    {
+     "title": "Yahoo Finance – ^IXIC, ^GSPC, ^DJI dagkoersen",
+     "url": "https://finance.yahoo.com/quote/%5EIXIC/history/",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Techaandelen worden sterk gewaardeerd op verwachte toekomstige winst en zijn daardoor gevoeliger voor rente",
+   "status": "check",
+   "note": "Algemeen aanvaard principe (groeiaandelen, verdisconteren), maar in deze run niet tegen een officiële Belgische bron gelegd. Formulering is bewust voorzichtig ('vaak').",
+   "sources": [
+    {
+     "title": "Nasdaq – COMP Research (methodologie Composite)",
+     "url": "https://indexes.nasdaqomx.com/docs/COMP_Research.pdf",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "De Nasdaq stijgt in sterke jaren vaak harder dan andere indexen (hogere volatiliteit in beide richtingen)",
+   "status": "check",
+   "note": "Algemene vaststelling; bewust voorzichtig geformuleerd ('vaak'). Geen cijfer genoemd.",
+   "sources": [
+    {
+     "title": "Nasdaq – Nasdaq Composite: benchmark for the 21st century",
+     "url": "https://www.nasdaq.com/articles/nasdaq-composite-benchmark-for-the-21st-century",
+     "date": "2026-11-23"
+    }
+   ]
+  }
+ ],
+ "warnings": [
+  "Uitspraak: Andrew spreekt Nederlands. Luister of de getallen juist klinken."
+ ],
+ "checks": [
+  {
+   "name": "Woordenaantal 150-190",
+   "ok": true,
+   "info": "163 woorden"
+  },
+  {
+   "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
+   "ok": true,
+   "info": "61.2 s"
+  },
+  {
+   "name": "Hook kort (≤ 22 woorden)",
+   "ok": true,
+   "info": "19 woorden"
+  },
+  {
+   "name": "Laatste scène is outro met disclaimer",
+   "ok": true,
+   "info": "Algemene info, geen persoonlijk advies."
+  },
+  {
+   "name": "Call to action ('volg')",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "AI-vermelding in caption",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "3-5 hashtags",
+   "ok": true,
+   "info": "5"
+  },
+  {
+   "name": "Geen advies-/clickbaittaal (automatische scan)",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "Geen 'hè' in de tekst",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "Elke claim heeft een bron",
+   "ok": true,
+   "info": ""
+  }
+ ],
+ "repoPath": "review/2026-W48/04-nasdaq-waarom-schommelt.mp4",
+ "videoUrl": "/_blob/ee8a9093b672d0c539f906e7f6738e76"
+}

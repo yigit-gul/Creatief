@@ -115,21 +115,61 @@ Dialogue: 0,0:00:40.66,0:00:40.97,Sub,,0,0,0,,{\an5\pos(505,1440)}net {\c&H003FD
 Dialogue: 0,0:00:40.97,0:00:41.11,Sub,,0,0,0,,{\an5\pos(505,1440)}net winst {\c&H003FD2FF}op{\c}
 Dialogue: 0,0:00:41.11,0:00:41.51,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}AI{\c} -aandelen
 Dialogue: 0,0:00:41.51,0:00:42.32,Sub,,0,0,0,,{\an5\pos(505,1440)}AI {\c&H003FD2FF}-aandelen{\c}
-Dialogue: 0,0:00:42.32,0:00:42.44,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Wat{\c} er nu
-Dialogue: 0,0:00:42.44,0:00:42.54,Sub,,0,0,0,,{\an5\pos(505,1440)}Wat {\c&H003FD2FF}er{\c} nu
-Dialogue: 0,0:00:42.54,0:00:42.71,Sub,,0,0,0,,{\an5\pos(505,1440)}Wat er {\c&H003FD2FF}nu{\c}
-Dialogue: 0,0:00:42.71,0:00:43.32,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}komt{\c} weet niemand
-Dialogue: 0,0:00:43.32,0:00:43.61,Sub,,0,0,0,,{\an5\pos(505,1440)}komt {\c&H003FD2FF}weet{\c} niemand
-Dialogue: 0,0:00:43.61,0:00:44.41,Sub,,0,0,0,,{\an5\pos(505,1440)}komt weet {\c&H003FD2FF}niemand{\c}
-Dialogue: 0,0:00:44.41,0:00:44.92,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Voorspellen{\c} doen we
-Dialogue: 0,0:00:44.92,0:00:45.12,Sub,,0,0,0,,{\an5\pos(505,1440)}Voorspellen {\c&H003FD2FF}doen{\c} we
-Dialogue: 0,0:00:45.12,0:00:45.20,Sub,,0,0,0,,{\an5\pos(505,1440)}Voorspellen doen {\c&H003FD2FF}we{\c}
-Dialogue: 0,0:00:45.20,0:00:45.39,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}hier{\c} niet
-Dialogue: 0,0:00:45.39,0:00:46.07,Sub,,0,0,0,,{\an5\pos(505,1440)}hier {\c&H003FD2FF}niet{\c}
-Dialogue: 0,0:00:46.07,0:00:46.26,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Volg{\c} voor het
-Dialogue: 0,0:00:46.26,0:00:46.38,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg {\c&H003FD2FF}voor{\c} het
-Dialogue: 0,0:00:46.38,0:00:46.45,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg voor {\c&H003FD2FF}het{\c}
-Dialogue: 0,0:00:46.45,0:00:46.97,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}marktnieuws{\c} van volgende
-Dialogue: 0,0:00:46.97,0:00:47.09,Sub,,0,0,0,,{\an5\pos(505,1440)}marktnieuws {\c&H003FD2FF}van{\c} volgende
-Dialogue: 0,0:00:47.09,0:00:47.51,Sub,,0,0,0,,{\an5\pos(505,1440)}marktnieuws van {\c&H003FD2FF}volgende{\c}
-Dialogue: 0,0:00:47.51,0:00:48.28,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}week{\c}
+Dialogue: 0,0:00:42.32,0:00:42.41,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}En{\c} wat betekent
+Dialogue: 0,0:00:42.41,0:00:42.57,Sub,,0,0,0,,{\an5\pos(505,1440)}En {\c&H003FD2FF}wat{\c} betekent
+Dialogue: 0,0:00:42.57,0:00:43.13,Sub,,0,0,0,,{\an5\pos(505,1440)}En wat {\c&H003FD2FF}betekent{\c}
+Dialogue: 0,0:00:43.13,0:00:43.83,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dat{\c}
+Dialogue: 0,0:00:43.83,0:00:43.99,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}De{\c} S en
+Dialogue: 0,0:00:43.99,0:00:44.20,Sub,,0,0,0,,{\an5\pos(505,1440)}De {\c&H003FD2FF}S{\c} en
+Dialogue: 0,0:00:44.20,0:00:44.33,Sub,,0,0,0,,{\an5\pos(505,1440)}De S {\c&H003FD2FF}en{\c}
+Dialogue: 0,0:00:44.33,0:00:44.59,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}P{\c} 500 en
+Dialogue: 0,0:00:44.59,0:00:45.31,Sub,,0,0,0,,{\an5\pos(505,1440)}P {\c&H003FD2FF}500{\c} en
+Dialogue: 0,0:00:45.31,0:00:45.39,Sub,,0,0,0,,{\an5\pos(505,1440)}P 500 {\c&H003FD2FF}en{\c}
+Dialogue: 0,0:00:45.39,0:00:45.50,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}de{\c} Dow zitten
+Dialogue: 0,0:00:45.50,0:00:45.81,Sub,,0,0,0,,{\an5\pos(505,1440)}de {\c&H003FD2FF}Dow{\c} zitten
+Dialogue: 0,0:00:45.81,0:00:46.15,Sub,,0,0,0,,{\an5\pos(505,1440)}de Dow {\c&H003FD2FF}zitten{\c}
+Dialogue: 0,0:00:46.15,0:00:46.37,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}nu{\c} in een
+Dialogue: 0,0:00:46.37,0:00:46.48,Sub,,0,0,0,,{\an5\pos(505,1440)}nu {\c&H003FD2FF}in{\c} een
+Dialogue: 0,0:00:46.48,0:00:46.54,Sub,,0,0,0,,{\an5\pos(505,1440)}nu in {\c&H003FD2FF}een{\c}
+Dialogue: 0,0:00:46.54,0:00:47.48,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}correctie{\c}
+Dialogue: 0,0:00:47.48,0:00:47.60,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Dat{\c} wil zeggen
+Dialogue: 0,0:00:47.60,0:00:47.74,Sub,,0,0,0,,{\an5\pos(505,1440)}Dat {\c&H003FD2FF}wil{\c} zeggen
+Dialogue: 0,0:00:47.74,0:00:48.53,Sub,,0,0,0,,{\an5\pos(505,1440)}Dat wil {\c&H003FD2FF}zeggen{\c}
+Dialogue: 0,0:00:48.53,0:00:48.99,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}minstens{\c} 10% onder
+Dialogue: 0,0:00:48.99,0:00:49.83,Sub,,0,0,0,,{\an5\pos(505,1440)}minstens {\c&H003FD2FF}10%{\c} onder
+Dialogue: 0,0:00:49.83,0:00:50.03,Sub,,0,0,0,,{\an5\pos(505,1440)}minstens 10% {\c&H003FD2FF}onder{\c}
+Dialogue: 0,0:00:50.03,0:00:50.17,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}hun{\c} top
+Dialogue: 0,0:00:50.17,0:00:50.87,Sub,,0,0,0,,{\an5\pos(505,1440)}hun {\c&H003FD2FF}top{\c}
+Dialogue: 0,0:00:50.87,0:00:50.91,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}En{\c} de Nasdaq
+Dialogue: 0,0:00:50.91,0:00:50.97,Sub,,0,0,0,,{\an5\pos(505,1440)}En {\c&H003FD2FF}de{\c} Nasdaq
+Dialogue: 0,0:00:50.97,0:00:51.33,Sub,,0,0,0,,{\an5\pos(505,1440)}En de {\c&H003FD2FF}Nasdaq{\c}
+Dialogue: 0,0:00:51.33,0:00:51.54,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}staat{\c} zelfs lager
+Dialogue: 0,0:00:51.54,0:00:51.87,Sub,,0,0,0,,{\an5\pos(505,1440)}staat {\c&H003FD2FF}zelfs{\c} lager
+Dialogue: 0,0:00:51.87,0:00:52.21,Sub,,0,0,0,,{\an5\pos(505,1440)}staat zelfs {\c&H003FD2FF}lager{\c}
+Dialogue: 0,0:00:52.21,0:00:52.32,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dan{\c} begin 2026
+Dialogue: 0,0:00:52.32,0:00:52.64,Sub,,0,0,0,,{\an5\pos(505,1440)}dan {\c&H003FD2FF}begin{\c} 2026
+Dialogue: 0,0:00:52.64,0:00:54.21,Sub,,0,0,0,,{\an5\pos(505,1440)}dan begin {\c&H003FD2FF}2026{\c}
+Dialogue: 0,0:00:54.21,0:00:54.40,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Alle{\c} winst van
+Dialogue: 0,0:00:54.40,0:00:54.65,Sub,,0,0,0,,{\an5\pos(505,1440)}Alle {\c&H003FD2FF}winst{\c} van
+Dialogue: 0,0:00:54.65,0:00:54.77,Sub,,0,0,0,,{\an5\pos(505,1440)}Alle winst {\c&H003FD2FF}van{\c}
+Dialogue: 0,0:00:54.77,0:00:54.95,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dit{\c} jaar
+Dialogue: 0,0:00:54.95,0:00:55.44,Sub,,0,0,0,,{\an5\pos(505,1440)}dit {\c&H003FD2FF}jaar{\c}
+Dialogue: 0,0:00:55.44,0:00:56.18,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}foetsie{\c}
+Dialogue: 0,0:00:56.18,0:00:56.30,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Wat{\c} er nu
+Dialogue: 0,0:00:56.30,0:00:56.40,Sub,,0,0,0,,{\an5\pos(505,1440)}Wat {\c&H003FD2FF}er{\c} nu
+Dialogue: 0,0:00:56.40,0:00:56.57,Sub,,0,0,0,,{\an5\pos(505,1440)}Wat er {\c&H003FD2FF}nu{\c}
+Dialogue: 0,0:00:56.57,0:00:57.18,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}komt{\c} weet niemand
+Dialogue: 0,0:00:57.18,0:00:57.47,Sub,,0,0,0,,{\an5\pos(505,1440)}komt {\c&H003FD2FF}weet{\c} niemand
+Dialogue: 0,0:00:57.47,0:00:58.27,Sub,,0,0,0,,{\an5\pos(505,1440)}komt weet {\c&H003FD2FF}niemand{\c}
+Dialogue: 0,0:00:58.27,0:00:58.78,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Voorspellen{\c} doen we
+Dialogue: 0,0:00:58.78,0:00:58.98,Sub,,0,0,0,,{\an5\pos(505,1440)}Voorspellen {\c&H003FD2FF}doen{\c} we
+Dialogue: 0,0:00:58.98,0:00:59.06,Sub,,0,0,0,,{\an5\pos(505,1440)}Voorspellen doen {\c&H003FD2FF}we{\c}
+Dialogue: 0,0:00:59.06,0:00:59.25,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}hier{\c} niet
+Dialogue: 0,0:00:59.25,0:00:59.93,Sub,,0,0,0,,{\an5\pos(505,1440)}hier {\c&H003FD2FF}niet{\c}
+Dialogue: 0,0:00:59.93,0:01:00.12,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Volg{\c} voor het
+Dialogue: 0,0:01:00.12,0:01:00.24,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg {\c&H003FD2FF}voor{\c} het
+Dialogue: 0,0:01:00.24,0:01:00.31,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg voor {\c&H003FD2FF}het{\c}
+Dialogue: 0,0:01:00.31,0:01:00.83,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}marktnieuws{\c} van volgende
+Dialogue: 0,0:01:00.83,0:01:00.95,Sub,,0,0,0,,{\an5\pos(505,1440)}marktnieuws {\c&H003FD2FF}van{\c} volgende
+Dialogue: 0,0:01:00.95,0:01:01.37,Sub,,0,0,0,,{\an5\pos(505,1440)}marktnieuws van {\c&H003FD2FF}volgende{\c}
+Dialogue: 0,0:01:01.37,0:01:02.14,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}week{\c}

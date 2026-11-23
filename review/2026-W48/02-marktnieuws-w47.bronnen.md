@@ -16,3 +16,6 @@ Geldigheid: Marktweek 16-20 november 2026, slotkoersen (geen fiscaal aanslagjaar
   - [Yahoo Finance – live: AI trade melts down](https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html) — geraadpleegd 2026-11-22
 - ⚠️ **Volgens Reuters bekijkt de SEC de boekhouding van Nvidia** — _Bericht van Reuters, overgenomen door Yahoo Finance. Geen officiële bevestiging van de SEC of Nvidia. In de video staat bewust 'volgens Reuters'. Laat dat staan of schrap de zin._
   - [Yahoo Finance – live: Nvidia worst day since DeepSeek after Reuters report](https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html) — geraadpleegd 2026-11-22
+- ✅ **S&P 500 en Dow in correctie; Nasdaq negatief voor 2026 (na 20/11)** — _Correctie = daling van minstens 10% ten opzichte van de top._
+  - [CNBC – S&P 500 and Dow close in correction; Nasdaq erases 2026 gain](https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html) — geraadpleegd 2026-11-23
+  - [Yahoo Finance – Major indexes wipe out 2026 gains](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-plunge-131303598.html) — geraadpleegd 2026-11-23

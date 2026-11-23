@@ -30,11 +30,20 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 - **Nooit** voorspellen, nooit kopen of verkopen suggereren. Bedrijfsnamen alleen als nieuws. Eindig met
   "Voorspellen doen we hier niet". Voorbeeld: `scripts/2026-W48/02-marktnieuws-w47.json`.
 
+## 1c. Nasdaq-uitlegreeks (evergreen, mag in de 5 algemene onderwerpen)
+- Voorbeelden: `03-nasdaq-wat-is-het`, `04-nasdaq-waarom-schommelt`, `05-nasdaq-dotcom-crash`.
+- Volgende ideeën: Nasdaq-100 vs. S&P 500, wat is een bear market, hoe lees je een koersgrafiek, wat is beurswaarde.
+
 ## 2. Scripts → `scripts/<week>/0N-<slug>.json`
 - **Spreektaal, TikTok-tempo**: korte zinnen, Vlaams-informeel ("da's", "een voorbeeldje"; nooit "hè": dat leest niet), zoals je het
   tegen een vriend uitlegt. Hook = herkenbare situatie of tegenstrijdigheid ("Verlies gemaakt? Tóch belasting."),
   daarna overgangen als een gesprek ("Raar? Ik leg het je uit", "Kijk, een voorbeeldje", "Wie regelt dat?"). Stem: Andrew (multilingual), +15%, zinnen lopen door zonder leespauzes.
-- Formaat: zie `scripts/2026-W48/01-tob.json` en README. 90-140 woorden, hook ≤ 2 s, 3 punten,
+- **Lengte: net boven 1 minuut** (61-68 s ≈ 155-175 woorden). Langer (tot 75 s) alleen als de inhoud het echt draagt;
+  verleng met inhoud (extra voorbeeld, uitleg van een begrip), nooit met opvulling.
+- **Humor voor jongeren, wel informatief**: herkenbare vergelijkingen ("Vinted, maar dan voor bedrijven",
+  "de drama queen van de beurs", "langer dan TikTok bestaat"), maar elk grapje dient de uitleg. Nooit '&' in
+  gesproken tekst laten staan zonder dat de pipeline het vervangt (gebeurt automatisch).
+- Formaat: zie `scripts/2026-W48/01-tob.json` en README. Hook ≤ 2 s, 3 punten,
   1 rekenvoorbeeld, eindigen met `outro` + "volg voor meer".
 - Elk bedrag, tarief of elke drempel: in `claims` met bron (bij voorkeur Wikifin/FOD Financiën) + datum + aanslagjaar
   of geldigheid. Geen bron of twijfel → `status: "check"` (= ⚠️). Nooit gokken.

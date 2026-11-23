@@ -22,7 +22,7 @@
       }
     },
     {
-      "say": "Hoeveel? Hangt af van wat je koopt: 0,12%, 0,35% of 1,32%. Met telkens een maximum per transactie.",
+      "say": "Hoeveel? Hangt af van wat je koopt: 0,12%, 0,35% of 1,32%. Met telkens een maximum per transactie. Stel dat je voor een half miljoen aan aandelen koopt. Dan zou 0,35% €1.750 zijn, maar je betaalt maximaal €1.600. Fijn voor de miljonairs onder ons.",
       "visual": {
         "type": "table",
         "title": "2. Drie tarieven",
@@ -88,7 +88,7 @@
       }
     },
     {
-      "say": "Wie regelt dat? Een Belgische broker doet het voor jou. Bij een buitenlandse moet je het soms zelf aangeven, ten laatste de laatste werkdag van de tweede maand na je transactie.",
+      "say": "Wie regelt dat? Een Belgische broker doet het automatisch voor jou. Bij een buitenlandse broker is dat niet altijd zo. Dan moet je het zelf aangeven en betalen, ten laatste de laatste werkdag van de tweede maand na je transactie.",
       "visual": {
         "type": "point",
         "n": 3,
@@ -199,6 +199,18 @@
         {
           "title": "Wikifin (FSMA) – Je beleggingen in het buitenland: fiscale impact",
           "url": "https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/je-roerend-inkomen/je-beleggingen-het-buitenland",
+          "date": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "claim": "Rekenvoorbeeld maximum: €500.000 × 0,35% = €1.750, begrensd op €1.600",
+      "status": "ok",
+      "note": "Eigen berekening met het maximum van Wikifin.",
+      "sources": [
+        {
+          "title": "Wikifin (FSMA) – De belastingen op je Belgische beleggingen",
+          "url": "https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/je-roerend-inkomen/de-belastingen-op-je-belgische",
           "date": "2026-11-22"
         }
       ]

@@ -32,9 +32,9 @@ def words_of(script):
 def checks(script, timing):
     res = []
     n = len(words_of(script))
-    res.append(("Woordenaantal 90-140", 90 <= n <= 140, f"{n} woorden"))
+    res.append(("Woordenaantal 150-190", 150 <= n <= 190, f"{n} woorden"))
     d = timing["duration"] + C.OUTRO_HOLD
-    res.append(("Duur 30-60 s", 30 <= d <= 60, f"{d:.1f} s"))
+    res.append(("Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)", 60 <= d <= 75, f"{d:.1f} s"))
     hook_words = len(display_text(script["scenes"][0]["say"]).split())
     res.append(("Hook kort (≤ 22 woorden)", hook_words <= 22, f"{hook_words} woorden"))
     res.append(("Laatste scène is outro met disclaimer", script["scenes"][-1]["visual"]["type"] == "outro",

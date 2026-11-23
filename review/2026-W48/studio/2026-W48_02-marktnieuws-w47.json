@@ -3,15 +3,16 @@
  "id": "02-marktnieuws-w47",
  "title": "Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026)",
  "validity": "Marktweek 16-20 november 2026, slotkoersen (geen fiscaal aanslagjaar van toepassing)",
- "status": "klaar voor review",
- "durationSec": 50.2,
- "words": 122,
+ "status": "ingepland",
+ "durationSec": 64.0,
+ "words": 160,
  "script": [
   "De Nasdaq verloor vorige week 10%. De slechtste week sinds maart 2020. Wat is er gebeurd?",
   "Van maandag tot donderdag ging het al stap voor stap omlaag. En vrijdag kwam de klap: min 5,3% op één dag.",
   "Reden één: twijfel over AI. Beleggers vragen zich af of al die miljarden aan AI-investeringen wel genoeg gaan opleveren. Dus verkopen ze.",
   "Reden twee: chipbedrijven kregen de zwaarste klappen. De chipindex zakte 17%. Nvidia stelde met zijn cijfers niet gerust, en volgens Reuters bekijkt de Amerikaanse beurswaakhond zijn boekhouding.",
   "Reden drie: de beursgang van Anthropic. Die bracht geen nieuw enthousiasme. Veel beleggers namen net winst op AI-aandelen.",
+  "En wat betekent dat? De S&P 500 en de Dow zitten nu in een correctie. Dat wil zeggen: minstens 10% onder hun top. En de Nasdaq staat zelfs lager dan begin 2026. Alle winst van dit jaar: foetsie.",
   "Wat er nu komt, weet niemand. Voorspellen doen we hier niet. Volg voor het marktnieuws van volgende week!"
  ],
  "caption": "De Nasdaq had vorige week z'n slechtste week sinds maart 2020: −10%. Wat er gebeurde en waarom, in minder dan een minuut 📉\n\nAlgemene info, geen beleggingsadvies: geen aanraders, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
@@ -100,6 +101,23 @@
      "date": "2026-11-22"
     }
    ]
+  },
+  {
+   "claim": "S&P 500 en Dow in correctie; Nasdaq negatief voor 2026 (na 20/11)",
+   "status": "ok",
+   "note": "Correctie = daling van minstens 10% ten opzichte van de top.",
+   "sources": [
+    {
+     "title": "CNBC – S&P 500 and Dow close in correction; Nasdaq erases 2026 gain",
+     "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+     "date": "2026-11-23"
+    },
+    {
+     "title": "Yahoo Finance – Major indexes wipe out 2026 gains",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-plunge-131303598.html",
+     "date": "2026-11-23"
+    }
+   ]
   }
  ],
  "warnings": [
@@ -109,14 +127,14 @@
  ],
  "checks": [
   {
-   "name": "Woordenaantal 90-140",
+   "name": "Woordenaantal 150-190",
    "ok": true,
-   "info": "122 woorden"
+   "info": "160 woorden"
   },
   {
-   "name": "Duur 30-60 s",
+   "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "50.2 s"
+   "info": "64.0 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
@@ -160,5 +178,6 @@
   }
  ],
  "repoPath": "review/2026-W48/02-marktnieuws-w47.mp4",
- "videoUrl": "/_blob/2f55fff2f87084f9160b0a861d0301ac"
+ "videoUrl": "/_blob/cd39e3dbcc6c2d7489f048c254f9183b",
+ "claudeReply": "Let op: je had deze video al ingepland. Er staat nu een nieuwe, langere versie (64 s, extra stuk over 'correctie'). Vervang in Metricool/Buffer de oude als je de nieuwe wilt."
 }

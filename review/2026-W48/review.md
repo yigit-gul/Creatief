@@ -1,13 +1,16 @@
 # Review 2026-W48
 
-Gegenereerd op 2026-11-22 · stem `en-US-AndrewMultilingualNeural` · kanaal **Fiscaal Fluitje** (@fiscaalfluitje)
+Gegenereerd op 2026-11-23 · stem `en-US-AndrewMultilingualNeural` · kanaal **Fiscaal Fluitje** (@fiscaalfluitje)
 
 Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automatisch gepost.
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 54 s | 129 | 10/10 | 6 |
-| 02-marktnieuws-w47 | Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026) | 50 s | 122 | 10/10 | 4 |
+| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 67 s | 164 | 10/10 | 6 |
+| 02-marktnieuws-w47 | Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026) | 64 s | 160 | 10/10 | 4 |
+| 03-nasdaq-wat-is-het | Nasdaq 101: beurs, index of rapper? | 63 s | 160 | 10/10 | 3 |
+| 04-nasdaq-waarom-schommelt | Waarom de Nasdaq de drama queen van de beurs is | 61 s | 163 | 10/10 | 3 |
+| 05-nasdaq-dotcom-crash | De dotcom-crash: −78% en 15 jaar wachten | 61 s | 163 | 10/10 | 4 |
 
 ---
 
@@ -21,11 +24,11 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 >
 > Da's de TOB, de taks op de beursverrichtingen. Je betaalt een klein percentage op het bedrag. Winst of verlies? Maakt niks uit.
 >
-> Hoeveel? Hangt af van wat je koopt: 0,12%, 0,35% of 1,32%. Met telkens een maximum per transactie.
+> Hoeveel? Hangt af van wat je koopt: 0,12%, 0,35% of 1,32%. Met telkens een maximum per transactie. Stel dat je voor een half miljoen aan aandelen koopt. Dan zou 0,35% €1.750 zijn, maar je betaalt maximaal €1.600. Fijn voor de miljonairs onder ons.
 >
 > Kijk, een voorbeeldje. Je koopt aandelen voor €2.000. Aan 0,35% betaal je dan €7. Verkoop je ze later voor €2.000? Dan nog eens €7. Samen dus €14.
 >
-> Wie regelt dat? Een Belgische broker doet het voor jou. Bij een buitenlandse moet je het soms zelf aangeven, ten laatste de laatste werkdag van de tweede maand na je transactie.
+> Wie regelt dat? Een Belgische broker doet het automatisch voor jou. Bij een buitenlandse broker is dat niet altijd zo. Dan moet je het zelf aangeven en betalen, ten laatste de laatste werkdag van de tweede maand na je transactie.
 >
 > Nu weet je waar dat kostje op je afrekening vandaan komt. Volg voor meer!
 
@@ -47,6 +50,8 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
   - [Test-Aankoop – Beurstaks op ETF's](https://www.test-aankoop.be/invest/beleggen/fiscaliteit-and-rechten/dossiers/beurstaks-tob/beurstaks-etf-tob-belgie) — geraadpleegd 2026-11-22
 - ✅ **Buitenlandse rekening zonder inhouding: zelf aangeven en betalen, uiterlijk de laatste werkdag van de 2de maand na de transactie**
   - [Wikifin (FSMA) – Je beleggingen in het buitenland: fiscale impact](https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/je-roerend-inkomen/je-beleggingen-het-buitenland) — geraadpleegd 2026-11-22
+- ✅ **Rekenvoorbeeld maximum: €500.000 × 0,35% = €1.750, begrensd op €1.600** — _Eigen berekening met het maximum van Wikifin._
+  - [Wikifin (FSMA) – De belastingen op je Belgische beleggingen](https://www.wikifin.be/nl/belasting-werk-en-inkomen/belastingaangifte/je-roerend-inkomen/de-belastingen-op-je-belgische) — geraadpleegd 2026-11-22
 
 ### ⚠️ Aandachtspunten
 
@@ -67,8 +72,8 @@ Algemene info, geen persoonlijk advies.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 90-140 (129 woorden)
-- ✅ Duur 30-60 s (53.7 s)
+- ✅ Woordenaantal 150-190 (164 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (67.2 s)
 - ✅ Hook kort (≤ 22 woorden) (18 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
@@ -108,6 +113,8 @@ Algemene info, geen persoonlijk advies.
 >
 > Reden drie: de beursgang van Anthropic. Die bracht geen nieuw enthousiasme. Veel beleggers namen net winst op AI-aandelen.
 >
+> En wat betekent dat? De S&P 500 en de Dow zitten nu in een correctie. Dat wil zeggen: minstens 10% onder hun top. En de Nasdaq staat zelfs lager dan begin 2026. Alle winst van dit jaar: foetsie.
+>
 > Wat er nu komt, weet niemand. Voorspellen doen we hier niet. Volg voor het marktnieuws van volgende week!
 
 ### Bronnen en controle van cijfers
@@ -126,6 +133,9 @@ Algemene info, geen persoonlijk advies.
   - [Yahoo Finance – live: AI trade melts down](https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html) — geraadpleegd 2026-11-22
 - ⚠️ **Volgens Reuters bekijkt de SEC de boekhouding van Nvidia** — _Bericht van Reuters, overgenomen door Yahoo Finance. Geen officiële bevestiging van de SEC of Nvidia. In de video staat bewust 'volgens Reuters'. Laat dat staan of schrap de zin._
   - [Yahoo Finance – live: Nvidia worst day since DeepSeek after Reuters report](https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html) — geraadpleegd 2026-11-22
+- ✅ **S&P 500 en Dow in correctie; Nasdaq negatief voor 2026 (na 20/11)** — _Correctie = daling van minstens 10% ten opzichte van de top._
+  - [CNBC – S&P 500 and Dow close in correction; Nasdaq erases 2026 gain](https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html) — geraadpleegd 2026-11-23
+  - [Yahoo Finance – Major indexes wipe out 2026 gains](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-plunge-131303598.html) — geraadpleegd 2026-11-23
 
 ### ⚠️ Aandachtspunten
 
@@ -146,9 +156,230 @@ Algemene info, geen beleggingsadvies: geen aanraders, geen voorspellingen.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 90-140 (122 woorden)
-- ✅ Duur 30-60 s (50.2 s)
+- ✅ Woordenaantal 150-190 (160 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (64.0 s)
 - ✅ Hook kort (≤ 22 woorden) (16 woorden)
+- ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
+- ✅ Call to action ('volg')
+- ✅ AI-vermelding in caption
+- ✅ 3-5 hashtags (5)
+- ✅ Geen advies-/clickbaittaal (automatische scan)
+- ✅ Geen 'hè' in de tekst
+- ✅ Elke claim heeft een bron
+
+### Jouw checklist
+
+- [ ] Cijfers en tarieven nagekeken tegen de bronnen hierboven (aanslagjaar/geldigheid klopt)
+- [ ] Alle ⚠️-punten opgelost of geschrapt
+- [ ] Geen beleggingsadvies, geen productaanraders, geen koersvoorspellingen
+- [ ] Uitspraak en ondertitels correct (vooral cijfers en afkortingen)
+- [ ] Disclaimer "Algemene info, geen persoonlijk advies." zichtbaar op het einde
+- [ ] Geen misleidende hook
+- [ ] AI-label aanzetten in TikTok bij het inplannen
+- [ ] Ingepland in Metricool/Buffer
+
+
+---
+
+## 03-nasdaq-wat-is-het · Nasdaq 101: beurs, index of rapper?
+
+**Video:** [03-nasdaq-wat-is-het.mp4](03-nasdaq-wat-is-het.mp4) · **Geldigheid:** Algemene uitleg, stand november 2026 (geen aanslagjaar van toepassing)
+
+### Script (voice-over)
+
+> De Nasdaq. Iedereen roept het, niemand legt het uit. Is het een beurs? Een index? Een rapper?
+>
+> Eerst: Nasdaq is een beurs in New York. Een marktplaats voor aandelen. Zoals Vinted, maar dan voor stukjes van bedrijven in plaats van tweedehands jeans. En de naam? Een afkorting van een Amerikaanse vereniging van effectenhandelaars. Niet sexy, wel waar.
+>
+> Maar als het nieuws zegt 'de Nasdaq zakt', gaat het meestal over de index. De Nasdaq Composite volgt meer dan 3.000 bedrijven. En de Nasdaq-100? Da's de VIP-lounge: de 100 grootste, zonder banken.
+>
+> En nu het belangrijkste: groot telt zwaarder. Fictief voorbeeld. Bedrijf A is 1.000 miljard waard, bedrijf B 10 miljard. Stijgen ze allebei 1%? Dan duwt A de index honderd keer harder omhoog.
+>
+> Daarom kan de Nasdaq dalen terwijl de meeste bedrijven erin stijgen. Als de giganten zakken, zakt de hele index mee. Dus: beurs én index, en de groten hebben het hoogste woord. Zoals in elke groepschat. Volg voor meer!
+
+### Bronnen en controle van cijfers
+
+- ✅ **De Nasdaq Composite bestaat sinds 5 februari 1971 en volgt meer dan 3.000 bedrijven**
+  - [Nasdaq – Nasdaq Composite: benchmark for the 21st century](https://www.nasdaq.com/articles/nasdaq-composite-benchmark-for-the-21st-century) — geraadpleegd 2026-11-23
+  - [Nasdaq – COMP Research (methodologie Composite)](https://indexes.nasdaqomx.com/docs/COMP_Research.pdf) — geraadpleegd 2026-11-23
+- ✅ **De Composite is gewogen naar beurswaarde (marktkapitalisatie)**
+  - [Nasdaq – COMP Research (methodologie Composite)](https://indexes.nasdaqomx.com/docs/COMP_Research.pdf) — geraadpleegd 2026-11-23
+  - [Nasdaq – Nasdaq Composite: benchmark for the 21st century](https://www.nasdaq.com/articles/nasdaq-composite-benchmark-for-the-21st-century) — geraadpleegd 2026-11-23
+- ✅ **De Nasdaq-100 bevat de 100 grootste niet-financiële bedrijven op de Nasdaq**
+  - [Nasdaq – NDX White Paper (Nasdaq-100 methodologie)](https://indexes.nasdaqomx.com/docs/NDX%20White%20Paper%20Update%20II%202021-03%205005%20FINAL.pdf) — geraadpleegd 2026-11-23
+- ✅ **Rekenvoorbeeld A/B (1.000 mld vs 10 mld, +1%)** — _Fictief, enkel ter illustratie van weging. Klopt rekenkundig: 10 mld vs 0,1 mld = 100×._
+  - [Nasdaq – COMP Research (methodologie Composite)](https://indexes.nasdaqomx.com/docs/COMP_Research.pdf) — geraadpleegd 2026-11-23
+- ⚠️ **Nasdaq is een afkorting (National Association of Securities Dealers Automated Quotations) en zit in New York** — _Algemeen bekend, maar in deze run niet tegen de Nasdaq-site zelf gelegd._
+  - [Wikipedia – Nasdaq](https://en.wikipedia.org/wiki/Nasdaq) — geraadpleegd 2026-11-23
+- ✅ **De index kan dalen terwijl de meeste bedrijven stijgen (gevolg van weging naar beurswaarde)** — _Logisch gevolg van de weging; geen cijferclaim._
+  - [Nasdaq – COMP Research (methodologie Composite)](https://indexes.nasdaqomx.com/docs/COMP_Research.pdf) — geraadpleegd 2026-11-23
+
+### ⚠️ Aandachtspunten
+
+- ⚠️ Uitspraak: Andrew spreekt Nederlands. Luister of de getallen juist klinken.
+- ⚠️ Humor: 'Vinted' en 'rapper' zijn knipoogjes, geen merkpromotie. Even checken of je dat oké vindt.
+
+### Caption
+
+```
+Nasdaq: is het een beurs, een index of een rapper? 🎤 In minder dan een minuut weet je het, en waarom een paar giganten de hele index sturen.
+
+Algemene info, geen beleggingsadvies.
+🤖 Deze video is gemaakt met AI (voice-over en beeld).
+
+#nasdaq #beurs #geldtips #leren #belgie
+```
+
+### Automatische checks
+
+- ✅ Woordenaantal 150-190 (160 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (63.2 s)
+- ✅ Hook kort (≤ 22 woorden) (17 woorden)
+- ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
+- ✅ Call to action ('volg')
+- ✅ AI-vermelding in caption
+- ✅ 3-5 hashtags (5)
+- ✅ Geen advies-/clickbaittaal (automatische scan)
+- ✅ Geen 'hè' in de tekst
+- ✅ Elke claim heeft een bron
+
+### Jouw checklist
+
+- [ ] Cijfers en tarieven nagekeken tegen de bronnen hierboven (aanslagjaar/geldigheid klopt)
+- [ ] Alle ⚠️-punten opgelost of geschrapt
+- [ ] Geen beleggingsadvies, geen productaanraders, geen koersvoorspellingen
+- [ ] Uitspraak en ondertitels correct (vooral cijfers en afkortingen)
+- [ ] Disclaimer "Algemene info, geen persoonlijk advies." zichtbaar op het einde
+- [ ] Geen misleidende hook
+- [ ] AI-label aanzetten in TikTok bij het inplannen
+- [ ] Ingepland in Metricool/Buffer
+
+
+---
+
+## 04-nasdaq-waarom-schommelt · Waarom de Nasdaq de drama queen van de beurs is
+
+**Video:** [04-nasdaq-waarom-schommelt.mp4](04-nasdaq-waarom-schommelt.mp4) · **Geldigheid:** Algemene uitleg; weekcijfers 16-20 november 2026
+
+### Script (voice-over)
+
+> De Nasdaq is die vriend die op een feestje het wildst danst. En ook het hardst valt. Waarom eigenlijk?
+>
+> Reden één: veel tech. Die bedrijven worden vaak gewaardeerd op wat ze later misschien gaan verdienen. Een beetje zoals een influencer die nog niet viraal is, maar iedereen gelooft dat het eraan komt. Verandert die verwachting? Dan schiet de koers alle kanten op.
+>
+> Reden twee: rente. Stel: je krijgt over tien jaar €100. Bij 2% rente is dat vandaag zo'n €82 waard. Bij 5% nog maar €61. En net dat geld van later zit in veel techkoersen.
+>
+> Reden drie: een paar giganten wegen zwaar. Struikelen zij, dan gaat de hele index mee onderuit. Vorige week nog: Nasdaq min 10%, de Dow min 8%.
+>
+> Dat schommelen heeft een naam: volatiliteit. En het werkt in twee richtingen: in sterke jaren stijgt de Nasdaq vaak ook harder dan de rest. Dus nee, de Nasdaq is niet gek. Gewoon gevoelig. Voorspellen doen we hier niet. Volg voor meer!
+
+### Bronnen en controle van cijfers
+
+- ✅ **Rekenvoorbeeld rente: €100 over 10 jaar = €82 bij 2% en €61 bij 5% (100/1,02^10 = 82,03; 100/1,05^10 = 61,39)** — _Fictief, eigen berekening (verdisconteren)._
+  - [Wikifin – Sparen en beleggen (algemene achtergrond; berekening zelf gemaakt)](https://www.wikifin.be/nl/sparen-en-beleggen) — geraadpleegd 2026-11-23
+- ✅ **Nasdaq is gewogen naar beurswaarde, dus grote bedrijven wegen zwaarder**
+  - [Nasdaq – COMP Research (methodologie Composite)](https://indexes.nasdaqomx.com/docs/COMP_Research.pdf) — geraadpleegd 2026-11-23
+- ✅ **Week 16-20 nov 2026: Nasdaq −10,02%, S&P 500 −8,61%, Dow −8,02%** — _Berekend uit slotkoersen._
+  - [Yahoo Finance – ^IXIC, ^GSPC, ^DJI dagkoersen](https://finance.yahoo.com/quote/%5EIXIC/history/) — geraadpleegd 2026-11-23
+- ⚠️ **Techaandelen worden sterk gewaardeerd op verwachte toekomstige winst en zijn daardoor gevoeliger voor rente** — _Algemeen aanvaard principe (groeiaandelen, verdisconteren), maar in deze run niet tegen een officiële Belgische bron gelegd. Formulering is bewust voorzichtig ('vaak')._
+  - [Nasdaq – COMP Research (methodologie Composite)](https://indexes.nasdaqomx.com/docs/COMP_Research.pdf) — geraadpleegd 2026-11-23
+- ⚠️ **De Nasdaq stijgt in sterke jaren vaak harder dan andere indexen (hogere volatiliteit in beide richtingen)** — _Algemene vaststelling; bewust voorzichtig geformuleerd ('vaak'). Geen cijfer genoemd._
+  - [Nasdaq – Nasdaq Composite: benchmark for the 21st century](https://www.nasdaq.com/articles/nasdaq-composite-benchmark-for-the-21st-century) — geraadpleegd 2026-11-23
+
+### ⚠️ Aandachtspunten
+
+- ⚠️ Uitspraak: Andrew spreekt Nederlands. Luister of de getallen juist klinken.
+
+### Caption
+
+```
+Waarom gaat de Nasdaq zoveel harder op en neer dan andere indexen? Tech, rente en een paar giganten 🎢
+
+Algemene info, geen beleggingsadvies, geen voorspellingen.
+🤖 Deze video is gemaakt met AI (voice-over en beeld).
+
+#nasdaq #beurs #rente #geldtips #belgie
+```
+
+### Automatische checks
+
+- ✅ Woordenaantal 150-190 (163 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.2 s)
+- ✅ Hook kort (≤ 22 woorden) (19 woorden)
+- ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
+- ✅ Call to action ('volg')
+- ✅ AI-vermelding in caption
+- ✅ 3-5 hashtags (5)
+- ✅ Geen advies-/clickbaittaal (automatische scan)
+- ✅ Geen 'hè' in de tekst
+- ✅ Elke claim heeft een bron
+
+### Jouw checklist
+
+- [ ] Cijfers en tarieven nagekeken tegen de bronnen hierboven (aanslagjaar/geldigheid klopt)
+- [ ] Alle ⚠️-punten opgelost of geschrapt
+- [ ] Geen beleggingsadvies, geen productaanraders, geen koersvoorspellingen
+- [ ] Uitspraak en ondertitels correct (vooral cijfers en afkortingen)
+- [ ] Disclaimer "Algemene info, geen persoonlijk advies." zichtbaar op het einde
+- [ ] Geen misleidende hook
+- [ ] AI-label aanzetten in TikTok bij het inplannen
+- [ ] Ingepland in Metricool/Buffer
+
+
+---
+
+## 05-nasdaq-dotcom-crash · De dotcom-crash: −78% en 15 jaar wachten
+
+**Video:** [05-nasdaq-dotcom-crash.mp4](05-nasdaq-dotcom-crash.mp4) · **Geldigheid:** Historische cijfers Nasdaq Composite (slotkoersen, prijsindex zonder dividenden)
+
+### Script (voice-over)
+
+> In 2000 verloor de Nasdaq bijna 80%. En het duurde 15 jaar om terug te komen. Welkom bij de dotcom-bubbel.
+>
+> Eind jaren negentig was internet het nieuwe ding. Had je bedrijf 'punt com' in de naam? Dan was je blijkbaar goud waard. Een website en een droom, meer had je niet nodig. Winst? Ach, dat kwam later wel. Dachten ze.
+>
+> Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. Pas in april 2015 kwam hij weer boven die oude top. Vijftien jaar! Langer dan TikTok bestaat.
+>
+> Stel: iemand stak €1.000 in de index op de top. In oktober 2002 bleef daar nog €221 van over. Oef. En veel internetbedrijven verdwenen gewoon. Een paar overleefden wel, en groeiden later uit tot de giganten die je nu elke dag gebruikt.
+>
+> De les die beleggers er toen uit trokken: een goed verhaal is nog geen winst. Geschiedenis herhaalt zich niet altijd, en voorspellen doen we niet. Volg voor meer!
+
+### Bronnen en controle van cijfers
+
+- ✅ **Top: slotkoers 5.048,62 op 10 maart 2000**
+  - [NPR – 15 years after the dot-com bust, a Nasdaq record (23/04/2015)](https://www.npr.org/sections/thetwo-way/2015/04/23/397113284/15-years-after-the-dot-com-bust-nasdaq-closes-at-new-record) — geraadpleegd 2026-11-23
+  - [Goldman Sachs – 2000: dot-com bubble](https://www.goldmansachs.com/our-firm/history/moments/2000-dot-com-bubble) — geraadpleegd 2026-11-23
+- ⚠️ **Bodem: 1.114,11 in oktober 2002 (≈ −78%)** — _De meeste bronnen geven 1.114,11 (9 okt 2002). Goldman Sachs noemt 1.139,90 (4 okt 2002, −77%). Het verschil komt van slot- vs. andere meting; even nakijken of je 1.114 wilt houden._
+  - [Britannica – Dot-com bubble](https://www.britannica.com/topic/dot-com-bubble) — geraadpleegd 2026-11-23
+  - [Goldman Sachs – 2000: dot-com bubble](https://www.goldmansachs.com/our-firm/history/moments/2000-dot-com-bubble) — geraadpleegd 2026-11-23
+- ✅ **Terug boven de oude top: slot 5.056,06 op 23 april 2015**
+  - [NPR – 15 years after the dot-com bust, a Nasdaq record (23/04/2015)](https://www.npr.org/sections/thetwo-way/2015/04/23/397113284/15-years-after-the-dot-com-bust-nasdaq-closes-at-new-record) — geraadpleegd 2026-11-23
+- ✅ **€1.000 op de top → €221 in okt 2002 (1.114,11 / 5.048,62 = 0,2207)** — _Eigen berekening, prijsindex zonder dividenden, fictief voorbeeld._
+  - [NPR – 15 years after the dot-com bust, a Nasdaq record (23/04/2015)](https://www.npr.org/sections/thetwo-way/2015/04/23/397113284/15-years-after-the-dot-com-bust-nasdaq-closes-at-new-record) — geraadpleegd 2026-11-23
+- ⚠️ **Veel internetbedrijven gingen ten onder; enkele overleefden en werden later grote techbedrijven** — _Algemeen bekend uit de dotcom-geschiedenis; bewust zonder bedrijfsnamen._
+  - [Britannica – Dot-com bubble](https://www.britannica.com/topic/dot-com-bubble) — geraadpleegd 2026-11-23
+
+### ⚠️ Aandachtspunten
+
+- ⚠️ Uitspraak: Andrew spreekt Nederlands. Luister of de getallen juist klinken.
+- ⚠️ Eindzin vermijdt bewust een vergelijking met AI vandaag: geen voorspelling.
+
+### Caption
+
+```
+In 2000 knalde de dotcom-bubbel: de Nasdaq verloor 78% en had 15 jaar nodig om terug op de top te staan 💥 Het verhaal in minder dan een minuut.
+
+Algemene info, geen beleggingsadvies, geen voorspellingen.
+🤖 Deze video is gemaakt met AI (voice-over en beeld).
+
+#nasdaq #dotcom #beursgeschiedenis #geldtips #belgie
+```
+
+### Automatische checks
+
+- ✅ Woordenaantal 150-190 (163 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.3 s)
+- ✅ Hook kort (≤ 22 woorden) (20 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption
