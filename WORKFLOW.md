@@ -106,6 +106,8 @@ Controleer per video één frame (bv. bij het rekenvoorbeeld) op overlap. Gefaal
 - Upload elke mp4 als asset naar de Studio (Artifact publish, `url` = Studio, `asset: true`) en zet de
   teruggegeven `/_blob/...`-url als `videoUrl` in het studio-JSON.
 - Schrijf alle `studio/*.json` met één ArtifactData-batch naar `videos/<week>_<id>`. Zet `runs/<week>` op `klaar`.
-- Commit en push naar de werkbranch.
+- Commit en push naar de werkbranch. **Lukt pushen niet** (geplande taken hebben soms geen schrijfrechten op de repo):
+  zet dan het volledige script-JSON als string in het veld `scriptJson` van het Studio-document en vermeld dat in
+  het logboek. De volgende sessie met repo-toegang zet het dan in `scripts/`.
 - Stuur een pushmelding: "5 video's voor <week> staan klaar om na te kijken" + link naar de Studio.
 - **Nooit zelf posten.**
