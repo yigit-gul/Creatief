@@ -4,7 +4,7 @@
  "title": "Jensen Huang is terug: Nvidia +35% op één dag",
  "validity": "Tussenstand maandag 23 november 2026, kort na de opening in New York (≈ 16:20 Belgische tijd). Geen slotkoers.",
  "status": "klaar voor review",
- "durationSec": 66.3,
+ "durationSec": 65.9,
  "words": 155,
  "script": [
   "Plot twist. Jensen Huang is terug. Leren jasje inbegrepen. En Nvidia? Plus 35%. Op één dag.",
@@ -140,7 +140,7 @@
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "66.3 s"
+   "info": "65.9 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",

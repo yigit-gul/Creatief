@@ -27,11 +27,12 @@ COLORS = {
 VOICE = "en-US-AndrewMultilingualNeural"   # gekozen in de Studio (stem E); spreekt Nederlands
 VOICE_RATE = "+15%"   # TikTok-tempo
 VOICE_PITCH = "+0Hz"
+VOICE_LANG = "nl-NL"  # meertalige stem vastzetten op Nederlands (anders gokt hij bij korte zinnen Engels)
 SCENE_GAP = 0.22  # korte adempauze tussen scènes (0.06 klonk als 2 dingen tegelijk)
 FLOW_SENTENCES = False  # oud: punten als komma's -> zinnen plakten aan elkaar ('zegt 2 dingen tegelijk')
 # Nu: elke zin apart inspreken en met een korte, natuurlijke pauze aan elkaar zetten (geen lange leespauze).
-SENTENCE_GAP = 0.17   # na . en !
-QUESTION_GAP = 0.26   # na ? (vraag even laten landen)
+SENTENCE_GAP = 0.30   # stilte na . en ! wordt hiertoe ingekort
+QUESTION_GAP = 0.38   # na ? (vraag even laten landen)
 
 # --- Video ------------------------------------------------------------------
 W, H = 1080, 1920

@@ -1,54 +1,54 @@
 {
  "id": "01-nvidia-jensen-terug",
  "signalen": {
-  "duration": 66.3,
+  "duration": 65.9,
   "scenes": [
    {
     "n": 0,
     "type": "slam",
-    "sec": 7.4,
+    "sec": 7.2,
     "woorden": 16,
-    "woorden_per_sec": 2.15,
+    "woorden_per_sec": 2.21,
     "langste_zin": 4
    },
    {
     "n": 1,
     "type": "point",
-    "sec": 11.2,
+    "sec": 11.6,
     "woorden": 29,
-    "woorden_per_sec": 2.6,
+    "woorden_per_sec": 2.5,
     "langste_zin": 9
    },
    {
     "n": 2,
     "type": "point",
-    "sec": 11.0,
+    "sec": 10.8,
     "woorden": 28,
-    "woorden_per_sec": 2.55,
+    "woorden_per_sec": 2.59,
     "langste_zin": 6
    },
    {
     "n": 3,
     "type": "line",
-    "sec": 13.4,
+    "sec": 13.2,
     "woorden": 32,
-    "woorden_per_sec": 2.39,
+    "woorden_per_sec": 2.43,
     "langste_zin": 7
    },
    {
     "n": 4,
     "type": "bars",
-    "sec": 11.7,
+    "sec": 11.5,
     "woorden": 27,
-    "woorden_per_sec": 2.3,
+    "woorden_per_sec": 2.34,
     "langste_zin": 7
    },
    {
     "n": 5,
     "type": "outro",
-    "sec": 8.0,
+    "sec": 8.1,
     "woorden": 23,
-    "woorden_per_sec": 2.87,
+    "woorden_per_sec": 2.84,
     "langste_zin": 9
    }
   ],

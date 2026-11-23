@@ -84,7 +84,8 @@ Controleer per video één frame (bv. bij het rekenvoorbeeld) op overlap. Gefaal
    "verdict": "één zin: waarom deze versie goed genoeg is"}`.
 
    Feedback van de gebruiker die hier hoort: geen tekst op elkaar of dubbel (beeld + ondertitel), en elke zin
-   apart hoorbaar (niet "2 dingen tegelijk"). De pipeline spreekt elke zin apart in met een korte pauze en
+   apart hoorbaar (niet "2 dingen tegelijk") en alles in het Nederlands (geen taalwissels). De pipeline spreekt
+   per scène in (zodat de taal Nederlands blijft), kort elke zinspauze in tot ~0,3 s en
    verbergt ondertitels bij `slam`-scènes; de zelfreview meet echte stiltes en overlap.
 
 ## 4c. Leren van de views (elke zaterdag, in de marktnieuwstaak)

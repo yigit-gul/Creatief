@@ -69,7 +69,7 @@ Tussenstand maandag 23/11, kort na de opening. Algemene info, geen beleggingsadv
 ### Automatische checks
 
 - ✅ Woordenaantal 150-190 (155 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (66.3 s)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (65.9 s)
 - ✅ Hook kort (≤ 22 woorden) (16 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')

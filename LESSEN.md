@@ -12,3 +12,4 @@ Nog geen cijfers. Tot dan gelden de regels uit de feedback:
 - Humor moet de uitleg dienen.
 - Zinnen niet aan elkaar plakken: elke zin apart, met een korte adempauze (anders klinkt het als 2 dingen tegelijk).
 - Nooit twee keer tekst tegelijk in beeld (reuzenwoorden + ondertitel) en niets dat overlapt.
+- Stem altijd per scène inspreken, nooit per losse zin: de meertalige stem gokt bij korte zinnen een andere taal. Pauzes worden achteraf ingekort tot ~0,3 s.

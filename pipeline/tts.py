@@ -12,8 +12,24 @@ import time
 from pathlib import Path
 
 import edge_tts
+import edge_tts.communicate as _ec
 
 from . import config
+
+def _mkssml_lang(tc, escaped_text):
+    """Zelfde SSML als edge-tts, maar met xml:lang=nl-NL (de <lang>-tag zelf wordt door de dienst geweigerd)."""
+    if isinstance(escaped_text, bytes):
+        escaped_text = escaped_text.decode("utf-8")
+    return (
+        f"<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='{config.VOICE_LANG}'>"
+        f"<voice name='{tc.voice}'>"
+        f"<prosody pitch='{tc.pitch}' rate='{tc.rate}' volume='{tc.volume}'>{escaped_text}</prosody>"
+        "</voice></speak>"
+    )
+
+
+if getattr(config, "VOICE_LANG", None):
+    _ec.mkssml = _mkssml_lang
 
 PRON = re.compile(r"\[([^\]|]+)\|([^\]]+)\]")
 
@@ -98,41 +114,58 @@ def _trim(mp3: Path, words):
     return [{**w, "start": w["start"] - a, "end": w["end"] - a} for w in words]
 
 
+def _silences(path: Path, min_dur=0.12):
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path), "-af", f"silencedetect=noise=-38dB:d={min_dur}",
+                        "-f", "null", "-"], capture_output=True, text=True)
+    st = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", r.stderr)]
+    en = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", r.stderr)]
+    return list(zip(st, en))
+
+
 def synth_scene(text: str, out_mp3: Path):
-    """Elke zin apart: duidelijke zinsgrenzen, maar korte pauzes (TikTok-tempo)."""
-    sents = split_sentences(text)
-    if len(sents) <= 1:
-        return _trim(out_mp3, asyncio.run(_synth(text, out_mp3)))
-    parts, words, t = [], [], 0.0
-    for k, (sent, end) in enumerate(sents):
-        part = out_mp3.with_name(f"{out_mp3.stem}_z{k:02d}.mp3")
-        for attempt in range(4):
-            try:
-                ws = asyncio.run(_synth(sent, part))
+    """Hele scène in één keer inspreken (met volledige context blijft de meertalige stem Nederlands),
+    dan elke stilte tussen zinnen inkorten tot een korte adempauze. Geen lange leespauzes, maar wel
+    duidelijke zinsgrenzen (anders klinkt het alsof hij 2 dingen tegelijk zegt)."""
+    words = _trim(out_mp3, asyncio.run(_synth(text, out_mp3)))
+    if not words:
+        return words
+    # zinsgrenzen markeren via het aantal woorden per zin
+    sents = split_sentences(display_text(text))
+    norm = lambda x: re.sub(r"[^\w%€]", "", x.lower())
+    pos = 0
+    for sent, end in sents:
+        last = norm(sent.split()[-1]) if sent.split() else ""
+        start = pos + max(0, len(sent.split()) - 3)  # niet te vroeg zoeken (zelfde woord kan eerder in de zin staan)
+        for j in range(min(start, len(words) - 1), len(words)):  # laatste woord van de zin op naam terugvinden
+            if last and (norm(words[j]["text"]) == last or last.endswith(norm(words[j]["text"]) or "#")):
+                words[j]["eos"], words[j]["eos_q"], pos = True, end == "?", j + 1
                 break
-            except Exception as e:
-                print(f"  zin {k}: poging {attempt + 1} mislukt ({type(e).__name__})", flush=True)
-                if attempt == 3:
-                    raise
-                time.sleep(2 + 3 * attempt)
-        ws = _trim(part, ws)
-        if ws:
-            ws[-1]["eos"] = True
-        d = duration(part)
-        words += [{**w, "start": w["start"] + t, "end": w["end"] + t} for w in ws]
-        gap = 0.0 if k == len(sents) - 1 else (config.QUESTION_GAP if end == "?" else config.SENTENCE_GAP)
-        parts.append((part, gap))
-        t += d + gap
-    inputs, filt = [], []
-    for i, (pp, gap) in enumerate(parts):
-        inputs += ["-i", str(pp)]
-        filt.append(f"[{i}:a]aresample=48000,apad=pad_dur={gap}[a{i}]")
-    filt.append("".join(f"[a{i}]" for i in range(len(parts))) + f"concat=n={len(parts)}:v=0:a=1[out]")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(filt),
-                    "-map", "[out]", "-c:a", "libmp3lame", "-q:a", "2", str(out_mp3)], check=True)
-    for pp, _ in parts:
-        pp.unlink()
-    return words
+    # stiltes inkorten
+    total = duration(out_mp3)
+    cuts = []
+    for st, en in _silences(out_mp3):
+        before = [w for w in words if w["end"] <= en + 0.05 and w["start"] < st + 0.05]
+        q = bool(before and before[-1].get("eos_q"))
+        target = config.QUESTION_GAP if q else config.SENTENCE_GAP
+        if en - st > target + 0.04 and st > 0.05 and en < total - 0.05:
+            cuts.append((st + target / 2, en - target / 2))
+    if not cuts:
+        return words
+    keep, last = [], 0.0
+    for a, b in cuts:
+        keep.append((last, a))
+        last = b
+    keep.append((last, total))
+    filt = [f"[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS[k{i}]" for i, (a, b) in enumerate(keep)]
+    filt.append("".join(f"[k{i}]" for i in range(len(keep))) + f"concat=n={len(keep)}:v=0:a=1[out]")
+    tmp = out_mp3.with_suffix(".cut.mp3")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out_mp3), "-filter_complex", ";".join(filt),
+                    "-map", "[out]", "-c:a", "libmp3lame", "-q:a", "2", str(tmp)], check=True)
+    tmp.replace(out_mp3)
+
+    def shift(t):
+        return t - sum(min(b, max(t, a)) - a for a, b in cuts if t > a)
+    return [{**w, "start": shift(w["start"]), "end": shift(w["end"])} for w in words]
 
 
 def duration(path: Path) -> float:
