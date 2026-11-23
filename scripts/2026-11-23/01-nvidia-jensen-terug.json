@@ -32,7 +32,7 @@
       }
     },
     {
-      "say": "Zelfs je mama vraagt nu: wat is Nvidia? Wel. Jensen richtte het mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, dat leren jasje draagt hij echt altijd.",
+      "say": "Wie is Jensen eigenlijk? Hij richtte Nvidia mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, dat leren jasje draagt hij echt altijd.",
       "visual": {
         "type": "point",
         "n": 1,
@@ -50,7 +50,7 @@
       }
     },
     {
-      "say": "Kijk wat dat doet. Vorige week: min 23%. Vrijdag sloot het aandeel op 125 dollar. Vandaag piekte het op bijna 170. Plus 35%!",
+      "say": "Kijk wat dat doet. Vorige week: min 23%. Vrijdag sloot het aandeel op 125 dollar. Vandaag piekte het op bijna 170. Plus 35%! Dat is geen beurs meer. Dat is een achtbaan.",
       "visual": {
         "type": "line",
         "title": "Nvidia-aandeel",

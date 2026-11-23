@@ -6,7 +6,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-nvidia-jensen-terug | Jensen Huang is terug: Nvidia +35% op één dag | 66 s | 151 | 10/10 | 5 |
+| 01-nvidia-jensen-terug | Jensen Huang is terug: Nvidia +35% op één dag | 66 s | 155 | 10/10 | 5 |
 
 ---
 
@@ -18,11 +18,11 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 > Plot twist. Jensen Huang is terug. Leren jasje inbegrepen. En Nvidia? Plus 35%. Op één dag.
 >
-> Zelfs je mama vraagt nu: wat is Nvidia? Wel. Jensen richtte het mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, dat leren jasje draagt hij echt altijd.
+> Wie is Jensen eigenlijk? Hij richtte Nvidia mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, dat leren jasje draagt hij echt altijd.
 >
 > Begin november moest hij even opzij. Er liep een intern onderzoek. Beleggers schrokken. Zonder Jensen geen plan, dachten ze. Vandaag haalt het bestuur hem terug. En dat unaniem.
 >
-> Kijk wat dat doet. Vorige week: min 23%. Vrijdag sloot het aandeel op 125 dollar. Vandaag piekte het op bijna 170. Plus 35%!
+> Kijk wat dat doet. Vorige week: min 23%. Vrijdag sloot het aandeel op 125 dollar. Vandaag piekte het op bijna 170. Plus 35%! Dat is geen beurs meer. Dat is een achtbaan.
 >
 > En Jensen trekt de hele sector mee. Chipbedrijven staan bijna 15% hoger. De Nasdaq ruim 7%. Na de slechtste week sinds 2020? Dat is een flinke opluchting.
 >
@@ -68,8 +68,8 @@ Tussenstand maandag 23/11, kort na de opening. Algemene info, geen beleggingsadv
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (151 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (65.7 s)
+- ✅ Woordenaantal 150-190 (155 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (66.3 s)
 - ✅ Hook kort (≤ 22 woorden) (16 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')

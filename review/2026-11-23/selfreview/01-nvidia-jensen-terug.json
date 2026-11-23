@@ -1,7 +1,7 @@
 {
  "id": "01-nvidia-jensen-terug",
  "signalen": {
-  "duration": 65.7,
+  "duration": 66.3,
   "scenes": [
    {
     "n": 0,
@@ -14,9 +14,9 @@
    {
     "n": 1,
     "type": "point",
-    "sec": 13.0,
-    "woorden": 34,
-    "woorden_per_sec": 2.61,
+    "sec": 11.2,
+    "woorden": 29,
+    "woorden_per_sec": 2.6,
     "langste_zin": 9
    },
    {
@@ -30,9 +30,9 @@
    {
     "n": 3,
     "type": "line",
-    "sec": 10.9,
-    "woorden": 23,
-    "woorden_per_sec": 2.11,
+    "sec": 13.4,
+    "woorden": 32,
+    "woorden_per_sec": 2.39,
     "langste_zin": 7
    },
    {
@@ -53,8 +53,8 @@
    }
   ],
   "zinnen": {
-   "aantal": 31,
-   "gemiddeld": 4.9,
+   "aantal": 32,
+   "gemiddeld": 4.8,
    "langer_dan_10": []
   },
   "hook": {
@@ -63,7 +63,7 @@
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 64,
+   "blokken": 66,
    "langste": "Chipbedrijven staan bijna"
   },
   "layout": [
