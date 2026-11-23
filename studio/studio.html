@@ -189,6 +189,26 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
 .lessons p { margin: 0 }
 .views { font: 700 12px var(--font-mono); color: var(--fg) }
 @media (max-width: 520px) { .stats-form { grid-template-columns: repeat(2, minmax(0, 1fr)) } }
+
+/* ---- Planning ---- */
+.agenda { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 18px }
+.now { align-self: start; border-radius: 12px; padding: 14px 16px; background: var(--surface-2); border: 1px solid var(--line); display: grid; gap: 6px; align-content: start }
+.now.busy { border-color: var(--info); box-shadow: 0 0 0 3px color-mix(in srgb, var(--info) 20%, transparent) }
+.now .big { font: 800 18px/1.25 var(--font-display) }
+.now .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--muted); margin-right: 6px }
+.now.busy .dot { background: var(--info); animation: pulse 1.4s infinite }
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px }
+.timeline li { display: grid; grid-template-columns: 92px 52px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 8px 10px; border-radius: 10px; background: var(--surface-2); border: 1px solid transparent; font-size: 13.5px }
+.timeline li.next { border-color: var(--accent) }
+.timeline li.past { opacity: .62 }
+.timeline .d { font-weight: 700 } .timeline .t { font: 600 12.5px var(--font-mono); color: var(--muted) }
+.timeline .w { min-width: 0 } .timeline .w small { display: block; color: var(--muted); font-size: 12px }
+.tag { font: 700 11px/1 var(--font-mono); padding: 4px 8px; border-radius: 99px; white-space: nowrap; background: var(--line); color: var(--muted) }
+.tag.fis { background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent) }
+.tag.nas { background: color-mix(in srgb, var(--info) 18%, transparent); color: var(--info) }
+.tag.mkt { background: color-mix(in srgb, var(--num) 20%, transparent); color: var(--num) }
+.tag.ok { background: color-mix(in srgb, var(--ok) 20%, transparent); color: var(--ok) }
+@media (max-width: 860px) { .agenda { grid-template-columns: 1fr } .timeline li { grid-template-columns: 74px 46px minmax(0, 1fr) } .timeline li .tag { grid-column: 3 } }
 </style>
 
 <div class="wrap">
@@ -204,6 +224,14 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
   <div id="banner" class="banner" hidden></div>
 
 
+
+  <section class="panel" aria-labelledby="plan-title">
+    <div class="flow-head"><h2 id="plan-title" style="margin:0">Planning</h2><p>Wanneer Claude aan de slag gaat · Brusselse tijd</p></div>
+    <div class="agenda">
+      <div class="now" id="now"></div>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
   <section class="panel" id="voice-panel" aria-labelledby="voice-title" hidden>
     <div class="flow-head"><h2 id="voice-title" style="margin:0">Stemkeuze</h2><p id="voice-sub">Luister en kies de stem die het menselijkst klinkt</p></div>
     <div class="voices" id="voices"></div>
@@ -289,7 +317,7 @@ function render() {
   const weeks = [...new Set([...Object.keys(runs), ...videos.map(v => v.week)])].sort().reverse();
   if (!week || !weeks.includes(week)) week = weeks[0] || null;
   const sel = $("#week"); sel.replaceChildren(...weeks.map(w => el("option", { value: w, textContent: w, selected: w === week })));
-  renderVoices(); renderLessons(); renderRun(); renderFlow(); renderGrid(); renderDetail();
+  renderAgenda(); renderVoices(); renderLessons(); renderRun(); renderFlow(); renderGrid(); renderDetail();
 }
 
 // ---------- Overzicht ----------
@@ -461,6 +489,64 @@ function selfReviewSection(v) {
     r.changes?.length ? el("ul", { className: "plain" }, r.changes.map(c => el("li", {}, [el("span", { textContent: "✎" }), el("div", { textContent: c })]))) : null,
     r.verdict ? el("p", { className: "hint", textContent: r.verdict, style: "margin:0" }) : null]);
 }
+
+// ---------- Planning ----------
+const DAG = ["zo", "ma", "di", "wo", "do", "vr", "za"];
+const DAGLANG = ["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"];
+function brusselsParts(d) {
+  const f = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Brussels", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false, weekday: "short" });
+  const o = Object.fromEntries(f.formatToParts(d).map(p => [p.type, p.value]));
+  return { date: `${o.year}-${o.month}-${o.day}`, hm: `${o.hour}:${o.minute}`, wd: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday) };
+}
+function plannedRuns() {
+  // regels uit WORKFLOW.md: elke avond 19:57 een video, zaterdag 10:51 marktnieuws + views-analyse
+  const out = [], now = new Date();
+  for (let i = -1; i < 8; i++) {
+    const p = brusselsParts(new Date(now.getTime() + i * 864e5));
+    const dayType = [0, 3, 5].includes(p.wd) ? ["nas", "Nasdaq-uitleg of beursgeschiedenis"] : ["fis", "Fiscaal onderwerp"];
+    if (p.wd === 6) out.push({ date: p.date, wd: p.wd, time: "10:51", key: p.date + "-markt", tag: ["mkt", "Marktnieuws"],
+      what: "Weekoverzicht van de beurs (ma-vr)", sub: "+ zelfreview · + analyse van je views en nieuwe lessen" });
+    out.push({ date: p.date, wd: p.wd, time: "19:57", key: p.date, tag: dayType,
+      what: `1 video: ${dayType[1]}`, sub: (p.wd === 5 || p.wd === 6) ? "dagnieuws alleen bij iets uitzonderlijks · + zelfreview" : "of dagnieuws als de Nasdaq ≥ 2% bewoog · + zelfreview" });
+  }
+  return out;
+}
+function renderAgenda() {
+  const nowP = brusselsParts(new Date()), nowKey = nowP.date + " " + nowP.hm;
+  const items = plannedRuns();
+  const busy = Object.entries(runs).find(([, r]) => r.state === "bezig");
+  const next = items.find(x => `${x.date} ${x.time}` > nowKey);
+  const box = $("#now");
+  box.classList.toggle("busy", !!busy);
+  if (busy) {
+    const [id, r] = busy, cur = (r.steps || []).find(st => st.state === "doing");
+    const last = (r.log || []).slice(-1)[0];
+    box.replaceChildren(el("span", { className: "hint" }, [el("span", { className: "dot" }), "Nu bezig"]),
+      el("div", { className: "big", textContent: r.label || id }),
+      el("div", { textContent: cur ? `Stap: ${cur.key}${cur.detail ? " · " + cur.detail : ""}` : "Bezig…" }),
+      last ? el("div", { className: "hint", textContent: `${hhmm(last.at)} · ${last.msg}` }) : null);
+  } else {
+    const isTomorrow = next && next.date !== nowP.date;
+    const when = next ? `${next.date === nowP.date ? "Vandaag" : isTomorrow && next.date === brusselsParts(new Date(Date.now() + 864e5)).date ? "Morgen" : DAGLANG[next.wd]} om ${next.time}` : "";
+    box.replaceChildren(el("span", { className: "hint" }, [el("span", { className: "dot" }), "Niet bezig, wacht op de volgende run"]),
+      el("div", { className: "big", textContent: next ? `${when}: ${next.what}` : "Geen run gepland" }),
+      next ? el("div", { className: "hint", textContent: next.sub }) : null,
+      el("div", { className: "hint", textContent: "Tussen de runs door gebeurt er niets. Jij bekijkt, plant in en geeft feedback; dat neem ik mee bij de volgende run." }));
+  }
+  // verleden runs alleen tonen als ze echt gelopen hebben
+  $("#timeline").replaceChildren(...items.filter(x => `${x.date} ${x.time}` > nowKey || runs[x.key]).slice(0, 8).map(x => {
+    const done = runs[x.key];
+    const past = `${x.date} ${x.time}` <= nowKey;
+    const li = el("li", { className: (x === next ? "next" : "") + (past ? " past" : "") }, [
+      el("span", { className: "d", textContent: `${DAG[x.wd]} ${x.date.slice(8)}/${x.date.slice(5, 7)}` }),
+      el("span", { className: "t", textContent: x.time }),
+      el("div", { className: "w" }, [document.createTextNode(x.what), el("small", { textContent: x.sub })]),
+      done ? el("span", { className: "tag ok", textContent: done.state === "bezig" ? "bezig" : done.state === "fout" ? "fout" : "✓ klaar" })
+           : el("span", { className: "tag " + x.tag[0], textContent: past ? "niet gelopen" : x.tag[1] })]);
+    return li;
+  }));
+}
+setInterval(() => { try { renderAgenda(); } catch {} }, 60000);
 
 function renderRun() {
   const r = runs[week];
