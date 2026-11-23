@@ -184,6 +184,7 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
 .score.lo b { color: var(--warn) } .score.hi b { color: var(--ok) }
 .stats-form { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px }
 .stats-form label { display: grid; gap: 3px; font-size: 12px; color: var(--muted) }
+input[type="date"] { font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px }
 .stats-form input { font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 8px; width: 100%; min-width: 0; font-variant-numeric: tabular-nums }
 .lessons ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px }
 .lessons p { margin: 0 }
@@ -460,6 +461,12 @@ function renderLessons() {
     insights.summary ? el("p", { textContent: insights.summary, style: "margin-top:6px" }) : null,
     insights.lessons?.length ? el("ul", {}, insights.lessons.map(x => el("li", { textContent: x }))) : null);
 }
+function daysAgo(iso) {
+  if (!iso) return null;
+  const d = Math.floor((Date.now() - new Date(iso).getTime()) / 864e5);
+  return isNaN(d) ? null : Math.max(0, d);
+}
+function agoText(n) { return n === 0 ? "vandaag geüpload" : n === 1 ? "gisteren geüpload" : `${n} dagen geleden geüpload`; }
 const STAT_FIELDS = [["views", "Views"], ["likes", "Likes"], ["comments", "Reacties"], ["shares", "Gedeeld"], ["saves", "Bewaard"], ["watchPct", "% volledig bekeken"]];
 function statsSection(v) {
   const st = v.stats || {};
@@ -471,13 +478,24 @@ function statsSection(v) {
   const msg = el("span", { className: "hint", role: "status", textContent: st.updatedAt ? `Laatst bijgewerkt ${fmtTime(st.updatedAt)}` : "Vul in wat TikTok toont. Claude analyseert dit elke week." });
   btn.addEventListener("click", async () => {
     const stats = { updatedAt: new Date().toISOString() };
+    if (v.uploadedAt) stats.daysSinceUpload = daysAgo(v.uploadedAt);
     for (const [k, , inp] of inputs) if (inp.value !== "") stats[k] = Number(inp.value);
     btn.disabled = true;
     const ok = await save(v, { stats });
     btn.disabled = !canWrite;
     msg.textContent = ok ? `✓ Bewaard om ${hhmm(stats.updatedAt)}` : "Bewaren mislukt. Probeer opnieuw.";
   });
-  return el("div", { className: "sec" }, [el("span", { textContent: "Prestaties op TikTok" }),
+  const n = daysAgo(v.uploadedAt);
+  const dIn = el("input", { id: `up-${v._key}`, type: "date", value: v.uploadedAt ? new Date(v.uploadedAt).toLocaleDateString("en-CA") : "", disabled: !canWrite });
+  dIn.addEventListener("change", async () => {
+    if (!dIn.value) return;
+    await save(v, { uploadedAt: new Date(dIn.value + "T12:00:00").toISOString() });
+  });
+  const per = n && v.stats?.views != null ? ` · ≈ ${Math.round(v.stats.views / Math.max(1, n)).toLocaleString("nl-BE")} views per dag` : "";
+  const upRow = el("div", { className: "row", style: "justify-content:space-between" }, [
+    el("b", { textContent: n == null ? "Nog niet geüpload" : agoText(n) + per, style: "font-size:14px" }),
+    el("label", { htmlFor: dIn.id, className: "hint", style: "display:flex;gap:6px;align-items:center" }, ["Uploaddatum", dIn])]);
+  return el("div", { className: "sec" }, [el("span", { textContent: "Prestaties op TikTok" }), upRow,
     el("div", { className: "stats-form" }, inputs.map(x => x[1])), el("div", { className: "row" }, [btn, msg])]);
 }
 function selfReviewSection(v) {
@@ -617,6 +635,7 @@ function renderGrid() {
         warns ? el("span", { className: "pill warn", textContent: `⚠️ ${warns}` }) : null,
         v.durationSec ? el("span", { className: "pill num", textContent: `${Math.round(v.durationSec)} s` }) : null,
         v.stats?.views != null ? el("span", { className: "views", textContent: `👁 ${Number(v.stats.views).toLocaleString("nl-BE")}` }) : null,
+        daysAgo(v.uploadedAt) != null ? el("span", { className: "pill", textContent: daysAgo(v.uploadedAt) === 0 ? "vandaag" : `${daysAgo(v.uploadedAt)} d geleden` }) : null,
       ])])]);
     b.addEventListener("click", () => { selected = v._key; renderGrid(); renderDetail(); });
     return b;
@@ -664,7 +683,7 @@ function renderDetailInner() {
   // status
   const pick = el("div", { className: "status-pick" }, STATUSES.map(([s]) => {
     const bt = el("button", { textContent: s, ariaPressed: String(v.status === s), disabled: !canWrite });
-    bt.addEventListener("click", () => save(v, { status: s }));
+    bt.addEventListener("click", () => save(v, s === "geüpload" && !v.uploadedAt ? { status: s, uploadedAt: new Date().toISOString() } : { status: s }));
     return bt;
   }));
   kids.push(el("div", { className: "sec" }, [el("span", { textContent: "Status" }), pick]));

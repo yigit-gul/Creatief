@@ -85,6 +85,10 @@ Controleer per video één frame (bv. bij het rekenvoorbeeld) op overlap. Gefaal
 
 ## 4c. Leren van de views (elke zaterdag, in de marktnieuwstaak)
 - De gebruiker vult per video `stats` in de Studio in (views, likes, comments, shares, saves, watchPct).
+  `uploadedAt` wordt gezet zodra een video op `geüpload` gaat (of de gebruiker vult de datum in);
+  `stats.daysSinceUpload` zegt hoe oud de video was toen de cijfers werden ingevuld.
+- Vergelijk eerlijk: een video van 1 dag oud heeft minder views dan een van 7 dagen. Gebruik views per dag
+  of vergelijk video's op dezelfde leeftijd.
 - Lees alle video's met `stats`. Vergelijk: welke hooks, onderwerpen, lengtes, humor en dagtypes scoren beter?
   Klopte je `trendScore`? Leg patronen pas vast als ze over meerdere video's terugkomen; zeg eerlijk als er te
   weinig data is.
