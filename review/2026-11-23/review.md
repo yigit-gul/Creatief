@@ -16,7 +16,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 ### Script (voice-over)
 
-> Plot twist. Jensen Huang is terug. Leren jasje inbegrepen. En Nvidia? Plus 35%. Op één dag.
+> Plus 35%. Op één dag. Nvidia knalt door het dak. En waarom? Jensen Huang is terug.
 >
 > Wie is Jensen eigenlijk? Hij richtte Nvidia mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, dat leren jasje draagt hij echt altijd.
 >

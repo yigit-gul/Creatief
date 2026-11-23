@@ -376,7 +376,8 @@ def draw_slam(d, v, t, dur):
         sc = 1 + 0.5 * (1 - ease(p))
         cols = v.get("colors", ["text", "yellow"])
         col = COL[cols[i % len(cols)]]
-        f = fit_font(d, word, "Black", v.get("size", 230), CONTENT_W, 1)
+        sizes = v.get("sizes")
+        f = fit_font(d, word, "Black", sizes[i] if sizes and i < len(sizes) else v.get("size", 230), CONTENT_W, 1)
         tw = int(d.textlength(word, font=f)) + 20
         th = int(f.size * 1.25)
         tile = Image.new("RGBA", (tw, th), (0, 0, 0, 0))

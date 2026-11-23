@@ -4,31 +4,31 @@
   "validity": "Tussenstand maandag 23 november 2026, kort na de opening in New York (≈ 16:20 Belgische tijd). Geen slotkoers.",
   "scenes": [
     {
-      "say": "Plot twist. Jensen Huang is terug. Leren jasje inbegrepen. En Nvidia? Plus 35%. Op één dag.",
+      "say": "Plus 35%. Op één dag. Nvidia knalt door het dak. En waarom? Jensen Huang is terug.",
       "visual": {
         "type": "slam",
-        "kicker": "Breaking · 23 nov",
+        "kicker": "Nvidia · 23 nov",
         "words": [
-          "PLOT TWIST.",
-          "JENSEN IS TERUG.",
-          "LEREN JASJE INBEGREPEN.",
-          "+35%"
+          "+35%",
+          "OP ÉÉN DAG.",
+          "JENSEN IS TERUG."
         ],
         "colors": [
-          "text",
           "yellow",
           "text",
           "yellow"
         ],
-        "stagger": 1.1,
-        "size": 128,
-        "y": 545,
+        "sizes": [
+          300,
+          120,
+          120
+        ],
         "cues": [
-          "Plot",
-          "Jensen",
-          "Leren",
-          "35%"
-        ]
+          "35%",
+          "dag",
+          "Jensen"
+        ],
+        "y": 560
       }
     },
     {

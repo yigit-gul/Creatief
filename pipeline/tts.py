@@ -15,6 +15,7 @@ import edge_tts
 import edge_tts.communicate as _ec
 
 from . import config
+from .getallen import to_spoken
 
 def _mkssml_lang(tc, escaped_text):
     """Zelfde SSML als edge-tts, maar met xml:lang=nl-NL (de <lang>-tag zelf wordt door de dienst geweigerd)."""
@@ -64,6 +65,8 @@ def flowing(text: str) -> str:
 async def _synth(text: str, out_mp3: Path):
     spoken, mapping = split_pronunciation(text)
     spoken = flowing(spoken).replace("&", " en ")  # "&" breekt de spraakdienst (bv. S&P -> "S en P")
+    # cijfers als Nederlandse woorden: anders leest de meertalige stem "35%" soms in het Frans
+    spoken, num_repl = to_spoken(spoken)
     proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
     com = edge_tts.Communicate(
         spoken, config.VOICE, rate=config.VOICE_RATE, pitch=config.VOICE_PITCH,
@@ -85,7 +88,29 @@ async def _synth(text: str, out_mp3: Path):
                         "start": ch["offset"] / 1e7,
                         "end": (ch["offset"] + ch["duration"]) / 1e7,
                     })
-    return words
+    return merge_numbers(words, num_repl)
+
+
+def merge_numbers(words, repl):
+    """Uitgeschreven getallen ('vijfendertig', 'procent') terug samenvoegen tot het getoonde token ('35%')."""
+    norm = lambda x: re.sub(r"[^\w]", "", x.lower())
+    out, i, k = [], 0, 0
+    while i < len(words):
+        if k < len(repl):
+            seq, shown, attach = repl[k]
+            n = len(seq)
+            if [norm(w["text"]) for w in words[i:i + n]] == [norm(x) for x in seq]:
+                if attach and out:  # bv. 'Nasdaq-100': het getal hoort bij het vorige woord
+                    out[-1] = {**out[-1], "text": out[-1]["text"] + shown, "end": words[i + n - 1]["end"]}
+                else:
+                    out.append({"text": shown, "start": words[i]["start"], "end": words[i + n - 1]["end"]})
+                i += n
+                k += 1
+                continue
+            # lukt de match niet op deze plek, dan zoeken we verder bij het volgende woord
+        out.append(words[i])
+        i += 1
+    return out
 
 
 SENT_SPLIT = re.compile(r"(?<=[a-zà-ÿ0-9%€)\]'\"])([.!?])\s+")
@@ -126,7 +151,11 @@ def synth_scene(text: str, out_mp3: Path):
     """Hele scène in één keer inspreken (met volledige context blijft de meertalige stem Nederlands),
     dan elke stilte tussen zinnen inkorten tot een korte adempauze. Geen lange leespauzes, maar wel
     duidelijke zinsgrenzen (anders klinkt het alsof hij 2 dingen tegelijk zegt)."""
-    words = _trim(out_mp3, asyncio.run(_synth(text, out_mp3)))
+    raw = asyncio.run(_synth(text, out_mp3))
+    expected = len(display_text(text).split())
+    if len(raw) < 0.85 * expected:  # de dienst gaf soms maar een stuk audio terug, zonder fout
+        raise RuntimeError(f"onvolledige audio: {len(raw)}/{expected} woorden")
+    words = _trim(out_mp3, raw)
     if not words:
         return words
     # zinsgrenzen markeren via het aantal woorden per zin
