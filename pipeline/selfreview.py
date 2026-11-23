@@ -17,7 +17,11 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 from . import config as C
-from .render import chunk_words, font
+import copy
+
+import numpy as np
+
+from .render import animation_end, apply_cues, chunk_words, font, render_layer
 from .tts import display_text
 
 RUBRIC = {
@@ -26,13 +30,24 @@ RUBRIC = {
     "tempo": "Geen stukken die slepen of te vol zitten; elke scène heeft een reden.",
     "humor": "Minstens 1-2 knipogen die de uitleg helpen; niets geforceerd of kwetsend.",
     "info": "Leer je echt iets? Klopt elk cijfer met de claims en bronnen?",
-    "visueel": "Tekst leesbaar, niets overlapt, grafiek/cijfers verschijnen op het juiste moment.",
+    "visueel": "Tekst leesbaar, niets overlapt of staat dubbel (beeld + ondertitel), grafiek/cijfers verschijnen op het juiste moment.",
+    "stem": "Elke zin is apart te horen (korte adempauze), niets klinkt als 2 dingen tegelijk, geen leesstijl.",
     "regels": "Geen advies of voorspelling, disclaimer op het einde, AI-vermelding in caption.",
 }
 
 
 def _sentences(text):
     return [s.strip() for s in re.split(r"(?<=[.?!])\s+", text) if s.strip()]
+
+
+def silences(audio: Path):
+    if not audio.exists():
+        return []
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(audio), "-af", "silencedetect=noise=-38dB:d=0.1",
+                        "-f", "null", "-"], capture_output=True, text=True)
+    st = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", r.stderr)]
+    en = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", r.stderr)]
+    return list(zip(st, en))
 
 
 def signals(script, timing):
@@ -73,6 +88,33 @@ def signals(script, timing):
             flags.append(f"Scène {s['n']} duurt {s['sec']} s: risico op wegzappen, overweeg te splitsen.")
     if gaps:
         flags.append(f"{len(gaps)} stilte(s) > 0,6 s.")
+    # zinnen die aan elkaar plakken (klinkt alsof hij 2 dingen tegelijk zegt)
+    sil = silences(C.ROOT / timing["audio"].replace(".wav", ".mp3")) if timing.get("audio") else []
+    def breathes(a, b):  # echte stilte in de audio tussen twee zinnen (woordtimings zijn te ruim)
+        return any(e - st >= 0.15 and st < b["start"] + 0.05 and e > a["end"] - 0.35 for st, e in sil)
+    glued = [f'"{a["text"]} | {b["text"]}"' for a, b in zip(words, words[1:]) if a.get("eos") and not breathes(a, b)]
+    if glued:
+        flags.append(f"{len(glued)} zinsgrens(en) zonder adempauze: {', '.join(glued[:4])}.")
+    # tekst in beeld die de ondertitels raakt, of dubbele tekst (beeld + ondertitel)
+    scenes = copy.deepcopy(script["scenes"])
+    apply_cues(scenes, sc, words)
+    overlap = []
+    for i, (scn, t) in enumerate(zip(scenes, sc)):
+        v = scn["visual"]
+        subs = v.get("subs", v["type"] != "slam")
+        if v["type"] == "slam" and v.get("subs"):
+            flags.append(f"Scène {i}: reuzenwoorden én ondertitels tegelijk (dubbele tekst).")
+        if not subs:
+            continue
+        dur = t["end"] - t["start"]
+        layer = render_layer(scn, min(dur, animation_end(v, dur) + 0.5), dur)
+        a = np.asarray(layer)[:, :, 3]
+        rows = np.where(a[: C.H - 60].max(axis=1) > 40)[0]
+        bottom = int(rows.max()) if len(rows) else 0
+        overlap.append({"scene": i, "onderkant_tekst": bottom})
+        if bottom > C.SUB_Y - 80:
+            flags.append(f"Scène {i}: tekst in beeld loopt tot y={bottom} en raakt de ondertitels (y≈{C.SUB_Y}).")
+    out["layout"] = overlap
     out["aandachtspunten"] = flags
     return out
 

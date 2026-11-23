@@ -1,54 +1,54 @@
 {
  "id": "01-nvidia-jensen-terug",
  "signalen": {
-  "duration": 62.9,
+  "duration": 65.7,
   "scenes": [
    {
     "n": 0,
     "type": "slam",
-    "sec": 5.8,
+    "sec": 7.4,
     "woorden": 16,
-    "woorden_per_sec": 2.77,
+    "woorden_per_sec": 2.15,
     "langste_zin": 4
    },
    {
     "n": 1,
     "type": "point",
-    "sec": 12.6,
+    "sec": 13.0,
     "woorden": 34,
-    "woorden_per_sec": 2.69,
+    "woorden_per_sec": 2.61,
     "langste_zin": 9
    },
    {
     "n": 2,
     "type": "point",
-    "sec": 10.9,
+    "sec": 11.0,
     "woorden": 28,
-    "woorden_per_sec": 2.56,
+    "woorden_per_sec": 2.55,
     "langste_zin": 6
    },
    {
     "n": 3,
     "type": "line",
-    "sec": 11.0,
+    "sec": 10.9,
     "woorden": 23,
-    "woorden_per_sec": 2.09,
+    "woorden_per_sec": 2.11,
     "langste_zin": 7
    },
    {
     "n": 4,
     "type": "bars",
-    "sec": 11.6,
+    "sec": 11.7,
     "woorden": 27,
-    "woorden_per_sec": 2.33,
+    "woorden_per_sec": 2.3,
     "langste_zin": 7
    },
    {
     "n": 5,
     "type": "outro",
-    "sec": 8.4,
+    "sec": 8.0,
     "woorden": 23,
-    "woorden_per_sec": 2.74,
+    "woorden_per_sec": 2.87,
     "langste_zin": 9
    }
   ],
@@ -63,9 +63,31 @@
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 62,
+   "blokken": 64,
    "langste": "Chipbedrijven staan bijna"
   },
+  "layout": [
+   {
+    "scene": 1,
+    "onderkant_tekst": 980
+   },
+   {
+    "scene": 2,
+    "onderkant_tekst": 980
+   },
+   {
+    "scene": 3,
+    "onderkant_tekst": 1233
+   },
+   {
+    "scene": 4,
+    "onderkant_tekst": 1290
+   },
+   {
+    "scene": 5,
+    "onderkant_tekst": 1212
+   }
+  ],
   "aandachtspunten": []
  },
  "rubriek": {
@@ -95,7 +117,12 @@
    "opmerking": ""
   },
   "visueel": {
-   "vraag": "Tekst leesbaar, niets overlapt, grafiek/cijfers verschijnen op het juiste moment.",
+   "vraag": "Tekst leesbaar, niets overlapt of staat dubbel (beeld + ondertitel), grafiek/cijfers verschijnen op het juiste moment.",
+   "score": null,
+   "opmerking": ""
+  },
+  "stem": {
+   "vraag": "Elke zin is apart te horen (korte adempauze), niets klinkt als 2 dingen tegelijk, geen leesstijl.",
    "score": null,
    "opmerking": ""
   },

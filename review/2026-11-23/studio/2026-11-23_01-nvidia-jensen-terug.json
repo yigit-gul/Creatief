@@ -4,7 +4,7 @@
  "title": "Jensen Huang is terug: Nvidia +35% op één dag",
  "validity": "Tussenstand maandag 23 november 2026, kort na de opening in New York (≈ 16:20 Belgische tijd). Geen slotkoers.",
  "status": "klaar voor review",
- "durationSec": 62.9,
+ "durationSec": 65.7,
  "words": 151,
  "script": [
   "Plot twist. Jensen Huang is terug. Leren jasje inbegrepen. En Nvidia? Plus 35%. Op één dag.",
@@ -140,7 +140,7 @@
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "62.9 s"
+   "info": "65.7 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
@@ -183,29 +183,5 @@
    "info": ""
   }
  ],
- "repoPath": "review/2026-11-23/01-nvidia-jensen-terug.mp4",
- "trendScore": 9,
- "trendRank": 1,
- "trendReason": "Supertijdsgebonden: comeback van een bekend gezicht plus een reuzencijfer (+35%) in de eerste seconden. Grappige intro. Wel snel posten: morgen is dit oud nieuws.",
- "selfReview": {
-  "rounds": 4,
-  "scores": {
-   "hook": 5,
-   "eenvoud": 5,
-   "tempo": 4,
-   "humor": 5,
-   "info": 4,
-   "visueel": 5,
-   "regels": 5
-  },
-  "changes": [
-   "Op jouw vraag: de comeback van Jensen is het verhaal, met een opvallende 'slam'-intro.",
-   "Intro grappiger: 'Plot twist. Jensen is terug. Leren jasje inbegrepen.' + mama-grap.",
-   "Reuzenwoorden verschijnen exact wanneer ze uitgesproken worden.",
-   "Bug opgelost: lijngrafiek bevroor te vroeg, nu zie je de sprong naar $170.",
-   "Te lange zin opgesplitst; intro van 24 naar 16 woorden."
-  ],
-  "verdict": "Opvallend en grappig, en de cijfers kloppen met de koersdata. Enige risico: het is een tussenstand."
- },
- "videoUrl": "/_blob/aa58fcf4d4cf455d4e1ef1af9acddac5"
+ "repoPath": "review/2026-11-23/01-nvidia-jensen-terug.mp4"
 }

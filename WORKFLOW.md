@@ -76,12 +76,16 @@ Controleer per video één frame (bv. bij het rekenvoorbeeld) op overlap. Gefaal
 1. `python -m pipeline.selfreview scripts/<map>` maakt per video een contactsheet (`review/<map>/selfreview/<id>.png`)
    en meetbare signalen (`<id>.json`: tempo per scène, zinnen > 10 woorden, hook-duur, stiltes, aandachtspunten).
 2. Bekijk de contactsheet (Read) en lees het script hardop "in je hoofd". Geef elke rubriek een score 1-5:
-   **hook, eenvoud, tempo, humor, info, visueel, regels** (vragen staan in het JSON-bestand).
+   **hook, eenvoud, tempo, humor, info, visueel, stem, regels** (vragen staan in het JSON-bestand).
    Kijk ook naar `LESSEN.md`: zondigt de video tegen een les uit eerdere views?
 3. Is één score ≤ 3, of staat er een aandachtspunt dat echt telt? Verbeter het script (of de renderer), bouw opnieuw
    en review opnieuw. Maximaal 3 rondes. Wees streng: liever één extra ronde dan een middelmatige video.
 4. Zet in het Studio-document `selfReview`: `{"rounds": n, "scores": {...}, "changes": ["wat je aanpaste"],
    "verdict": "één zin: waarom deze versie goed genoeg is"}`.
+
+   Feedback van de gebruiker die hier hoort: geen tekst op elkaar of dubbel (beeld + ondertitel), en elke zin
+   apart hoorbaar (niet "2 dingen tegelijk"). De pipeline spreekt elke zin apart in met een korte pauze en
+   verbergt ondertitels bij `slam`-scènes; de zelfreview meet echte stiltes en overlap.
 
 ## 4c. Leren van de views (elke zaterdag, in de marktnieuwstaak)
 - De gebruiker vult per video `stats` in de Studio in (views, likes, comments, shares, saves, watchPct).

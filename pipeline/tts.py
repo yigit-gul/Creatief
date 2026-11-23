@@ -72,6 +72,69 @@ async def _synth(text: str, out_mp3: Path):
     return words
 
 
+SENT_SPLIT = re.compile(r"(?<=[a-zà-ÿ0-9%€)\]'\"])([.!?])\s+")
+
+
+def split_sentences(text: str):
+    """Zinnen apart houden (afkortingen zoals [TOB|T.O.B.] blijven heel)."""
+    out, last = [], 0
+    for m in SENT_SPLIT.finditer(text):
+        out.append((text[last:m.end(1)].strip(), m.group(1)))
+        last = m.end()
+    if text[last:].strip():
+        rest = text[last:].strip()
+        out.append((rest, rest[-1] if rest[-1] in ".!?" else "."))
+    return out
+
+
+def _trim(mp3: Path, words):
+    if not words:
+        return words
+    a, b = max(0.0, words[0]["start"] - 0.03), words[-1]["end"] + 0.06
+    trimmed = mp3.with_suffix(".trim.mp3")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), "-ss", f"{a:.3f}",
+                    "-to", f"{b:.3f}", "-c:a", "libmp3lame", "-q:a", "2", str(trimmed)], check=True)
+    trimmed.replace(mp3)
+    return [{**w, "start": w["start"] - a, "end": w["end"] - a} for w in words]
+
+
+def synth_scene(text: str, out_mp3: Path):
+    """Elke zin apart: duidelijke zinsgrenzen, maar korte pauzes (TikTok-tempo)."""
+    sents = split_sentences(text)
+    if len(sents) <= 1:
+        return _trim(out_mp3, asyncio.run(_synth(text, out_mp3)))
+    parts, words, t = [], [], 0.0
+    for k, (sent, end) in enumerate(sents):
+        part = out_mp3.with_name(f"{out_mp3.stem}_z{k:02d}.mp3")
+        for attempt in range(4):
+            try:
+                ws = asyncio.run(_synth(sent, part))
+                break
+            except Exception as e:
+                print(f"  zin {k}: poging {attempt + 1} mislukt ({type(e).__name__})", flush=True)
+                if attempt == 3:
+                    raise
+                time.sleep(2 + 3 * attempt)
+        ws = _trim(part, ws)
+        if ws:
+            ws[-1]["eos"] = True
+        d = duration(part)
+        words += [{**w, "start": w["start"] + t, "end": w["end"] + t} for w in ws]
+        gap = 0.0 if k == len(sents) - 1 else (config.QUESTION_GAP if end == "?" else config.SENTENCE_GAP)
+        parts.append((part, gap))
+        t += d + gap
+    inputs, filt = [], []
+    for i, (pp, gap) in enumerate(parts):
+        inputs += ["-i", str(pp)]
+        filt.append(f"[{i}:a]aresample=48000,apad=pad_dur={gap}[a{i}]")
+    filt.append("".join(f"[a{i}]" for i in range(len(parts))) + f"concat=n={len(parts)}:v=0:a=1[out]")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(filt),
+                    "-map", "[out]", "-c:a", "libmp3lame", "-q:a", "2", str(out_mp3)], check=True)
+    for pp, _ in parts:
+        pp.unlink()
+    return words
+
+
 def duration(path: Path) -> float:
     out = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -89,7 +152,7 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
         mp3 = audio_dir / f"{sid}_s{i:02d}.mp3"
         for attempt in range(4):
             try:
-                words = asyncio.run(_synth(scene["say"], mp3))
+                words = synth_scene(scene["say"], mp3)
                 break
             except Exception as e:  # netwerkhapering: opnieuw proberen
                 print(f"  scène {i}: poging {attempt + 1} mislukt ({type(e).__name__})", flush=True)

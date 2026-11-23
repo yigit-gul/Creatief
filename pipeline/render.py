@@ -477,7 +477,7 @@ def ass_time(s):
 def chunk_words(words, max_words=3, max_chars=20, pause=0.22):
     chunks, cur = [], []
     for i, w in enumerate(words):
-        if cur and w["start"] - cur[-1]["end"] > pause:  # natuurlijke pauze = nieuwe regel
+        if cur and (cur[-1].get("eos") or w["start"] - cur[-1]["end"] > pause):  # zinsgrens of pauze = nieuwe regel
             chunks.append(cur)
             cur = []
         cur.append(w)
@@ -490,7 +490,8 @@ def chunk_words(words, max_words=3, max_chars=20, pause=0.22):
     return chunks
 
 
-def build_ass(words, path: Path):
+def build_ass(words, path: Path, hide=()):
+    words = [w for w in words if not any(a - 0.05 <= w["start"] < b for a, b in hide)]
     def bgr(h):
         h = h.lstrip("#")
         return f"&H00{h[4:6]}{h[2:4]}{h[0:2]}".upper()
@@ -533,7 +534,10 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
     total = timing["duration"] + C.OUTRO_HOLD
     n_frames = int(math.ceil(total * FPS))
     ass = work / f"{script['id']}.ass"
-    build_ass(timing["words"], ass)
+    # geen ondertitels waar het beeld zelf al de gesproken woorden toont (slam), anders staat er 2x tekst
+    hide = [(t["start"], t["end"] + C.SCENE_GAP) for sc, t in zip(script["scenes"], timing["scenes"])
+            if not sc["visual"].get("subs", sc["visual"]["type"] != "slam")]
+    build_ass(timing["words"], ass, hide)
     out_mp4.parent.mkdir(parents=True, exist_ok=True)
 
     cmd = ["ffmpeg", "-y", "-loglevel", "error",

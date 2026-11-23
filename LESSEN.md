@@ -10,3 +10,5 @@ Nog geen cijfers. Tot dan gelden de regels uit de feedback:
 - Hook met een herkenbare tegenstrijdigheid of een groot cijfer.
 - Net boven 1 minuut, langer alleen als de inhoud het draagt.
 - Humor moet de uitleg dienen.
+- Zinnen niet aan elkaar plakken: elke zin apart, met een korte adempauze (anders klinkt het als 2 dingen tegelijk).
+- Nooit twee keer tekst tegelijk in beeld (reuzenwoorden + ondertitel) en niets dat overlapt.
