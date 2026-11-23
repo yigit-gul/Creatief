@@ -6,11 +6,11 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 65 s | 161 | 10/10 | 6 |
+| 01-tob | De beurstaks (TOB): wat betaal je bij elke transactie? | 65 s | 162 | 10/10 | 6 |
 | 02-marktnieuws-w47 | Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026) | 63 s | 157 | 10/10 | 4 |
 | 03-nasdaq-wat-is-het | Nasdaq 101: beurs, index of rapper? | 62 s | 155 | 10/10 | 3 |
-| 04-nasdaq-waarom-schommelt | Waarom de Nasdaq de drama queen van de beurs is | 61 s | 167 | 10/10 | 3 |
-| 05-nasdaq-dotcom-crash | De dotcom-crash: −78% en 15 jaar wachten | 61 s | 154 | 10/10 | 4 |
+| 04-nasdaq-waarom-schommelt | Waarom de Nasdaq de drama queen van de beurs is | 62 s | 165 | 10/10 | 3 |
+| 05-nasdaq-dotcom-crash | De dotcom-crash: −78% en 15 jaar wachten | 62 s | 154 | 10/10 | 4 |
 
 ---
 
@@ -24,7 +24,9 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 >
 > Dat is de TOB. De taks op de beursverrichtingen. Je betaalt een klein stukje van het bedrag. Winst of verlies? Dat maakt niet uit.
 >
-> Hoeveel? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. Er is ook een maximum per keer. Stel, je koopt voor een half miljoen aan aandelen. Dan zou 0,35% €1.750 zijn. Maar je betaalt maximaal €1.600. Goed nieuws voor de miljonairs.
+> Hoeveel? Dat hangt af van wat je koopt. Het is 0,12%, 0,35% of 1,32%. En er is een maximum per keer.
+>
+> Stel, je koopt voor een half miljoen aan aandelen. Aan 0,35% zou dat €1.750 zijn. Maar je betaalt maximaal €1.600. Goed nieuws voor de miljonairs.
 >
 > Kijk, een voorbeeld. Je koopt aandelen voor €2.000. Aan 0,35% betaal je €7. Later verkoop je ze voor €2.000. Dan betaal je weer €7. Samen is dat €14.
 >
@@ -72,8 +74,8 @@ Algemene info, geen persoonlijk advies.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (161 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (65.2 s)
+- ✅ Woordenaantal 150-190 (162 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (65.1 s)
 - ✅ Hook kort (≤ 22 woorden) (16 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
@@ -265,7 +267,7 @@ Algemene info, geen beleggingsadvies.
 
 > De Nasdaq is die vriend op een feestje. Hij danst het wildst. Maar hij valt ook het hardst. Hoe komt dat?
 >
-> Reden één: tech. Beleggers betalen niet alleen voor de winst van nu. Ze betalen ook voor de winst van later. Een beetje zoals bij een influencer die nog niet viraal is. Iedereen denkt: dat komt nog. Twijfelen ze? Dan gaat de koers snel omlaag.
+> Reden één: tech. Beleggers betalen niet alleen voor de winst van nu. Ze betalen ook voor de winst van later. Zoals bij een influencer. Nog niet viraal, maar bijna. Iedereen denkt: dat komt nog. Twijfelen ze? Dan gaat de koers snel omlaag.
 >
 > Reden twee: rente. Stel, je krijgt over tien jaar €100. Bij 2% rente is dat vandaag €82 waard. Bij 5% nog maar €61. Hogere rente maakt geld van later dus minder waard. En net dat geld van later zit in tech.
 >
@@ -303,8 +305,8 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (167 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (60.9 s)
+- ✅ Woordenaantal 150-190 (165 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.5 s)
 - ✅ Hook kort (≤ 22 woorden) (21 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
@@ -334,13 +336,13 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
 
 ### Script (voice-over)
 
-> In 2000 verloor de Nasdaq bijna 80%. Daarna duurde het 15 jaar om te herstellen. Welkom bij de dotcom-bubbel.
+> In 2000 crashte de Nasdaq. Bijna 80% weg. Daarna duurde het 15 jaar om te herstellen. Welkom bij de dotcom-bubbel.
 >
 > Eind jaren negentig was internet nieuw. Had je bedrijf punt com in de naam? Dan was je blijkbaar goud waard. Iedereen wilde erbij zijn. Een website en een droom. Meer had je niet nodig. Winst? Die kwam later wel. Dachten ze.
 >
 > Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. Pas in april 2015 stond hij weer hoger. Vijftien jaar! Langer dan TikTok bestaat.
 >
-> Stel, iemand stak €1.000 in de index op de top. In oktober 2002 was dat nog €221. Oef. Dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over. Die werden later de reuzen die je nu elke dag gebruikt.
+> Stel, iemand stak €1.000 in de index op de top. In oktober 2002 was dat nog €221. Oef. Dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over. Die werden later reuzen. Je gebruikt ze nu elke dag.
 >
 > Wat leerden beleggers toen? Een goed verhaal is nog geen winst. Geschiedenis herhaalt zich niet altijd. En voorspellen doen we niet. Volg voor meer!
 
@@ -378,8 +380,8 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
 ### Automatische checks
 
 - ✅ Woordenaantal 150-190 (154 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (60.9 s)
-- ✅ Hook kort (≤ 22 woorden) (19 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.9 s)
+- ✅ Hook kort (≤ 22 woorden) (20 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')
 - ✅ AI-vermelding in caption

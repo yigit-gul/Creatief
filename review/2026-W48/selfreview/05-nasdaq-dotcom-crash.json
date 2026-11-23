@@ -1,14 +1,14 @@
 {
  "id": "05-nasdaq-dotcom-crash",
  "signalen": {
-  "duration": 60.9,
+  "duration": 61.9,
   "scenes": [
    {
     "n": 0,
     "type": "hook",
-    "sec": 7.6,
-    "woorden": 19,
-    "woorden_per_sec": 2.5,
+    "sec": 8.3,
+    "woorden": 20,
+    "woorden_per_sec": 2.41,
     "langste_zin": 8
    },
    {
@@ -30,10 +30,10 @@
    {
     "n": 3,
     "type": "calc",
-    "sec": 15.1,
-    "woorden": 40,
-    "woorden_per_sec": 2.64,
-    "langste_zin": 11
+    "sec": 15.5,
+    "woorden": 39,
+    "woorden_per_sec": 2.52,
+    "langste_zin": 10
    },
    {
     "n": 4,
@@ -45,25 +45,20 @@
    }
   ],
   "zinnen": {
-   "aantal": 29,
-   "gemiddeld": 5.3,
-   "langer_dan_10": [
-    "Die werden later de reuzen die je nu elke dag gebruikt."
-   ]
+   "aantal": 31,
+   "gemiddeld": 5.0,
+   "langer_dan_10": []
   },
   "hook": {
-   "eerste_zin": "In 2000 verloor de Nasdaq bijna 80%.",
-   "klaar_na_sec": 3.1
+   "eerste_zin": "In 2000 crashte de Nasdaq.",
+   "klaar_na_sec": 2.0
   },
   "lange_stiltes": [],
   "ondertitels": {
    "blokken": 62,
    "langste": "Op 10 maart 2000 sloot"
   },
-  "aandachtspunten": [
-   "Eerste zin duurt langer dan 3 s: hook inkorten.",
-   "1 zin(nen) langer dan 10 woorden: opsplitsen."
-  ]
+  "aandachtspunten": []
  },
  "rubriek": {
   "hook": {

@@ -1,7 +1,7 @@
 {
  "id": "01-tob",
  "signalen": {
-  "duration": 65.2,
+  "duration": 65.1,
   "scenes": [
    {
     "n": 0,
@@ -22,13 +22,21 @@
    {
     "n": 2,
     "type": "table",
-    "sec": 20.5,
-    "woorden": 45,
-    "woorden_per_sec": 2.19,
-    "langste_zin": 9
+    "sec": 9.6,
+    "woorden": 21,
+    "woorden_per_sec": 2.18,
+    "langste_zin": 7
    },
    {
     "n": 3,
+    "type": "calc",
+    "sec": 10.8,
+    "woorden": 25,
+    "woorden_per_sec": 2.31,
+    "langste_zin": 9
+   },
+   {
+    "n": 4,
     "type": "calc",
     "sec": 12.5,
     "woorden": 28,
@@ -36,7 +44,7 @@
     "langste_zin": 6
    },
    {
-    "n": 4,
+    "n": 5,
     "type": "point",
     "sec": 12.8,
     "woorden": 37,
@@ -44,7 +52,7 @@
     "langste_zin": 10
    },
    {
-    "n": 5,
+    "n": 6,
     "type": "outro",
     "sec": 3.2,
     "woorden": 11,
@@ -54,7 +62,7 @@
   ],
   "zinnen": {
    "aantal": 32,
-   "gemiddeld": 5.0,
+   "gemiddeld": 5.1,
    "langer_dan_10": []
   },
   "hook": {
@@ -63,12 +71,11 @@
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 68,
+   "blokken": 67,
    "langste": "Een buitenlandse broker"
   },
   "aandachtspunten": [
-   "Scène 2 duurt 20.5 s: risico op wegzappen, overweeg te splitsen.",
-   "Scène 5 is erg vol (3.45 w/s)."
+   "Scène 6 is erg vol (3.45 w/s)."
   ]
  },
  "rubriek": {

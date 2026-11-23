@@ -1,7 +1,7 @@
 {
  "id": "04-nasdaq-waarom-schommelt",
  "signalen": {
-  "duration": 60.9,
+  "duration": 61.5,
   "scenes": [
    {
     "n": 0,
@@ -14,10 +14,10 @@
    {
     "n": 1,
     "type": "point",
-    "sec": 13.5,
-    "woorden": 44,
-    "woorden_per_sec": 3.27,
-    "langste_zin": 11
+    "sec": 14.1,
+    "woorden": 42,
+    "woorden_per_sec": 2.97,
+    "langste_zin": 9
    },
    {
     "n": 2,
@@ -45,11 +45,9 @@
    }
   ],
   "zinnen": {
-   "aantal": 30,
-   "gemiddeld": 5.6,
-   "langer_dan_10": [
-    "Een beetje zoals bij een influencer die nog niet viraal is."
-   ]
+   "aantal": 31,
+   "gemiddeld": 5.3,
+   "langer_dan_10": []
   },
   "hook": {
    "eerste_zin": "De Nasdaq is die vriend op een feestje.",
@@ -61,7 +59,6 @@
    "langste": "Beleggers betalen niet"
   },
   "aandachtspunten": [
-   "1 zin(nen) langer dan 10 woorden: opsplitsen.",
    "Scène 0 is erg vol (3.5 w/s)."
   ]
  },
