@@ -1,0 +1,162 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter Black,84,&H00FAF6F4,&H000000FF,&H00101010,&H80000000,0,0,0,0,100,100,0,0,1,7,3,5,80,150,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.04,0:00:00.24,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Plot{\c} twist Jensen
+Dialogue: 0,0:00:00.24,0:00:00.88,Sub,,0,0,0,,{\an5\pos(505,1440)}Plot {\c&H003FD2FF}twist{\c} Jensen
+Dialogue: 0,0:00:00.88,0:00:01.27,Sub,,0,0,0,,{\an5\pos(505,1440)}Plot twist {\c&H003FD2FF}Jensen{\c}
+Dialogue: 0,0:00:01.27,0:00:01.66,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Huang{\c} is terug
+Dialogue: 0,0:00:01.66,0:00:01.81,Sub,,0,0,0,,{\an5\pos(505,1440)}Huang {\c&H003FD2FF}is{\c} terug
+Dialogue: 0,0:00:01.81,0:00:02.53,Sub,,0,0,0,,{\an5\pos(505,1440)}Huang is {\c&H003FD2FF}terug{\c}
+Dialogue: 0,0:00:02.53,0:00:02.86,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Leren{\c} jasje inbegrepen
+Dialogue: 0,0:00:02.86,0:00:03.31,Sub,,0,0,0,,{\an5\pos(505,1440)}Leren {\c&H003FD2FF}jasje{\c} inbegrepen
+Dialogue: 0,0:00:03.31,0:00:04.36,Sub,,0,0,0,,{\an5\pos(505,1440)}Leren jasje {\c&H003FD2FF}inbegrepen{\c}
+Dialogue: 0,0:00:04.36,0:00:04.43,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}En{\c} Nvidia
+Dialogue: 0,0:00:04.43,0:00:05.53,Sub,,0,0,0,,{\an5\pos(505,1440)}En {\c&H003FD2FF}Nvidia{\c}
+Dialogue: 0,0:00:05.53,0:00:05.75,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Plus{\c} 35%
+Dialogue: 0,0:00:05.75,0:00:07.31,Sub,,0,0,0,,{\an5\pos(505,1440)}Plus {\c&H003FD2FF}35%{\c}
+Dialogue: 0,0:00:07.31,0:00:05.88,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Op{\c} Zelfs je
+Dialogue: 0,0:00:05.88,0:00:06.08,Sub,,0,0,0,,{\an5\pos(505,1440)}Op {\c&H003FD2FF}Zelfs{\c} je
+Dialogue: 0,0:00:06.08,0:00:06.14,Sub,,0,0,0,,{\an5\pos(505,1440)}Op Zelfs {\c&H003FD2FF}je{\c}
+Dialogue: 0,0:00:06.14,0:00:06.50,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}mama{\c} vraagt nu
+Dialogue: 0,0:00:06.50,0:00:06.91,Sub,,0,0,0,,{\an5\pos(505,1440)}mama {\c&H003FD2FF}vraagt{\c} nu
+Dialogue: 0,0:00:06.91,0:00:07.48,Sub,,0,0,0,,{\an5\pos(505,1440)}mama vraagt {\c&H003FD2FF}nu{\c}
+Dialogue: 0,0:00:07.48,0:00:07.61,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}wat{\c} is Nvidia
+Dialogue: 0,0:00:07.61,0:00:07.73,Sub,,0,0,0,,{\an5\pos(505,1440)}wat {\c&H003FD2FF}is{\c} Nvidia
+Dialogue: 0,0:00:07.73,0:00:08.84,Sub,,0,0,0,,{\an5\pos(505,1440)}wat is {\c&H003FD2FF}Nvidia{\c}
+Dialogue: 0,0:00:08.84,0:00:09.39,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Wel{\c}
+Dialogue: 0,0:00:09.39,0:00:09.80,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Jensen{\c} richtte het
+Dialogue: 0,0:00:09.80,0:00:10.13,Sub,,0,0,0,,{\an5\pos(505,1440)}Jensen {\c&H003FD2FF}richtte{\c} het
+Dialogue: 0,0:00:10.13,0:00:10.23,Sub,,0,0,0,,{\an5\pos(505,1440)}Jensen richtte {\c&H003FD2FF}het{\c}
+Dialogue: 0,0:00:10.23,0:00:10.50,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}mee{\c} op in
+Dialogue: 0,0:00:10.50,0:00:10.64,Sub,,0,0,0,,{\an5\pos(505,1440)}mee {\c&H003FD2FF}op{\c} in
+Dialogue: 0,0:00:10.64,0:00:10.75,Sub,,0,0,0,,{\an5\pos(505,1440)}mee op {\c&H003FD2FF}in{\c}
+Dialogue: 0,0:00:10.75,0:00:12.50,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}1993{\c}
+Dialogue: 0,0:00:12.50,0:00:12.56,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Hij{\c} maakte er
+Dialogue: 0,0:00:12.56,0:00:12.87,Sub,,0,0,0,,{\an5\pos(505,1440)}Hij {\c&H003FD2FF}maakte{\c} er
+Dialogue: 0,0:00:12.87,0:00:12.94,Sub,,0,0,0,,{\an5\pos(505,1440)}Hij maakte {\c&H003FD2FF}er{\c}
+Dialogue: 0,0:00:12.94,0:00:13.01,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}de{\c} chipkoning van
+Dialogue: 0,0:00:13.01,0:00:13.66,Sub,,0,0,0,,{\an5\pos(505,1440)}de {\c&H003FD2FF}chipkoning{\c} van
+Dialogue: 0,0:00:13.66,0:00:13.78,Sub,,0,0,0,,{\an5\pos(505,1440)}de chipkoning {\c&H003FD2FF}van{\c}
+Dialogue: 0,0:00:13.78,0:00:13.97,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}het{\c} AI -tijdperk
+Dialogue: 0,0:00:13.97,0:00:14.25,Sub,,0,0,0,,{\an5\pos(505,1440)}het {\c&H003FD2FF}AI{\c} -tijdperk
+Dialogue: 0,0:00:14.25,0:00:14.88,Sub,,0,0,0,,{\an5\pos(505,1440)}het AI {\c&H003FD2FF}-tijdperk{\c}
+Dialogue: 0,0:00:14.88,0:00:15.53,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}van{\c}
+Dialogue: 0,0:00:15.53,0:00:15.62,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}En{\c} ja
+Dialogue: 0,0:00:15.62,0:00:16.17,Sub,,0,0,0,,{\an5\pos(505,1440)}En {\c&H003FD2FF}ja{\c}
+Dialogue: 0,0:00:16.17,0:00:16.32,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dat{\c} leren jasje
+Dialogue: 0,0:00:16.32,0:00:16.63,Sub,,0,0,0,,{\an5\pos(505,1440)}dat {\c&H003FD2FF}leren{\c} jasje
+Dialogue: 0,0:00:16.63,0:00:17.01,Sub,,0,0,0,,{\an5\pos(505,1440)}dat leren {\c&H003FD2FF}jasje{\c}
+Dialogue: 0,0:00:17.01,0:00:17.36,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}draagt{\c} hij echt
+Dialogue: 0,0:00:17.36,0:00:17.51,Sub,,0,0,0,,{\an5\pos(505,1440)}draagt {\c&H003FD2FF}hij{\c} echt
+Dialogue: 0,0:00:17.51,0:00:17.78,Sub,,0,0,0,,{\an5\pos(505,1440)}draagt hij {\c&H003FD2FF}echt{\c}
+Dialogue: 0,0:00:17.78,0:00:18.59,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}altijd{\c}
+Dialogue: 0,0:00:18.59,0:00:18.87,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Begin{\c} november moest
+Dialogue: 0,0:00:18.87,0:00:19.39,Sub,,0,0,0,,{\an5\pos(505,1440)}Begin {\c&H003FD2FF}november{\c} moest
+Dialogue: 0,0:00:19.39,0:00:19.61,Sub,,0,0,0,,{\an5\pos(505,1440)}Begin november {\c&H003FD2FF}moest{\c}
+Dialogue: 0,0:00:19.61,0:00:19.81,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}hij{\c} even opzij
+Dialogue: 0,0:00:19.81,0:00:20.14,Sub,,0,0,0,,{\an5\pos(505,1440)}hij {\c&H003FD2FF}even{\c} opzij
+Dialogue: 0,0:00:20.14,0:00:21.09,Sub,,0,0,0,,{\an5\pos(505,1440)}hij even {\c&H003FD2FF}opzij{\c}
+Dialogue: 0,0:00:21.09,0:00:21.20,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Er{\c} liep een
+Dialogue: 0,0:00:21.20,0:00:21.36,Sub,,0,0,0,,{\an5\pos(505,1440)}Er {\c&H003FD2FF}liep{\c} een
+Dialogue: 0,0:00:21.36,0:00:21.47,Sub,,0,0,0,,{\an5\pos(505,1440)}Er liep {\c&H003FD2FF}een{\c}
+Dialogue: 0,0:00:21.47,0:00:22.05,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}intern{\c} onderzoek
+Dialogue: 0,0:00:22.05,0:00:22.90,Sub,,0,0,0,,{\an5\pos(505,1440)}intern {\c&H003FD2FF}onderzoek{\c}
+Dialogue: 0,0:00:22.90,0:00:23.33,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Beleggers{\c} schrokken
+Dialogue: 0,0:00:23.33,0:00:24.12,Sub,,0,0,0,,{\an5\pos(505,1440)}Beleggers {\c&H003FD2FF}schrokken{\c}
+Dialogue: 0,0:00:24.12,0:00:24.41,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Zonder{\c} Jensen geen
+Dialogue: 0,0:00:24.41,0:00:24.74,Sub,,0,0,0,,{\an5\pos(505,1440)}Zonder {\c&H003FD2FF}Jensen{\c} geen
+Dialogue: 0,0:00:24.74,0:00:25.05,Sub,,0,0,0,,{\an5\pos(505,1440)}Zonder Jensen {\c&H003FD2FF}geen{\c}
+Dialogue: 0,0:00:25.05,0:00:25.74,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}plan{\c}
+Dialogue: 0,0:00:25.74,0:00:26.07,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dachten{\c} ze
+Dialogue: 0,0:00:26.07,0:00:26.69,Sub,,0,0,0,,{\an5\pos(505,1440)}dachten {\c&H003FD2FF}ze{\c}
+Dialogue: 0,0:00:26.69,0:00:27.03,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Vandaag{\c} haalt het
+Dialogue: 0,0:00:27.03,0:00:27.23,Sub,,0,0,0,,{\an5\pos(505,1440)}Vandaag {\c&H003FD2FF}haalt{\c} het
+Dialogue: 0,0:00:27.23,0:00:27.30,Sub,,0,0,0,,{\an5\pos(505,1440)}Vandaag haalt {\c&H003FD2FF}het{\c}
+Dialogue: 0,0:00:27.30,0:00:27.68,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}bestuur{\c} hem terug
+Dialogue: 0,0:00:27.68,0:00:27.86,Sub,,0,0,0,,{\an5\pos(505,1440)}bestuur {\c&H003FD2FF}hem{\c} terug
+Dialogue: 0,0:00:27.86,0:00:28.64,Sub,,0,0,0,,{\an5\pos(505,1440)}bestuur hem {\c&H003FD2FF}terug{\c}
+Dialogue: 0,0:00:28.64,0:00:28.71,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}En{\c} dat unaniem
+Dialogue: 0,0:00:28.71,0:00:28.89,Sub,,0,0,0,,{\an5\pos(505,1440)}En {\c&H003FD2FF}dat{\c} unaniem
+Dialogue: 0,0:00:28.89,0:00:29.60,Sub,,0,0,0,,{\an5\pos(505,1440)}En dat {\c&H003FD2FF}unaniem{\c}
+Dialogue: 0,0:00:29.60,0:00:29.81,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Kijk{\c} wat dat
+Dialogue: 0,0:00:29.81,0:00:30.02,Sub,,0,0,0,,{\an5\pos(505,1440)}Kijk {\c&H003FD2FF}wat{\c} dat
+Dialogue: 0,0:00:30.02,0:00:30.27,Sub,,0,0,0,,{\an5\pos(505,1440)}Kijk wat {\c&H003FD2FF}dat{\c}
+Dialogue: 0,0:00:30.27,0:00:30.88,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}doet{\c}
+Dialogue: 0,0:00:30.88,0:00:31.31,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Vorige{\c} week
+Dialogue: 0,0:00:31.31,0:00:31.99,Sub,,0,0,0,,{\an5\pos(505,1440)}Vorige {\c&H003FD2FF}week{\c}
+Dialogue: 0,0:00:31.99,0:00:32.24,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}min{\c} 23%
+Dialogue: 0,0:00:32.24,0:00:33.68,Sub,,0,0,0,,{\an5\pos(505,1440)}min {\c&H003FD2FF}23%{\c}
+Dialogue: 0,0:00:33.68,0:00:34.05,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Vrijdag{\c} sloot het
+Dialogue: 0,0:00:34.05,0:00:34.28,Sub,,0,0,0,,{\an5\pos(505,1440)}Vrijdag {\c&H003FD2FF}sloot{\c} het
+Dialogue: 0,0:00:34.28,0:00:34.44,Sub,,0,0,0,,{\an5\pos(505,1440)}Vrijdag sloot {\c&H003FD2FF}het{\c}
+Dialogue: 0,0:00:34.44,0:00:34.89,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}aandeel{\c} op 125
+Dialogue: 0,0:00:34.89,0:00:34.99,Sub,,0,0,0,,{\an5\pos(505,1440)}aandeel {\c&H003FD2FF}op{\c} 125
+Dialogue: 0,0:00:34.99,0:00:35.87,Sub,,0,0,0,,{\an5\pos(505,1440)}aandeel op {\c&H003FD2FF}125{\c}
+Dialogue: 0,0:00:35.87,0:00:36.61,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dollar{\c}
+Dialogue: 0,0:00:36.61,0:00:36.94,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Vandaag{\c} piekte het
+Dialogue: 0,0:00:36.94,0:00:37.23,Sub,,0,0,0,,{\an5\pos(505,1440)}Vandaag {\c&H003FD2FF}piekte{\c} het
+Dialogue: 0,0:00:37.23,0:00:37.36,Sub,,0,0,0,,{\an5\pos(505,1440)}Vandaag piekte {\c&H003FD2FF}het{\c}
+Dialogue: 0,0:00:37.36,0:00:37.44,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}op{\c} bijna 170
+Dialogue: 0,0:00:37.44,0:00:37.77,Sub,,0,0,0,,{\an5\pos(505,1440)}op {\c&H003FD2FF}bijna{\c} 170
+Dialogue: 0,0:00:37.77,0:00:38.90,Sub,,0,0,0,,{\an5\pos(505,1440)}op bijna {\c&H003FD2FF}170{\c}
+Dialogue: 0,0:00:38.90,0:00:39.22,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Plus{\c} 35%
+Dialogue: 0,0:00:39.22,0:00:40.65,Sub,,0,0,0,,{\an5\pos(505,1440)}Plus {\c&H003FD2FF}35%{\c}
+Dialogue: 0,0:00:40.65,0:00:40.78,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}En{\c} Jensen trekt
+Dialogue: 0,0:00:40.78,0:00:41.13,Sub,,0,0,0,,{\an5\pos(505,1440)}En {\c&H003FD2FF}Jensen{\c} trekt
+Dialogue: 0,0:00:41.13,0:00:41.46,Sub,,0,0,0,,{\an5\pos(505,1440)}En Jensen {\c&H003FD2FF}trekt{\c}
+Dialogue: 0,0:00:41.46,0:00:41.57,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}de{\c} hele sector
+Dialogue: 0,0:00:41.57,0:00:41.91,Sub,,0,0,0,,{\an5\pos(505,1440)}de {\c&H003FD2FF}hele{\c} sector
+Dialogue: 0,0:00:41.91,0:00:42.39,Sub,,0,0,0,,{\an5\pos(505,1440)}de hele {\c&H003FD2FF}sector{\c}
+Dialogue: 0,0:00:42.39,0:00:43.10,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}mee{\c}
+Dialogue: 0,0:00:43.10,0:00:43.75,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Chipbedrijven{\c} staan bijna
+Dialogue: 0,0:00:43.75,0:00:44.02,Sub,,0,0,0,,{\an5\pos(505,1440)}Chipbedrijven {\c&H003FD2FF}staan{\c} bijna
+Dialogue: 0,0:00:44.02,0:00:44.38,Sub,,0,0,0,,{\an5\pos(505,1440)}Chipbedrijven staan {\c&H003FD2FF}bijna{\c}
+Dialogue: 0,0:00:44.38,0:00:45.35,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}15%{\c} hoger
+Dialogue: 0,0:00:45.35,0:00:46.10,Sub,,0,0,0,,{\an5\pos(505,1440)}15% {\c&H003FD2FF}hoger{\c}
+Dialogue: 0,0:00:46.10,0:00:46.19,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}De{\c} Nasdaq ruim
+Dialogue: 0,0:00:46.19,0:00:46.67,Sub,,0,0,0,,{\an5\pos(505,1440)}De {\c&H003FD2FF}Nasdaq{\c} ruim
+Dialogue: 0,0:00:46.67,0:00:46.98,Sub,,0,0,0,,{\an5\pos(505,1440)}De Nasdaq {\c&H003FD2FF}ruim{\c}
+Dialogue: 0,0:00:46.98,0:00:48.18,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}7%{\c}
+Dialogue: 0,0:00:48.18,0:00:48.34,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Na{\c} de slechtste
+Dialogue: 0,0:00:48.34,0:00:48.42,Sub,,0,0,0,,{\an5\pos(505,1440)}Na {\c&H003FD2FF}de{\c} slechtste
+Dialogue: 0,0:00:48.42,0:00:48.84,Sub,,0,0,0,,{\an5\pos(505,1440)}Na de {\c&H003FD2FF}slechtste{\c}
+Dialogue: 0,0:00:48.84,0:00:49.06,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}week{\c} sinds 2020
+Dialogue: 0,0:00:49.06,0:00:49.31,Sub,,0,0,0,,{\an5\pos(505,1440)}week {\c&H003FD2FF}sinds{\c} 2020
+Dialogue: 0,0:00:49.31,0:00:50.67,Sub,,0,0,0,,{\an5\pos(505,1440)}week sinds {\c&H003FD2FF}2020{\c}
+Dialogue: 0,0:00:50.67,0:00:50.77,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Dat{\c} is een
+Dialogue: 0,0:00:50.77,0:00:50.85,Sub,,0,0,0,,{\an5\pos(505,1440)}Dat {\c&H003FD2FF}is{\c} een
+Dialogue: 0,0:00:50.85,0:00:50.98,Sub,,0,0,0,,{\an5\pos(505,1440)}Dat is {\c&H003FD2FF}een{\c}
+Dialogue: 0,0:00:50.98,0:00:51.44,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}flinke{\c} opluchting
+Dialogue: 0,0:00:51.44,0:00:52.30,Sub,,0,0,0,,{\an5\pos(505,1440)}flinke {\c&H003FD2FF}opluchting{\c}
+Dialogue: 0,0:00:52.30,0:00:52.46,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Eén{\c} man
+Dialogue: 0,0:00:52.46,0:00:53.14,Sub,,0,0,0,,{\an5\pos(505,1440)}Eén {\c&H003FD2FF}man{\c}
+Dialogue: 0,0:00:53.14,0:00:53.35,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}één{\c} comeback
+Dialogue: 0,0:00:53.35,0:00:54.32,Sub,,0,0,0,,{\an5\pos(505,1440)}één {\c&H003FD2FF}comeback{\c}
+Dialogue: 0,0:00:54.32,0:00:54.40,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}en{\c} een beurs
+Dialogue: 0,0:00:54.40,0:00:54.52,Sub,,0,0,0,,{\an5\pos(505,1440)}en {\c&H003FD2FF}een{\c} beurs
+Dialogue: 0,0:00:54.52,0:00:54.82,Sub,,0,0,0,,{\an5\pos(505,1440)}en een {\c&H003FD2FF}beurs{\c}
+Dialogue: 0,0:00:54.82,0:00:54.94,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}die{\c} ontploft
+Dialogue: 0,0:00:54.94,0:00:55.94,Sub,,0,0,0,,{\an5\pos(505,1440)}die {\c&H003FD2FF}ontploft{\c}
+Dialogue: 0,0:00:55.94,0:00:56.14,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Maar{\c} let op
+Dialogue: 0,0:00:56.14,0:00:56.41,Sub,,0,0,0,,{\an5\pos(505,1440)}Maar {\c&H003FD2FF}let{\c} op
+Dialogue: 0,0:00:56.41,0:00:57.05,Sub,,0,0,0,,{\an5\pos(505,1440)}Maar let {\c&H003FD2FF}op{\c}
+Dialogue: 0,0:00:57.05,0:00:57.18,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}dit{\c} is een
+Dialogue: 0,0:00:57.18,0:00:57.28,Sub,,0,0,0,,{\an5\pos(505,1440)}dit {\c&H003FD2FF}is{\c} een
+Dialogue: 0,0:00:57.28,0:00:57.40,Sub,,0,0,0,,{\an5\pos(505,1440)}dit is {\c&H003FD2FF}een{\c}
+Dialogue: 0,0:00:57.40,0:00:58.39,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}tussenstand{\c}
+Dialogue: 0,0:00:58.39,0:00:58.83,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Voorspellen{\c} doen we
+Dialogue: 0,0:00:58.83,0:00:59.00,Sub,,0,0,0,,{\an5\pos(505,1440)}Voorspellen {\c&H003FD2FF}doen{\c} we
+Dialogue: 0,0:00:59.00,0:00:59.06,Sub,,0,0,0,,{\an5\pos(505,1440)}Voorspellen doen {\c&H003FD2FF}we{\c}
+Dialogue: 0,0:00:59.06,0:00:59.69,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}niet{\c}
+Dialogue: 0,0:00:59.69,0:01:00.02,Sub,,0,0,0,,{\an5\pos(505,1440)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}Volg{\c} voor meer
+Dialogue: 0,0:01:00.02,0:01:00.19,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg {\c&H003FD2FF}voor{\c} meer
+Dialogue: 0,0:01:00.19,0:01:00.91,Sub,,0,0,0,,{\an5\pos(505,1440)}Volg voor {\c&H003FD2FF}meer{\c}

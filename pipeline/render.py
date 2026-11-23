@@ -363,6 +363,45 @@ def draw_line(d, v, t, dur):
             d.text((bx + 10, by + 4), v["badge"], font=fb, fill=alpha(COL["bg_top"], a))
 
 
+def draw_slam(d, v, t, dur):
+    """Opvallend: één of twee reuzenwoorden die met een 'klap' binnenkomen (schaal 1,5 → 1)."""
+    lines = v["words"]  # bv. ["TERUG."] of ["TERUG.", "+35%"]
+    base = d._image
+    y = v.get("y", 620)
+    for i, word in enumerate(lines):
+        st = v["at"][i] if v.get("at") and i < len(v["at"]) else i * v.get("stagger", 0.55)
+        p = (t - st) / 0.28
+        if p <= 0:
+            continue
+        sc = 1 + 0.5 * (1 - ease(p))
+        cols = v.get("colors", ["text", "yellow"])
+        col = COL[cols[i % len(cols)]]
+        f = fit_font(d, word, "Black", v.get("size", 230), CONTENT_W, 1)
+        tw = int(d.textlength(word, font=f)) + 20
+        th = int(f.size * 1.25)
+        tile = Image.new("RGBA", (tw, th), (0, 0, 0, 0))
+        ImageDraw.Draw(tile).text((10, 0), word, font=f, fill=alpha(col, min(1, p * 2)))
+        if sc != 1:
+            tile = tile.resize((int(tw * sc), int(th * sc)), Image.LANCZOS)
+        x = (W - tile.width) // 2 - 20
+        base.alpha_composite(tile, (max(0, x), int(y - (tile.height - th) / 2)))
+        y += th + 20
+    if v.get("sub"):
+        fs = font("Bold", 52)
+        sub_at = v["at"][len(lines)] if v.get("at") and len(v["at"]) > len(lines) else len(lines) * v.get("stagger", 0.55)
+        a = ease((t - sub_at) / 0.4)
+        for j, ln in enumerate(wrap(d, v["sub"], fs, CONTENT_W)):
+            lw = d.textlength(ln, font=fs)
+            d.text(((W - lw) / 2 - 20, y + 30 + j * 64), ln, font=fs, fill=alpha(COL["muted"], a))
+    if v.get("kicker"):
+        fk = font("Bold", 46)
+        kt = v["kicker"].upper()
+        kw = d.textlength(kt, font=fk)
+        kx = (W - kw) / 2 - 48
+        d.rounded_rectangle((kx, 430, kx + kw + 56, 510), 40, fill=COL["coral"])
+        d.text((kx + 28, 442), kt, font=fk, fill=COL["bg_top"])
+
+
 def draw_outro(d, v, t, dur):
     y = 480
     f = fit_font(d, v.get("big", "Volg voor meer").replace("*", ""), "Black", 104, CONTENT_W, 3)
@@ -390,7 +429,7 @@ def draw_disclaimer(d, a, y=1130):
 
 
 DRAW = {"hook": draw_hook, "point": draw_point, "table": draw_table,
-        "calc": draw_calc, "bars": draw_bars, "line": draw_line, "outro": draw_outro}
+        "calc": draw_calc, "bars": draw_bars, "line": draw_line, "slam": draw_slam, "outro": draw_outro}
 
 
 def progress_bar(d, frac):
@@ -515,7 +554,7 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
         dur = s["end"] - s["start"]
         local = t - s["start"]
         # statische frames hergebruiken zodra de animaties klaar zijn
-        anim_end = max([2.0] + scenes[idx]["visual"].get("at", [])) + 1.2
+        anim_end = animation_end(scenes[idx]["visual"], dur)
         key = (idx, round(local * FPS) if local < anim_end else "static")
         if key not in cache:
             cache = {key: render_layer(scenes[idx], local, dur)}
@@ -526,11 +565,24 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
     return out_mp4
 
 
+def animation_end(v, dur):
+    """Tot wanneer beweegt er iets in deze scène? Daarna mag het beeld gecachet worden."""
+    end = max([2.0] + v.get("at", [])) + 1.2
+    if v["type"] == "line":
+        end = max(end, 0.4 + max(1.2, dur * 0.55) + 0.8)
+    elif v["type"] == "slam":
+        n = len(v.get("words", []))
+        end = max(end, (max(v["at"]) if v.get("at") else n * v.get("stagger", 0.55)) + 0.9)
+    elif v["type"] == "bars" and not v.get("at"):
+        end = max(end, 0.3 + len(v.get("bars", [])) * 0.3 + 1.0)
+    return end
+
+
 def apply_cues(scenes, sc_times, words):
     """`cue` in een regel/rij = woord waarop die regel verschijnt (synchroon met de stem)."""
     for sc, tm in zip(scenes, sc_times):
         v = sc["visual"]
-        items = v.get("lines") or v.get("rows") or v.get("bars")
+        items = v.get("lines") or v.get("rows") or v.get("bars") or [{"cue": c} for c in v.get("cues", [])]
         if not items or not any("cue" in it for it in items):
             continue
         sw = [w for w in words if tm["start"] - 0.01 <= w["start"] <= tm["end"] + 0.01]

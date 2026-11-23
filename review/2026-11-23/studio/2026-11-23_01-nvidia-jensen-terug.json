@@ -1,0 +1,211 @@
+{
+ "week": "2026-11-23",
+ "id": "01-nvidia-jensen-terug",
+ "title": "Jensen Huang is terug: Nvidia +35% op één dag",
+ "validity": "Tussenstand maandag 23 november 2026, kort na de opening in New York (≈ 16:20 Belgische tijd). Geen slotkoers.",
+ "status": "klaar voor review",
+ "durationSec": 62.9,
+ "words": 151,
+ "script": [
+  "Plot twist. Jensen Huang is terug. Leren jasje inbegrepen. En Nvidia? Plus 35%. Op één dag.",
+  "Zelfs je mama vraagt nu: wat is Nvidia? Wel. Jensen richtte het mee op in 1993. Hij maakte er de chipkoning van het AI-tijdperk van. En ja, dat leren jasje draagt hij echt altijd.",
+  "Begin november moest hij even opzij. Er liep een intern onderzoek. Beleggers schrokken. Zonder Jensen geen plan, dachten ze. Vandaag haalt het bestuur hem terug. En dat unaniem.",
+  "Kijk wat dat doet. Vorige week: min 23%. Vrijdag sloot het aandeel op 125 dollar. Vandaag piekte het op bijna 170. Plus 35%!",
+  "En Jensen trekt de hele sector mee. Chipbedrijven staan bijna 15% hoger. De Nasdaq ruim 7%. Na de slechtste week sinds 2020? Dat is een flinke opluchting.",
+  "Eén man, één comeback, en een beurs die ontploft. Maar let op: dit is een tussenstand. Voorspellen doen we niet. Volg voor meer!"
+ ],
+ "caption": "Jensen Huang is terug als baas van Nvidia, en het aandeel knalt +35% op één dag 🚀 De comeback in een minuut.\n\nTussenstand maandag 23/11, kort na de opening. Algemene info, geen beleggingsadvies, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
+ "hashtags": [
+  "#nvidia",
+  "#jensenhuang",
+  "#beurs",
+  "#marktnieuws",
+  "#belgie"
+ ],
+ "claims": [
+  {
+   "claim": "Nvidia: slot vrijdag 20/11 $125,53; hoogste tussenstand maandag 23/11 $169,56 = +35,1%",
+   "status": "ok",
+   "note": "Eigen berekening uit Yahoo-koersdata (5-minutendata, 15:20 UTC). Seeking Alpha meldde +34% om 10:00 ET.",
+   "sources": [
+    {
+     "title": "Yahoo Finance – NVDA, ^IXIC, ^SOX koersen (chart-API, 15:20 UTC)",
+     "url": "https://finance.yahoo.com/quote/NVDA/history/",
+     "date": "2026-11-23"
+    },
+    {
+     "title": "Seeking Alpha – Nvidia soars +34%",
+     "url": "https://seekingalpha.com/news/4675615-nvidia-soars-34-and-is-now-poised-for-its-second-best-daily-gain-in-company-history",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Vorige week −23% (162,85 → 125,53)",
+   "status": "ok",
+   "note": "Eigen berekening uit slotkoersen.",
+   "sources": [
+    {
+     "title": "Yahoo Finance – NVDA, ^IXIC, ^SOX koersen (chart-API, 15:20 UTC)",
+     "url": "https://finance.yahoo.com/quote/NVDA/history/",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Chipindex (SOX) ≈ +14,8% en Nasdaq ≈ +7,1% (tussenstand)",
+   "status": "ok",
+   "note": "Eigen berekening t.o.v. slot vrijdag, 15:20 UTC. Verandert in de loop van de dag.",
+   "sources": [
+    {
+     "title": "Yahoo Finance – NVDA, ^IXIC, ^SOX koersen (chart-API, 15:20 UTC)",
+     "url": "https://finance.yahoo.com/quote/NVDA/history/",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Oorzaak: het bestuur haalt Jensen Huang unaniem terug als CEO na een intern onderzoek",
+   "status": "ok",
+   "sources": [
+    {
+     "title": "Yahoo Finance – live: Nvidia reinstates Jensen Huang (23/11/2026)",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-nvidia-reinstates-jensen-huang-141511975.html",
+     "date": "2026-11-23"
+    },
+    {
+     "title": "Benzinga – Nvidia stock soars as Jensen Huang returns as CEO",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63526761/nvidia-stock-soars-as-jensen-huang-returns-as-ceo",
+     "date": "2026-11-23"
+    },
+    {
+     "title": "Fast Company – Nvidia soars as CEO Jensen Huang returns",
+     "url": "https://www.fastcompany.com/91647421/tech-stocks-up-today-nvidia-amazon-spacex-will-rebound-last",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Begin november stond Huang tijdelijk opzij tijdens een intern onderzoek",
+   "status": "check",
+   "note": "Bewust vaag gehouden ('moest even opzij'): de achtergrond gaat over zijn privéleven. Geen details in de video. Even nakijken of je dat zo wilt.",
+   "sources": [
+    {
+     "title": "Yahoo Finance – live: Nvidia reinstates Jensen Huang (23/11/2026)",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-nvidia-reinstates-jensen-huang-141511975.html",
+     "date": "2026-11-23"
+    },
+    {
+     "title": "Fast Company – Nvidia soars as CEO Jensen Huang returns",
+     "url": "https://www.fastcompany.com/91647421/tech-stocks-up-today-nvidia-amazon-spacex-will-rebound-last",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Slechtste week sinds 2020 (Nasdaq, 16-20 nov)",
+   "status": "ok",
+   "sources": [
+    {
+     "title": "CEO Economy – Nasdaq worst week since March 2020",
+     "url": "https://ceoeconomy.com/article/nasdaq-worst-week-since-march-2020-chip-stocks-week-ending-nov-20-2026",
+     "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "claim": "Jensen Huang is medeoprichter van Nvidia (1993) en staat bekend om zijn leren jasje",
+   "status": "check",
+   "note": "Algemeen bekend; in deze run niet tegen een bron gelegd.",
+   "sources": [
+    {
+     "title": "Wikipedia – Jensen Huang",
+     "url": "https://en.wikipedia.org/wiki/Jensen_Huang",
+     "date": "2026-11-23"
+    }
+   ]
+  }
+ ],
+ "warnings": [
+  "TUSSENSTAND: alle cijfers zijn van ≈ 16:20 Belgische tijd, kort na de opening. Post je later, check dan de koers; de video zegt zelf 'tussenstand'. Wil je de slotkoers, dan maak ik vanavond na 22:00 een versie met de slotcijfers.",
+  "Gevoelig onderwerp: de reden waarom Huang opzij stond gaat over zijn privéleven en een onderzoek. De video noemt bewust alleen 'een intern onderzoek'. Hou dat ook zo in reacties.",
+  "Bedrijfsnaam alleen als nieuws. Geen koop- of verkoopadvies."
+ ],
+ "checks": [
+  {
+   "name": "Woordenaantal 150-190",
+   "ok": true,
+   "info": "151 woorden"
+  },
+  {
+   "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
+   "ok": true,
+   "info": "62.9 s"
+  },
+  {
+   "name": "Hook kort (≤ 22 woorden)",
+   "ok": true,
+   "info": "16 woorden"
+  },
+  {
+   "name": "Laatste scène is outro met disclaimer",
+   "ok": true,
+   "info": "Algemene info, geen persoonlijk advies."
+  },
+  {
+   "name": "Call to action ('volg')",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "AI-vermelding in caption",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "3-5 hashtags",
+   "ok": true,
+   "info": "5"
+  },
+  {
+   "name": "Geen advies-/clickbaittaal (automatische scan)",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "Geen 'hè' in de tekst",
+   "ok": true,
+   "info": ""
+  },
+  {
+   "name": "Elke claim heeft een bron",
+   "ok": true,
+   "info": ""
+  }
+ ],
+ "repoPath": "review/2026-11-23/01-nvidia-jensen-terug.mp4",
+ "trendScore": 9,
+ "trendRank": 1,
+ "trendReason": "Supertijdsgebonden: comeback van een bekend gezicht plus een reuzencijfer (+35%) in de eerste seconden. Grappige intro. Wel snel posten: morgen is dit oud nieuws.",
+ "selfReview": {
+  "rounds": 4,
+  "scores": {
+   "hook": 5,
+   "eenvoud": 5,
+   "tempo": 4,
+   "humor": 5,
+   "info": 4,
+   "visueel": 5,
+   "regels": 5
+  },
+  "changes": [
+   "Op jouw vraag: de comeback van Jensen is het verhaal, met een opvallende 'slam'-intro.",
+   "Intro grappiger: 'Plot twist. Jensen is terug. Leren jasje inbegrepen.' + mama-grap.",
+   "Reuzenwoorden verschijnen exact wanneer ze uitgesproken worden.",
+   "Bug opgelost: lijngrafiek bevroor te vroeg, nu zie je de sprong naar $170.",
+   "Te lange zin opgesplitst; intro van 24 naar 16 woorden."
+  ],
+  "verdict": "Opvallend en grappig, en de cijfers kloppen met de koersdata. Enige risico: het is een tussenstand."
+ },
+ "videoUrl": "/_blob/aa58fcf4d4cf455d4e1ef1af9acddac5"
+}
