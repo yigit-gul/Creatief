@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#0E1A2B"/>
+  <circle cx="512" cy="512" r="512" fill="#0E1A2B"/>
+  <g transform="translate(92 92) scale(1.64)">
+  <!-- Fiscaal Fluitje: fluitje met euromunt ("een fluitje van een cent"), geluidsgolven -->
+  <g transform="translate(-3 12)">
+    <!-- fluitje: mondstuk + lichaam als één vorm -->
+    <path d="M86 178 H250 A122 122 0 1 1 128 300 V250 H86 a16 16 0 0 1 -16 -16 V194 a16 16 0 0 1 16 -16 z" fill="#2EE6A6"/>
+    <!-- munt -->
+    <circle cx="250" cy="300" r="80" fill="#FFD23F"/>
+    <circle cx="250" cy="300" r="68" fill="none" stroke="#0E1A2B" stroke-opacity=".14" stroke-width="5"/>
+    <!-- euroteken -->
+    <path d="M290 258 a54 54 0 1 0 0 84" fill="none" stroke="#0E1A2B" stroke-width="19" stroke-linecap="round"/>
+    <path d="M190 288 h74 M190 314 h66" stroke="#0E1A2B" stroke-width="15" stroke-linecap="round"/>
+    <!-- luchtgat -->
+    <rect x="150" y="196" width="40" height="30" rx="8" fill="#0E1A2B"/>
+    <!-- geluidsgolven -->
+    <g fill="none" stroke="#FFD23F" stroke-width="18" stroke-linecap="round">
+      <path d="M318 150 q30 -26 30 -64"/>
+      <path d="M362 178 q52 -40 54 -110"/>
+      <path d="M398 218 q30 -10 52 -36"/>
+    </g>
+  </g>
+</g>
+</svg>
