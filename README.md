@@ -5,7 +5,7 @@ De pipeline maakt de video's. **Posten gebeurt nooit automatisch**: alles komt i
 
 ## Studio (live meekijken)
 **https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx**: pipeline-stappen en logboek per week, alle video's om af
-te spelen, script, bronnen, ⚠️-punten, caption (kopieerknop), status (klaar voor review / nagekeken / ingepland /
+te spelen, script, bronnen, ⚠️-punten, caption (kopieerknop), status (klaar voor review / nagekeken / geüpload /
 afgekeurd) en een feedbackveld dat Claude bij de volgende run leest. De broncode staat in `studio/studio.html`.
 De wekelijkse stappen voor Claude staan in `WORKFLOW.md`.
 

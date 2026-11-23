@@ -262,8 +262,8 @@ textarea { width: 100%; min-height: 80px; background: var(--bg); border: 1px sol
 
       <div class="node human c-4" id="n-you"><div class="k">Human handoff</div><div class="t">Jij keurt goed</div>
         <ul><li id="you-review">– klaar voor review</li><li id="you-ok">– nagekeken</li><li id="you-fb">Feedback gaat terug naar Claude</li></ul></div>
-      <div class="node human c-4" id="n-plan"><div class="k">Jij plant in</div><div class="t">Metricool / Buffer</div>
-        <ul><li id="you-planned">– ingepland</li><li>Caption kopiëren uit de Studio</li></ul></div>
+      <div class="node human c-4" id="n-plan"><div class="k">Jij uploadt</div><div class="t">TikTok / planner</div>
+        <ul><li id="you-planned">– geüpload</li><li>Caption kopiëren uit de Studio</li></ul></div>
       <div class="node human c-4" id="n-tiktok"><div class="k">Publicatie</div><div class="t">TikTok</div>
         <ul><li>AI-label aanzetten</li><li>Claude post nooit zelf</li></ul></div>
 
@@ -301,7 +301,7 @@ const STEPS = [
   ["onderwerpen", "Onderwerpen"], ["scripts", "Scripts"], ["audio", "Voice-over"], ["video", "Video's"], ["review", "Review klaar"]
 ];
 const STATUSES = [
-  ["klaar voor review", "s-review"], ["nagekeken", "s-ok"], ["ingepland", "s-planned"], ["afgekeurd", "s-bad"]
+  ["klaar voor review", "s-review"], ["nagekeken", "s-ok"], ["geüpload", "s-planned"], ["afgekeurd", "s-bad"]
 ];
 const $ = (s) => document.querySelector(s);
 const el = (tag, props = {}, kids = []) => { const e = Object.assign(document.createElement(tag), props); for (const k of [].concat(kids)) if (k != null) e.append(k); return e; };
@@ -361,13 +361,13 @@ function renderFlow() {
   const warns = vs.reduce((a, v) => a + (v.claims || []).filter(c => c.status !== "ok").length + (v.warnings || []).length, 0);
   $("#you-review").textContent = `${cnt("klaar voor review")} klaar voor review`;
   $("#you-ok").textContent = `${cnt("nagekeken")} nagekeken`;
-  $("#you-planned").textContent = `${cnt("ingepland")} ingepland`;
+  $("#you-planned").textContent = `${cnt("geüpload")} geüpload`;
   const fb = vs.filter(v => v.feedback).length;
   $("#you-fb").textContent = fb ? `${fb}× feedback voor de volgende run` : "Feedback gaat terug naar Claude";
 
   const lines = [
     ["scripts geschreven", vs.length], ["video's gerenderd", vs.filter(v => v.videoUrl).length],
-    ["klaar voor review", cnt("klaar voor review")], ["nagekeken", cnt("nagekeken")], ["ingepland", cnt("ingepland")],
+    ["klaar voor review", cnt("klaar voor review")], ["nagekeken", cnt("nagekeken")], ["geüpload", cnt("geüpload")],
     ["⚠️ open punten", warns], ["gepost door Claude", 0],
   ];
   $("#n-term").replaceChildren(el("div", { className: "dots" }, [el("i"), el("i"), el("i")]),
@@ -531,7 +531,7 @@ function renderAgenda() {
     box.replaceChildren(el("span", { className: "hint" }, [el("span", { className: "dot" }), "Niet bezig, wacht op de volgende run"]),
       el("div", { className: "big", textContent: next ? `${when}: ${next.what}` : "Geen run gepland" }),
       next ? el("div", { className: "hint", textContent: next.sub }) : null,
-      el("div", { className: "hint", textContent: "Tussen de runs door gebeurt er niets. Jij bekijkt, plant in en geeft feedback; dat neem ik mee bij de volgende run." }));
+      el("div", { className: "hint", textContent: "Tussen de runs door gebeurt er niets. Jij bekijkt, uploadt en geeft feedback; dat neem ik mee bij de volgende run." }));
   }
   // verleden runs alleen tonen als ze echt gelopen hebben
   $("#timeline").replaceChildren(...items.filter(x => `${x.date} ${x.time}` > nowKey || runs[x.key]).slice(0, 8).map(x => {
@@ -577,8 +577,8 @@ function stepLi(i, label, state, detail) {
 function statusClass(s) { return (STATUSES.find(x => x[0] === s) || [, ""])[1]; }
 
 const TABS = [
-  ["todo", "Te bekijken", v => !["ingepland", "afgekeurd"].includes(v.status)],
-  ["planned", "Ingepland", v => v.status === "ingepland"],
+  ["todo", "Te bekijken", v => !["geüpload", "ingepland", "afgekeurd"].includes(v.status)],
+  ["planned", "Geüpload", v => v.status === "geüpload" || v.status === "ingepland"],
   ["rejected", "Afgekeurd", v => v.status === "afgekeurd"],
 ];
 let tab = "todo";
@@ -589,7 +589,7 @@ function trendEl(v) {
   return el("span", { className: "trend" + cls, title: v.trendReason || "", textContent: `🔥 ${v.trendScore}/10${v.trendRank ? " · #" + v.trendRank : ""}` });
 }
 function renderGrid() {
-  // tabs gelden over alle weken/dagen heen; ingeplande video's staan apart
+  // tabs gelden over alle weken/dagen heen; geüploade video's staan apart
   $("#tabs").replaceChildren(...TABS.map(([k, label, f]) => {
     const n = videos.filter(f).length;
     const b = el("button", { role: "tab", ariaSelected: String(tab === k) }, [label, el("span", { className: "count", textContent: String(n) })]);
@@ -600,7 +600,7 @@ function renderGrid() {
   const list = videos.filter(f).sort((a, b) =>
     (a.trendRank ?? 99) - (b.trendRank ?? 99) || (b.trendScore ?? 0) - (a.trendScore ?? 0) || String(b.week).localeCompare(String(a.week)) || a.id.localeCompare(b.id));
   if (!list.length) {
-    const msg = { todo: "Niets meer te bekijken. Nieuwe video's verschijnen hier elke dag.", planned: "Nog niets ingepland. Zet een video op 'ingepland' en hij verhuist naar hier.", rejected: "Geen afgekeurde video's." }[tab];
+    const msg = { todo: "Niets meer te bekijken. Nieuwe video's verschijnen hier elke dag.", planned: "Nog niets geüpload. Zet een video op 'geüpload' en hij verhuist naar hier.", rejected: "Geen afgekeurde video's." }[tab];
     $("#grid").replaceChildren(el("div", { className: "empty", textContent: msg })); return;
   }
   $("#grid").replaceChildren(...list.map(v => {

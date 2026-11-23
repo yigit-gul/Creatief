@@ -11,7 +11,7 @@ weekoverzicht van zaterdag: op vrijdag en zaterdag alleen dagnieuws bij iets uit
 **Plus elke zaterdag 10:51: de wekelijkse marktnieuwsvideo** over de beursweek ma-vr (aparte taak, zie 1b).
 Run-id en `week`-veld = de datum van vandaag (bv. `2026-11-24`); scripts in `scripts/<datum>/`.
 Geef elke nieuwe video een `trendScore` (1-10), `trendReason` (1-2 zinnen) en herbereken `trendRank` (1 = beste)
-voor alle video's die nog niet `ingepland` of `afgekeurd` zijn.
+voor alle video's die nog niet `geüpload` of `afgekeurd` zijn.
 
 Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 (collections `runs` = run en logboek per week, `videos` = één document per video)
