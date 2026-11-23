@@ -1,8 +1,8 @@
 # Dagelijkse workflow (voor Claude)
 
-**Ritme: elke avond 1 nieuwe video.** Maandag = marktnieuws over de vorige beursweek (zie 1b).
-Bestaat het marktnieuws over die beursweek al (bv. `02-marktnieuws-w47`), kies dan een Nasdaq-uitleg.
-Di/do/za = algemeen fiscaal onderwerp (zie 1). Wo/vr/zo = Nasdaq-uitleg of beursgeschiedenis (zie 1c).
+**Ritme: elke avond 1 nieuwe video** (taak 19:57). Ma/di/do/za = algemeen fiscaal onderwerp (zie 1).
+Wo/vr/zo = Nasdaq-uitleg of beursgeschiedenis (zie 1c). Geen marktnieuws in de dagelijkse run.
+**Plus elke zaterdag 10:51: de wekelijkse marktnieuwsvideo** over de beursweek ma-vr (aparte taak, zie 1b).
 Run-id en `week`-veld = de datum van vandaag (bv. `2026-11-24`); scripts in `scripts/<datum>/`.
 Geef elke nieuwe video een `trendScore` (1-10), `trendReason` (1-2 zinnen) en herbereken `trendRank` (1 = beste)
 voor alle video's die nog niet `ingepland` of `afgekeurd` zijn.
@@ -26,7 +26,7 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 - Leg **principes en begrippen** uit ("hoe werkt het", "waar moet je op letten"). Gebruik zo weinig mogelijk
   precieze bedragen. Één rekenvoorbeeld mag met afgeronde, duidelijk fictieve cijfers.
 
-## 1b. Wekelijks marktnieuws (extra video, altijd)
+## 1b. Wekelijks marktnieuws (elke zaterdag, aparte taak)
 - Eén video over de **afgelopen beursweek**, meestal de **Nasdaq Composite** (^IXIC). Vergelijk met S&P 500 (^GSPC),
   Dow (^DJI) en een relevante sectorindex (bv. chips ^SOX) als dat het verhaal is.
 - Koersen: Yahoo Finance chart-API (`https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?range=1mo&interval=1d`).
