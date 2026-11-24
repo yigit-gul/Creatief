@@ -1,11 +1,11 @@
 # Dagelijkse workflow (voor Claude)
 
-**Ritme: elke avond 1 nieuwe video** (taak 19:57). Ma/di/do/za = algemeen fiscaal onderwerp (zie 1).
+**Ritme: elke dag 1 nieuwe video** (taak 16:57). Ma/di/do/za = algemeen fiscaal onderwerp (zie 1).
 Wo/vr/zo = Nasdaq-uitleg of beursgeschiedenis (zie 1c).
 **Dagnieuws in plaats van het gewone onderwerp** als (a) er echt iets groots gebeurde op de beurs, of (b) je geen
 goed nieuw idee vindt. "Groot" = de Nasdaq bewoog ≥ 2% op de laatste afgesloten beursdag, of een duidelijk
 groot marktnieuws (bv. een crash of record, een grote renteverrassing, een mega-beursgang) dat breed in het nieuws is.
-Gebruik altijd de laatste **afgesloten** beursdag (om 19:57 is Wall Street nog open: geen tussenstanden) en noem
+Gebruik altijd de laatste **afgesloten** beursdag (om 16:57 is Wall Street nog open: geen tussenstanden) en noem
 de datum. Zelfde regels als 1b (bronnen, ⚠️, nooit voorspellen), maar over één dag. Overlap niet met het
 weekoverzicht van zaterdag: op vrijdag en zaterdag alleen dagnieuws bij iets uitzonderlijks.
 **Plus elke zaterdag 10:51: de wekelijkse marktnieuwsvideo** over de beursweek ma-vr (aparte taak, zie 1b).

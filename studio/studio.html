@@ -517,14 +517,14 @@ function brusselsParts(d) {
   return { date: `${o.year}-${o.month}-${o.day}`, hm: `${o.hour}:${o.minute}`, wd: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday) };
 }
 function plannedRuns() {
-  // regels uit WORKFLOW.md: elke avond 19:57 een video, zaterdag 10:51 marktnieuws + views-analyse
+  // regels uit WORKFLOW.md: elke dag 16:57 een video, zaterdag 10:51 marktnieuws + views-analyse
   const out = [], now = new Date();
   for (let i = -1; i < 8; i++) {
     const p = brusselsParts(new Date(now.getTime() + i * 864e5));
     const dayType = [0, 3, 5].includes(p.wd) ? ["nas", "Nasdaq-uitleg of beursgeschiedenis"] : ["fis", "Fiscaal onderwerp"];
     if (p.wd === 6) out.push({ date: p.date, wd: p.wd, time: "10:51", key: p.date + "-markt", tag: ["mkt", "Marktnieuws"],
       what: "Weekoverzicht van de beurs (ma-vr)", sub: "+ zelfreview · + analyse van je views en nieuwe lessen" });
-    out.push({ date: p.date, wd: p.wd, time: "19:57", key: p.date, tag: dayType,
+    out.push({ date: p.date, wd: p.wd, time: "16:57", key: p.date, tag: dayType,
       what: `1 video: ${dayType[1]}`, sub: (p.wd === 5 || p.wd === 6) ? "dagnieuws alleen bij iets uitzonderlijks · + zelfreview" : "of dagnieuws als de Nasdaq ≥ 2% bewoog · + zelfreview" });
   }
   return out;
