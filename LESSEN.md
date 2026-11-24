@@ -20,3 +20,10 @@ Nog geen cijfers. Tot dan gelden de regels uit de feedback:
 - Cijfers altijd uitgeschreven in het Nederlands naar de stem ("vijfendertig procent"); ondertitels tonen cijfers.
 - Nooit de taal-instructie van de spraakdienst aanpassen (maakte het erger).
 - De zelfreview bewaakt dit automatisch (TAAL-controle op de gesproken tekst).
+
+## Referentievideo (goedgekeurd door de gebruiker, 24/11)
+`scripts/2026-W48/05-nasdaq-dotcom-crash.json` = de stijl die werkt. Gebruik hem als voorbeeld:
+- spreektaal als uitleg ("Kijk", "Stel je voor"), korte zinnen, humor die de uitleg dient ("langer dan TikTok bestaat")
+- sneller tempo (+22%), korte pauzes, alleen Nederlands
+- echte foto's achter hook/uitlegscènes, niet achter grafieken of rekenvoorbeelden
+- een concreet voorbeeld als eigen scène (Pets.com), net boven 1 minuut
