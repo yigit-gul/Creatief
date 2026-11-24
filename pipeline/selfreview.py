@@ -82,7 +82,7 @@ def signals(script, timing):
     if out["zinnen"]["langer_dan_10"]:
         flags.append(f"{len(out['zinnen']['langer_dan_10'])} zin(nen) langer dan 12 woorden: opsplitsen.")
     for s in out["scenes"]:
-        if s["woorden_per_sec"] and s["woorden_per_sec"] > 3.3:
+        if s["woorden_per_sec"] and s["woorden_per_sec"] > 3.8:
             flags.append(f"Scène {s['n']} is erg vol ({s['woorden_per_sec']} w/s).")
         if s["sec"] > 16:
             flags.append(f"Scène {s['n']} duurt {s['sec']} s: risico op wegzappen, overweeg te splitsen.")
@@ -100,7 +100,7 @@ def signals(script, timing):
     # zinnen die aan elkaar plakken (klinkt alsof hij 2 dingen tegelijk zegt)
     sil = silences(C.ROOT / timing["audio"].replace(".wav", ".mp3")) if timing.get("audio") else []
     def breathes(a, b):  # echte stilte in de audio tussen twee zinnen (woordtimings zijn te ruim)
-        return any(e - st >= 0.15 and st < b["start"] + 0.05 and e > a["end"] - 0.35 for st, e in sil)
+        return any(e - st >= 0.11 and st < b["start"] + 0.05 and e > a["end"] - 0.6 for st, e in sil)
     glued = [f'"{a["text"]} | {b["text"]}"' for a, b in zip(words, words[1:]) if a.get("eos") and not breathes(a, b)]
     if glued:
         flags.append(f"{len(glued)} zinsgrens(en) zonder adempauze: {', '.join(glued[:4])}.")

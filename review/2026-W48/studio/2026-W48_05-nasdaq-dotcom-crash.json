@@ -4,13 +4,14 @@
  "title": "De dotcom-crash: −78% en 15 jaar wachten",
  "validity": "Historische cijfers Nasdaq Composite (slotkoersen, prijsindex zonder dividenden)",
  "status": "klaar voor review",
- "durationSec": 61.1,
- "words": 155,
+ "durationSec": 62.4,
+ "words": 167,
  "script": [
   "In 2000 crashte de Nasdaq. Bijna 80% ging in rook op. Herstellen duurde 15 jaar. Welkom bij de dotcom-bubbel.",
   "Kijk, eind jaren negentig was internet gloednieuw. Had je bedrijf punt com in de naam? Dan was je blijkbaar goud waard. Iedereen wilde erbij zijn. Een website en een droom, meer had je niet nodig. Winst? Ach, die kwam later wel. Dachten ze toch.",
   "Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. En pas in april 2015 kwam hij weer boven die top. Vijftien jaar! Dat is langer dan TikTok bestaat.",
-  "Stel je voor: iemand stak €1.000 in de index. Net op de top. In oktober 2002 was dat nog €221. Oef, dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over, en die werden later reuzen.",
+  "Stel je voor: iemand stak €1.000 in de index. Net op de top. In oktober 2002 was dat nog €221. Oef, dat doet pijn.",
+  "Veel internetbedrijven verdwenen gewoon. Neem Pets.com. In februari 2000 naar de beurs, in november al dicht. Een paar bleven over, en die werden later reuzen.",
   "Wat leerden beleggers toen? Een goed verhaal is nog geen winst. En voorspellen doen we hier niet. Volg voor meer!"
  ],
  "caption": "In 2000 knalde de dotcom-bubbel: de Nasdaq verloor 78% en had 15 jaar nodig om terug op de top te staan 💥 Het verhaal in minder dan een minuut.\n\nAlgemene info, geen beleggingsadvies, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).\n📸 Foto's: Thomas J. O'Halloran / Wikimedia Commons (Public domain); Frunze103 / Wikimedia Commons (CC0)",
@@ -89,6 +90,18 @@
      "date": "2026-11-23"
     }
    ]
+  },
+  {
+   "claim": "Pets.com: beursgang februari 2000, stopgezet november 2000",
+   "status": "check",
+   "note": "Bekend dotcom-voorbeeld; in deze run niet tegen een tweede bron gelegd.",
+   "sources": [
+    {
+     "title": "Wikipedia – Pets.com",
+     "url": "https://en.wikipedia.org/wiki/Pets.com",
+     "date": "2026-11-24"
+    }
+   ]
   }
  ],
  "warnings": [
@@ -99,12 +112,12 @@
   {
    "name": "Woordenaantal 150-190",
    "ok": true,
-   "info": "155 woorden"
+   "info": "167 woorden"
   },
   {
    "name": "Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)",
    "ok": true,
-   "info": "61.1 s"
+   "info": "62.4 s"
   },
   {
    "name": "Hook kort (≤ 22 woorden)",
@@ -151,9 +164,17 @@
  "trendScore": 9,
  "trendRank": 1,
  "trendReason": "Sterk verhaal met drama (−78%, 15 jaar wachten) en een grap die blijft hangen ('langer dan TikTok bestaat'). Valt nu extra op door de AI-onrust op de beurs. Blijft ook later goed werken.",
- "videoUrl": "/_blob/cd068a6db316ebdc6f658d380acaad69",
+ "videoUrl": "/_blob/3669d55134a6533dd6606249ce8adfa2",
  "selfReview": {
-  "rounds": 7,
+  "changes": [
+   "Sneller tempo (stem +22%, kortere pauzes) op jouw vraag.",
+   "Nieuw kort voorbeeld om boven 1 minuut te blijven: Pets.com (feb 2000 naar de beurs, nov 2000 dicht), als aparte scène.",
+   "Te lange scène (18 s) gesplitst.",
+   "Echte foto's: drukke beursvloer met handelaars (publiek domein) achter de crash-intro, een inbelmodem uit de jaren 90 (CC0) bij '.com was hot'. Traag inzoomend, donkere laag voor leesbaarheid.",
+   "Zelfreview: dotcom-grafiek als achtergrond geschrapt (Engelse aantekeningen 'Dead cat…' leidden af).",
+   "Geen foto achter grafieken en rekenvoorbeelden: cijfers moeten leesbaar blijven."
+  ],
+  "rounds": 9,
   "scores": {
    "eenvoud": 5,
    "hook": 5,
@@ -164,15 +185,7 @@
    "tempo": 4,
    "visueel": 5
   },
-  "changes": [
-   "Echte foto's: drukke beursvloer met handelaars (publiek domein) achter de crash-intro, een inbelmodem uit de jaren 90 (CC0) bij '.com was hot'. Traag inzoomend, donkere laag voor leesbaarheid.",
-   "Zelfreview: dotcom-grafiek als achtergrond geschrapt (Engelse aantekeningen 'Dead cat…' leidden af).",
-   "Geen foto achter grafieken en rekenvoorbeelden: cijfers moeten leesbaar blijven.",
-   "Naamsvermelding automatisch in de caption.",
-   "Stem: alleen Nederlands (één doorlopende zin per scène + zelf ingevoegde korte pauzes).",
-   "Cijfers in het Nederlands uitgeschreven naar de stem."
-  ],
-  "verdict": "Levendiger door echte beelden, zonder dat de tekst minder leesbaar wordt."
+  "verdict": "Sneller en levendiger, nog altijd 62 s met echte inhoud."
  },
- "claudeReply": "Echte foto's toegevoegd (beursvloer in paniek + inbelmodem uit de jaren 90), met naamsvermelding in de caption. Status terug op 'klaar voor review' omdat de video veranderd is: even opnieuw nakijken."
+ "claudeReply": "Tempo verhoogd (stem +22% en kortere pauzes). Om net boven 1 minuut te blijven kwam er een echt voorbeeld bij: Pets.com, in 9 maanden van beurs naar faillissement (nog even nakijken, ⚠️ één bron)."
 }

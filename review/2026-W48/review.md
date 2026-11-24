@@ -10,7 +10,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 | 02-marktnieuws-w47 | Marktnieuws: Nasdaq -10% in één week (16-20 nov 2026) | 65 s | 164 | 10/10 | 4 |
 | 03-nasdaq-wat-is-het | Nasdaq 101: beurs, index of rapper? | 63 s | 169 | 10/10 | 3 |
 | 04-nasdaq-waarom-schommelt | Waarom de Nasdaq de drama queen van de beurs is | 61 s | 175 | 10/10 | 3 |
-| 05-nasdaq-dotcom-crash | De dotcom-crash: −78% en 15 jaar wachten | 61 s | 155 | 10/10 | 4 |
+| 05-nasdaq-dotcom-crash | De dotcom-crash: −78% en 15 jaar wachten | 62 s | 167 | 10/10 | 5 |
 
 ---
 
@@ -342,7 +342,9 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
 >
 > Op 10 maart 2000 sloot de Nasdaq op 5.048. In oktober 2002 stond hij op 1.114. En pas in april 2015 kwam hij weer boven die top. Vijftien jaar! Dat is langer dan TikTok bestaat.
 >
-> Stel je voor: iemand stak €1.000 in de index. Net op de top. In oktober 2002 was dat nog €221. Oef, dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over, en die werden later reuzen.
+> Stel je voor: iemand stak €1.000 in de index. Net op de top. In oktober 2002 was dat nog €221. Oef, dat doet pijn.
+>
+> Veel internetbedrijven verdwenen gewoon. Neem Pets.com. In februari 2000 naar de beurs, in november al dicht. Een paar bleven over, en die werden later reuzen.
 >
 > Wat leerden beleggers toen? Een goed verhaal is nog geen winst. En voorspellen doen we hier niet. Volg voor meer!
 
@@ -360,6 +362,8 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
   - [NPR – 15 years after the dot-com bust, a Nasdaq record (23/04/2015)](https://www.npr.org/sections/thetwo-way/2015/04/23/397113284/15-years-after-the-dot-com-bust-nasdaq-closes-at-new-record) — geraadpleegd 2026-11-23
 - ⚠️ **Veel internetbedrijven gingen ten onder; enkele overleefden en werden later grote techbedrijven** — _Algemeen bekend uit de dotcom-geschiedenis; bewust zonder bedrijfsnamen._
   - [Britannica – Dot-com bubble](https://www.britannica.com/topic/dot-com-bubble) — geraadpleegd 2026-11-23
+- ⚠️ **Pets.com: beursgang februari 2000, stopgezet november 2000** — _Bekend dotcom-voorbeeld; in deze run niet tegen een tweede bron gelegd._
+  - [Wikipedia – Pets.com](https://en.wikipedia.org/wiki/Pets.com) — geraadpleegd 2026-11-24
 
 ### ⚠️ Aandachtspunten
 
@@ -380,8 +384,8 @@ Algemene info, geen beleggingsadvies, geen voorspellingen.
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (155 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (61.1 s)
+- ✅ Woordenaantal 150-190 (167 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (62.4 s)
 - ✅ Hook kort (≤ 22 woorden) (19 woorden)
 - ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ Call to action ('volg')

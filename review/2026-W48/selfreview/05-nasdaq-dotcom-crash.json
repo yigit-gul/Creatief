@@ -1,62 +1,70 @@
 {
  "id": "05-nasdaq-dotcom-crash",
  "signalen": {
-  "duration": 61.1,
+  "duration": 62.4,
   "scenes": [
    {
     "n": 0,
     "type": "hook",
-    "sec": 8.3,
+    "sec": 7.8,
     "woorden": 19,
-    "woorden_per_sec": 2.29,
+    "woorden_per_sec": 2.43,
     "langste_zin": 6
    },
    {
     "n": 1,
     "type": "point",
-    "sec": 14.7,
+    "sec": 13.8,
     "woorden": 44,
-    "woorden_per_sec": 2.99,
+    "woorden_per_sec": 3.18,
     "langste_zin": 10
    },
    {
     "n": 2,
     "type": "bars",
-    "sec": 13.7,
+    "sec": 12.8,
     "woorden": 35,
-    "woorden_per_sec": 2.55,
+    "woorden_per_sec": 2.74,
     "langste_zin": 11
    },
    {
     "n": 3,
     "type": "calc",
-    "sec": 14.7,
-    "woorden": 37,
-    "woorden_per_sec": 2.51,
+    "sec": 8.7,
+    "woorden": 24,
+    "woorden_per_sec": 2.75,
     "langste_zin": 9
    },
    {
     "n": 4,
+    "type": "point",
+    "sec": 10.0,
+    "woorden": 25,
+    "woorden_per_sec": 2.5,
+    "langste_zin": 10
+   },
+   {
+    "n": 5,
     "type": "outro",
-    "sec": 6.4,
+    "sec": 6.1,
     "woorden": 20,
-    "woorden_per_sec": 3.14,
+    "woorden_per_sec": 3.27,
     "langste_zin": 7
    }
   ],
   "zinnen": {
-   "aantal": 27,
-   "gemiddeld": 5.7,
+   "aantal": 29,
+   "gemiddeld": 5.8,
    "langer_dan_10": []
   },
   "hook": {
    "eerste_zin": "In 2000 crashte de Nasdaq.",
-   "klaar_na_sec": 2.0
+   "klaar_na_sec": 1.8
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 64,
-   "langste": "was internet gloednieuw"
+   "blokken": 69,
+   "langste": "Veel internetbedrijven"
   },
   "layout": [
    {
@@ -77,6 +85,10 @@
    },
    {
     "scene": 4,
+    "onderkant_tekst": 1070
+   },
+   {
+    "scene": 5,
     "onderkant_tekst": 1212
    }
   ],

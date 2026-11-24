@@ -56,7 +56,7 @@
       }
     },
     {
-      "say": "Stel je voor: iemand stak €1.000 in de index. Net op de top. In oktober 2002 was dat nog €221. Oef, dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over, en die werden later reuzen.",
+      "say": "Stel je voor: iemand stak €1.000 in de index. Net op de top. In oktober 2002 was dat nog €221. Oef, dat doet pijn.",
       "visual": {
         "type": "calc",
         "title": "3. Wat betekent dat?",
@@ -74,6 +74,15 @@
             "cue": "€221"
           }
         ]
+      }
+    },
+    {
+      "say": "Veel internetbedrijven verdwenen gewoon. Neem Pets.com. In februari 2000 naar de beurs, in november al dicht. Een paar bleven over, en die werden later reuzen.",
+      "visual": {
+        "type": "point",
+        "n": 4,
+        "head": "Pets.com: *9 maanden* op de beurs",
+        "body": "Februari 2000 naar de beurs, november 2000 al dicht."
       }
     },
     {
@@ -158,6 +167,18 @@
           "title": "Britannica – Dot-com bubble",
           "url": "https://www.britannica.com/topic/dot-com-bubble",
           "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "claim": "Pets.com: beursgang februari 2000, stopgezet november 2000",
+      "status": "check",
+      "note": "Bekend dotcom-voorbeeld; in deze run niet tegen een tweede bron gelegd.",
+      "sources": [
+        {
+          "title": "Wikipedia – Pets.com",
+          "url": "https://en.wikipedia.org/wiki/Pets.com",
+          "date": "2026-11-24"
         }
       ]
     }

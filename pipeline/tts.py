@@ -239,15 +239,15 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
     t = 0.0
     for i, scene in enumerate(script["scenes"]):
         mp3 = audio_dir / f"{sid}_s{i:02d}.mp3"
-        for attempt in range(4):
+        for attempt in range(7):
             try:
                 words = synth_scene(scene["say"], mp3)
                 break
             except Exception as e:  # netwerkhapering: opnieuw proberen
                 print(f"  scène {i}: poging {attempt + 1} mislukt ({type(e).__name__})", flush=True)
-                if attempt == 3:
+                if attempt == 6:
                     raise
-                time.sleep(2 + 3 * attempt)
+                time.sleep(4 + 4 * attempt)
         if words:  # stilte voor het eerste en na het laatste woord wegknippen
             a, b = max(0.0, words[0]["start"] - 0.04), words[-1]["end"] + 0.10
             trimmed = mp3.with_suffix(".trim.mp3")

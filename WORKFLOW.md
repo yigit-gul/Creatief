@@ -63,7 +63,7 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
   gewone woorden ("betalen voor de winst van later" i.p.v. "gewaardeerd op verwachte winst"), geen tangconstructies.
 - **Spreektaal, TikTok-tempo**: korte zinnen, Vlaams-informeel ("da's", "een voorbeeldje"; nooit "hè": dat leest niet), zoals je het
   tegen een vriend uitlegt. Hook = herkenbare situatie of tegenstrijdigheid ("Verlies gemaakt? Tóch belasting."),
-  daarna overgangen als een gesprek ("Raar? Ik leg het je uit", "Kijk, een voorbeeldje", "Wie regelt dat?"). Stem: Andrew (multilingual), +15%, zinnen lopen door zonder leespauzes.
+  daarna overgangen als een gesprek ("Raar? Ik leg het je uit", "Kijk, een voorbeeldje", "Wie regelt dat?"). Stem: Andrew (multilingual), +22% (sneller, 24/11), zinnen lopen door zonder leespauzes.
 - **Lengte: net boven 1 minuut** (61-68 s ≈ 155-175 woorden). Langer (tot 75 s) alleen als de inhoud het echt draagt;
   verleng met inhoud (extra voorbeeld, uitleg van een begrip), nooit met opvulling.
 - **Humor voor jongeren, wel informatief**: herkenbare vergelijkingen ("Vinted, maar dan voor bedrijven",

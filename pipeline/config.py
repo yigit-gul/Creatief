@@ -25,15 +25,15 @@ COLORS = {
 
 # --- Stem -------------------------------------------------------------------
 VOICE = "en-US-AndrewMultilingualNeural"   # gekozen in de Studio (stem E); spreekt Nederlands
-VOICE_RATE = "+15%"   # TikTok-tempo
+VOICE_RATE = "+22%"   # TikTok-tempo (sneller op vraag, 24/11)
 VOICE_PITCH = "+0Hz"
 VOICE_LANG = None  # NIET aanpassen: een eigen taal-instructie maakte de taalwissels erger. Standaard laten.
-SCENE_GAP = 0.22  # korte adempauze tussen scènes (0.06 klonk als 2 dingen tegelijk)
+SCENE_GAP = 0.16  # korte adempauze tussen scènes
 FLOW_SENTENCES = True  # elke scène = één doorlopende zin -> de meertalige stem blijft Nederlands (zoals de oude video's)
 # De zinsgrenzen worden daarna hoorbaar gemaakt door zelf een korte stilte in te voegen.
-SENTENCE_GAP = 0.28   # totale stilte op een zinsgrens (wordt ingevoegd)
-QUESTION_GAP = 0.34   # na een vraag iets langer
-SHORT_GAP = 0.20      # na een korte uitroep ('Plus 35%.', 'Oef.') korter: klinkt als praten, niet als voorlezen
+SENTENCE_GAP = 0.22   # totale stilte op een zinsgrens (wordt ingevoegd)
+QUESTION_GAP = 0.28   # na een vraag iets langer
+SHORT_GAP = 0.18      # na een korte uitroep korter
 
 # --- Video ------------------------------------------------------------------
 W, H = 1080, 1920

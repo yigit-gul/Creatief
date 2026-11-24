@@ -14,3 +14,5 @@ Geldigheid: Historische cijfers Nasdaq Composite (slotkoersen, prijsindex zonder
   - [NPR – 15 years after the dot-com bust, a Nasdaq record (23/04/2015)](https://www.npr.org/sections/thetwo-way/2015/04/23/397113284/15-years-after-the-dot-com-bust-nasdaq-closes-at-new-record) — geraadpleegd 2026-11-23
 - ⚠️ **Veel internetbedrijven gingen ten onder; enkele overleefden en werden later grote techbedrijven** — _Algemeen bekend uit de dotcom-geschiedenis; bewust zonder bedrijfsnamen._
   - [Britannica – Dot-com bubble](https://www.britannica.com/topic/dot-com-bubble) — geraadpleegd 2026-11-23
+- ⚠️ **Pets.com: beursgang februari 2000, stopgezet november 2000** — _Bekend dotcom-voorbeeld; in deze run niet tegen een tweede bron gelegd._
+  - [Wikipedia – Pets.com](https://en.wikipedia.org/wiki/Pets.com) — geraadpleegd 2026-11-24
