@@ -47,6 +47,17 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 - Voorbeelden: `03-nasdaq-wat-is-het`, `04-nasdaq-waarom-schommelt`, `05-nasdaq-dotcom-crash`.
 - Volgende ideeën: Nasdaq-100 vs. S&P 500, wat is een bear market, hoe lees je een koersgrafiek, wat is beurswaarde.
 
+## 1d. Echte foto's (bij elke video waar het past)
+- Zoek op Wikimedia Commons: `python -m pipeline.fotos zoek "<zoekterm in het Engels>"`. Alleen regels met `OK`
+  (publiek domein, CC0, CC BY). Download: `python -m pipeline.fotos haal "File:<naam>" <slug>` (wacht ~10 s tussen
+  verzoeken; Wikimedia beperkt het aantal). Naamsvermelding komt automatisch in de caption.
+- In het script: `"photo": "<slug>"` (en optioneel `"photo_dim": 0.6-0.8`) op een `hook`-, `slam`- of `point`-scène.
+  NIET achter `bars`, `line` of `calc` met veel cijfers als de foto de leesbaarheid schaadt.
+- Bekijk elke foto eerst (Read). Geen foto's met tekst/aantekeningen die afleiden, geen misleidende beelden
+  (bv. geen foto van de crash van 1929 bij de dotcom-crash), geen herkenbare privépersonen; bekende personen alleen
+  als het nieuws over hen gaat.
+- Video's met status `geüpload` krijgen nooit nog foto's of andere aanpassingen.
+
 ## 2. Scripts → `scripts/<week>/0N-<slug>.json`
 - **Eenvoudige zinnen** (feedback: anders klinkt de stem AI): meestal max. ~10 woorden per zin, één idee per zin,
   gewone woorden ("betalen voor de winst van later" i.p.v. "gewaardeerd op verwachte winst"), geen tangconstructies.

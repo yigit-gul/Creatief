@@ -1,6 +1,6 @@
 # Review 2026-W48
 
-Gegenereerd op 2026-11-23 · stem `en-US-AndrewMultilingualNeural` · kanaal **Fiscaal Fluitje** (@fiscaalfluitje)
+Gegenereerd op 2026-11-24 · stem `en-US-AndrewMultilingualNeural` · kanaal **Fiscaal Fluitje** (@fiscaalfluitje)
 
 Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automatisch gepost.
 
@@ -373,6 +373,7 @@ In 2000 knalde de dotcom-bubbel: de Nasdaq verloor 78% en had 15 jaar nodig om t
 
 Algemene info, geen beleggingsadvies, geen voorspellingen.
 🤖 Deze video is gemaakt met AI (voice-over en beeld).
+📸 Foto's: Thomas J. O'Halloran / Wikimedia Commons (Public domain); Frunze103 / Wikimedia Commons (CC0)
 
 #nasdaq #dotcom #beursgeschiedenis #geldtips #belgie
 ```

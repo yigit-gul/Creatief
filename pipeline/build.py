@@ -52,8 +52,14 @@ def checks(script, timing):
     return res
 
 
+def caption_with_credits(script):
+    from .fotos import credits
+    c = credits(script)
+    return script["caption"].strip() + (("\n📸 Foto's: " + "; ".join(c)) if c else "")
+
+
 def caption_text(script):
-    return script["caption"].strip() + "\n\n" + " ".join(script["hashtags"])
+    return caption_with_credits(script) + "\n\n" + " ".join(script["hashtags"])
 
 
 def build_one(path: Path):
@@ -91,7 +97,7 @@ def studio_doc(script, timing, chk, week):
         "status": "klaar voor review", "durationSec": round(timing["duration"] + C.OUTRO_HOLD, 1),
         "words": len(words_of(script)),
         "script": [display_text(s["say"]) for s in script["scenes"]],
-        "caption": script["caption"], "hashtags": script["hashtags"],
+        "caption": caption_with_credits(script), "hashtags": script["hashtags"],
         "claims": script["claims"], "warnings": script.get("warnings", []),
         "checks": [{"name": n, "ok": bool(ok), "info": info} for n, ok, info in chk],
         "repoPath": f"review/{week}/{script['id']}.mp4",

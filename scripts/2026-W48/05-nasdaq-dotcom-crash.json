@@ -9,7 +9,9 @@
         "type": "hook",
         "kicker": "Nasdaq-geschiedenis",
         "big": "−78% en *15 jaar* wachten",
-        "sub": "De dotcom-bubbel in minder dan een minuut."
+        "sub": "De dotcom-bubbel in minder dan een minuut.",
+        "photo": "handelaars",
+        "photo_dim": 0.66
       }
     },
     {
@@ -18,7 +20,8 @@
         "type": "point",
         "n": 1,
         "head": "Alles met *.com* was hot",
-        "body": "Winst? Dat kwam later wel... dachten ze."
+        "body": "Winst? Dat kwam later wel... dachten ze.",
+        "photo": "modem"
       }
     },
     {

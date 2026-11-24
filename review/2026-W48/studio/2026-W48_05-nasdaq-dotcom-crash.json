@@ -3,7 +3,7 @@
  "id": "05-nasdaq-dotcom-crash",
  "title": "De dotcom-crash: −78% en 15 jaar wachten",
  "validity": "Historische cijfers Nasdaq Composite (slotkoersen, prijsindex zonder dividenden)",
- "status": "nagekeken",
+ "status": "klaar voor review",
  "durationSec": 61.1,
  "words": 155,
  "script": [
@@ -13,7 +13,7 @@
   "Stel je voor: iemand stak €1.000 in de index. Net op de top. In oktober 2002 was dat nog €221. Oef, dat doet pijn. Veel internetbedrijven verdwenen gewoon. Een paar bleven over, en die werden later reuzen.",
   "Wat leerden beleggers toen? Een goed verhaal is nog geen winst. En voorspellen doen we hier niet. Volg voor meer!"
  ],
- "caption": "In 2000 knalde de dotcom-bubbel: de Nasdaq verloor 78% en had 15 jaar nodig om terug op de top te staan 💥 Het verhaal in minder dan een minuut.\n\nAlgemene info, geen beleggingsadvies, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
+ "caption": "In 2000 knalde de dotcom-bubbel: de Nasdaq verloor 78% en had 15 jaar nodig om terug op de top te staan 💥 Het verhaal in minder dan een minuut.\n\nAlgemene info, geen beleggingsadvies, geen voorspellingen.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).\n📸 Foto's: Thomas J. O'Halloran / Wikimedia Commons (Public domain); Frunze103 / Wikimedia Commons (CC0)",
  "hashtags": [
   "#nasdaq",
   "#dotcom",
@@ -149,30 +149,30 @@
  ],
  "repoPath": "review/2026-W48/05-nasdaq-dotcom-crash.mp4",
  "trendScore": 9,
- "trendRank": 2,
+ "trendRank": 1,
  "trendReason": "Sterk verhaal met drama (−78%, 15 jaar wachten) en een grap die blijft hangen ('langer dan TikTok bestaat'). Valt nu extra op door de AI-onrust op de beurs. Blijft ook later goed werken.",
- "videoUrl": "/_blob/089fd054a7669e3d8c98ed61a71f8f07",
+ "videoUrl": "/_blob/cd068a6db316ebdc6f658d380acaad69",
  "selfReview": {
-  "rounds": 4,
+  "rounds": 7,
   "scores": {
    "eenvoud": 5,
    "hook": 5,
    "humor": 4,
    "info": 5,
    "regels": 5,
+   "stem": 5,
    "tempo": 4,
-   "visueel": 5,
-   "stem": 5
+   "visueel": 5
   },
   "changes": [
+   "Echte foto's: drukke beursvloer met handelaars (publiek domein) achter de crash-intro, een inbelmodem uit de jaren 90 (CC0) bij '.com was hot'. Traag inzoomend, donkere laag voor leesbaarheid.",
+   "Zelfreview: dotcom-grafiek als achtergrond geschrapt (Engelse aantekeningen 'Dead cat…' leidden af).",
+   "Geen foto achter grafieken en rekenvoorbeelden: cijfers moeten leesbaar blijven.",
+   "Naamsvermelding automatisch in de caption.",
    "Stem: alleen Nederlands (één doorlopende zin per scène + zelf ingevoegde korte pauzes).",
-   "Cijfers in het Nederlands uitgeschreven naar de stem.",
-   "Tekst herschreven als spreektaal/uitleg.",
-   "Taalcontrole in de zelfreview: geslaagd (geen cijfers, geen losse zinnen naar de stem).",
-   "Hook ingekort: 'In 2000 crashte de Nasdaq. Bijna 80% weg.'",
-   "Te lange zin opgesplitst."
+   "Cijfers in het Nederlands uitgeschreven naar de stem."
   ],
-  "verdict": "Klinkt als uitleg in het Nederlands; alle checks en de taalcontrole slagen."
+  "verdict": "Levendiger door echte beelden, zonder dat de tekst minder leesbaar wordt."
  },
- "claudeReply": "Opnieuw gebouwd: (1) ALLEEN Nederlands: elke scène gaat als één doorlopende zin naar de stem, zoals in de oude video's (losse korte zinnen lieten hem Frans/Engels spreken), cijfers worden in het Nederlands uitgeschreven. (2) Spreektaal: herschreven alsof ik het aan iemand uitleg ('Kijk', 'Stel je voor', 'Simpel gezegd'), met gevarieerde korte pauzes in plaats van voorleesritme. (3) Zelfreview controleert nu automatisch dat er nooit cijfers of losse zinnen naar de stem gaan."
+ "claudeReply": "Echte foto's toegevoegd (beursvloer in paniek + inbelmodem uit de jaren 90), met naamsvermelding in de caption. Status terug op 'klaar voor review' omdat de video veranderd is: even opnieuw nakijken."
 }

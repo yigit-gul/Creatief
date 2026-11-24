@@ -451,8 +451,33 @@ def render_layer(scene, t_in_scene, dur):
     return layer
 
 
-def compose(layer, t, frac):
-    arr = np.asarray(Image.alpha_composite(moving_background(t), layer).convert("RGB")).copy()
+@lru_cache(8)
+def _photo_base(slug, dim):
+    """Foto schermvullend (cover) + donkere laag zodat tekst leesbaar blijft; onderaan extra donker voor ondertitels."""
+    im = Image.open(C.ROOT / "assets" / "fotos" / f"{slug}.jpg").convert("RGB")
+    BW, BH = int(W * 1.1), int(H * 1.1)
+    sc = max(BW / im.width, BH / im.height)
+    im = im.resize((int(im.width * sc) + 1, int(im.height * sc) + 1), Image.LANCZOS)
+    x0, y0 = (im.width - BW) // 2, (im.height - BH) // 2
+    im = im.crop((x0, y0, x0 + BW, y0 + BH)).convert("RGBA")
+    shade = np.zeros((BH, BW, 4), np.uint8)
+    shade[..., :3] = COL["bg_top"][:3]
+    grad = np.linspace(dim, min(0.92, dim + 0.25), BH)[:, None]  # onderaan donkerder (ondertitels)
+    shade[..., 3] = (grad * 255).astype(np.uint8)
+    return Image.alpha_composite(im, Image.fromarray(shade, "RGBA"))
+
+
+def photo_background(slug, t_local, dur, dim=0.62):
+    """Traag inzoomen (Ken Burns): rustige beweging, geen stilstaand beeld."""
+    base = _photo_base(slug, dim)
+    z = 1 + 0.09 * min(1.0, max(0.0, t_local / max(dur, 1)))
+    cw, ch = int(base.width / z), int(base.height / z)
+    x0, y0 = (base.width - cw) // 2, (base.height - ch) // 2
+    return base.crop((x0, y0, x0 + cw, y0 + ch)).resize((W, H), Image.BILINEAR)
+
+
+def compose(layer, t, frac, bg=None):
+    arr = np.asarray(Image.alpha_composite(bg if bg is not None else moving_background(t), layer).convert("RGB")).copy()
     y = H - 14
     arr[y:, :] = COL["card"][:3]
     arr[y:, : int(W * frac)] = COL["mint"][:3]
@@ -565,7 +590,9 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
         key = (idx, round(local * FPS) if local < anim_end else "static")
         if key not in cache:
             cache = {key: render_layer(scenes[idx], local, dur)}
-        proc.stdin.write(compose(cache[key], t, fi / n_frames))
+        v = scenes[idx]["visual"]
+        bg = photo_background(v["photo"], local, dur + C.SCENE_GAP, v.get("photo_dim", 0.62)) if v.get("photo") else None
+        proc.stdin.write(compose(cache[key], t, fi / n_frames, bg))
     proc.stdin.close()
     if proc.wait() != 0:
         raise RuntimeError("ffmpeg faalde")
