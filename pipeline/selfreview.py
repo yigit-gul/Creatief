@@ -124,6 +124,19 @@ def signals(script, timing):
         if bottom > C.SUB_Y - 80:
             flags.append(f"Scène {i}: tekst in beeld loopt tot y={bottom} en raakt de ondertitels (y≈{C.SUB_Y}).")
     out["layout"] = overlap
+    # EERSTE BEELD: staat de hook er meteen? (lege openingsframes = kijkers swipen weg)
+    try:
+        v0 = scenes[0]["visual"]
+        t0 = 0.0 + (2.0 if v0["type"] == "hook" else 0.0)
+        if v0["type"] == "slam" and v0.get("at"):
+            v0 = {**v0, "at": [-1.0] + v0["at"][1:]}
+        lay0 = render_layer({**scenes[0], "visual": v0}, t0, sc[0]["end"] - sc[0]["start"])
+        a0 = np.asarray(lay0)[200:1300, :, 3]
+        if (a0 > 40).mean() < 0.01:
+            flags.append("EERSTE BEELD is (bijna) leeg: de hook moet er op frame 0 al staan.")
+        out["eerste_beeld_tekst"] = round(float((a0 > 40).mean()), 3)
+    except Exception as e:
+        flags.append(f"Eerste beeld kon niet gecontroleerd worden ({type(e).__name__}).")
     out["aandachtspunten"] = flags
     return out
 

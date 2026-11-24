@@ -27,3 +27,9 @@ Nog geen cijfers. Tot dan gelden de regels uit de feedback:
 - sneller tempo (+22%), korte pauzes, alleen Nederlands
 - echte foto's achter hook/uitlegscènes, niet achter grafieken of rekenvoorbeelden
 - een concreet voorbeeld als eigen scène (Pets.com), net boven 1 minuut
+
+## Bereik blijft hangen rond 300 views (24/11)
+- Eerste 3 video's (marktnieuws, Nvidia) bleven rond ~300 views steken: de testgroep van TikTok, niet doorgeschoven.
+- Gevonden fout: het EERSTE BEELD was leeg (hook fadete pas na 0,3-0,5 s binnen). Nu staat de hook op frame 0;
+  de zelfreview controleert dit automatisch.
+- Volgende lessen pas trekken als er kijktijd-cijfers zijn (% volledig bekeken, waar haken mensen af).

@@ -577,6 +577,9 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
            "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(out_mp4)]
     sc_times = timing["scenes"]
     apply_cues(scenes, sc_times, timing["words"])
+    v0 = scenes[0]["visual"]
+    if v0["type"] == "slam" and v0.get("at"):
+        v0["at"][0] = -1.0  # eerste reuzenwoord staat er al op frame 0
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     cache = {}
     for fi in range(n_frames):
@@ -589,7 +592,12 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
         anim_end = animation_end(scenes[idx]["visual"], dur)
         key = (idx, round(local * FPS) if local < anim_end else "static")
         if key not in cache:
-            cache = {key: render_layer(scenes[idx], local, dur)}
+            # EERSTE BEELD MOET METEEN DE HOOK TONEN (kijkers beslissen in 0,5 s; TikTok gebruikt het als voorbeeld):
+            # in de openingsscène staat de hooktekst er vanaf frame 0, zonder fade-in.
+            draw_t = local
+            if idx == 0 and scenes[0]["visual"]["type"] == "hook":
+                draw_t = local + 2.0
+            cache = {key: render_layer(scenes[idx], draw_t, dur)}
         v = scenes[idx]["visual"]
         bg = photo_background(v["photo"], local, dur + C.SCENE_GAP, v.get("photo_dim", 0.62)) if v.get("photo") else None
         proc.stdin.write(compose(cache[key], t, fi / n_frames, bg))
