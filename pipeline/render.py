@@ -476,6 +476,47 @@ def photo_background(slug, t_local, dur, dim=0.62):
     return base.crop((x0, y0, x0 + cw, y0 + ch)).resize((W, H), Image.BILINEAR)
 
 
+def punch_curve(dt):
+    """0 -> 1 -> 0 in ~0,3 s rond het moment dat een cijfer verschijnt."""
+    if dt < 0 or dt > 0.3:
+        return 0.0
+    return math.sin(math.pi * dt / 0.3)
+
+
+def punch(layer, scale):
+    w, h = int(W * scale), int(H * scale)
+    big = layer.resize((w, h), Image.BILINEAR)
+    x0, y0 = (w - W) // 2, (h - H) // 2
+    return big.crop((x0, y0, x0 + W, y0 + H))
+
+
+def make_sfx(path, total, whooshes, pops, sr=48000):
+    """Zelf gesynthetiseerde, rechtenvrije effecten: zachte 'whoosh' bij scènewissels, 'tik' bij cijfers."""
+    import wave
+    n = int(total * sr) + sr
+    out = np.zeros(n, np.float32)
+    rng = np.random.default_rng(7)
+    # whoosh: gefilterde ruis die aanzwelt en wegsterft (0,35 s)
+    L = int(0.35 * sr)
+    noise = rng.standard_normal(L).astype(np.float32)
+    k = 40
+    noise = np.convolve(noise, np.ones(k) / k, mode="same")
+    env = np.sin(np.linspace(0, np.pi, L)) ** 2
+    wh = noise * env * 0.9
+    # tik/pop: korte sinus met snel uitsterven (0,09 s)
+    Lp = int(0.09 * sr)
+    tt = np.arange(Lp) / sr
+    pop = np.sin(2 * np.pi * (1300 - 5000 * tt) * tt) * np.exp(-tt * 45) * 0.7
+    for t0, snd in [(w, wh) for w in whooshes] + [(p, pop) for p in pops]:
+        i0 = int(max(0, t0) * sr)
+        seg = snd[: max(0, min(len(snd), n - i0))]
+        out[i0:i0 + len(seg)] += seg
+    out = np.clip(out, -1, 1)
+    with wave.open(str(path), "wb") as wf:
+        wf.setnchannels(1); wf.setsampwidth(2); wf.setframerate(sr)
+        wf.writeframes((out * 32767).astype(np.int16).tobytes())
+
+
 def compose(layer, t, frac, bg=None):
     arr = np.asarray(Image.alpha_composite(bg if bg is not None else moving_background(t), layer).convert("RGB")).copy()
     y = H - 14
@@ -580,6 +621,23 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
     v0 = scenes[0]["visual"]
     if v0["type"] == "slam" and v0.get("at"):
         v0["at"][0] = -1.0  # eerste reuzenwoord staat er al op frame 0
+    # --- levendiger: korte 'punch'-zoom en zelfgemaakte geluidseffecten op belangrijke momenten ---
+    punches = []   # absolute tijden: cijfers/regels die verschijnen
+    whooshes = []  # scènewissels
+    for i, (sc, tm) in enumerate(zip(scenes, sc_times)):
+        v = sc["visual"]
+        if i > 0:
+            whooshes.append(tm["start"] - 0.12)
+        for a in (v.get("at") or []):
+            if a >= 0:
+                punches.append(tm["start"] + a)
+    if getattr(C, "SFX", True):
+        sfx = work / f"{script['id']}.sfx.wav"
+        make_sfx(sfx, total, whooshes, punches)
+        cmd[cmd.index("-filter_complex") + 1] = (
+            f"[0:v]ass={ass}:fontsdir={C.FONTS}[v];[1:a]apad,loudnorm=I=-14:TP=-1.5[vo];"
+            f"[2:a]volume={C.SFX_VOLUME}[fx];[vo][fx]amix=inputs=2:duration=first:normalize=0[a]")
+        cmd[cmd.index("-filter_complex"):cmd.index("-filter_complex")] = ["-i", str(sfx)]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     cache = {}
     for fi in range(n_frames):
@@ -600,7 +658,11 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
             cache = {key: render_layer(scenes[idx], draw_t, dur)}
         v = scenes[idx]["visual"]
         bg = photo_background(v["photo"], local, dur + C.SCENE_GAP, v.get("photo_dim", 0.62)) if v.get("photo") else None
-        proc.stdin.write(compose(cache[key], t, fi / n_frames, bg))
+        layer = cache[key]
+        pk = max((punch_curve(t - pt) for pt in punches), default=0.0)
+        if pk > 0.001:
+            layer = punch(layer, 1 + C.PUNCH * pk)
+        proc.stdin.write(compose(layer, t, fi / n_frames, bg))
     proc.stdin.close()
     if proc.wait() != 0:
         raise RuntimeError("ffmpeg faalde")

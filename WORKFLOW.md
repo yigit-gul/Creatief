@@ -1,5 +1,7 @@
 # Dagelijkse workflow (voor Claude)
 
+**Harde regel van de gebruiker:** video's met status `geüpload` of `afgekeurd` NOOIT meer aanpassen of opnieuw bouwen.
+
 **Ritme: elke dag 1 nieuwe video** (taak 16:57). Ma/di/do/za = algemeen fiscaal onderwerp (zie 1).
 Wo/vr/zo = Nasdaq-uitleg of beursgeschiedenis (zie 1c).
 **Dagnieuws in plaats van het gewone onderwerp** als (a) er echt iets groots gebeurde op de beurs, of (b) je geen
@@ -56,7 +58,7 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 - Bekijk elke foto eerst (Read). Geen foto's met tekst/aantekeningen die afleiden, geen misleidende beelden
   (bv. geen foto van de crash van 1929 bij de dotcom-crash), geen herkenbare privépersonen; bekende personen alleen
   als het nieuws over hen gaat.
-- Video's met status `geüpload` krijgen nooit nog foto's of andere aanpassingen.
+- Video's met status `geüpload` of `afgekeurd` worden NOOIT meer aangepast (geen foto's, geen nieuwe versie, niets).
 
 ## 2. Scripts → `scripts/<week>/0N-<slug>.json`
 - **Eenvoudige zinnen** (feedback: anders klinkt de stem AI): meestal max. ~10 woorden per zin, één idee per zin,
@@ -99,6 +101,18 @@ Controleer per video één frame (bv. bij het rekenvoorbeeld) op overlap. Gefaal
    scène als één doorlopende zin naar de stem (zodat hij Nederlands blijft), schrijft cijfers uit in het
    Nederlands, voegt zelf korte pauzes (~0,3 s) in op de zinsgrenzen en
    verbergt ondertitels bij `slam`-scènes; de zelfreview meet echte stiltes en overlap.
+
+   **Luistertest (automatisch, 25/11):** de zelfreview schrijft de stem uit met Whisper (model ~145 MB, wordt
+   één keer gedownload naar ~/.cache) en meldt per scène `STEM ...` als de taal niet Nederlands is, als er
+   Franse/Engelse woorden gehoord worden of als een deel van het script niet terug te horen is. Een STEM-melding
+   moet ALTIJD opgelost worden vóór de video naar de Studio gaat.
+   **TAALFOUT bij het bouwen:** de pipeline laat elke scène meteen beluisteren en probeert tot 4 keer
+   (doorlopend / met gewone zinnen). Blijft een zin Engels of Frans, dan stopt de build met `TAALFOUT`.
+   Herschrijf dan alleen die zin met duidelijk Nederlandse woorden en bouw opnieuw. Voorbeeld:
+   "Ken je die vriend die op een feestje het wildst danst" (werd Engels) ->
+   "Heb jij ook zo'n vriend die op elk feestje het wildst danst?" (Nederlands).
+   Levendigheid: korte zoom + zelfgemaakte 'tik' wanneer een cijfer verschijnt, 'whoosh' bij scènewissels,
+   hook staat op het eerste beeld, en er komt een omslagbeeld `review/<map>/<id>.cover.jpg` (upload het mee).
 
 ## 4c. Leren van de views (elke zaterdag, in de marktnieuwstaak)
 - De gebruiker vult per video `stats` in de Studio in (views, likes, comments, shares, saves, watchPct).

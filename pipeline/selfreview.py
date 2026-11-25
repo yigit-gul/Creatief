@@ -169,7 +169,19 @@ def run(path: Path):
         odir = C.ROOT / "review" / grp / "selfreview"
         odir.mkdir(parents=True, exist_ok=True)
         contact_sheet(C.ROOT / "video" / grp / f"{sid}.mp4", timing, odir / f"{sid}.png")
-        data = {"id": sid, "signalen": signals(script, timing),
+        sig = signals(script, timing)
+        # LUISTEREN: Whisper schrijft de stem uit en controleert taal en ontbrekende stukken per scène
+        try:
+            from . import luister
+            audio = C.ROOT / "audio" / grp / f"{sid}.mp3"
+            if not audio.exists():
+                audio = C.ROOT / timing["audio"]
+            gehoord = luister.luister(audio, timing)
+            sig["gehoord"] = gehoord
+            sig["aandachtspunten"] = luister.flags(gehoord) + sig["aandachtspunten"]
+        except Exception as e:
+            sig["aandachtspunten"].insert(0, f"STEM: luistertest kon niet draaien ({type(e).__name__}: {str(e)[:80]}). Controleer de stem extra goed.")
+        data = {"id": sid, "signalen": sig,
                 "rubriek": {k: {"vraag": v, "score": None, "opmerking": ""} for k, v in RUBRIC.items()},
                 "ronde": 1, "verbeteringen": []}
         (odir / f"{sid}.json").write_text(json.dumps(data, indent=1, ensure_ascii=False), encoding="utf-8")

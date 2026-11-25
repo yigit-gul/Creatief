@@ -78,6 +78,8 @@ def build_one(path: Path):
     rdir = C.ROOT / "review" / week
     rdir.mkdir(parents=True, exist_ok=True)
     shutil.copy(out, rdir / out.name)
+    # omslagbeeld: einde van de openingsscène (hook volledig in beeld), om te kiezen bij het uploaden
+    make_cover(script, timing, rdir / f"{sid}.cover.jpg")
     (rdir / f"{sid}.bronnen.md").write_text(
         f"# Bronnen · {script['title']}\n\nGeldigheid: {script['validity']}\n\n" + md_sources(script) + "\n",
         encoding="utf-8")
@@ -88,6 +90,21 @@ def build_one(path: Path):
     (sdir / f"{week}_{sid}.json").write_text(
         json.dumps(studio_doc(script, timing, chk, week), indent=1, ensure_ascii=False), encoding="utf-8")
     return script, timing, chk
+
+
+def make_cover(script, timing, path):
+    """Omslagbeeld zonder ondertitels: de openingsscène volledig in beeld."""
+    import copy
+    from PIL import Image
+    from . import render
+    scenes = copy.deepcopy(script["scenes"])
+    render.apply_cues(scenes, timing["scenes"], timing["words"])
+    sc0, t0 = scenes[0], timing["scenes"][0]
+    dur = t0["end"] - t0["start"]
+    layer = render.render_layer(sc0, max(dur, render.animation_end(sc0["visual"], dur) + 0.5), dur)
+    v = sc0["visual"]
+    bg = render.photo_background(v["photo"], dur, dur, v.get("photo_dim", 0.62)) if v.get("photo") else render.moving_background(1.0)
+    Image.alpha_composite(bg, layer).convert("RGB").save(path, quality=92)
 
 
 def studio_doc(script, timing, chk, week):

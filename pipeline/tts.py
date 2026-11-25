@@ -7,6 +7,7 @@ import asyncio
 import json
 import os
 import re
+import shutil
 import subprocess
 import time
 from pathlib import Path
@@ -66,9 +67,9 @@ def flowing(text: str) -> str:
     return SENT_END.sub(",", text)
 
 
-async def _synth(text: str, out_mp3: Path):
+async def _synth(text: str, out_mp3: Path, flow: bool = True):
     spoken, mapping = split_pronunciation(text)
-    spoken = flowing(spoken).replace("&", " en ")  # "&" breekt de spraakdienst (bv. S&P -> "S en P")
+    spoken = (flowing(spoken) if flow else spoken).replace("&", " en ")  # "&" breekt de spraakdienst (bv. S&P -> "S en P")
     # cijfers als Nederlandse woorden: anders leest de meertalige stem "35%" soms in het Frans
     spoken, num_repl = to_spoken(spoken)
     proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
@@ -151,11 +152,12 @@ def _silences(path: Path, min_dur=0.12):
     return list(zip(st, en))
 
 
-def synth_scene(text: str, out_mp3: Path):
+def synth_scene(text: str, out_mp3: Path, raw=None, flow: bool = True):
     """Hele scène in één keer inspreken (met volledige context blijft de meertalige stem Nederlands),
     dan elke stilte tussen zinnen inkorten tot een korte adempauze. Geen lange leespauzes, maar wel
     duidelijke zinsgrenzen (anders klinkt het alsof hij 2 dingen tegelijk zegt)."""
-    raw = asyncio.run(_synth(text, out_mp3))
+    if raw is None:
+        raw = asyncio.run(_synth(text, out_mp3, flow))
     expected = len(display_text(text).split())
     if len(raw) < 0.85 * expected:  # de dienst gaf soms maar een stuk audio terug, zonder fout
         raise RuntimeError(f"onvolledige audio: {len(raw)}/{expected} woorden")
@@ -217,6 +219,90 @@ def synth_scene(text: str, out_mp3: Path):
     return [{**w, "start": shift(w["start"]), "end": shift(w["end"])} for w in words]
 
 
+def synth_all(scenes, audio_dir: Path, sid: str):
+    """HET HELE SCRIPT IN ÉÉN KEER INSPREKEN en daarna per scène opknippen.
+    De meertalige stem kiest de taal per stuk tekst: een korte scène ("Ken je die vriend...") werd soms
+    Engels. Met het volledige script als context blijft hij Nederlands (gecontroleerd met de luistertest)."""
+    full = audio_dir / f"{sid}_full.mp3"
+    text = " ".join(sc["say"].strip() for sc in scenes)
+    for attempt in range(7):
+        try:
+            raw = asyncio.run(_synth(text, full))
+            exp = len(display_text(text).split())
+            if len(raw) < 0.85 * exp or duration(full) < 0.18 * exp:
+                raise RuntimeError(f"onvolledige audio: {len(raw)}/{exp} woorden")
+            break
+        except Exception as e:
+            print(f"  volledig script: poging {attempt + 1} mislukt ({type(e).__name__})", flush=True)
+            if attempt == 6:
+                raise
+            time.sleep(4 + 4 * attempt)
+    norm = lambda x: re.sub(r"[^\w%€]", "", x.lower())
+    # laatste woord van elke scène terugvinden -> knippunt net voor het eerste woord van de volgende scène
+    bounds, pos, count = [], 0, 0
+    for sc in scenes[:-1]:
+        toks = display_text(sc["say"]).split()
+        count += len(toks)
+        last = norm(toks[-1])
+        for j in range(max(pos, count - 4), len(raw) - 1):
+            wt = norm(raw[j]["text"])
+            if wt == last or (raw[j]["text"].startswith("-") and last.endswith(wt)):
+                bounds.append(j)
+                pos = j + 1
+                break
+        else:
+            raise RuntimeError(f"scènegrens niet gevonden na '{toks[-1]}'")
+    total = duration(full)
+    cuts = [0.0] + [max(raw[j]["end"] - 0.25, raw[j + 1]["start"] - 0.03) for j in bounds] + [total]
+    edges = [0] + [j + 1 for j in bounds] + [len(raw)]
+    out = []
+    for i in range(len(scenes)):
+        a, b = cuts[i], cuts[i + 1]
+        mp3 = audio_dir / f"{sid}_s{i:02d}.mp3"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(full), "-ss", f"{a:.3f}", "-to", f"{b:.3f}",
+                        "-c:a", "libmp3lame", "-q:a", "2", str(mp3)], check=True)
+        ws = [{**w, "start": w["start"] - a, "end": w["end"] - a} for w in raw[edges[i]:edges[i + 1]]]
+        out.append((mp3, ws))
+    full.unlink()
+    return out
+
+
+def synth_with_context(text: str, extra: str, out_mp3: Path, flow: bool = False):
+    """Inspreken met extra Nederlandse context erachter (de eerste zin van de volgende scène), zodat de
+    meertalige stem Nederlands kiest; daarna het extra stuk eraf knippen."""
+    raw = asyncio.run(_synth(text.strip() + " " + extra.strip(), out_mp3, flow))
+    norm = lambda x: re.sub(r"[^\w%€]", "", x.lower())
+    toks = display_text(text).split()
+    last, n = norm(toks[-1]), len(toks)
+    k = next((j for j in range(max(0, n - 4), len(raw)) if norm(raw[j]["text"]) == last
+              or (raw[j]["text"].startswith("-") and last.endswith(norm(raw[j]["text"])))), None)
+    if k is None:
+        raise RuntimeError("einde van de scène niet gevonden in de context-opname")
+    cut = min(raw[k]["end"] + 0.08, raw[k + 1]["start"] - 0.02) if k + 1 < len(raw) else raw[k]["end"] + 0.1
+    tmp = out_mp3.with_suffix(".ctx.mp3")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out_mp3), "-to", f"{cut:.3f}",
+                    "-c:a", "libmp3lame", "-q:a", "2", str(tmp)], check=True)
+    tmp.replace(out_mp3)
+    return synth_scene(text, out_mp3, raw=raw[:k + 1], flow=flow)
+
+
+class TaalFout(RuntimeError):
+    pass
+
+
+def taal(mp3: Path):
+    """Welke taal hoort Whisper? Zonder Whisper (niet geïnstalleerd) -> ('nl', 1.0) en de zelfreview meldt het."""
+    if not config.LANG_CHECK:
+        return "nl", 1.0
+    try:
+        from . import luister
+        _, info = luister.model().transcribe(luister.load_audio(mp3), beam_size=1)
+        return info.language, info.language_probability
+    except Exception as e:
+        print(f"  taalcontrole niet mogelijk ({type(e).__name__})", flush=True)
+        return "nl", 1.0
+
+
 def spoken_text(text: str) -> str:
     """Exact de tekst die naar de stem gaat (voor de controle in de zelfreview)."""
     sp, _ = split_pronunciation(text)
@@ -237,17 +323,43 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
     sid = script["id"]
     parts, timeline, all_words = [], [], []
     t = 0.0
+    lang_report = []
     for i, scene in enumerate(script["scenes"]):
         mp3 = audio_dir / f"{sid}_s{i:02d}.mp3"
-        for attempt in range(7):
-            try:
-                words = synth_scene(scene["say"], mp3)
+        words, best = None, None
+        # TAALBEWAKING: de meertalige stem kiest zelf een taal. Na elke poging luistert Whisper mee;
+        # geen Nederlands -> andere manier van inspreken (doorlopend / met gewone zinnen), tot het klopt.
+        scenes_all = script["scenes"]
+        nxt = split_sentences(display_text(scenes_all[i + 1]["say"]))[0][0] if i + 1 < len(scenes_all) else None
+        for mode in ("flow", "zinnen", "flow", "zinnen"):
+            if mode.startswith("context") and not nxt:
+                continue
+            for attempt in range(7):
+                try:
+                    if mode.startswith("context"):
+                        ws = synth_with_context(scene["say"], nxt, mp3, flow=(mode == "context-flow"))
+                    else:
+                        ws = synth_scene(scene["say"], mp3, flow=(mode == "flow"))
+                    break
+                except Exception as e:  # netwerkhapering: opnieuw proberen
+                    print(f"  scène {i}: poging {attempt + 1} mislukt ({type(e).__name__})", flush=True)
+                    if attempt == 6:
+                        raise
+                    time.sleep(4 + 4 * attempt)
+            lang, prob = taal(mp3)
+            if best is None or (lang == "nl" and prob > best[1]):
+                best = (lang, prob, mode)
+                words = ws
+                shutil.copy(mp3, mp3.with_suffix(".best.mp3"))
+            if lang == "nl" and prob >= config.LANG_MIN:
                 break
-            except Exception as e:  # netwerkhapering: opnieuw proberen
-                print(f"  scène {i}: poging {attempt + 1} mislukt ({type(e).__name__})", flush=True)
-                if attempt == 6:
-                    raise
-                time.sleep(4 + 4 * attempt)
+            print(f"  scène {i}: stem klinkt als '{lang}' ({prob:.2f}) -> opnieuw anders inspreken", flush=True)
+        shutil.move(mp3.with_suffix(".best.mp3"), mp3)
+        if config.LANG_CHECK and (best[0] != "nl" or best[1] < config.LANG_MIN):
+            raise TaalFout(f"TAALFOUT scène {i}: de stem spreekt deze zin als '{best[0]}' uit, hoe vaak ik het ook "
+                           f"probeer: \"{display_text(scene['say'])[:90]}\". Herschrijf de zin met duidelijk Nederlandse "
+                           f"woorden (vermijd openingen die op Engels lijken, zoals 'Ken je', 'Is', een naam) en bouw opnieuw.")
+        lang_report.append({"scene": i, "taal": best[0], "zeker": round(best[1], 2), "modus": best[2]})
         if words:  # stilte voor het eerste en na het laatste woord wegknippen
             a, b = max(0.0, words[0]["start"] - 0.04), words[-1]["end"] + 0.10
             trimmed = mp3.with_suffix(".trim.mp3")
@@ -277,6 +389,7 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
 
     data = {"audio": str(full.relative_to(config.ROOT)), "duration": duration(full),
             "scenes": timeline, "words": all_words,
-            "spoken": [spoken_text(sc["say"]) for sc in script["scenes"]]}
+            "spoken": [spoken_text(sc["say"]) for sc in script["scenes"]],
+            "taal": lang_report}
     (audio_dir / f"{sid}.timings.json").write_text(json.dumps(data, indent=1, ensure_ascii=False))
     return data

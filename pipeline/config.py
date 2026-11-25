@@ -42,3 +42,10 @@ FPS = 30
 SAFE_LEFT, SAFE_RIGHT, SAFE_TOP, SAFE_BOTTOM = 80, 150, 210, 480
 SUB_Y = 1440  # verticale positie (midden) van de ondertitels
 OUTRO_HOLD = 2.5  # seconden dat de eindkaart (disclaimer) blijft staan na de stem
+
+# --- Levendigheid (25/11) ---
+SFX = True          # zelfgemaakte whoosh bij scènewissels + tik bij cijfers
+SFX_VOLUME = 0.35   # ten opzichte van de stem (zacht houden)
+PUNCH = 0.045       # korte zoom (4,5%) wanneer een cijfer/regel verschijnt
+LANG_CHECK = True   # elke scène na het inspreken laten beluisteren door Whisper (moet Nederlands zijn)
+LANG_MIN = 0.6      # minimale zekerheid dat het Nederlands is
