@@ -1,0 +1,245 @@
+{
+  "id": "01-loonbrief-bruto-netto",
+  "title": "Je loonbrief: waar gaat je brutoloon naartoe?",
+  "validity": "Werknemersbijdrage RSZ bedienden 2026; bedrijfsvoorheffing vanaf 1 november 2026 (inkomsten 2026, aanslagjaar 2027)",
+  "scenes": [
+    {
+      "say": "€2.500 bruto. Maar op je rekening komt veel minder. Waar is de rest?",
+      "visual": {
+        "type": "slam",
+        "kicker": "Je loonbrief",
+        "words": [
+          "€2.500",
+          "BRUTO.",
+          "WAAR IS DE REST?"
+        ],
+        "colors": [
+          "yellow",
+          "text",
+          "yellow"
+        ],
+        "sizes": [
+          300,
+          120,
+          110
+        ],
+        "cues": [
+          "€2.500",
+          "bruto",
+          "rest"
+        ],
+        "y": 560,
+        "photo": "eurobiljetten",
+        "photo_dim": 0.72
+      }
+    },
+    {
+      "say": "Kijk, bruto is wat je baas betaalt. Netto is wat jij echt krijgt. Daartussen zitten twee happen.",
+      "visual": {
+        "type": "hook",
+        "kicker": "Bruto vs netto",
+        "big": "Bruto ≠ *netto*",
+        "sub": "Daartussen zitten twee happen."
+      }
+    },
+    {
+      "say": "Hap één is de [RSZ|R.S.Z.]. Als bediende is dat 13,07% van je brutoloon. Dat betaalt je dokter, je pensioen en je uitkering. Laag loon? Dan krijg je korting, de werkbonus.",
+      "visual": {
+        "type": "point",
+        "n": 1,
+        "head": "Hap 1: RSZ = *13,07%*",
+        "body": "Voor de sociale zekerheid. Laag loon? Korting via de werkbonus."
+      }
+    },
+    {
+      "say": "Hap twee is de bedrijfsvoorheffing. Een voorschot op je belasting, elke maand. Zoals een abonnement dat je niet kan opzeggen.",
+      "visual": {
+        "type": "point",
+        "n": 2,
+        "head": "Hap 2: *bedrijfsvoorheffing*",
+        "body": "Elke maand een voorschot op je belasting."
+      }
+    },
+    {
+      "say": "Een voorbeeldje met 100 euro bruto. Eerst gaat er 13,07 naar de [RSZ|R.S.Z.]. Er blijft 86,93 over. Daar gaat nog de voorheffing af. Hoeveel? Hangt af van je loon en gezin.",
+      "visual": {
+        "type": "calc",
+        "title": "Per €100 bruto",
+        "note": "Fictief voorbeeld · bediende, zonder werkbonus.",
+        "lines": [
+          {
+            "label": "Brutoloon",
+            "value": "€100",
+            "cue": "100"
+          },
+          {
+            "label": "RSZ (13,07%)",
+            "value": "−€13,07",
+            "hl": true,
+            "cue": "13,07"
+          },
+          {
+            "label": "Blijft over",
+            "value": "€86,93",
+            "cue": "86,93"
+          },
+          {
+            "label": "Min de voorheffing",
+            "value": "= netto",
+            "result": true,
+            "cue": "voorheffing"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Het jaar erna volgt de afrekening, via je aangifte. Te veel betaald? Dan krijg je geld terug. Ja, de fiscus kan ook lief zijn. Te weinig? Dan betaal je bij.",
+      "visual": {
+        "type": "point",
+        "n": 3,
+        "head": "Afrekening via je *aangifte*",
+        "body": "Te veel betaald: geld terug. Te weinig: bijbetalen.",
+        "photo": "eurobiljetten",
+        "photo_dim": 0.74
+      }
+    },
+    {
+      "say": "Trouwens, sinds 1 november wordt die voorheffing anders berekend. Door de belastinghervorming. Je netto kan dus wat schuiven. Geen fout, gewoon nieuwe regels.",
+      "visual": {
+        "type": "point",
+        "n": 4,
+        "head": "Sinds *1 november* anders",
+        "body": "Nieuwe berekening van de voorheffing. Je netto kan wat schuiven."
+      }
+    },
+    {
+      "say": "Lees je loonbrief dus eens. Volg voor meer!",
+      "visual": {
+        "type": "outro",
+        "big": "Je loonbrief, *ontcijferd*"
+      }
+    }
+  ],
+  "caption": "€2.500 op je contract, veel minder op je rekening? Zo lees je je loonbrief: van bruto naar netto in een minuut 💸 Plus: waarom je netto sinds 1 november wat kan schuiven.\n\nAlgemene info, geen persoonlijk advies. Je eigen loon hangt af van je statuut, je gezin en je werkgever.\n🤖 Deze video is gemaakt met AI (voice-over en beeld).",
+  "hashtags": [
+    "#loonbrief",
+    "#brutonetto",
+    "#fiscaliteit",
+    "#geldtips",
+    "#belgie"
+  ],
+  "claims": [
+    {
+      "claim": "Persoonlijke RSZ-bijdrage van een bediende = 13,07% van het brutoloon (bij arbeiders op 108% van het brutoloon)",
+      "status": "ok",
+      "sources": [
+        {
+          "title": "ACV – Loonbrief 2026 (brochure)",
+          "url": "https://www.hetacv.be/docs/default-source/acv-csc-metea-document-secteurs/publications/loonbrochure/01_acv_loonbrief_nl-2026.pdf",
+          "date": "2026-11-24"
+        },
+        {
+          "title": "Securex – Hoe wordt het nettoloon berekend?",
+          "url": "https://www.securex.be/nl/lex4you/werkgever/themas/verlonen/algemene-regels/hoe-wordt-het-nettoloon-berekend",
+          "date": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "claim": "De RSZ-bijdragen financieren de sociale zekerheid (o.a. ziekteverzekering, pensioen, werkloosheid)",
+      "status": "ok",
+      "note": "Vereenvoudigd tot 'je dokter, je pensioen en je uitkering'.",
+      "sources": [
+        {
+          "title": "Vlaanderen.be – RSZ en fiscaliteit",
+          "url": "https://www.vlaanderen.be/informatie-voor-hr-professionals/regelgeving/geldelijk-statuut/rsz-en-fiscaliteit",
+          "date": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "claim": "Werkbonus: vermindering van de persoonlijke RSZ-bijdrage voor werknemers met een laag brutoloon",
+      "status": "ok",
+      "note": "Bewust zonder grensbedrag gezegd (de grenzen veranderen geregeld; schaal vanaf 1 april 2026 volgens Securex).",
+      "sources": [
+        {
+          "title": "Securex – Werkbonus (actuele bedragen)",
+          "url": "https://www.securex.be/nl/lex4you/werkgever/actuele-bedragen/sociaalrechtelijke-bedragen/werkbonus",
+          "date": "2026-11-24"
+        },
+        {
+          "title": "ACV – Loonbrief 2026 (brochure)",
+          "url": "https://www.hetacv.be/docs/default-source/acv-csc-metea-document-secteurs/publications/loonbrochure/01_acv_loonbrief_nl-2026.pdf",
+          "date": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "claim": "Bedrijfsvoorheffing = maandelijks ingehouden voorschot op de personenbelasting; de afrekening volgt via aangifte en aanslagbiljet (terugbetaling of bijbetaling)",
+      "status": "ok",
+      "sources": [
+        {
+          "title": "FOD Financiën – Wanneer en hoe krijg ik terugbetaald?",
+          "url": "https://fin.belgium.be/nl/particulieren/betalen-terugkrijgen/terugkrijgen/wanneer-hoe",
+          "date": "2026-11-24"
+        },
+        {
+          "title": "Partena Professional – Waarom krijgen sommige werknemers belasting terug en moeten anderen bijbetalen?",
+          "url": "https://www.partena-professional.be/nl/nieuws/belastingaangifte-waarom-krijgen-sommige-werknemers-belasting-terug-en-moeten-anderen-0",
+          "date": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "claim": "Rekenvoorbeeld: €100 bruto − 13,07% RSZ = €86,93 (vóór bedrijfsvoorheffing, zonder werkbonus)",
+      "status": "ok",
+      "note": "Eigen berekening; fictief, voor een bediende.",
+      "sources": [
+        {
+          "title": "ACV – Loonbrief 2026 (brochure)",
+          "url": "https://www.hetacv.be/docs/default-source/acv-csc-metea-document-secteurs/publications/loonbrochure/01_acv_loonbrief_nl-2026.pdf",
+          "date": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "claim": "De bedrijfsvoorheffing hangt af van o.a. het loon en de gezinssituatie",
+      "status": "ok",
+      "sources": [
+        {
+          "title": "VRT NWS – Hoe betaal je meer belastingen op voorhand?",
+          "url": "https://www.vrt.be/vrtnws/nl/2025/06/19/hoe-betaal-je-meer-belastingen-op-voorhand-zodat-je-minder-moet/",
+          "date": "2026-11-24"
+        },
+        {
+          "title": "Securex – Wat is de bedrijfsvoorheffing?",
+          "url": "https://www.securex.be/nl/lex4you/werkgever/themas/verlonen/fiscale-loonlasten-bedrijfsvoorheffing/wat-is-de-bedrijfsvoorheffing",
+          "date": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "claim": "Sinds 1 november 2026 verwerkt de bedrijfsvoorheffing maatregelen uit de hervorming van de personenbelasting; het nettoloon kan daardoor stijgen of dalen",
+      "status": "check",
+      "note": "Alleen via Securex (zoekresultaat; securex.be was vanuit deze omgeving niet bereikbaar). Voorbeelden daar: +€14,47/maand netto (alleenstaande, 1 kind) en ≈ −€30/maand (gehuwd, 4 kinderen). Graag naast de FOD-schalen bedrijfsvoorheffing leggen.",
+      "sources": [
+        {
+          "title": "Securex – Nettolonen veranderen vanaf november",
+          "url": "https://www.securex.be/nl/lex4you/werkgever/nieuws/nettolonen-veranderen-vanaf-november",
+          "date": "2026-11-24"
+        },
+        {
+          "title": "Partena Professional – Hervorming personenbelasting: wat verandert er op de loonbrief?",
+          "url": "https://www.partena-professional.be/nl/node/22562",
+          "date": "2026-11-24"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "De novemberwijziging (scène 5) steunt op één bron (Securex), via zoekresultaten: securex.be en fin.belgium.be waren niet bereikbaar vanuit deze omgeving. Even nakijken, of de scène schrappen.",
+    "€2.500 in de hook is een fictief voorbeeldloon; de video noemt bewust geen nettobedrag (hangt af van werkbonus, gezin, statuut).",
+    "Arbeiders betalen 13,07% op 108% van hun brutoloon; de video zegt 'als bediende' om het eenvoudig te houden.",
+    "Uitspraak: luister of 'R.S.Z.' en 'dertien komma nul zeven' goed klinken."
+  ]
+}

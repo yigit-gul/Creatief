@@ -1,0 +1,228 @@
+{
+ "id": "01-loonbrief-bruto-netto",
+ "signalen": {
+  "duration": 64.2,
+  "scenes": [
+   {
+    "n": 0,
+    "type": "slam",
+    "sec": 5.2,
+    "woorden": 13,
+    "woorden_per_sec": 2.52,
+    "langste_zin": 7
+   },
+   {
+    "n": 1,
+    "type": "hook",
+    "sec": 5.4,
+    "woorden": 17,
+    "woorden_per_sec": 3.16,
+    "langste_zin": 7
+   },
+   {
+    "n": 2,
+    "type": "point",
+    "sec": 11.4,
+    "woorden": 30,
+    "woorden_per_sec": 2.63,
+    "langste_zin": 9
+   },
+   {
+    "n": 3,
+    "type": "point",
+    "sec": 6.4,
+    "woorden": 20,
+    "woorden_per_sec": 3.12,
+    "langste_zin": 8
+   },
+   {
+    "n": 4,
+    "type": "calc",
+    "sec": 11.7,
+    "woorden": 31,
+    "woorden_per_sec": 2.64,
+    "langste_zin": 7
+   },
+   {
+    "n": 5,
+    "type": "point",
+    "sec": 9.4,
+    "woorden": 30,
+    "woorden_per_sec": 3.2,
+    "langste_zin": 9
+   },
+   {
+    "n": 6,
+    "type": "point",
+    "sec": 8.8,
+    "woorden": 23,
+    "woorden_per_sec": 2.62,
+    "langste_zin": 9
+   },
+   {
+    "n": 7,
+    "type": "outro",
+    "sec": 2.7,
+    "woorden": 8,
+    "woorden_per_sec": 2.98,
+    "langste_zin": 5
+   }
+  ],
+  "zinnen": {
+   "aantal": 32,
+   "gemiddeld": 5.4,
+   "langer_dan_10": []
+  },
+  "hook": {
+   "eerste_zin": "€2.500 bruto.",
+   "klaar_na_sec": 1.8
+  },
+  "lange_stiltes": [],
+  "ondertitels": {
+   "blokken": 71,
+   "langste": "Door de belastinghervorming"
+  },
+  "layout": [
+   {
+    "scene": 1,
+    "onderkant_tekst": 788
+   },
+   {
+    "scene": 2,
+    "onderkant_tekst": 980
+   },
+   {
+    "scene": 3,
+    "onderkant_tekst": 962
+   },
+   {
+    "scene": 4,
+    "onderkant_tekst": 1275
+   },
+   {
+    "scene": 5,
+    "onderkant_tekst": 980
+   },
+   {
+    "scene": 6,
+    "onderkant_tekst": 1030
+   },
+   {
+    "scene": 7,
+    "onderkant_tekst": 1212
+   }
+  ],
+  "eerste_beeld_tekst": 0.085,
+  "aandachtspunten": [],
+  "gehoord": [
+   {
+    "scene": 0,
+    "taal": "nl",
+    "zeker": 0.93,
+    "gehoord": "2500 euro bruto, maar op je rekening komt veel minder. Waar is de rest?",
+    "vreemde_woorden": [],
+    "teruggehoord": 0.91
+   },
+   {
+    "scene": 1,
+    "taal": "nl",
+    "zeker": 0.97,
+    "gehoord": "Kijk, Bruto is wat je baas betaald, Netto is wat jij echt krijgt. Daartussen shit in tweehappen.",
+    "vreemde_woorden": [],
+    "teruggehoord": 0.91
+   },
+   {
+    "scene": 2,
+    "taal": "nl",
+    "zeker": 0.84,
+    "gehoord": "Op 1 is de RSZ. Als bediende is dat 13,07% van je bruto loon. Dat betaalt je dokter, je pensioen en je uitkering laag loon. Dan krijg je korting de werkbonus.",
+    "vreemde_woorden": [],
+    "teruggehoord": 0.93
+   },
+   {
+    "scene": 3,
+    "taal": "nl",
+    "zeker": 0.9,
+    "gehoord": "Twee is de bedrijfsvoorhefving en voorschot op je belasting elke maand zoals een abonnement dat je niet kan opzeggen.",
+    "vreemde_woorden": [],
+    "teruggehoord": 1.0
+   },
+   {
+    "scene": 4,
+    "taal": "nl",
+    "zeker": 0.96,
+    "gehoord": "Een oorbeeldje met 100 euro bruto. Eerst gaat er 13,07 naar de RSZ. Er blijft 86,93 over. Daar gaat nog de voorhefging af. Hoeveel? Hangt af van je loon en gezin.",
+    "vreemde_woorden": [],
+    "teruggehoord": 0.91
+   },
+   {
+    "scene": 5,
+    "taal": "nl",
+    "zeker": 0.94,
+    "gehoord": "Aan de naavoelte afrekening. Via je aangifte, te veel betaald, dan krijg je geld terug. Ja, de fiscus kan ook lief zijn. Te weinig, dan betaal je bij.",
+    "vreemde_woorden": [],
+    "teruggehoord": 0.87
+   },
+   {
+    "scene": 6,
+    "taal": "nl",
+    "zeker": 0.6,
+    "gehoord": "Sinds 1 november wordt die voorhefding anders berekened. Door de belastinghervorming je net ook aan dus wat schijven. Geen fout. Gewoon nieuwe regels.",
+    "vreemde_woorden": [],
+    "teruggehoord": 0.94
+   },
+   {
+    "scene": 7,
+    "taal": "nl",
+    "zeker": 0.93,
+    "gehoord": "Loonbriefdes 1. Volg voor meer.",
+    "vreemde_woorden": [],
+    "teruggehoord": 0.67
+   }
+  ]
+ },
+ "rubriek": {
+  "hook": {
+   "vraag": "Pakt de eerste 2-3 s? Herkenbaar, verrassend of grappig, en niet misleidend.",
+   "score": null,
+   "opmerking": ""
+  },
+  "eenvoud": {
+   "vraag": "Korte zinnen (max. ~10 woorden), gewone woorden, één idee per zin. Klinkt als praten, niet voorlezen.",
+   "score": null,
+   "opmerking": ""
+  },
+  "tempo": {
+   "vraag": "Geen stukken die slepen of te vol zitten; elke scène heeft een reden.",
+   "score": null,
+   "opmerking": ""
+  },
+  "humor": {
+   "vraag": "Minstens 1-2 knipogen die de uitleg helpen; niets geforceerd of kwetsend.",
+   "score": null,
+   "opmerking": ""
+  },
+  "info": {
+   "vraag": "Leer je echt iets? Klopt elk cijfer met de claims en bronnen?",
+   "score": null,
+   "opmerking": ""
+  },
+  "visueel": {
+   "vraag": "Tekst leesbaar, niets overlapt of staat dubbel (beeld + ondertitel), grafiek/cijfers verschijnen op het juiste moment.",
+   "score": null,
+   "opmerking": ""
+  },
+  "stem": {
+   "vraag": "Elke zin is apart te horen (korte adempauze), niets klinkt als 2 dingen tegelijk, geen leesstijl.",
+   "score": null,
+   "opmerking": ""
+  },
+  "regels": {
+   "vraag": "Geen advies of voorspelling, disclaimer op het einde, AI-vermelding in caption.",
+   "score": null,
+   "opmerking": ""
+  }
+ },
+ "ronde": 1,
+ "verbeteringen": []
+}
