@@ -93,7 +93,23 @@ async def _synth(text: str, out_mp3: Path, flow: bool = True):
                         "start": ch["offset"] / 1e7,
                         "end": (ch["offset"] + ch["duration"]) / 1e7,
                     })
-    return merge_numbers(words, num_repl)
+    return merge_numbers(merge_letters(words, mapping), num_repl)
+
+
+def merge_letters(words, mapping):
+    """Afkortingen die de stem letter per letter teruggeeft ('R', 'S', 'Z') weer samenvoegen tot 'RSZ'."""
+    for spoken, shown in mapping.items():
+        letters = [x for x in spoken.split(".") if x]
+        n = len(letters)
+        if n < 2 or not shown:
+            continue
+        i = 0
+        while i + n <= len(words):
+            if [w["text"].strip(".,!?") for w in words[i:i + n]] == letters:
+                tail = words[i + n - 1]["text"][len(words[i + n - 1]["text"].rstrip(".,!?")):]
+                words[i:i + n] = [{**words[i], "text": shown + tail, "end": words[i + n - 1]["end"]}]
+            i += 1
+    return words
 
 
 def merge_numbers(words, repl):
@@ -334,7 +350,7 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
         for mode in ("flow", "zinnen", "flow", "zinnen"):
             if mode.startswith("context") and not nxt:
                 continue
-            for attempt in range(7):
+            for attempt in range(12):
                 try:
                     if mode.startswith("context"):
                         ws = synth_with_context(scene["say"], nxt, mp3, flow=(mode == "context-flow"))
@@ -343,9 +359,9 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
                     break
                 except Exception as e:  # netwerkhapering: opnieuw proberen
                     print(f"  scène {i}: poging {attempt + 1} mislukt ({type(e).__name__})", flush=True)
-                    if attempt == 6:
+                    if attempt == 11:
                         raise
-                    time.sleep(4 + 4 * attempt)
+                    time.sleep(min(30, 4 + 4 * attempt))  # spraakdienst hapert soms minutenlang
             lang, prob = taal(mp3)
             if best is None or (lang == "nl" and prob > best[1]):
                 best = (lang, prob, mode)

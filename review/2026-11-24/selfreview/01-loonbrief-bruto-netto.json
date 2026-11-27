@@ -1,183 +1,219 @@
 {
  "id": "01-loonbrief-bruto-netto",
  "signalen": {
-  "duration": 64.2,
+  "duration": 65.0,
   "scenes": [
    {
     "n": 0,
-    "type": "slam",
-    "sec": 5.2,
-    "woorden": 13,
-    "woorden_per_sec": 2.52,
-    "langste_zin": 7
+    "type": "beats",
+    "sec": 6.6,
+    "woorden": 22,
+    "woorden_per_sec": 3.35,
+    "langste_zin": 17
    },
    {
     "n": 1,
-    "type": "hook",
-    "sec": 5.4,
+    "type": "beats",
+    "sec": 4.9,
     "woorden": 17,
-    "woorden_per_sec": 3.16,
-    "langste_zin": 7
+    "woorden_per_sec": 3.46,
+    "langste_zin": 17
    },
    {
     "n": 2,
-    "type": "point",
-    "sec": 11.4,
-    "woorden": 30,
-    "woorden_per_sec": 2.63,
-    "langste_zin": 9
+    "type": "beats",
+    "sec": 9.5,
+    "woorden": 31,
+    "woorden_per_sec": 3.25,
+    "langste_zin": 31
    },
    {
     "n": 3,
-    "type": "point",
-    "sec": 6.4,
-    "woorden": 20,
-    "woorden_per_sec": 3.12,
-    "langste_zin": 8
+    "type": "beats",
+    "sec": 4.8,
+    "woorden": 16,
+    "woorden_per_sec": 3.32,
+    "langste_zin": 16
    },
    {
     "n": 4,
-    "type": "calc",
-    "sec": 11.7,
-    "woorden": 31,
-    "woorden_per_sec": 2.64,
-    "langste_zin": 7
+    "type": "beats",
+    "sec": 7.9,
+    "woorden": 20,
+    "woorden_per_sec": 2.53,
+    "langste_zin": 20
    },
    {
     "n": 5,
-    "type": "point",
-    "sec": 9.4,
-    "woorden": 30,
-    "woorden_per_sec": 3.2,
-    "langste_zin": 9
+    "type": "beats",
+    "sec": 6.8,
+    "woorden": 28,
+    "woorden_per_sec": 4.09,
+    "langste_zin": 28
    },
    {
     "n": 6,
-    "type": "point",
-    "sec": 8.8,
-    "woorden": 23,
-    "woorden_per_sec": 2.62,
-    "langste_zin": 9
+    "type": "beats",
+    "sec": 7.7,
+    "woorden": 26,
+    "woorden_per_sec": 3.4,
+    "langste_zin": 26
    },
    {
     "n": 7,
-    "type": "outro",
-    "sec": 2.7,
-    "woorden": 8,
-    "woorden_per_sec": 2.98,
-    "langste_zin": 5
+    "type": "beats",
+    "sec": 7.5,
+    "woorden": 25,
+    "woorden_per_sec": 3.32,
+    "langste_zin": 25
+   },
+   {
+    "n": 8,
+    "type": "beats",
+    "sec": 6.6,
+    "woorden": 24,
+    "woorden_per_sec": 3.66,
+    "langste_zin": 24
    }
   ],
   "zinnen": {
-   "aantal": 32,
-   "gemiddeld": 5.4,
-   "langer_dan_10": []
+   "aantal": 10,
+   "gemiddeld": 20.9,
+   "langer_dan_10": [
+    "€2.500 bruto staat er op je contract, maar op je rekening komt er een pak minder binnen.",
+    "Want van dat brutoloon gaan er eerst twee happen af, en de eerste hap is de RSZ.",
+    "Als bediende gaat er 13,07% van je brutoloon naar de sociale zekerheid, en daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je job verliest.",
+    "Verdien je niet zoveel, dan krijg je daar korting op, en die korting heet de werkbonus.",
+    "Van elke 100 euro bruto blijft er na de RSZ dus 86,93 over, maar dan komt hap twee, de bedrijfsvoorheffing.",
+    "Dat is een voorschot op je belasting dat je werkgever elke maand al voor jou inhoudt, en hoeveel dat is hangt af van je loon en je gezin.",
+    "Het jaar erna rekent de fiscus af via je aangifte, en heb je te veel betaald, dan krijg je geld terug, maar te weinig betekent bijbetalen.",
+    "Trouwens, sinds 1 november wordt die voorheffing anders berekend, dus je netto kan wat schuiven, en dat is geen fout maar gewoon de nieuwe regel.",
+    "En dat geld dat je terugkrijgt, is eigenlijk geen cadeau van de fiscus, maar gewoon jouw eigen geld dat je te veel had voorgeschoten."
+   ]
   },
   "hook": {
-   "eerste_zin": "€2.500 bruto.",
-   "klaar_na_sec": 1.8
+   "eerste_zin": "€2.500 bruto staat er op je contract, maar op je rekening komt er een pak minder binnen.",
+   "klaar_na_sec": 5.1
   },
   "lange_stiltes": [],
   "ondertitels": {
-   "blokken": 71,
-   "langste": "Door de belastinghervorming"
+   "blokken": 79,
+   "langste": "voorheffing anders berekend"
   },
   "layout": [
    {
+    "scene": 0,
+    "onderkant_tekst": 1149
+   },
+   {
     "scene": 1,
-    "onderkant_tekst": 788
+    "onderkant_tekst": 1136
    },
    {
     "scene": 2,
-    "onderkant_tekst": 980
+    "onderkant_tekst": 1128
    },
    {
     "scene": 3,
-    "onderkant_tekst": 962
+    "onderkant_tekst": 1113
    },
    {
     "scene": 4,
-    "onderkant_tekst": 1275
+    "onderkant_tekst": 1134
    },
    {
     "scene": 5,
-    "onderkant_tekst": 980
+    "onderkant_tekst": 969
    },
    {
     "scene": 6,
-    "onderkant_tekst": 1030
+    "onderkant_tekst": 1123
    },
    {
     "scene": 7,
-    "onderkant_tekst": 1212
+    "onderkant_tekst": 1126
+   },
+   {
+    "scene": 8,
+    "onderkant_tekst": 1123
    }
   ],
-  "eerste_beeld_tekst": 0.085,
+  "eerste_beeld_tekst": 0.178,
   "aandachtspunten": [],
   "gehoord": [
    {
     "scene": 0,
     "taal": "nl",
-    "zeker": 0.93,
-    "gehoord": "2500 euro bruto, maar op je rekening komt veel minder. Waar is de rest?",
-    "vreemde_woorden": [],
-    "teruggehoord": 0.91
-   },
-   {
-    "scene": 1,
-    "taal": "nl",
-    "zeker": 0.97,
-    "gehoord": "Kijk, Bruto is wat je baas betaald, Netto is wat jij echt krijgt. Daartussen shit in tweehappen.",
-    "vreemde_woorden": [],
-    "teruggehoord": 0.91
-   },
-   {
-    "scene": 2,
-    "taal": "nl",
-    "zeker": 0.84,
-    "gehoord": "Op 1 is de RSZ. Als bediende is dat 13,07% van je bruto loon. Dat betaalt je dokter, je pensioen en je uitkering laag loon. Dan krijg je korting de werkbonus.",
+    "zeker": 0.99,
+    "gehoord": "2500 euro bruto staat er op je contract, maar op je rekening komt er een pak minder binnen. Waar gaat de rest naartoe?",
     "vreemde_woorden": [],
     "teruggehoord": 0.93
    },
    {
+    "scene": 1,
+    "taal": "nl",
+    "zeker": 0.69,
+    "gehoord": "Want van dat Brutalone gaan er eerst twee hebben of in de eerste hop is daar S Z",
+    "vreemde_woorden": [
+     "of"
+    ],
+    "teruggehoord": 0.86
+   },
+   {
+    "scene": 2,
+    "taal": "nl",
+    "zeker": 0.94,
+    "gehoord": "Als bediende gaat er 13,07% van je bruto loon naar de sociale zekerheid. Daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je job verliest.",
+    "vreemde_woorden": [],
+    "teruggehoord": 0.94
+   },
+   {
     "scene": 3,
     "taal": "nl",
-    "zeker": 0.9,
-    "gehoord": "Twee is de bedrijfsvoorhefving en voorschot op je belasting elke maand zoals een abonnement dat je niet kan opzeggen.",
+    "zeker": 0.91,
+    "gehoord": "En als je niet zo veel dien, dan krijg je daar korting op. En die korting heet de werkbonus.",
     "vreemde_woorden": [],
     "teruggehoord": 1.0
    },
    {
     "scene": 4,
     "taal": "nl",
-    "zeker": 0.96,
-    "gehoord": "Een oorbeeldje met 100 euro bruto. Eerst gaat er 13,07 naar de RSZ. Er blijft 86,93 over. Daar gaat nog de voorhefging af. Hoeveel? Hangt af van je loon en gezin.",
+    "zeker": 0.94,
+    "gehoord": "Elke 100 euro bruto blijft er na de RS Z de 86,93 over. Maar dan komt HAP 2 de bedrijfsvoorhefding.",
     "vreemde_woorden": [],
-    "teruggehoord": 0.91
+    "teruggehoord": 0.77
    },
    {
     "scene": 5,
     "taal": "nl",
-    "zeker": 0.94,
-    "gehoord": "Aan de naavoelte afrekening. Via je aangifte, te veel betaald, dan krijg je geld terug. Ja, de fiscus kan ook lief zijn. Te weinig, dan betaal je bij.",
+    "zeker": 0.98,
+    "gehoord": "En voorschot op je belasting dat je werkgever elke maand al voor jou inhoudt. En hoeveel dat is hangt af van je loon en je gezin.",
     "vreemde_woorden": [],
-    "teruggehoord": 0.87
+    "teruggehoord": 1.0
    },
    {
     "scene": 6,
     "taal": "nl",
-    "zeker": 0.6,
-    "gehoord": "Sinds 1 november wordt die voorhefding anders berekened. Door de belastinghervorming je net ook aan dus wat schijven. Geen fout. Gewoon nieuwe regels.",
+    "zeker": 0.97,
+    "gehoord": "Maar erna reken de fiscus al via je aangifte. En heb je te veel betaald, dan krijg je geld terug maar te weinig beteken bij betalen. Trauwen.",
     "vreemde_woorden": [],
-    "teruggehoord": 0.94
+    "teruggehoord": 1.0
    },
    {
     "scene": 7,
     "taal": "nl",
-    "zeker": 0.93,
-    "gehoord": "Loonbriefdes 1. Volg voor meer.",
+    "zeker": 0.8,
+    "gehoord": "Sinds 1 november wordt die voorhefging anders bereken. De geneto kan wat schijven. En dat is geen fout maar gewoon de nieuwe regel.",
     "vreemde_woorden": [],
-    "teruggehoord": 0.67
+    "teruggehoord": 1.0
+   },
+   {
+    "scene": 8,
+    "taal": "nl",
+    "zeker": 0.98,
+    "gehoord": "Altijd dat je terug krijgt is eigenlijk geen cadeau van de fiscus, maar gewoon jouw eigen geld dat je te veel had voorgeschoten.",
+    "vreemde_woorden": [],
+    "teruggehoord": 1.0
    }
   ]
  },

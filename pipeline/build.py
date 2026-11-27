@@ -32,15 +32,17 @@ def words_of(script):
 def checks(script, timing):
     res = []
     n = len(words_of(script))
-    res.append(("Woordenaantal 150-190", 150 <= n <= 190, f"{n} woorden"))
+    lo, hi = (170, 220) if script.get("stijl") == "uitleg" else (150, 190)  # uitleg: vlotter, minder pauzes
+    res.append((f"Woordenaantal {lo}-{hi}", lo <= n <= hi, f"{n} woorden"))
     d = timing["duration"] + C.OUTRO_HOLD
     res.append(("Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt)", 60 <= d <= 75, f"{d:.1f} s"))
     hook_words = len(display_text(script["scenes"][0]["say"]).split())
     res.append(("Hook kort (≤ 22 woorden)", hook_words <= 22, f"{hook_words} woorden"))
-    res.append(("Laatste scène is outro met disclaimer", script["scenes"][-1]["visual"]["type"] == "outro",
-                C.DISCLAIMER))
-    cta = "volg" in display_text(script["scenes"][-1]["say"]).lower()
-    res.append(("Call to action ('volg')", cta, ""))
+    last = script["scenes"][-1]["visual"]
+    res.append(("Eindkaart met disclaimer", last["type"] == "outro" or bool(last.get("eind")), C.DISCLAIMER))
+    if script.get("stijl") != "uitleg":  # uitleg-stijl eindigt bewust op een twist, zonder 'volg voor meer'
+        cta = "volg" in display_text(script["scenes"][-1]["say"]).lower()
+        res.append(("Call to action ('volg')", cta, ""))
     res.append(("AI-vermelding in caption", "ai" in script["caption"].lower(), ""))
     nh = len(script["hashtags"])
     res.append(("3-5 hashtags", 3 <= nh <= 5, f"{nh}"))
@@ -64,6 +66,18 @@ def caption_text(script):
 
 def build_one(path: Path):
     script = json.loads(path.read_text())
+    oud = {k: getattr(C, k) for k in C.UITLEG_GAPS}
+    if script.get("stijl") == "uitleg":
+        for k, val in C.UITLEG_GAPS.items():
+            setattr(C, k, val)
+    try:
+        return _build_one(path, script)
+    finally:
+        for k, val in oud.items():
+            setattr(C, k, val)
+
+
+def _build_one(path: Path, script):
     week = path.parent.name
     sid = script["id"]
     print(f"▶ {sid}: voice-over…", flush=True)

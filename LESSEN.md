@@ -38,3 +38,15 @@ Nog geen cijfers. Tot dan gelden de regels uit de feedback:
 - De gebruiker vermoedt dat de video's te duidelijk AI zijn. Geen eigen stem en geen betaalde stem gewenst.
 - Daarom: stem met microfoon- en kamerklank (config VOICE_FX), scripts met eigen reacties/meningen en vragen
   aan de kijker, meer echte foto's. Volgende weken meten of de kijktijd stijgt.
+
+## Voorbeeldvideo met veel views (27/11): stijl 'uitleg'
+De gebruiker stuurde een video ("Instagram is gratis, maar Meta verdient €50 per jaar aan jou") die veel views haalt.
+Gemeten tegenover onze loonbriefvideo:
+- **Pauzes:** 11 per minuut (voorbeeld) tegenover 38 (wij). Wij hakten alles in korte zinnetjes met telkens een
+  pauze: dat klinkt als voorlezen = AI. Het voorbeeld vertelt in doorlopende zinnen met en/maar/want/dan.
+- Tempo 3,2 tegenover 3,0 woorden/s; in de eerste 3 s 9 woorden tegenover 6.
+- Volume gelijkmatiger (2,3 dB spreiding tegenover 4,5): sterkere compressie (`VOICE_FX_UITLEG`).
+- Toonhoogte/melodie ongeveer gelijk: de stem zelf was niet het grootste verschil, de zinsbouw wel.
+- Beeld: zwarte achtergrond, één groot 3D-icoon of getal in het midden dat elke 1-2 s wisselt, getallen die optellen,
+  ondertitels van 1-2 woorden met het belangrijke woord in kleur, geen outro maar een twist op het einde.
+Meten op een nieuwe video: `python -m pipeline.stemanalyse review/<map>/<id>.mp4`.

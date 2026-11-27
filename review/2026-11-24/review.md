@@ -1,12 +1,12 @@
 # Review 2026-11-24
 
-Gegenereerd op 2026-11-25 · stem `en-US-AndrewMultilingualNeural` · kanaal **Fiscaal Fluitje** (@fiscaalfluitje)
+Gegenereerd op 2026-11-27 · stem `en-US-AndrewMultilingualNeural` · kanaal **Fiscaal Fluitje** (@fiscaalfluitje)
 
 Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automatisch gepost.
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-loonbrief-bruto-netto | Je loonbrief: waar gaat je brutoloon naartoe? | 64 s | 172 | 10/10 | 5 |
+| 01-loonbrief-bruto-netto | Je loonbrief: waar gaat je brutoloon naartoe? | 65 s | 209 | 9/9 | 5 |
 
 ---
 
@@ -16,21 +16,23 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 ### Script (voice-over)
 
-> €2.500 bruto. Maar op je rekening komt veel minder. Waar is de rest?
+> €2.500 bruto staat er op je contract, maar op je rekening komt er een pak minder binnen. Waar gaat de rest naartoe?
 >
-> Kijk, bruto is wat je baas betaalt. Netto is wat jij echt krijgt. Daartussen zitten twee happen.
+> Want van dat brutoloon gaan er eerst twee happen af, en de eerste hap is de RSZ.
 >
-> Hap één is de RSZ. Als bediende is dat 13,07% van je brutoloon. Dat betaalt je dokter, je pensioen en je uitkering. Laag loon? Dan krijg je korting, de werkbonus.
+> Als bediende gaat er 13,07% van je brutoloon naar de sociale zekerheid, en daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je job verliest.
 >
-> Hap twee is de bedrijfsvoorheffing. Een voorschot op je belasting, elke maand. Zoals een abonnement dat je niet kan opzeggen.
+> Verdien je niet zoveel, dan krijg je daar korting op, en die korting heet de werkbonus.
 >
-> Een voorbeeldje met 100 euro bruto. Eerst gaat er 13,07 naar de RSZ. Er blijft 86,93 over. Daar gaat nog de voorheffing af. Hoeveel? Hangt af van je loon en gezin.
+> Van elke 100 euro bruto blijft er na de RSZ dus 86,93 over, maar dan komt hap twee, de bedrijfsvoorheffing.
 >
-> Het jaar erna volgt de afrekening, via je aangifte. Te veel betaald? Dan krijg je geld terug. Ja, de fiscus kan ook lief zijn. Te weinig? Dan betaal je bij.
+> Dat is een voorschot op je belasting dat je werkgever elke maand al voor jou inhoudt, en hoeveel dat is hangt af van je loon en je gezin.
 >
-> Trouwens, sinds 1 november wordt die voorheffing anders berekend. Door de belastinghervorming. Je netto kan dus wat schuiven. Geen fout, gewoon nieuwe regels.
+> Het jaar erna rekent de fiscus af via je aangifte, en heb je te veel betaald, dan krijg je geld terug, maar te weinig betekent bijbetalen.
 >
-> Lees je loonbrief dus eens. Volg voor meer!
+> Trouwens, sinds 1 november wordt die voorheffing anders berekend, dus je netto kan wat schuiven, en dat is geen fout maar gewoon de nieuwe regel.
+>
+> En dat geld dat je terugkrijgt, is eigenlijk geen cadeau van de fiscus, maar gewoon jouw eigen geld dat je te veel had voorgeschoten.
 
 ### Bronnen en controle van cijfers
 
@@ -68,18 +70,16 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 Algemene info, geen persoonlijk advies. Je eigen loon hangt af van je statuut, je gezin en je werkgever.
 🤖 Deze video is gemaakt met AI (voice-over en beeld).
-📸 Foto's: Avij (talk · contribs) / Wikimedia Commons (Public domain)
 
 #loonbrief #brutonetto #fiscaliteit #geldtips #belgie
 ```
 
 ### Automatische checks
 
-- ✅ Woordenaantal 150-190 (172 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (64.2 s)
-- ✅ Hook kort (≤ 22 woorden) (13 woorden)
-- ✅ Laatste scène is outro met disclaimer (Algemene info, geen persoonlijk advies.)
-- ✅ Call to action ('volg')
+- ✅ Woordenaantal 170-220 (209 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (65.0 s)
+- ✅ Hook kort (≤ 22 woorden) (22 woorden)
+- ✅ Eindkaart met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ AI-vermelding in caption
 - ✅ 3-5 hashtags (5)
 - ✅ Geen advies-/clickbaittaal (automatische scan)

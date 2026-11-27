@@ -57,3 +57,10 @@ VOICE_FX = ("highpass=f=75,equalizer=f=150:t=q:w=1:g=2.5,equalizer=f=3200:t=q:w=
             "equalizer=f=9000:t=q:w=1:g=-2,acompressor=threshold=-18dB:ratio=2.5:attack=8:release=120,"
             "aecho=0.85:0.6:23|37:0.10|0.06,"
             "aeval=val(0)+0.0012*(random(0)-0.5):c=same,")
+
+# --- Stijl 'uitleg' (27/11, naar een voorbeeldvideo met veel views) ---
+SUB_Y_UITLEG = 1300   # ondertitels (1-2 woorden) net onder het icoon in het midden
+# Stem in uitleg-stijl: het voorbeeld vertelt in lange, vloeiende zinnen met 'en/maar/want/dan'
+# (11 pauzes per minuut tegenover 38 bij ons). Dus kortere en minder pauzes, en gelijkmatiger volume.
+UITLEG_GAPS = {"SENTENCE_GAP": 0.13, "QUESTION_GAP": 0.20, "SHORT_GAP": 0.11, "SCENE_GAP": 0.08}
+VOICE_FX_UITLEG = VOICE_FX.replace("acompressor=threshold=-18dB:ratio=2.5", "acompressor=threshold=-24dB:ratio=4:makeup=2")

@@ -431,8 +431,159 @@ def draw_disclaimer(d, a, y=1130):
     d.text((x + 40, y), txt, font=f, fill=alpha(COL["yellow"], a))
 
 
+# ------------------------------------------------- stijl 'uitleg' (27/11) ---
+# Naar het voorbeeld dat veel views haalt: zwarte achtergrond, één groot 3D-icoon of cijfer in het midden
+# dat elke 1-2 s wisselt (op het woord dat het noemt), cijfers die optellen, korte ondertitels van 1-2 woorden.
+import re as _re
+
+STAGE_TOP = 330
+
+
+def ease_back(x):
+    x = max(0.0, min(1.0, x))
+    c = 1.70158
+    return 1 + (c + 1) * (x - 1) ** 3 + c * (x - 1) ** 2
+
+
+def _paste(base, img, cx, cy, sc=1.0, a=1.0):
+    if sc <= 0.02 or a <= 0.01:
+        return
+    if sc != 1:
+        img = img.resize((max(1, int(img.width * sc)), max(1, int(img.height * sc))), Image.BILINEAR)
+    if a < 1:
+        img = img.copy()
+        img.putalpha(img.getchannel("A").point(lambda v: int(v * a)))
+    base.alpha_composite(img, (int(cx - img.width / 2), int(cy - img.height / 2)))
+
+
+def _text_tile(text, weight, size, col, max_w=CONTENT_W + 40):
+    tmp = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
+    f = fit_font(tmp, text, weight, size, max_w, 1)
+    tw, th = int(tmp.textlength(text, font=f)) + 24, int(f.size * 1.3)
+    tile = Image.new("RGBA", (tw, th), (0, 0, 0, 0))
+    ImageDraw.Draw(tile).text((12, int(f.size * 0.05)), text, font=f, fill=col)
+    return tile
+
+
+_NUM = _re.compile(r"\d[\d.]*(?:,\d+)?")
+
+
+def _num_parts(s):
+    m = _NUM.search(s)
+    if not m:
+        return None
+    raw = m.group(0)
+    dec = len(raw.split(",")[1]) if "," in raw else 0
+    val = float(raw.replace(".", "").replace(",", "."))
+    return s[:m.start()], val, dec, s[m.end():]
+
+
+def _fmt(val, dec):
+    txt = f"{val:,.{dec}f}".replace(",", "X").replace(".", ",").replace("X", ".")
+    return txt
+
+
+def _photo_card(slug, w, h):
+    return _photo_card_cached(slug, w, h)
+
+
+@lru_cache(16)
+def _photo_card_cached(slug, w, h):
+    im = Image.open(C.ROOT / "assets" / "fotos" / f"{slug}.jpg").convert("RGB")
+    sc = max(w / im.width, h / im.height)
+    im = im.resize((int(im.width * sc) + 1, int(im.height * sc) + 1), Image.LANCZOS)
+    x0, y0 = (im.width - w) // 2, (im.height - h) // 2
+    im = im.crop((x0, y0, x0 + w, y0 + h)).convert("RGBA")
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, w - 1, h - 1), 48, fill=255)
+    im.putalpha(mask)
+    return im
+
+
+def draw_beats(d, v, t, dur):
+    """Eén 'beat' tegelijk in beeld; de volgende beat verschijnt op zijn cue-woord en vervangt de vorige."""
+    from . import iconen
+    base = d._image
+    beats = v["beats"]
+    at = v.get("at") or [i * 1.6 for i in range(len(beats))]
+    cur = max([i for i, a in enumerate(at) if t >= a] or [0])
+    b = beats[cur]
+    p = (t - at[cur]) / 0.28 if t >= at[cur] else 0.0
+    if p <= 0 and not (cur == 0 and at[0] < 0):
+        return
+    pop = 0.55 + 0.45 * ease_back(p)
+    a = min(1.0, p * 3)
+    end_fade = 1.0
+    if v.get("eind") and t > dur:
+        end_fade = max(0.0, 1 - (t - dur) / 0.3)
+    a *= end_fade
+    cx = (C.SAFE_LEFT + W - C.SAFE_RIGHT) / 2 + 10
+    y = STAGE_TOP
+    accent = COL[b.get("kleur", "yellow")]
+    if end_fade <= 0.01:
+        b = {}
+    if b.get("label"):
+        f = font("ExtraBold", 40)
+        lt = b["label"].upper()
+        lw = d.textlength(lt, font=f)
+        d.rounded_rectangle((cx - lw / 2 - 26, y, cx + lw / 2 + 26, y + 66), 33, fill=alpha(COL["card"], a))
+        d.text((cx - lw / 2, y + 9), lt, font=f, fill=alpha(COL["muted"], a))
+        y += 96
+    if b.get("num"):
+        parts = _num_parts(b["num"])
+        shown = b["num"]
+        if parts and b.get("tel", True):
+            pre, val, dec, post = parts
+            start = b.get("van", 0)
+            if start == "vorige":
+                prev = next((x for x in reversed(beats[:cur]) if x.get("num")), None)
+                start = _num_parts(prev["num"])[1] if prev and _num_parts(prev["num"]) else 0
+            k = ease(max(0.0, (t - at[cur]) / 0.75)) if not (cur == 0 and at[0] < 0) else 1.0
+            shown = pre + _fmt(start + (val - start) * k, dec) + post
+        tile = _text_tile(shown, "Black", b.get("size", 250 if not b.get("icon") else 220), alpha(accent, 1))
+        _paste(base, tile, cx, y + tile.height / 2, pop, a)
+        y += tile.height + 10
+    if b.get("tekst"):
+        col = COL[b.get("tekstkleur", "text")]
+        tile = _text_tile(b["tekst"], "Black", b.get("size", 150 if (b.get("icon") or b.get("icons")) else 190), alpha(col, 1))
+        _paste(base, tile, cx, y + tile.height / 2, pop, a)
+        y += tile.height + 10
+    bottom = C.SUB_Y_UITLEG - 120
+    if b.get("foto"):
+        h = int(min(860, bottom - y - 20))
+        card = _photo_card(b["foto"], 760, h)
+        _paste(base, card, cx, y + 20 + h / 2, 0.85 + 0.15 * ease(p), a)
+    elif b.get("icons"):
+        n = len(b["icons"])
+        size = 300 if n <= 2 else 250
+        gap = (CONTENT_W + 40) / n
+        cy = (y + bottom) / 2
+        for j, key in enumerate(b["icons"]):
+            pj = (t - at[cur] - 0.12 * j) / 0.28
+            if pj <= 0 and not (cur == 0 and at[0] < 0):
+                continue
+            img = iconen.beeld(key, size)
+            _paste(base, img, C.SAFE_LEFT - 20 + gap * (j + 0.5), cy, 0.55 + 0.45 * ease_back(pj), min(1, pj * 3) * end_fade)
+    elif b.get("icon"):
+        space = bottom - y
+        size = int(max(300, min(b.get("iconsize", 620), space - 20)))
+        img = iconen.beeld(b["icon"], size)
+        _paste(base, img, cx, y + space / 2, pop, a)
+    if b.get("bron"):
+        f = font("Medium", 30)
+        bw = d.textlength(b["bron"], font=f)
+        d.text((cx - bw / 2, C.SUB_Y_UITLEG + 90), b["bron"], font=f, fill=alpha(COL["muted"], a))
+    if v.get("eind") and t > dur:
+        k = ease((t - dur) / 0.4)
+        f = font("Black", 84)
+        hw = d.textlength(C.CHANNEL_HANDLE, font=f)
+        d.text((cx - hw / 2, 620), C.CHANNEL_HANDLE, font=f, fill=alpha(COL["mint"], k))
+        draw_disclaimer(d, k, 800)
+
+
 DRAW = {"hook": draw_hook, "point": draw_point, "table": draw_table,
-        "calc": draw_calc, "bars": draw_bars, "line": draw_line, "slam": draw_slam, "outro": draw_outro}
+        "calc": draw_calc, "bars": draw_bars, "line": draw_line, "slam": draw_slam, "outro": draw_outro,
+        "beats": draw_beats}
 
 
 def progress_bar(d, frac):
@@ -517,6 +668,15 @@ def make_sfx(path, total, whooshes, pops, sr=48000):
         wf.writeframes((out * 32767).astype(np.int16).tobytes())
 
 
+@lru_cache(None)
+def zwart():
+    """Achtergrond van de uitleg-stijl: bijna zwart met een heel zachte lichtkern achter het icoon."""
+    img = Image.new("RGBA", (W, H), (10, 10, 12, 255))
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(glow).ellipse((90, 380, 990, 1280), fill=(255, 255, 255, 14))
+    return Image.alpha_composite(img, glow.filter(ImageFilter.GaussianBlur(140)))
+
+
 def compose(layer, t, frac, bg=None):
     arr = np.asarray(Image.alpha_composite(bg if bg is not None else moving_background(t), layer).convert("RGB")).copy()
     y = H - 14
@@ -559,8 +719,9 @@ def chunk_words(words, max_words=3, max_chars=20, pause=0.22):
     return chunks
 
 
-def build_ass(words, path: Path, hide=()):
+def build_ass(words, path: Path, hide=(), stijl=None):
     words = [w for w in words if not any(a - 0.05 <= w["start"] < b for a, b in hide)]
+    uitleg = stijl == "uitleg"
     def bgr(h):
         h = h.lstrip("#")
         return f"&H00{h[4:6]}{h[2:4]}{h[0:2]}".upper()
@@ -573,15 +734,16 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Sub,Inter Black,84,{bgr(C.COLORS['text'])},&H000000FF,&H00101010,&H80000000,0,0,0,0,100,100,0,0,1,7,3,5,{C.SAFE_LEFT},{C.SAFE_RIGHT},0,1
+Style: Sub,Inter Black,{96 if uitleg else 84},{bgr(C.COLORS['text'])},&H000000FF,&H00101010,&H80000000,0,0,0,0,100,100,0,0,1,7,3,5,{C.SAFE_LEFT},{C.SAFE_RIGHT},0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = []
     yellow = bgr(C.COLORS["yellow"])
-    pos = f"{{\\an5\\pos({(C.SAFE_LEFT + W - C.SAFE_RIGHT) // 2},{C.SUB_Y})}}"
-    chunks = chunk_words(words)
+    pos = f"{{\\an5\\pos({(C.SAFE_LEFT + W - C.SAFE_RIGHT) // 2},{C.SUB_Y_UITLEG if uitleg else C.SUB_Y})}}"
+    # uitleg-stijl: 1-2 woorden tegelijk, in hoofdletters (zoals het voorbeeld)
+    chunks = chunk_words(words, 2, 14) if uitleg else chunk_words(words)
     for ci, ch in enumerate(chunks):
         nxt = chunks[ci + 1][0]["start"] if ci + 1 < len(chunks) else ch[-1]["end"] + 0.4
         for wi, w in enumerate(ch):
@@ -590,8 +752,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             parts = []
             for k, x in enumerate(ch):
                 t = x["text"].replace("{", "").replace("}", "")
+                t = t.upper() if uitleg else t
                 parts.append(f"{{\\c{yellow}}}{t}{{\\c}}" if k == wi else t)
-            pop = "{\\fscx108\\fscy108\\t(0,90,\\fscx100\\fscy100)}" if wi == 0 else ""
+            # uitleg-stijl: lange woorden ('BEDRIJFSVOORHEFFING') verkleinen zodat ze binnen het beeld blijven
+            n_chars = len(" ".join(x["text"] for x in ch))
+            fit = min(100, int(100 * 15 / max(1, n_chars))) if uitleg else 100
+            pop = (f"{{\\fscx{int(fit * 1.08)}\\fscy{int(fit * 1.08)}\\t(0,90,\\fscx{fit}\\fscy{fit})}}" if wi == 0
+                   else f"{{\\fscx{fit}\\fscy{fit}}}")
             lines.append(f"Dialogue: 0,{ass_time(start)},{ass_time(end)},Sub,,0,0,0,,{pos}{pop}{' '.join(parts)}")
     path.write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
 
@@ -606,20 +773,22 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
     # geen ondertitels waar het beeld zelf al de gesproken woorden toont (slam), anders staat er 2x tekst
     hide = [(t["start"], t["end"] + C.SCENE_GAP) for sc, t in zip(script["scenes"], timing["scenes"])
             if not sc["visual"].get("subs", sc["visual"]["type"] != "slam")]
-    build_ass(timing["words"], ass, hide)
+    stijl = script.get("stijl")
+    fx_voice = C.VOICE_FX_UITLEG if stijl == "uitleg" else C.VOICE_FX
+    build_ass(timing["words"], ass, hide, stijl)
     out_mp4.parent.mkdir(parents=True, exist_ok=True)
 
     cmd = ["ffmpeg", "-y", "-loglevel", "error",
            "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
            "-i", str(config_path(timing["audio"])),
-           "-filter_complex", f"[0:v]ass={ass}:fontsdir={C.FONTS}[v];[1:a]{C.VOICE_FX}apad,loudnorm=I=-14:TP=-1.5[a]",
+           "-filter_complex", f"[0:v]ass={ass}:fontsdir={C.FONTS}[v];[1:a]{fx_voice}apad,loudnorm=I=-14:TP=-1.5[a]",
            "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}",
            "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
            "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(out_mp4)]
     sc_times = timing["scenes"]
     apply_cues(scenes, sc_times, timing["words"])
     v0 = scenes[0]["visual"]
-    if v0["type"] == "slam" and v0.get("at"):
+    if v0["type"] in ("slam", "beats") and v0.get("at"):
         v0["at"][0] = -1.0  # eerste reuzenwoord staat er al op frame 0
     # --- levendiger: korte 'punch'-zoom en zelfgemaakte geluidseffecten op belangrijke momenten ---
     punches = []   # absolute tijden: cijfers/regels die verschijnen
@@ -635,7 +804,7 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
         sfx = work / f"{script['id']}.sfx.wav"
         make_sfx(sfx, total, whooshes, punches)
         cmd[cmd.index("-filter_complex") + 1] = (
-            f"[0:v]ass={ass}:fontsdir={C.FONTS}[v];[1:a]{C.VOICE_FX}apad,loudnorm=I=-14:TP=-1.5[vo];"
+            f"[0:v]ass={ass}:fontsdir={C.FONTS}[v];[1:a]{fx_voice}apad,loudnorm=I=-14:TP=-1.5[vo];"
             f"[2:a]volume={C.SFX_VOLUME}[fx];[vo][fx]amix=inputs=2:duration=first:normalize=0[a]")
         cmd[cmd.index("-filter_complex"):cmd.index("-filter_complex")] = ["-i", str(sfx)]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
@@ -657,7 +826,8 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
                 draw_t = local + 2.0
             cache = {key: render_layer(scenes[idx], draw_t, dur)}
         v = scenes[idx]["visual"]
-        bg = photo_background(v["photo"], local, dur + C.SCENE_GAP, v.get("photo_dim", 0.62)) if v.get("photo") else None
+        bg = photo_background(v["photo"], local, dur + C.SCENE_GAP, v.get("photo_dim", 0.62)) if v.get("photo") else (
+            zwart() if stijl == "uitleg" else None)
         layer = cache[key]
         pk = max((punch_curve(t - pt) for pt in punches), default=0.0)
         if pk > 0.001:
@@ -677,6 +847,10 @@ def animation_end(v, dur):
     elif v["type"] == "slam":
         n = len(v.get("words", []))
         end = max(end, (max(v["at"]) if v.get("at") else n * v.get("stagger", 0.55)) + 0.9)
+    elif v["type"] == "beats":
+        end = max(end, (max(v["at"]) if v.get("at") else 0) + 1.0)
+        if v.get("eind"):
+            end = max(end, dur + 0.6)
     elif v["type"] == "bars" and not v.get("at"):
         end = max(end, 0.3 + len(v.get("bars", [])) * 0.3 + 1.0)
     return end
@@ -686,7 +860,7 @@ def apply_cues(scenes, sc_times, words):
     """`cue` in een regel/rij = woord waarop die regel verschijnt (synchroon met de stem)."""
     for sc, tm in zip(scenes, sc_times):
         v = sc["visual"]
-        items = v.get("lines") or v.get("rows") or v.get("bars") or [{"cue": c} for c in v.get("cues", [])]
+        items = v.get("lines") or v.get("rows") or v.get("bars") or v.get("beats") or [{"cue": c} for c in v.get("cues", [])]
         if not items or not any("cue" in it for it in items):
             continue
         sw = [w for w in words if tm["start"] - 0.01 <= w["start"] <= tm["end"] + 0.01]

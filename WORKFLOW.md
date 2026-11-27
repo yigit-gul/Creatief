@@ -61,6 +61,22 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 - Video's met status `geüpload` of `afgekeurd` worden NOOIT meer aangepast (geen foto's, geen nieuwe versie, niets).
 
 ## 2. Scripts → `scripts/<week>/0N-<slug>.json`
+- **STANDAARD VANAF 27/11: stijl `"stijl": "uitleg"`** (naar een voorbeeldvideo van de gebruiker die veel views haalt;
+  voorbeeld: `scripts/2026-11-24/01-loonbrief-bruto-netto.json`). Dit gaat vóór de oudere regels hieronder als ze botsen.
+  - **Verhaal, geen opsomming:** de hook is een tegenstrijdigheid met "jij" + een getal ("€2.500 bruto staat er op je
+    contract, maar op je rekening komt er een pak minder binnen."), dan de vraag "waar/hoe…?", dan het mechanisme
+    als één doorlopend verhaal. Zinnen van 12-25 woorden zijn oké zolang ze uit korte stukjes bestaan die je
+    aan elkaar praat met **en / maar / want / dan / dus / oftewel**. Geen staccato-zinnetjes van 2-4 woorden na
+    elkaar (dat gaf 38 pauzes per minuut; het voorbeeld heeft er 11 en klinkt daardoor menselijk).
+  - Concreet en over de kijker: "aan iemand zoals jij", voorbeelden uit het dagelijks leven, één verrassing halverwege.
+  - **Einde = een twist of een verrassend feit** (geen "volg voor meer"); de laatste scène krijgt `"eind": true`
+    (handle + disclaimer verschijnen dan in beeld).
+  - ±200-215 woorden voor ±65-70 s (sneller tempo, minder pauzes).
+  - **Beeld:** elke scène is `type: "beats"`: om de 1-2 s een nieuw beeld op het woord dat het noemt (`cue`).
+    Een beat = `icon` (3D-icoon, `python -m pipeline.iconen zoek <woord>`), `icons` (2-3 naast elkaar), `num` (telt op;
+    `"van": "vorige"` telt verder vanaf het vorige getal), `label` (klein grijs label erboven), `tekst` (1-2 woorden),
+    `foto` (echte foto als kaart), `kleur`/`tekstkleur` (yellow/mint/coral). Ondertitels: 1-2 woorden, hoofdletters.
+    Geen iconen met $ (dollar) bij euro-onderwerpen.
 - **Minder AI-gevoel (27/11, views bleven op ~300):** schrijf alsof een echte twintiger iets vertelt, niet als
   een uitlegfolder. Elke video: minstens 2 korte reacties of meningen ("Echt waar.", "Ik schrok ervan.",
   "Eerlijk? Dat vind ik krom."), 1 vraag aan de kijker ("Wist jij dit?"), herkenbare situaties uit het

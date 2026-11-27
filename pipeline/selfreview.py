@@ -77,12 +77,13 @@ def signals(script, timing):
     chunks = chunk_words(words)
     out["ondertitels"] = {"blokken": len(chunks), "langste": max((" ".join(w["text"] for w in c) for c in chunks), key=len, default="")}
     flags = []
-    if out["hook"]["klaar_na_sec"] and out["hook"]["klaar_na_sec"] > 3.0:
+    uitleg = script.get("stijl") == "uitleg"  # vertelstijl: langere, doorlopende zinnen zijn hier de bedoeling
+    if out["hook"]["klaar_na_sec"] and out["hook"]["klaar_na_sec"] > (6.0 if uitleg else 3.0):
         flags.append("Eerste zin duurt langer dan 3 s: hook inkorten.")
-    if out["zinnen"]["langer_dan_10"]:
+    if out["zinnen"]["langer_dan_10"] and not uitleg:
         flags.append(f"{len(out['zinnen']['langer_dan_10'])} zin(nen) langer dan 12 woorden: opsplitsen.")
     for s in out["scenes"]:
-        if s["woorden_per_sec"] and s["woorden_per_sec"] > 3.8:
+        if s["woorden_per_sec"] and s["woorden_per_sec"] > (4.3 if uitleg else 3.8):
             flags.append(f"Scène {s['n']} is erg vol ({s['woorden_per_sec']} w/s).")
         if s["sec"] > 16:
             flags.append(f"Scène {s['n']} duurt {s['sec']} s: risico op wegzappen, overweeg te splitsen.")
@@ -93,7 +94,7 @@ def signals(script, timing):
     for i, sp in enumerate(timing.get("spoken", [])):
         if re.search(r"\d", sp):
             flags.append(f"TAAL: scène {i} stuurt nog cijfers naar de stem ({re.findall(r'[^ ]*\d[^ ]*', sp)[:3]}).")
-        if re.search(r"[.!?]\s+\S", sp.replace("T.O.B.", "TOB")):
+        if re.search(r"[.!?]\s+\S", re.sub(r"\b(?:[A-Z]\.){2,}", "X", sp)):  # afkortingen (R.S.Z.) tellen niet
             flags.append(f"TAAL: scène {i} wordt in losse zinnen ingesproken (risico op taalwissel).")
     if "spoken" not in timing:
         flags.append("TAAL: geen gesproken tekst bewaard; bouw opnieuw met de huidige pipeline.")
@@ -121,14 +122,15 @@ def signals(script, timing):
         rows = np.where(a[: C.H - 60].max(axis=1) > 40)[0]
         bottom = int(rows.max()) if len(rows) else 0
         overlap.append({"scene": i, "onderkant_tekst": bottom})
-        if bottom > C.SUB_Y - 80:
-            flags.append(f"Scène {i}: tekst in beeld loopt tot y={bottom} en raakt de ondertitels (y≈{C.SUB_Y}).")
+        sub_y = C.SUB_Y_UITLEG if script.get("stijl") == "uitleg" else C.SUB_Y
+        if bottom > sub_y - 80:
+            flags.append(f"Scène {i}: tekst in beeld loopt tot y={bottom} en raakt de ondertitels (y≈{sub_y}).")
     out["layout"] = overlap
     # EERSTE BEELD: staat de hook er meteen? (lege openingsframes = kijkers swipen weg)
     try:
         v0 = scenes[0]["visual"]
         t0 = 0.0 + (2.0 if v0["type"] == "hook" else 0.0)
-        if v0["type"] == "slam" and v0.get("at"):
+        if v0["type"] in ("slam", "beats") and v0.get("at"):
             v0 = {**v0, "at": [-1.0] + v0["at"][1:]}
         lay0 = render_layer({**scenes[0], "visual": v0}, t0, sc[0]["end"] - sc[0]["start"])
         a0 = np.asarray(lay0)[200:1300, :, 3]
