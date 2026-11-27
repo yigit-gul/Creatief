@@ -82,6 +82,25 @@ def _uitspraak_terug(heard, say):
     return heard
 
 
+def _woorden(txt):
+    return [w for w in re.sub(r"[^a-zà-ÿ ]", " ", to_spoken(txt.lower().replace(",", " , "))[0]).split()]
+
+
+def _gelijkenis(say, heard):
+    """Welk deel van de bedoelde woorden Whisper terug hoort, in gesproken vorm ('100' = 'honderd').
+    Kleine schrijfverschillen ('elk'/'elke') tellen als juist; echte uitspraakfouten ('RCJ' i.p.v. 'er es zet',
+    een afgebroken 'bedrijfsvoorhef') niet. Verzonnen extra woorden verlagen de score ook."""
+    a = _woorden(tekst_voor_stem(say))
+    b = _woorden(" ".join(h["w"] for h in heard))
+    if not a or not b:
+        return 0.0
+    # gehoorde woorden die bijna gelijk zijn aan een woord uit het script, als dat woord tellen
+    b = [next((x for x in a if x == w or (len(w) > 2 and SequenceMatcher(None, w, x).ratio() >= 0.8)), w) for w in b]
+    sm = SequenceMatcher(None, a, b, autojunk=False)
+    m = sum(n for _, _, n in sm.get_matching_blocks())
+    return 2 * m / (len(a) + len(b))
+
+
 def _rand(heard):
     """Begin van het eerste en einde van het laatste woord dat Whisper echt hoorde (ook als het verkeerd verstaan is)."""
     return (heard[0]["start"], heard[-1]["end"]) if heard else None
@@ -114,18 +133,18 @@ def _align(tokens, heard):
 
 
 def _verwerk(raw, out):
-    """48 kHz mono, iets sneller (TikTok-tempo)."""
+    """48 kHz mono, licht versneld (CB_TEMPO), lange pauzes ingekort."""
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw), "-ac", "1", "-ar", "48000",
                     "-af", f"atempo={C.CB_TEMPO}", str(out)], check=True)
     _kort_stiltes(out)
 
 
 def _kort_stiltes(wav):
-    """Pauzes binnen een scène inkorten tot ±0,2 s (het programma laat soms 0,5-0,8 s stilte vallen: te traag
-    voor TikTok). Mag meermaals op hetzelfde bestand: het resultaat blijft gelijk."""
+    """Alleen té lange pauzes (> CB_PAUZE_MAX) inkorten; gewone adempauzes blijven (anders klinkt het gehaast,
+    feedback 27/11). Mag meermaals op hetzelfde bestand: het resultaat blijft gelijk."""
     tmp = wav.with_suffix(".kort.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-af",
-                    "silenceremove=stop_periods=-1:stop_duration=0.26:stop_threshold=-31dB:stop_silence=0.18",
+                    f"silenceremove=stop_periods=-1:stop_duration={C.CB_PAUZE_MAX}:stop_threshold=-31dB:stop_silence={C.CB_PAUZE_HOUD}",
                     str(tmp)], check=True)
     tmp.replace(wav)
 
@@ -150,22 +169,25 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
     cache = audio_dir / "cb_cache"
     cache.mkdir(exist_ok=True)
 
-    def sleutel(i):
+    def sleutel(i):  # de cache bewaart de RUWE opname: tempo/pauzes aanpassen vraagt geen nieuwe opname
         k = json.dumps([tekst_voor_stem(scenes[i]["say"]), display_text(scenes[i]["say"]), C.CB_REF,
-                        C.CB_EXAGGERATION, C.CB_CFG, C.CB_TEMPO])
-        return cache / (hashlib.sha1(k.encode()).hexdigest()[:16] + ".wav")
+                        C.CB_EXAGGERATION, C.CB_CFG])
+        return cache / (hashlib.sha1(k.encode()).hexdigest()[:16] + ".raw.wav")
+
+    def ruw(wav):
+        return Path(str(wav)[:-4] + ".raw.wav")
 
     for i in list(todo):
         if sleutel(i).exists():
             wav = audio_dir / f"{sid}_s{i:02d}.cache.wav"
-            shutil.copy(sleutel(i), wav)
-            _kort_stiltes(wav)
+            shutil.copy(sleutel(i), ruw(wav))
+            _verwerk(ruw(wav), wav)
             tokens = display_text(scenes[i]["say"]).split()
             heard, lang, prob = _luister(wav)
+            score = _gelijkenis(scenes[i]["say"], heard) if lang == "nl" else -1
             heard = _uitspraak_terug(heard, scenes[i]["say"])
-            t_of, frac = _align(tokens, heard)
-            extra = max(0, len(heard) - len(tokens)) / len(tokens)
-            best[i] = ((frac - extra) if lang == "nl" else -1, wav, (tokens, t_of, _rand(heard)), lang, prob)
+            t_of, _ = _align(tokens, heard)
+            best[i] = (score, wav, (tokens, t_of, _rand(heard)), lang, prob)
             todo.remove(i)
             print(f"  scène {i}: uit cache", flush=True)
     for ronde, seed in enumerate((1, 7, 23, 61)):
@@ -180,27 +202,29 @@ def synthesize_script(script: dict, audio_dir: Path) -> dict:
             raw = audio_dir / f"{sid}_s{i:02d}.r{ronde}.raw.wav"
             wav = audio_dir / f"{sid}_s{i:02d}.r{ronde}.wav"
             _verwerk(raw, wav)
-            raw.unlink()
             tokens = display_text(scenes[i]["say"]).split()
             heard, lang, prob = _luister(wav)
+            score = _gelijkenis(scenes[i]["say"], heard) if lang == "nl" else -1  # verzonnen/vergeten stukken tellen mee
             heard = _uitspraak_terug(heard, scenes[i]["say"])
-            t_of, frac = _align(tokens, heard)
-            extra = max(0, len(heard) - len(tokens)) / len(tokens)  # verzonnen extra woorden
-            score = (frac - extra) if lang == "nl" else -1
-            print(f"  scène {i}: taal {lang} ({prob:.2f}), {frac:.0%} gehoord, extra {extra:.0%}", flush=True)
+            t_of, _ = _align(tokens, heard)
+            print(f"  scène {i}: taal {lang} ({prob:.2f}), {score:.0%} juist gehoord", flush=True)
             if best[i] is None or score > best[i][0]:
                 if best[i]:
                     Path(best[i][1]).unlink(missing_ok=True)
+                    ruw(best[i][1]).unlink(missing_ok=True)
                 best[i] = (score, wav, (tokens, t_of, _rand(heard)), lang, prob)
             else:
                 wav.unlink()
+                raw.unlink()
             if score < C.CB_MIN_SCORE:
                 nog.append(i)
         todo = nog
     for i, b in enumerate(best):  # goede takes bewaren (ook als een andere scène faalt)
-        if b[0] >= 0.75 and b[3] == "nl" and not str(b[1]).endswith(".cache.wav"):
-            shutil.copy(b[1], sleutel(i))
-    bad = [i for i, b in enumerate(best) if b[3] != "nl" or b[0] < 0.75]
+        if b[0] >= C.CB_OK and b[3] == "nl" and not str(b[1]).endswith(".cache.wav"):
+            shutil.copy(ruw(b[1]), sleutel(i))
+    for b in best:
+        ruw(b[1]).unlink(missing_ok=True)
+    bad = [i for i, b in enumerate(best) if b[3] != "nl" or b[0] < C.CB_OK]
     if bad:
         from .tts import TaalFout
         raise TaalFout(f"TAALFOUT/UITSPRAAK scène(s) {bad}: de gratis stem zegt deze zin niet goed. Herschrijf de zin "

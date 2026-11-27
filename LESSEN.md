@@ -50,3 +50,8 @@ Gemeten tegenover onze loonbriefvideo:
 - Beeld: zwarte achtergrond, één groot 3D-icoon of getal in het midden dat elke 1-2 s wisselt, getallen die optellen,
   ondertitels van 1-2 woorden met het belangrijke woord in kleur, geen outro maar een twist op het einde.
 Meten op een nieuwe video: `python -m pipeline.stemanalyse review/<map>/<id>.mp4`.
+
+## Gratis stem (Chatterbox, variant C) – tempo (27/11)
+Eerst versneld (atempo 1.12) + alle pauzes tot 0,18 s + 0,08 s tussen scènes = 3,8 woorden/s: de gebruiker vond
+het "gehaast, alsof hij aan het lopen is". Nu: niet versnellen (CB_TEMPO 1.0), alleen pauzes > 0,45 s inkorten tot
+0,3 s, 0,2 s tussen scènes = 3,4 woorden/s. Richtwaarde: 3,2-3,5 woorden/s. Sneller gaan = meestal niet beter.

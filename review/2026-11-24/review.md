@@ -6,7 +6,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-loonbrief-bruto-netto | Je loonbrief: waar gaat je brutoloon naartoe? | 60 s | 212 | 9/9 | 5 |
+| 01-loonbrief-bruto-netto | Je loonbrief: waar gaat je brutoloon naartoe? | 69 s | 212 | 9/9 | 5 |
 
 ---
 
@@ -77,7 +77,7 @@ Algemene info, geen persoonlijk advies. Je eigen loon hangt af van je statuut, j
 ### Automatische checks
 
 - ✅ Woordenaantal 170-220 (212 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (60.5 s)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (68.8 s)
 - ✅ Hook kort (≤ 22 woorden) (22 woorden)
 - ✅ Eindkaart met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ AI-vermelding in caption

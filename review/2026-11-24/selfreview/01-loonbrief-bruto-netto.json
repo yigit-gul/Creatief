@@ -1,78 +1,78 @@
 {
  "id": "01-loonbrief-bruto-netto",
  "signalen": {
-  "duration": 60.5,
+  "duration": 68.8,
   "scenes": [
    {
     "n": 0,
     "type": "beats",
-    "sec": 6.3,
+    "sec": 7.3,
     "woorden": 22,
-    "woorden_per_sec": 3.51,
+    "woorden_per_sec": 3.02,
     "langste_zin": 17
    },
    {
     "n": 1,
     "type": "beats",
-    "sec": 4.2,
+    "sec": 4.8,
     "woorden": 17,
-    "woorden_per_sec": 4.07,
+    "woorden_per_sec": 3.51,
     "langste_zin": 17
    },
    {
     "n": 2,
     "type": "beats",
-    "sec": 8.6,
+    "sec": 9.6,
     "woorden": 31,
-    "woorden_per_sec": 3.6,
+    "woorden_per_sec": 3.23,
     "langste_zin": 31
    },
    {
     "n": 3,
     "type": "beats",
-    "sec": 4.0,
+    "sec": 4.5,
     "woorden": 16,
-    "woorden_per_sec": 4.0,
+    "woorden_per_sec": 3.57,
     "langste_zin": 16
    },
    {
     "n": 4,
     "type": "beats",
-    "sec": 7.3,
+    "sec": 8.2,
     "woorden": 23,
-    "woorden_per_sec": 3.17,
+    "woorden_per_sec": 2.82,
     "langste_zin": 23
    },
    {
     "n": 5,
     "type": "beats",
-    "sec": 6.9,
+    "sec": 7.9,
     "woorden": 28,
-    "woorden_per_sec": 4.03,
+    "woorden_per_sec": 3.54,
     "langste_zin": 28
    },
    {
     "n": 6,
     "type": "beats",
-    "sec": 6.6,
+    "sec": 7.3,
     "woorden": 26,
-    "woorden_per_sec": 3.96,
+    "woorden_per_sec": 3.56,
     "langste_zin": 26
    },
    {
     "n": 7,
     "type": "beats",
-    "sec": 6.8,
+    "sec": 7.7,
     "woorden": 25,
-    "woorden_per_sec": 3.65,
+    "woorden_per_sec": 3.26,
     "langste_zin": 25
    },
    {
     "n": 8,
     "type": "beats",
-    "sec": 6.7,
+    "sec": 7.4,
     "woorden": 24,
-    "woorden_per_sec": 3.59,
+    "woorden_per_sec": 3.23,
     "langste_zin": 24
    }
   ],
@@ -93,15 +93,14 @@
   },
   "hook": {
    "eerste_zin": "€2.500 bruto staat er op je contract, maar op je rekening komt er een pak minder binnen.",
-   "klaar_na_sec": 4.9
+   "klaar_na_sec": 5.5
   },
   "lange_stiltes": [
-   1.16,
-   0.78,
-   0.66
+   1.24,
+   0.73
   ],
   "ondertitels": {
-   "blokken": 87,
+   "blokken": 86,
    "langste": "voorheffing anders berekend,"
   },
   "layout": [
@@ -144,37 +143,37 @@
   ],
   "eerste_beeld_tekst": 0.178,
   "aandachtspunten": [
-   "3 stilte(s) > 0,6 s."
+   "2 stilte(s) > 0,6 s."
   ],
   "gehoord": [
    {
     "scene": 0,
     "taal": "nl",
-    "zeker": 0.98,
-    "gehoord": "2500 euro. Bruto staat er op je contract, maar op je rekening komt er een pak minder binnen. Waar gaat de rest naartoe?",
+    "zeker": 0.99,
+    "gehoord": "2500 euro, Bruto staat er op je contract, maar op je rekening komt er een pak minder binnen. Waar gaat de rest naartoe?",
     "vreemde_woorden": [],
     "teruggehoord": 0.93
    },
    {
     "scene": 1,
     "taal": "nl",
-    "zeker": 0.97,
-    "gehoord": "Want van dat Brutalone gaan we eerst twee happen af. En de eerste hap is de RSZ.",
+    "zeker": 0.99,
+    "gehoord": "Want van dat bruto-loon gaan we eerst twee happen af. En de eerste hap is de RSZ.",
     "vreemde_woorden": [],
-    "teruggehoord": 0.88
+    "teruggehoord": 1.0
    },
    {
     "scene": 2,
     "taal": "nl",
-    "zeker": 0.99,
-    "gehoord": "Als bediende, kate 13,07% van je broedolon naar de sociale zekerheid. Daarmee betaal je mee aan je dokter, pensioen en je uitkering als je ooit je job verliest.",
+    "zeker": 0.98,
+    "gehoord": "Als bediende, kate 13,07% van je brutalon naar de sociale zekerheid. En daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je job verliest.",
     "vreemde_woorden": [],
-    "teruggehoord": 0.78
+    "teruggehoord": 0.83
    },
    {
     "scene": 3,
     "taal": "nl",
-    "zeker": 0.99,
+    "zeker": 0.96,
     "gehoord": "verdien je niet zoveel, dan krijg je daar korting op. En die korting heet de werkbonus.",
     "vreemde_woorden": [],
     "teruggehoord": 1.0
@@ -183,15 +182,15 @@
     "scene": 4,
     "taal": "nl",
     "zeker": 0.99,
-    "gehoord": "Van elk 100 euro op je contract hou je na de RS, zet dus 86,93 over maar dan komt de tweede hap de bedrijfsvoorheving.",
+    "gehoord": "Van elk 100 euro op je contract hou je na de RS, zet dus 86,93 over maar dan komt de tweede hap de bedrijfsvoorhefding.",
     "vreemde_woorden": [],
     "teruggehoord": 0.83
    },
    {
     "scene": 5,
     "taal": "nl",
-    "zeker": 0.68,
-    "gehoord": "Dat is een fors hout op je belasting. Dat je werkgever elke maand al voor jou inhoudt. En hoeveel dat is, hangt af van je loon en je gezin.",
+    "zeker": 0.71,
+    "gehoord": "dat is een voorschot op je belasting. Dat je werkgever elke maand al voor jou inhoudt en hoeveel dat is, hangt af van je loon en je gezin.",
     "vreemde_woorden": [],
     "teruggehoord": 1.0
    },
@@ -199,15 +198,15 @@
     "scene": 6,
     "taal": "nl",
     "zeker": 0.99,
-    "gehoord": "Het jaar erna reken de fiscus af via je aangifte en heb je te veel betaald, dan krijg je geld terug, maar te weinig betekent bijbetalen.",
+    "gehoord": "Het jaar erna rekent de fiscus af via je aangifte en heb je te veel betaald, dan krijg je geld terug maar te weinig beteken bijbetalen.",
     "vreemde_woorden": [],
     "teruggehoord": 1.0
    },
    {
     "scene": 7,
     "taal": "nl",
-    "zeker": 0.98,
-    "gehoord": "Trouwens, sinds 1 november wordt die voorhefving anders berekenend, dus je net ook kan wat schijven. En dat is geen fout, maar gewoon de nieuwe regel.",
+    "zeker": 0.99,
+    "gehoord": "Trouwens, sinds 1 november wordt die voorhefving anders berekenend. De genetto kan wat schuiven. En dat is geen fout, maar gewoon de nieuwe regel.",
     "vreemde_woorden": [],
     "teruggehoord": 1.0
    },
@@ -215,7 +214,7 @@
     "scene": 8,
     "taal": "nl",
     "zeker": 0.99,
-    "gehoord": "En dat geld dat je terug krijgt is eigenlijk geen cadeau van de fiscus. Maar gewoon jouw eigen geld dat je teveel had voorgeschoten.",
+    "gehoord": "En dat geld dat je terug krijgt is eigenlijk geen cadeau van de fiscus, maar gewoon jouw eigen geld dat je te veel had voorgeschoten.",
     "vreemde_woorden": [],
     "teruggehoord": 1.0
    }
