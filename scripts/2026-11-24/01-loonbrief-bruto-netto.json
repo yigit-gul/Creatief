@@ -4,7 +4,7 @@
  "validity": "Werknemersbijdrage RSZ bedienden 2026; bedrijfsvoorheffing vanaf 1 november 2026 (inkomsten 2026, aanslagjaar 2027)",
  "scenes": [
   {
-   "say": "€2.500 bruto staat er op je contract, maar op je rekening komt er een pak minder binnen. Waar gaat de rest naartoe?",
+   "say": "€2.500 bruto staat er op je contract, maar op je rekening komt er veel minder binnen. Waar gaat de rest naartoe?",
    "visual": {
     "type": "beats",
     "beats": [
@@ -57,7 +57,7 @@
    }
   },
   {
-   "say": "Als bediende gaat er 13,07% van je [brutoloon|bruto loon] naar de sociale zekerheid, en daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je job verliest.",
+   "say": "Als bediende houden ze 13,07% van je [brutoloon|bruto loon] in voor de sociale zekerheid, en daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je werk verliest.",
    "visual": {
     "type": "beats",
     "beats": [

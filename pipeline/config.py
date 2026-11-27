@@ -73,6 +73,6 @@ CB_CFG = 0.5
 CB_TEMPO = 1.0                   # natuurlijk tempo; 1.05-1.12 klonk gehaast "alsof hij aan het lopen is" (feedback 27/11)
 CB_PAUZE_MAX = 0.45              # pauzes langer dan dit worden ingekort...
 CB_PAUZE_HOUD = 0.3               # ...tot dit (gewone adempauzes blijven staan)
-CB_MIN_SCORE = 0.90              # gelijkenis (gesproken vorm, per woord) waaronder een nieuwe take geprobeerd wordt
+CB_MIN_SCORE = 0.95              # gelijkenis (gesproken vorm, per woord) waaronder een nieuwe take geprobeerd wordt
 CB_OK = 0.80                     # daaronder: TAALFOUT/UITSPRAAK (zin herschrijven)
 VOICE_FX_CB = "highpass=f=70,acompressor=threshold=-22dB:ratio=3:attack=8:release=120:makeup=1.5,"

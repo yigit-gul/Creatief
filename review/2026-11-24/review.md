@@ -6,7 +6,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-loonbrief-bruto-netto | Je loonbrief: waar gaat je brutoloon naartoe? | 69 s | 212 | 9/9 | 5 |
+| 01-loonbrief-bruto-netto | Je loonbrief: waar gaat je brutoloon naartoe? | 70 s | 212 | 9/9 | 5 |
 
 ---
 
@@ -16,11 +16,11 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 ### Script (voice-over)
 
-> €2.500 bruto staat er op je contract, maar op je rekening komt er een pak minder binnen. Waar gaat de rest naartoe?
+> €2.500 bruto staat er op je contract, maar op je rekening komt er veel minder binnen. Waar gaat de rest naartoe?
 >
 > Want van dat brutoloon gaan er eerst twee happen af, en de eerste hap is de RSZ.
 >
-> Als bediende gaat er 13,07% van je brutoloon naar de sociale zekerheid, en daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je job verliest.
+> Als bediende houden ze 13,07% van je brutoloon in voor de sociale zekerheid, en daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je werk verliest.
 >
 > Verdien je niet zoveel, dan krijg je daar korting op, en die korting heet de werkbonus.
 >
@@ -77,8 +77,8 @@ Algemene info, geen persoonlijk advies. Je eigen loon hangt af van je statuut, j
 ### Automatische checks
 
 - ✅ Woordenaantal 170-220 (212 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (68.8 s)
-- ✅ Hook kort (≤ 22 woorden) (22 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (69.6 s)
+- ✅ Hook kort (≤ 22 woorden) (21 woorden)
 - ✅ Eindkaart met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ AI-vermelding in caption
 - ✅ 3-5 hashtags (5)
