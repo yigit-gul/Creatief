@@ -31,7 +31,7 @@
    }
   },
   {
-   "say": "Want van dat [brutoloon|bruto loon] gaan er eerst twee happen af, en de eerste hap is de [RSZ|er es zet].",
+   "say": "Want van dat [brutoloon|bruto loon] gaan er eerst twee happen af, en de eerste hap is de [RSZ|er-es-zet].",
    "visual": {
     "type": "beats",
     "beats": [
@@ -111,7 +111,7 @@
    }
   },
   {
-   "say": "Van elke 100 euro op je contract hou je na de [RSZ|er es zet] dus 86,93 over, maar dan komt de tweede hap, de bedrijfsvoorheffing.",
+   "say": "Van elke 100 euro op je contract hou je na de [RSZ|er-es-zet] dus 86,93 over, maar dan komt de tweede hap, de bedrijfsvoorheffing.",
    "visual": {
     "type": "beats",
     "beats": [

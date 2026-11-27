@@ -90,12 +90,17 @@ def _gelijkenis(say, heard):
     """Welk deel van de bedoelde woorden Whisper terug hoort, in gesproken vorm ('100' = 'honderd').
     Kleine schrijfverschillen ('elk'/'elke') tellen als juist; echte uitspraakfouten ('RCJ' i.p.v. 'er es zet',
     een afgebroken 'bedrijfsvoorhef') niet. Verzonnen extra woorden verlagen de score ook."""
-    a = _woorden(tekst_voor_stem(say))
-    b = _woorden(" ".join(h["w"] for h in heard))
+    from .tts import PRON
+    gehoord = " ".join(h["w"] for h in heard)
+    for shown, spoken in PRON.findall(say):  # 'RSZ' gehoord = 'er-es-zet' gezegd: dat is juist
+        gehoord = re.sub(rf"\b{re.escape(shown)}\b", spoken, gehoord, flags=re.I)
+    a = _woorden(tekst_voor_stem(say).replace("-", " "))
+    b = _woorden(gehoord.replace("-", " "))
     if not a or not b:
         return 0.0
     # gehoorde woorden die bijna gelijk zijn aan een woord uit het script, als dat woord tellen
-    b = [next((x for x in a if x == w or (len(w) > 2 and SequenceMatcher(None, w, x).ratio() >= 0.8)), w) for w in b]
+    b = [w if w in a else next((x for x in a if len(w) > 3 and SequenceMatcher(None, w, x).ratio() >= 0.8), w)
+         for w in b]
     sm = SequenceMatcher(None, a, b, autojunk=False)
     m = sum(n for _, _, n in sm.get_matching_blocks())
     return 2 * m / (len(a) + len(b))

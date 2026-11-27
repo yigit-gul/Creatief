@@ -31,194 +31,194 @@ Dialogue: 0,0:00:06.38,0:00:06.56,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy
 Dialogue: 0,0:00:06.56,0:00:06.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c} REST
 Dialogue: 0,0:00:06.68,0:00:06.80,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DE {\c&H003FD2FF}REST{\c}
 Dialogue: 0,0:00:06.80,0:00:07.50,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}NAARTOE?{\c}
-Dialogue: 0,0:00:07.50,0:00:07.70,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}WANT{\c} VAN
-Dialogue: 0,0:00:07.70,0:00:07.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}WANT {\c&H003FD2FF}VAN{\c}
+Dialogue: 0,0:00:07.50,0:00:07.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}WANT{\c} VAN
+Dialogue: 0,0:00:07.68,0:00:07.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}WANT {\c&H003FD2FF}VAN{\c}
 Dialogue: 0,0:00:07.84,0:00:07.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAT{\c} BRUTOLOON
-Dialogue: 0,0:00:07.98,0:00:08.64,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAT {\c&H003FD2FF}BRUTOLOON{\c}
-Dialogue: 0,0:00:08.64,0:00:08.88,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}GAAN{\c} ER
-Dialogue: 0,0:00:08.88,0:00:09.02,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}GAAN {\c&H003FD2FF}ER{\c}
-Dialogue: 0,0:00:09.02,0:00:09.20,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EERST{\c} TWEE
-Dialogue: 0,0:00:09.20,0:00:09.40,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EERST {\c&H003FD2FF}TWEE{\c}
-Dialogue: 0,0:00:09.40,0:00:09.64,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}HAPPEN{\c} AF,
-Dialogue: 0,0:00:09.64,0:00:10.38,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}HAPPEN {\c&H003FD2FF}AF,{\c}
-Dialogue: 0,0:00:10.38,0:00:10.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DE
-Dialogue: 0,0:00:10.46,0:00:10.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DE{\c}
-Dialogue: 0,0:00:10.58,0:00:10.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EERSTE{\c} HAP
-Dialogue: 0,0:00:10.78,0:00:11.18,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EERSTE {\c&H003FD2FF}HAP{\c}
-Dialogue: 0,0:00:11.18,0:00:11.52,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}IS{\c} DE
-Dialogue: 0,0:00:11.52,0:00:11.96,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}IS {\c&H003FD2FF}DE{\c}
-Dialogue: 0,0:00:11.96,0:00:12.54,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}RSZ.{\c}
-Dialogue: 0,0:00:12.54,0:00:12.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}ALS{\c} BEDIENDE
-Dialogue: 0,0:00:12.74,0:00:13.12,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}ALS {\c&H003FD2FF}BEDIENDE{\c}
-Dialogue: 0,0:00:13.12,0:00:13.42,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}HOUDEN{\c} ZE
-Dialogue: 0,0:00:13.42,0:00:14.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}HOUDEN {\c&H003FD2FF}ZE{\c}
-Dialogue: 0,0:00:14.51,0:00:15.31,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}13,07%{\c}
-Dialogue: 0,0:00:15.52,0:00:15.70,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VAN{\c} JE
-Dialogue: 0,0:00:15.70,0:00:15.80,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VAN {\c&H003FD2FF}JE{\c}
-Dialogue: 0,0:00:15.80,0:00:16.38,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BRUTOLOON{\c} IN
-Dialogue: 0,0:00:16.38,0:00:16.54,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}BRUTOLOON {\c&H003FD2FF}IN{\c}
-Dialogue: 0,0:00:16.54,0:00:17.08,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VOOR{\c} DE
-Dialogue: 0,0:00:17.08,0:00:17.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VOOR {\c&H003FD2FF}DE{\c}
-Dialogue: 0,0:00:17.16,0:00:17.50,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx89\fscy89\t(0,90,\fscx83\fscy83)}{\c&H003FD2FF}SOCIALE{\c} ZEKERHEID,
-Dialogue: 0,0:00:17.50,0:00:18.14,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx83\fscy83}SOCIALE {\c&H003FD2FF}ZEKERHEID,{\c}
-Dialogue: 0,0:00:18.14,0:00:18.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DAARMEE
-Dialogue: 0,0:00:18.60,0:00:18.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DAARMEE{\c}
-Dialogue: 0,0:00:18.98,0:00:19.50,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BETAAL{\c} JE
-Dialogue: 0,0:00:19.50,0:00:19.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}BETAAL {\c&H003FD2FF}JE{\c}
-Dialogue: 0,0:00:19.58,0:00:19.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MEE{\c} AAN
-Dialogue: 0,0:00:19.68,0:00:19.82,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MEE {\c&H003FD2FF}AAN{\c}
-Dialogue: 0,0:00:19.82,0:00:19.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} DOKTER,
-Dialogue: 0,0:00:19.92,0:00:20.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}DOKTER,{\c}
-Dialogue: 0,0:00:20.46,0:00:20.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} PENSIOEN
-Dialogue: 0,0:00:20.46,0:00:20.96,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}PENSIOEN{\c}
-Dialogue: 0,0:00:20.96,0:00:21.12,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} JE
-Dialogue: 0,0:00:21.12,0:00:21.22,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}JE{\c}
-Dialogue: 0,0:00:21.22,0:00:21.66,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}UITKERING{\c} ALS
-Dialogue: 0,0:00:21.66,0:00:21.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}UITKERING {\c&H003FD2FF}ALS{\c}
-Dialogue: 0,0:00:21.84,0:00:21.96,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} OOIT
-Dialogue: 0,0:00:21.96,0:00:22.18,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}OOIT{\c}
-Dialogue: 0,0:00:22.18,0:00:22.26,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} WERK
-Dialogue: 0,0:00:22.26,0:00:22.42,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}WERK{\c}
-Dialogue: 0,0:00:22.42,0:00:23.12,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VERLIEST.{\c}
-Dialogue: 0,0:00:23.12,0:00:23.48,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VERDIEN{\c} JE
-Dialogue: 0,0:00:23.48,0:00:23.56,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VERDIEN {\c&H003FD2FF}JE{\c}
-Dialogue: 0,0:00:23.56,0:00:23.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}NIET{\c} ZOVEEL,
-Dialogue: 0,0:00:23.68,0:00:24.48,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}NIET {\c&H003FD2FF}ZOVEEL,{\c}
-Dialogue: 0,0:00:24.48,0:00:24.62,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAN{\c} KRIJG
-Dialogue: 0,0:00:24.62,0:00:24.88,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAN {\c&H003FD2FF}KRIJG{\c}
-Dialogue: 0,0:00:24.88,0:00:24.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} DAAR
-Dialogue: 0,0:00:24.98,0:00:25.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}DAAR{\c}
-Dialogue: 0,0:00:25.10,0:00:25.44,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}KORTING{\c} OP,
-Dialogue: 0,0:00:25.44,0:00:25.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}KORTING {\c&H003FD2FF}OP,{\c}
-Dialogue: 0,0:00:25.58,0:00:26.08,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DIE
-Dialogue: 0,0:00:26.08,0:00:26.20,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DIE{\c}
-Dialogue: 0,0:00:26.20,0:00:26.54,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}KORTING{\c} HEET
-Dialogue: 0,0:00:26.54,0:00:26.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}KORTING {\c&H003FD2FF}HEET{\c}
-Dialogue: 0,0:00:26.74,0:00:26.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c} WERKBONUS.
-Dialogue: 0,0:00:26.84,0:00:27.80,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DE {\c&H003FD2FF}WERKBONUS.{\c}
-Dialogue: 0,0:00:27.80,0:00:28.23,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VAN{\c} ELKE
-Dialogue: 0,0:00:28.23,0:00:28.43,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VAN {\c&H003FD2FF}ELKE{\c}
-Dialogue: 0,0:00:28.43,0:00:28.64,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}100{\c} EURO
-Dialogue: 0,0:00:28.64,0:00:28.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}100 {\c&H003FD2FF}EURO{\c}
-Dialogue: 0,0:00:28.84,0:00:29.00,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}OP{\c} JE
-Dialogue: 0,0:00:29.00,0:00:29.04,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}OP {\c&H003FD2FF}JE{\c}
-Dialogue: 0,0:00:29.04,0:00:29.40,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}CONTRACT{\c} HOU
-Dialogue: 0,0:00:29.40,0:00:29.90,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}CONTRACT {\c&H003FD2FF}HOU{\c}
-Dialogue: 0,0:00:29.90,0:00:30.02,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} NA
-Dialogue: 0,0:00:30.02,0:00:30.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}NA{\c}
-Dialogue: 0,0:00:30.16,0:00:30.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c}
-Dialogue: 0,0:00:30.78,0:00:31.26,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}RSZ{\c}
-Dialogue: 0,0:00:31.26,0:00:31.94,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DUS{\c}
-Dialogue: 0,0:00:32.07,0:00:32.80,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}86,93{\c}
-Dialogue: 0,0:00:32.80,0:00:33.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}OVER,{\c}
-Dialogue: 0,0:00:33.74,0:00:33.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAR{\c} DAN
-Dialogue: 0,0:00:33.78,0:00:33.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAR {\c&H003FD2FF}DAN{\c}
-Dialogue: 0,0:00:33.92,0:00:34.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}KOMT{\c} DE
-Dialogue: 0,0:00:34.10,0:00:34.22,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}KOMT {\c&H003FD2FF}DE{\c}
-Dialogue: 0,0:00:34.22,0:00:34.50,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}TWEEDE{\c} HAP,
-Dialogue: 0,0:00:34.50,0:00:34.76,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}TWEEDE {\c&H003FD2FF}HAP,{\c}
-Dialogue: 0,0:00:34.76,0:00:34.90,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx70\fscy70\t(0,90,\fscx65\fscy65)}{\c&H003FD2FF}DE{\c} BEDRIJFSVOORHEFFING.
-Dialogue: 0,0:00:34.90,0:00:36.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx65\fscy65}DE {\c&H003FD2FF}BEDRIJFSVOORHEFFING.{\c}
-Dialogue: 0,0:00:36.16,0:00:36.34,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAT{\c} IS
-Dialogue: 0,0:00:36.34,0:00:36.50,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAT {\c&H003FD2FF}IS{\c}
-Dialogue: 0,0:00:36.50,0:00:36.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EEN{\c} VOORSCHOT
-Dialogue: 0,0:00:36.58,0:00:37.04,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EEN {\c&H003FD2FF}VOORSCHOT{\c}
-Dialogue: 0,0:00:37.04,0:00:37.14,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}OP{\c} JE
-Dialogue: 0,0:00:37.14,0:00:37.26,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}OP {\c&H003FD2FF}JE{\c}
-Dialogue: 0,0:00:37.26,0:00:38.14,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BELASTING{\c}
-Dialogue: 0,0:00:38.14,0:00:38.22,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAT{\c} JE
-Dialogue: 0,0:00:38.22,0:00:38.34,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAT {\c&H003FD2FF}JE{\c}
-Dialogue: 0,0:00:38.34,0:00:38.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}WERKGEVER{\c} ELKE
-Dialogue: 0,0:00:38.92,0:00:39.24,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}WERKGEVER {\c&H003FD2FF}ELKE{\c}
-Dialogue: 0,0:00:39.24,0:00:39.62,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAND{\c} AL
-Dialogue: 0,0:00:39.62,0:00:39.76,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAND {\c&H003FD2FF}AL{\c}
-Dialogue: 0,0:00:39.76,0:00:39.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VOOR{\c} JOU
-Dialogue: 0,0:00:39.92,0:00:40.06,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VOOR {\c&H003FD2FF}JOU{\c}
-Dialogue: 0,0:00:40.06,0:00:40.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}INHOUDT,{\c}
-Dialogue: 0,0:00:40.98,0:00:41.24,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} HOEVEEL
-Dialogue: 0,0:00:41.24,0:00:41.56,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}HOEVEEL{\c}
-Dialogue: 0,0:00:41.56,0:00:41.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAT{\c} IS
-Dialogue: 0,0:00:41.68,0:00:42.06,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAT {\c&H003FD2FF}IS{\c}
-Dialogue: 0,0:00:42.06,0:00:42.44,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}HANGT{\c} AF
-Dialogue: 0,0:00:42.44,0:00:42.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}HANGT {\c&H003FD2FF}AF{\c}
-Dialogue: 0,0:00:42.60,0:00:42.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VAN{\c} JE
-Dialogue: 0,0:00:42.92,0:00:43.02,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VAN {\c&H003FD2FF}JE{\c}
-Dialogue: 0,0:00:43.02,0:00:43.36,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}LOON{\c} EN
-Dialogue: 0,0:00:43.36,0:00:43.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}LOON {\c&H003FD2FF}EN{\c}
-Dialogue: 0,0:00:43.46,0:00:43.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} GEZIN.
-Dialogue: 0,0:00:43.58,0:00:44.28,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}GEZIN.{\c}
-Dialogue: 0,0:00:44.28,0:00:44.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}HET{\c} JAAR
-Dialogue: 0,0:00:44.46,0:00:44.66,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}HET {\c&H003FD2FF}JAAR{\c}
-Dialogue: 0,0:00:44.66,0:00:45.19,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}ERNA{\c} REKENT
-Dialogue: 0,0:00:45.19,0:00:45.38,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}ERNA {\c&H003FD2FF}REKENT{\c}
-Dialogue: 0,0:00:45.38,0:00:45.48,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c} FISCUS
-Dialogue: 0,0:00:45.48,0:00:45.80,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DE {\c&H003FD2FF}FISCUS{\c}
-Dialogue: 0,0:00:45.80,0:00:45.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}AF{\c} VIA
-Dialogue: 0,0:00:45.98,0:00:46.18,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}AF {\c&H003FD2FF}VIA{\c}
-Dialogue: 0,0:00:46.18,0:00:46.32,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} AANGIFTE,
-Dialogue: 0,0:00:46.32,0:00:47.32,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}AANGIFTE,{\c}
-Dialogue: 0,0:00:47.32,0:00:47.36,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} HEB
-Dialogue: 0,0:00:47.36,0:00:47.54,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}HEB{\c}
-Dialogue: 0,0:00:47.54,0:00:47.62,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} TE
-Dialogue: 0,0:00:47.62,0:00:47.76,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}TE{\c}
-Dialogue: 0,0:00:47.76,0:00:47.90,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VEEL{\c} BETAALD,
-Dialogue: 0,0:00:47.90,0:00:48.66,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VEEL {\c&H003FD2FF}BETAALD,{\c}
-Dialogue: 0,0:00:48.66,0:00:48.76,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAN{\c} KRIJG
-Dialogue: 0,0:00:48.76,0:00:49.02,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAN {\c&H003FD2FF}KRIJG{\c}
-Dialogue: 0,0:00:49.02,0:00:49.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} GELD
-Dialogue: 0,0:00:49.10,0:00:49.30,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}GELD{\c}
-Dialogue: 0,0:00:49.30,0:00:49.88,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}TERUG,{\c}
-Dialogue: 0,0:00:49.88,0:00:49.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAR{\c} TE
-Dialogue: 0,0:00:49.98,0:00:50.14,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAR {\c&H003FD2FF}TE{\c}
-Dialogue: 0,0:00:50.14,0:00:50.40,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}WEINIG{\c} BETEKENT
-Dialogue: 0,0:00:50.40,0:00:50.82,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}WEINIG {\c&H003FD2FF}BETEKENT{\c}
-Dialogue: 0,0:00:50.82,0:00:51.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BIJBETALEN.{\c}
-Dialogue: 0,0:00:51.78,0:00:52.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}TROUWENS,{\c}
-Dialogue: 0,0:00:52.46,0:00:52.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}SINDS{\c} 1
-Dialogue: 0,0:00:52.74,0:00:52.90,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}SINDS {\c&H003FD2FF}1{\c}
-Dialogue: 0,0:00:52.90,0:00:53.38,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}NOVEMBER{\c} WORDT
-Dialogue: 0,0:00:53.38,0:00:53.56,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}NOVEMBER {\c&H003FD2FF}WORDT{\c}
-Dialogue: 0,0:00:53.56,0:00:54.02,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DIE{\c}
-Dialogue: 0,0:00:54.02,0:00:54.30,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx89\fscy89\t(0,90,\fscx83\fscy83)}{\c&H003FD2FF}VOORHEFFING{\c} ANDERS
-Dialogue: 0,0:00:54.30,0:00:54.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx83\fscy83}VOORHEFFING {\c&H003FD2FF}ANDERS{\c}
-Dialogue: 0,0:00:54.60,0:00:55.50,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BEREKEND,{\c}
-Dialogue: 0,0:00:55.50,0:00:55.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DUS{\c} JE
-Dialogue: 0,0:00:55.68,0:00:55.99,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DUS {\c&H003FD2FF}JE{\c}
-Dialogue: 0,0:00:55.99,0:00:56.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}NETTO{\c} KAN
-Dialogue: 0,0:00:56.16,0:00:56.30,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}NETTO {\c&H003FD2FF}KAN{\c}
-Dialogue: 0,0:00:56.30,0:00:56.42,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}WAT{\c} SCHUIVEN,
-Dialogue: 0,0:00:56.42,0:00:57.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}WAT {\c&H003FD2FF}SCHUIVEN,{\c}
-Dialogue: 0,0:00:57.10,0:00:57.26,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DAT
-Dialogue: 0,0:00:57.26,0:00:57.36,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DAT{\c}
-Dialogue: 0,0:00:57.36,0:00:57.54,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}IS{\c} GEEN
-Dialogue: 0,0:00:57.54,0:00:57.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}IS {\c&H003FD2FF}GEEN{\c}
-Dialogue: 0,0:00:57.68,0:00:58.26,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}FOUT{\c}
-Dialogue: 0,0:00:58.26,0:00:58.32,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAR{\c} GEWOON
-Dialogue: 0,0:00:58.32,0:00:58.64,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAR {\c&H003FD2FF}GEWOON{\c}
-Dialogue: 0,0:00:58.64,0:00:58.82,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c} NIEUWE
-Dialogue: 0,0:00:58.82,0:00:58.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DE {\c&H003FD2FF}NIEUWE{\c}
-Dialogue: 0,0:00:58.98,0:00:59.66,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}REGEL.{\c}
-Dialogue: 0,0:00:59.66,0:00:59.82,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DAT
-Dialogue: 0,0:00:59.82,0:00:59.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DAT{\c}
-Dialogue: 0,0:00:59.92,0:01:00.20,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}GELD{\c} DAT
-Dialogue: 0,0:01:00.20,0:01:00.36,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}GELD {\c&H003FD2FF}DAT{\c}
-Dialogue: 0,0:01:00.36,0:01:00.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} TERUGKRIJGT,
-Dialogue: 0,0:01:00.46,0:01:01.14,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}TERUGKRIJGT,{\c}
-Dialogue: 0,0:01:01.14,0:01:01.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}IS{\c} EIGENLIJK
-Dialogue: 0,0:01:01.58,0:01:01.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}IS {\c&H003FD2FF}EIGENLIJK{\c}
-Dialogue: 0,0:01:01.98,0:01:02.30,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}GEEN{\c} CADEAU
-Dialogue: 0,0:01:02.30,0:01:02.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}GEEN {\c&H003FD2FF}CADEAU{\c}
-Dialogue: 0,0:01:02.78,0:01:02.90,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VAN{\c} DE
-Dialogue: 0,0:01:02.90,0:01:03.34,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VAN {\c&H003FD2FF}DE{\c}
-Dialogue: 0,0:01:03.34,0:01:03.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}FISCUS,{\c}
-Dialogue: 0,0:01:03.68,0:01:03.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAR{\c} GEWOON
-Dialogue: 0,0:01:03.92,0:01:04.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAR {\c&H003FD2FF}GEWOON{\c}
-Dialogue: 0,0:01:04.16,0:01:04.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JOUW{\c} EIGEN
-Dialogue: 0,0:01:04.84,0:01:04.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JOUW {\c&H003FD2FF}EIGEN{\c}
-Dialogue: 0,0:01:04.84,0:01:05.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}GELD{\c} DAT
-Dialogue: 0,0:01:05.16,0:01:05.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}GELD {\c&H003FD2FF}DAT{\c}
-Dialogue: 0,0:01:05.60,0:01:05.72,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} TE
-Dialogue: 0,0:01:05.72,0:01:05.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}TE{\c}
-Dialogue: 0,0:01:05.92,0:01:06.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VEEL{\c} HAD
-Dialogue: 0,0:01:06.10,0:01:06.26,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VEEL {\c&H003FD2FF}HAD{\c}
-Dialogue: 0,0:01:06.26,0:01:07.32,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VOORGESCHOTEN.{\c}
+Dialogue: 0,0:00:07.98,0:00:08.86,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAT {\c&H003FD2FF}BRUTOLOON{\c}
+Dialogue: 0,0:00:08.86,0:00:09.12,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}GAAN{\c} ER
+Dialogue: 0,0:00:09.12,0:00:09.24,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}GAAN {\c&H003FD2FF}ER{\c}
+Dialogue: 0,0:00:09.24,0:00:09.42,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EERST{\c} TWEE
+Dialogue: 0,0:00:09.42,0:00:09.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EERST {\c&H003FD2FF}TWEE{\c}
+Dialogue: 0,0:00:09.60,0:00:09.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}HAPPEN{\c} AF,
+Dialogue: 0,0:00:09.84,0:00:10.00,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}HAPPEN {\c&H003FD2FF}AF,{\c}
+Dialogue: 0,0:00:10.00,0:00:10.36,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DE
+Dialogue: 0,0:00:10.36,0:00:10.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DE{\c}
+Dialogue: 0,0:00:10.46,0:00:10.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EERSTE{\c} HAP
+Dialogue: 0,0:00:10.68,0:00:11.08,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EERSTE {\c&H003FD2FF}HAP{\c}
+Dialogue: 0,0:00:11.08,0:00:11.28,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}IS{\c} DE
+Dialogue: 0,0:00:11.28,0:00:11.42,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}IS {\c&H003FD2FF}DE{\c}
+Dialogue: 0,0:00:11.42,0:00:12.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}RSZ.{\c}
+Dialogue: 0,0:00:12.16,0:00:12.36,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}ALS{\c} BEDIENDE
+Dialogue: 0,0:00:12.36,0:00:12.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}ALS {\c&H003FD2FF}BEDIENDE{\c}
+Dialogue: 0,0:00:12.74,0:00:13.04,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}HOUDEN{\c} ZE
+Dialogue: 0,0:00:13.04,0:00:13.72,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}HOUDEN {\c&H003FD2FF}ZE{\c}
+Dialogue: 0,0:00:14.13,0:00:14.93,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}13,07%{\c}
+Dialogue: 0,0:00:15.14,0:00:15.32,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VAN{\c} JE
+Dialogue: 0,0:00:15.32,0:00:15.42,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VAN {\c&H003FD2FF}JE{\c}
+Dialogue: 0,0:00:15.42,0:00:16.00,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BRUTOLOON{\c} IN
+Dialogue: 0,0:00:16.00,0:00:16.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}BRUTOLOON {\c&H003FD2FF}IN{\c}
+Dialogue: 0,0:00:16.16,0:00:16.70,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VOOR{\c} DE
+Dialogue: 0,0:00:16.70,0:00:16.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VOOR {\c&H003FD2FF}DE{\c}
+Dialogue: 0,0:00:16.78,0:00:17.12,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx89\fscy89\t(0,90,\fscx83\fscy83)}{\c&H003FD2FF}SOCIALE{\c} ZEKERHEID,
+Dialogue: 0,0:00:17.12,0:00:17.76,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx83\fscy83}SOCIALE {\c&H003FD2FF}ZEKERHEID,{\c}
+Dialogue: 0,0:00:17.76,0:00:18.22,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DAARMEE
+Dialogue: 0,0:00:18.22,0:00:18.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DAARMEE{\c}
+Dialogue: 0,0:00:18.60,0:00:19.12,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BETAAL{\c} JE
+Dialogue: 0,0:00:19.12,0:00:19.20,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}BETAAL {\c&H003FD2FF}JE{\c}
+Dialogue: 0,0:00:19.20,0:00:19.30,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MEE{\c} AAN
+Dialogue: 0,0:00:19.30,0:00:19.44,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MEE {\c&H003FD2FF}AAN{\c}
+Dialogue: 0,0:00:19.44,0:00:19.54,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} DOKTER,
+Dialogue: 0,0:00:19.54,0:00:20.08,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}DOKTER,{\c}
+Dialogue: 0,0:00:20.08,0:00:20.08,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} PENSIOEN
+Dialogue: 0,0:00:20.08,0:00:20.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}PENSIOEN{\c}
+Dialogue: 0,0:00:20.58,0:00:20.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} JE
+Dialogue: 0,0:00:20.74,0:00:20.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}JE{\c}
+Dialogue: 0,0:00:20.84,0:00:21.28,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}UITKERING{\c} ALS
+Dialogue: 0,0:00:21.28,0:00:21.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}UITKERING {\c&H003FD2FF}ALS{\c}
+Dialogue: 0,0:00:21.46,0:00:21.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} OOIT
+Dialogue: 0,0:00:21.58,0:00:21.80,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}OOIT{\c}
+Dialogue: 0,0:00:21.80,0:00:21.88,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} WERK
+Dialogue: 0,0:00:21.88,0:00:22.04,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}WERK{\c}
+Dialogue: 0,0:00:22.04,0:00:22.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VERLIEST.{\c}
+Dialogue: 0,0:00:22.74,0:00:23.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VERDIEN{\c} JE
+Dialogue: 0,0:00:23.10,0:00:23.18,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VERDIEN {\c&H003FD2FF}JE{\c}
+Dialogue: 0,0:00:23.18,0:00:23.30,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}NIET{\c} ZOVEEL,
+Dialogue: 0,0:00:23.30,0:00:24.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}NIET {\c&H003FD2FF}ZOVEEL,{\c}
+Dialogue: 0,0:00:24.10,0:00:24.24,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAN{\c} KRIJG
+Dialogue: 0,0:00:24.24,0:00:24.50,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAN {\c&H003FD2FF}KRIJG{\c}
+Dialogue: 0,0:00:24.50,0:00:24.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} DAAR
+Dialogue: 0,0:00:24.60,0:00:24.72,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}DAAR{\c}
+Dialogue: 0,0:00:24.72,0:00:25.06,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}KORTING{\c} OP,
+Dialogue: 0,0:00:25.06,0:00:25.20,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}KORTING {\c&H003FD2FF}OP,{\c}
+Dialogue: 0,0:00:25.20,0:00:25.70,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DIE
+Dialogue: 0,0:00:25.70,0:00:25.82,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DIE{\c}
+Dialogue: 0,0:00:25.82,0:00:26.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}KORTING{\c} HEET
+Dialogue: 0,0:00:26.16,0:00:26.36,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}KORTING {\c&H003FD2FF}HEET{\c}
+Dialogue: 0,0:00:26.36,0:00:26.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c} WERKBONUS.
+Dialogue: 0,0:00:26.46,0:00:27.42,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DE {\c&H003FD2FF}WERKBONUS.{\c}
+Dialogue: 0,0:00:27.42,0:00:27.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VAN{\c} ELKE
+Dialogue: 0,0:00:27.60,0:00:27.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VAN {\c&H003FD2FF}ELKE{\c}
+Dialogue: 0,0:00:27.92,0:00:28.12,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}100{\c} EURO
+Dialogue: 0,0:00:28.12,0:00:28.42,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}100 {\c&H003FD2FF}EURO{\c}
+Dialogue: 0,0:00:28.42,0:00:28.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}OP{\c} JE
+Dialogue: 0,0:00:28.60,0:00:28.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}OP {\c&H003FD2FF}JE{\c}
+Dialogue: 0,0:00:28.68,0:00:29.04,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}CONTRACT{\c} HOU
+Dialogue: 0,0:00:29.04,0:00:29.52,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}CONTRACT {\c&H003FD2FF}HOU{\c}
+Dialogue: 0,0:00:29.52,0:00:29.66,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} NA
+Dialogue: 0,0:00:29.66,0:00:29.82,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}NA{\c}
+Dialogue: 0,0:00:29.82,0:00:29.96,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c} RSZ
+Dialogue: 0,0:00:29.96,0:00:30.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DE {\c&H003FD2FF}RSZ{\c}
+Dialogue: 0,0:00:30.98,0:00:31.52,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DUS{\c}
+Dialogue: 0,0:00:31.52,0:00:32.06,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}86,93{\c}
+Dialogue: 0,0:00:32.06,0:00:33.02,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}OVER,{\c}
+Dialogue: 0,0:00:33.02,0:00:33.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAR{\c} DAN
+Dialogue: 0,0:00:33.10,0:00:33.32,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAR {\c&H003FD2FF}DAN{\c}
+Dialogue: 0,0:00:33.32,0:00:33.52,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}KOMT{\c} DE
+Dialogue: 0,0:00:33.52,0:00:33.66,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}KOMT {\c&H003FD2FF}DE{\c}
+Dialogue: 0,0:00:33.66,0:00:33.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}TWEEDE{\c} HAP,
+Dialogue: 0,0:00:33.98,0:00:34.22,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}TWEEDE {\c&H003FD2FF}HAP,{\c}
+Dialogue: 0,0:00:34.22,0:00:34.70,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c}
+Dialogue: 0,0:00:34.70,0:00:35.50,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx81\fscy81\t(0,90,\fscx75\fscy75)}{\c&H003FD2FF}BEDRIJFSVOORHEFFING.{\c}
+Dialogue: 0,0:00:35.58,0:00:35.76,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAT{\c} IS
+Dialogue: 0,0:00:35.76,0:00:35.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAT {\c&H003FD2FF}IS{\c}
+Dialogue: 0,0:00:35.92,0:00:36.00,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EEN{\c} VOORSCHOT
+Dialogue: 0,0:00:36.00,0:00:36.46,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EEN {\c&H003FD2FF}VOORSCHOT{\c}
+Dialogue: 0,0:00:36.46,0:00:36.56,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}OP{\c} JE
+Dialogue: 0,0:00:36.56,0:00:36.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}OP {\c&H003FD2FF}JE{\c}
+Dialogue: 0,0:00:36.68,0:00:37.56,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BELASTING{\c}
+Dialogue: 0,0:00:37.56,0:00:37.64,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAT{\c} JE
+Dialogue: 0,0:00:37.64,0:00:37.76,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAT {\c&H003FD2FF}JE{\c}
+Dialogue: 0,0:00:37.76,0:00:38.34,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}WERKGEVER{\c} ELKE
+Dialogue: 0,0:00:38.34,0:00:38.66,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}WERKGEVER {\c&H003FD2FF}ELKE{\c}
+Dialogue: 0,0:00:38.66,0:00:39.04,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAND{\c} AL
+Dialogue: 0,0:00:39.04,0:00:39.18,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAND {\c&H003FD2FF}AL{\c}
+Dialogue: 0,0:00:39.18,0:00:39.34,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VOOR{\c} JOU
+Dialogue: 0,0:00:39.34,0:00:39.48,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VOOR {\c&H003FD2FF}JOU{\c}
+Dialogue: 0,0:00:39.48,0:00:40.40,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}INHOUDT,{\c}
+Dialogue: 0,0:00:40.40,0:00:40.66,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} HOEVEEL
+Dialogue: 0,0:00:40.66,0:00:40.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}HOEVEEL{\c}
+Dialogue: 0,0:00:40.98,0:00:41.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAT{\c} IS
+Dialogue: 0,0:00:41.10,0:00:41.48,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAT {\c&H003FD2FF}IS{\c}
+Dialogue: 0,0:00:41.48,0:00:41.86,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}HANGT{\c} AF
+Dialogue: 0,0:00:41.86,0:00:42.02,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}HANGT {\c&H003FD2FF}AF{\c}
+Dialogue: 0,0:00:42.02,0:00:42.34,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VAN{\c} JE
+Dialogue: 0,0:00:42.34,0:00:42.44,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VAN {\c&H003FD2FF}JE{\c}
+Dialogue: 0,0:00:42.44,0:00:42.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}LOON{\c} EN
+Dialogue: 0,0:00:42.78,0:00:42.88,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}LOON {\c&H003FD2FF}EN{\c}
+Dialogue: 0,0:00:42.88,0:00:43.00,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} GEZIN.
+Dialogue: 0,0:00:43.00,0:00:43.70,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}GEZIN.{\c}
+Dialogue: 0,0:00:43.70,0:00:43.88,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}HET{\c} JAAR
+Dialogue: 0,0:00:43.88,0:00:44.08,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}HET {\c&H003FD2FF}JAAR{\c}
+Dialogue: 0,0:00:44.08,0:00:44.61,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}ERNA{\c} REKENT
+Dialogue: 0,0:00:44.61,0:00:44.80,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}ERNA {\c&H003FD2FF}REKENT{\c}
+Dialogue: 0,0:00:44.80,0:00:44.90,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c} FISCUS
+Dialogue: 0,0:00:44.90,0:00:45.22,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DE {\c&H003FD2FF}FISCUS{\c}
+Dialogue: 0,0:00:45.22,0:00:45.40,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}AF{\c} VIA
+Dialogue: 0,0:00:45.40,0:00:45.60,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}AF {\c&H003FD2FF}VIA{\c}
+Dialogue: 0,0:00:45.60,0:00:45.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} AANGIFTE,
+Dialogue: 0,0:00:45.74,0:00:46.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}AANGIFTE,{\c}
+Dialogue: 0,0:00:46.74,0:00:46.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} HEB
+Dialogue: 0,0:00:46.78,0:00:46.96,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}HEB{\c}
+Dialogue: 0,0:00:46.96,0:00:47.04,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} TE
+Dialogue: 0,0:00:47.04,0:00:47.18,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}TE{\c}
+Dialogue: 0,0:00:47.18,0:00:47.32,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VEEL{\c} BETAALD,
+Dialogue: 0,0:00:47.32,0:00:48.08,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VEEL {\c&H003FD2FF}BETAALD,{\c}
+Dialogue: 0,0:00:48.08,0:00:48.18,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DAN{\c} KRIJG
+Dialogue: 0,0:00:48.18,0:00:48.44,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DAN {\c&H003FD2FF}KRIJG{\c}
+Dialogue: 0,0:00:48.44,0:00:48.52,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} GELD
+Dialogue: 0,0:00:48.52,0:00:48.72,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}GELD{\c}
+Dialogue: 0,0:00:48.72,0:00:49.30,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}TERUG,{\c}
+Dialogue: 0,0:00:49.30,0:00:49.40,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAR{\c} TE
+Dialogue: 0,0:00:49.40,0:00:49.56,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAR {\c&H003FD2FF}TE{\c}
+Dialogue: 0,0:00:49.56,0:00:49.82,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}WEINIG{\c} BETEKENT
+Dialogue: 0,0:00:49.82,0:00:50.24,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}WEINIG {\c&H003FD2FF}BETEKENT{\c}
+Dialogue: 0,0:00:50.24,0:00:51.20,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BIJBETALEN.{\c}
+Dialogue: 0,0:00:51.20,0:00:51.88,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}TROUWENS,{\c}
+Dialogue: 0,0:00:51.88,0:00:52.16,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}SINDS{\c} 1
+Dialogue: 0,0:00:52.16,0:00:52.32,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}SINDS {\c&H003FD2FF}1{\c}
+Dialogue: 0,0:00:52.32,0:00:52.80,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}NOVEMBER{\c} WORDT
+Dialogue: 0,0:00:52.80,0:00:52.98,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}NOVEMBER {\c&H003FD2FF}WORDT{\c}
+Dialogue: 0,0:00:52.98,0:00:53.44,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DIE{\c}
+Dialogue: 0,0:00:53.44,0:00:53.72,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx89\fscy89\t(0,90,\fscx83\fscy83)}{\c&H003FD2FF}VOORHEFFING{\c} ANDERS
+Dialogue: 0,0:00:53.72,0:00:54.02,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx83\fscy83}VOORHEFFING {\c&H003FD2FF}ANDERS{\c}
+Dialogue: 0,0:00:54.02,0:00:54.92,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}BEREKEND,{\c}
+Dialogue: 0,0:00:54.92,0:00:55.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DUS{\c} JE
+Dialogue: 0,0:00:55.10,0:00:55.41,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DUS {\c&H003FD2FF}JE{\c}
+Dialogue: 0,0:00:55.41,0:00:55.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}NETTO{\c} KAN
+Dialogue: 0,0:00:55.58,0:00:55.72,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}NETTO {\c&H003FD2FF}KAN{\c}
+Dialogue: 0,0:00:55.72,0:00:55.84,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}WAT{\c} SCHUIVEN,
+Dialogue: 0,0:00:55.84,0:00:56.52,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}WAT {\c&H003FD2FF}SCHUIVEN,{\c}
+Dialogue: 0,0:00:56.52,0:00:56.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DAT
+Dialogue: 0,0:00:56.68,0:00:56.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DAT{\c}
+Dialogue: 0,0:00:56.78,0:00:56.96,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}IS{\c} GEEN
+Dialogue: 0,0:00:56.96,0:00:57.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}IS {\c&H003FD2FF}GEEN{\c}
+Dialogue: 0,0:00:57.10,0:00:57.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}FOUT{\c}
+Dialogue: 0,0:00:57.68,0:00:57.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAR{\c} GEWOON
+Dialogue: 0,0:00:57.74,0:00:58.06,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAR {\c&H003FD2FF}GEWOON{\c}
+Dialogue: 0,0:00:58.06,0:00:58.24,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}DE{\c} NIEUWE
+Dialogue: 0,0:00:58.24,0:00:58.40,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}DE {\c&H003FD2FF}NIEUWE{\c}
+Dialogue: 0,0:00:58.40,0:00:59.08,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}REGEL.{\c}
+Dialogue: 0,0:00:59.08,0:00:59.24,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}EN{\c} DAT
+Dialogue: 0,0:00:59.24,0:00:59.34,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}EN {\c&H003FD2FF}DAT{\c}
+Dialogue: 0,0:00:59.34,0:00:59.62,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}GELD{\c} DAT
+Dialogue: 0,0:00:59.62,0:00:59.78,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}GELD {\c&H003FD2FF}DAT{\c}
+Dialogue: 0,0:00:59.78,0:00:59.88,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} TERUGKRIJGT,
+Dialogue: 0,0:00:59.88,0:01:00.56,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}TERUGKRIJGT,{\c}
+Dialogue: 0,0:01:00.56,0:01:01.00,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}IS{\c} EIGENLIJK
+Dialogue: 0,0:01:01.00,0:01:01.40,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}IS {\c&H003FD2FF}EIGENLIJK{\c}
+Dialogue: 0,0:01:01.40,0:01:01.72,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}GEEN{\c} CADEAU
+Dialogue: 0,0:01:01.72,0:01:02.20,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}GEEN {\c&H003FD2FF}CADEAU{\c}
+Dialogue: 0,0:01:02.20,0:01:02.32,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VAN{\c} DE
+Dialogue: 0,0:01:02.32,0:01:02.76,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VAN {\c&H003FD2FF}DE{\c}
+Dialogue: 0,0:01:02.76,0:01:03.10,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}FISCUS,{\c}
+Dialogue: 0,0:01:03.10,0:01:03.34,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}MAAR{\c} GEWOON
+Dialogue: 0,0:01:03.34,0:01:03.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}MAAR {\c&H003FD2FF}GEWOON{\c}
+Dialogue: 0,0:01:03.58,0:01:04.26,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JOUW{\c} EIGEN
+Dialogue: 0,0:01:04.26,0:01:04.26,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JOUW {\c&H003FD2FF}EIGEN{\c}
+Dialogue: 0,0:01:04.26,0:01:04.58,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}GELD{\c} DAT
+Dialogue: 0,0:01:04.58,0:01:05.02,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}GELD {\c&H003FD2FF}DAT{\c}
+Dialogue: 0,0:01:05.02,0:01:05.14,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}JE{\c} TE
+Dialogue: 0,0:01:05.14,0:01:05.34,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}JE {\c&H003FD2FF}TE{\c}
+Dialogue: 0,0:01:05.34,0:01:05.52,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VEEL{\c} HAD
+Dialogue: 0,0:01:05.52,0:01:05.68,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx100\fscy100}VEEL {\c&H003FD2FF}HAD{\c}
+Dialogue: 0,0:01:05.68,0:01:06.74,Sub,,0,0,0,,{\an5\pos(505,1300)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H003FD2FF}VOORGESCHOTEN.{\c}

@@ -119,7 +119,8 @@ Controleer per video één frame (bv. bij het rekenvoorbeeld) op overlap. Gefaal
   Blijft een zin fout (TAALFOUT/UITSPRAAK): herschrijf hem met gewone woorden en bouw opnieuw.
 - Hier mogen gewone zinnen met punten (het programma wisselt niet van taal zoals de oude Edge-stem).
 - Tempo: niet versnellen (3,2-3,5 woorden/s, adempauzes laten staan); sneller klonk gehaast (LESSEN.md).
-- Moeilijke woorden een uitspraakhint geven: `[RSZ|er es zet]`, `[brutoloon|bruto loon]`.
+- Moeilijke woorden een uitspraakhint geven: `[RSZ|er-es-zet]` (met streepjes: dan zegt hij het in één keer;
+  met spaties werd het 'RS… zet'), `[brutoloon|bruto loon]`. Vermijd 'gaat' na een pauze (klonk als 'kaat').
 - Terugvallen op de oude stem kan met `TTS_ENGINE = "edge"` (alleen als het programma niet werkt; meld dat).
 
 ## 4b. Zelfreview (verplicht, vóór de video naar de Studio gaat)
