@@ -49,3 +49,11 @@ SFX_VOLUME = 0.35   # ten opzichte van de stem (zacht houden)
 PUNCH = 0.045       # korte zoom (4,5%) wanneer een cijfer/regel verschijnt
 LANG_CHECK = True   # elke scène na het inspreken laten beluisteren door Whisper (moet Nederlands zijn)
 LANG_MIN = 0.6      # minimale zekerheid dat het Nederlands is
+
+# --- Minder 'AI-proper' klinken (27/11): stem alsof hij via een microfoon in een kamer is opgenomen ---
+# warmte (150 Hz), iets meer aanwezigheid (3 kHz), lichte compressie, heel subtiele kamerklank,
+# en een bijna onhoorbare ruisvloer zodat stiltes niet 'digitaal dood' klinken.
+VOICE_FX = ("highpass=f=75,equalizer=f=150:t=q:w=1:g=2.5,equalizer=f=3200:t=q:w=1.2:g=1.5,"
+            "equalizer=f=9000:t=q:w=1:g=-2,acompressor=threshold=-18dB:ratio=2.5:attack=8:release=120,"
+            "aecho=0.85:0.6:23|37:0.10|0.06,"
+            "aeval=val(0)+0.0012*(random(0)-0.5):c=same,")

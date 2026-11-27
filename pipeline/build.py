@@ -52,7 +52,7 @@ def checks(script, timing):
     return res
 
 
-def caption_with_credits(script):
+def caption_with_credits(script, eigen_stem=False):
     from .fotos import credits
     c = credits(script)
     return script["caption"].strip() + (("\n📸 Foto's: " + "; ".join(c)) if c else "")
@@ -67,7 +67,13 @@ def build_one(path: Path):
     week = path.parent.name
     sid = script["id"]
     print(f"▶ {sid}: voice-over…", flush=True)
-    timing = synthesize_script(script, C.ROOT / "audio" / week)
+    from .eigenstem import timing_from_recording, vind_opname
+    rec = vind_opname(path)
+    if rec:  # eigen stem van de gebruiker in plaats van de AI-stem
+        print(f"▶ {sid}: eigen opname gevonden ({rec.name}), uitlijnen met Whisper…", flush=True)
+        timing = timing_from_recording(script, rec, C.ROOT / "audio" / week)
+    else:
+        timing = synthesize_script(script, C.ROOT / "audio" / week)
     print(f"▶ {sid}: video renderen ({timing['duration']:.1f} s)…", flush=True)
     out = render_video(script, timing, C.ROOT / "video" / week / f"{sid}.mp4", C.ROOT / "audio" / week)
     # voice-over bewaren als compacte mp3 (wav enkel tijdelijk nodig voor de render)

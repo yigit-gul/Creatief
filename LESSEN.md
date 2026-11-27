@@ -33,3 +33,8 @@ Nog geen cijfers. Tot dan gelden de regels uit de feedback:
 - Gevonden fout: het EERSTE BEELD was leeg (hook fadete pas na 0,3-0,5 s binnen). Nu staat de hook op frame 0;
   de zelfreview controleert dit automatisch.
 - Volgende lessen pas trekken als er kijktijd-cijfers zijn (% volledig bekeken, waar haken mensen af).
+
+## 'Te duidelijk AI' (27/11)
+- De gebruiker vermoedt dat de video's te duidelijk AI zijn. Geen eigen stem en geen betaalde stem gewenst.
+- Daarom: stem met microfoon- en kamerklank (config VOICE_FX), scripts met eigen reacties/meningen en vragen
+  aan de kijker, meer echte foto's. Volgende weken meten of de kijktijd stijgt.

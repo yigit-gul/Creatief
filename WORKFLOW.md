@@ -61,6 +61,12 @@ Studio-pagina: https://claude.ai/artifact/C7m33DNmEdvF2cNQKMRzQx
 - Video's met status `geüpload` of `afgekeurd` worden NOOIT meer aangepast (geen foto's, geen nieuwe versie, niets).
 
 ## 2. Scripts → `scripts/<week>/0N-<slug>.json`
+- **Minder AI-gevoel (27/11, views bleven op ~300):** schrijf alsof een echte twintiger iets vertelt, niet als
+  een uitlegfolder. Elke video: minstens 2 korte reacties of meningen ("Echt waar.", "Ik schrok ervan.",
+  "Eerlijk? Dat vind ik krom."), 1 vraag aan de kijker ("Wist jij dit?"), herkenbare situaties uit het
+  dagelijks leven (studentenjob, eerste loon, kot, festival). Geen opsommingen als "Reden één, reden twee"
+  in de stem (wel op het scherm). Mening = over de situatie, nooit beleggingsadvies.
+- **Beeld:** minstens 2-3 echte foto's per video (zie 1d), zodat het niet als een AI-sjabloon oogt.
 - **Eenvoudige zinnen** (feedback: anders klinkt de stem AI): meestal max. ~10 woorden per zin, één idee per zin,
   gewone woorden ("betalen voor de winst van later" i.p.v. "gewaardeerd op verwachte winst"), geen tangconstructies.
 - **Spreektaal, TikTok-tempo**: korte zinnen, Vlaams-informeel ("da's", "een voorbeeldje"; nooit "hè": dat leest niet), zoals je het

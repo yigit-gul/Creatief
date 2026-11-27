@@ -612,7 +612,7 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
     cmd = ["ffmpeg", "-y", "-loglevel", "error",
            "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
            "-i", str(config_path(timing["audio"])),
-           "-filter_complex", f"[0:v]ass={ass}:fontsdir={C.FONTS}[v];[1:a]apad,loudnorm=I=-14:TP=-1.5[a]",
+           "-filter_complex", f"[0:v]ass={ass}:fontsdir={C.FONTS}[v];[1:a]{C.VOICE_FX}apad,loudnorm=I=-14:TP=-1.5[a]",
            "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}",
            "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
            "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(out_mp4)]
@@ -635,7 +635,7 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
         sfx = work / f"{script['id']}.sfx.wav"
         make_sfx(sfx, total, whooshes, punches)
         cmd[cmd.index("-filter_complex") + 1] = (
-            f"[0:v]ass={ass}:fontsdir={C.FONTS}[v];[1:a]apad,loudnorm=I=-14:TP=-1.5[vo];"
+            f"[0:v]ass={ass}:fontsdir={C.FONTS}[v];[1:a]{C.VOICE_FX}apad,loudnorm=I=-14:TP=-1.5[vo];"
             f"[2:a]volume={C.SFX_VOLUME}[fx];[vo][fx]amix=inputs=2:duration=first:normalize=0[a]")
         cmd[cmd.index("-filter_complex"):cmd.index("-filter_complex")] = ["-i", str(sfx)]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
