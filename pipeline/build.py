@@ -86,6 +86,9 @@ def _build_one(path: Path, script):
     if rec:  # eigen stem van de gebruiker in plaats van de AI-stem
         print(f"▶ {sid}: eigen opname gevonden ({rec.name}), uitlijnen met Whisper…", flush=True)
         timing = timing_from_recording(script, rec, C.ROOT / "audio" / week)
+    elif C.TTS_ENGINE == "chatterbox":  # gratis, natuurlijkere stem (lokaal programma)
+        from . import gratisstem
+        timing = gratisstem.synthesize_script(script, C.ROOT / "audio" / week)
     else:
         timing = synthesize_script(script, C.ROOT / "audio" / week)
     print(f"▶ {sid}: video renderen ({timing['duration']:.1f} s)…", flush=True)

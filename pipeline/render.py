@@ -775,6 +775,8 @@ def render_video(script: dict, timing: dict, out_mp4: Path, work: Path):
             if not sc["visual"].get("subs", sc["visual"]["type"] != "slam")]
     stijl = script.get("stijl")
     fx_voice = C.VOICE_FX_UITLEG if stijl == "uitleg" else C.VOICE_FX
+    if timing.get("engine") == "chatterbox":  # klinkt al natuurlijk: geen kamerklank, alleen gelijkmatig volume
+        fx_voice = C.VOICE_FX_CB
     build_ass(timing["words"], ass, hide, stijl)
     out_mp4.parent.mkdir(parents=True, exist_ok=True)
 

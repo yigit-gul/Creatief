@@ -94,7 +94,7 @@ def signals(script, timing):
     for i, sp in enumerate(timing.get("spoken", [])):
         if re.search(r"\d", sp):
             flags.append(f"TAAL: scène {i} stuurt nog cijfers naar de stem ({re.findall(r'[^ ]*\d[^ ]*', sp)[:3]}).")
-        if re.search(r"[.!?]\s+\S", re.sub(r"\b(?:[A-Z]\.){2,}", "X", sp)):  # afkortingen (R.S.Z.) tellen niet
+        if timing.get("engine") != "chatterbox" and re.search(r"[.!?]\s+\S", re.sub(r"\b(?:[A-Z]\.){2,}", "X", sp)):  # afkortingen (R.S.Z.) tellen niet
             flags.append(f"TAAL: scène {i} wordt in losse zinnen ingesproken (risico op taalwissel).")
     if "spoken" not in timing:
         flags.append("TAAL: geen gesproken tekst bewaard; bouw opnieuw met de huidige pipeline.")

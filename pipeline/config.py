@@ -64,3 +64,12 @@ SUB_Y_UITLEG = 1300   # ondertitels (1-2 woorden) net onder het icoon in het mid
 # (11 pauzes per minuut tegenover 38 bij ons). Dus kortere en minder pauzes, en gelijkmatiger volume.
 UITLEG_GAPS = {"SENTENCE_GAP": 0.13, "QUESTION_GAP": 0.20, "SHORT_GAP": 0.11, "SCENE_GAP": 0.08}
 VOICE_FX_UITLEG = VOICE_FX.replace("acompressor=threshold=-18dB:ratio=2.5", "acompressor=threshold=-24dB:ratio=4:makeup=2")
+
+# --- Gratis natuurlijke stem (27/11, keuze gebruiker: variant C) ---
+TTS_ENGINE = "chatterbox"        # "chatterbox" (gratis programma, standaard) of "edge" (oude Andrew-stem)
+CB_REF = "assets/stem/referentie.wav"  # klankkleur: kunstmatige Andrew-stem (geen echte persoon)
+CB_EXAGGERATION = 0.5
+CB_CFG = 0.5
+CB_TEMPO = 1.12                  # iets sneller dan het programma uit zichzelf praat (TikTok-tempo)
+CB_MIN_SCORE = 0.9               # minstens 90% van de woorden moet Whisper terug horen, anders nieuwe take
+VOICE_FX_CB = "highpass=f=70,acompressor=threshold=-22dB:ratio=3:attack=8:release=120:makeup=1.5,"

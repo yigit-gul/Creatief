@@ -107,6 +107,17 @@ SSL_CERT_FILE=/root/.ccr/ca-bundle.crt python -m pipeline.build scripts/<week>
 ```
 Controleer per video één frame (bv. bij het rekenvoorbeeld) op overlap. Gefaalde checks oplossen en opnieuw bouwen.
 
+**Stem (vanaf 27/11): gratis programma Chatterbox, variant C** (gekozen door de gebruiker; `TTS_ENGINE = "chatterbox"`).
+- Draait lokaal in een aparte Python 3.11-omgeving (`~/.cache/fiscaalfluitje/cbenv`); `pipeline/gratisstem.py`
+  installeert die zelf als ze ontbreekt (`uv venv -p 3.11` + `uv pip install chatterbox-tts==0.1.7 "setuptools<81"`).
+  Het model komt van Hugging Face (ResembleAI/chatterbox).
+- Klankkleur = `assets/stem/referentie.wav` (een kunstmatige Microsoft-stem, nooit een echte persoon nadoen).
+- Duurt ±5 s rekenwerk per seconde audio (±10 min per video): bouw op de achtergrond.
+- Whisper controleert elke scène (Nederlands, ≥ 90% van de woorden gehoord); anders nieuwe take, de beste blijft.
+  Blijft een zin fout (TAALFOUT/UITSPRAAK): herschrijf hem met gewone woorden en bouw opnieuw.
+- Hier mogen gewone zinnen met punten (het programma wisselt niet van taal zoals de oude Edge-stem).
+- Terugvallen op de oude stem kan met `TTS_ENGINE = "edge"` (alleen als het programma niet werkt; meld dat).
+
 ## 4b. Zelfreview (verplicht, vóór de video naar de Studio gaat)
 1. `python -m pipeline.selfreview scripts/<map>` maakt per video een contactsheet (`review/<map>/selfreview/<id>.png`)
    en meetbare signalen (`<id>.json`: tempo per scène, zinnen > 10 woorden, hook-duur, stiltes, aandachtspunten).

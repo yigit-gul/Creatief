@@ -6,7 +6,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 
 | # | Titel | Duur | Woorden | Auto-checks | ⚠️ |
 |---|---|---|---|---|---|
-| 01-loonbrief-bruto-netto | Je loonbrief: waar gaat je brutoloon naartoe? | 65 s | 209 | 9/9 | 5 |
+| 01-loonbrief-bruto-netto | Je loonbrief: waar gaat je brutoloon naartoe? | 60 s | 212 | 9/9 | 5 |
 
 ---
 
@@ -24,7 +24,7 @@ Video's, captions en dit overzicht staan in deze map. Er wordt **niets** automat
 >
 > Verdien je niet zoveel, dan krijg je daar korting op, en die korting heet de werkbonus.
 >
-> Van elke 100 euro bruto blijft er na de RSZ dus 86,93 over, maar dan komt hap twee, de bedrijfsvoorheffing.
+> Van elke 100 euro op je contract hou je na de RSZ dus 86,93 over, maar dan komt de tweede hap, de bedrijfsvoorheffing.
 >
 > Dat is een voorschot op je belasting dat je werkgever elke maand al voor jou inhoudt, en hoeveel dat is hangt af van je loon en je gezin.
 >
@@ -76,8 +76,8 @@ Algemene info, geen persoonlijk advies. Je eigen loon hangt af van je statuut, j
 
 ### Automatische checks
 
-- ✅ Woordenaantal 170-220 (209 woorden)
-- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (65.0 s)
+- ✅ Woordenaantal 170-220 (212 woorden)
+- ✅ Duur net boven 1 min (60-75 s; > 70 s alleen als de inhoud het draagt) (60.5 s)
 - ✅ Hook kort (≤ 22 woorden) (22 woorden)
 - ✅ Eindkaart met disclaimer (Algemene info, geen persoonlijk advies.)
 - ✅ AI-vermelding in caption

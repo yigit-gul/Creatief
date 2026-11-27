@@ -31,7 +31,7 @@
    }
   },
   {
-   "say": "Want van dat brutoloon gaan er eerst twee happen af, en de eerste hap is de [RSZ|R.S.Z.].",
+   "say": "Want van dat [brutoloon|bruto loon] gaan er eerst twee happen af, en de eerste hap is de [RSZ|er es zet].",
    "visual": {
     "type": "beats",
     "beats": [
@@ -57,7 +57,7 @@
    }
   },
   {
-   "say": "Als bediende gaat er 13,07% van je brutoloon naar de sociale zekerheid, en daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je job verliest.",
+   "say": "Als bediende gaat er 13,07% van je [brutoloon|bruto loon] naar de sociale zekerheid, en daarmee betaal je mee aan je dokter, je pensioen en je uitkering als je ooit je job verliest.",
    "visual": {
     "type": "beats",
     "beats": [
@@ -111,7 +111,7 @@
    }
   },
   {
-   "say": "Van elke 100 euro bruto blijft er na de [RSZ|R.S.Z.] dus 86,93 over, maar dan komt hap twee, de bedrijfsvoorheffing.",
+   "say": "Van elke 100 euro op je contract hou je na de [RSZ|er es zet] dus 86,93 over, maar dan komt de tweede hap, de bedrijfsvoorheffing.",
    "visual": {
     "type": "beats",
     "beats": [
